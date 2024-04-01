@@ -51,10 +51,10 @@ The intention of the course is to enable you to use modern technologies and tool
 | ------------------------------------------------------------ |
 | Explain the relationship between presentation layer, client-side programming and server side programming in modern web applications. Explain the usage of JavaScript in modern web applications. |
 | Effectively use intermediate and advanced syntactical elements of modern JavaScript (ES 6) including: variable scope (let and const) template literals, objects, de-structuring assignment, anonymous function, arrow functions, classes, modules. |
-| Effectively use JavaScript tools, modules, libraries and frameworks that are typical in modern<br/>JavaScript development including: replit.com, node.js, npm, babel, webpack, fetch, axios,<br/>concurrently. |
-| Lane Community College Computer Information Technology Department Winter 2024<br/>Design and implement a variety of sophisticated JavaScript applications including: a ToDo list, a<br/>Bookmarking application, a Meme Creator , a Meetup application with charting and mapping<br/>features, a Weather application. |
+| Effectively use JavaScript tools, modules, libraries and frameworks that are typical in modern JavaScript development including: replit.com, node.js, npm, babel, webpack, fetch, axios, concurrently. |
+| Design and implement a variety of sophisticated JavaScript applications including: a ToDo list, a Bookmarking application, a Meme Creator , a Meetup application with charting and mapping features, a Weather application. |
 | Discuss concepts, themes and issues orally and in writing.   |
-| Evaluate your own web site implementation work. Evaluate the web site implementation work<br/>of other students and provide constructive feedback orally and in writing. |
+| Evaluate your own web site implementation work. Evaluate the web site implementation work of other students and provide constructive feedback orally and in writing. |
 | Respond appropriately to and assimilate feedback provided by other students and you instructor. |
 
  
@@ -97,11 +97,12 @@ You will need to download these applications and install them on your computer. 
 
 - At least two modern browsers to view/test your web pages. The latest versions of [Chrome](https://www.google.com/chrome/), and [Firefox](https://www.mozilla.org/en-US/firefox/new/) are good options. Many other browsers like Safari, Opera, and Edge, are also suitable for your use in this class.
 
-- An FTP client to upload your web pages to the [CIT department web server](http://citstudent.lanecc.edu). [FileZilla](https://filezilla-project.org/) is a free ftp client that can be downloaded and used on Windows, OS X, or Linux. 
+- An FTP client to upload your web pages to the [CIT department web server](http://citstudent.lanecc.edu).  
+  [FileZilla](https://filezilla-project.org/) is a free ftp client that can be downloaded and used on Windows, OS X, or Linux. 
 
 - Microsoft  Word (see the free Microsoft Office offer below) or a word processor that is compatible with Word, like the free, open source, [Libre Office](https://www.libreoffice.org).
 
-- [Git command line tools](https://git-scm.com/downloads) and a [GitHub](https://github.com) account for version control
+- [Git command line tools](https://git-scm.com/downloads) and a [GitHub](https://github.com) account for version control.
 
 
 ####  Free and Discounted Software for Students
@@ -130,16 +131,14 @@ See the [LCC Tutoring Services](https://www.lanecc.edu/tutor) web page for infor
 
 The table below summarizes the possible points for each assessment task as well as the course as a whole:
 
-| **Assessment Tasks**               | **Points Each**          | **Total Points** | Percentage |
-| ---------------------------------- | ------------------------ | ---------------- | ---------- |
-| Labs  1 - 8                        | 40                       | 320              | 32%        |
-| Code  Reviews<sup>2</sup> 1 - 8    | 8                        | 64               | 6.5%       |
-| Reading  Quizzes<sup>2</sup> 1 - 8 | 8                        | 64               | 6.5%       |
-| Term Project                       | 252                      | 252              | 25%        |
-| Midterm and Final Quizzes          | Midterm: 100, Final: 200 | 300              | 30%        |
-| **Course Total**                   |                          | **1000**         |            |
-
-<sup>2</sup> The lowest grades for code reviews and reading quizzes will be dropped from the grade calculation.
+| **Assessment Tasks**      | **Points Each**          | **Total Points** |
+| ------------------------- | ------------------------ | ---------------- |
+| Labs  1&ndash;7           | 50                       | 350              |
+| Code Reviews 1&ndash;7    | 10                       | 70               |
+| Quizzes 1&ndash;7         | 10                       | 70               |
+| Term Project              | 210                      | 210              |
+| Midterm and Final Quizzes | Midterm: 100, Final: 200 | 300              |
+| **Course Total**          |                          | **1000**         |
 
 Letter grades for the course will be determined by the following percentages:                  
 
@@ -155,8 +154,8 @@ Letter grades for the course will be determined by the following percentages:
 
 ### Quizzes
 
-<u>Reading Quizzes</u>
-Weekly quizzes are given that cover the required reading for that week. These quizzes must be taken before the first class meeting of the week. They are "open book" (or whatever reading material was assigned.)
+<u>Quizzes</u>
+Weekly quizzes are given that cover the required reading and tutorial videos for that week. These quizzes must be taken before the second class meeting of the week. They are "open book" (or video).
 
 <u>Midterm and Final Quizzes</u>
 
@@ -197,7 +196,7 @@ The college’s “no show, drop” policy requires that: during the first week 
 
 Lane Community College (LCC) is dedicated to providing inclusive learning environments. The Center for Accessible Resources (CAR) coordinates all academic accommodations for students at LCC. If you anticipate or experience academic barriers due to a disability, to request assistance or accommodations, contact the Center for Accessible Resources.
 
-**In-Person Services:** Monday and Thursday, 9:00am - 12:30 and 1:30pm - 3:00pm.
+**In-person Services:** Monday and Thursday, 9:00am - 12:30 and 1:30pm - 3:00pm.
 **Location:** Main Campus, Building 19, Room 263A
 
 **Remote Support through Support Hub:** Monday - Thursday 9:00am&ndash;12:30 and 1:30pm&ndash;3:00pm. 
@@ -212,27 +211,27 @@ For upcoming closures, please visit the [Center for Accessible Resources webpage
 
 ## Schedules
 
-## Academic Calendar for Winter Term 2024
+### Academic Calendar
 
-| Event                                               | Date        |
-| --------------------------------------------------- | ----------- |
-| Fall term classes begin                             | 1/8 Monday  |
-| Last day to receive refund                          | 1/15 Monday |
-| Martin Luther King Jr. holiday&mdash;college closed | 1/15 Monday |
-| Presidents Day holiday&mdash;college closed         | 2/19 Monday |
-| Last day for schedule changes                       | 3/1 Friday  |
-| Final exam                                          | 3/18 Monday |
+| Spring Term 2024                           |                 |
+| ------------------------------------------ | --------------- |
+| Term begins                                | 4/1, Monday     |
+| Last day to receive refund                 | 4/8, Monday     |
+| Spring conference for faculty (no classes) | 5/3, Friday     |
+| Last day for schedule changes              | 5/24, Friday    |
+| Memorial Day Holiday                       | 5/27, Monday    |
+| Finals Week                                | 6/10&ndash;6/14 |
 
 View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on the LCC web site.  
 
 
 
-## Weekly Learning Activities
+### Weekly Learning Activities
 
 - Monday
-  - Start the assigned reading  
-    (Take the reading quiz when you finish the reading)
-  - Participate in class in person, via Zoom, or watch the Zoom recording
+  - Start the assigned reading and videos.  
+    (Take the quiz when you finish.)
+  - Participate in class in person or via Zoom.
 
 
 - By Tuesday night
@@ -240,7 +239,7 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 
 - Wednesday
-  - Before class starts, take the reading quiz.
+  - Before class starts, take the quiz.
   - Participate in class
 - Thursday
   - By midnight: submit the production version of your lab work from last week.
@@ -257,18 +256,18 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 ### Tentative Course Schedule
 
-| Week             | Topic                                                        | Learning Activities                                          |
-| ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **1**<br/>1/8    | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading quiz 1<br />Beta version of lab 1                    |
-| **2**<br />1/15  | No classes due to the ice storm                              | Nothing due this week                                        |
-| **3**<br />1/22  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
-| **4**<br />1/29  | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
-| **5**<br />2/5   | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
-| **6**<br />2/12  | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom on 2/14<br />- In the testing center 2/14 through 2/17 |
-| **7**<br />2/19  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
-| **8**<br />2/26  | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
-| **9**<br />3/4   | Monday: Memorial Day Holiday<br />Document Object Model and Events | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
-| **10**<br />3/11 | Regular Expressions<br />Term project completion<br />Review | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
-| **11**<br />3/18 | Finals week                                                  | Term project<br />Extra credit lab<br />Final quiz:<br />- In the classroom on 3/18<br />- In the testing center 3/18&mdash;3/21 |
+| Week             | Topic                                             | Learning Activities                                          |
+| ---------------- | ------------------------------------------------- | ------------------------------------------------------------ |
+| **1**            | JavaScript Review and Bootstrap                   | Reading quiz 1<br />Beta version of lab 1                    |
+| **2**            | ES6 Classes and Git                               | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
+| **3**            | JS Dev Tools: Node.js, NPM, Webpack, LocalStorage | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
+| **4**            | HTML5 Canvas, CSS Flexbox                         | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
+| **5**            | Midterm Review and Quiz                           | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz |
+| **6**            | AJAX, ES6 promises, fetch API                     | Reading quiz 5  <br />Beta version of lab 5                  |
+| **7**            | Making API calls, graphs and charts, Google maps  | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
+| **8**            | TBD                                               | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
+| **9**            | Term Project                                      | lab 7 code review<br />Production version of lab 7. <br />Beta version of term project |
+| **10**           | Review                                            | Production version of term project                           |
+| **11**<br />3/18 | Finals week                                       | Final quiz:<br />- In the classroom on 3/18<br />- In the testing center 3/18&mdash;3/21 |
 
  
