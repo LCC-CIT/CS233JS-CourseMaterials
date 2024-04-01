@@ -176,6 +176,10 @@ Students will work in groups of two or three, to review the *beta* versions of e
 
 While students are encouraged to discuss labs and to use each other as resources, each student is responsible for his/her own work. In other words you can help each other, but you can’t copy any part of someone else’s work. The end product must be each student’s own individual work.
 
+#### Use of AI
+
+Generative AI tools such as GitHub Copilot or ChatGPT are useful resources and you are encouraged to use them to help you learn how to code, but not to do the coding for you. For example, you can ask a chatbot "*What is the JavaScript syntax for a loop that iterates on an array*", but <u>not</u> "*Write the code that solves &lowbar;&lowbar;&lowbar;&lowbar;&lowbar;&lowbar;&lowbar;&lowbar;&lowbar;&lowbar; (some part of my lab assignment)*".
+
 ### Participation and Attendance
 
 While participation and attendance are essential to succeed in this class, they will not be graded.
