@@ -179,6 +179,8 @@ While students are encouraged to discuss labs and to use each other as resources
 
 Generative AI tools such as GitHub Copilot or ChatGPT are useful resources and you are encouraged to use them to help you learn how to code, but not to do the coding for you. For example, you can ask a chatbot "*What is the JavaScript syntax for a loop that iterates on an array*", but <u>not</u> "*Write the code that solves &lowbar;&lowbar;&lowbar;&lowbar;&lowbar;&lowbar;&lowbar;&lowbar;&lowbar;&lowbar; (some part of my lab assignment)*".
 
+If students submit code that uses JavaScript features or programming techniques that are more advanced or diffeent from what was taught in class, the student will need to demostrate that they actually wrote the code themselves and undstand how it works.
+
 ### Participation and Attendance
 
 While participation and attendance are essential to succeed in this class, they will not be graded.
