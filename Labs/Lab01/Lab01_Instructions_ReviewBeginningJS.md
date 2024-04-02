@@ -1,30 +1,57 @@
 <h1>Lab 1: Review of Beginning JavaScript</h1>
 
-The objective of this lab is review JavaScript syntax that you learned in CS 133JS as well as to introduce you to Bootstrap, a CSS framework.
+[TOC]
 
-Complete the programming problems described below.  For each problem:
+# Objectives
 
-- Create a JavaScript solution that solves the problem.  Test your solution in at least one browser running on your local machine.
-- Upload your solution to citstudent.lanecc.edu.  Test your solution running on the server in at least one browser.
-- Evaluate your work using the code review form provided.
+The objectives of this lab are:
 
-Design and implement a JavaScript solution to each of the following problems:
+1. Review JavaScript syntax you learned in CS 133JS.
+2. Introduce you to Bootstrap, a CSS framework.
 
-1. StopWatch - Version 1
 
-   - Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking stop watch on the page.  A sample illustration has been provided in the starting files.
 
-   - Add JavaScript code to implement the stop watch functionality as you might have done in CS 133JS.  Test and debug your application.
+# Instructions
 
-2. Concentration - Version 1
+## Web App 1: Stopwatch - Version 1
 
-    - Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking concentration board on the page.
-    - Add JavaScript code to implement the concentration or memory game functionality as you might have done in CS 133JS.  Test and debug your application.
+- Download the `stopWatchStart.zip` file and unzip it. The starting files have comments that guide you in completing the code. 
 
-3. TicTacToe - Version 1
+- Reanme the files by removing the word "start" from each file. 
+  Complete the code in each of the starting files:
 
-   - Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking tic tac toe board on the page.
-   - Add JavaScript code to implement the tic tac toe game functionality as you might have done in CS 133JS.  Test and debug your application.
+  - unstyledIndexStart.html, indexStart.html
+    You can use either of thse files. `IndexStart.html` is already styled with Bootstrap. If you would like to do your own styling (optional) you can start with `unstyledIndexStart.html` which does not have styling.
+
+  - stylesStart.css 
+    There is nothing in this fiile. If you want to add some CSS styling (optional) to the web app, you can add it here.
+
+  - indexStart.js 
+    Add JavaScript code to implement the stop watch functionality as you might have done in CS 133JS.  
+
+    **Notes:** Mari did a few things differently than the way I (Brian) would like you to do them:
+
+    - Declare variables using `let` instead of `var`.
+    - Don't put mutliple `return` statements in a function.
+    - Don't write the `pad` function so that it sometimes returns a *string* and sometimes a *number*. Best practice is to always return the same type.
+    - FYI, the global variable `timer` does not actually store an object. It holds the ID number of a timer object created by calling the built-in JavaScript function `setInterval`.
+
+- Test and debug your application.
+
+## Web App 2: Concentration - Version 1
+
+- Download the staring file, `concentrationStart.zip`.
+- Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking concentration board on the page.
+- Add JavaScript code to implement the concentration or memory game functionality as you might have done in CS 133JS.  Test and debug your application.
+
+## Web App 3: TicTacToe - Version 1
+
+- Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking tic tac toe board on the page.
+- Add JavaScript code to implement the tic tac toe game functionality as you might have done in CS 133JS.  Test and debug your application.
+
+
+
+# Submission
 
 - Complete the implementation and testing of all 3 applications.
 - Upload completed applications to citstudent.lanecc.edu.  Test all 3 applications on the server.
