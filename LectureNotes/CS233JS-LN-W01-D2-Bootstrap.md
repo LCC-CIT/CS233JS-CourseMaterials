@@ -53,11 +53,30 @@ In the `<head>` element of the web page:
 
 ## Using it in a Web Page
 
-The Bootstrap library contains style sheets with a huge number of CSS classes. The main way you control styling and layout of your web pages is by adding these classes to the elements of your page. For example, the code below whould make the div have rounded corners, a light background an centered, heading 1 text.
+The Bootstrap library contains style sheets with a huge number of CSS classes. The main way you control styling and layout of your web pages is by adding these classes to the elements of your page. 
+
+One of the first classes you will need to use is a *container* class. Bootstrap 5 requires a container element (usually a div) to wrap site contents. There are two container classes:
+
+- `.container` class provides a responsive fixed width container.
+- `.container-fluid` class provides a full width fluid container which spans the width of the viewport.
+
+Example:
+
+```html
+<div class="container-fluid">
+<!-- HTML code goes here -->
+</div>
+```
+
+Note that a web page can have multiple containers.
+
+Once you have a container, you can use other classes for styling. For example, the code below whould make the div have rounded corners, a light background an centered, heading 1 text.
 
 ```html
 <div class="h1 text-center bg-light rounded">
 ```
+
+
 
 
 
