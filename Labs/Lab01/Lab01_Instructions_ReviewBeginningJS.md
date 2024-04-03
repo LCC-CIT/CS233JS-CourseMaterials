@@ -59,15 +59,17 @@ There are a few things Mari did differently than the way I would like you to do 
 
 # Submission
 
-- Upload completed applications to citstudent.lanecc.edu.  Test all 3 applications on the web server.
+- Upload completed applications to [citstudent.lanecc.edu](http://citstudent.lanecc.edu).  Test all 3 applications on the web server.  
+  - If you need to refresh your memory on how to do this, here are the instructions from the web authoring class: [How to upload web sites to citstudent](https://lcc-cit.github.io/CIS195-CourseMaterials/Lessons/UploadingWebSites.html).
+- Do a self-review using the code review form provided on Moodle.  
+Upload the code review form you completed to the Moodle lab 1 assignment.
+- Put the citstudent URLs for each web app in the online text for lab 1 Production version Moodle assignment.
 
-- Download the code review form for lab 1.  Do a self-review using the form as a guide. 
+# Assessment
 
-- Upload the evaluation document you created to the moodle lab 1 assignment.
+Here is a link to [the grading rubric](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab01/CS233JS_Lab01_Rubric.htm).
 
-- Put the citstudent URL for each web app in the online text for the assignment.
-
-    
+  
 
 ----
 
