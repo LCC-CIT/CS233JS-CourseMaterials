@@ -44,7 +44,7 @@ function init()
     // fill the array of images by calling fillImages
     // shuffle them by calling shuffle images
     // show the number of matches on the page by calling showMatches
-    // enable all of the card elements on the page by calling enableRemainingCards
+    // enable all of the card elements on the page by calling enableAllCards
     // show the backs of all of the cards by calling showAllBacks
 }
 
