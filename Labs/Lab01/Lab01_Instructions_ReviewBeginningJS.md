@@ -13,6 +13,15 @@ The objectives of this lab are:
 
 # Instructions
 
+There are a few things Mari did differently than the way I would like you to do things:
+
+- She hasn't introduced you to `let` and`const`yet, but I have so declare variables using `let` instead of `var`.
+  - Use `const` to declare numbers that are used multiple times:
+    - In the stopwatch app, use a `const` for 60.
+    - In the concentration app, use a `const` for 20.
+- Don't put mutliple `return` statements in a function.
+- In the Stopwatch app, don't write the `pad` function so that it sometimes returns a *string* and sometimes a *number*. Best practice is to always return the same type.
+
 ## Web App 1: Stopwatch - Version 1
 
 - Download the `stopWatchStart.zip` file and unzip it. The starting files have comments that guide you in completing the code. 
@@ -28,34 +37,40 @@ The objectives of this lab are:
 
   - indexStart.js 
     Add JavaScript code to implement the stop watch functionality as you might have done in CS 133JS.  
-
-    **Notes:** Mari did a few things differently than the way I (Brian) would like you to do them:
-
-    - Declare variables using `let` instead of `var`.
-    - Don't put mutliple `return` statements in a function.
-    - Don't write the `pad` function so that it sometimes returns a *string* and sometimes a *number*. Best practice is to always return the same type.
     - FYI, the global variable `timer` does not actually store an object. It holds the ID number of a timer object created by calling the built-in JavaScript function `setInterval`.
-
+  
 - Test and debug your application.
 
 ## Web App 2: Concentration - Version 1
 
 - Download the staring file, `concentrationStart.zip`.
-- Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking concentration board on the page.
-- Add JavaScript code to implement the concentration or memory game functionality as you might have done in CS 133JS.  Test and debug your application.
+- Add JavaScript code to implement the concentration or memory game functionality as you might have done in CS 133JS.  
+- Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking concentration board on the page. You can add as much or as little as you wish.
+- Test and debug your application.
 
 ## Web App 3: TicTacToe - Version 1
 
-- Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking tic tac toe board on the page.
-- Add JavaScript code to implement the tic tac toe game functionality as you might have done in CS 133JS.  Test and debug your application.
+- Download the staring file, `tttStart.zip`.
+- Add JavaScript code to implement the tic tac toe game functionality as you might have done in CS 133JS.
+- Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking tic tac toe board on the page. Again, add as much or little as you wish.
+- Test and debug your application.
 
 
 
 # Submission
 
-- Complete the implementation and testing of all 3 applications.
-- Upload completed applications to citstudent.lanecc.edu.  Test all 3 applications on the server.
-- Download the evaluation form for lab 1.  Complete the evaluation using the form as a guide.  Include in the evaluation document:
-    - One or more screen shots of each of your applications running in at least 2 browsers.
-    - The url for each application on citstudent.lanecc.edu.
-- Upload the evaluation document you created in moodle.
+- Upload completed applications to citstudent.lanecc.edu.  Test all 3 applications on the web server.
+
+- Download the code review form for lab 1.  Do a self-review using the form as a guide. 
+
+- Upload the evaluation document you created to the moodle lab 1 assignment.
+
+- Put the citstudent URL for each web app in the online text for the assignment.
+
+    
+
+----
+
+Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024.
+
+---
