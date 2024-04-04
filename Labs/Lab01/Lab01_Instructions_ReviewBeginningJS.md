@@ -16,10 +16,10 @@ The objectives of this lab are:
 There are a few things Mari did differently than the way I would like you to do things:
 
 - She hasn't introduced you to `let` and`const`yet, but I have so declare variables using `let` instead of `var`.
-  - Use `const` to declare numbers that are used multiple times:
-    - In the stopwatch app, use a `const` for 60.
-    - In the concentration app, use a `const` for 20.
-- Don't put mutliple `return` statements in a function.
+  - Use `const` to declare numbers that are used in the code:
+    - In the stopwatch app, use a `const` for 60 (used twice).
+    - In the concentration app, use a `const` for 20 (used once).
+- Don't put mutliple `return` statements in a function, for example in the brances of an if-else statement.
 - In the Stopwatch app, don't write the `pad` function so that it sometimes returns a *string* and sometimes a *number*. Best practice is to always return the same type.
 
 ## Web App 1: Stopwatch - Version 1
