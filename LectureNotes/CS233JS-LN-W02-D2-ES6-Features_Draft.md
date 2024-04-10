@@ -31,7 +31,25 @@ This week you are refactoring the three web apps from last week to use classes a
 
 ## Arrow functions
 
-Here are examples from the concentration game:
+The arrow function syntax is just another way of writing anonymous functions. They are mostly just "syntactic sugar":
+
+```javascript
+// A "normal" anonymous function used as an event handler
+document.querySelector("button").addEventListener("click", 
+  function ( {
+		 document.querySelector("span").textContent = "Button pressed!";
+  } );
+
+// The same function written as an arrow function:
+document.querySelector("button").addEventListener("click", 
+  () => { 
+    document.querySelector("span").textContent = "Button pressed!";
+  } );
+```
+
+
+
+The arrow function syntax can also be used to assign a function or method to an event. Here are examples from the concentration game:
 
 ```javascript
 cards[i].onclick = () => this.handleClick(i);  // add an event handler method
@@ -122,6 +140,10 @@ this.winningLine = [];
 
 
 # Reference
+
+[Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#arrow_functions) on MDN
+
+[Template Literals (Template Strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) on MDN
 
 [Array Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#constructor) on MDN
 
