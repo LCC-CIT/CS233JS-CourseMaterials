@@ -7,7 +7,7 @@ window.onload = function () {
     // click event handlers
     document.getElementById("start").addEventListener("click", startGame);
     document.getElementById("roll").addEventListener("click", rollDice);
-    // initialize the game
+    // initialize the game UI
     document.getElementById("start").disabled = false;
     document.getElementById("roll").disabled = true;
 }
@@ -35,11 +35,13 @@ function rollDice() {
     document.getElementById("totalScore").innerText = scores.totalScore;
     console.log(scores.rollScore);
 }
-/* **************** */
-/* For testing only */
-/* **************** */
 
-// Test the game by automatically playing with two players
+/* ****************** */
+/*  For testing only  */
+/* ****************** */
+
+// Test the game by automatically playing with two players.
+// Call this function in the console to run through a complete game.
 function testGame() {
     bunco.startNewGame();
     bunco.addPlayer("Player 1");
