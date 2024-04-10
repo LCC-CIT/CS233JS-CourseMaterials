@@ -137,6 +137,32 @@ this.winningLine = Array();
 this.winningLine = [];
 ```
 
+## Destructuring Assignment
+
+Destructuring assignment in JavaScript is a feature that simplifies unpacking <u>values from arrays</u> or <u>properties from objects</u> and assigning them to variables. 
+
+For destructuring arrays, the basic syntax is to put the variables that will get the unpacked values inside square brackets `[]`. Like this :`let [a, b] = ["dog", "cat"];` The value in the first element of the array, "dog", is assigned to `a` and the value in the second element, "cat", is assigned to `b`. 
+
+Here is another example of using descructuring assignment with an array:
+
+```javascript
+const myArray = [1, 2, 3, 4, 5];
+const [first, second] = myArray;
+console.log(first); // 1
+console.log(second); // 2
+```
+
+For destructuring objects, the basic syntax is to put the variables that will get the unpacked values inside curly braces, `{}`. Like this:`let [a, b] = ["dog", "cat"];` The value in the first element of the array, "dog", is assigned to `a` and the value in the second element, "cat", is assigned to `b`. 
+
+Here's an example of destructuring assignment with an object:
+
+```javascript
+const myObject = { a: 1, b: 2 };
+const { a, b } = myObject;
+console.log(a); // 1
+console.log(b); // 2
+```
+
 
 
 # Reference
@@ -146,6 +172,8 @@ this.winningLine = [];
 [Template Literals (Template Strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) on MDN
 
 [Array Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#constructor) on MDN
+
+[Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) on MDN
 
 ------
 
