@@ -53,7 +53,7 @@ function testGame() {
         const scores = bunco.rollDice();
         console.log(`Player ${player.name} rolled ${bunco.dice[0].value}, ${bunco.dice[1].value}, ${bunco.dice[2].value}, roll score: ${scores.rollScore}`)
         console.log(`player ${player.name}: round score: ${scores.roundScore}, total score: ${scores.totalScore}, rounds won: ${scores.roundsWon}`);
-    } while (bunco.getRound() > 0);
+    } while (bunco.round > 0);
     console.log(`The winner is ${bunco.getGameWinner().name}`);
 
 }

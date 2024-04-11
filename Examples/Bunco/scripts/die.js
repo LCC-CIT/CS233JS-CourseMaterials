@@ -2,13 +2,18 @@
 
 class Die
 {
+    #value
+    
     constructor()
     {
-        this.value = 0;
+        this.#value = 0;
     }
+
+    get value() { return this.#value; }
 
     roll()
     {
-        this.value = Math.floor(Math.random() * 6) + 1;
+        // Random number from 1 to 6 to simulate a six-sided die
+        this.#value = Math.floor(Math.random() * 6) + 1;
     }
 }

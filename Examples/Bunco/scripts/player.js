@@ -2,15 +2,32 @@
 
 class Player
 {
+    // declare private instance variables
+    #name
+    #totalScore
+    #roundScore
+    #roundsWon
+
     constructor(name)
     {
-        this.name = name;
-        this.totalScore = 0;
-        this.roundScore = 0;
-        this.roundsWon = 0;
+        // Initialize instance variables.
+        this.#name = name;
+        this.#totalScore = 0;
+        this.#roundScore = 0;
+        this.#roundsWon = 0;
     }
 
-    // Roll all the dice in the array
+    // Getters and Setters
+    get name() {return this.#name; }
+    get totalScore() { return this.#totalScore; }
+    get roundScore() { return this.#roundScore; }
+    get roundsWon() { return this.#roundsWon; }
+
+    set totalScore(value) { this.#totalScore = value; }
+    set roundScore(value) { this.#roundScore = value; }
+    set roundsWon(value) { this.#roundsWon = value; }
+
+    // Roll all the dice in the array passed to the player
     roll(dice)
     {
         for (let i = 0; i < dice.length; i++)
@@ -32,7 +49,7 @@ class Player
         }
         if (rollScore === 3)  // this is a bunco!
         {
-            rollScore = 21;
+            rollScore = BUNCO;
         }
         // If all the die are the same value, the player scored 5 points
          else if (dice.every(d => d.value === dice[0].value)) 
@@ -40,11 +57,11 @@ class Player
             rollScore = 5;
         }
 
-        this.roundScore += rollScore;
-        // Round score can't be over 21
-        if (this.roundScore > 21)
+        this.#roundScore += rollScore;
+        // Round score can't be over BUNCO
+        if (this.#roundScore > BUNCO)
         {
-            this.roundScore = 21;
+            this.#roundScore = BUNCO;
         }
         return rollScore;
     }

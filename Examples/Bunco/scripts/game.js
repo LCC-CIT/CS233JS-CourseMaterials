@@ -1,55 +1,69 @@
 // Written by Brian Bird, 4/9/2024 with the assistance of GitHub Copilot
 
+// Global constants used in all classes in the Bunco game
+const BUNCO = 21;    // The winning number of points for a round.
+const ROUNDS = 6;    // The number of rounds in the game.
+
 // Bunco game class
 class Game {
+    // Declare private instance variables
+    #players;                 // An array of all the Player objects
+    #currentPlayerIndex;      // Index to the players array
+    #round;                   // Number from 1 to 6
+    #dice;                    // An array for the three dice
+
     constructor() {
-        this.players = [];
-        this.currentPlayerIndex = 0;
-        this.round = 1;
-        this.dice = [];
-        this.dice.push(new Die());
-        this.dice.push(new Die());
-        this.dice.push(new Die());
+        // Initialize instance variables
+        this.#players = [];
+        this.#currentPlayerIndex = 0;
+        this.#round = 1;
+        this.#dice = [];
+        // Add three die to the game
+        this.#dice.push(new Die());
+        this.#dice.push(new Die());
+        this.#dice.push(new Die());
     }
 
-    // Add a player to the game. Pass in the palyer's name as a string
+    // These getters are only used ouside the class
+    get dice() { return this.#dice;}
+    get round() { return this.#round; }
+
+    // This method is used both inside and outside the class
+    getCurrentPlayer() { 
+        return this.#players[this.#currentPlayerIndex];
+    }
+
+    // Add a player to the game. 
+    // Pass in the palyer's name as a string
     addPlayer(name) {
-        this.players.push(new Player(name));
+        this.#players.push(new Player(name));
     }
 
-    getRound() {
-
-        return this.round;
-    }
-
+    // Start the next round of the game
     nextRound() {
-        this.round++;
+        this.#round++;
         // If the round is over 6, the game is over
-        if (this.round > 6) {
-            this.round = 0;  // this means the game is over
+        if (this.#round > ROUNDS) {
+            this.#round = 0;  // this means the game is over
             // the round will be reset to 1 in getGameWinner
         }
         // add round score to the total score
-        for (const player of this.players) {
+        for (const player of this.#players) {
             player.totalScore += player.roundScore;
         }
 
         // reset all the round scores
-        for (const player of this.players) {
+        for (const player of this.#players) {
             player.roundScore = 0;
         }
-    }
-
-    getCurrentPlayer() {
-        return this.players[this.currentPlayerIndex];
     }
 
     // The current player rolls the dice
     rollDice() {
         let player = this.getCurrentPlayer();
-        player.roll(this.dice);
-        let rollScore = player.calculateScore(this.dice, this.round);
-        // copy all the scores to be returned at the end of this method
+        player.roll(this.#dice);
+        let rollScore = player.calculateScore(this.#dice, this.#round);
+        // copy all the scores into an object to be returned at the end of this method
         const scores = {
             rollScore,
             roundScore: player.roundScore,
@@ -57,16 +71,16 @@ class Game {
             roundsWon: player.roundsWon
         };
 
-        // If the player's round score is 21 or more, the round is over
-        if (player.roundScore >= 21) {
+        // If the player's round score is BUNCO or more, the round is over
+        if (player.roundScore >= BUNCO) {
             player.roundsWon++;
             this.nextRound();
         }
         // if the player scored 0, their turn is over
         if (rollScore === 0) {
-            this.currentPlayerIndex++;
-            if (this.currentPlayerIndex >= this.players.length) {
-                this.currentPlayerIndex = 0;
+            this.#currentPlayerIndex++;
+            if (this.#currentPlayerIndex >= this.#players.length) {
+                this.#currentPlayerIndex = 0;
             }
         }
         // rturn an object containing all the scores
@@ -75,12 +89,12 @@ class Game {
 
     // Determine the winner
     getGameWinner() {
-        let winner = this.players[0];
+        let winner = this.#players[0];
         // check for ties
         // fist, find the mody rounds won by any player
-        let maxRoundsWon = Math.max(...this.players.map(p => p.roundsWon));
+        let maxRoundsWon = Math.max(...this.#players.map(p => p.roundsWon));
         // Get an array of players who have won the most rounds
-        let roundWinners = this.players.filter(p => p.roundsWon === maxRoundsWon); if (roundWinners.length === 1) {
+        let roundWinners = this.#players.filter(p => p.roundsWon === maxRoundsWon); if (roundWinners.length === 1) {
             winner = roundWinners[0];
         }
         else {
@@ -95,9 +109,9 @@ class Game {
     }
 
     startNewGame() {
-        this.round = 1;
-        this.currentPlayerIndex = 0;
-        for (const player of this.players) {
+        this.#round = 1;
+        this.#currentPlayerIndex = 0;
+        for (const player of this.#players) {
             player.totalScore = 0;
             player.roundScore = 0;
             player.roundsWon = 0;
