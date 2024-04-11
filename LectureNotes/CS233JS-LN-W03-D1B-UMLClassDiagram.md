@@ -27,33 +27,41 @@ author: Brian Bird
 
 # Introduction
 
+This week you are refactoring the three web apps from last week to use classes for object oriented programming reather than procedural programming.
+
+# Object Oriented Programming
+
+## Classes and Objects
+
+### Why use classes?
+
+- To make code easier to reuse.  
+
+  For example, imagine you are making a dice game like [Bunco](https://en.wikipedia.org/wiki/Bunco). The game uses three dice and can have multiple players, so it makes sense to have separate classes for die and player&mdash;then we can make multiple die and player objects
+
+- To group together methods and variables that are related to eachother so that code is easier to understand.  
+  In our Bunco game, we could group methods and instace variables together in these classes:
+
+  - Die
+
+  - Player
+
+  - Game&mdash;this class will contain the code for managing the game-play logic.
+
+- To make refactoring easier by reducing dependencies.  
+
+  One of the dependecies that can really complcate our code is the code related to web page i/o (input/output). We can move that code out of the Game class and either put it in a sparate, special i/o  class, or just have a separate file containing i/o functions.
 
 
-# UML Class Diagram
 
-```mermaid
-classDiagram
-    class Player {
-        -name
-        -totalScore
-        -roundScore
-        -roundsWon
-        +roll(dice)
-        +calculateScore(dice, round)
-    }
-    class Die {
-        -value
-        +roll()
-    }
-    class Game {
-        -players : Player[]
-        -dice : Die[]
-    }
-    Game "1" *-- "*" Player : contains
-    Game "1" *-- "*" Die : contains
-```
+## Encapsulation
 
+#### Access
 
+- Instance variables (fields) are public by default
+- Use # to make them private
+
+#### getters and setters
 
 
 
