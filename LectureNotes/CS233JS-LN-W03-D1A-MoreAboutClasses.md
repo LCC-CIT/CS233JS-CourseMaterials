@@ -6,7 +6,7 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>ES6 Classes</h1>
+<h1>More About Classes and Object Oriented Programming</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
