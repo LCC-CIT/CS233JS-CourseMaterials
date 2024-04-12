@@ -16,24 +16,37 @@ function startGame() {
     bunco.startNewGame();
     document.getElementById("start").disabled = true;
     document.getElementById("roll").disabled = false;
-    bunco.addPlayer(document.getElementById("player1").value);
-    bunco.addPlayer(document.getElementById("player2").value);
+    bunco.addPlayer(document.getElementById("name1").value);
+    bunco.addPlayer(document.getElementById("name2").value);
     bunco.startNewGame();
     console.log("Game started");
 }
 
 function rollDice() {
-    const player = bunco.getCurrentPlayer();
+    const playerIndex = bunco.currentPlayerIndex;  // get the current player object
     const scores = bunco.rollDice();
     document.getElementById("die1").src = `images/die${bunco.dice[0].value}.png`;
     document.getElementById("die2").src = `images/die${bunco.dice[1].value}.png`;
     document.getElementById("die3").src = `images/die${bunco.dice[2].value}.png`;
     document.getElementById("round").innerText = bunco.round;
-    document.getElementById("player").innerText = player.name;
-    document.getElementById("rollScore").innerText = scores.rollScore;
-    document.getElementById("roundScore").innerText = scores.roundScore;
-    document.getElementById("totalScore").innerText = scores.totalScore;
-    console.log(scores.rollScore);
+
+    if(playerIndex === 0) {
+    document.getElementById("player1").style = "background-color: lightblue";
+    document.getElementById("player2").style = "background-color: white";
+    document.getElementById("rollScore1").innerText = scores.rollScore;
+    document.getElementById("roundScore1").innerText = scores.roundScore;
+    document.getElementById("totalScore1").innerText = scores.totalScore;
+    document.getElementById("roundsWon1").innerText = scores.roundsWon;
+    }
+    else if (playerIndex === 1) {
+        document.getElementById("player2").style = "background-color: lightblue";
+        document.getElementById("player1").style = "background-color: white";
+        document.getElementById("rollScore2").innerText = scores.rollScore;
+        document.getElementById("roundScore2").innerText = scores.roundScore;
+        document.getElementById("totalScore2").innerText = scores.totalScore;
+        document.getElementById("roundsWon2").innerText = scores.roundsWon;
+    }
+
 }
 
 /* ****************** */

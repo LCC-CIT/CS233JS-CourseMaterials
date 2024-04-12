@@ -19,12 +19,12 @@ class Player
 
     // Getters and Setters
     get name() {return this.#name; }
-    get totalScore() { return this.#totalScore; }
     get roundScore() { return this.#roundScore; }
+    get totalScore() { return this.#totalScore; }
     get roundsWon() { return this.#roundsWon; }
 
-    set totalScore(value) { this.#totalScore = value; }
     set roundScore(value) { this.#roundScore = value; }
+    set totalScore(value) { this.#totalScore = value; }
     set roundsWon(value) { this.#roundsWon = value; }
 
     // Roll all the dice in the array passed to the player
@@ -47,7 +47,7 @@ class Player
                 rollScore++;
             }
         }
-        if (rollScore === 3)  // this is a bunco!
+        if (rollScore === 3)  // all die match and match round, this is a bunco!
         {
             rollScore = BUNCO;
         }
