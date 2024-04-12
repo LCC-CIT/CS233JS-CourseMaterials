@@ -27,7 +27,6 @@ class Game {
     // These getters are only used ouside the class
     get dice() { return this.#dice; }
     get round() { return this.#round; }
-    get currentPlayerIndex() { return this.#currentPlayerIndex; }
 
     // This method is used both inside and outside the class
     getCurrentPlayer() {
@@ -37,7 +36,9 @@ class Game {
     // Add a player to the game. 
     // Pass in the palyer's name as a string
     addPlayer(name) {
-        this.#players.push(new Player(name));
+        let player = new Player(name);
+        player.number = this.#players.length + 1;
+        this.#players.push(player);
     }
 
     // Start the next round of the game
@@ -71,7 +72,7 @@ class Game {
             player.roundsWon++;
             this.nextRound();
         }
-        
+
         // copy all the scores into an object to be returned at the end of this method
         const scores = {
             rollScore,

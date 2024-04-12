@@ -18,19 +18,20 @@ function startGame() {
     document.getElementById("roll").disabled = false;
     bunco.addPlayer(document.getElementById("name1").value);
     bunco.addPlayer(document.getElementById("name2").value);
+    document.getElementById("nextRoll").innerText += bunco.getCurrentPlayer().name;
     bunco.startNewGame();
     console.log("Game started");
 }
 
 function rollDice() {
-    const playerIndex = bunco.currentPlayerIndex;  // get the current player object
+    let player = bunco.getCurrentPlayer();
     const scores = bunco.rollDice();
     document.getElementById("die1").src = `images/die${bunco.dice[0].value}.png`;
     document.getElementById("die2").src = `images/die${bunco.dice[1].value}.png`;
     document.getElementById("die3").src = `images/die${bunco.dice[2].value}.png`;
     document.getElementById("round").innerText = bunco.round;
 
-    if(playerIndex === 0) {
+    if(player.number === 1) {
     document.getElementById("player1").style = "background-color: lightblue";
     document.getElementById("player2").style = "background-color: white";
     document.getElementById("rollScore1").innerText = scores.rollScore;
@@ -38,7 +39,7 @@ function rollDice() {
     document.getElementById("totalScore1").innerText = scores.totalScore;
     document.getElementById("roundsWon1").innerText = scores.roundsWon;
     }
-    else if (playerIndex === 1) {
+    else if (player.number === 2) {
         document.getElementById("player2").style = "background-color: lightblue";
         document.getElementById("player1").style = "background-color: white";
         document.getElementById("rollScore2").innerText = scores.rollScore;
@@ -46,6 +47,11 @@ function rollDice() {
         document.getElementById("totalScore2").innerText = scores.totalScore;
         document.getElementById("roundsWon2").innerText = scores.roundsWon;
     }
+
+    // get current player again since the round may have ended
+    player = bunco.getCurrentPlayer();
+    // put the current player's name on the roll button
+    document.getElementById("nextRoll").innerText = player.name;
 
 }
 
