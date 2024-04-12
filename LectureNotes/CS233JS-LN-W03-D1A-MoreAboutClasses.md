@@ -120,14 +120,19 @@ startNewGame() {
     }
 ```
 
+# Example
 
+[Bunco source code on GitHub](https://github.com/LCC-CIT/CS233JS-BuncoGame)
+
+[Bunco running on the citstudent web server](http://citstudent.lanecc.edu/~brianb/CS233JS/Examples//Bunco)
 
 
 
 # Reference
 
-- [Bootstrap 5 Tutorial](https://www.w3schools.com/bootstrap5/)&mdash; W3Schools
-- [Official Bootstrap Website](https://getbootstrap.com/)
+- [Using Classes Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes) on MDN
+
+  
 
 
 
