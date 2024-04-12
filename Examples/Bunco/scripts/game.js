@@ -25,18 +25,20 @@ class Game {
     }
 
     // These getters are only used ouside the class
-    get dice() { return this.#dice;}
+    get dice() { return this.#dice; }
     get round() { return this.#round; }
 
     // This method is used both inside and outside the class
-    getCurrentPlayer() { 
+    getCurrentPlayer() {
         return this.#players[this.#currentPlayerIndex];
     }
 
     // Add a player to the game. 
     // Pass in the palyer's name as a string
     addPlayer(name) {
-        this.#players.push(new Player(name));
+        let player = new Player(name);
+        player.number = this.#players.length + 1;
+        this.#players.push(player);
     }
 
     // Start the next round of the game
@@ -63,6 +65,14 @@ class Game {
         let player = this.getCurrentPlayer();
         player.roll(this.#dice);
         let rollScore = player.calculateScore(this.#dice, this.#round);
+
+
+        // If the player's round score is 21 or more, the round is over
+        if (player.roundScore >= BUNCO) {
+            player.roundsWon++;
+            this.nextRound();
+        }
+
         // copy all the scores into an object to be returned at the end of this method
         const scores = {
             rollScore,
@@ -71,11 +81,6 @@ class Game {
             roundsWon: player.roundsWon
         };
 
-        // If the player's round score is BUNCO or more, the round is over
-        if (player.roundScore >= BUNCO) {
-            player.roundsWon++;
-            this.nextRound();
-        }
         // if the player scored 0, their turn is over
         if (rollScore === 0) {
             this.#currentPlayerIndex++;

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Written by Brian Bird 4/11/2024 -->
+    <title>Roll a Die</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Roll a Die</h1>
+    <button id='roll' onclick='rollDie()'>Roll the die</button>
+    <!-- <button id='roll'>Roll the die</button> -->
+
+    <p>You rolled a <span id="result">...</span></p>
+    <img id="dieImage"></img>
+
+    <script>
+        /*
+        // This does the same thing as the onclick in the button
+        let rollButton = document.getElementById('roll');
+        rollButton.onclick = rollDie;
+        */
+
+        function rollDie() {
+            let dieRoll = randomSix();
+            let resultDiv = document.getElementById('result')
+            resultDiv.textContent = dieRoll;
+            getDieImage(dieRoll);
+        }
+
+        function randomSix() {
+            let littleNumber = Math.random(); // a number ranging from 0 to less than 1
+            let biggerNumber = littleNumber * 6 + 1; // a number rangeing from 1 to less than 7
+            let integerNumber = Math.floor(biggerNumber); // a number ranging from 1 to 6
+            return integerNumber;
+        }
+
+        function getDieImage(side)
+        {
+            let imagePath= "images/die" + side + ".png";
+            let imgElement = document.getElementById('dieImage');
+            imgElement.src = imagePath;
+        }
+
+    </script>
+</body>
+</html>
