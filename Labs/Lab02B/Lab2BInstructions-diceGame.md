@@ -82,7 +82,7 @@ Some of the things that will be different from the Bunco game are:
 
 ## Beta Version and Code Review
 
-- When your code is at least 75% done, add your lab partner as a collaborator to your GitHub repository and make a post in the Beta Version Forum with a link to your repository and a message to your lab partner letting them know you are ready for a code review.. You won't able to view your lab partner's post until you have posted in the forum yourself.  
+- When your code is at least 75% done, [add your lab partner as a collaborator to your GitHub repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) and make a post in the Beta Version Forum with a link to your repository and a message to your lab partner letting them know you are ready for a code review.. You won't able to view your lab partner's post until you have posted in the forum yourself.  
 
   This is what 75% done means:  
   All the code is there and 75% of it is working. There could still be a  few errors that show up in the console and a few things that don't work yet.
@@ -91,7 +91,7 @@ Some of the things that will be different from the Bunco game are:
 
 ## Production Version
 
-- Publish your web app to the citstudent web server.
+- Publish your web app to the [citstudent web server](http://citstudent.lanecc.edu/).
 
 - Submit your lab to the Moodle Production Version assignemnt.
 
