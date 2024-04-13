@@ -14,11 +14,11 @@ Learn how to design and build a web app that employs *separation of concerns* by
 
 ## Clone the GitHub Classroom Repo
 
-Clone the Lab 2B repository from the GitHub classroom invitation. It won't have anything in it. You will write all the code.
+Clone the Lab 2B repository from the GitHub classroom invitation. It won't have much in it, just the images for the six sides of a die. You will write all the code (and use some from my example).
 
 ## Write a Dice Game Web App
 
-Using the Bunco dice game as an example, write a dice game of your own. Your dice game should have these files:
+Using the Bunco dice game as an example, write a dice game of your own. Your dice game should have the following files:
 
 - index.html&mdash;the web page that the players interact with. The dice will be shown on this page using images from an images folder.
 - index.js&mdash;will contain all the i/o code which will primarily be event handler funcitons.
@@ -34,33 +34,68 @@ Do the appropriate version depending on which lab version group you are in.
 
 ### Version A
 
-Design and code the dice game of 10,000. Here are [instructions for playing the game](https://www.dice-play.com/Games/TenThousand.htm).
+Design and code the dice game of 10,000 (aka Farkle). Here are [instructions for playing the game](https://www.dice-play.com/Games/TenThousand.htm).
+
+Some of the things that will be different from the Bunco game are:
+
+- 6 dice instead of 3.
+
+- Different rules for scoring.
+
+- Different socres to track.
+
+- Different rules for determining when a turn is over.
+
+  
 
 ### Version B
 
 Design and code the dice game of ship, captain, crew. Here are [instructions for playing the game](https://en.wikipedia.org/wiki/Ship,_captain,_and_crew).
 
+- 5 dice instead of 3.
+
+- Different rules for scoring.
+
+- Different socres to track.
+
+- Different rules for determining when a turn is over.
+
+  
+
 ### Version C
 
 Design and code the dice game of sevens. Here are the [instructions for playing the game](https://www.dicegamedepot.com/sevens-dice-game-rules/).
+
+Some of the things that will be different from the Bunco game are:
+
+- 6 dice instead of 3.
+
+- Different rules for scoring.
+
+- Different socres to track.
+
+- Different rules for determining when a turn is over.
+
+  
 
 # Review and Submission
 
 ## Beta Version and Code Review
 
-- When your code is at least 75% done for all three web apps add your lab partner as a collaborator to your GitHub repository and post a meesge in the Beta Version Forum with a link to your repository. You won't able to view your lab partner's post until you have posted in the forum.  
+- When your code is at least 75% done, add your lab partner as a collaborator to your GitHub repository and make a post in the Beta Version Forum with a link to your repository and a message to your lab partner letting them know you are ready for a code review.. You won't able to view your lab partner's post until you have posted in the forum yourself.  
 
-  This is what 75% done means: all the code is there and 75% of it is working. There could still be a  few errors that show up in the console and a few things that don't work  yet.
+  This is what 75% done means:  
+  All the code is there and 75% of it is working. There could still be a  few errors that show up in the console and a few things that don't work yet.
 
-- Do a code review for your lab partner and post the code review in the beta version forum as well as uploading it to the code review Moodle assignment. Use a .docx file for the code review form (not a pdf) so your lab partner can edit the  "prod." column.
+- Do a code review for your lab partner using the code reveiw form for this lab and post the it in the Beta Version Forum for your lab partner as well as uploading it to the Moodle Code Review assignment. Use the provided .docx file for the code review (not a pdf) so your lab partner can edit the  "prod." column.
 
 ## Production Version
 
-- Upload your web app to citstudent.
+- Publish your web app to the citstudent web server.
 
-- Submit your lab to the Moodle assignemnt
+- Submit your lab to the Moodle Production Version assignemnt.
 
-  - In the "online text" for the Moodle assignment:
+  - In the online text box:
 
     - Paste a link to your GitHub repository.
 
