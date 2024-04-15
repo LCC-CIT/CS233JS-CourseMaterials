@@ -6,7 +6,7 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>ES6 Classes</h1>
+<h1>UML Class Diagrams</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
@@ -53,8 +53,6 @@ A way to visually represent software design models that is independent of any pa
   - Inheritance: triangle.
 
 - Cardinality (multiplicity)
-
-  (In UMLet, m1 indicates the end of the line with the diamond or arrow and m2 indicates the other end.)
 
   - Ranges: indicate a range with two dots. For example: 0..n
   - Cardinality relationships
