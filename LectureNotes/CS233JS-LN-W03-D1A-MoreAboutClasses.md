@@ -1,7 +1,7 @@
 ---
-title: Intro to Bootstrap
-description: Quick intro to Bootstrap 
-keywords: Bootstrap
+title: More OOP
+description: Why using classes and encapsulation makes your code better.
+keywords: OOP, class, encapsulation, getter, setter
 generator: Typora
 author: Brian Bird
 ---
