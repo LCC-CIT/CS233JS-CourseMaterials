@@ -72,7 +72,7 @@ classDiagram
         - name
         - totalScore
         - roundScore
-        -roundsWon
+        - roundsWon
         + roll(dice)
         + calculateScore(dice, round)
     }
@@ -83,6 +83,11 @@ classDiagram
     class Game {
         - players : Player[]
         - dice : Die[]
+        + addPlayer(name)
+        + nextRound()
+        + rollDice()
+        + getGameWinner()
+        +startNewGame()
     }
     Game "1" *-- "*" Player : contains
     Game "1" *-- "*" Die : contains
