@@ -29,7 +29,29 @@ author: Brian Bird
 
 Last week you learned how to create ES6 classes. This week you will learn more about OOP (Object Oriented Programming) and why you would want to use classes and objects.
 
-# Object Oriented Programming
+## Q & A for the In-Class Section
+
+- How many of you had a chance to watch the videos I posted last night? 
+  (I know I got them posted a bit late.)
+- Would you like me to go over this week's material in class?
+
+## Q and A for Everyone
+
+- Is it more helpful if I do a coding demo (write all the code and explain as I go), rather than do a "code tour" of code I've already written, like I did for the Bunco game?  
+  (I posted this in the discussion forum for online students to answer.)
+
+## Review of Card and Die Game Coding Basics
+
+If you would like some review, we can look at the Die Roller web app
+
+- Running on citstudent: https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/DieRoller/
+- Code on GitHub: https://github.com/LCC-CIT/CS233JS-CourseMaterials/tree/main/Examples/DiceExamples
+
+
+
+# Object Oriented
+
+#  Programming
 
 Last week you learned how to create ES6 classes. This week you will learn more about OOP (Object Oriented Programming) and why you would want to use classes and objects. We will be looking at a web app for playing the dice game  [Bunco](https://en.wikipedia.org/wiki/Bunco) as an example.
 
