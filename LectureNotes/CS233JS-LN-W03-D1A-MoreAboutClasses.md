@@ -90,7 +90,7 @@ class Player
 
 #### getters and setters
 
-If code outside a class need to access instance variables inside a class, we create special methods to do that. These special methods use the keywords `get` or `set`  and work like properties when accessed by code outside the class. For example, this is code from inside the Player class:
+If code outside a class need to access instance variables inside a class, we create special methods to do that. These special methods use the keywords `get` or `set`  and work like properties when accessed by code outside the class. For example, this is code from inside the `Player` class:
 
 ```javascript
 // Getters and Setters
@@ -106,7 +106,7 @@ If code outside a class need to access instance variables inside a class, we cre
     set roundsWon(value) { this.#roundsWon = value; }
 ```
 
-Here is code that accesses some of the Player instance variables on a player object:
+Here is code from the `Game` class that accesses the `Player` scores through a setter, on a player object:
 
 ```javascript
 startNewGame() {
