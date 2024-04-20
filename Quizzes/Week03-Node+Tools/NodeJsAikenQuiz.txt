@@ -1,0 +1,127 @@
+What is Node.js?
+A. A server-side runtime environment built on Google Chrome's JavaScript engine (V8 Engine).
+B. A client-side runtime environment built on Google Chrome's JavaScript engine (V8 Engine).
+C. A server-side runtime environment built on Firefox's Mozilla JavaScript engine.
+D. A client-side runtime environment built on Firefox's Mozilla JavaScript engine.
+E. A server-side runtime environment built on the NPM JavaScript engine.
+ANSWER: A
+
+What type of I/O model does Node.js use?
+A. Blocking I/O model.
+B. Event-driven, blocking I/O model.
+C. Event-driven, non-blocking I/O model.
+D. Non-blocking I/O model.
+E. Synchronous I/O model.
+ANSWER: C
+
+Which of the following is NOT a feature of Node.js?
+A. Asynchronous and Event Driven.
+B. Very Fast.
+C. Single Threaded but Highly Scalable.
+D. Multithreaded.
+E. No Buffering.
+ANSWER: D
+
+What license is Node.js released under?
+A. Only free for educational use.
+B. Only free for non-commercial use.
+C. MIT open source license.
+D. Subscription based, paid license.
+E. NPM proprietary license.
+ANSWER: C
+
+Which of the following is NOT an area where Node.js is commonly used?
+A. Web servers.
+B. Command line applications.
+C. Real-time chat applications.
+D. CPU intensive applications.
+E. REST APIs.
+ANSWER: D
+
+What is NPM?
+A. A package manager for Node.js.
+B. A networking protocol for computer communication via nodes.
+C. An IDE for doing software development with Node.js.
+D. A light-weight web server for Node.js development.
+E. A traspiler for converting between versions of JavaScript.
+ANSWER: A
+
+What does the acronym "NPM" stand for?
+A. Node Property Manager.
+B. Node Package Manager.
+C. Node Package Module.
+D. Node Property Manifest.
+E. Node Process Migration.
+ANSWER: B
+
+What is the purpose of the NPM utility?
+A. To install Node.js packages, perform version management, and dependency management.
+B. To provide a graphical user interface for configuring Node.js.
+C. To automate the process of writing and testing code for Node.js applications.
+D. To act as a built-in testing framework for Node.js code.
+E. To serve as a light-weight development web server for Node.js applications.
+ANSWER: A
+
+By default, when you install a package using NPM, what mode is it installed in?
+A. Global mode
+B. Local mode
+C. Development mode
+D. Production mode
+E. Dependency mode
+ANSWER: B
+
+What is the purpose of the `package.json` file in a Node.js project?
+A. It contains information about the project, such as its name, version, and dependencies.
+B. It contains the source code for the Node.js project.
+C. It is a configuration file for the Node.js runtime environment.
+D. It is a log file that records all the installed packages and their versions.
+E. It is a file that stores user credentials for accessing the NPM repository.
+ANSWER: A
+
+What is the main purpose of Webpack?
+A. To bundle and optimize JavaScript modules and dependencies
+B. To create a web server for serving files during development
+C. To transpile modern JavaScript code to older versions
+D. To minify and obfuscate JavaScript code for production
+E. To lint and format JavaScript code
+ANSWER: A
+
+Which of the following file types can Webpack transform if the corresponding loaders are included?
+A. HTML and CSS
+B. Images and fonts
+C. JSON and XML
+D. All of the above
+E. None of the above
+ANSWER: D
+
+What type of object does the `localStorage` property allow you to access?
+A. A Session object
+B. A Storage object
+C. A Cookie object
+D. A Document object
+E. A Window object
+ANSWER: B
+
+Which of the following is a key difference between `localStorage` and `sessionStorage`?
+A. `localStorage` data has no expiration time, while `sessionStorage` data gets cleared when the page session ends.
+B. `localStorage` data gets cleared when the page session ends, while `sessionStorage` data has no expiration time.
+C. `localStorage` data is stored on the server, while `sessionStorage` data is stored on the client.
+D. `localStorage` data is stored in memory, while `sessionStorage` data is stored on disk.
+E. There is no difference between `localStorage` and `sessionStorage`.
+ANSWER: A
+
+When is `localStorage` data cleared for a document loaded in a "private browsing" or "incognito" session?
+A. When the page is closed
+B. When the browser is closed
+C. When the last "private" tab is closed
+D. Never, it persists indefinitely
+E. After a specified time period
+ANSWER: C
+
+Which of the following statements about `localStorage` behavior for `file:` URLs is true?
+A. The requirements for `localStorage` behavior are well-defined and consistent across browsers.
+B. `localStorage` always returns the same object for all `file:` URLs.
+C. The requirements for `localStorage` behavior are undefined and may vary among different browsers.
+D. `localStorage` is not available for `file:` URLs.
+E. `localStorage` behavior for `file:` URLs is the same as for HTTP/HTTPS URLs.
+ANSWER: C
