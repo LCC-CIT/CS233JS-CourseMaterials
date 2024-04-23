@@ -1,8 +1,13 @@
 <!doctype html>
-<html>
+<html style='font-size:20px !important'>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-
+<meta name="title" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="material" content="">
+<meta name="author" content="">
+<meta name="generator" content="">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
@@ -20,7 +25,7 @@ a:active, a:hover { outline: 0px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 .typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
 }
@@ -45,7 +50,7 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
@@ -85,10 +90,10 @@ blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
-@media print { 
+@media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export * { print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -111,7 +116,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
 .md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
@@ -124,7 +129,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
 .md-toc-h5 .md-toc-inner { margin-left: 8em; }
 .md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) { 
+@media screen and (max-width: 48em) {
   .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
   .md-toc-h4 .md-toc-inner { margin-left: 5em; }
   .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
@@ -136,7 +141,7 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; }
 a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
@@ -152,7 +157,7 @@ mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 .md-expand mark .md-meta { opacity: 0.3 !important; }
 mark .md-meta { color: rgb(0, 0, 0); }
-@media print { 
+@media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
 .md-diagram-panel .messageText { stroke: none !important; }
@@ -165,19 +170,19 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
 .typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
 .typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
 }
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 800px) {
   .typora-export-sidebar { display: none; }
 }
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
 .outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
-.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
-.outline-expander:hover::before { content: ''; }
+.outline-expander:hover::before { content: ""; }
 .outline-h1 > .outline-item { padding-left: 0px; }
 .outline-h2 > .outline-item { padding-left: 1em; }
 .outline-h3 > .outline-item { padding-left: 2em; }
@@ -189,20 +194,34 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
 .outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
-.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
 .typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
-.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
 .typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
 .typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
 .md-inline-math-container mjx-container { zoom: 0.95; }
 mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
 
 
 :root {
@@ -558,6 +577,10 @@ header, .context-menu, .megamenu-content, footer{
     background-color: var(--side-bar-bg-color);
 }
 
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
 .md-lang {
     color: #b4654d;
 }
@@ -590,10 +613,10 @@ header, .context-menu, .megamenu-content, footer{
 }
 
 
- @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}} .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} h1,h2,h3,h4,h5 {white-space:pre-line}
 </style><title>Lab2BInstructions-diceGame</title>
 </head>
 <body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><h1>Lab 2B – Dice Game</h1><h4>CS233JS, Intermediate Programming: JavaScript</h4><h2>Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n478"><a class="md-toc-inner" style="" href="#objectives">Objectives</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n480"><a class="md-toc-inner" style="" href="#instructions">Instructions</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n481"><a class="md-toc-inner" style="" href="#clone-the-github-classroom-repo">Clone the GitHub Classroom Repo</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n483"><a class="md-toc-inner" style="" href="#write-a-dice-game-web-app">Write a Dice Game Web App</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n499"><a class="md-toc-inner" style="" href="#version-a">Version A</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n512"><a class="md-toc-inner" style="" href="#version-b">Version B</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n524"><a class="md-toc-inner" style="" href="#version-c">Version C</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n537"><a class="md-toc-inner" style="" href="#review-and-submission">Review and Submission</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n538"><a class="md-toc-inner" style="" href="#beta-version-and-code-review">Beta Version and Code Review</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n545"><a class="md-toc-inner" style="" href="#production-version">Production Version</a></span></p></div><h1 id='objectives'><span>Objectives</span></h1><p><span>Learn how to design and build a web app that employs </span><em><span>separation of concerns</span></em><span> by separating i/o code from the processing code and by using classes and </span><em><span>encapsulation</span></em><span>.</span></p><h1 id='instructions'><span>Instructions</span></h1><h2 id='clone-the-github-classroom-repo'><span>Clone the GitHub Classroom Repo</span></h2><p><span>Clone the Lab 2B repository from the GitHub classroom invitation. It won&#39;t have much in it, just the images for the six sides of a die. You will write all the code (and use some from my example).</span></p><h2 id='write-a-dice-game-web-app'><span>Write a Dice Game Web App</span></h2><p><span>Using the Bunco dice game as an example, write a dice game of your own. Your dice game should have the following files:</span></p><ul><li><p><span>index.html</span>&mdash;<span>the web page that the players interact with. The dice will be shown on this page using images from an images folder.</span></p></li><li><p><span>index.js</span>&mdash;<span>will contain all the i/o code which will primarily be event handler funcitons.</span></p></li><li><p><span>game.js</span>&mdash;<span>will contain a class named </span><code>Game</code><span> with the game-play logic for the game.</span></p></li><li><p><span>player.js</span>&mdash;<span>will contain a class named </span><code>Player</code><span> which holds the instance variables and methods related to a player.</span></p></li><li><p><span>Die.js</span>&mdash;<span>will contain a class named </span><code>Die</code><span> which holds the instace variables and methods related to the die.</span></p></li></ul><p><span>You will need to make all instance variables private and use </span><em><span>getters</span></em><span> and </span><em><span>setters</span></em><span> for any instance variables that need to be accessed from outside the class.</span></p><p><span>Please do not copy and then edit my whole Bunco game to make your game. I would like you to write yours from scratch. You can however use methods from my code and revise them as needed, but start by making your own files and skeletal code.</span></p><p><span>Do the appropriate version depending on which lab version group you are in.</span></p><h3 id='version-a'><span>Version A</span></h3><p><span>Design and code the dice game of 10,000 (aka Farkle). Here are </span><a href='https://www.dice-play.com/Games/TenThousand.htm'><span>instructions for playing the game</span></a><span>.</span></p><p><span>Some of the things that will be different from the Bunco game are:</span></p><ul><li><p><span>6 dice instead of 3.</span></p></li><li><p><span>Different rules for scoring.</span></p></li><li><p><span>Different socres to track.</span></p></li><li><p><span>Different rules for determining when a turn is over.</span></p><p>&nbsp;</p></li></ul><h3 id='version-b'><span>Version B</span></h3><p><span>Design and code the dice game of ship, captain, crew. Here are </span><a href='https://en.wikipedia.org/wiki/Ship,_captain,_and_crew'><span>instructions for playing the game</span></a><span>.</span></p><ul><li><p><span>5 dice instead of 3.</span></p></li><li><p><span>Different rules for scoring.</span></p></li><li><p><span>Different socres to track.</span></p></li><li><p><span>Different rules for determining when a turn is over.</span></p><p>&nbsp;</p></li></ul><h3 id='version-c'><span>Version C</span></h3><p><span>Design and code the dice game of sevens. Here are the </span><a href='https://www.dicegamedepot.com/sevens-dice-game-rules/'><span>instructions for playing the game</span></a><span>.</span></p><p><span>Some of the things that will be different from the Bunco game are:</span></p><ul><li><p><span>6 dice instead of 3.</span></p></li><li><p><span>Different rules for scoring.</span></p></li><li><p><span>Different socres to track.</span></p></li><li><p><span>Different rules for determining when a turn is over.</span></p><p>&nbsp;</p></li></ul><h1 id='review-and-submission'><span>Review and Submission</span></h1><h2 id='beta-version-and-code-review'><span>Beta Version and Code Review</span></h2><ul><li><p><span>When your code is at least 75% done, </span><a href='https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository'><span>add your lab partner as a collaborator to your GitHub repository</span></a><span> and make a post in the Beta Version Forum with a link to your repository and a message to your lab partner letting them know you are ready for a code review.. You won&#39;t able to view your lab partner&#39;s post until you have posted in the forum yourself.  </span></p><p><span>This is what 75% done means:</span><br/><span>All the code is there and 75% of it is working. There could still be a  few errors that show up in the console and a few things that don&#39;t work yet.</span></p></li><li><p><span>Do a code review for your lab partner using the code reveiw form for this lab and post the it in the Beta Version Forum for your lab partner as well as uploading it to the Moodle Code Review assignment. Use the provided .docx file for the code review (not a pdf) so your lab partner can edit the  &quot;prod.&quot; column.</span></p></li></ul><h2 id='production-version'><span>Production Version</span></h2><ul><li><p><span>Publish your web app to the </span><a href='http://citstudent.lanecc.edu/'><span>citstudent web server</span></a><span>.</span></p></li><li><p><span>Submit your lab to the Moodle Production Version assignemnt.</span></p><ul><li><p><span>In the online text box:</span></p><ul><li><p><span>Paste a link to your GitHub repository.</span></p></li><li><p><span>Paste a link to your web app running on citstudent.</span></p></li></ul></li><li><p><span>Upload the code review your lab partner did for you with the &quot;prod.&quot; column completed by you.</span></p></li></ul></li></ul><p>&nbsp;</p><hr /><p><span>Written by Brian Bird, Lane Community College, spring 2024</span></p><hr /><p>&nbsp;</p></div></div>
-</body>
+<div id='write'  class=''><h1>Lab 2B – Dice Game</h1><h4>CS233JS, Intermediate Programming: JavaScript</h4><h2>Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n5"><a class="md-toc-inner" style="" href="#objectives">Objectives</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n7"><a class="md-toc-inner" style="" href="#instructions">Instructions</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n8"><a class="md-toc-inner" style="" href="#clone-the-github-classroom-repo">Clone the GitHub Classroom Repo</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n10"><a class="md-toc-inner" style="" href="#write-a-dice-game-web-app">Write a Dice Game Web App</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n26"><a class="md-toc-inner" style="" href="#version-a">Version A</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n39"><a class="md-toc-inner" style="" href="#version-b">Version B</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n51"><a class="md-toc-inner" style="" href="#version-c">Version C</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n64"><a class="md-toc-inner" style="" href="#review-and-submission">Review and Submission</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n65"><a class="md-toc-inner" style="" href="#beta-version-and-code-review">Beta Version and Code Review</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n72"><a class="md-toc-inner" style="" href="#production-version">Production Version</a></span></p></div><h1 id='objectives'><span>Objectives</span></h1><p><span>Learn how to design and build a web app that employs </span><em><span>separation of concerns</span></em><span> by separating i/o code from the processing code and by using classes and </span><em><span>encapsulation</span></em><span>.</span></p><h1 id='instructions'><span>Instructions</span></h1><h2 id='clone-the-github-classroom-repo'><span>Clone the GitHub Classroom Repo</span></h2><p><span>Clone the Lab 2B repository from the GitHub classroom invitation. It won&#39;t have much in it, just the images for the six sides of a die. You will write the code (and use some from my examples).</span></p><h2 id='write-a-dice-game-web-app'><span>Write a Dice Game Web App</span></h2><p><span>Using the </span><a href='https://github.com/LCC-CIT/CS233JS-BuncoGame'><span>Bunco</span></a><span> and </span><a href='https://github.com/LCC-CIT/CS233JS-Going2Boston'><span>Going to Boston</span></a><span> dice games as examples, write a dice game of your own. Your dice game should have the following files:</span></p><ul><li><p><span>index.html</span>&mdash;<span>the web page that the players interact with. The dice will be shown on this page using images from an images folder.</span></p></li><li><p><span>index.js</span>&mdash;<span>will contain all the i/o code which will primarily be event handler funcitons.</span></p></li><li><p><span>game.js</span>&mdash;<span>will contain a class named </span><code>Game</code><span> with the game-play logic for the game.</span></p></li><li><p><span>player.js</span>&mdash;<span>will contain a class named </span><code>Player</code><span> which holds the instance variables and methods related to a player.</span></p></li><li><p><span>Die.js</span>&mdash;<span>will contain a class named </span><code>Die</code><span> which holds the instace variables and methods related to the die.</span></p></li></ul><p><span>You will need to make all instance variables private and use </span><em><span>getters</span></em><span> and </span><em><span>setters</span></em><span> for any instance variables that need to be accessed from outside the class.</span></p><p><span>The best approach is to not copy an entire example game into your project. It usually works better to create the files you need and then copy over just the methods you know you can re-use from the example. </span></p><p><span>Do the appropriate version depending on which lab version group you are in.</span></p><h3 id='version-a'><span>Version A</span></h3><p><span>Design and code the dice game of 10,000 (aka Farkle). Here are </span><a href='https://www.dice-play.com/Games/TenThousand.htm'><span>instructions for playing the game</span></a><span>.</span></p><p><span>Some of the things that will be different from the Bunco game are:</span></p><ul><li><p><span>6 dice instead of 3.</span></p></li><li><p><span>Different rules for scoring.</span></p></li><li><p><span>Different socres to track.</span></p></li><li><p><span>Different rules for determining when a turn is over.</span></p><p>&nbsp;</p></li></ul><h3 id='version-b'><span>Version B</span></h3><p><span>Design and code the dice game of ship, captain, crew. Here are </span><a href='https://en.wikipedia.org/wiki/Ship,_captain,_and_crew'><span>instructions for playing the game</span></a><span>.</span></p><ul><li><p><span>5 dice instead of 3.</span></p></li><li><p><span>Different rules for scoring.</span></p></li><li><p><span>Different socres to track.</span></p></li><li><p><span>Different rules for determining when a turn is over.</span></p><p>&nbsp;</p></li></ul><h3 id='version-c'><span>Version C</span></h3><p><span>Design and code the dice game of sevens. Here are the </span><a href='https://www.dicegamedepot.com/sevens-dice-game-rules/'><span>instructions for playing the game</span></a><span>.</span></p><p><span>Some of the things that will be different from the Bunco game are:</span></p><ul><li><p><span>6 dice instead of 3.</span></p></li><li><p><span>Different rules for scoring.</span></p></li><li><p><span>Different socres to track.</span></p></li><li><p><span>Different rules for determining when a turn is over.</span></p><p>&nbsp;</p></li></ul><h1 id='review-and-submission'><span>Review and Submission</span></h1><h2 id='beta-version-and-code-review'><span>Beta Version and Code Review</span></h2><ul><li><p><span>When your code is at least 75% done, </span><a href='https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository'><span>add your lab partner as a collaborator to your GitHub repository</span></a><span> and make a post in the Beta Version Forum with a link to your repository and a message to your lab partner letting them know you are ready for a code review.. You won&#39;t able to view your lab partner&#39;s post until you have posted in the forum yourself.  </span></p><p><span>This is what 75% done means:</span><br/><span>All the code is there and 75% of it is working. There could still be a  few errors that show up in the console and a few things that don&#39;t work yet.</span></p></li><li><p><span>Do a code review for your lab partner using the code reveiw form for this lab and post the it in the Beta Version Forum for your lab partner as well as uploading it to the Moodle Code Review assignment. Use the provided .docx file for the code review (not a pdf) so your lab partner can edit the  &quot;prod.&quot; column.</span></p></li></ul><h2 id='production-version'><span>Production Version</span></h2><ul><li><p><span>Publish your web app to the </span><a href='http://citstudent.lanecc.edu/'><span>citstudent web server</span></a><span>.</span></p></li><li><p><span>Submit your lab to the Moodle Production Version assignemnt.</span></p><ul><li><p><span>In the online text box:</span></p><ul><li><p><span>Paste a link to your GitHub repository.</span></p></li><li><p><span>Paste a link to your web app running on citstudent.</span></p></li></ul></li><li><p><span>Upload the code review your lab partner did for you with the &quot;prod.&quot; column completed by you.</span></p></li></ul></li></ul><p>&nbsp;</p><hr /><p><span>Written by Brian Bird, Lane Community College, spring 2024</span></p><hr /><p>&nbsp;</p></div></div>
+<base target="_blank"></body>
 </html>

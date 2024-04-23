@@ -1,8 +1,13 @@
 <!doctype html>
-<html>
+<html style='font-size:20px !important'>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-
+<meta name="title" content="More OOP">
+<meta name="description" content="Why using classes and encapsulation makes your code better.">
+<meta name="keywords" content="OOP, class, encapsulation, getter, setter">
+<meta name="material" content="">
+<meta name="author" content="Brian Bird">
+<meta name="generator" content="Typora">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
@@ -20,7 +25,7 @@ a:active, a:hover { outline: 0px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 .typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
 }
@@ -45,7 +50,7 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
@@ -85,10 +90,10 @@ blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
-@media print { 
+@media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export * { print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -111,7 +116,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
 .md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
@@ -124,7 +129,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
 .md-toc-h5 .md-toc-inner { margin-left: 8em; }
 .md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) { 
+@media screen and (max-width: 48em) {
   .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
   .md-toc-h4 .md-toc-inner { margin-left: 5em; }
   .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
@@ -136,7 +141,7 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; }
 a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
@@ -152,7 +157,7 @@ mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 .md-expand mark .md-meta { opacity: 0.3 !important; }
 mark .md-meta { color: rgb(0, 0, 0); }
-@media print { 
+@media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
 .md-diagram-panel .messageText { stroke: none !important; }
@@ -165,19 +170,19 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
 .typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
 .typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
 }
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 800px) {
   .typora-export-sidebar { display: none; }
 }
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
 .outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
-.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
-.outline-expander:hover::before { content: ''; }
+.outline-expander:hover::before { content: ""; }
 .outline-h1 > .outline-item { padding-left: 0px; }
 .outline-h2 > .outline-item { padding-left: 1em; }
 .outline-h3 > .outline-item { padding-left: 2em; }
@@ -189,20 +194,34 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
 .outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
-.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
 .typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
-.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
 .typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
 .typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
 .md-inline-math-container mjx-container { zoom: 0.95; }
 mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
 
 
 :root {
@@ -558,6 +577,10 @@ header, .context-menu, .megamenu-content, footer{
     background-color: var(--side-bar-bg-color);
 }
 
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
 .md-lang {
     color: #b4654d;
 }
@@ -590,10 +613,10 @@ header, .context-menu, .megamenu-content, footer{
 }
 
 
- @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}} .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} h1,h2,h3,h4,h5 {white-space:pre-line}
 </style><title>More OOP</title>
 </head>
 <body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><h1>More About Classes and Object Oriented Programming</h1><p><strong><span>CS233JS Intermediate Programming: JavaScript</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Topics by Week</span></th><th>&nbsp;</th></tr></thead><tbody><tr><td><span>1. Intro to Course, Bootstrap and JavaScript Review</span></td><td><span>6. HTML5 Canvas, CSS Flexbox</span></td></tr><tr><td><span>2. ES6 Classes and Git</span></td><td><span>7. AJAX, ES6 promises, fetch API</span></td></tr><tr><td><span>3. More about Classes </span><strong><span>&lt;== New topic!</span></strong></td><td><span>8. Making API calls, graphs and charts, Google maps</span></td></tr><tr><td><span>4. </span><mark><span>More time to finish the dice games</span></mark></td><td><span>9. Term Project</span></td></tr><tr><td><span>5. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. Midterm Quiz</span></td><td><span>10. Review</span></td></tr><tr><td><span>11. Final Quiz</span></td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n29"><a class="md-toc-inner" href="#announcements">Announcements</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n115"><a class="md-toc-inner" href="#guidance-for-finishing-the-dice-games">Guidance for Finishing the Dice Games</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n120"><a class="md-toc-inner" href="#review">Review</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n150"><a class="md-toc-inner" href="#designing-the-game">Designing the Game</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n163"><a class="md-toc-inner" href="#testing-and-debugging">Testing and Debugging</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n109"><a class="md-toc-inner" href="#examples">Examples</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n90"><a class="md-toc-inner" href="#reference">Reference</a></span></p></div><h1 id='announcements'><span>Announcements</span></h1><ul><li><p><span>Due dates pushed out one week</span></p><ul><li><p><span>You can start on next week&#39;s topic whenever you are done with the dice game</span></p></li></ul></li><li><p><span>MIdterm is next week (week 5).</span></p></li></ul><p>&nbsp;</p><h1 id='guidance-for-finishing-the-dice-games'><span>Guidance for Finishing the Dice Games</span></h1><h2 id='review'><span>Review</span></h2><ul><li><p><span>Review of how to use multiple classes</span></p><ul><li><p><span>One declaration per file</span></p></li><li><p><span>Objects instantiated where the code will be used</span></p><ul><li><p><span>Array of Die in Game</span></p></li><li><p><span>Array of Players in Game</span></p></li><li><p><span>Game object in index.js</span></p></li></ul></li><li><p><span>All of the files are added in script elements in index.html</span></p></li></ul></li><li><p><span>Review getter and setters</span></p><ul><li><p><span>Look at the getters and setters in Player and see how they are used like properties in Game.</span></p></li></ul></li></ul><h2 id='designing-the-game'><span>Designing the Game</span></h2><ul><li><p><span>Start by understanding the requirements.</span></p><ul><li><p><span>What is the goal of the game (how do yo win?)</span></p></li><li><p><span>How do players take turns?</span></p></li><li><p><span>How is scoring done?</span></p></li><li><p><span>What other rules are there?</span></p></li></ul></li><li><p><span>Look at the Bunco game and see what you can just use as without change. Copy them into your project.</span></p></li><li><p><span>For the things that still need to be done, make a list of what they are, then write method stubs for those things in each class as appropriate. See what code you can use or modify from the Going to Boston game.</span></p></li><li><p><span>Look at which methods will be the ones that won&#39;t depend on other stub methods and write and test those first.</span></p></li></ul><h2 id='testing-and-debugging'><span>Testing and Debugging</span></h2><ul><li><p><span>Write a simple function that you can run from the console that you can use to test each method as you write it. You will create an object for the class that contains the method you want to test.</span></p></li><li><p>&nbsp;</p></li></ul><h1 id='examples'><span>Examples</span></h1><p><a href='https://github.com/LCC-CIT/CS233JS-BuncoGame'><span>Bunco source code on GitHub</span></a></p><p><a href='http://citstudent.lanecc.edu/~brianb/CS233JS/Examples//Bunco'><span>Bunco running on the citstudent web server</span></a></p><p><a href='https://github.com/LCC-CIT/CS233JS-Going2Boston'><span>Goinog to Boston code on GitHub</span></a></p><p><a href='https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/Going2Boston/'><span>Going to Boston running on citstudent</span></a></p><h1 id='reference'><span>Reference</span></h1><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes'><span>Using Classes Guide</span></a><span> on MDN</span></p><p>&nbsp;</p></li></ul><p>&nbsp;</p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Intermediate JavaScript Lecture Notes by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written in </span><time><span>2024</span></time><span>, are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><hr /></div></div>
-</body>
+<div id='write'  class=''><h1>More About Classes and Object Oriented Programming</h1><p><strong><span>CS233JS Intermediate Programming: JavaScript</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Topics by Week</span></th><th>&nbsp;</th></tr></thead><tbody><tr><td><span>1. Intro to Course, Bootstrap and JavaScript Review</span></td><td><span>6. HTML5 Canvas, CSS Flexbox</span></td></tr><tr><td><span>2. ES6 Classes and Git</span></td><td><span>7. AJAX, ES6 promises, fetch API</span></td></tr><tr><td><span>3. More about Classes </span><strong><span>&lt;== New topic!</span></strong></td><td><span>8. Making API calls, graphs and charts, Google maps</span></td></tr><tr><td><span>4. </span><mark><span>More time to finish the dice games</span></mark></td><td><span>9. Term Project</span></td></tr><tr><td><span>5. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. Midterm Quiz</span></td><td><span>10. Review</span></td></tr><tr><td><span>11. Final Quiz</span></td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n29"><a class="md-toc-inner" style="" href="#announcements">Announcements</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n39"><a class="md-toc-inner" style="" href="#guidance-for-finishing-the-dice-games">Guidance for Finishing the Dice Games</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n40"><a class="md-toc-inner" style="" href="#review">Review</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n63"><a class="md-toc-inner" style="" href="#designing-the-game">Designing the Game</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n82"><a class="md-toc-inner" style="" href="#testing-and-debugging">Testing and Debugging</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n88"><a class="md-toc-inner" style="" href="#examples">Examples</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n93"><a class="md-toc-inner" style="" href="#reference">Reference</a></span></p></div><h1 id='announcements'><span>Announcements</span></h1><ul><li><p><span>Due dates pushed out one week.</span></p><ul><li><p><span>You can start on next week&#39;s topic whenever you are done with the dice game.</span></p></li></ul></li><li><p><span>Some people are making their own GitHub repo. Please just use the one that you got via GitHub Classroom. I use GitHub Classroom tools to manage and grade those. If you clone a different repository, then it won&#39;t work with my tools.</span></p></li><li><p><span>MIdterm is next week (week 5).</span></p></li></ul><p>&nbsp;</p><h1 id='guidance-for-finishing-the-dice-games'><span>Guidance for Finishing the Dice Games</span></h1><h2 id='review'><span>Review</span></h2><ul><li><p><span>Review of how to use multiple classes.</span></p><ul><li><p><span>One class declaration per file.</span></p></li><li><p><span>Objects get instantiated where the code will be used.</span></p><ul><li><p><span>Array of Die in Game.</span></p></li><li><p><span>Array of Players in Game.</span></p></li><li><p><span>Game object in index.js.</span></p></li></ul></li><li><p><span>All of the files are linked in HTML script elements in index.html.</span></p></li></ul></li><li><p><span>Review getter and setters.</span></p><ul><li><p><span>Look at the getters and setters in Player and see how they are used in Game. They are used as if they were public fields.</span></p></li></ul></li></ul><h2 id='designing-the-game'><span>Designing the Game</span></h2><ul><li><p><span>Start by understanding the requirements.</span></p><ul><li><p><span>What is the goal of the game (how do you win?)</span></p></li><li><p><span>How do players take turns?</span></p></li><li><p><span>How is scoring done?</span></p></li><li><p><span>What other rules are there?</span></p></li></ul></li><li><p><span>Look at the Bunco game and see which methods you can just use as-is without change. Copy them into your project.</span></p></li><li><p><span>See what code you can use or modify from the Going to Boston game. Copy that into your project.</span></p></li><li><p><span>For the things that still need to be done, make a list of what they are, then write method stubs for those in each class where they fit. </span></p></li><li><p><span>Look at which methods will be the ones that won&#39;t depend on other stub methods and write and test those first.</span></p></li></ul><h2 id='testing-and-debugging'><span>Testing and Debugging</span></h2><p><span>Write a simple function that you can run from the console that you can use to test each method as you write it. You will create an object for the class that contains the method you want to test.</span></p><p>&nbsp;</p><h1 id='examples'><span>Examples</span></h1><p><a href='https://github.com/LCC-CIT/CS233JS-BuncoGame'><span>Bunco source code on GitHub</span></a></p><p><a href='http://citstudent.lanecc.edu/~brianb/CS233JS/Examples//Bunco'><span>Bunco running on the citstudent web server</span></a></p><p><a href='https://github.com/LCC-CIT/CS233JS-Going2Boston'><span>Goinog to Boston code on GitHub</span></a></p><p><a href='https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/Going2Boston/'><span>Going to Boston running on citstudent</span></a></p><h1 id='reference'><span>Reference</span></h1><ul><li><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes'><span>Using Classes Guide</span></a><span> on MDN</span></p><p>&nbsp;</p></li></ul><p>&nbsp;</p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Intermediate JavaScript Lecture Notes by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written in </span><time><span>2024</span></time><span>, are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><hr /></div></div>
+<base target="_blank"></body>
 </html>

@@ -14,11 +14,11 @@ Learn how to design and build a web app that employs *separation of concerns* by
 
 ## Clone the GitHub Classroom Repo
 
-Clone the Lab 2B repository from the GitHub classroom invitation. It won't have much in it, just the images for the six sides of a die. You will write all the code (and use some from my example).
+Clone the Lab 2B repository from the GitHub classroom invitation. It won't have much in it, just the images for the six sides of a die. You will write the code (and use some from my examples).
 
 ## Write a Dice Game Web App
 
-Using the Bunco dice game as an example, write a dice game of your own. Your dice game should have the following files:
+Using the [Bunco](https://github.com/LCC-CIT/CS233JS-BuncoGame) and [Going to Boston](https://github.com/LCC-CIT/CS233JS-Going2Boston) dice games as examples, write a dice game of your own. Your dice game should have the following files:
 
 - index.html&mdash;the web page that the players interact with. The dice will be shown on this page using images from an images folder.
 - index.js&mdash;will contain all the i/o code which will primarily be event handler funcitons.
@@ -28,7 +28,7 @@ Using the Bunco dice game as an example, write a dice game of your own. Your dic
 
 You will need to make all instance variables private and use *getters* and *setters* for any instance variables that need to be accessed from outside the class.
 
-Please do not copy and then edit my whole Bunco game to make your game. I would like you to write yours from scratch. You can however use methods from my code and revise them as needed, but start by making your own files and skeletal code.
+The best approach is to not copy an entire example game into your project. It usually works better to create the files you need and then copy over just the methods you know you can re-use from the example. 
 
 Do the appropriate version depending on which lab version group you are in.
 

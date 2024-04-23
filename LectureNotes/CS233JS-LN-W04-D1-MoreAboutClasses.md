@@ -27,8 +27,9 @@ author: Brian Bird
 
 # Announcements
 
-- Due dates pushed out one week
-  - You can start on next week's topic whenever you are done with the dice game
+- Due dates pushed out one week.
+  - You can start on next week's topic whenever you are done with the dice game.
+- Some people are making their own GitHub repo. Please just use the one that you got via GitHub Classroom. I use GitHub Classroom tools to manage and grade those. If you clone a different repository, then it won't work with my tools.
 - MIdterm is next week (week 5).
 
 
@@ -37,31 +38,33 @@ author: Brian Bird
 
 ## Review
 
-- Review of how to use multiple classes
-  - One declaration per file
-  - Objects instantiated where the code will be used
-    - Array of Die in Game
-    - Array of Players in Game
-    - Game object in index.js
-  - All of the files are added in script elements in index.html
-- Review getter and setters
-  - Look at the getters and setters in Player and see how they are used like properties in Game.
+- Review of how to use multiple classes.
+  - One class declaration per file.
+  - Objects get instantiated where the code will be used.
+    - Array of Die in Game.
+    - Array of Players in Game.
+    - Game object in index.js.
+  - All of the files are linked in HTML script elements in index.html.
+- Review getter and setters.
+  - Look at the getters and setters in Player and see how they are used in Game. They are used as if they were public fields.
 
 ## Designing the Game
 
 - Start by understanding the requirements.
-  - What is the goal of the game (how do yo win?)
+  - What is the goal of the game (how do you win?)
   - How do players take turns?
   - How is scoring done?
   - What other rules are there?
-- Look at the Bunco game and see what you can just use as without change. Copy them into your project.
-- For the things that still need to be done, make a list of what they are, then write method stubs for those things in each class as appropriate. See what code you can use or modify from the Going to Boston game.
+- Look at the Bunco game and see which methods you can just use as-is without change. Copy them into your project.
+- See what code you can use or modify from the Going to Boston game. Copy that into your project.
+- For the things that still need to be done, make a list of what they are, then write method stubs for those in each class where they fit. 
 - Look at which methods will be the ones that won't depend on other stub methods and write and test those first.
 
 ## Testing and Debugging
 
-- Write a simple function that you can run from the console that you can use to test each method as you write it. You will create an object for the class that contains the method you want to test.
-- 
+Write a simple function that you can run from the console that you can use to test each method as you write it. You will create an object for the class that contains the method you want to test.
+
+
 
 # Examples
 
