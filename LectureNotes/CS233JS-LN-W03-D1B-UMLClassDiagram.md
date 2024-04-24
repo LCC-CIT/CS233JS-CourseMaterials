@@ -27,7 +27,7 @@ author: Brian Bird
 
 # Unified Modeling Language
 
-A way to visually represent software design models that is independent of any particular computer language. There are [fourteen types of UML diagrams](https://creately.com/blog/diagrams/uml-diagram-types-examples/). We will just be using [UML class diagrams](https://en.wikipedia.org/wiki/Class_diagram).
+A way to visually represent software design models that is independent of any particular computer language. There are [fourteen types of UML diagrams](https://creately.com/blog/diagrams/uml-diagram-types-examples/). We will just be using [UML class diagram](https://en.wikipedia.org/wiki/Class_diagram).
 
 - Representing classes
 
@@ -66,6 +66,8 @@ A way to visually represent software design models that is independent of any pa
 
 # UML Class Diagram for Bunco
 
+This is the class diagram for a Bunco dice game. The code is availble in a [GitHub repository](https://github.com/LCC-CIT/CS233JS-Going2Boston).
+
 ```mermaid
 classDiagram
     class Player {
@@ -89,15 +91,29 @@ classDiagram
         + getGameWinner()
         +startNewGame()
     }
-    Game "1" *-- "*" Player : contains
-    Game "1" *-- "*" Die : contains
+    Game "1" *-- "2..*" Player
+    Game "1" *-- "6" Die
 ```
 
 
 
 
 
+## Class Relationships in the Bunco Game
 
+The relationships in this diagram are both composition, the "whole-part" relationship.
+
+- Game contains Die as a part. 
+  Game has an array of dice that hold the Die objects.
+- Game contains Player as a part 
+  Game has an array of players that hold Player objects.
+
+## Dependencies
+
+Game depends on (uses) the Player and Die, but the Player and Die don't depend on anything.  
+One way to think about the dependencies is that methods in Game call methods in Player and Die, but not the revers.
+
+In the full implementation of the game there is also an index.js file that contsins the code that instantiates a Game object and that handles interaction with the web page (index.htm.). Function calls in index.js call methods on the game object, but not the reverse.
 
 # Reference
 
