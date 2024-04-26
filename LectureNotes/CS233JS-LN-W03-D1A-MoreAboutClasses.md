@@ -194,7 +194,7 @@ This isn't a bad thing, but can cause problems when the dependencies get too com
 
 ### What Knows About What
 
-Dependencies are about what uses what. Another way of saying this is that dependencies are about what has to know about what. The code in index.js has to know about the HTML code, but not vice-versa. The Game class has to know about the Die and Player classes, but not vice-versa.
+Dependencies are about what uses what. Another way of saying this is that dependencies are about what has to know about what. The code in index.js has to know about the HTML code, but not vice-versa. The code in index.js has to know about the Game class, which has to know about the Die and Player classes, but not vice-versa.
 
 
 ```mermaid
