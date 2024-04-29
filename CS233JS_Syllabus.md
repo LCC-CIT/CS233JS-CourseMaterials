@@ -6,7 +6,7 @@
 | ----------------- | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ |
 | **Course Number** | CS 233JS                                                     |      | **Name**          | Brian Bird                                                   |
 | **CRN**           | Hybrid (on campus) 41508<br />Online 40952                   |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
-| **Day & Time**    | M, W 12:00&dash;1:50                                         |      | **Office Hours**  | M&mdash;Th 4:00&ndash;4:50                                   |
+| **Day & Time**    | M, W 12:00&dash;1:50                                         |      | **Office Hours**  | M&mdash;Th 11:00&ndash;11:50                                 |
 | **Room**          | Building 19, Room 128<br />[Zoom meeting](https://lanecc.zoom.us/j/92278670280) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/99949382507) |
 
 <h2>Table of Contents</h2>
@@ -266,13 +266,14 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **1**  | JavaScript Review and Bootstrap                              | Lab 1<br />Version 1 of stopwatch, concentration and tic-tac-toe. | Quiz 1<br />Lab 1 Beta                                       |
 | **2**  | ES6 Features and Git  <br />ES6: Function expressions, arrow functions, JSON, template strings, restructuring, and classes. | Lab 2<br />Version 2 of stopwatch, concentration and tic-tac-toe. Refactor to use classes and other ES6 features. | lab 1 code review <br />Quiz 2  <br />Lab 1 production<br />Lab 2 Beta |
-| **3**  | JS Dev Tools: Node.js, NPM, Webpack, LocalStorage            |                                                              | lab 2 code review  <br />Quiz 3 <br />Lab 2 production<br />Lab 3 Beta |
-| **4**  | HTML5 Canvas, CSS Flexbox                                    |                                                              | lab 3 code review<br />Quiz 4<br />Lab 3 production version<br />Lab 4 Beta |
-| **5**  | Midterm Review and Quiz                                      |                                                              | lab 4 code review   <br />Lab 4 production<br />Term project proposal<br />Midterm quiz |
-| **6**  | AJAX, ES6 promises, fetch API                                |                                                              | Quiz 5  <br />Lab 5 Beta                                     |
-| **7**  | Making API calls, graphs and charts, Google maps             |                                                              | lab 5 code review<br />Reading quiz 6<br />Lab 5 production version<br />Lab  Beta 6 |
-| **8**  | TBD                                                          |                                                              | lab 6 code review<br />Reading quiz 7<br />Lab 6 production version<br />Lab  Beta 7 |
-| **9**  | Term Project                                                 |                                                              | lab 7 code review<br />Lab 7 production version<br />Beta version of term project |
+| **3**  | Classes, composition, getters and setters                    |                                                              | lab 2 code review  <br />Quiz 2B <br />Lab 2 production<br /> |
+| **4**  | Completion of lab 2B                                         |                                                              | Quiz 3<br />Lab 2B Beta                                      |
+| **5**  | JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. <br />Midterm Quiz |                                                              | lab 2B code review   <br />Lab 2B production<br />Lab 3 Beta<br />Midterm quiz |
+| **6**  | HTML5 Canvas, CSS Flexbox.                                   |                                                              | Quiz 4  <br />lab 3 code review <br />Lab 3 production<br />Lab 4 Beta<br />Term project proposal<br /> |
+|        |                                                              |                                                              |                                                              |
+| **7**  | AJAX, ES6 promises, fetch API                                |                                                              | lab 4 code review<br />Reading quiz 5<br />Lab 4 production version<br />Lab  Beta 5 |
+| **8**  | Making API calls, graphs and charts, Google maps             |                                                              | lab 5 code review<br />Reading quiz 6<br />Lab 5 production version<br />Lab  Beta 6 |
+| **9**  | Term Project                                                 |                                                              | lab 6 code review<br />Lab 6 production version<br />Beta version of term project |
 | **10** | Review                                                       |                                                              | Production version of term project                           |
 | **11** | Finals week                                                  |                                                              | Final quiz:<br />In the classroom on 6/10<br />In the testing center 6/10&mdash;6/12 |
 
