@@ -1,12 +1,12 @@
 ---
-title: More OOP
-description: Why using classes and encapsulation makes your code better.
-keywords: OOP, class, encapsulation, getter, setter
+title: Node.js + Tools
+description: Node.js and dev tools in the Node development eco-system.
+keywords: Node, NPM, Babel, Webpack
 generator: Typora
 author: Brian Bird
 ---
 
-<h1>More About Classes and Object Oriented Programming</h1>
+<h1>Node.js and JavaScript Dev Tools</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
@@ -120,7 +120,7 @@ npm run build
 
 Babel.js is a JavaScript compiler that converts modern JavaScript (ES6+) into backwards-compatible versions for older browsers and environments. It’s widely used in web development for compatibility purposes.
 
-
+Node.js is required to run Babel.
 
 # Webpack
 
@@ -142,6 +142,10 @@ npm run watch
 
 
 
+Node.js is required to run Webpack.
+
+
+
 # Reference
 
 - [Node.js official site](https://nodejs.org/en)
@@ -149,6 +153,8 @@ npm run watch
 - [Babel official site](https://babeljs.io/)
 
 - [Webpack official site](https://webpack.js.org/)
+
+- [ECMAScript Version History](https://en.wikipedia.org/wiki/ECMAScript_version_history)
 
 - [ECMAScript Browser Compatibility Table](https://compat-table.github.io/compat-table/es6/). 
 
