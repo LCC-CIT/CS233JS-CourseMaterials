@@ -32,21 +32,12 @@ author: Brian Bird
 ## Announcements
 
 - Midterm opens on Thursday, closes on Sunday.
-- Change of drop-in office hours (Zoom and in person) to:  
-  - 11:00am M, T, Th
-  - 10:00am Wednesdays
-
-
-​	And I'm available at other times too, just let me know when you'd like to meet.
 
 - College closed this Friday.
 
 ## Reminders
 
-- Tuesday (tomrrow)  
-  Lab 2B (dice game) code review is due.  
-  I'll be happy to help anyone who is still working on this!
-- Wednesday: 
+- Wednesday (today): 
   Reading quiz 3 closes
 - Thursday: 
   - Lab 2B production version due.
@@ -59,90 +50,40 @@ author: Brian Bird
 
 
 
-# Node.js
+# New ES6 Syntax/Features
 
-Node.js, often just called "Node"[^1], is an open-source, cross-platform runtime environment that allows JavaScript to run outside a browser, enabling server-side scripting and command line applications. It enables running JavaScript everywhere.
+## New to You in Lab 3
 
-## NPM
+These are "new" ES6 features that Mari introduced you to and that you are using in this week's lab assignment[^1]. 
 
-NPM, or Node Package Manager, is the default package manager for Node.js. It allows developers to install and manage JavaScript packages (code libraries) in their projects as well as share packages with other developers.
+### Template Strings
 
-## Installation
+aka template literals
 
-There are Node installers for Windows, Mac OS, and Linux. The installers includes NPM. [Download here](https://nodejs.org/en/download).
+### Local Storage
 
-## Package.json
+- localStorage["key"]
+- localStorage.getItem["key"]
+- localStorage.setItem("tasks", this.tasks)
 
-### devDependencies section
+## Arrays
 
-Each Node project has a package.json file. One of the things it contains is a list of all the node modules the project needs, aka the project's *dependencies*. 
+- Array.reduce()
+- Array.push()
 
-```json
-"devDependencies": {
-    "@babel/cli": "^7.18.10",
-    "@babel/core": "^7.19.1",
-    "@babel/preset-env": "^7.19.1",
-    "html-webpack-plugin": "^5.5.0",
-    "copy-webpack-plugin": "^11.0.0",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.1"
-  }
-```
+### HTML form validation
 
-To download and install these modules type:
+- classList.add()
+- classList.remove()
+- is-invalid Bootstrap style
 
-```bash
-npm install
-```
+### JSON
 
-### scripts section
-
- The scripts section of package.json allows you to create “macros” that run command line tools for you.
-
-```json
-"scripts": {
-"webpack": "webpack",
-"build": "webpack --config webpack.config.js", 
-"watch": "webpack serve --open"
-}
-```
-
-To run a script type `npm run scriptName` . For example:
-
-```bash
-npm run build
-```
+- JSON Object Literals
+- JSON.parse()
+- JSON.stringify()
 
 
-
-# Babel
-
-Babel.js is a JavaScript compiler that converts modern JavaScript (ES6+) into backwards-compatible versions for older browsers and environments. It’s widely used in web development for compatibility purposes.
-
-Node.js is required to run Babel.
-
-# Webpack
-
-Webpack is a *static module bundler* for JavaScript applications. What this means is that it takes all the dependencies, which includes JavaScript packages, images, css files, etc. and combines (bundles) them together into static modules (files) that it generates.  These are modules that a browser can understand and load faster and more efficiently.
-
-## Webpack and Babel
-
-Webpack can be configured to use Babel to transpile your code. This has been done in the *webpack.config.js* file in the starter files for this week's lab assignment.
-
-## Webpack Dev Server
-
-Webpack also includes a light-weight web server, *webpack-dev-server*, that you can run on your machine. This web server  "watches" your js code for changes and uses Bable to transpile it, then it reloads the transpiled code into the browser automatically as it changes.
-
-The package.json file in the starter files for your project includes a script for running the webpack dev server. You run it with this command:
-
-```bash
-npm run watch
-```
-
-
-
-Node.js is required to run Webpack.
 
 
 
@@ -160,7 +101,7 @@ Node.js is required to run Webpack.
 
   
 
-[^1]: The name “Node” refers to its capability to create large distributed software systems, where each part of the system runs on a different server. Each server can be considered a “node” in a network
+[^1]: In her notes and video, Mari introduced you to Array.splice() and Array.push(), but in my (Brian's) CS133JS class, you were already introduced to those.
 
 ---
 
