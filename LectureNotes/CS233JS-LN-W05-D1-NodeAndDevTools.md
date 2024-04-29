@@ -25,13 +25,39 @@ author: Brian Bird
 
 [TOC]
 
-# Announcements
+# Introduction
 
 **Spring 2024**
 
+## Announcements
+
 - Midterm opens on Thursday, closes on Sunday.
-- Change of office hours to 11:00am M&mdash;Th
-- College closed on Friday.
+- Change of drop-in office hours (Zoom and in person) to:  
+  - 11:00am M, T, Th
+  - 10:00am Wednesdays
+
+
+​	And I'm available at other times too, just let me know when you'd like to meet.
+
+- College closed this Friday.
+
+## Reminders
+
+- Tuesday (tomrrow)  
+  Lab 2B (dice game) code review is due.  
+  I'll be happy to help anyone who is still working on this!
+- Wednesday: 
+  Reading quiz 3 closes
+- Thursday: 
+  - Lab 2B production version due.
+  - The midterm quiz opens.
+- Friday: 
+  Lab 3 beta version&mdash;share it with your lab partner via GitHub and the Beta Forum.  
+  Note: use the repository you got through GitHub Classroom, don't make a different repository.
+- Sunday:  
+  Midterm quiz closses.
+
+
 
 # Node.js
 
