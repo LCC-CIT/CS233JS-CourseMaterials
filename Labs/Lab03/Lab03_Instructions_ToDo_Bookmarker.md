@@ -12,9 +12,10 @@ The objective of this lab is to give you more practice using the "new", widely s
 
 Complete the programming web apps described in below. For each problem:
 
+- Accept the invitation to the GitHub Classroom repository containing the starter files. Use Git and GitHub to manage your source code.
+  **Important**: Do all your work in the Classroom repository working folder, don't make a different repository.
 - Create a JavaScript solution that solves the problem. Test your solution in at least one browser running on your local machine.
 - Upload your solution to citstudent.lanecc.edu. Test your solution running on the server in at least one browser.
-- Use Git and GitHub to manage your source code and design documents.
 - Evaluate your work using the code review form provided.
 
 ## 1. ToDo List
@@ -60,6 +61,6 @@ Complete the programming web apps described in below. For each problem:
 
 [^1]: I'm asking for screen shots for this lab so that you can show me that you did use Node.js and the development tools introduced this week.
 
-Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024.
-
 ---
+
+Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024.
