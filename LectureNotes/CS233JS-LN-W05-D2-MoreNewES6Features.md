@@ -1,12 +1,12 @@
 ---
-title: Dev Tools 2
-description: More about ES6 features, dev tools and deployment.
-keywords: Node, NPM, Babel, Webpack
+title: More ES6
+description: More about new ES6 features.
+keywords: local storage, json, array methods
 generator: Typora
 author: Brian Bird
 ---
 
-<h1>More about ES6, Dev Tools and Deployment</h1>
+<h1>More about New ES6 Features</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
