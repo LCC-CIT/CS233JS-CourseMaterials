@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="navbar-brand">Event Application</li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./status.html">Status</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="form-area">
+      <h1 class="title">Javascript Meetup</h1>
+      <form action="/register" method="post" id="registrationForm">
+        <div class="form-group">
+          <label for="username">Name*:</label>
+          <input type="text" class="form-control" id="username" name="username">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address*:</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number*:</label>
+          <input type="phone" class="form-control" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+        </div>
+        <div class="form-group">
+          <label for="profession">I am a:</label>
+          <select class="form-control" id="profession" name="profession">
+            <option value="school">School Student</option>
+            <option value="college">College Student</option>
+            <option value="trainee">Trainee</option>
+            <option value="employee">Employee</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Experience Level:</label>
+          <div>
+            <div class="radio-inline">
+              <label><input type="radio" name="experience" id="experience" value="beginner" checked>Beginner</label>
+            </div>
+            <div class="radio-inline">
+              <label><input type="radio" name="experience" value="intermediate">Intermediate</label>
+            </div>
+            <div class="radio-inline">
+              <label><input type="radio" name="experience" value="advanced">Advanced</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comment">What do you expect to learn from this event:</label>
+          <textarea class="form-control" rows="5" name="comment" id="comment"></textarea>
+        </div>
+        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        <img src="./assets/images/loading.gif" alt="loading" class="loading-indicator visually-hidden" id="loadingIndicator">
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>

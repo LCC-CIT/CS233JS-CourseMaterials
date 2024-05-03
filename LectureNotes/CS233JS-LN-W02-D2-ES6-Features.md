@@ -1,6 +1,6 @@
 ---
-title: Intro to Bootstrap
-description: Quick intro to Bootstrap 
+title: ES6
+description: New ES 6 Features used in the lab assignment
 keywords: Bootstrap
 generator: Typora
 author: Brian Bird
