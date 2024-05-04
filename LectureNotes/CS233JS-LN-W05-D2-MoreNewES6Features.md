@@ -162,7 +162,7 @@ In this example an anonymous function is provided to `forEach` that takes one ar
 
 This method is used in the ToDoList app in the `addEventHandlers` method.
 
-### HTML Form Validation Styling
+## HTML Form Validation Styling
 
 In the ToDoList `addTask` method there is code to check to see if the "Task Description" input is valid and add or remove the `is-invalid` Bootstrap style from the HTML input element. 
 
@@ -235,7 +235,17 @@ console.log(mrScience.name);
 
 # Reference
 
-[MDN Web Docs: JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
+[Template Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)&mdash;MDN
+
+[Using the Web storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)&mdash;MDN
+
+[Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)&mdash;MDN
+
+[Client Side Validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)&mdash;MDN
+
+[Working with JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)&mdash;MDN
+
+
 
 [^1]: Mari's list of "new" features is a little longer than mine because she included some features we already covered in my CS133JS class.
 
