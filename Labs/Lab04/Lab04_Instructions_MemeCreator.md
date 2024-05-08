@@ -1,4 +1,4 @@
-<h1>Lab 3: ToDo List and Web Bookmarker</h13
+<h1>Lab 4: Meme Creator</h1>
 
 <h2>Table of Contents</h2>
 
@@ -6,26 +6,29 @@
 
 # Objectives
 
-The objective of this lab is to give you more practice using the "new", widely supported,  version of JavaScript: ES6. You will also be introduced to Node.js, NPM and several other tools that are part of modern JavaScript development. 
+The objective of this lab is to continue giving you practice using the "new" ES6 JavaScript features.  You will also get practice with CSS Flexbox (from CIS 195) and have your first experience with the HTML5 Canvas.  And, you will get further practice with webpack, webpack configuration files and the webpack development server.
 
 # Instructions
 
-Complete the web apps described below. For each problem:
+Complete the Meme Creator web app:
 
-- Accept the invitation to the GitHub Classroom repository containing the starter files. Use Git and GitHub to manage your source code.
+- Accept the invitation to the GitHub Classroom repository containing the starter files. 
   **Important**: Do all your work in the Classroom repository working folder, don't make a different repository.
-- Create a JavaScript solution that solves the problem. Test your solution in at least one browser running on your local machine.
-- Upload your solution to citstudent.lanecc.edu. Test your solution running on the server in at least one browser.
 
-## 1. ToDo List
+- Complete the Meme Creator application described in the screencasts and comments in the starter files.
+  - Part 6 of the comments describes possible added functionality. Choose two features to add:
+    - Allow the user to add text to the top of the meme
+    - Allow the user to pick a font
+    - Allow the user to pick a font color
+    - Save the meme to local storage so that the last meme loads when the page loads
+    -  Or something of your choice, but get approval from your instructor before implementing it.
 
-- Complete the ToDoList application described in the screencasts. The html and css files for the application have been provided in the starter GitHub repository. Add JavaScript code by following the detailed instructions in the starting .js file. Test and debug your application.
+  - For each of the 2 additional features:
+    - Add html to the web page for the user to interact with.
+    - Change the JS class to add event handlers to your new UI elements
+    - Change the createMeme method to add your features to the canvas.
+
 - Use Node, NPM, Webpack and Babel to create a production version of the  application "transpiled" to a version of JavaScript (ES5) that is supported by all browsers.
-
-## 2. Web Page Bookmarker
-
-- Complete the BookMarker application as described in the comments in the starting files for the application. Test and debug your application.
-- Use Node, Npm, Webpack and Babel to create a production version of the  application "transpiled" to a version of JavaScript that is supported by all browsers.
 
 # Submission
 
@@ -53,7 +56,7 @@ Complete the web apps described below. For each problem:
       - Each app running on the Webpack dev server with the URL visible. 
 
 
-  - Moodle Lab 3 Production Version assignment:  put the citstudent URLs for each web app in the online text.
+  - Moodle Lab 4 Production Version assignment:  put the citstudent URLs for each web app in the online text.
 
 
 
