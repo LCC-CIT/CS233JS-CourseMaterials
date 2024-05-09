@@ -30,6 +30,22 @@ Complete the Meme Creator web app:
 
 - Use Node, NPM, Webpack and Babel to create a production version of the  application "transpiled" to a version of JavaScript (ES5) that is supported by all browsers.
 
+# Notes
+
+## Dependencies
+
+This project has the following dependencies:
+
+- [Bootstrap](https://getbootstrap.com) CSS and JS bundles.
+- [Bootstrap Icons](https://icons.getbootstrap.com/)  
+  The [trash](https://icons.getbootstrap.com/icons/trash/) font icon is used in this projct.
+
+## The Default Image
+
+There is an `<img>` element in the HTML file that has the attribute ` style="display:none"` which means it isn't displayed. This image element is just used as a means to load the default image so it can be rendered in the canvas element.
+
+If you add a feature to use the last image the user uploaded as the new default image; by saving that image in local storage; you won't be able to assign that image to the `src` attribute of the `<img>` element and then imediately call `createMeme`, instead, you will need to set the `onload` event of the `<img>` element to call `createMeme` after the image has been loaded. Read about the [onload event on W3Schools](https://www.w3schools.com/tags/att_onload.asp).
+
 # Submission
 
 ## Beta Version and Code Review
