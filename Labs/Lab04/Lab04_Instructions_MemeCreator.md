@@ -51,12 +51,12 @@ Complete the Meme Creator web app:
 
   - Code review from your lab partner: 
     - Fill out the "Prod" column, entering yes for anything you fixed or completed.
-    - Add screen shots for each web app showing[^1]:
+    - Add screen shots for the web app showing[^1]:
       - Your folders and files in the VS Code file explorer and the terminal showing the webpack dev server running.
-      - Each app running on the Webpack dev server with the URL visible. 
+      - The app running on the Webpack dev server with the URL visible. 
 
 
-  - Moodle Lab 4 Production Version assignment:  put the citstudent URLs for each web app in the online text.
+  - Moodle Lab 4 Production Version assignment:  put the citstudent URs for the web app in the online text.
 
 
 
