@@ -1,0 +1,45 @@
+<h1>Term Project Requirements</h1>
+
+
+## Objective
+The objective of the term project is to allow you to synthesize your understanding of the concepts and
+skills introduced in the course as you work on a web-based application of your choice. You’ll begin to
+work on your project during the 5th week of the term and will be working on your project exclusively
+during weeks 9 and 10. The project is worth a total of 80 points or roughly 20% of your grade for the
+term.
+
+## Requirements
+The project must:
+
+- Include one or more web pages, have a clear objective and be user-friendly.
+
+- Have a professional-looking UI that uses Bootstrap or another CSS framework with which you
+  are familiar.
+
+- Use client-side code written in JavaScript. Each page must be encapsulated using an ES6 style
+  class.
+
+- Include at least one AJAX get request.
+
+- Include one or more of the other JS technologies introduced in the course such as: local
+  storage, html canvas, regular expressions, chart.js, google maps API.
+
+- Be hosted on citstudent.lanecc.net. Production code should be transpiled to a version of
+  JavaScript that can be interpreted by modern browsers.
+
+  ## Submission
+
+  The project includes the following deliverables. Each deliverable has a due date to encourage you to
+  work steadily on your project. There are samples of the first 2 deliverables as well as the code review form to give you a clearer understanding of expectations. These are the deliverables:
+
+- Project proposal / description and UI MockUp
+
+- AJAX call documentation
+
+- Static HTML / CSS implementation
+
+- Beta version
+
+- Code review
+
+- Production version
