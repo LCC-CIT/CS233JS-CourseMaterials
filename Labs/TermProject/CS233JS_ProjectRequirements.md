@@ -16,9 +16,12 @@ The project must:
 - Have a professional-looking UI that uses Bootstrap or another CSS framework with which you
   are familiar.
 
-- Use client-side code written in JavaScript. Each page must be encapsulated using an ES6 style
-  class.
-
+- Use client-side code written in JavaScript. 
+  
+- Use classes for any parts of the project where it makes sense to use objects. Do not encapsulate the entire app in a single class.
+  
+- Separate code that interacts with web page elements from the rest of the code.
+  
 - Include at least one AJAX get request.
 
 - Include one or more of the other JS technologies introduced in the course such as: local
@@ -27,10 +30,9 @@ The project must:
 - Be hosted on citstudent.lanecc.net. Production code should be transpiled to a version of
   JavaScript that can be interpreted by modern browsers.
 
-  ## Submission
+## Submission
 
-  The project includes the following deliverables. Each deliverable has a due date to encourage you to
-  work steadily on your project. There are samples of the first 2 deliverables as well as the code review form to give you a clearer understanding of expectations. These are the deliverables:
+The project includes the following deliverables. Each deliverable has a due date to encourage you to work steadily on your project. There are samples of the first 2 deliverables as well as the code review form to give you a clearer understanding of expectations. These are the deliverables:
 
 - Project proposal / description and UI MockUp
 
