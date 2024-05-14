@@ -6,7 +6,7 @@
 
 Each of the sections below are for a different deliverable.
 
-# Term Project Proposal
+# Project Proposal
 
 The objective of this first step in the project is to allow you to pick a topic and identify the functionality that you would like your application to provide.
 
