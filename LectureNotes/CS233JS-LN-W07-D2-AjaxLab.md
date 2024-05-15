@@ -27,6 +27,44 @@ author: Brian Bird
 
 ## Web Bookmarker Completion
 
+### Missing .gitignore
+
+The .gitignore file was missing from the GitHub Classroom repository I gave you. You can add one from any of the previous labs. 
+
+If you have already done a commit, then just adding and committing the .gitignore file won't remove the extra files that got committed (like those in the dist folder).
+
+To make git stop tracking files (meaning stop including them in commits), you can do this:
+
+#### Make Git untrack files
+
+To untrack a single file, use `git rm`.
+
+```
+git rm --cached <filename>
+```
+
+And if you need untrack more that one file, simply list more files:
+
+```
+git rm --cached <filename>  <filename2>  <filename3>
+```
+
+Both of the commands above will make git untrack files without deleting them. This is because of the cached option. Removing the cached option will delete them from your drive.
+
+```
+git rm <filename>
+```
+
+To untrack an entire folder (aka directory), use this command:
+
+```
+git rm -r --cached <folder>
+```
+
+After running any of these commands, you need to commit the changes. 
+
+(This section was adapted from [Commit Mistake: How to untracked files in Git](https://sufiyanyasa.com/blog/git-untrack-file/).)
+
 ### Getting Open Graph data
 
 The project uses the opengraph web api (aka web service) to get web site data. The free plan for this service limits you to 100 requests per month. Alternatively you can use [LinkPreview](https://www.linkpreview.net/), which has a limit of 60 requests per hour on the free plan!
