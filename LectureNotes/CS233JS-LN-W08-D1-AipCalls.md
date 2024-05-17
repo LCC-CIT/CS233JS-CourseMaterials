@@ -47,12 +47,16 @@ Store api key in environment variable
 
 ## Map API
 
+### Azure Maps
+
 [Getting Started with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys)&mdash;Microsoft Blog Post
 
 - Requires an [Azure for Students](https://azure.microsoft.com/en-us/free/students) account
   - Free, no credit card required
   - Used for other classes in our department.
 - 1,000 or more (depending on the type of transaction) free transactions (without using your credit).
+
+### Google Maps
 
 
 
