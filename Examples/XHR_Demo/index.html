@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=/, initial-scale=1.0">
+    <title>XHR Demo</title>
+</head>
+
+<body>
+    <h1>XMLHttpRequest Demo</h1>
+    Here is a request that gets the contents of a text
+    file and displays it on the page.
+    <div id="quote"></div>
+    <!--
+    <script>
+        var request = new XMLHttpRequest();
+        request.open("GET", 'https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt', false); // `false` makes the request synchronous
+        request.send(null);
+
+        if (request.status === 200) {
+            document.getElementById('quote').innerHTML =request.responseText;
+        }
+    </script>
+-->
+
+    <script>
+        fetch('https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("HTTP error " + response.status);
+                }
+                return response.text();
+            })
+            .then(text => {
+                document.getElementById('quote').innerHTML = text;
+            })
+            .catch(function () {
+                console.log('An error occurred');
+            });
+    </script>
+</body>
+
+</html>
