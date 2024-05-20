@@ -23,71 +23,6 @@ author: Brian Bird
 
 [TOC]
 
-# XHR Calls Revisited
-
-## HTTP Requests
-
-There are multiple HTTP request types. We are just going to look at GET requests here. A GET request just does what it sounds like it gets data which is returned in a response. A GET request is a web URL with optional query parameters. 
-
-### HTTP Requests in HTML
-
-Here is an example that returns a web page from a remote server:
-
-https://citstudent.lanecc.edu/~brianb/southindia/index.htm
-
-We can also just get an image from a remote server:
-
-```html
-<img src="https://citstudent.lanecc.edu/~brianb/southindia/Chennai/MarinaBeach.jpg" width="500" height="200">
-```
-
-
-
-<img src="https://citstudent.lanecc.edu/~brianb/southindia/Chennai/MarinaBeach.jpg" width="500" height="200">
-
-Or text:
-
-```html
-<embed type="text/html" src="https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt"  width="500" height="200>
-```
-
-<embed type="text/html" src="https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt"  width="500" height="200>
-
-
-
-### HTTP Requests from JavaScript
-
-In order to do something with an HTTP response, other than show it on a web page, we need a way to make a request using code. 
-
-#### XMLHttpRequest
-
-This is a JavaScript API for making synchronous HTTP requests.
-
-```javascript
-function reqListener() {
-  console.log(this.responseText);
-}
-
-const req = new XMLHttpRequest();
-req.addEventListener("load", reqListener);
-req.open("GET", "https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt");
-req.send();
-
-```
-
-<script>
-  function reqListener() {
-  	console.log(this.responseText);
-	}  const req = new XMLHttpRequest();
-  req.addEventListener("load", reqListener);
-  req.open("GET", "https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt");
-  req.send();
-</script>
-
-
-
-
-
 # Backend Web Dev ?
 
 ## JSON Server
@@ -135,10 +70,6 @@ Requires a [GCP (Google Cloud Platform)](https://cloud.google.com) account.
   - After the trial period, you get a $200 a month free credit for GCP services, including Google Maps.
 
 # Reference
-
-[Using XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API/Using_XMLHttpRequest)&mdash;MDN
-
-
 
 [Get and Post method using Fetch API](https://www.geeksforgeeks.org/get-and-post-method-using-fetch-api/)&mdash;Geeks for Geeks.
 

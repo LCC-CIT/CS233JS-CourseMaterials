@@ -6,7 +6,7 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>Updating Web Page Data with AJAX</h1>
+<h1>Updating Web Page Data with AJAX, Part 2</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
@@ -26,6 +26,8 @@ author: Brian Bird
 # Lab 5
 
 ## Open Graph
+
+**TODO: Revise this, it's from AI**
 
 The Open Graph protocol is a set of meta tags added to a webpage that allows it to become a rich object in a social network. It was originally developed by Facebook and is now used by many social media platforms. Here’s a bit more detail:
 
