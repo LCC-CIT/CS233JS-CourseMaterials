@@ -8,14 +8,37 @@
 </head>
 
 <body>
-    <h1>XMLHttpRequest Demo</h1>
+    <h1>XHR Calls Revisited</h1>
+    <p>This page gives you a review of HTTP requests in general and XMLHttpRequsts (XHRs) in particular.<br>
+        View the source for this page to see the code.</p>
 
-    <p>This is a link to a text file containing a quote</p>
-    <a href="https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/GhandiQuote.txt" target="_blank">Ghandi quote</a>
+    <h2>HTTP Requests</h2>
+    <p>There are multiple HTTP request types. We are just going to look at GET requests here.<br>
+        A GET request just does what
+        it sounds like it gets data which is returned in a response.<br>
+        A GET request is a URL with optional query parameters.</p>
 
+    <h3>HTTP Requests in HTML</h3>
+    <p>A simple link (anchor) element can be used to get a file from a remote server.<br>
+    This is a link to a <mark>text file</mark> containing a quote from Ghandi:<br>
+    <a href="https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/GhandiQuote.txt" target="_blank">Ghandi quote</a></p>
+
+    <p>We can also get an <mark>image</mark> from a remote server and embed it in our web page:<br>
+    <img src="https://citstudent.lanecc.edu/~brianb/southindia/Chennai/MarinaBeach.jpg" width="500" height="200"></p>
+    <p>
+        
+    Or <mark>text</mark><br>
+    <embed type=" text/html" src="https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/GhandiQuote.txt">
+    </p>
+
+    <h3>HTTP Requests from JavaScript</h3>
+    <p>In order to do something with an HTTP response, other than show it on a web page, we need a way to make a request
+        using code.</p>
+
+    <h4>XMLHttpRequest</h4>
     <p>Here is a synchronous request using the XMLHttpRequest object that gets the contents of a text
         file and displays it on the page.</p>
-    <p style="border-style: solid;" id="quote1"></p>
+    <p style=" border-style: solid;" id="quote1"></p>
 
 
     <script>
@@ -28,10 +51,9 @@
         }
     </script>
 
-    <p>Here is again as an asynchronous request using fetch that gets the contents of a text
-        file and displays it on the page.</p>
+    <p>Here is an asynchronous request using fetch that gets the contents of a text file and displays it on the page.
+    </p>
     <div style="border-style: solid;" id="quote2"></div>
-
 
     <script>
         console.log("line 37, before fetch")
@@ -51,7 +73,7 @@
             .catch(function () {
                 console.log('line 52: An error occurred');
             });
-            console.log("line 54: all done");
+        console.log("line 54: all done");
     </script>
 
 </body>
