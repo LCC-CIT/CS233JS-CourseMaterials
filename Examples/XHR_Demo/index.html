@@ -9,38 +9,51 @@
 
 <body>
     <h1>XMLHttpRequest Demo</h1>
+
+    <p>This is a link to a text file containing a quote</p>
+    <a href="https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt" target="_blank">Ghandi quote</a>
+
     <p>Here is a synchronous request using the XMLHttpRequest object that gets the contents of a text
         file and displays it on the page.</p>
-    <div style="border-style: solid;" id="quote1"></div>
+    <p style="border-style: solid;" id="quote1"></p>
+
 
     <script>
         let request = new XMLHttpRequest();
-        request.open("GET", 'https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt', false); // `false` makes the request synchronous
+        request.open("GET", 'https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/GhandiQuote.txt', false); // `false` makes the request synchronous
         request.send(null);
 
         if (request.status === 200) {
             document.getElementById('quote1').innerHTML = request.responseText;
         }
     </script>
+
     <p>Here is again as an asynchronous request using fetch that gets the contents of a text
         file and displays it on the page.</p>
     <div style="border-style: solid;" id="quote2"></div>
 
+
     <script>
+        console.log("line 37, before fetch")
         fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/GhandiQuote.txt')
             .then(response => {
+                console.log("line 40, in then(response)");
                 if (!response.ok) {
                     throw new Error("HTTP error " + response.status);
+                    console.log("line 43, in if not ok")
                 }
                 return response.text();
             })
             .then(text => {
+                console.log("line 48, in then(text)")
                 document.getElementById('quote2').innerHTML = text;
             })
             .catch(function () {
-                console.log('An error occurred');
+                console.log('line 52: An error occurred');
             });
+            console.log("line 54: all done");
     </script>
+
 </body>
 
 </html>
