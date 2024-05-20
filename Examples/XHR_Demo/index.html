@@ -9,23 +9,25 @@
 
 <body>
     <h1>XMLHttpRequest Demo</h1>
-    Here is a request that gets the contents of a text
-    file and displays it on the page.
-    <div id="quote"></div>
-    <!--
+    <p>Here is a synchronous request using the XMLHttpRequest object that gets the contents of a text
+        file and displays it on the page.</p>
+    <div style="border-style: solid;" id="quote1"></div>
+
     <script>
-        var request = new XMLHttpRequest();
+        let request = new XMLHttpRequest();
         request.open("GET", 'https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt', false); // `false` makes the request synchronous
         request.send(null);
 
         if (request.status === 200) {
-            document.getElementById('quote').innerHTML =request.responseText;
+            document.getElementById('quote1').innerHTML = request.responseText;
         }
     </script>
--->
+    <p>Here is again as an asynchronous request using fetch that gets the contents of a text
+        file and displays it on the page.</p>
+    <div style="border-style: solid;" id="quote2"></div>
 
     <script>
-        fetch('https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt')
+        fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/GhandiQuote.txt')
             .then(response => {
                 if (!response.ok) {
                     throw new Error("HTTP error " + response.status);
@@ -33,7 +35,7 @@
                 return response.text();
             })
             .then(text => {
-                document.getElementById('quote').innerHTML = text;
+                document.getElementById('quote2').innerHTML = text;
             })
             .catch(function () {
                 console.log('An error occurred');
