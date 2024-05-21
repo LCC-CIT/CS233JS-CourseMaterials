@@ -26,7 +26,7 @@ author: Brian Bird
 # XHR Calls Revisited
 
 Let's review HTTP requests in general and XMLHttpRequsts (XHRs) in particular.  
-**Note**:  when we talk about "XHRs" we mean any HTTP request sent from code, not just requests sent by the JavaScript `XMLHttpRequest` object. XHRs usually get some specific data rather than a whole HTML file.
+**Note**:  when we talk about "XHRs" we mean any HTTP request sent from code. It doesn't matter how the requests are sent; by the JavaScript `XMLHttpRequest` object, or the fetch API or some other way. XHR is not a different protocol from HTTP, it's just another way of sending it.
 
 ## HTTP Requests
 
@@ -42,7 +42,9 @@ The code for all the following examples can be seen running on [this code demo w
   - Change the server address in the URL to see if that error is caught.
   - Change the file name in the URL to see if that error is caught.
 
-- Open the browser's network tab to see HTTP requests and responses.
+- Open the browser's network tab to see all requests and responses.
+
+  - Is there any difference between an HTTP request sent from HTML and an XHR?
 
   
 
@@ -67,7 +69,8 @@ In order to do something with an HTTP response, other than show it on a web page
 #### `XMLHttpRequest` Object
 
 This example uses the `XMLHttpRequst` object to make a *synchronous* HTTP request.  
-Note that `XMLHttpRequest.open` can also be used to make *asynchronous* requests if the last argument is set to `true`.
+
+Note that `XMLHttpRequest.open` can also be used to make *asynchronous* requests if the last argument is set to `true` and a call-back function is provided.
 
 **HTML**
 
