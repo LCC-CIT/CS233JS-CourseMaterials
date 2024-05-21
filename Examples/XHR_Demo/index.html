@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=/, initial-scale=1.0">
     <title>XHR Demo</title>
+    <style>
+        .quote {
+            border-style: solid; 
+            width:max-content; 
+            height:fit-content;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,16 +26,16 @@
         A GET request is a URL with optional query parameters.</p>
 
     <h3>HTTP Requests in HTML</h3>
+    <h4>Linking to a File</h4>
     <p>A simple link (anchor) element can be used to get a file from a remote server.<br>
-    This is a link to a <mark>text file</mark> containing a quote from Ghandi:<br>
-    <a href="https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/GhandiQuote.txt" target="_blank">Ghandi quote</a></p>
-
-    <p>We can also get an <mark>image</mark> from a remote server and embed it in our web page:<br>
-    <img src="https://citstudent.lanecc.edu/~brianb/southindia/Chennai/MarinaBeach.jpg" width="500" height="200"></p>
-    <p>
-        
-    Or <mark>text</mark><br>
-    <embed type=" text/html" src="https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/GhandiQuote.txt">
+        This is a link to a text file containing a quote from Ghandi:<br>
+        <a href="https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/GhandiQuote.txt"
+            target="_blank">Ghandi quote</a>
+    </p>
+    <h4>Embedding Text in a Web Page</h4>
+    <p>We can also get an text from a file on a remote server and embed it in our web page:<br>
+        <embed type=" text/html" class="quote"
+            src="https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/GhandiQuote.txt">
     </p>
 
     <h3>HTTP Requests from JavaScript</h3>
@@ -36,14 +43,14 @@
         using code.</p>
 
     <h4>XMLHttpRequest</h4>
-    <p>Here is a synchronous request using the XMLHttpRequest object that gets the contents of a text
+    <p>Here is a <i>synchronous</i> request using the <code>XMLHttpRequest</code> object that gets the contents of a
+        text
         file and displays it on the page.</p>
-    <p style=" border-style: solid;" id="quote1"></p>
-
+    <p class="quote" id="quote1"></p>
 
     <script>
         let request = new XMLHttpRequest();
-        request.open("GET", 'https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/GhandiQuote.txt', false); // `false` makes the request synchronous
+        request.open("GET", 'https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/GhandiQuote.txt', false); // `false` makes the request synchronous
         request.send(null);
 
         if (request.status === 200) {
@@ -51,13 +58,19 @@
         }
     </script>
 
-    <p>Here is an asynchronous request using fetch that gets the contents of a text file and displays it on the page.
+    <h4>fetch with fluent syntax</h4>
+    <p>Here is an <i>asynchronous</i> request using <code>fetch</code> that gets the contents of a text file and
+        displays it on the page.
+        This code uses fluent syntax (aka method chaining), meaning that the <code>then</code> method is called on a
+        Promise object returned by the <code>fetch</code> and <code>then</code> methods, so the Promise objects are not
+        visible in the code, although they are still there "behind the scenes".</p>
+
     </p>
-    <div style="border-style: solid;" id="quote2"></div>
+    <p class="quote" id="quote2"></p>
 
     <script>
         console.log("line 37, before fetch")
-        fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/GhandiQuote.txt')
+        fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/GhandiQuote.txt')
             .then(response => {
                 console.log("line 40, in then(response)");
                 if (!response.ok) {
@@ -74,6 +87,40 @@
                 console.log('line 52: An error occurred');
             });
         console.log("line 54: all done");
+    </script>
+
+    <h4>fetch with procedural syntax</h4>
+
+    <p>Here is the same asynchronous request using <code>fetch</code>, but in this code the Promise objects returned by
+        <code>fetch</code> and <code>then</code> methods are assigned to variables before being used, so they are
+        "visible" in the code.
+    </p>
+    <p class="quote" id="quote3"></p>
+
+    <script>
+        console.log("line 95, before fetch");
+
+        const fetchPromise = fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/GhandiQuote.txt');
+
+        const responsePromise = fetchPromise.then(response => {
+            console.log("line 100, in then(response)");
+            if (!response.ok) {
+                throw new Error("HTTP error " + response.status);
+                console.log("line 103, in if not ok")
+            }
+            return response.text();
+        });
+
+        responsePromise.then(text => {
+            console.log("line 109, in then(text)");
+            document.getElementById('quote3').innerHTML = text;
+        });
+
+        responsePromise.catch(function () {
+            console.log('line 114: An error occurred');
+        });
+
+        console.log("line 117: all done");
     </script>
 
 </body>
