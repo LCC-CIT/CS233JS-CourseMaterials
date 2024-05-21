@@ -25,11 +25,14 @@ author: Brian Bird
 
 # XHR Calls Revisited
 
+Let's review HTTP requests in general and XMLHttpRequsts (XHRs) in particular.  
+**Note**:  when we talk about "XHRs" we mean any HTTP request sent from code, not just requests sent by the JavaScript `XMLHttpRequest` object. XHRs usually get some specific data rather than a whole HTML file.
+
 ## HTTP Requests
 
-There are multiple HTTP request types. We are just going to look at GET requests here. A GET request just does what it sounds like it gets data which is returned in a response. A GET request is a web URL with optional query parameters. 
+There are multiple HTTP request types. We are just going to look at GET requests here. A GET request does what it sounds like, it gets data which is returned in an HTTP response. A GET request consists of a web URL with optional query parameters. 
 
-The code for all the following examples can be seen running on [this web page](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/index.html).
+**Note**: the code for all the following examples can be seen running on [this web page](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/index.html).
 
 ### HTTP Requests in HTML
 #### `<a>` Element
@@ -49,7 +52,7 @@ We can also get text from a file on a remote server and embed it in our web page
 
 In order to do something with an HTTP response, other than show it on a web page, we need a way to make a request using code. 
 
-#### XMLHttpRequest
+#### `XMLHttpRequest` Object
 
 This example uses the `XMLHttpRequst` object to make a *synchronous* HTTP request.  
 Note that `XMLHttpRequest.open` can also be used to make *asynchronous* requests if the last argument is set to `true`.
@@ -72,7 +75,7 @@ let request = new XMLHttpRequest();
   }
 ```
 
-#### fetch with fluent syntax
+#### `fetch` Method with Fluent Syntax
 Here is an *asynchronous* request using `fetch` that gets the contents of a text file and displays it on the page. This code uses *fluent syntax* (aka method chaining), meaning that the `then` methods are called on `Promise` objects returned by the `fetch` and `then` methods. The `Promise` objects are not visible in the code, although they are still there "behind the scenes".
 
 ```javascript
@@ -91,7 +94,7 @@ fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/Ghand
   });
 ```
 
-#### fetch with procedural syntax
+#### `fetch` Method with Procedural Syntax
 
 Here is the same *asynchronous* request using `fetch`, but in this code the `Promise` objects returned by the  `fetch` and `then` methods are assigned to variables before being used, so they are "visible" in the code.
 
