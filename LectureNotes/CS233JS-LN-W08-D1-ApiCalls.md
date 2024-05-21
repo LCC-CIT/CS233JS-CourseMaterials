@@ -95,7 +95,7 @@ fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/Ghand
       return response.text();
   })
   .then(text => {
-      document.getElementById('quote2').innerHTML = text;
+      document.getElementById('quote').innerHTML = text;
   })
   .catch(function () {
  		console.log('An error occurred');
@@ -117,7 +117,7 @@ const responsePromise = fetchPromise.then(response => {
 });
 
 responsePromise.then(text => {
-    document.getElementById('quote3').innerHTML = text;
+    document.getElementById('quote').innerHTML = text;
 });
 
 responsePromise.catch(function () {
