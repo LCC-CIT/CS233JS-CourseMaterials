@@ -38,6 +38,10 @@ The code for all the following examples can be seen running on [this code demo w
 
 - Open the browser's console to see log messages.
 
+  - Try to predict the order in which the log messages will appear.
+  - Change the server address in the URL to see if that error is caught.
+  - Change the file name in the URL to see if that error is caught.
+
 - Open the browser's network tab to see HTTP requests and responses.
 
   

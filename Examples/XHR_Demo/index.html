@@ -7,9 +7,9 @@
     <title>XHR Demo</title>
     <style>
         .quote {
-            border-style: solid; 
-            width:max-content; 
-            height:fit-content;
+            border-style: solid;
+            width: max-content;
+            height: fit-content;
         }
     </style>
 </head>
@@ -17,11 +17,18 @@
 <body>
     <h1>XHR Calls Revisited</h1>
     This page gives you a review of HTTP requests in general and XMLHttpRequsts (XHRs) in particular.<br>
-       <ul>
+    Here are some things to do:
+    <ul>
         <li>View the source for this page to see the code.</li>
-        <li>Open the browser's console to see the log messages</li>
+        <li>Open the browser's console to see the log messages
+            <ul>
+                <li>Try to predict the order in which the log messages will appear.</li>
+                <li>Change the server address in the URL to see if that error is caught.</li>
+                <li>Change the file name in the URL to see if that error is caught.</li>
+            </ul>
+        </li>
         <li>Open the browser's network tab to see the HTTP requests and responses</li>
-       </ul>
+    </ul>
 
     <h2>HTTP Requests</h2>
     <p>There are multiple HTTP request types. We are just going to look at GET requests here.<br>
@@ -38,7 +45,7 @@
     </p>
     <h4>Embedding Text in a Web Page</h4>
     <p>We can also get text from a file on a remote server and embed it in our web page:<br>
-        <embed type=" text/html" class="quote"
+        <embed type="text/html" class="quote"
             src="https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/GhandiQuote.txt">
     </p>
 
@@ -67,9 +74,10 @@
         displays it on the page.
         This code uses fluent syntax (aka method chaining), meaning that the <code>then</code> method is called on a
         Promise object returned by the <code>fetch</code> and <code>then</code> methods, so the Promise objects are not
-        visible in the code, although they are still there "behind the scenes".</p>
-
+        visible in the code, although they are still there "behind the scenes".
     </p>
+
+
     <p class="quote" id="quote2"></p>
 
     <script>
@@ -120,17 +128,21 @@
             document.getElementById('quote3').innerHTML = text;
         });
 
-        responsePromise.catch(function () {
+        responsePromise.catch(() => {
             console.log('line 114: An error occurred');
         });
 
         console.log("line 117: all done");
     </script>
-<br><br>
+    <br><br>
     <footer>
         <hr>
-        <a href="http://creativecommons.org/licenses/by-sa/4.0/"></a><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"> Creative Commons License</a><br>
-        JavaScript code example by <a href="https://profbird.dev">Brian Bird</a>, <time>2024</time> licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. 
+        <a href="http://creativecommons.org/licenses/by-sa/4.0/">
+            <img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="CC license logo">Creative Commons
+            License</a><br>
+        JavaScript code example by <a href="https://profbird.dev">Brian Bird</a>, <time>2024</time> licensed under a
+        <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+            International License</a>.
         <hr>
     </footer>
 
