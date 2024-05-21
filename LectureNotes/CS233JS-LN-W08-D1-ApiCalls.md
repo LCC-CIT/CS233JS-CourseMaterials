@@ -29,31 +29,21 @@ author: Brian Bird
 
 There are multiple HTTP request types. We are just going to look at GET requests here. A GET request just does what it sounds like it gets data which is returned in a response. A GET request is a web URL with optional query parameters. 
 
+The code for all the following examples can be seen running on [this web page](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/index.html).
+
 ### HTTP Requests in HTML
+#### `<a>` Element
 
-Here is an example that returns a web page from a remote server:
-
+A simple link (anchor element) can return a web page from a remote server:
+```html
 https://citstudent.lanecc.edu/~brianb/southindia/index.htm
-
-We can also just get an image from a remote server:
-
-```html
-<img src="https://citstudent.lanecc.edu/~brianb/southindia/Chennai/MarinaBeach.jpg" width="500" height="200">
 ```
-
-
-
-<img src="https://citstudent.lanecc.edu/~brianb/southindia/Chennai/MarinaBeach.jpg" width="500" height="200">
-
-Or text:
+#### `<Embed>` Element
+We can also get text from a file on a remote server and embed it in our web page:
 
 ```html
 <embed type="text/html" src="https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt"  width="500" height="200>
 ```
-
-<embed type="text/html" src="https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt"  width="500" height="200>
-
-
 
 ### HTTP Requests from JavaScript
 
@@ -61,52 +51,82 @@ In order to do something with an HTTP response, other than show it on a web page
 
 #### XMLHttpRequest
 
-This is a JavaScript API for making synchronous HTTP requests.
+This example uses the `XMLHttpRequst` object to make a *synchronous* HTTP request.  
+Note that `XMLHttpRequest.open` can also be used to make *asynchronous* requests if the last argument is set to `true`.
 
-```javascript
-function reqListener() {
-  console.log(this.responseText);
-}
+**HTML**
 
-const req = new XMLHttpRequest();
-req.addEventListener("load", reqListener);
-req.open("GET", "https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt");
-req.send();
-
+```html
+<p class="quote" id="quote"></p>
 ```
 
-<script>
-  function reqListener() {
-  	console.log(this.responseText);
-	}  const req = new XMLHttpRequest();
-  req.addEventListener("load", reqListener);
-  req.open("GET", "https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/GhandiQuote.txt");
-  req.send();
-</script>
+**JavaScript**
+
+```javascript
+let request = new XMLHttpRequest();
+  request.open("GET", 'https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/GhandiQuote.txt', false); 
+  request.send(null);
+
+  if (request.status === 200) {
+      document.getElementById('quote1').innerHTML = request.responseText;
+  }
+```
+
+#### fetch with fluent syntax
+Here is an *asynchronous* request using `fetch` that gets the contents of a text file and displays it on the page. This code uses *fluent syntax* (aka method chaining), meaning that the `then` methods are called on `Promise` objects returned by the `fetch` and `then` methods. The `Promise` objects are not visible in the code, although they are still there "behind the scenes".
+
+```javascript
+fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/GhandiQuote.txt')
+  .then(response => {
+      if (!response.ok) {
+          throw new Error("HTTP error " + response.status);
+      }
+      return response.text();
+  })
+  .then(text => {
+      document.getElementById('quote2').innerHTML = text;
+  })
+  .catch(function () {
+ 		console.log('An error occurred');
+  });
+```
+
+#### fetch with procedural syntax
+
+Here is the same *asynchronous* request using `fetch`, but in this code the `Promise` objects returned by the  `fetch` and `then` methods are assigned to variables before being used, so they are "visible" in the code.
+
+```JavaScript
+const fetchPromise = fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/GhandiQuote.txt');
+
+const responsePromise = fetchPromise.then(response => {
+    if (!response.ok) {
+        throw new Error("HTTP error " + response.status);
+    }
+    return response.text();
+});
+
+responsePromise.then(text => {
+    document.getElementById('quote3').innerHTML = text;
+});
+
+responsePromise.catch(function () {
+   console.log('An error occurred');
+});
+```
 
 
-
-
-
-# Backend Web Dev ?
+# More Dev Tools
+These are used in lab 6.
 
 ## JSON Server
 
 Q: How is this different from the webpack dev server?
 
+## DotEnv
 
+GitDefender alert about web api key.
 
-# Security
-
-GitDefender alert about web api key
-
-Store api key in environment variable
-
-
-
-# Lab 5 ?
-
-## Test Drivers
+Store api key in environment variables.
 
 
 
@@ -138,8 +158,6 @@ Requires a [GCP (Google Cloud Platform)](https://cloud.google.com) account.
 
 [Using XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API/Using_XMLHttpRequest)&mdash;MDN
 
-
-
 [Get and Post method using Fetch API](https://www.geeksforgeeks.org/get-and-post-method-using-fetch-api/)&mdash;Geeks for Geeks.
 
 [How to Use JSON Server for Front-end Development](https://www.freecodecamp.org/news/json-server-for-frontend-development/)&mdash;Juliet Ofoegbu, Free Code Camp.
@@ -151,3 +169,5 @@ Requires a [GCP (Google Cloud Platform)](https://cloud.google.com) account.
 ---
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+
+---
