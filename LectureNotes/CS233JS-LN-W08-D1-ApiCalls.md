@@ -32,7 +32,15 @@ Let's review HTTP requests in general and XMLHttpRequsts (XHRs) in particular.
 
 There are multiple HTTP request types. We are just going to look at GET requests here. A GET request does what it sounds like, it gets data which is returned in an HTTP response. A GET request consists of a web URL with optional query parameters. 
 
-**Note**: the code for all the following examples can be seen running on [this web page](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/index.html).
+The code for all the following examples can be seen running on [this code demo web page](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/index.html). On the code demo page:
+
+- View the source in the browser.
+
+- Open the browser's console to see log messages.
+
+- Open the browser's network tab to see HTTP requests and responses.
+
+  
 
 ### HTTP Requests in HTML
 #### `<a>` Element
