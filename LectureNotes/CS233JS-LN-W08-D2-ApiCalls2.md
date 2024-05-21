@@ -23,51 +23,17 @@ author: Brian Bird
 
 [TOC]
 
-# Backend Web Dev ?
-
-## JSON Server
-
-Q: How is this different from the webpack dev server?
-
-
-
-# Security
-
-GitDefender alert about web api key
-
-Store api key in environment variable
-
 
 
 # Lab 5 ?
 
-## Test Drivers
+## 
 
 
 
 # Lab 6
 
-## Map API
 
-### Azure Maps
-
-[Getting Started with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys)&mdash;Microsoft Blog Post.
-
-- Requires an [Azure for Students](https://azure.microsoft.com/en-us/free/students) account.
-  - Free  for12 months, no credit card required.
-  - Azure is used for other classes in our department.
-- 1,000 or more (depending on the type of transaction) free transactions (without using your credit).
-
-### Google Maps
-
-[Getting Started with Google Maps Platform](https://developers.google.com/maps/get-started)&mdash;GCP  Docs.
-
-Requires a [GCP (Google Cloud Platform)](https://cloud.google.com) account.
-
-- 90 free trial, requires a credit card.
-  - Your card could be billed if you use more than $300 in "free" services during the trial period.  
-    A notification will be sent if this is about to happen.
-  - After the trial period, you get a $200 a month free credit for GCP services, including Google Maps.
 
 # Reference
 
