@@ -18,13 +18,13 @@ Complete the programming problems described below. For each problem:
 - Upload your solution to citstudent.lanecc.edu. Test your solution running on the server in at least one browser.
 - Use Git and GitHub to manage your source code and design documents. 
   **Important**: Do all your work in the working folders of your GitHub Classroom repositories. Don't make new repositories.
-- Evaluate exchange code reviews or your work using with your lab partner.
+- Exchange code reviews of your work using with your lab partner.
 
 ## 1. Bookmarker Version 2
 
-- Create a branch in your lab 3 GitHub repository for the new version. The  starting files are the solution files from your first version of the  application.
-- Add an image as well as a title to each bookmark by accessing data  about each url from opengraph.io. The concepts, skills and syntax that  you need to make this change to your original application are discussed  in the lecture notes and will be demonstrated in class. Test and debug  your application.
-- Use webpack to bundle all of the resources used by your application into ONE (development version) js file.
+- Create a branch in your lab 3 GitHub repository for the new version. The  starting files are the solution files from your first version of this application.
+- Add an image as well as a title to each bookmark by accessing data about each url from opengraph.io, or [linkpreview.net](http://www.linkpreview.net/)[^1]. The concepts, skills and syntax that you need to make this change to your original application are discussed in the lecture notes and videos, and will be demonstrated in class. Test and debug your application.
+- Use webpack to bundle all of the resources used by your application into one .js file.
 
 ## 2. Weather Application
 
@@ -54,7 +54,7 @@ Complete the programming problems described below. For each problem:
 
   - Code review from your lab partner: 
     - Fill out the "Prod" column, entering yes for anything you fixed or completed.
-    - Add screen shots for each web app showing[^1]:
+    - Add screen shots for each web app showing[^2]:
       - Your folders and files in the VS Code file explorer and the terminal showing the webpack dev server running.
       - Each app running on the Webpack dev server with the URL visible. 
 
@@ -63,8 +63,8 @@ Complete the programming problems described below. For each problem:
 
 
 
-
-[^1]: I'm asking for screen shots for this lab so that you can show me that you did use Node.js and the development tools introduced this week.
+[^1]: Note that the [linkpreview documentation](https://docs.linkpreview.net/#query-parameters) says the query parameter name `key` is deprecated, but that is only true for HTTP POST requests. We are using a GET request so `key` is the right name for the API key parameter.
+[^2]: I'm asking for screen shots for this lab so that you can show me that you did use Node.js and the development tools introduced this week.
 
 ---
 
