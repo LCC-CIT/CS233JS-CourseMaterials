@@ -27,13 +27,11 @@ author: Brian Bird
 
 # Lab 5
 
-## 
+Note that the [linkpreview documentation](https://docs.linkpreview.net/#query-parameters) says the query parameter name `key` is deprecated, but that is only true for HTTP POST requests. We are using a GET request so `key` is the right name for the API key parameter.
 
 
 
 # Lab 6
-
-## Notes and Corrections
 
 ### Home Page
 
@@ -44,6 +42,8 @@ Notice that when you submit the form, the data is saved in the db.json file.
 #### Tabs
 
 Tabs are made with Bootstrap (which makes them using fancy CSS) and are actually HTML list item elements, `<li>`.  They get event listeners that listen for click events.
+
+#### `loadExperience` is now `showExperience`
 
 The method `loadExperience` in the video is now named `showExperience` in the `status.js` starter file. The `showExperience` method calls `createExperienceChart`;
 
