@@ -25,13 +25,27 @@ author: Brian Bird
 
 
 
-# Lab 5 ?
+# Lab 5
 
 ## 
 
 
 
 # Lab 6
+
+## Notes and Corrections
+
+### Home Page
+
+Notice that when you submit the form, the data is saved in the db.json file.
+
+### Status Page
+
+#### Tabs
+
+Tabs are made with Bootstrap (which makes them using fancy CSS) and are actually HTML list item elements, `<li>`.  They get event listeners that listen for click events.
+
+The method `loadExperience` in the video is now named `showExperience` in the `status.js` starter file. The `showExperience` method calls `createExperienceChart`;
 
 
 

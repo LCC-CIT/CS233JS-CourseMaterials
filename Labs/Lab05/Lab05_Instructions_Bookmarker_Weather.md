@@ -23,7 +23,7 @@ Complete the programming problems described below. For each problem:
 ## 1. Bookmarker Version 2
 
 - Create a branch in your lab 3 GitHub repository for the new version. The  starting files are the solution files from your first version of the  application.
-- Add an image as well as a title to each bookmark by accessing data  about each url from opengraph.io. The concepts, skills and syntax that  you need to make this change to your original application are discussed  in the lecture notes and will be demonstrated in class. Test and debug  your application.
+- Add an image as well as a title to each bookmark by accessing data about each url from opengraph.io. The concepts, skills and syntax that  you need to make this change to your original application are discussed in the lecture notes and will be demonstrated in class. Test and debug  your application.
 - Use webpack to bundle all of the resources used by your application into ONE (development version) js file.
 
 ## 2. Weather Application
