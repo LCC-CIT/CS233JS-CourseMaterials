@@ -23,51 +23,31 @@ author: Brian Bird
 
 [TOC]
 
-# Backend Web Dev ?
-
-## JSON Server
-
-Q: How is this different from the webpack dev server?
 
 
+# Lab 5
 
-# Security
-
-GitDefender alert about web api key
-
-Store api key in environment variable
-
-
-
-# Lab 5 ?
-
-## Test Drivers
+## 
 
 
 
 # Lab 6
 
-## Map API
+## Notes and Corrections
 
-### Azure Maps
+### Home Page
 
-[Getting Started with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys)&mdash;Microsoft Blog Post.
+Notice that when you submit the form, the data is saved in the db.json file.
 
-- Requires an [Azure for Students](https://azure.microsoft.com/en-us/free/students) account.
-  - Free  for12 months, no credit card required.
-  - Azure is used for other classes in our department.
-- 1,000 or more (depending on the type of transaction) free transactions (without using your credit).
+### Status Page
 
-### Google Maps
+#### Tabs
 
-[Getting Started with Google Maps Platform](https://developers.google.com/maps/get-started)&mdash;GCP  Docs.
+Tabs are made with Bootstrap (which makes them using fancy CSS) and are actually HTML list item elements, `<li>`.  They get event listeners that listen for click events.
 
-Requires a [GCP (Google Cloud Platform)](https://cloud.google.com) account.
+The method `loadExperience` in the video is now named `showExperience` in the `status.js` starter file. The `showExperience` method calls `createExperienceChart`;
 
-- 90 free trial, requires a credit card.
-  - Your card could be billed if you use more than $300 in "free" services during the trial period.  
-    A notification will be sent if this is about to happen.
-  - After the trial period, you get a $200 a month free credit for GCP services, including Google Maps.
+
 
 # Reference
 

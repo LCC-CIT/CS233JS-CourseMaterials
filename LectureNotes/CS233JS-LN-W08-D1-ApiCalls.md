@@ -26,13 +26,27 @@ author: Brian Bird
 # XHR Calls Revisited
 
 Let's review HTTP requests in general and XMLHttpRequsts (XHRs) in particular.  
-**Note**:  when we talk about "XHRs" we mean any HTTP request sent from code, not just requests sent by the JavaScript `XMLHttpRequest` object. XHRs usually get some specific data rather than a whole HTML file.
+**Note**:  when we talk about "XHRs" we mean any HTTP request sent from code. It doesn't matter how the requests are sent; by the JavaScript `XMLHttpRequest` object, or the fetch API or some other way. XHR is not a different protocol from HTTP, it's just another way of sending it.
 
 ## HTTP Requests
 
 There are multiple HTTP request types. We are just going to look at GET requests here. A GET request does what it sounds like, it gets data which is returned in an HTTP response. A GET request consists of a web URL with optional query parameters. 
 
-**Note**: the code for all the following examples can be seen running on [this web page](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/index.html).
+The code for all the following examples can be seen running on [this code demo web page](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/index.html). On the code demo page:
+
+- View the source in the browser.
+
+- Open the browser's console to see log messages.
+
+  - Try to predict the order in which the log messages will appear.
+  - Change the server address in the URL to see if that error is caught.
+  - Change the file name in the URL to see if that error is caught.
+
+- Open the browser's network tab to see all requests and responses.
+
+  - Is there any difference between an HTTP request sent from HTML and an XHR?
+
+  
 
 ### HTTP Requests in HTML
 #### `<a>` Element
@@ -55,7 +69,8 @@ In order to do something with an HTTP response, other than show it on a web page
 #### `XMLHttpRequest` Object
 
 This example uses the `XMLHttpRequst` object to make a *synchronous* HTTP request.  
-Note that `XMLHttpRequest.open` can also be used to make *asynchronous* requests if the last argument is set to `true`.
+
+Note that `XMLHttpRequest.open` can also be used to make *asynchronous* requests if the last argument is set to `true` and a call-back function is provided.
 
 **HTML**
 
@@ -87,7 +102,7 @@ fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/Ghand
       return response.text();
   })
   .then(text => {
-      document.getElementById('quote2').innerHTML = text;
+      document.getElementById('quote').innerHTML = text;
   })
   .catch(function () {
  		console.log('An error occurred');
@@ -109,7 +124,7 @@ const responsePromise = fetchPromise.then(response => {
 });
 
 responsePromise.then(text => {
-    document.getElementById('quote3').innerHTML = text;
+    document.getElementById('quote').innerHTML = text;
 });
 
 responsePromise.catch(function () {
