@@ -146,7 +146,20 @@ GitDefender alert about web api key.
 
 Store api key in environment variables.
 
+### Webpack Define Plugin
 
+The `webpack.config.js` file for this project has this in the `plugins` section:
+
+```json
+/* app uses global SERVER_URL rather than process.env.SERVER_URL */
+new webpack.DefinePlugin({
+  NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+  SERVER_URL: JSON.stringify(process.env.SERVER_URL),
+  GMAP_KEY: JSON.stringify(process.env.GMAP_KEY),
+})
+```
+
+This specifies that webpack's `DefinePlugin` will create global constants based on the values in the `.env` file. 
 
 # Lab 6
 
@@ -163,13 +176,15 @@ Store api key in environment variables.
 
 ### Google Maps
 
-[Getting Started with Google Maps Platform](https://developers.google.com/maps/get-started)&mdash;GCP  Docs.
+- [Getting Started with Google Maps Platform](https://developers.google.com/maps/get-started)&mdash;GCP  Docs.
+  - [Add a Google Map with a Marker using JavaScript](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)&mdash;GCP Docs.
 
-Requires a [GCP (Google Cloud Platform)](https://cloud.google.com) account.
+- Requires a [GCP (Google Cloud Platform)](https://cloud.google.com) account.
 
-- 90 free trial, requires a credit card.
+  - 90 free trial, requires a credit card.
   - Your card could be billed if you use more than $300 in "free" services during the trial period.  
     A notification will be sent if this is about to happen.
+
   - After the trial period, you get a $200 a month free credit for GCP services, including Google Maps.
 
 # Reference
