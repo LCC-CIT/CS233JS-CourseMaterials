@@ -1,6 +1,6 @@
 // Notice the import statements
 import './general';
-const regeneratorRuntime = require("regenerator-runtime");
+const regeneratorRuntime = require("regenerator-runtime"); // used by Babel
 import { Chart, registerables } from 'chart.js';
 
 class Status {
