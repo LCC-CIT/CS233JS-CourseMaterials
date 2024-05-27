@@ -23,6 +23,32 @@ Complete the programming problem described below. For each problem:
 3. **Improve the application** by designing and implementing a strategy for reusing the navigation code across all 3 pages. Test and debug your implementation.
 4. **Use webpack** to bundle all of the resources used by your application into a production version.
 
+## Map API Alternatives
+
+You can use either of these map APIs. the starter files have two versions of the about.js and about.html files, one for each map API, you can choose the one you want to use.
+
+### Azure Maps
+
+[Getting Started with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys)&mdash;Microsoft Blog Post.
+
+- Requires an [Azure for Students](https://azure.microsoft.com/en-us/free/students) account.
+  - Free for12 months, no credit card required.
+  - Azure is used for other classes in our department.
+- 1,000 or more (depending on the type of transaction) free transactions (without using your credit).
+
+### Google Maps
+
+- [Getting Started with Google Maps Platform](https://developers.google.com/maps/get-started)&mdash;GCP  Docs.
+  - [Add a Google Map with a Marker using JavaScript](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)&mdash;GCP Docs.
+
+- Requires a [GCP (Google Cloud Platform)](https://cloud.google.com) account.
+
+  - 90 free trial, requires a credit card.
+  - Your card could be billed if you use more than $300 in "free" services during the trial period.  
+    A notification will be sent if this is about to happen.
+
+  - After the trial period, you get a $200 a month free credit for GCP services, including Google Maps.
+
 
 
 # Submission

@@ -1,7 +1,6 @@
 const regeneratorRuntime = require("regenerator-runtime"); // used by Babel
 
 import './general';
-import retrieveNavbar from './general';
 // import * as atlas from 'azure-maps-control'; // not using this, using the CDN instead
 
 
@@ -50,13 +49,5 @@ async function initMap() {
 
 // Load the map and navbar when the page loads
 window.addEventListener("load", () => {
-      // Add the navbar to the page
-      let navBar = retrieveNavbar();
-      document.body.insertAdjacentHTML('afterbegin', navBar);
-      // set the active page in the navbar (third link in the navbar)
-      const links = document.querySelectorAll('a');
-      links[0].classList.remove('active');
-      links[1].classList.remove('active');
-      links[2].classList.add('active');
   initMap();
 });

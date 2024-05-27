@@ -170,7 +170,7 @@ This specifies that webpack's `DefinePlugin` will create global constants based 
 [Getting Started with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys)&mdash;Microsoft Blog Post.
 
 - Requires an [Azure for Students](https://azure.microsoft.com/en-us/free/students) account.
-  - Free  for12 months, no credit card required.
+  - Free for12 months, no credit card required.
   - Azure is used for other classes in our department.
 - 1,000 or more (depending on the type of transaction) free transactions (without using your credit).
 
