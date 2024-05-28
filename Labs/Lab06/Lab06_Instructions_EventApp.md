@@ -20,6 +20,13 @@ Complete the programming problem described below. For each problem:
 
 1. **Setup the webpack development environment** as described in the screencasts.
 2. **Complete the Event application** described in the screencasts. The html and css files for the application have been provided. Add JavaScript code by following the detailed instructions in the starting .js file. Test and debug your application.
+
+   Notes:
+
+   - The tabs in the navbar are made using Bootstrap (which does this using fancy CSS) and are actually HTML list item elements, `<li>`.  The list elements get JavaScript event listeners that listen for click events.
+
+   -  The`loadExperience` method is now named `showExperience`.
+     The method `loadExperience` in the video is now named `showExperience` in the `status.js` starter file. The `showExperience` method calls `createExperienceChart`;
 3. **Improve the application** by designing and implementing a strategy for reusing the navigation code across all 3 pages. Test and debug your implementation.
 4. **Use webpack** to bundle all of the resources used by your application into a production version.
 
@@ -66,7 +73,7 @@ You can use either of these map APIs. the starter files have two versions of the
 ## Production Version
 
 - Publish to the CIT web server  
-  - Upload your completed web app to [citstudent.lanecc.edu](http://citstudent.lanecc.edu).  Test the app on the web server.  
+  - Upload your completed web app to [citstudent.lanecc.edu](http://citstudent.lanecc.edu).  Test the app on the web server[^2].  
 
 - Submit the following to Moodle:
 
@@ -81,6 +88,7 @@ You can use either of these map APIs. the starter files have two versions of the
   
 
 [^1]: I'm asking for screen shots for this lab so that you can show me that you did use Node.js and the development tools introduced this week.
+[^2]: When you connect a browser to your Event app running on citstudent, you will need to use an insecure HTTP connection, not a secure HTTPS  connection. This is because (unfortunately) the web API running on  citweb only provides a HTTP connection. If you  connect to your Event app on citstudent using HTTPS, your browser will  block the POST request that your code sends to citweb with this error  message: "Blocked loading mixed active content". 
 
 ---
 
