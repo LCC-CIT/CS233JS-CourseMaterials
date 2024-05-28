@@ -4,24 +4,24 @@
 
 [TOC]
 
-Each of the sections below are for a different deliverable.
+Each of the sections below are for a different deliverable as described in the [Term Project Requirements](CS233JS_ProjectRequirements.html).
 
-# Project Proposal—Description + UI MockUp
+# Proposal: Description + UI MockUp
 
 The objective of this first step in the project is to allow you to pick a topic and identify the functionality that you would like your application to provide.
 
 - Watch the video that introduces the project.
 - Read the project overview document.
-- Write a paragraph or 2 describing the application you would like to build.  The application must make an AJAX call and you may find it helpful to  look at [Public APIs Developers Can Use in Their Projects](https://www.freecodecamp.org/news/public-apis-for-developers/) to get an idea of some of the web APIs that are available to use in your project.
+- Write a paragraph or two describing the application you would like to build.  The application must make an AJAX call and you may find it helpful to  look at [Public APIs Developers Can Use in Their Projects](https://www.freecodecamp.org/news/public-apis-for-developers/) to get an idea of some of the web APIs that are available to use in your project.
 - Create a diagram of the UI for the application. You may sketch the UI using paper and pencil or any of a number of UI diagramming tools. I often use Balsalmiq with students and can provide you with a free student account if you're interested.
 
 ## Submission
 
-- Create a word processing document that includes each of the requirements listed above.
+- Create a document that includes each of the requirements listed above.
 - Share your document either formally or informally with at least one other student in class. Revise the document based on feedback that you think is relevant.
-- Upload the document you created in moodle.
+- Upload the document you created in Moodle.
 
-# Project—API Call Research + Documentation
+# API Call Research + Documentation
 
 The objective of this step in the project is to allow you to gather detailed information about the API you'll be using in your project. This should also help you refine the functionality of your application.
 
@@ -36,7 +36,7 @@ The objective of this step in the project is to allow you to gather detailed inf
 - Share your document either formally or informally with your lab partner (or another student if your lab partner is not available). Revise the document based on feedback that you think is relevant.
 - Upload the document you created to Moodle.
 
-# Project—JavaScript Dev Environment + Static HTML & CSS
+# Dev Environment + HTML & CSS
 
 The objective of this step in the  project is to allow you to implement a static version of the UI for your project in HTML and CSS. This should also help you refine the look and feel of your application.
 
@@ -56,7 +56,7 @@ The objective of this step in the  project is to allow you to implement a static
 - Share your document either formally or informally with at least one other  student in class. Revise the document based on feedback that you think  is relevant.
 - Upload the document you created in moodle.
 
-# Project—Production Version
+# Production Version
 
 The objective of this step in the project is to allow you to implement a first version of your application in JavaScript. 
 
@@ -72,5 +72,5 @@ The objective of this step in the project is to allow you to implement a first v
 ## Submission
 
 - Create a word processing document that includes one or more screen shots of  your application running on your machine as well as the URL for your  github repository and the URL for your production code running on citstudent.lanecc.net.
-- Share your document either formally or  informally with at least one other student in class. Revise the  document based on feedback that you think is relevant.
+- Share your document either formally or  informally with at least one other student in class. Revise the document based on feedback that you think is relevant.
 - Upload the document you created in moodle.

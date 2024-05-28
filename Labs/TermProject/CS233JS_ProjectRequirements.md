@@ -2,11 +2,7 @@
 
 
 ## Objective
-The objective of the term project is to allow you to synthesize your understanding of the concepts and
-skills introduced in the course as you work on a web-based application of your choice. You’ll begin to
-work on your project during the 5th week of the term and will be working on your project exclusively
-during weeks 9 and 10. The project is worth a total of 80 points or roughly 20% of your grade for the
-term.
+The objective of the term project is to allow you to synthesize your understanding of the concepts and skills introduced in the course as you work on a web-based application of your choice. You’ll begin to work on your project after the midterm quiz and will be working on your project exclusively during weeks 9 and 10. The project is worth roughly 20% of your grade for the term.
 
 ## Requirements
 The project must:
@@ -45,3 +41,5 @@ The project includes the following deliverables. Each deliverable has a due date
 - Code review
 
 - Production version
+
+See the [Term Project Instructions](CS233JS_ProjectInstructions.html) for details on each of these deliverables.
