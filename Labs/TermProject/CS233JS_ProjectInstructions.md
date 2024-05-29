@@ -27,8 +27,8 @@ The objective of this step in the project is to allow you to gather detailed inf
 
 - Review the API calls from the bookmarker and weather application lab.
 - Review the Sample API Calls Documentation document.
-- Practice making the API call you'll make in code in your application. You may need to get an API key for the API. Document a sample URL for the API  and any parameters that your application may need to modify.
-- Analyze the JSON results from the API call. Document the structure of the JSON object and identify any of the specific data that your application will need. Document the structure of the JSON response when an invalid API  call is made too.
+- Practice making the API call you'll make in code in your application. You may need to get an API key for the API. Document a sample URL for the API and any parameters that your application may need to modify.
+- Analyze the JSON results from the API call. Document the structure of the JSON object and identify any of the specific data that your application will need. Document the structure of the JSON response when an invalid API call is made too.
 
 ## Submission
 

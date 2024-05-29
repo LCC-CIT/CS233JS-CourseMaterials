@@ -9,21 +9,22 @@ The project must:
 
 - Include one or more web pages, have a clear objective and be user-friendly.
 
-- Have a professional-looking UI that uses Bootstrap or another CSS framework with which you
-  are familiar.
-
-- Use client-side code written in JavaScript. 
+- Have a professional-looking UI that uses Bootstrap or another CSS framework with which you are familiar.
+  
+-  Use client-side code written in JavaScript. 
   
 - Use classes for any parts of the project where it makes sense to use objects. Do not encapsulate the entire app in a single class.
   
-- Separate code that interacts with web page elements from the rest of the code.
+- Separate the code that interacts with web page elements from the rest of the code.
   
 - Include at least one AJAX get request.
 
 - Include one or more of the other JS technologies introduced in the course such as: local
   storage, html canvas, regular expressions, chart.js, google maps API.
 
-- Be hosted on citstudent.lanecc.net. Production code should be transpiled to a version of
+- Be hosted on citstudent.lanecc.edu. 
+  
+- Production code should be transpiled to a version of
   JavaScript that can be interpreted by modern browsers.
 
 ## Submission
