@@ -17,15 +17,14 @@ The project must:
   
 - Separate the code that interacts with web page elements from the rest of the code.
   
-- Include at least one AJAX get request.
+- Include at least one AJAX request (call a web API).
 
 - Include one or more of the other JS technologies introduced in the course such as: local
-  storage, html canvas, regular expressions, chart.js, google maps API.
+  storage, html canvas, regular expressions, chart.js, Google or Azure maps API.
 
 - Be hosted on citstudent.lanecc.edu. 
   
-- Production code should be transpiled to a version of
-  JavaScript that can be interpreted by modern browsers.
+- Production code should be transpiled to a version of JavaScript that can be interpreted by modern browsers.
 
 ## Submission
 
