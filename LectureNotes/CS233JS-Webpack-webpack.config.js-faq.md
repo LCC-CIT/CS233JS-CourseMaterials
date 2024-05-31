@@ -158,6 +158,8 @@ optimization: {
 
 - [Webpack 5 : Guide for beginners - DEV Community](https://dev.to/anitaparmar26/webpack-5-guide-for-beginners-314c): This guide is a great starting point for beginners to Webpack 5.
 
+  
+
 ---
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials by [Brian Bird](https://profbird.dev), written in <time>2024</time> with assistance from GPT4.0, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
