@@ -8,6 +8,10 @@ author: Brian Bird
 
 <h1>Webpack and webpack.config.js FAQs</h1>
 
+**CS233JS Intermediate Programming: JavaScript**
+
+
+
 <h2>Table of Contents</h2>
 
 [TOC]

@@ -8,6 +8,10 @@ author: Brian Bird
 
 <h1>NPM and package.json FAQs</h1>
 
+**CS233JS Intermediate Programming: JavaScript**
+
+
+
 <h2>Table of Contents</h2>
 
 [TOC]
