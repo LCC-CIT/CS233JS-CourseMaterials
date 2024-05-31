@@ -6,7 +6,7 @@
 
 # Objectives
 
-The objective of this lab is to give you more practice using the "new", widely supported,  version of JavaScript: ES6. You will also be introduced to Node.js, NPM and several other tools that are part of modern JavaScript development. 
+The objective of this lab is to give you more practice using the "new"[^1], widely supported version of JavaScript: ES6. You will also be introduced to Node.js, NPM and several other tools that are part of modern JavaScript development. 
 
 # Instructions
 
@@ -41,7 +41,6 @@ Complete the web apps described below. For each problem:
                                                 this.$canvas.height); 
   ```
 
-  
 - Use Node, Npm, Webpack and Babel to create a production version of the  application "transpiled" to a version of JavaScript that is supported by all browsers.
 
 # Submission
@@ -65,17 +64,16 @@ Complete the web apps described below. For each problem:
 
   - Code review from your lab partner: 
     - Fill out the "Prod" column, entering yes for anything you fixed or completed.
-    - Add screen shots for each web app showing[^1]:
+    - Add screen shots for each web app showing[^2]:
       - Your folders and files in the VS Code file explorer and the terminal showing the webpack dev server running.
       - Each app running on the Webpack dev server with the URL visible. 
 
 
   - Moodle Lab 3 Production Version assignment:  put the citstudent URLs for each web app in the online text.
 
+[^1]: ES6, also known as [ECMAScript 2015](https://en.wikipedia.org/wiki/ECMAScript_version_history#6th_Edition_%E2%80%93_ECMAScript_2015) was finalized in June of 2015.
 
-
-
-[^1]: I'm asking for screen shots for this lab so that you can show me that you did use Node.js and the development tools introduced this week.
+[^2]: I'm asking for screen shots for this lab so that you can show me that you did use Node.js and the development tools introduced this week.
 
 ---
 
