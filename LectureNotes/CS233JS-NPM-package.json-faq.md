@@ -72,6 +72,53 @@ When you install an npm package locally using `npm install <package-name>`, it g
 
 
 
+# Example
+
+Here is an example package.json file:
+
+```javascript
+{
+  "name": "going2boston",
+  "version": "0.9.0",
+  "description": "Going to Boston dice game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LCC-CIT/CS233JS-Going2Boston.git"
+  },
+  "keywords": [
+    "dice",
+    "boston"
+  ],
+  "author": "Brian Bird",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LCC-CIT/CS233JS-Going2Boston/issues"
+  },
+  "homepage": "https://github.com/LCC-CIT/CS233JS-Going2Boston#readme",
+  "dependencies": {
+    "babel-loader": "^9.1.3",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.6",
+    "@babel/core": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
+```
+
+
+
 # References
 
 - [npm Docs](https://docs.npmjs.com/cli/v6/configuring-npm/package-json)
@@ -84,6 +131,6 @@ When you install an npm package locally using `npm install <package-name>`, it g
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time> with assistance from GPT4.0, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials by [Brian Bird](https://profbird.dev), written in <time>2024</time> with assistance from GPT4.0, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ---

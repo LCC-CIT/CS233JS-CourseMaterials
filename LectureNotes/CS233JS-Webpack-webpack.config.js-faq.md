@@ -84,6 +84,68 @@ Tree Shaking is a feature that allows Webpack to remove unused code from your bu
 
 
 
+# Example
+
+Here is an example webpack.config.js file
+
+```javascript
+const path = require('path');
+// webpack dev server will serve files on localhost:8080 by default
+const htmlWebpackPlugin = require("html-webpack-plugin");
+const copyPlugin = require("copy-webpack-plugin");
+
+module.exports = {
+  mode: 'development',
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].bundle.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(?:js|mjs|cjs)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { targets: "defaults" }]
+            ]
+          }
+        }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      }
+    ]
+  },
+plugins: [
+  new htmlWebpackPlugin({
+    template: "./index.html"
+  }),
+  new copyPlugin({
+    patterns: [
+      {
+        from: path.resolve(__dirname, "./images"),
+        to: path.resolve(__dirname, "dist/images"),
+      }
+    ],
+  })
+],
+  devtool: 'inline-source-map',
+    devServer: {
+  static: './dist',
+  },
+optimization: {
+  runtimeChunk: 'single',
+  }
+};
+```
+
+
+
 # References
 
 - [Getting Started | webpack](https://webpack.js.org/guides/getting-started/): This is the official Webpack documentation for getting started. It provides a detailed explanation of `webpack.config.js`, including its structure and the significance of each field
@@ -94,6 +156,6 @@ Tree Shaking is a feature that allows Webpack to remove unused code from your bu
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time> with assistance from GPT4.0, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials by [Brian Bird](https://profbird.dev), written in <time>2024</time> with assistance from GPT4.0, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
