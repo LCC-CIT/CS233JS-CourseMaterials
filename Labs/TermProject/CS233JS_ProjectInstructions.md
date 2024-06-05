@@ -27,6 +27,7 @@ The objective of this step in the project is to allow you to gather detailed inf
 
 - Review the API calls from the bookmarker and weather application lab.
 - Review the Sample API Calls Documentation document.
+- Read the API documentation for the web API you plan to use. Include a link to this documentation in your submission.
 - Practice making the API call you'll make in code in your application. You may need to get an API key for the API. Document a sample URL for the API and any parameters that your application may need to modify.
 - Analyze the JSON results from the API call. Document the structure of the JSON object and identify any of the specific data that your application will need. Document the structure of the JSON response when an invalid API call is made too.
 
@@ -43,8 +44,14 @@ The objective of this step in the  project is to allow you to implement a static
 - Create the development environment for your application. Generally, this will involve 
   - Creating a folder for your application and a reasonable folder structure to contain your HTML, CSS, JavaScript and image files.
   - Creating a new GitHub repo for your project in that folder. Be sure to include a .gitignore file to exclude the files in the dist folder and other files that don't belong in the source code repository.
-  - Adding a package.json and webpack.config.js file to that folder. You may want to copy those files from the weather app or the event app folders from  your labs.
-  - Installing and node modules that you'll need as you create your application.
+  - Adding a package.json and webpack.config.js file to that folder. You may want to copy those files from the weather app or the event app folders from  your labs and revise them to work with your app:
+    - In package.json:
+      - Change the name of the app to match yours.
+      - Add or remove dependencies as needed for your app.
+    - In webpack.config.js:
+      - Add or remove `const` and `require` statements as needed depending on which loaders onr plugins you are using.
+      - Revise the module exports, rules and plugins as needed.
+  - Installing node modules that you'll need as you create your application.
 - Create an HTML file that contains all of the static elements that make up the UI for your application.
 - Add CSS to create a professional-looking UI for your application. The  first version of your look and feel may not be exactly what you  envisioned when you created your UI MockUp. If time permits you can  continue to work on your CSS later in the term.
 - Take one or more screen shots of your application on your machine.

@@ -19,9 +19,8 @@ The project must:
   
 - Include at least one AJAX request (call a web API).
 
-- Include one or more of the other JS technologies introduced in the course such as: local
-  storage, html canvas, regular expressions, chart.js, Google or Azure maps API.
-
+- Include one or more of the other JS technologies introduced in the course such as: local storage, html canvas, regular expressions, chart.js, Google or Azure maps API.
+  
 - Be hosted on citstudent.lanecc.edu. 
   
 - Production code should be transpiled to a version of JavaScript that can be interpreted by modern browsers.
