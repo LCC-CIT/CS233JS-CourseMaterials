@@ -87,13 +87,9 @@ The objective of this step in the project is to allow you to implement a first v
 ## Do a Self-Evaluation
 
   **Optional for 2024**
-  The objective of this step in the project is to allow you to reflect  on your progress as well as the process as you build your application. 
+The objective of this step in the project is to allow you to reflect  on your progress as well as the process as you build your application. 
 
-  - Review the [Sample Project Self Evaluation](Sample Project Self-Evaluation.html).
-  - Document your progress as well as your process as you work on each deliverable, week-by-week. You may want to include:
-    - A brief journal or blog-like narrative of your process.
-    - A brief summary of your satisfaction with your work and/or notes about what you would do differently in the future.
-    - The number of hours you spent completing the deliverable. You may also  want to keep a detailed log of what you're working on, when you work and how long you work on each "sub task" in each deliverable. Keeping track of that information will help you estimate how much time a task will take you in the future when you work.
+Review the [Sample Project Self Evaluation](Sample Project Self-Evaluation.html).
 
 ## Submission
 
