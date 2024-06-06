@@ -95,10 +95,12 @@ Review the [Sample Project Self Evaluation](SampleProjectSelf-Evaluation.html).
 
 - Upload a document to Moodle that includes:
   -  One or more screen shots of your application running on your machine.
-  - The URL for your github repository.
-  - The URL for your production code running on citstudent.lanecc.edu.
-
-- Upload the document containing your self-evaluation (optional for 2024).
+     Include the same things you did in the screen-shots for the lab assignments:
+     -  The folders and terminal in VS Code with the webpack server running.
+     -  The URL of the webpack dev server visible in a screen-shot of the app running in a browser.
+  -  The URL for your GitHub repository.
+  -  The URL for your production code running on [citstudent.lanecc.edu](citstudent.lanecc.edu).
+- Upload a document containing your self-evaluation (optional for 2024).
 
 
 
