@@ -4,13 +4,15 @@
 
 ## Introduction
 
-This is an example of the type of self-evaluation you will submit along with the production version of your final project. you will wan to start a week-by-week log of your work at the beginning of the project. 
+This is an example of the self-evaluation you will submit along with the production version of your term project. You will need to start keeping a week-by-week log of your work at the beginning of the project. 
 
-Document your progress as well as your process as you work on each deliverable, week-by-week. You may want to include:
+Document your progress as well as your development process as you work on each deliverable, week-by-week. You may want to include:
 
 - A brief journal or blog-like narrative of your process.
 - A brief summary of your satisfaction with your work and/or notes about what you would do differently in the future.
-- The number of hours you spent completing the deliverable. You may also  want to keep a detailed log of what you're working on, when you work and how long you work on each "sub task" in each deliverable. Keeping track of that information will help you estimate how much time a task will take you in the future when you work.
+- The number of hours you spent completing the deliverable. 
+
+  You may also want to keep a detailed log of what you're working on, when you work and how long you work on each "sub task" in each deliverable. Keeping track of that information will help you estimate how much time a task will take you in the future when you work.
 
 ## Sample Progress Log
 
