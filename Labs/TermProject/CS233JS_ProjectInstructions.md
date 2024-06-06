@@ -65,19 +65,50 @@ The objective of this step in the  project is to allow you to implement a static
 
 # Production Version
 
+## Finish the Project
+
 The objective of this step in the project is to allow you to implement a first version of your application in JavaScript. 
 
 - You should have created your JavaScript development environment in the previous deliverable.
-- Implement one or more ES6-style classes that encapsulate the dynamic functionality of your application in JavaScript.
-  - Begin by writing the constructor for your application. Identify the data  that your application requires and create an instance variable in the  constructor for each piece of data. Identify the event handlers that  your application requires. Write a "stub" (the heading and an empty  body or console.log statement) for a function that will be called for  each of those event handlers. Bind each of those functions. Assign  each of those functions to an event. 
-  - Write the function for one event at a time, testing as you go. You may find it helpful to write  an algorithm for any function that is complex. Some functions may be  complex enough to require you to divide the code up into several  "helper" functions.
-  - Document your work as you complete each  piece of functionality. You may have sections of your code that you'd  like to continue to work on but choose to "set aside" because of time  constraints. Your documentation will be essential in your  self-evaluation and my evaluation of your work.
-  - Add, commit and push as you complete each piece of functionality as well.
+- Implement one or more ES6 modules which may each contain an ES6 class that encapsulates the code in that module&mdash;if appropriate.
+  - Create the skeleton of the code for your app:
+    - For classes, begin by writing the constructor for your application. Identify the data that your application requires and create an instance variable in the constructor for each piece of data. 
+    - For modules without classes, identify the event handlers that your application requires. Write a "stub" (the heading and an empty  body or body containing just a console.log statement) for a function that will be called for each of those event handlers. Bind each of those functions. Assign each of those functions to an event.
+    - Write stubs for the rest of the functions (or methods) that aren't event handlers. 
+  
+  - Complete the functions (or methods) one at a time, testing as you go. You may find it helpful to write an algorithm in pseudocode (or English) for any function that is complex. Some functions may be  complex enough to require you to divide the code up into several  "helper" functions.
+  - Optional: Document your work as you complete each piece of functionality. You may have sections of your code that you'd like to continue to work on but choose to "set aside" because of time constraints. Your documentation will be essential for your self-evaluation.
+    *For 2024, this step is optional.*
+  - Add, commit to git and push to GitHub as you complete each piece of functionality as well.
+  
 - Take one or more screen shots of your application on your machine.
 - Create a production build of your application and upload the production build to citstudent.lanecc.net.
 
+## Do a Self-Evaluation
+
+  **Optional for 2024**
+  The objective of this step in the project is to allow you to reflect  on your progress as well as the process as you build your application. 
+
+  - Review the [Sample Project Self Evaluation](Sample Project Self-Evaluation.html).
+  - Document your progress as well as your process as you work on each deliverable, week-by-week. You may want to include:
+    - A brief journal or blog-like narrative of your process.
+    - A brief summary of your satisfaction with your work and/or notes about what you would do differently in the future.
+    - The number of hours you spent completing the deliverable. You may also  want to keep a detailed log of what you're working on, when you work and how long you work on each "sub task" in each deliverable. Keeping track of that information will help you estimate how much time a task will take you in the future when you work.
+
 ## Submission
 
-- Create a word processing document that includes one or more screen shots of  your application running on your machine as well as the URL for your  github repository and the URL for your production code running on citstudent.lanecc.net.
-- Share your document either formally or  informally with at least one other student in class. Revise the document based on feedback that you think is relevant.
-- Upload the document you created in moodle.
+- Upload a document to Moodle that includes:
+  -  One or more screen shots of your application running on your machine.
+  - The URL for your github repository.
+  - The URL for your production code running on citstudent.lanecc.edu.
+
+- Upload the document containing your self-evaluation (optional for 2024).
+
+
+
+---
+
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials written by Mari Good and revised by [Brian Bird](https://profbird.dev), in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+
+---
+
