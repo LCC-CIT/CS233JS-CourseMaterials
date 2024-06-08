@@ -19,9 +19,8 @@ The project must:
   
 - Include at least one AJAX request (call a web API).
 
-- Include one or more of the other JS technologies introduced in the course such as: local
-  storage, html canvas, regular expressions, chart.js, Google or Azure maps API.
-
+- Include one or more of the other JS technologies introduced in the course such as: local storage, html canvas, regular expressions, chart.js, Google or Azure maps API.
+  
 - Be hosted on citstudent.lanecc.edu. 
   
 - Production code should be transpiled to a version of JavaScript that can be interpreted by modern browsers.
@@ -43,3 +42,12 @@ The project includes the following deliverables. Each deliverable has a due date
 - Production version
 
 See the [Term Project Instructions](CS233JS_ProjectInstructions.html) for details on each of these deliverables.
+
+
+
+---
+
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials written by Mari Good and revised  by [Brian Bird](https://profbird.dev), in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+
+---
+
