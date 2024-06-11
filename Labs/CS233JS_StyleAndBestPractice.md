@@ -43,7 +43,13 @@ There are a few "best practices" mixed in with these style conventions where the
 
   - Should have a single purpose.
 
-    
+- Classes
+
+  - Names should be in PascalCase (aka TitleCase).
+  - Instance variables should be private.
+  - Getters and Setters should be used to access instance variables in objects created from the class.
+
+  
 
 ## Best Practices
 
@@ -65,6 +71,12 @@ There are a few "best practices" mixed in with these style conventions where the
 - JavaScript, CSS and HTML should all be in separate files.
 
 - When arrays or objects are created they should be constants.
+
+- Use `===` whenever possible since `==` does type coercion which can lead to unexpected results. 
+
+-  Always handle errors in promises and callbacks.
+
+- Minimize the use of global variables. They can cause conflicts in large codebases.
 
   
 
