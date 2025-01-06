@@ -5,9 +5,9 @@
 | <u>Class</u>      |                                                              |      | <u>Instructor</u> |                                                              |
 | ----------------- | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ |
 | **Course Number** | CS 233JS                                                     |      | **Name**          | Brian Bird                                                   |
-| **CRN**           | Hybrid (on campus) 41508<br />Online 40952                   |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
-| **Day & Time**    | M, W 12:00&dash;1:50                                         |      | **Office Hours**  | M, T, Th 11:00&ndash;11:50<br />W 10:00&ndash;10:50          |
-| **Room**          | Building 19, Room 128<br />[Zoom meeting](https://lanecc.zoom.us/j/92278670280) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/99949382507) |
+| **CRN**           | Hybrid (on campus) 31788<br/>Online 31256                    |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
+| **Day & Time**    | M, W 2:00&ndash;3:50                                         |      | **Office Hours**  | M&mdash;Th 4:00&ndash;4:50                                   |
+| **Room**          | Building 19, Room 126<br /> or [Zoom meeting](https://lanecc.zoom.us/j/94584000329) |      | **Room**          | Building 19, Room 152<br />or [Zoom meeting](https://lanecc.zoom.us/j/93494931394) |
 
 <h2>Table of Contents</h2>
 
@@ -202,13 +202,13 @@ The college’s “no show, drop” policy requires that: during the first week 
 
 Lane Community College (LCC) is dedicated to providing inclusive learning environments. The Center for Accessible Resources (CAR) coordinates all academic accommodations for students at LCC. If you anticipate or experience academic barriers due to a disability, to request assistance or accommodations, contact the Center for Accessible Resources.
 
-**In-person Services:** Monday and Thursday, 9:00am - 12:30 and 1:30pm - 3:00pm.
+**In-person Services**
 **Location:** Main Campus, Building 19, Room 263A
 
-**Remote Support through Support Hub:** Monday - Thursday 9:00am&ndash;12:30 and 1:30pm&ndash;3:00pm. 
+**Remote Support through Support Hub** 
 Enter the Support Hub by going to [lanecc.edu/hub](https://www.lanecc.edu/hub). Wait for a Lane staff to let you into the Zoom.
 
-**Phone:** Voice, (541) 463-5150 TTY: 711, Monday&mdash;Friday 9:00am&ndash;12:30pm and 1:30pm&ndash;3:00pm.
+**Phone:** Voice, (541) 463-5150 TTY: 711
 **Email:** AccessibleResources@lanecc.edu
 
 For upcoming closures, please visit the [Center for Accessible Resources webpage ](https://www.lanecc.edu/disability)
@@ -219,14 +219,14 @@ For upcoming closures, please visit the [Center for Accessible Resources webpage
 
 ### Academic Calendar
 
-| Spring Term 2024                           |                 |
-| ------------------------------------------ | --------------- |
-| Term begins                                | 4/1, Monday     |
-| Last day to receive refund                 | 4/8, Monday     |
-| Spring conference for faculty (no classes) | 5/3, Friday     |
-| Last day for schedule changes              | 5/24, Friday    |
-| Memorial Day Holiday                       | 5/27, Monday    |
-| Finals Week                                | 6/10&ndash;6/14 |
+| Winter Term 2025                                |              |
+| ----------------------------------------------- | ------------ |
+| Term begins                                     | 1/6, Monday  |
+| Last day to receive refund                      | 1/13, Monday |
+| Martin Luther King Jr. holiday (college closed) | 1/20, Monday |
+| President's day holiday (college closed)        | 2/17, Monday |
+| Last day for schedule changes                   | 2/28, Friday |
+| Finals Week                                     | 3/17–3/21    |
 
 View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on the LCC web site.  
 
@@ -258,23 +258,20 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
     
 
 
-
-
 ### Tentative Course Schedule
 
-| Week   | Topic                                                        | Labs                                                         | Assessments                                                  |
-| ------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **1**  | JavaScript Review and Bootstrap                              | Lab 1<br />Version 1 of stopwatch, concentration and tic-tac-toe. | Quiz 1<br />Lab 1 Beta                                       |
-| **2**  | ES6 Features and Git  <br />ES6: Function expressions, arrow functions, JSON, template strings, restructuring, and classes. | Lab 2<br />Version 2 of stopwatch, concentration and tic-tac-toe. Refactor to use classes and other ES6 features. | lab 1 code review <br />Quiz 2  <br />Lab 1 production<br />Lab 2 Beta |
-| **3**  | Classes, composition, getters and setters                    |                                                              | lab 2 code review  <br />Quiz 2B <br />Lab 2 production<br /> |
-| **4**  | Completion of lab 2B                                         |                                                              | Quiz 3<br />Lab 2B Beta                                      |
-| **5**  | JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. <br />Midterm Quiz |                                                              | lab 2B code review   <br />Lab 2B production<br />Lab 3 Beta<br />Midterm quiz |
-| **6**  | HTML5 Canvas, CSS Flexbox.                                   |                                                              | Quiz 4  <br />lab 3 code review <br />Lab 3 production<br />Lab 4 Beta<br />Term project proposal<br /> |
-|        |                                                              |                                                              |                                                              |
-| **7**  | AJAX, ES6 promises, fetch API                                |                                                              | lab 4 code review<br />Reading quiz 5<br />Lab 4 production version<br />Lab  Beta 5 |
-| **8**  | Making API calls, graphs and charts, Google maps             |                                                              | lab 5 code review<br />Reading quiz 6<br />Lab 5 production version<br />Lab  Beta 6 |
-| **9**  | Term Project                                                 |                                                              | lab 6 code review<br />Lab 6 production version<br />Beta version of term project |
-| **10** | Review                                                       |                                                              | Production version of term project                           |
-| **11** | Finals week                                                  |                                                              | Final quiz:<br />In the classroom on 6/10<br />In the testing center 6/10&mdash;6/12 |
+| Week        | Topic                                                        | Labs                                                         | Assessments                                                  |
+| ----------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **1** 1/6   | JavaScript Review and Bootstrap                              | Lab 1 Version 1 of stopwatch, concentration and tic-tac-toe. | Quiz 1 Lab 1 Beta                                            |
+| **2** 1/13  | ES6 Features and Git   ES6: Function expressions, arrow functions, JSON, template strings, restructuring, and classes. | Lab 2 Version 2 of stopwatch, concentration and tic-tac-toe. Refactor to use classes and other ES6 features. | lab 1 code review  Quiz 2   Lab 1 production Lab 2 Beta      |
+| **3** 1/20  | Classes, composition, getters and setters                    | Lab 3, Dice game using ES6 Classes                           | lab 2 code review   Quiz 3  Lab 2 production Lab 3 Beta      |
+| **4** 1/27  | JS Dev Tools: Node.js, NPM, Webpack, LocalStorage.           | Lab 4, Node and Webpack                                      | Quiz 4 lab 3 code review    Lab 3 production Lab 4 Beta      |
+| **5** 2/3   | Midterm Quiz                                                 | No lab assignment                                            | Midterm quiz lab 4 code review  Lab 4 production             |
+| **6** 2/10  | HTML5 Canvas, CSS Flexbox.                                   | Lab 5, Canvas and flex box                                   | Quiz 5   Lab 5 Beta Term project proposal                    |
+| **7** 2/17  | AJAX, ES6 promises, fetch API                                | Lab 6, AJAX and promises                                     | lab 5 code review Reading quiz 6 Lab 5 production version Lab  Beta 6 |
+| **8** 2/24  | Making API calls, graphs and charts, Google maps             | Lab 7, API calls                                             | lab 6 code review Reading quiz 6 Lab 6 production version Lab  Beta 7 |
+| **9** 3/3   | Term Project                                                 |                                                              | lab 7 code review Lab 7 production version Beta version of term project |
+| **10** 3/10 | Review                                                       |                                                              | Production version of term project                           |
+| **11** 3/17 | Finals week                                                  |                                                              | Final quiz                                                   |
 
  
