@@ -236,22 +236,22 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 - Monday
   - Start the assigned reading and videos.  
-    (Take the quiz when you finish.)
-  - Participate in class in person or via Zoom.
+    (Take the quiz as soon as you finish the reading.)
+  - Participate in class by coming in person or via Zoom, or watching the Zoom recording.
 
 
-- By Tuesday night
+- Tuesday
   - Complete a code review of last week's lab for your lab partner (starting the 2nd week).
 
 
 - Wednesday
-  - Before class starts, take the quiz.
   - Participate in class
 - Thursday
-  - By midnight: submit the production version of your lab work from last week.
+  - Deadlien for taking the quiz.
+  - Submit the production version of your lab from last week.
 
 
-- By Friday night
+- Sunday
 
   - Post the beta version of your lab for this week.
 
@@ -262,15 +262,15 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 | Week        | Topic                                                        | Labs                                                         | Assessments                                                  |
 | ----------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **1** 1/6   | JavaScript Review and Bootstrap                              | Lab 1 Version 1 of stopwatch, concentration and tic-tac-toe. | Quiz 1 Lab 1 Beta                                            |
-| **2** 1/13  | ES6 Features and Git   ES6: Function expressions, arrow functions, JSON, template strings, restructuring, and classes. | Lab 2 Version 2 of stopwatch, concentration and tic-tac-toe. Refactor to use classes and other ES6 features. | lab 1 code review  Quiz 2   Lab 1 production Lab 2 Beta      |
-| **3** 1/20  | Classes, composition, getters and setters                    | Lab 3, Dice game using ES6 Classes                           | lab 2 code review   Quiz 3  Lab 2 production Lab 3 Beta      |
-| **4** 1/27  | JS Dev Tools: Node.js, NPM, Webpack, LocalStorage.           | Lab 4, Node and Webpack                                      | Quiz 4 lab 3 code review    Lab 3 production Lab 4 Beta      |
-| **5** 2/3   | Midterm Quiz                                                 | No lab assignment                                            | Midterm quiz lab 4 code review  Lab 4 production             |
-| **6** 2/10  | HTML5 Canvas, CSS Flexbox.                                   | Lab 5, Canvas and flex box                                   | Quiz 5   Lab 5 Beta Term project proposal                    |
-| **7** 2/17  | AJAX, ES6 promises, fetch API                                | Lab 6, AJAX and promises                                     | lab 5 code review Reading quiz 6 Lab 5 production version Lab  Beta 6 |
-| **8** 2/24  | Making API calls, graphs and charts, Google maps             | Lab 7, API calls                                             | lab 6 code review Reading quiz 6 Lab 6 production version Lab  Beta 7 |
-| **9** 3/3   | Term Project                                                 |                                                              | lab 7 code review Lab 7 production version Beta version of term project |
+| **1** 1/6   | JavaScript Review and Bootstrap                              | Lab 1 Version 1 of stopwatch, concentration and tic-tac-toe. | Quiz 1<br />Lab 1 Beta                                       |
+| **2** 1/13  | ES6 Features and Git   ES6: Function expressions, arrow functions, JSON, template strings, restructuring, and classes. | Lab 2 Version 2 of stopwatch, concentration and tic-tac-toe. Refactor to use classes and other ES6 features. | Quiz 2<br />lab 1 code review<br />Lab 1 production Lab 2 Beta |
+| **3** 1/20  | Classes, composition, getters and setters                    | Lab 3, Dice game using ES6 Classes                           | Quiz 3<br />lab 2 code review<br />Lab 2 production Lab 3 Beta |
+| **4** 1/27  | JS Dev Tools: Node.js, NPM, Webpack, LocalStorage.           | Lab 4, Node and Webpack                                      | Quiz 4<br />lab 3 code review<br />Lab 3 production Lab 4 Beta |
+| **5** 2/3   | Midterm Quiz                                                 | No lab assignment                                            | Midterm quiz<br />lab 4 code review<br />Lab 4 production    |
+| **6** 2/10  | HTML5 Canvas, CSS Flexbox.                                   | Lab 5, Canvas and flex box                                   | Quiz 5<br />Lab 5 Beta<br />Term project proposal            |
+| **7** 2/17  | AJAX, ES6 promises, fetch API                                | Lab 6, AJAX and promises                                     | quiz 6<br />lab 5 code review<br />Lab 5 production Lab 6 Beta |
+| **8** 2/24  | Making API calls, graphs and charts, Google maps             | Lab 7, API calls                                             | quiz 6<br />lab 6 code review <br />Lab 6 production Lab 7 Beta |
+| **9** 3/3   | Term Project                                                 |                                                              | lab 7 code review<br />Lab 7 production Term project Beta    |
 | **10** 3/10 | Review                                                       |                                                              | Production version of term project                           |
 | **11** 3/17 | Finals week                                                  |                                                              | Final quiz                                                   |
 
