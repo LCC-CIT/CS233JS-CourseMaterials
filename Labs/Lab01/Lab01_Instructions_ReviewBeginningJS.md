@@ -72,7 +72,7 @@ Upload your completed web apps to [citstudent.lanecc.edu](http://citstudent.lane
 
 ## Upload to Moodle
 
-- Moodle Lab 1 Code review assignment: upload your completed code review form.
+- Moodle Lab 1 Code review assignment: upload your completed code review form. This week you are just reviewing your own code.
 - Moodle Lab 1 Production Version assignment:  put the citstudent URLs for each web app in the online text.
 
 # Assessment
