@@ -24,20 +24,23 @@ There are a few things Mari did differently than the way I would like you to do 
 
 ## Web App 1: Stopwatch - Version 1
 
-- Download the `stopWatchStart.zip` file and unzip it. The starting files have comments that guide you through the process of completing the code. 
+- Download the `stopWatchStart.zip` file and unzip it. The `indexStart.js` file has comments in it to guide you through the process of completing the code. 
 
 - Reanme the files by removing the word "start" from each file. 
   Complete the code in each of the starting files:
-
   - `unstyledIndexStart.html`, `indexStart.html`
-    You can use either of thse files. `IndexStart.html` is already styled with Bootstrap. If you would like to do your own styling (optional) you can start with `unstyledIndexStart.html` which does not have styling.
-
+    You can use either one of these files. 
+    - `IndexStart.html` is already styled with Bootstrap, there is nothing you need to add to this file. 
+    
+    - `unstyledIndexStart.htm` has no Bootstrap styling. If you would like to do your own styling (optional) you can add it to this one.
+    
   - `stylesStart.css` 
     There is nothing in this fiile. If you want to add some CSS styling (optional) to the web app, you can add it here.
-
+  
   - `indexStart.js` 
     Add JavaScript code to implement the stop watch functionality as you might have done in CS 133JS.  
     - FYI, the global variable `timer` does not actually store an object. It holds the ID number of a timer object created by calling the built-in JavaScript function `setInterval`.
+    - Read more about the `setInterval` function in [this MDN document](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval). In particular, note that it uses your `incrementTimer` function as a *callback function* (a function that it calls).
   
 - Test and debug your application.
 
