@@ -25,7 +25,6 @@ There are a few things Mari did differently than the way I would like you to do 
 ## Web App 1: Stopwatch - Version 1
 
 - Download the `stopWatchStart.zip` file and unzip it. The `indexStart.js` file has comments in it to guide you through the process of completing the code. 
-
 - Reanme the files by removing the word "start" from each file. 
   Complete the code in each of the starting files:
   - `unstyledIndexStart.html`, `indexStart.html`
@@ -41,8 +40,8 @@ There are a few things Mari did differently than the way I would like you to do 
     Add JavaScript code to implement the stop watch functionality as you might have done in CS 133JS.  
     - FYI, the global variable `timer` does not actually store an object. It holds the ID number of a timer object created by calling the built-in JavaScript function `setInterval`.
     - Read more about the `setInterval` function in [this MDN document](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval). In particular, note that it uses your `incrementTimer` function as a *callback function* (a function that it calls).
-  
 - Test and debug your application.
+- You can try out a completed version of the web app here: [https://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/stopWatch/](http://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/stopWatch/)
 
 ## Web App 2: Concentration - Version 1
 
@@ -50,6 +49,8 @@ There are a few things Mari did differently than the way I would like you to do 
 - Add JavaScript code to implement the concentration (aka memory) game functionality as you might have done in CS 133JS.  
 - Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking concentration board on the page. You can add as much or as little as you wish.
 - Test and debug your application.
+- You can try out a completed version of the web app here: 
+  [https://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/concentration/](http://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/concentration/)
 
 ## Web App 3: TicTacToe - Version 1
 
@@ -57,6 +58,8 @@ There are a few things Mari did differently than the way I would like you to do 
 - Add JavaScript code to implement the tic tac toe game functionality as you might have done in CS 133JS.
 - Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking tic tac toe board on the page. Again, add as much or little as you wish.
 - Test and debug your application.
+- You can try out a completed version of the web app here: 
+  [https://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/ticTacToe/](http://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/ticTacToe/)
 
 
 
