@@ -56,7 +56,7 @@ function incrementTimer() {
 function pad(number) {
     // add a leading 0 to number if the number is < 10
     // (To keep the minutes and seconds at 2 digits)
-    // return number
+    // return number as a string
 }
 
 function stopTimer() {

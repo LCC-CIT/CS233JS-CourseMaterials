@@ -15,17 +15,17 @@ The objectives of this lab are:
 
 There are a few things Mari did differently than the way I would like you to do things:
 
-- She hasn't introduced you to `let` and`cons` yet, but I have, so declare variables using `let` instead of `var`.
+- She hasn't introduced you to `let` and`const` yet, but I have, so declare variables using `let` instead of `var`.
   - Use `const` to declare numbers that are used in the code:
     - In the stopwatch app, use a `const` for 60 (used twice).
     - In the concentration app, use a `const` for 20 (used once).
 - Don't put mutliple `return` statements in a function, for example in the brances of an if-else statement.
-- In the Stopwatch app, don't write the `pad` function so that it sometimes returns a *string* and sometimes a *number*. Best practice is to always return the same data type.
+- In the Stopwatch app, don't write the `pad` function so that it sometimes returns a *string* and sometimes a *number*. The best practice is for a function to always return the same data type.
 
 ## Web App 1: Stopwatch - Version 1
 
 - Download the `stopWatchStart.zip` file and unzip it. The `indexStart.js` file has comments in it to guide you through the process of completing the code. 
-- Reanme the files by removing the word "start" from each file. 
+- Reanme the files by removing the word "start" from each file. In `index.html`, change the `src` attribute in the `script` element to use the new file name. 
   Complete the code in each of the starting files:
   - `unstyledIndexStart.html`, `indexStart.html`
     You can use either one of these files. 

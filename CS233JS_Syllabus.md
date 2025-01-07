@@ -19,7 +19,7 @@ This is the second in a sequence of 2 courses that teaches students to develop c
 
 ## Learning Outcome
 
-The intention of the course is to enable you to use modern technologies and tools to create sophisticated front-end components that might be part of any web site.
+The intention of the course is to enable you to use modern technologies and tools to create more advanced front-end components that might be part of any web site.
 
  
 
@@ -61,11 +61,11 @@ The intention of the course is to enable you to use modern technologies and tool
 
 ## Learning Resources    
 
-There is no textbook required for the course. The content of the course centers on the development of several relatively sophisticated web applications using modern features of JavaScript. In the process of building the applications the course will illustrate the usage of JavaScript modules, libraries and frameworks that are typical of modern JavaScript development environment. Your instructor will provide written and video tutorials on a variety of topics. Screencasts that demonstrate all the concepts and skills required for completion of each lab will also be provided. Starting files for each lab assignment will be provided on GitHub beginning with the second lab.                                                  
+There is no textbook required for the course. The content of the course centers on the development of several more advanced web applications using modern features of JavaScript. In the process of building the applications the course will illustrate the usage of JavaScript modules, libraries and frameworks that are typical of a modern JavaScript development environment. Your instructor will provide written and video tutorials on a variety of topics. Screencasts that demonstrate all the concepts and skills required for completion of each lab will also be provided. Starting files for each lab assignment will be provided on GitHub beginning with the second lab.                                                  
 
 #### Optional Textbook
 
-*Eloquent JavaScript: A Modern Introduction to Programming*, 3rd Edition, by Marijn Haverbeke. No Starch Press. 2018. Available [free online](https://eloquentjavascript.net) to read our download.
+*Eloquent JavaScript: A Modern Introduction to Programming*, 4th Edition, by Marijn Haverbeke. No Starch Press. 2024. Available [free online](https://eloquentjavascript.net) to read our download.
 
 
 
@@ -247,7 +247,7 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 - Wednesday
   - Participate in class
 - Thursday
-  - Deadlien for taking the quiz.
+  - Deadline for taking the quiz.
   - Submit the production version of your lab from last week.
 
 
