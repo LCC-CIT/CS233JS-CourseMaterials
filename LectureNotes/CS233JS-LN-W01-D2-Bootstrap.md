@@ -38,18 +38,22 @@ Bootstrap is an open source CSS and JavaScript library for layout and styling of
 
 In the `<head>` element of the web page:
 
-- Add a link to Bootstrap, in this case, it's on a CDN.
+1. Add a link to Bootstrap, in this case, it's on a CDN.
 
-   ```html
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"    rel="stylesheet">
-   <script    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js">   </script>
-   ```
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"    rel="stylesheet">
+<script    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js">   </script>
+```
 
-- Add the responsive viewport meta tag to ensure proper rendering and touch zooming for all devices.
+2. Add the responsive viewport meta tag to ensure proper rendering and touch zooming for all devices.
 
-   ```html
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   ```
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+- The `<meta>` tag is used to control the layout on mobile browsers.
+- `name="viewport"` specifies that the meta tag is setting the *viewport* properties. The *viewport* is the visible area of a web page on a device's screen.
+- `content="width=device-width, initial-scale=1"` sets the viewport to match the device's width and sets the initial zoom level to 1.
 
 ## Using it in a Web Page
 
@@ -75,8 +79,6 @@ Once you have a container, you can use other classes for styling. For example, t
 ```html
 <div class="h1 text-center bg-light rounded">
 ```
-
-
 
 
 
