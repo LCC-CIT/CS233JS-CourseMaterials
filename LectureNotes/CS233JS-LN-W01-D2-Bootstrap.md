@@ -51,7 +51,7 @@ In the `<head>` element of the web page:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-- The `<meta>` tag is used to control the layout on mobile browsers.
+- In this case, the `<meta>` tag is used to control web page layout, particularly for mobile browsers.
 - `name="viewport"` specifies that the meta tag is setting the *viewport* properties. The *viewport* is the visible area of a web page on a device's screen.
 - `content="width=device-width, initial-scale=1"` sets the viewport to match the device's width and sets the initial zoom level to 1.
 
@@ -62,7 +62,7 @@ The Bootstrap library contains style sheets with a huge number of CSS classes. T
 One of the first classes you will need to use is a *container* class. Bootstrap 5 requires a container element (usually a div) to wrap site contents. There are two container classes:
 
 - `.container` class provides a responsive fixed width container.
-- `.container-fluid` class provides a full width fluid container which spans the width of the viewport.
+- `.container-fluid` class provides a full width container that automatically adapts to  the width of the viewport.
 
 Example:
 
