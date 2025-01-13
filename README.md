@@ -1,7 +1,7 @@
 # CS233JS-CourseMaterials
 In CS 233JS, students learn features of JavaScript introduced in ES6, includeing ES6 classes, as well as how to use Node.js, Webpack, Babel and ohter JS dev tools. The prerequisite for this course is CS 133JS, Beginning Programming: JavaScript, here is the [link to the course materials repository](https://github.com/LCC-CIT/CS133JS-CourseMaterials) for that class. You may also access documents in this repository via [the repository's web address](https://lcc-cit.github.io/CS233JS-CourseMaterials).
 
-Solutions to the lab assignments are in [this repository](https://github.com/ProfBird/CS233JS-LabSolutions/blob/main/README.md).
+Solutions to the lab assignments are in [this repository](https://github.com/ProfBird/CS233JS-LabSolutions).
 
 For more information on courses and degrees at Lane Community College visit [https://www.lanecc.edu/cit](https://www.lanecc.edu/cit).
 
