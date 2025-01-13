@@ -61,6 +61,34 @@ If you want a method's `this` to refrence a different object than the default on
 this.startButton.onclick = this.startTimer.bind(this);
 ```
 
+## Classes that Contain Objects of Other Classes
+
+- This is called composition.
+- It is the way to build an application using multiple objects where each object represents a "thing" in the application.
+- Classes should be "highly coherent" and "loosely coupled".
+
+## Separation of Concerns
+
+In order to make your code easy to test, debug and update (add features), it is good to separate parts of the app that do different things from each other; like i/o and processing. 
+
+### Example: The Concentration Game
+
+This game can be refactored to have these classes:
+
+- Card
+- Board
+- Game
+
+The Board class will have Card objects in it and the Game class will have a Board object in it.
+
+In order to follow the principle of separation of concerns, we can separate out the i/o (everything that has to do with the html page) from the processing. In order to do this:
+
+- The Card class will just work with letters that represent suit and value rather than directly using card images.
+- The Board class won't have any event listeners or any code that interacts with the html page in it.
+- The Game class will be the only class that interacts with the html page.
+
+
+
 
 
 # Reference
