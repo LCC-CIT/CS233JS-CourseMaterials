@@ -3,7 +3,8 @@ In CS 233JS, students learn features of JavaScript introduced in ES6, includeing
 
 Solutions to the lab assignments are in [this repository](https://github.com/ProfBird/CS233JS-LabSolutions/blob/main/README.md).
 
-For more information on courses and degrees at Lane Community College visit [https://www.lanecc.edu/cit](https://www.lanecc.edu/cit)
+For more information on courses and degrees at Lane Community College visit [https://www.lanecc.edu/cit](https://www.lanecc.edu/cit).
+
 Read the instructor's blog at [https://birdsbits.wordpress.com](https://birdsbits.wordpress.com).  
 <br>
 <br>
