@@ -4,7 +4,7 @@ In CS 233JS, students learn features of JavaScript introduced in ES6, includeing
 You may also access documents in this repository via [the repository's web address](https://lcc-cit.github.io/CS233JS-CourseMaterials).
 
 For more information on courses and degrees at Lane Community College visit https://www.lanecc.edu/cit
-Read the instructor's blog at https://birdsbits.wordpress.com
-
-
+Read the instructor's blog at https://birdsbits.wordpress.com.
+<br>
+<br>
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Course Materials by [Brian Bird](https://profbird.online), <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
