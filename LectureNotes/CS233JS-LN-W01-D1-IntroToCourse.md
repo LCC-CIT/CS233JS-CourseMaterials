@@ -46,17 +46,17 @@ You will continue learing to develop client-side (aka front-end) code for browse
 
 ## Teaching Style and Modality
 
-This is my (Brian) first time teaching this course. The course materials were developed by Mari Good, who is now retired; most of the videos and teaching materials are hers. 
+This is my (Brian) second time teaching this course. The course materials were developed by Mari Good, who is now retired; most of the videos and teaching materials are hers. 
 
 Note that my grading rubrics and class policies are different from hers. Ignore anyting in her videos about these things, just pay attention to what she says about programming.
 
-I will partially adapting my teaching approach to her materials. Here's what this means for you:
+I will be partially adapting my teaching approach to her materials. Here's what this means for you:
 
 #### For on-campus students
 
-This class will be more of a "flipped" class. This means that you will watch tutorial videos before class, then during class time, instead of lecturing, I will help you with your lab assignments.
+This class will be more of a "flipped" class. This means that you will watch tutorial videos before class, then during class time, I will do less lecturing and I will spend more time helping you with your lab assignments.
 
-For the first week, I will be doing more teaching in class, to get you started, but for the rest of the term you will do reading and watch videos made by Mari (and some by me) before class. Then in class you can ask questions and get help with your labs.
+The first week will be an exception, I will do more teaching in class, to get you started, but for the rest of the term you will be reading and watching videos made by Mari (and some by me) before class. Then in class you can ask questions and get help with your labs.
 
 #### For online students
 
@@ -90,6 +90,6 @@ You can still join the class live via Zoom so that you can ask questions and get
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

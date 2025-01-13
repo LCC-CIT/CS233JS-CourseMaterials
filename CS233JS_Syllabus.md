@@ -1,13 +1,13 @@
 <h1>Intermediate Programming: JavaScript</h1>
 
-**Syllabus for spring 2024**
+**Syllabus for winter 2025**
 
 | <u>Class</u>      |                                                              |      | <u>Instructor</u> |                                                              |
 | ----------------- | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ |
 | **Course Number** | CS 233JS                                                     |      | **Name**          | Brian Bird                                                   |
-| **CRN**           | Hybrid (on campus) 41508<br />Online 40952                   |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
-| **Day & Time**    | M, W 12:00&dash;1:50                                         |      | **Office Hours**  | M, T, Th 11:00&ndash;11:50<br />W 10:00&ndash;10:50          |
-| **Room**          | Building 19, Room 128<br />[Zoom meeting](https://lanecc.zoom.us/j/92278670280) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/99949382507) |
+| **CRN**           | Hybrid (on campus) 31788<br/>Online 31256                    |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
+| **Day & Time**    | M, W 2:00&ndash;3:50                                         |      | **Office Hours**  | M&mdash;Th 4:00&ndash;4:50                                   |
+| **Room**          | Building 19, Room 126<br /> or [Zoom meeting](https://lanecc.zoom.us/j/94584000329) |      | **Room**          | Building 19, Room 152<br />or [Zoom meeting](https://lanecc.zoom.us/j/93494931394) |
 
 <h2>Table of Contents</h2>
 
@@ -19,7 +19,7 @@ This is the second in a sequence of 2 courses that teaches students to develop c
 
 ## Learning Outcome
 
-The intention of the course is to enable you to use modern technologies and tools to create sophisticated front-end components that might be part of any web site.
+The intention of the course is to enable you to use modern technologies and tools to create more advanced front-end components that might be part of any web site.
 
  
 
@@ -61,11 +61,11 @@ The intention of the course is to enable you to use modern technologies and tool
 
 ## Learning Resources    
 
-There is no textbook required for the course. The content of the course centers on the development of several relatively sophisticated web applications using modern features of JavaScript. In the process of building the applications the course will illustrate the usage of JavaScript modules, libraries and frameworks that are typical of modern JavaScript development environment. Your instructor will provide written and video tutorials on a variety of topics. Screencasts that demonstrate all the concepts and skills required for completion of each lab will also be provided. Starting files for each lab assignment will be provided on GitHub beginning with the second lab.                                                  
+There is no textbook required for the course. The content of the course centers on the development of several more advanced web applications using modern features of JavaScript. In the process of building the applications the course will illustrate the usage of JavaScript modules, libraries and frameworks that are typical of a modern JavaScript development environment. Your instructor will provide written and video tutorials on a variety of topics. Screencasts that demonstrate all the concepts and skills required for completion of each lab will also be provided. Starting files for each lab assignment will be provided on GitHub beginning with the second lab.                                                  
 
 #### Optional Textbook
 
-*Eloquent JavaScript: A Modern Introduction to Programming*, 3rd Edition, by Marijn Haverbeke. No Starch Press. 2018. Available [free online](https://eloquentjavascript.net) to read our download.
+*Eloquent JavaScript: A Modern Introduction to Programming*, 4th Edition, by Marijn Haverbeke. No Starch Press. 2024. Available [free online](https://eloquentjavascript.net) to read our download.
 
 
 
@@ -159,11 +159,11 @@ Weekly quizzes are given that cover the required reading and tutorial videos for
 
 <u>Midterm and Final Quizzes</u>
 
-The midterm and final quizzes are given in weeks 5 and 11. See the course schedule for exact dates and times. Quizzes are "closed book", but students may prepare a 4 X 6 notecard to refer to during the quiz. These quizzes may be taken either:
+The midterm and final quizzes are given in weeks 5 and 11. See the course schedule for exact dates and times. Quizzes are "closed book", but students may prepare a 8 1/2 x 11 sheet of notes to refer to during the quiz. These quizzes may be taken either:
 
 - On-campus students (hybrid modality) will take the quiz In the classroom during the normal class time.
 
-- online studentw sill take the quiz In the Instructional Testing Center in the Center Building, room 311. See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for testing times and procedures.  
+- online students will take the quiz In the Instructional Testing Center in the Center Building, room 311. See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for testing times and procedures.  
 
   Students who live outside the Eugene/Springfield area can send an email to [online@lanecc.edu](mailto:online@lanecc.edu) well in advance of the test dates to arrange for your midterm and final to be proctored at a location near you.
 
@@ -202,13 +202,13 @@ The college’s “no show, drop” policy requires that: during the first week 
 
 Lane Community College (LCC) is dedicated to providing inclusive learning environments. The Center for Accessible Resources (CAR) coordinates all academic accommodations for students at LCC. If you anticipate or experience academic barriers due to a disability, to request assistance or accommodations, contact the Center for Accessible Resources.
 
-**In-person Services:** Monday and Thursday, 9:00am - 12:30 and 1:30pm - 3:00pm.
+**In-person Services**
 **Location:** Main Campus, Building 19, Room 263A
 
-**Remote Support through Support Hub:** Monday - Thursday 9:00am&ndash;12:30 and 1:30pm&ndash;3:00pm. 
+**Remote Support through Support Hub** 
 Enter the Support Hub by going to [lanecc.edu/hub](https://www.lanecc.edu/hub). Wait for a Lane staff to let you into the Zoom.
 
-**Phone:** Voice, (541) 463-5150 TTY: 711, Monday&mdash;Friday 9:00am&ndash;12:30pm and 1:30pm&ndash;3:00pm.
+**Phone:** Voice, (541) 463-5150 TTY: 711
 **Email:** AccessibleResources@lanecc.edu
 
 For upcoming closures, please visit the [Center for Accessible Resources webpage ](https://www.lanecc.edu/disability)
@@ -219,14 +219,14 @@ For upcoming closures, please visit the [Center for Accessible Resources webpage
 
 ### Academic Calendar
 
-| Spring Term 2024                           |                 |
-| ------------------------------------------ | --------------- |
-| Term begins                                | 4/1, Monday     |
-| Last day to receive refund                 | 4/8, Monday     |
-| Spring conference for faculty (no classes) | 5/3, Friday     |
-| Last day for schedule changes              | 5/24, Friday    |
-| Memorial Day Holiday                       | 5/27, Monday    |
-| Finals Week                                | 6/10&ndash;6/14 |
+| Winter Term 2025                                |              |
+| ----------------------------------------------- | ------------ |
+| Term begins                                     | 1/6, Monday  |
+| Last day to receive refund                      | 1/13, Monday |
+| Martin Luther King Jr. holiday (college closed) | 1/20, Monday |
+| President's day holiday (college closed)        | 2/17, Monday |
+| Last day for schedule changes                   | 2/28, Friday |
+| Finals Week                                     | 3/17–3/21    |
 
 View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on the LCC web site.  
 
@@ -236,45 +236,42 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 - Monday
   - Start the assigned reading and videos.  
-    (Take the quiz when you finish.)
-  - Participate in class in person or via Zoom.
+    (Take the quiz as soon as you finish the reading.)
+  - Participate in class by coming in person or via Zoom, or watching the Zoom recording.
 
 
-- By Tuesday night
+- Tuesday
   - Complete a code review of last week's lab for your lab partner (starting the 2nd week).
 
 
 - Wednesday
-  - Before class starts, take the quiz.
   - Participate in class
 - Thursday
-  - By midnight: submit the production version of your lab work from last week.
+  - Deadline for taking the quiz.
+  - Submit the production version of your lab from last week.
 
 
-- By Friday night
+- Sunday
 
   - Post the beta version of your lab for this week.
 
     
 
 
-
-
 ### Tentative Course Schedule
 
-| Week   | Topic                                                        | Labs                                                         | Assessments                                                  |
-| ------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **1**  | JavaScript Review and Bootstrap                              | Lab 1<br />Version 1 of stopwatch, concentration and tic-tac-toe. | Quiz 1<br />Lab 1 Beta                                       |
-| **2**  | ES6 Features and Git  <br />ES6: Function expressions, arrow functions, JSON, template strings, restructuring, and classes. | Lab 2<br />Version 2 of stopwatch, concentration and tic-tac-toe. Refactor to use classes and other ES6 features. | lab 1 code review <br />Quiz 2  <br />Lab 1 production<br />Lab 2 Beta |
-| **3**  | Classes, composition, getters and setters                    |                                                              | lab 2 code review  <br />Quiz 2B <br />Lab 2 production<br /> |
-| **4**  | Completion of lab 2B                                         |                                                              | Quiz 3<br />Lab 2B Beta                                      |
-| **5**  | JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. <br />Midterm Quiz |                                                              | lab 2B code review   <br />Lab 2B production<br />Lab 3 Beta<br />Midterm quiz |
-| **6**  | HTML5 Canvas, CSS Flexbox.                                   |                                                              | Quiz 4  <br />lab 3 code review <br />Lab 3 production<br />Lab 4 Beta<br />Term project proposal<br /> |
-|        |                                                              |                                                              |                                                              |
-| **7**  | AJAX, ES6 promises, fetch API                                |                                                              | lab 4 code review<br />Reading quiz 5<br />Lab 4 production version<br />Lab  Beta 5 |
-| **8**  | Making API calls, graphs and charts, Google maps             |                                                              | lab 5 code review<br />Reading quiz 6<br />Lab 5 production version<br />Lab  Beta 6 |
-| **9**  | Term Project                                                 |                                                              | lab 6 code review<br />Lab 6 production version<br />Beta version of term project |
-| **10** | Review                                                       |                                                              | Production version of term project                           |
-| **11** | Finals week                                                  |                                                              | Final quiz:<br />In the classroom on 6/10<br />In the testing center 6/10&mdash;6/12 |
+| Week        | Topic                                                        | Labs                                                         | Assessments                                                  |
+| ----------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **1** 1/6   | JavaScript Review and Bootstrap                              | Lab 1 Version 1 of stopwatch, concentration and tic-tac-toe. | Quiz 1<br />Lab 1 Beta                                       |
+| **2** 1/13  | ES6 Features and Git   ES6: Function expressions, arrow functions, JSON, template strings, restructuring, and classes. | Lab 2 Version 2 of stopwatch, concentration and tic-tac-toe. Refactor to use classes and other ES6 features. | Quiz 2<br />lab 1 code review<br />Lab 1 production Lab 2 Beta |
+| **3** 1/20  | Classes, composition, getters and setters                    | Lab 3, Dice game using ES6 Classes                           | Quiz 3<br />lab 2 code review<br />Lab 2 production Lab 3 Beta |
+| **4** 1/27  | JS Dev Tools: Node.js, NPM, Webpack, LocalStorage.           | Lab 4, Node and Webpack                                      | Quiz 4<br />lab 3 code review<br />Lab 3 production Lab 4 Beta |
+| **5** 2/3   | Midterm Quiz                                                 | No lab assignment                                            | Midterm quiz<br />lab 4 code review<br />Lab 4 production    |
+| **6** 2/10  | HTML5 Canvas, CSS Flexbox.                                   | Lab 5, Canvas and flex box                                   | Quiz 5<br />Lab 5 Beta<br />Term project proposal            |
+| **7** 2/17  | AJAX, ES6 promises, fetch API                                | Lab 6, AJAX and promises                                     | quiz 6<br />lab 5 code review<br />Lab 5 production Lab 6 Beta |
+| **8** 2/24  | Making API calls, graphs and charts, Google maps             | Lab 7, API calls                                             | quiz 6<br />lab 6 code review <br />Lab 6 production Lab 7 Beta |
+| **9** 3/3   | Term Project                                                 |                                                              | lab 7 code review<br />Lab 7 production Term project Beta    |
+| **10** 3/10 | Review                                                       |                                                              | Production version of term project                           |
+| **11** 3/17 | Finals week                                                  |                                                              | Final quiz                                                   |
 
  
