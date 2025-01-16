@@ -1,7 +1,7 @@
 ---
-title: Intro to Bootstrap
-description: Quick intro to Bootstrap 
-keywords: Bootstrap
+title: ES6 Classes
+description: Intro to ES6 style classes
+keywords: ES6, class
 generator: Typora
 author: Brian Bird
 ---

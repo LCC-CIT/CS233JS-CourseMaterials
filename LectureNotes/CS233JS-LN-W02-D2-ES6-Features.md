@@ -36,7 +36,7 @@ The arrow function syntax is just another way of writing anonymous functions. Th
 ```javascript
 // A "normal" anonymous function used as an event handler
 document.querySelector("button").addEventListener("click", 
-  function ( {
+  function () {
 		 document.querySelector("span").textContent = "Button pressed!";
   } );
 
@@ -65,7 +65,7 @@ Another example from concentration
 
 ```javascript
 card.style.backgroundImage = 'url(' + cardImage + ')';
-// can be writteen as:
+// can be written as:
 card.style.backgroundImage = `url(${cardImage})`;
 ```
 
