@@ -14,7 +14,7 @@ author: Brian Bird
 | ---------------------------------------------------- | --------------------------------------------------- |
 | 1. Intro to Course, Bootstrap and JavaScript Review  | 6. HTML5 Canvas, CSS Flexbox                        |
 | 2. <mark>ES6 Classes and Git</mark>                  | 7. AJAX, ES6 promises, fetch API                    |
-| 3. More about Classes **<== New topic!**             | 8. Making API calls, graphs and charts, Google maps |
+| 3. More about Classes                                | 8. Making API calls, graphs and charts, Google maps |
 | 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage | 9. Term Project                                     |
 | 5. Midterm Review and Quiz                           | 10. Review                                          |
 | 11. Final Quiz                                       |                                                     |
