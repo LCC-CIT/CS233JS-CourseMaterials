@@ -1,4 +1,4 @@
-<h1>Lab 1: Review of Beginning JavaScript</h1>
+<h1>Lab 2: ES 6 Classes and Features</h1>
 
 [TOC]
 
