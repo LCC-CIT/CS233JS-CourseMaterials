@@ -99,6 +99,10 @@ Some of the things that will be different from the Bunco game are:
 
   - Upload the code review your lab partner did for you with the "prod." column completed by you.
 
+# Assessment
+
+Here is a link to [the grading rubric](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab03/CS233JS_Lab03_Rubric.htm).
+
 
 
 ------
