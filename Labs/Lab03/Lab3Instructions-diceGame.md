@@ -95,11 +95,7 @@ Some of the things that will be different from the Bunco game are:
 
 - Submit your lab to the Moodle Production Version assignemnt.
 
-  - In the online text box:
-
-    - Paste a link to your GitHub repository.
-
-    - Paste a link to your web app running on citstudent.
+  - In the online text box, paste a link to your web app running on citstudent.
 
   - Upload the code review your lab partner did for you with the "prod." column completed by you.
 
