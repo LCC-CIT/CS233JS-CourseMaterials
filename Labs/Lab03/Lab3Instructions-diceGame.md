@@ -91,7 +91,7 @@ Some of the things that will be different from the Bunco game are:
 
 ## Production Version
 
-- Publish your web app to the [citstudent web server](http://citstudent.lanecc.edu/).
+- Publish your web app to the [citstudent web server](https://citstudent.lanecc.edu/).
 
 - Submit your lab to the Moodle Production Version assignemnt.
 
