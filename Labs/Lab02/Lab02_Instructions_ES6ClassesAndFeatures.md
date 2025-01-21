@@ -60,7 +60,10 @@ Refactor the code for TicTacToe to be Object Oriented using two classes: one to 
   - **What 75% done means**:  
     All the code is there and 75% of it is working. There could still be a  few errors that show up in the console and a few things that don't work yet.
 
-  **Note:** You don't need to submit the beta version anywhere, just share it with your lab partner to get a code review.
+  **Notes:** 
+
+  - You don't need to submit the beta version anywhere, just share it with your lab partner to get a code review.
+  - Everyone is doing the same lab assignment. You are **on your honor to not copy your lab partner's code** when you do the code revivew.
 
 - **Code Review:** Do a code review for your lab partner using the code reveiw form for this lab and post the it in the Beta Version Forum for your lab partner as well as uploading it to the Moodle Code Review assignment. Use the provided .docx file for the code review (not a pdf) so your lab partner can edit the  "prod." column.
 
