@@ -42,9 +42,11 @@ document.querySelector("button").addEventListener("click",
 
 // The same function written as an arrow function:
 document.querySelector("button").addEventListener("click", 
-  () => { 
-    document.querySelector("span").textContent = "Button pressed!";
-  } );
+  () => { document.querySelector("span").textContent = "Button pressed!";} );
+
+// The syntax can be simplified further by omitting the curly braces when there is only one statement in the function body.
+document.querySelector("button").addEventListener("click", 
+  () => document.querySelector("span").textContent = "Button pressed!");
 ```
 
 
@@ -57,7 +59,9 @@ cards[i].onclick = () => this.handleClick(i);  // add an event handler method
 card.onclick = () => { };  // remove an event handler
 ```
 
-Good news! Arrow functions automatically bind `this` to the context in which they were defined, so there's no need to use `.bind(this)`.
+Good news! Arrow functions automatically bind `this` to the context in which they were defined (in this case, `this`, will be bound to the object where the code is executing), so there's no need to use `.bind(this)`.
+
+Note: In other programming languages, *arrow functions* are called *lambda functions*[^1]. 
 
 ## Template literals
 
@@ -177,6 +181,8 @@ Note that when doing destructuring assignment, the variables that will be assign
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
+
+[^1]: The term  *lambda function* comes from *lambda calculus* in mathematics. Lambda calculus is one of the theoretical foundation for the programming language paradigm called *functional programming*.  A primary aspect of functional programming is the use of *higher order functions* (functions that take functions as arguments and return other functions as results) which is a concept that comes from lambda calculus. 

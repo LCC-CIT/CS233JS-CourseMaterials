@@ -1,4 +1,4 @@
-<h1>Lab 2B – Dice Game</h1>
+<h1>Lab 3 – Dice Game</h1
 
 <h4>CS233JS, Intermediate Programming: JavaScript</h4>
 
@@ -14,7 +14,7 @@ Learn how to design and build a web app that employs *separation of concerns* by
 
 ## Clone the GitHub Classroom Repo
 
-Clone the Lab 2B repository from the GitHub classroom invitation. It won't have much in it, just the images for the six sides of a die. You will write the code (and use some from my examples).
+Clone the Lab 3 repository from the GitHub classroom invitation. It won't have much in it, just the images for the six sides of a die (and just for those doing the 10,000 game, the scoring method). You will write the code (and use some from my examples).
 
 ## Write a Dice Game Web App
 
@@ -28,9 +28,9 @@ Using the [Bunco](https://github.com/LCC-CIT/CS233JS-BuncoGame) and [Going to Bo
 
 You will need to make all instance variables private and use *getters* and *setters* for any instance variables that need to be accessed from outside the class.
 
-The best approach is to not copy an entire example game into your project. It usually works better to create the files you need and then copy over just the methods you know you can re-use from the example. 
+The best approach is to using the examples is to <u>not</u> copy an entire example game into your project. It usually works better to create the files you need and then copy over just the methods you know you can re-use from the example. 
 
-Do the appropriate version depending on which lab version group you are in.
+Use the appropriate version below depending on which lab version group you are in.
 
 ### Version A
 
@@ -91,23 +91,23 @@ Some of the things that will be different from the Bunco game are:
 
 ## Production Version
 
-- Publish your web app to the [citstudent web server](http://citstudent.lanecc.edu/).
+- Publish your web app to the [citstudent web server](https://citstudent.lanecc.edu/).
 
 - Submit your lab to the Moodle Production Version assignemnt.
 
-  - In the online text box:
-
-    - Paste a link to your GitHub repository.
-
-    - Paste a link to your web app running on citstudent.
+  - In the online text box, paste a link to your web app running on citstudent.
 
   - Upload the code review your lab partner did for you with the "prod." column completed by you.
+
+# Assessment
+
+Here is a link to [the grading rubric](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab03/CS233JS_Lab03_Rubric.htm).
 
 
 
 ------
 
-Written by Brian Bird, Lane Community College, spring 2024
+Written by Brian Bird, Lane Community College, spring 2024, revised <time>2025</time>
 
 ------
 
