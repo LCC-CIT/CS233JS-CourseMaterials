@@ -6,33 +6,24 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>More About Classes and Object Oriented Programming</h1>
+<h1>More About Classes and OOP&mdash;Finishing the Dice Games</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
-| Topics by Week                                               |                                                     |
-| ------------------------------------------------------------ | --------------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review          | 6. HTML5 Canvas, CSS Flexbox                        |
-| 2. ES6 Classes and Git                                       | 7. AJAX, ES6 promises, fetch API                    |
-| 3. More about Classes **<== New topic!**                     | 8. Making API calls, graphs and charts, Google maps |
-| 4. <mark>More time to finish the dice games</mark>           | 9. Term Project                                     |
-| 5. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. Midterm Quiz | 10. Review                                          |
-| 11. Final Quiz                                               |                                                     |
+| Topics by Week                                         |                                                     |
+| ------------------------------------------------------ | --------------------------------------------------- |
+| 1. Intro to Course, Bootstrap and JavaScript Review    | 6. HTML5 Canvas, CSS Flexbox                        |
+| 2. ES6 Classes and Git                                 | 7. AJAX, ES6 promises, fetch API                    |
+| 3. More about Classes                                  | 8. Making API calls, graphs and charts, Google maps |
+| 4.  JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. | 9. Term Project                                     |
+| 5. Midterm Quiz                                        | 10. Review                                          |
+| 11. Final Quiz                                         |                                                     |
 
 
 
 <h2>Table of Contents</h2>
 
 [TOC]
-
-# Announcements
-
-- Due dates pushed out one week.
-  - You can start on next week's topic whenever you are done with the dice game.
-- Some people are making their own GitHub repo. Please just use the one that you got via GitHub Classroom. I use GitHub Classroom tools to manage and grade those. If you clone a different repository, then it won't work with my tools.
-- MIdterm is next week (week 5).
-
-
 
 # Guidance for Finishing the Dice Games
 
@@ -78,14 +69,12 @@ Write a simple function that you can run from the console that you can use to te
 
 # Reference
 
-- [Using Classes Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes) on MDN
-
-  
+[Using Classes Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes) on MDN
 
 
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
