@@ -29,14 +29,12 @@ author: Brian Bird
 
 Last week you learned how to create ES6 classes. This week you will learn more about OOP (Object Oriented Programming) and why you would want to use classes and objects.
 
-- 
-
 ## Review of Card and Die Game Coding Basics
 
-If you would like some review of coding techniques from last term, we can look at the Die Roller web app
+If you would like some review of coding techniques from last term, you can look at the Die Roller web app example:
 
-- Running on citstudent: https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/DieRoller/
-- Code on GitHub: https://github.com/LCC-CIT/CS233JS-CourseMaterials/tree/main/Examples/DiceExamples
+- Die Roller running on citstudent: https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/DieRoller/
+- Die Roller code on GitHub: https://github.com/LCC-CIT/CS233JS-CourseMaterials/tree/main/Examples/DiceExamples
 
 
 
@@ -210,6 +208,6 @@ graph LR
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
