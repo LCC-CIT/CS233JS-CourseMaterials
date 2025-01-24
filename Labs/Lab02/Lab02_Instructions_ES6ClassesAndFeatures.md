@@ -15,20 +15,21 @@ The objectives of this lab are:
 
 ### Set Up a GitHub Account
 
-If you don’t already have a github account, create one now. Use your LCC email address. 
+If you don’t already have a GitHub account, create one now.
 
 If you haven’t already installed Git on your computer, [download it](https://git-scm.com/downloads) and install it now.
 
-### Clone the Repositories Containing Starting Files
+### Clone the Repository Containing Starting Files
 
-Click the link to accept the GitHub Classroom assignment on Moodle. Choose your name from the GitHub Classroom roster, then follow any additional instructions. GitHub Classroom will create a private GitHub repository for you for this lab and will take you to the repository page on GitHub. 
+Click the link to accept the GitHub Classroom assignment on Moodle. Choose your name from the GitHub Classroom roster, then follow any additional instructions. GitHub Classroom will create a private GitHub repository for you for this lab and will redirect your browser to the repository page on GitHub. 
 
-Clone the repository to your local computer:
+*Clone* the repository to your local computer:
 
 1. Click on the green "Code" button.
-2. Copy the HTTPS address.
-3. On your computer, in a terminal app (or GitBash, or PowerShell, or Command, etc.), at the folder where you want to clone the repository, type:  
-   `git clone https://addressofyourrepository`
+2. Copy the HTTPS address for cloning your repository. (This address ends in `.git`)
+3. On your computer, in a terminal app (or GitBash, PowerShell, etc.). At the folder where you want to clone the repository, type:  
+   `git clone addressofyourrepository` 
+   (Using the address you copied above.)
 
 There is a separate folder for each of the three web apps.
 
@@ -39,19 +40,19 @@ There is a separate folder for each of the three web apps.
 - git commit –m “some message”
 - git push
 
-After pushing, check your files on GitHub to make sure eveything is there.
+After pushing, check your files on GitHub to make sure everything is there.
 
 ## Web App 1: Stopwatch - Version 2
 
-Refacotr the code for the stopwatch app so that it is all in one class. Use the comments in the starter file and Mari's video as a guide.
+Refactor the code for the stopwatch app so that it is all in one class. Use the comments in the starter file and Mari's video as a guide.
 
 ## Web App 2: Concentration - Version 2
 
 Refactor the code for Concentration so that it is Object Oriented using three classes: Card, Board, and Game. Use the comments in the starting file and Brian's video as a guide.
 
-## Web App 3: TicTacToe - Version 2
+## Web App 3: Tic-tac-toe - Version 2
 
-Refactor the code for TicTacToe to be Object Oriented using two classes: one to hold the game logic and the other to hold the i/o code that interacts with the HTML page.
+Refactor the code for Tic-tac-toe to be Object Oriented using two classes: one to hold the game logic and the other to hold the i/o code that interacts with the HTML page.
 
 ## Beta Version and Code Review
 
@@ -78,7 +79,9 @@ Upload your completed web apps to [citstudent.lanecc.edu](http://citstudent.lane
 
 ## Upload to Moodle
 
-- **Moodle Lab 2 Code review assignment**: upload your completed code review form. This week you are just reviewing your own code.
+- **Moodle Lab 2 Code review assignment**: 
+  - Upload the code review your lab partner did for you.
+
 - **Moodle Lab 2 Production Version assignment:**  
   - Put the citstudent URLs for each web app in the online text.
   - Upload the code review your lab partner did for you with the "prod." column completed by you.
