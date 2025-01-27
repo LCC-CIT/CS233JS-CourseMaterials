@@ -84,9 +84,11 @@ npm run build
 
 # Babel
 
-Babel.js is a JavaScript compiler that converts modern JavaScript (ES6+) into backwards-compatible versions for older browsers and environments. It’s widely used in web development for compatibility purposes.
+Babel.js is a JavaScript compiler that converts modern JavaScript (ES6+) into backwards-compatible versions, like ES5, for older browsers and environments. It’s widely used in web development for compatibility purposes.
 
-Node.js is required to run Babel.
+These days (2025), you might use Bable to compile from some newer version of JS, like ES2024, to a version supported by all the browsers, which could be ES5 or ES6.
+
+Note: Node.js is required to run Babel.
 
 # Webpack
 

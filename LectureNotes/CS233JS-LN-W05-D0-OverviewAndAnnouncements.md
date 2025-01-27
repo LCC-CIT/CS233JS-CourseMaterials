@@ -33,7 +33,8 @@ author: Brian Bird
 - Things that have changed since Mari recorded her videos:
 
   - This week's lab was lab 3 but is now lab 4.
-  - Browser compatibility with ES6 used to be an issue, but now all browsers support ES6 and evern newer version of JavaScript. These days, you might use Bable to compile from some newer version of JS (like ES2024) to a version supported by all the browsers, which could be ES5 or ES6.
+  - Browser compatibility with ES6 used to be an issue, but now all browsers support ES6 and evern newer version of JavaScript as well. 
+  - The link to the browser compatibility chart in Mari's notes is now broken. Here's a replacement: [ECMAScript Browser Compatibility Table](https://compat-table.github.io/compat-table/es6/).
   
   
 
