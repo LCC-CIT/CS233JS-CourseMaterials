@@ -10,14 +10,14 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-| Topics by Week                                        |                                                     |
-| ----------------------------------------------------- | --------------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review   | 6. HTML5 Canvas, CSS Flexbox                        |
-| 2. ES6 Classes and Git                                | 7. AJAX, ES6 promises, fetch API                    |
-| 3. More about Classes                                 | 8. Making API calls, graphs and charts, Google maps |
-| 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. | 9. Term Project                                     |
-| 5. <mark> Midterm Quiz</mark>                         | 10. Review                                          |
-| 11. Final Quiz                                        |                                                     |
+| Topics by Week                                               |                                                     |
+| ------------------------------------------------------------ | --------------------------------------------------- |
+| 1. Intro to Course, Bootstrap and JavaScript Review          | 6. HTML5 Canvas, CSS Flexbox                        |
+| 2. ES6 Classes and Git                                       | 7. AJAX, ES6 promises, fetch API                    |
+| 3. More about Classes                                        | 8. Making API calls, graphs and charts, Google maps |
+| 4.<mark> JS Dev Tools: Node.js, NPM, Webpack, LocalStorage.</mark> | 9. Term Project                                     |
+| 5.  Midterm Quiz                                             | 10. Review                                          |
+| 11. Final Quiz                                               |                                                     |
 
 
 
@@ -25,32 +25,7 @@ author: Brian Bird
 
 [TOC]
 
-# Introduction
-
-**Spring 2024**
-
-## Announcements
-
-- Midterm opens on Thursday, closes on Sunday.
-
-- College closed this Friday.
-
-## Reminders
-
-- Wednesday (today): 
-  Reading quiz 3 closes
-- Thursday: 
-  - Lab 2B production version due.
-  - The midterm quiz opens.
-- Friday: 
-  Lab 3 beta version&mdash;share it with your lab partner via GitHub and the Beta Forum.  
-  Note: use the repository you got through GitHub Classroom, don't make a different repository.
-- Sunday:  
-  Midterm quiz closses.
-
-
-
-# New ES6 Syntax/Features
+## New ES6 Syntax/Features
 
 These are "new" ES6 features that Mari introduced you to and that you are using in this week's lab assignment[^1]. 
 
