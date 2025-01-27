@@ -7,7 +7,7 @@ author: Brian Bird
 
 ---
 
-<h1>Week 4 Overview for Winter 2025</h1>e
+<h1>Week 4 Overview for Winter 2025</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
