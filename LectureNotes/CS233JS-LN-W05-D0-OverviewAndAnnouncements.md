@@ -45,6 +45,8 @@ author: Brian Bird
 - Thursday: 
   - Reading quiz 4.
   - Lab 3 production version.
+- Sunday:
+  - Share a beta version of lab 4 with your lab partner.
 
 ### Midterm quiz next week
 
