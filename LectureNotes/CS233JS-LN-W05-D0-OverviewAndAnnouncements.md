@@ -7,7 +7,7 @@ author: Brian Bird
 
 ---
 
-<h1>Overview of Week 4 for Winter 2025</h1>e
+<h1>Week 4 Overview for Winter 2025</h1>e
 
 **CS233JS Intermediate Programming: JavaScript**
 
@@ -26,7 +26,9 @@ author: Brian Bird
 
 ## Introduction
 
-- Review this week's section on Moodle. Be sure to <u>watch or read all the required materials</u>.
+- Review this week's section on Moodle. Be sure to <u>watch or read all the required materials</u>. 
+
+  - For online students, this includes the short class recordings which will be available after 4:00 on Monday and Wednesday via the Zoom widget near the top of the Moodle page.
 
 - This week's class will be more "flipped", meaning I won't lecture very much, instead I'll give you a lot of time to <u>code and get help with debugging</u>.
 
@@ -35,7 +37,7 @@ author: Brian Bird
   - This week's lab was lab 3 but is now lab 4.
   - Browser compatibility with ES6 used to be an issue, but now all browsers support ES6 and evern newer version of JavaScript as well. 
   - The link to the browser compatibility chart in Mari's notes is now broken. Here's a replacement: [ECMAScript Browser Compatibility Table](https://compat-table.github.io/compat-table/es6/).
-  
+
   
 
 ## Announcements for this Week (1/27&ndash;2/2)
