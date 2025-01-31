@@ -1,4 +1,5 @@
-<h1>Lab 3: ToDo List and Web Bookmarker</h13
+<h1>Lab 4: ToDo List and Web Bookmarker</h13
+
 
 <h2>Table of Contents</h2>
 
@@ -77,4 +78,4 @@ Complete the web apps described below. For each problem:
 
 ---
 
-Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024.
+Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024 and revised winter <time>2025</time>	
