@@ -4,12 +4,15 @@ description: What's happening in week 4
 keywords: Announcements, Due Dates, Help
 generator: Typora
 author: Brian Bird
-
 ---
+
+**CS233JS Intermediate Programming: JavaScript**
 
 <h1>Week 4 Overview for Winter 2025</h1>
 
-**CS233JS Intermediate Programming: JavaScript**
+<h2>January 27 through February 2</h2>
+
+
 
 | Topics by Week                                               |                                                     |
 | ------------------------------------------------------------ | --------------------------------------------------- |
@@ -26,23 +29,25 @@ author: Brian Bird
 
 ## Introduction
 
-- Review this week's section on Moodle. Be sure to <u>watch or read all the required materials</u>. 
-
-  - For online students, this includes the short class recordings which will be available after 4:00 on Monday and Wednesday via the Zoom widget near the top of the Moodle page.
+- Review this week's section on Moodle. 
+- Be sure to <u>watch or read all the required materials</u>.  
+    For online students, this includes the short class recordings which will be available after 4:00 on Monday and Wednesday via the Zoom widget near the top of the Moodle page.
 
 - This week's class will be more "flipped", meaning I won't lecture very much, instead I'll give you a lot of time to <u>code and get help with debugging</u>.
-
 - Things that have changed since Mari recorded her videos:
 
   - This week's lab was lab 3 but is now lab 4.
   - Browser compatibility with ES6 used to be an issue, but now all browsers support ES6 and evern newer version of JavaScript as well. 
   - The link to the browser compatibility chart in Mari's notes is now broken. Here's a replacement: [ECMAScript Browser Compatibility Table](https://compat-table.github.io/compat-table/es6/).
 
-  
 
-## Announcements for this Week (1/27&ndash;2/2)
+## Lab 4
 
-### Due dates
+- Read the instructions
+- Accept the GitHub Classroom for lab 4
+- Look at the code review form
+
+## Due dates
 
 - Tuesday: The code review for Lab 3 (last week's lab).
   (The beta version was due Sunday.)
@@ -50,9 +55,10 @@ author: Brian Bird
   - Reading quiz 4.
   - Lab 3 production version.
 - Sunday:
-  - Share a beta version of lab 4 with your lab partner.
+  - Share a beta version of lab 4 with your lab partner.  
+    Add your lab partner to your repository and let them know in your team channel on Discord.
 
-### Midterm quiz next week
+## Midterm quiz next week
 
 - On campus students (Hybrid modality) will take the midterm at class time on Wednesday, 2/5, in the classroom.
 - Online students will take the midterm at [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services), located in the Center building, room 311 (on the third floor). 
