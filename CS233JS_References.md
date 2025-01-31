@@ -58,7 +58,9 @@ Pro Git Book](https://git-scm.com/book/en/v2)—Free online tutorial and referen
 
 ## Other Resources
 
-[CS233JS Course Materials](https://github.com/LCC-CIT/CS233JS-CourseMaterials) - Instructor's course materials, including code examples, on GitHub.
+[CS 133JS Course Materials](https://lcc-cit.github.io/CS133JS-CourseMaterials/)&mdash;Instructor's course materials for Beginning JavaScript, including code examples, on GitHub.
+
+[CS 233JS Course Materials](https://github.com/LCC-CIT/CS233JS-CourseMaterials) - Instructor's course materials Intermediate JavaScript, including code examples, on GitHub.
 
 **LinkedIn Learning** provides many high quiality JavaScript and other software development tutorials and courses. You can access LinkedIn Learning free of cost via the [LCC Library home page](https://library.lanecc.edu/). Click on the LinkedIn Learning icon near the bottom of the page for free LCC student access.
 
