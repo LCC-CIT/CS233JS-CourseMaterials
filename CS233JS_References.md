@@ -1,6 +1,6 @@
 # Useful Links and References
 
-### for CS233JS, Beginning Programming: JavaScript
+### for CS233JS, Intermediate Programming: JavaScript
 
 ------
 
