@@ -131,14 +131,14 @@ This is a summary of some of the "new" JavaScript features added in ES6:
 
 ## Classes and Object Oriented Programming
 
-Here’s a table summarizing the **Object-Oriented Programming (OOP) concepts** in JavaScript as described in the markdown text:
+Here’s a table summarizing the *Object-Oriented Programming* (OOP) concepts presented in class:
 
 | **Concept**                          | **Description**                                              | **Example/Notes**                                            |
 | ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Classes and Objects**              | Classes are templates for creating objects. Objects are instances of a class. | `class Pigeon { constructor(name) { this.name = name; } } `  |
 | **Purpose of Classes**               | - Reusability<br>- Group related methods/variables<br>- Simplify refactoring | Easier to manage and organize code.                          |
 | **`this` Keyword**                   | Refers to different contexts:<br>- In a class: The object created.<br>- In an event handler: The HTML element.<br>- In a callback: The calling object. | `this.startButton.onclick = this.startTimer.bind(this); `    |
-| **`bind` Method**                    | Used to explicitly set the context of `this` in a method.    | `this.startButton.onclick = this.startTimer.bind(this); `    |
+| **`bind` Method**                    | Used to explicitly set the context of `this` in a method.    | `this.startButton.onclick =`<br />`this.startTimer.bind(this); ` |
 | **Composition**                      | A class contains objects of other classes.                   | `class Board { constructor() { this.cards = [new Card(), new Card()]; } } ` |
 | **Separation of Concerns**           | Divide code into distinct parts (e.g., I/O and processing).  | Card class: Handles card logic.<br>Board class: Manages cards.<br>Game class: Handles HTML interaction. |
 | **Highly Cohesive, Loosely Coupled** | Classes should have a single responsibility and minimal dependencies. | Easier to test, debug, and update.                           |
@@ -150,12 +150,12 @@ This table summarizes the JavaScript development tools covered in this class:
 
 | **Tool**                       | **Description**                                              | **Key Features/Commands**                                    |
 | ------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Node.js**                    | A runtime environment for running JavaScript outside the browser (e.g., server-side). | - Cross-platform.<br>- Enables JavaScript everywhere.<br>- Includes NPM. |
-| **NPM (Node Package Manager)** | The default package manager for Node.js. Manages project dependencies. | - Install packages: `npm install`.<br>- Save dev dependencies: `--save-dev`. |
-| **package.json**               | A configuration file for Node.js projects. Contains dependencies and scripts. | - devDependencies: Lists development tools.<br>- scripts: Defines command-line macros. |
-| **Babel**                      | A JavaScript compiler that transpiles modern JavaScript (ES6+) to older versions. | - Ensures compatibility with older browsers.<br>- Requires Node.js to run. |
-| **Webpack**                    | A static module bundler for JavaScript applications. Combines dependencies into bundles. | - Bundles JS, CSS, images, etc.<br>- Install: `npm install webpack webpack-cli --save-dev`. |
-| **Webpack Dev Server**         | A lightweight development server included with Webpack. Automatically reloads changes. | - Watches and transpiles code.<br>- Run: `npm run watch`.    |
+| **Node.js**                    | A runtime environment for running JavaScript outside the browser (e.g., server-side). | Cross-platform.<br>Enables JavaScript everywhere.<br>Includes NPM. |
+| **NPM (Node Package Manager)** | The default package manager for Node.js. Manages project dependencies. | Install packages: `npm install`.<br>Save dev dependencies: `--save-dev`. |
+| **package.json**               | A configuration file for Node.js projects. Contains dependencies and scripts. | devDependencies: Lists development tools.<br>scripts: Defines command-line macros. |
+| **Babel**                      | A JavaScript compiler that transpiles modern JavaScript (ES6+) to older versions. | Ensures compatibility with older browsers.<br>Requires Node.js to run. |
+| **Webpack**                    | A static module bundler for JavaScript applications. Combines dependencies into bundles. | Bundles JS, CSS, images, etc.<br>Install: `npm install webpack webpack-cli --save-dev`. |
+| **Webpack Dev Server**         | A lightweight development server included with Webpack. Automatically reloads changes. | Watches and transpiles code.<br>Run: `npm run watch`.        |
 
 
 
