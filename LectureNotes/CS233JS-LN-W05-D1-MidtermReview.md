@@ -29,8 +29,9 @@ author: Brian Bird
 The topics listed in this review are the ones that will be covered by the midterm quiz. This review page doesn't cover every detail that might be on the midterm quiz, but is intended to be a starting place for your review. In addition to this page, study:
 
 - The lecture notes
-- Reading quizzes
 - Programming examples
+- Tutorials
+- Reading quizzes
 
 ### Tips for Reviewng
 
@@ -60,17 +61,17 @@ These are the different ways to get a reference to an HTML element (or elements)
 
 ### Scope
 
-Here’s a summary the different types of **scopes** in JavaScript, along with the structures they occur in, their characteristics and examples:
+Here’s a summary the different types of *scopes* in JavaScript, along with the structures they occur in, their characteristics and examples:
 
 ---
 
 | **Scope Type**     | **Description**                                              | **Example**                                                  |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Global Scope**   | Variables declared outside all functions/blocks. Accessible everywhere. | ```javascript const globalVar = "I'm global!"; ```           |
-| **Function Scope** | Variables declared inside a function. Accessible only within that function. | ```javascript function greet() { let message = "Hello"; } ``` |
-| **Block Scope**    | Variables declared with `let`/`const` inside `{}` (e.g., `if`, `for`, `while`). | ```javascript if (true) { let blockVar = "I'm block-scoped!"; } ``` |
-| **Class Scope**    | Variables declared in a class body (e.g., class name, static members). | ```javascript class MyClass { static message = "Hello"; } ``` |
-| **Lexical Scope**  | Scope determined by the physical placement of code (e.g., nested functions). | ```javascript function outer() { let x = 10; function inner() { console.log(x); } } ``` |
+| **Global Scope**   | Variables declared outside all functions/blocks. Accessible everywhere. | `const globalVar = "I'm global!"; `                          |
+| **Function Scope** | Variables declared inside a function. Accessible only within that function. | `function greet() { let message = "Hello"; } `               |
+| **Block Scope**    | Variables declared with `let`/`const` inside `{}` (e.g., `if`, `for`, `while`). | `if (true) { let blockVar = "I'm block-scoped!"; } `         |
+| **Class Scope**    | Variables declared in a class body (e.g., class name, static members). | `class MyClass { static message = "Hello"; }`                |
+| **Lexical Scope**  | Scope determined by the physical placement of code (e.g., nested functions). | `function outer() { let x = 10; function inner() { console.log(x); } } ` |
 
 **Best Practices**
 
@@ -81,17 +82,13 @@ Here’s a summary the different types of **scopes** in JavaScript, along with t
 
 ### Event Listeners
 
-Here's a summary of ways to assign event listeners to events in JavaScript:
+Here's a summary of ways to assign *event listeners* to *events*:
 
-| Method                 | Example                                 | Use Case                                 |
-| ---------------------- | --------------------------------------- | ---------------------------------------- |
-| `addEventListener`     | `element.addEventListener('click', fn)` | Modern, flexible, multiple listeners     |
-| Inline HTML Attributes | `<button onclick="fn()">`               | Quick prototyping (avoid in production)  |
-| DOM Event Properties   | `element.onclick = fn`                  | Simple assignments (overwrites)          |
-| Event Delegation       | Parent element listener + target check  | Dynamic/efficient child element handling |
-| One-Time Listeners     | `{ once: true }`                        | Single-execution events                  |
-| Legacy `attachEvent`   | `element.attachEvent('onclick', fn)`    | IE8 compatibility (deprecated)           |
-| Passive Events         | `{ passive: true }`                     | Optimize scroll/touch events             |
+| Method                 | Example                                 | Use Case                                |
+| ---------------------- | --------------------------------------- | --------------------------------------- |
+| `addEventListener`     | `element.addEventListener('click', fn)` | Modern, flexible, multiple listeners    |
+| Inline HTML Attributes | `<button onclick="fn()">`               | Quick prototyping (avoid in production) |
+| DOM Event Properties   | `element.onclick = fn`                  | Simple assignments (overwrites)         |
 
 **Best Practices**
 
@@ -118,18 +115,18 @@ This is a summary of the main Bootstrap concepts and features described in class
 This is a summary of some of the "new" JavaScript features added in ES6:
 
 | **Feature**                      | **Description**                                              | **Example**                                                  |
-| -------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------- |
-| **Arrow Functions**              | A concise syntax for writing anonymous functions. Automatically binds `this`. | ```javascript document.querySelector("button").addEventListener("click", () => console.log("Clicked!")); ``` |
-| **Template Literals**            | Use backticks (`` ` ``) for strings with embedded expressions (`${}`). | ```javascript card.style.backgroundImage = `url(${cardImage})`; ``` |
-| **Array Constructor**            | Built-in constructor for creating arrays. Optional `new` keyword. | ```javascript const arr = Array(10).fill(null); ```          |
-| **Destructuring Assignment**     | Unpack values from arrays or objects into variables.         | ```javascript const [first, second] = [1, 2]; const { a, b } = { a: 1, b: 2 }; `` |
-| **Local Storage**                | A Web Storage API for storing data in the browser with no expiration. | ```javascript localStorage.setItem("key", "value"); localStorage.getItem("key"); ``` |
-| **Array `reduce`**               | Reduces an array to a single value by applying a callback function. | ```javascript let sum = numbers.reduce((acc, val) => acc + val, 0); ``` |
-| **Array `forEach`**              | Executes a callback function once for each array element.    | ```javascript array.forEach(value => console.log(value * 10)); ``` |
-| **HTML Form Validation Styling** | Dynamically add/remove CSS classes for form validation.      | ```javascript textBox.classList.add('is-invalid'); textBox.classList.remove('is-invalid'); ``` |
-| **JSON Object Literals**         | A collection of key-value pairs, where keys are strings and values can be any type. | ```javascript let obj = { "name": "Jason", "age": 46 }; ```  |
-| **`JSON.stringify()`**           | Converts a JavaScript object or value into a JSON string.    | ```javascript let jsonString = JSON.stringify(obj); ```      |
-| **`JSON.parse()`**               | Converts a JSON string into a JavaScript object.             | ```javascript let obj = JSON.parse(jsonString); ```          |
+| -------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Arrow Functions**              | A concise syntax for writing anonymous functions. Automatically binds `this`. | `document.querySelector("button").addEventListener("click", () => console.log("Clicked!")); ` |
+| **Template Literals**            | Use backticks (`` ` ``) for strings with embedded expressions (`${}`). | `card.style.backgroundImage = `url(${cardImage})`; `         |
+| **Array Constructor**            | Built-in constructor for creating arrays. Optional `new` keyword. | `const arr = Array(10).fill(null); `                         |
+| **Destructuring Assignment**     | Unpack values from arrays or objects into variables.         | `const [first, second] = [1, 2]; const { a, b } = { a: 1, b: 2 };` |
+| **Local Storage**                | A Web Storage API for storing data in the browser with no expiration. | `localStorage.setItem("key", "value"); localStorage.getItem("key"); ` |
+| **Array `reduce`**               | Reduces an array to a single value by applying a callback function. | `let sum = numbers.reduce((acc, val) => acc + val, 0); `     |
+| **Array `forEach`**              | Executes a callback function once for each array element.    | `array.forEach(value => console.log(value * 10)); `          |
+| **HTML Form Validation Styling** | Dynamically add/remove CSS classes for form validation.      | `textBox.classList.add('is-invalid'); textBox.classList.remove('is-invalid'); ` |
+| **JSON Object Literals**         | A collection of key-value pairs, where keys are strings and values can be any type. | `let obj = { "name": "Jason", "age": 46 }; `                 |
+| **`JSON.stringify()`**           | Converts a JavaScript object or value into a JSON string.    | `let jsonString = JSON.stringify(obj); `                     |
+| **`JSON.parse()`**               | Converts a JSON string into a JavaScript object.             | `let obj = JSON.parse(jsonString); `                         |
 
 
 
@@ -139,14 +136,14 @@ Here’s a table summarizing the **Object-Oriented Programming (OOP) concepts** 
 
 | **Concept**                          | **Description**                                              | **Example/Notes**                                            |
 | ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Classes and Objects**              | Classes are templates for creating objects. Objects are instances of a class. | ```javascript class Pigeon { constructor(name) { this.name = name; } } ``` |
+| **Classes and Objects**              | Classes are templates for creating objects. Objects are instances of a class. | `class Pigeon { constructor(name) { this.name = name; } } `  |
 | **Purpose of Classes**               | - Reusability<br>- Group related methods/variables<br>- Simplify refactoring | Easier to manage and organize code.                          |
-| **`this` Keyword**                   | Refers to different contexts:<br>- In a class: The object created.<br>- In an event handler: The HTML element.<br>- In a callback: The calling object. | ```javascript this.startButton.onclick = this.startTimer.bind(this); ``` |
-| **`bind` Method**                    | Used to explicitly set the context of `this` in a method.    | ```javascript this.startButton.onclick = this.startTimer.bind(this); ``` |
-| **Composition**                      | A class contains objects of other classes.                   | ```javascript class Board { constructor() { this.cards = [new Card(), new Card()]; } } ``` |
+| **`this` Keyword**                   | Refers to different contexts:<br>- In a class: The object created.<br>- In an event handler: The HTML element.<br>- In a callback: The calling object. | `this.startButton.onclick = this.startTimer.bind(this); `    |
+| **`bind` Method**                    | Used to explicitly set the context of `this` in a method.    | `this.startButton.onclick = this.startTimer.bind(this); `    |
+| **Composition**                      | A class contains objects of other classes.                   | `class Board { constructor() { this.cards = [new Card(), new Card()]; } } ` |
 | **Separation of Concerns**           | Divide code into distinct parts (e.g., I/O and processing).  | - Card class: Handles card logic.<br>- Board class: Manages cards.<br>- Game class: Handles HTML interaction. |
 | **Highly Cohesive, Loosely Coupled** | Classes should have a single responsibility and minimal dependencies. | Easier to test, debug, and update.                           |
-| **Static Methods/Variables**         | Belong to the class itself, not instances.                   | ```javascript class MathUtils { static PI = 3.14; } ```      |
+| **Static Methods/Variables**         | Belong to the class itself, not instances.                   | `class MathUtils { static PI = 3.14; } `                     |
 
 ## JavaScript Development Tools (Node.js, etc.)
 
