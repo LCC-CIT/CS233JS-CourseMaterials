@@ -115,10 +115,10 @@ This is a summary of some of the "new" JavaScript features added in ES6:
 
 | **Feature** / Description                                    | **Example**                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Arrow Functions**<br />A concise syntax for writing anonymous functions. Automatically binds `this`. | `document.querySelector("button").addEventListener("click", () => console.log("Clicked!")); ` |
+| **Arrow Functions**<br />A concise syntax for writing anonymous functions. Automatically binds `this`. | `let button = document.querySelector("button");` `button.addEventListener("click", () => console.log("Clicked!")); ` |
 | **Template Literals**<br />Use backticks (`` ` ``) for strings with embedded expressions (`${}`). | `card.style.backgroundImage = `url(${cardImage})`; `         |
 | **Array Constructor**<br />Built-in constructor for creating arrays. Optional `new` keyword. | `const arr = Array(10).fill(null); `                         |
-| **Destructuring Assignment**<br />Unpack values from arrays or objects into variables. | `const [first, second] = [1, 2]; const { a, b } = { a: 1, b: 2 };` |
+| **Destructuring Assignment**<br />Unpack values from arrays or objects into variables. | `const [first, second] = [1, 2];` <br />`const { a, b } = { a: 1, b: 2 };` |
 | **Local Storage**<br />A Web Storage API for storing data in the browser with no expiration. | `localStorage.setItem("key", "value"); localStorage.getItem("key"); ` |
 | **Array `reduce`**<br />Reduces an array to a single value by applying a callback function. | `let sum = numbers.reduce((acc, val) => acc + val, 0); `     |
 | **Array `forEach`**<br />Executes a callback function once for each array element. | `array.forEach(value => console.log(value * 10)); `          |
@@ -140,7 +140,7 @@ Here’s a table summarizing the **Object-Oriented Programming (OOP) concepts** 
 | **`this` Keyword**                   | Refers to different contexts:<br>- In a class: The object created.<br>- In an event handler: The HTML element.<br>- In a callback: The calling object. | `this.startButton.onclick = this.startTimer.bind(this); `    |
 | **`bind` Method**                    | Used to explicitly set the context of `this` in a method.    | `this.startButton.onclick = this.startTimer.bind(this); `    |
 | **Composition**                      | A class contains objects of other classes.                   | `class Board { constructor() { this.cards = [new Card(), new Card()]; } } ` |
-| **Separation of Concerns**           | Divide code into distinct parts (e.g., I/O and processing).  | - Card class: Handles card logic.<br>- Board class: Manages cards.<br>- Game class: Handles HTML interaction. |
+| **Separation of Concerns**           | Divide code into distinct parts (e.g., I/O and processing).  | Card class: Handles card logic.<br>Board class: Manages cards.<br>Game class: Handles HTML interaction. |
 | **Highly Cohesive, Loosely Coupled** | Classes should have a single responsibility and minimal dependencies. | Easier to test, debug, and update.                           |
 | **Static Methods/Variables**         | Belong to the class itself, not instances.                   | `class MathUtils { static PI = 3.14; } `                     |
 
