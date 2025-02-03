@@ -49,15 +49,14 @@ These review topics were covered in the first week of the term.
 
 These are the different ways to get a reference to an HTML element (or elements) using JavaScript:
 
-| Method                   | Returns                      | Example                                  |
-| :----------------------- | :--------------------------- | :--------------------------------------- |
-| `getElementById`         | Single element               | `document.getElementById('id')`          |
-| `getElementsByClassName` | `HTMLCollection` of elements | `document.getElementsByClassName('cls')` |
-| `getElementsByTagName`   | `HTMLCollection` of elements | `document.getElementsByTagName('div')`   |
-| `querySelector`          | First matching element       | `document.querySelector('#id')`          |
-| `querySelectorAll`       | `NodeList` of elements       | `document.querySelectorAll('.cls')`      |
-| `getElementsByName`      | `NodeList` of elements       | `document.getElementsByName('name')`     |
-| Document Properties      | Varies (element/collection)  | `document.body`, `document.forms`        |
+| Method / Return value                                        | Example                                                   |
+| :----------------------------------------------------------- | :-------------------------------------------------------- |
+| **`getElementById`**<br />Single element                     | `let myElement = document.getElementById('id')`           |
+| **`getElementsByClassName`**<br />HTMLCollection of elements | `let myElements = document.getElementsByClassName('cls')` |
+| **`getElementsByTagName`**<br />HTMLCollection of elements   | `let myElements = document.getElementsByTagName('div')`   |
+| **`querySelector`**<br />First matching element              | `let myElement = document.querySelector('#id')`           |
+| **`querySelectorAll`**<br />NodeList of elements             | `let myElements = document.querySelectorAll('.cls')`      |
+| **`getElementsByName`**<br />NodeList of elements            | `let myElements = document.getElementsByName('name')`     |
 
 ### Scope
 
@@ -103,30 +102,30 @@ This is a summary of the main Bootstrap concepts and features described in class
 | ------------------------- | ------------------------------------------------------------ |
 | **Responsive Design**     | The web page adapts to the screen size, platform, and orientation of the user's browser. |
 | **Mobile-First Approach** | Designing a website starting with the mobile version, which is then adapted to larger screens. |
-| **Adding Bootstrap**      | - Include a link to Bootstrap CSS and JavaScript in the `<head>` element.<br>- Add a responsive viewport meta tag for proper rendering and touch zooming on all devices. |
-| **Viewport Meta Tag**     | - `name="viewport"`: Specifies the viewport properties.<br>- `content="width=device-width, initial-scale=1"`: Matches the device's width and sets the initial zoom level to 1. |
-| **Container Classes**     | - `.container`: Provides a responsive fixed-width container.<br>- `.container-fluid`: Provides a full-width container that adapts to the viewport width. |
+| **Adding Bootstrap**      | Include a link to Bootstrap CSS and JavaScript in the `<head>` element.<br>Add a responsive viewport meta tag for proper rendering and touch zooming on all devices. |
+| **Viewport Meta Tag**     | `name="viewport"`: Specifies the viewport properties.<br> `content="width=device-width, initial-scale=1"`: Matches the device's width and sets the initial zoom level to 1. |
+| **Container Classes**     | `.container`: Provides a responsive fixed-width container.<br>`.container-fluid`: Provides a full-width container that adapts to the viewport width. |
 | **CSS Classes**           | Bootstrap provides a large number of CSS classes for styling and layout. Elements are styled by adding these classes to HTML elements. |
-| **Example Styling**       | - `.h1`: Applies heading 1 styling.<br>- `.text-center`: Centers the text.<br>- `.bg-light`: Adds a light background.<br>- `.rounded`: Adds rounded corners to the element. |
+| **Example Styling**       | `.h1`: Applies heading 1 styling.<br>`.text-center`: Centers the text.<br>`.bg-light`: Adds a light background.<br>`.rounded`: Adds rounded corners to the element. |
 | **Usage Example**         | ```html <div class="container-fluid"> <!-- HTML code goes here --> </div> ```<br>```html <div class="h1 text-center bg-light rounded"> <!-- Styled content --> </div> ``` |
 
 ## ES6 JavaScript Features
 
 This is a summary of some of the "new" JavaScript features added in ES6:
 
-| **Feature**                      | **Description**                                              | **Example**                                                  |
-| -------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Arrow Functions**              | A concise syntax for writing anonymous functions. Automatically binds `this`. | `document.querySelector("button").addEventListener("click", () => console.log("Clicked!")); ` |
-| **Template Literals**            | Use backticks (`` ` ``) for strings with embedded expressions (`${}`). | `card.style.backgroundImage = `url(${cardImage})`; `         |
-| **Array Constructor**            | Built-in constructor for creating arrays. Optional `new` keyword. | `const arr = Array(10).fill(null); `                         |
-| **Destructuring Assignment**     | Unpack values from arrays or objects into variables.         | `const [first, second] = [1, 2]; const { a, b } = { a: 1, b: 2 };` |
-| **Local Storage**                | A Web Storage API for storing data in the browser with no expiration. | `localStorage.setItem("key", "value"); localStorage.getItem("key"); ` |
-| **Array `reduce`**               | Reduces an array to a single value by applying a callback function. | `let sum = numbers.reduce((acc, val) => acc + val, 0); `     |
-| **Array `forEach`**              | Executes a callback function once for each array element.    | `array.forEach(value => console.log(value * 10)); `          |
-| **HTML Form Validation Styling** | Dynamically add/remove CSS classes for form validation.      | `textBox.classList.add('is-invalid'); textBox.classList.remove('is-invalid'); ` |
-| **JSON Object Literals**         | A collection of key-value pairs, where keys are strings and values can be any type. | `let obj = { "name": "Jason", "age": 46 }; `                 |
-| **`JSON.stringify()`**           | Converts a JavaScript object or value into a JSON string.    | `let jsonString = JSON.stringify(obj); `                     |
-| **`JSON.parse()`**               | Converts a JSON string into a JavaScript object.             | `let obj = JSON.parse(jsonString); `                         |
+| **Feature** / Description                                    | **Example**                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Arrow Functions**<br />A concise syntax for writing anonymous functions. Automatically binds `this`. | `document.querySelector("button").addEventListener("click", () => console.log("Clicked!")); ` |
+| **Template Literals**<br />Use backticks (`` ` ``) for strings with embedded expressions (`${}`). | `card.style.backgroundImage = `url(${cardImage})`; `         |
+| **Array Constructor**<br />Built-in constructor for creating arrays. Optional `new` keyword. | `const arr = Array(10).fill(null); `                         |
+| **Destructuring Assignment**<br />Unpack values from arrays or objects into variables. | `const [first, second] = [1, 2]; const { a, b } = { a: 1, b: 2 };` |
+| **Local Storage**<br />A Web Storage API for storing data in the browser with no expiration. | `localStorage.setItem("key", "value"); localStorage.getItem("key"); ` |
+| **Array `reduce`**<br />Reduces an array to a single value by applying a callback function. | `let sum = numbers.reduce((acc, val) => acc + val, 0); `     |
+| **Array `forEach`**<br />Executes a callback function once for each array element. | `array.forEach(value => console.log(value * 10)); `          |
+| **HTML Form Validation Styling**<br />Dynamically add/remove CSS classes for form validation. | `textBox.classList.add('is-invalid'); textBox.classList.remove('is-invalid'); ` |
+| **JSON Object Literals**<br />A collection of key-value pairs, where keys are strings and values can be any type. | `let obj = { "name": "Jason", "age": 46 }; `                 |
+| **`JSON.stringify()`**<br />Converts a JavaScript object or value into a JSON string. | `let jsonString = JSON.stringify(obj); `                     |
+| **`JSON.parse()`**<br />Converts a JSON string into a JavaScript object. | `let obj = JSON.parse(jsonString); `                         |
 
 
 
@@ -153,7 +152,7 @@ This table summarizes the JavaScript development tools covered in this class:
 | ------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Node.js**                    | A runtime environment for running JavaScript outside the browser (e.g., server-side). | - Cross-platform.<br>- Enables JavaScript everywhere.<br>- Includes NPM. |
 | **NPM (Node Package Manager)** | The default package manager for Node.js. Manages project dependencies. | - Install packages: `npm install`.<br>- Save dev dependencies: `--save-dev`. |
-| **package.json**               | A configuration file for Node.js projects. Contains dependencies and scripts. | - **devDependencies**: Lists development tools.<br>- **scripts**: Defines command-line macros. |
+| **package.json**               | A configuration file for Node.js projects. Contains dependencies and scripts. | - devDependencies: Lists development tools.<br>- scripts: Defines command-line macros. |
 | **Babel**                      | A JavaScript compiler that transpiles modern JavaScript (ES6+) to older versions. | - Ensures compatibility with older browsers.<br>- Requires Node.js to run. |
 | **Webpack**                    | A static module bundler for JavaScript applications. Combines dependencies into bundles. | - Bundles JS, CSS, images, etc.<br>- Install: `npm install webpack webpack-cli --save-dev`. |
 | **Webpack Dev Server**         | A lightweight development server included with Webpack. Automatically reloads changes. | - Watches and transpiles code.<br>- Run: `npm run watch`.    |
