@@ -41,7 +41,7 @@ NPM, or Node Package Manager, is the default package manager for Node.js. It all
 
 ## Installation
 
-There are Node installers for Windows, Mac OS, and Linux. The installers includes NPM. [Download here](https://nodejs.org/en/download).
+There are Node installers for Windows, Mac OS, and Linux. The installers includes NPM. [Download here](https://nodejs.org/en/download). 
 
 ## Package.json
 
