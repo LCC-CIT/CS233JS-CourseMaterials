@@ -109,6 +109,24 @@ This is a summary of the main Bootstrap concepts and features described in class
 | **Example Styling**       | `.h1`: Applies heading 1 styling.<br>`.text-center`: Centers the text.<br>`.bg-light`: Adds a light background.<br>`.rounded`: Adds rounded corners to the element. |
 | **Usage Example**         | ```html <div class="container-fluid"> <!-- HTML code goes here --> </div> ```<br>```html <div class="h1 text-center bg-light rounded"> <!-- Styled content --> </div> ``` |
 
+## Git
+
+- Git is a *distributed version control system* for tracking changes in files. It is used for collaboration and version control in software development.
+- Git stores files in *repositories*. A *remote repositor*y (on GitHub for example) can be *cloned* into a *working directory* on a local computer to create a *local repository* which contains the current versions of files and contains a  `.git` folder where past versions are stored.
+
+Here’s a summary of some basic Git commands:
+
+| **Command** | **Description**                                              | **Example/Usage**                                            |
+| :---------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| **Clone**   | Creates a copy of a remote repository on your local machine. | `git clone https://github.com/user/repo.git`                 |
+| **Pull**    | Fetches changes from a remote repository and merges them into the local branch. | `git pull origin main`                                       |
+| **Add**     | Stages changes for the next commit.                          | `git add file.txt` (stages a file) or `git add .` (stages all changes) |
+| **Commit**  | Saves changes to the local repository with a message describing the changes. | `git commit -m "Add new feature"`                            |
+| **Push**    | Uploads local commits to a remote repository.                | `git push origin main`                                       |
+| **Status**  | Shows the current state of the working directory and staging area. | `git status` (lists untracked, modified, and staged files)   |
+
+### 
+
 ## ES6 JavaScript Features
 
 This is a summary of some of the "new" JavaScript features added in ES6:
