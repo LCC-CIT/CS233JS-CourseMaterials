@@ -133,7 +133,7 @@ This is a summary of some of the "new" JavaScript features added in ES6:
 
 | **Feature** / Description                                    | **Example**                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Arrow Functions**<br />A concise syntax for writing anonymous functions. Automatically binds `this`. | `let button = document.querySelector("button");` `button.addEventListener("click", () => console.log("Clicked!")); ` |
+| **Arrow Functions**<br />A concise syntax for writing anonymous functions. Automatically binds `this`. | `let button =`<br />   `document.querySelector("button");`<br />`button.addEventListener("click", () =>`<br />   `console.log("Clicked!")); ` |
 | **Template Literals**<br />Use backticks (`` ` ``) for strings with embedded expressions (`${}`). | `card.style.backgroundImage = `url(${cardImage})`; `         |
 | **Array Constructor**<br />Built-in constructor for creating arrays. Optional `new` keyword. | `const arr = Array(10).fill(null); `                         |
 | **Destructuring Assignment**<br />Unpack values from arrays or objects into variables. | `const [first, second] = [1, 2];` <br />`const { a, b } = { a: 1, b: 2 };` |
