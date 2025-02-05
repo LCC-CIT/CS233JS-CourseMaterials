@@ -50,8 +50,8 @@ Complete the web apps described below. For each problem:
 
 - Post to the Beta Version forum
   - When your code is 75% complete, add your lab partner as a collaborator on your GitHub repository.
-  - Make a post in the Beta forum on Moodle letting your lab partner know you are ready for a code review.
-  - After your lab partner has made you a collaborator on their repository, do a code review for them using the code review form provided on Moodle.
+  - Make a post in your team's channel on Discord letting your lab partner(s) know you are ready for a code review.
+  - After a lab partner has made you a collaborator on their repository, do a code review for them using the code review form provided on Moodle.
   - Give your lab partner a copy of the code review by posting it in the forum.
 - Submit your code reivew to Moodle
   - Submit a copy of the code review you did to the Moodle Code Review assignment.
@@ -70,7 +70,7 @@ Complete the web apps described below. For each problem:
       - Each app running on the Webpack dev server with the URL visible. 
 
 
-  - Moodle Lab 3 Production Version assignment:  put the citstudent URLs for each web app in the online text.
+  - Moodle Lab 4 Production Version assignment:  put the citstudent URLs for each web app in the online text.
 
 [^1]: ES6, also known as [ECMAScript 2015](https://en.wikipedia.org/wiki/ECMAScript_version_history#6th_Edition_%E2%80%93_ECMAScript_2015) was finalized in June of 2015.
 
