@@ -72,6 +72,8 @@ Complete the web apps described below. For each problem:
 
   - Moodle Lab 4 Production Version assignment:  put the citstudent URLs for each web app in the online text.
 
+
+
 [^1]: ES6, also known as [ECMAScript 2015](https://en.wikipedia.org/wiki/ECMAScript_version_history#6th_Edition_%E2%80%93_ECMAScript_2015) was finalized in June of 2015.
 
 [^2]: I'm asking for screen shots for this lab so that you can show me that you did use Node.js and the development tools introduced this week.

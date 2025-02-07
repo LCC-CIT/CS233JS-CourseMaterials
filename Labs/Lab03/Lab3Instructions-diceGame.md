@@ -14,7 +14,10 @@ Learn how to design and build a web app that employs *separation of concerns* by
 
 ## Clone the GitHub Classroom Repo
 
-Clone the Lab 3 repository from the GitHub classroom invitation. It won't have much in it, just the images for the six sides of a die (and just for those doing the 10,000 game, the scoring method). You will write the code (and use some from my examples).
+- Accept the invitation to the GitHub Classroom repository containing the starter files.
+- Clone the Lab 3 repository from the GitHub classroom invitation. It won't have much in it, just the images for the six sides of a die (and just for those doing the 10,000 game, the scoring method). You will write the code (and use some from my examples).
+- **Important**: Do all your work in the Classroom repository working folder, don't make a different repository.
+-  Use Git and GitHub to manage your source code.
 
 ## Write a Dice Game Web App
 
