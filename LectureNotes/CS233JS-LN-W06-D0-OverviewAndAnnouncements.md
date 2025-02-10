@@ -10,7 +10,7 @@ author: Brian Bird
 
 <h1>Week 6 Overview for Winter 2025</h1>
 
-<h2>January 27 through February 2</h2>
+<h2>February 10 through February 16</h2>
 
 
 
@@ -27,12 +27,16 @@ author: Brian Bird
 
 [TOC]
 
+## Announcements
+
+- Our CIT lab mamager, Jacob Riddle, would like to have a movie/game day in the lab on Friday, February 28 from 11 am- 4:30 pm. Please share your interest by completing [this survey](https://docs.google.com/forms/d/e/1FAIpQLSeHS7OqR-gNMZnzU8EVZFsU_8qwEzT8YcbBLJlREReCd_x47A/viewform).
+
 ## Last Week
 
 ### Midterm
 
 - Most of you did pretty well. The average score was 77% and the median was 81%.
-- There are some multiple choice questions with multiple correct answers that didn't correctly calculate partial credit. I have fixed those and your grades have been re-calculated.
+- There were some multiple choice questions with multiple correct answers that didn't correctly calculate partial credit. I have fixed those and your grades have been re-calculated.
 
 ### Lab 4
 
@@ -78,11 +82,15 @@ You'll be making one web app, a meme creator.
 
 I have drop-in office hours on [Zoom](https://lanecc.zoom.us/j/93494931394) and in person, building 19, room 152, Monday through Thursday from 4:00 to 4:50. I'm available at other times too, just let me know when you'd like to meet. 
 
-Don't hesitate to reach out if you have questions, would like help debugging code, or anything else! You can DM me on Discord (username: profbird), message me through Moodle, or [email me](mailto:birdb@lanecc.edu).
+Don't hesitate to reach out if you have questions, would like help debugging code, or anything else! You can:
+
+- DM me on Discord, username: profbird
+- Message me through Moodle
+- Email me: [birdb@lanecc.edu](mailto:birdb@lanecc.edu)
 
 #### Tutoring
 
-There are tutors available in the CIT Lab, building 19, room 135, or [online](https://www.lanecc.edu/get-support/academic-support/academic-and-tutoring-services).
+There are tutors available in the [CIT Computer Lab](https://www.lanecc.edu/programs-academics/academic-departments/business-technology-and-trades/computer-information-technology/cit-computer-lab), building 19, room 135, or [online](https://www.lanecc.edu/get-support/academic-support/academic-and-tutoring-services).
 
 #### Discord
 
