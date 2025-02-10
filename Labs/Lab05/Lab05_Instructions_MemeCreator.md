@@ -6,7 +6,7 @@
 
 # Objectives
 
-The objective of this lab is to continue giving you practice using the "new" ES6 JavaScript features.  You will also get practice with CSS Flexbox (from CIS 195) and have your first experience with the HTML5 Canvas.  And, you will get further practice with webpack, webpack configuration files and the webpack development server.
+The objective of this lab is to continue giving you more practice with JS dev tools and learn more about Webpack.  You will also get practice with CSS Flexbox (covered in CIS 195) and have your first experience with the HTML5 Canvas.  
 
 # Instructions
 
@@ -50,29 +50,30 @@ If you add a feature to use the last image the user uploaded as the new default 
 
 ## Beta Version and Code Review
 
-- Post to the Beta Version forum
+- Share your repository with your lab partner
   - When your code is 75% complete, add your lab partner as a collaborator on your GitHub repository.
-  - Make a post in the Beta forum on Moodle letting your lab partner know you are ready for a code review.
-  - After your lab partner has made you a collaborator on their repository, do a code review for them using the code review form provided on Moodle.
-  - Give your lab partner a copy of the code review by posting it in the forum.
+  - Let your lab partner know you are ready for a code review by posting your lab partner team's Discord channel.
+  - After your lab partner has made you a collaborator on their repository, do a code review for them using the [code review form](Lab05_CodeReviewForm.docx) provided.
+  - Give your lab partner a copy of the code review by posting in your team's Discord channel.
 - Submit your code reivew to Moodle
   - Submit a copy of the code review you did to the Moodle Code Review assignment.
 
 ## Production Version
 
 - Publish to the CIT web server  
-  - Upload your completed web apps to [citstudent.lanecc.edu](http://citstudent.lanecc.edu).  Test both apps on the web server.  
+  - Upload your completed web apps to [citstudent.lanecc.edu](http://citstudent.lanecc.edu).  Test the app on the web server by opening it in a browser.  
 
 - Submit the following to Moodle:
 
-  - Code review from your lab partner: 
+  - Upload the code review from your lab partner: 
     - Fill out the "Prod" column, entering yes for anything you fixed or completed.
     - Add screen shots for the web app showing[^1]:
       - Your folders and files in the VS Code file explorer and the terminal showing the webpack dev server running.
       - The app running on the Webpack dev server with the URL visible. 
-
-
-  - Moodle Lab 5 Production Version assignment:  put the citstudent URLs for the web app in the online text.
+  
+  
+    - Put the citstudent URLs for the web app in the online text.
+  
 
 ## Assessment
 
