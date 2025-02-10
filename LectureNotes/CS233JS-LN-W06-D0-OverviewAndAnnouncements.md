@@ -27,7 +27,21 @@ author: Brian Bird
 
 [TOC]
 
-## Introduction
+## Last Week
+
+### Midterm
+
+- Most of you did pretty well. The average score was 77% and the median was 81%.
+- There are some multiple choice questions with multiple correct answers that didn't correctly calculate partial credit. I have fixed those and your grades have been re-calculated.
+
+### Lab 4
+
+This was due last Thursday, but it was the week of the midterm and most of you didn't get it finsihed yet.
+
+- What questions to you have?
+- Don't hesitate to ask for help!
+
+## This Week
 
 - Review this week's section on Moodle. 
 - Be sure to <u>watch or read all the required materials</u>.  
@@ -36,14 +50,17 @@ author: Brian Bird
 
   - This week's lab was lab 4 but is now lab 5.
 
+### Lab 5
 
-## Lab 5
+You'll be making one web app, a meme creator.
 
-- Read the instructions
+- Read the instructions.
+  - Note that there is a link to Brian's finished Meme Maker app running on citstudent.
+
 - Accept the GitHub Classroom for lab 5
 - Look at the code review form
 
-## Due dates
+### Due dates
 
 - Tuesday: Lab 4 code review, if you didn't already do one.
 - Thursday: 

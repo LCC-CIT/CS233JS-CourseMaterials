@@ -71,7 +71,7 @@ Yes, `package-lock.json` should be tracked in Git. Here's why:
 
 So, the general advice is to put `package-lock.json` in Git, commit it every time it changes, and never delete it¹. However, if you're using another package manager like Yarn, you might want to ignore `package-lock.json` to avoid resolution inconsistencies caused by unsynchronized lock files².
 
-Source: Conversation with Bing, 5/6/2024
+Source: Conversation with Bing Copilot, 5/6/2024
 (1) package-lock.json - in GIT or not? - DEV Community. https://dev.to/adamklein/package-lock-json-in-git-or-not-50l5.
 (2) Should I git ignore package-lock.json? Understanding package manager .... https://willamesoares.com/posts/should-i-git-ignore-package-lockjson.
 (3) Do I commit the package-lock.json file created by npm 5?. https://stackoverflow.com/questions/44206782/do-i-commit-the-package-lock-json-file-created-by-npm-5.
