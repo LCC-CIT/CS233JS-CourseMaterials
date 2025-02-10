@@ -1,8 +1,13 @@
 <!doctype html>
-<html>
+<html style='font-size:20px !important'>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-
+<meta name="title" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="material" content="">
+<meta name="author" content="">
+<meta name="generator" content="">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
@@ -20,7 +25,7 @@ a:active, a:hover { outline: 0px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 .typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
 }
@@ -45,7 +50,7 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
@@ -85,10 +90,10 @@ blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
-@media print { 
+@media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export * { print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -111,7 +116,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
 .md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
@@ -124,7 +129,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
 .md-toc-h5 .md-toc-inner { margin-left: 8em; }
 .md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) { 
+@media screen and (max-width: 48em) {
   .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
   .md-toc-h4 .md-toc-inner { margin-left: 5em; }
   .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
@@ -136,7 +141,7 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; }
 a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
@@ -152,7 +157,7 @@ mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 .md-expand mark .md-meta { opacity: 0.3 !important; }
 mark .md-meta { color: rgb(0, 0, 0); }
-@media print { 
+@media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
 .md-diagram-panel .messageText { stroke: none !important; }
@@ -165,19 +170,19 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
 .typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
 .typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
 }
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 800px) {
   .typora-export-sidebar { display: none; }
 }
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
 .outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
-.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
-.outline-expander:hover::before { content: ''; }
+.outline-expander:hover::before { content: ""; }
 .outline-h1 > .outline-item { padding-left: 0px; }
 .outline-h2 > .outline-item { padding-left: 1em; }
 .outline-h3 > .outline-item { padding-left: 2em; }
@@ -189,14 +194,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
 .outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
-.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
 .typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
-.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
 .typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
@@ -608,12 +613,12 @@ header, .context-menu, .megamenu-content, footer{
 }
 
 
- @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
-</style><title>Lab04_Instructions_MemeCreator</title>
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}} .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} h1,h2,h3,h4,h5 {white-space:pre-line}
+</style><title>Lab05_Instructions_MemeCreator</title>
 </head>
 <body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><h1>Lab 4: Meme Creator</h1><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n777"><a class="md-toc-inner" style="" href="#objectives">Objectives</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n779"><a class="md-toc-inner" style="" href="#instructions">Instructions</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n861"><a class="md-toc-inner" style="" href="#notes">Notes</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n865"><a class="md-toc-inner" style="" href="#dependencies">Dependencies</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n885"><a class="md-toc-inner" style="" href="#the-default-image">The Default Image</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n811"><a class="md-toc-inner" style="" href="#submission">Submission</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n812"><a class="md-toc-inner" style="" href="#beta-version-and-code-review">Beta Version and Code Review</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n830"><a class="md-toc-inner" style="" href="#production-version">Production Version</a></span></p></div><h1 id='objectives'><span>Objectives</span></h1><p><span>The objective of this lab is to continue giving you practice using the &quot;new&quot; ES6 JavaScript features.  You will also get practice with CSS Flexbox (from CIS 195) and have your first experience with the HTML5 Canvas.  And, you will get further practice with webpack, webpack configuration files and the webpack development server.</span></p><h1 id='instructions'><span>Instructions</span></h1><p><span>Complete the Meme Creator web app:</span></p><ul><li><p><span>Accept the invitation to the GitHub Classroom repository containing the starter files. </span>
-<strong><span>Important</span></strong><span>: Do all your work in the Classroom repository working folder, don&#39;t make a different repository.</span></p></li><li><p><span>Complete the Meme Creator application described in the screencasts and comments in the starter files.</span></p><ul><li><p><span>Part 6 of the comments describes possible added functionality. Choose two features to add:</span></p><ul><li><p><span>Allow the user to add text to the top of the meme</span></p></li><li><p><span>Allow the user to pick a font</span></p></li><li><p><span>Allow the user to pick a font color</span></p></li><li><p><span>Save the meme to local storage so that the last meme loads when the page loads</span></p></li><li><p><span>Or something of your choice, but get approval from your instructor before implementing it.</span></p></li></ul></li><li><p><span>For each of the 2 additional features:</span></p><ul><li><p><span>Add html to the web page for the user to interact with.</span></p></li><li><p><span>Change the JS class to add event handlers to your new UI elements</span></p></li><li><p><span>Change the createMeme method to add your features to the canvas.</span></p></li></ul></li></ul></li><li><p><span>Use Node, NPM, Webpack and Babel to create a production version of the  application &quot;transpiled&quot; to a version of JavaScript (ES5) that is supported by all browsers.</span></p></li></ul><h1 id='notes'><span>Notes</span></h1><h2 id='dependencies'><span>Dependencies</span></h2><p><span>This project has the following dependencies:</span></p><ul><li><p><a href='https://getbootstrap.com'><span>Bootstrap</span></a><span> CSS and JS bundles.</span></p></li><li><p><a href='https://icons.getbootstrap.com/'><span>Bootstrap Icons</span></a><span></span><br/><span>The </span><a href='https://icons.getbootstrap.com/icons/trash/'><span>trash</span></a><span> font icon is used in this projct.</span></p></li></ul><h2 id='the-default-image'><span>The Default Image</span></h2><p><span>There is an </span><code>&lt;img&gt;</code><span> element in the HTML file that has the attribute </span><code>style=&quot;display:none&quot;</code><span> which means it isn&#39;t displayed. This image element is just used as a means to load the default image so it can be rendered in the canvas element.</span></p><p><span>If you add a feature to use the last image the user uploaded as the new default image; by saving that image in local storage; you won&#39;t be able to assign that image to the </span><code>src</code><span> attribute of the </span><code>&lt;img&gt;</code><span> element and then imediately call </span><code>createMeme</code><span>, instead, you will need to set the </span><code>onload</code><span> event of the </span><code>&lt;img&gt;</code><span> element to call </span><code>createMeme</code><span> after the image has been loaded. Read about the </span><a href='https://www.w3schools.com/tags/att_onload.asp'><span>onload event on W3Schools</span></a><span>.</span></p><h1 id='submission'><span>Submission</span></h1><h2 id='beta-version-and-code-review'><span>Beta Version and Code Review</span></h2><ul><li><p><span>Post to the Beta Version forum</span></p><ul><li><p><span>When your code is 75% complete, add your lab partner as a collaborator on your GitHub repository.</span></p></li><li><p><span>Make a post in the Beta forum on Moodle letting your lab partner know you are ready for a code review.</span></p></li><li><p><span>After your lab partner has made you a collaborator on their repository, do a code review for them using the code review form provided on Moodle.</span></p></li><li><p><span>Give your lab partner a copy of the code review by posting it in the forum.</span></p></li></ul></li><li><p><span>Submit your code reivew to Moodle</span></p><ul><li><p><span>Submit a copy of the code review you did to the Moodle Code Review assignment.</span></p></li></ul></li></ul><h2 id='production-version'><span>Production Version</span></h2><ul><li><p><span>Publish to the CIT web server  </span></p><ul><li><p><span>Upload your completed web apps to </span><a href='http://citstudent.lanecc.edu'><span>citstudent.lanecc.edu</span></a><span>.  Test both apps on the web server.  </span></p></li></ul></li><li><p><span>Submit the following to Moodle:</span></p><ul><li><p><span>Code review from your lab partner: </span></p><ul><li><p><span>Fill out the &quot;Prod&quot; column, entering yes for anything you fixed or completed.</span></p></li><li><p><span>Add screen shots for the web app showing</span><sup class='md-footnote'><a href='#dfref-footnote-1' name='ref-footnote-1'>1</a></sup><span>:</span></p><ul><li><p><span>Your folders and files in the VS Code file explorer and the terminal showing the webpack dev server running.</span></p></li><li><p><span>The app running on the Webpack dev server with the URL visible. </span></p></li></ul></li></ul></li></ul></li></ul><ul><li><p><span>Moodle Lab 4 Production Version assignment:  put the citstudent URs for the web app in the online text.</span></p></li></ul><p>&nbsp;</p><hr /><p><span>Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024.</span></p><div class='footnotes-area'  ><hr/>
+<div id='write'  class=''><h1>Lab 5: Meme Creator</h1><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n4"><a class="md-toc-inner" style="" href="#objectives">Objectives</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n6"><a class="md-toc-inner" style="" href="#instructions">Instructions</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n38"><a class="md-toc-inner" style="" href="#notes">Notes</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n39"><a class="md-toc-inner" style="" href="#dependencies">Dependencies</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n46"><a class="md-toc-inner" style="" href="#the-default-image">The Default Image</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n49"><a class="md-toc-inner" style="" href="#submission">Submission</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n50"><a class="md-toc-inner" style="" href="#beta-version-and-code-review">Beta Version and Code Review</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n68"><a class="md-toc-inner" style="" href="#production-version">Production Version</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n94"><a class="md-toc-inner" style="" href="#assessment">Assessment</a></span></p></div><h1 id='objectives'><span>Objectives</span></h1><p><span>The objective of this lab is to continue giving you practice using the &quot;new&quot; ES6 JavaScript features.  You will also get practice with CSS Flexbox (from CIS 195) and have your first experience with the HTML5 Canvas.  And, you will get further practice with webpack, webpack configuration files and the webpack development server.</span></p><h1 id='instructions'><span>Instructions</span></h1><p><span>Complete the Meme Creator web app:</span></p><ul><li><p><span>Accept the invitation to the GitHub Classroom repository containing the starter files. </span>
+<strong><span>Important</span></strong><span>: Do all your work in the Classroom repository working folder, don&#39;t make a different repository.</span></p></li><li><p><span>Complete the Meme Creator application described in the screencasts and comments in the starter files.</span></p><ul><li><p><span>Part 6 of the comments describes possible added functionality. Choose two features to add:</span></p><ul><li><p><span>Allow the user to add text to the top of the meme</span></p></li><li><p><span>Allow the user to pick a font</span></p></li><li><p><span>Allow the user to pick a font color</span></p></li><li><p><span>Save the meme to local storage so that the last meme loads when the page loads</span></p></li><li><p><span>Or something of your choice, but get approval from your instructor before implementing it.</span></p></li></ul></li><li><p><span>For each of the 2 additional features:</span></p><ul><li><p><span>Add html to the web page for the user to interact with.</span></p></li><li><p><span>Change the JS class to add event handlers to your new UI elements</span></p></li><li><p><span>Change the createMeme method to add your features to the canvas.</span></p></li></ul></li></ul></li><li><p><span>Use Node, NPM, Webpack and Babel to create a production version of the  application &quot;transpiled&quot; to a version of JavaScript (ES5) that is supported by all browsers.</span></p></li></ul><h1 id='notes'><span>Notes</span></h1><h2 id='dependencies'><span>Dependencies</span></h2><p><span>This project has the following dependencies:</span></p><ul><li><p><a href='https://getbootstrap.com'><span>Bootstrap</span></a><span> CSS and JS bundles.</span></p></li><li><p><a href='https://icons.getbootstrap.com/'><span>Bootstrap Icons</span></a><span></span><br/><span>The </span><a href='https://icons.getbootstrap.com/icons/trash/'><span>trash</span></a><span> font icon is used in this projct.</span></p></li></ul><h2 id='the-default-image'><span>The Default Image</span></h2><p><span>There is an </span><code>&lt;img&gt;</code><span> element in the HTML file that has the attribute </span><code>style=&quot;display:none&quot;</code><span> which means it isn&#39;t displayed. This image element is just used as a means to load the default image so it can be rendered in the canvas element.</span></p><p><span>If you add a feature to use the last image the user uploaded as the new default image; by saving that image in local storage; you won&#39;t be able to assign that image to the </span><code>src</code><span> attribute of the </span><code>&lt;img&gt;</code><span> element and then imediately call </span><code>createMeme</code><span>, instead, you will need to set the </span><code>onload</code><span> event of the </span><code>&lt;img&gt;</code><span> element to call </span><code>createMeme</code><span> after the image has been loaded. Read about the </span><a href='https://www.w3schools.com/tags/att_onload.asp'><span>onload event on W3Schools</span></a><span>.</span></p><h1 id='submission'><span>Submission</span></h1><h2 id='beta-version-and-code-review'><span>Beta Version and Code Review</span></h2><ul><li><p><span>Post to the Beta Version forum</span></p><ul><li><p><span>When your code is 75% complete, add your lab partner as a collaborator on your GitHub repository.</span></p></li><li><p><span>Make a post in the Beta forum on Moodle letting your lab partner know you are ready for a code review.</span></p></li><li><p><span>After your lab partner has made you a collaborator on their repository, do a code review for them using the code review form provided on Moodle.</span></p></li><li><p><span>Give your lab partner a copy of the code review by posting it in the forum.</span></p></li></ul></li><li><p><span>Submit your code reivew to Moodle</span></p><ul><li><p><span>Submit a copy of the code review you did to the Moodle Code Review assignment.</span></p></li></ul></li></ul><h2 id='production-version'><span>Production Version</span></h2><ul><li><p><span>Publish to the CIT web server  </span></p><ul><li><p><span>Upload your completed web apps to </span><a href='http://citstudent.lanecc.edu'><span>citstudent.lanecc.edu</span></a><span>.  Test both apps on the web server.  </span></p></li></ul></li><li><p><span>Submit the following to Moodle:</span></p><ul><li><p><span>Code review from your lab partner: </span></p><ul><li><p><span>Fill out the &quot;Prod&quot; column, entering yes for anything you fixed or completed.</span></p></li><li><p><span>Add screen shots for the web app showing</span><sup class='md-footnote'><a href='#dfref-footnote-1' name='ref-footnote-1'>1</a></sup><span>:</span></p><ul><li><p><span>Your folders and files in the VS Code file explorer and the terminal showing the webpack dev server running.</span></p></li><li><p><span>The app running on the Webpack dev server with the URL visible. </span></p></li></ul></li></ul></li></ul></li></ul><ul><li><p><span>Moodle Lab 5 Production Version assignment:  put the citstudent URLs for the web app in the online text.</span></p></li></ul><h2 id='assessment'><span>Assessment</span></h2><p><a href='CS233JS_Lab05_Rubric.htm'><span>Grading Rubric for this lab</span></a></p><p>&nbsp;</p><hr /><p><span>Adapted by Brian Bird, spring 2024 from lab instructions written by Mari Good for winter 2024. Revised by Brian Bird winter 2025.</span></p><div class='footnotes-area'  ><hr/>
 <div class='footnote-line'><span class='md-fn-count'>1</span> <span>I&#39;m asking for screen shots for this lab so that you can show me that you did use Node.js and the development tools introduced this week.</span> <a name='dfref-footnote-1' href='#ref-footnote-1' title='back to document' class='reversefootnote' >↩</a></div></div></div></div>
 </body>
 </html>

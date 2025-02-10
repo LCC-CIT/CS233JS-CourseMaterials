@@ -1,4 +1,4 @@
-<h1>Lab 4: Meme Creator</h1>
+<h1>Lab 5: Meme Creator</h1>
 
 <h2>Table of Contents</h2>
 
@@ -72,7 +72,11 @@ If you add a feature to use the last image the user uploaded as the new default 
       - The app running on the Webpack dev server with the URL visible. 
 
 
-  - Moodle Lab 4 Production Version assignment:  put the citstudent URs for the web app in the online text.
+  - Moodle Lab 5 Production Version assignment:  put the citstudent URLs for the web app in the online text.
+
+## Assessment
+
+[Grading Rubric for this lab](CS233JS_Lab05_Rubric.htm)
 
 
 
@@ -81,4 +85,4 @@ If you add a feature to use the last image the user uploaded as the new default 
 
 ---
 
-Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024.
+Adapted by Brian Bird, spring 2024 from lab instructions written by Mari Good for winter 2024. Revised by Brian Bird winter 2025.
