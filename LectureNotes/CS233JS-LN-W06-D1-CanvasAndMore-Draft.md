@@ -51,7 +51,7 @@ Webpack offers several benefits for JavaScript development:
 7. **Avoids Global Variable Overwriting**: Since Webpack provides a module system based on ECMAScript (ES6), every file you create will become a module¹. Hence, every variable you create in this file will be in the local scope¹. This solves the problem of overwriting global variables¹.
 8. **Feature Flagging**: Webpack supports feature flagging, a software engineering approach by which you can send code to different environments during feature testing¹.
 
-Remember, Webpack only understands JavaScript and JSON¹. So, it converts other frontend files like HTML and CSS into modules with the help of a loader¹. This provides a complete frontend solution¹.
+Remember, Webpack only understands JavaScript and JSON¹. So, it converts other frontend files like HTML and CSS into modules with the help of a loader¹. This provides a complete front-end solution¹.
 
 Source: Conversation with Bing, 5/6/2024
 (1) What are the advantages of using Webpack - GeeksforGeeks. https://www.geeksforgeeks.org/what-are-the-advantages-of-using-webpack/.
@@ -76,7 +76,7 @@ Source: Conversation with Bing Copilot, 5/6/2024
 (2) Should I git ignore package-lock.json? Understanding package manager .... https://willamesoares.com/posts/should-i-git-ignore-package-lockjson.
 (3) Do I commit the package-lock.json file created by npm 5?. https://stackoverflow.com/questions/44206782/do-i-commit-the-package-lock-json-file-created-by-npm-5.
 
-# HMTL5 Canvas
+
 
 
 
