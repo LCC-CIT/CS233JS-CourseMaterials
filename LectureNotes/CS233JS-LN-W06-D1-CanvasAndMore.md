@@ -25,22 +25,6 @@ author: Brian Bird
 
 [TOC]
 
-# Introduction
-
-**Spring 2024**
-
-## Announcements
-
-- 
-
-## Overview
-
-- 
-
-## Review
-
-- 
-
 # More on JS Dev Tools
 
 ## Webpack
