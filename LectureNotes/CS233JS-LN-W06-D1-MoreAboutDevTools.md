@@ -38,60 +38,56 @@ This week you will be workining with the same JS web dev tools you used last wee
 
 This week you'll learn more about using Wepack.
 
-- webpack.config.json
+- `webpack.config.json`
   The lab 5 version of this file has more kinds of things in it.
-
-  - Type: `npm run webpack` to build the project and create the dist folder.
-
-- dist folder
-  In lab 5 you'll learn more about how the bundled code is generated.
-
-  - memes.bundle.js&mdash;contains all the .js and .css code bundled into one big file.
-  - memes.bundle.js.map&mdash;maps the dist code to the src code so you can debug your src code in a web browser.
-
-#### Dev Server
-
-  Run the development server with `npm run watch`  (This doesn't rebuild the dist folder, the server puts transpiled code in memory.)
-
+  - Type: `npm run build` to build (transpile and bundle) the project and create the `dist` folder.
   
+- `dist` folder
+  In lab 5 you'll learn more about how the bundled code is generated.
+  - `memes.bundle.js`&mdash;contains all the .js and .css code bundled into one big file.
+    - This file is linked to `index.html` by a `<script>` element at the bottom of the html file.
+    - This file is a lot bigger than the sum of your .js and .css source files, but a lot smaller than the sum of the node modules.  
+      Questiion: Why do you think this is?
+  - `memes.bundle.js.map`&mdash;maps the dist JS code to the src JS code so you can debug your JS code in a web browser.
 
-### Benefits of Using Webpack
+
+
+#### Benefits of Using Webpack
 
   Webpack offers several benefits for JavaScript development:
 
-  1. **Module Bundling**: Webpack is a module bundler that creates a dependency graph of all your project's modules¹. It starts from an entry point and follows all the dependencies to know what it has to bundle¹.
-  2. **Loaders**: Webpack uses loaders to convert different types of files like images and CSS into modules before adding them to the dependency graph¹.
-  3. **Plugins**: Plugins in Webpack provide additional functionality, such as printing something on running the webpack, minifying, and optimizing bundles¹.
-  4. **Code Splitting**: Webpack supports a module system that allows you to split your code into different modules¹. This means you can use one file's features in another, despite having different files¹.
-  5. **Minification**: Webpack provides minification, which reduces file size and minimizes the code¹. It removes all the whitespace, line breaks, and unnecessary code, and changes long variable names¹.
-  6. **Development Speed**: Webpack can speed up the development process. If you're using Webpack, your page does not need to fully reload when there's a small change in JavaScript¹. This benefit can also be accessed for CSS if you use loaders¹. It also reduces the load time of the website during debugging¹.
-  7. **Avoids Global Variable Overwriting**: Since Webpack provides a module system based on ECMAScript (ES6), every file you create will become a module¹. Hence, every variable you create in this file will be in the local scope¹. This solves the problem of overwriting global variables¹.
-  8. **Feature Flagging**: Webpack supports feature flagging, a software engineering approach by which you can send code to different environments during feature testing¹.
+  1. **Module Bundling**: Webpack is a module[^1] bundler that creates a dependency graph of all your project's modules. It starts from an entry point and follows all the dependencies to know what it has to bundle.
+  2. **Loaders**: Webpack uses loaders to convert different types of files like images and CSS into modules before adding them to the dependency graph.
+  3. **Plugins**: Plugins in Webpack provide additional functionality, such as printing something on running the webpack, minifying, and optimizing bundles.
+    4. **Code Splitting**: Webpack supports a module system that allows you to split your code into different modules. This means you can use one file's features in another, despite having different files.
+  5. **Minification**: Webpack provides minification, which reduces file size and minimizes the code. It removes all the whitespace, line breaks, and unnecessary code, and changes long variable names.
+  6. **Development Speed**: Webpack can speed up the development process. If you're using Webpack, your page does not need to fully reload when there's a small change in JavaScript. This benefit can also be accessed for CSS if you use loaders. It also reduces the load time of the website during debugging.
+  7. **Avoids Global Variable Overwriting**: Since Webpack provides a module system based on ECMAScript (ES6), every file you create will become a module. Hence, every variable you create in this file will be in the local scope¹. This solves the problem of overwriting global variables.
+  8. **Feature Flagging**: Webpack supports feature flagging, a software engineering approach by which you can send code to different environments during feature testing.
 
-Note: Webpack only understands JavaScript and JSON¹. So, it converts other frontend files like HTML and CSS into modules with the help of a loader¹.
+Note: Webpack only understands JavaScript and JSON. So, it converts other frontend files like HTML and CSS into modules with the help of a loader.
 
-*The first draft of this section was generated by Bing Copilot, 5/6/2024*
+*The first draft of this section on benefits of using Webpac was generated by Bing Copilot, 5/6/2024*
 
-  
+#### Dev Server
 
-### Babel
-
-
+Run the development server with `npm run watch`  
+(This doesn't rebuild the code in the dist folder, the server puts rebuilt code in memory.)
 
 
 
 ## References
 
-[Canvas Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)&mdash;MDN
+[What are the advantages of using Webpack](https://www.geeksforgeeks.org/what-are-the-advantages-of-using-webpack/)&mdash;GeeksforGeeks, 2024.
 
-[FileReader Object](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)&mdash;MDN
+[Why webpack?](https://webpack.js.org/concepts/why-webpack/)&mdash;Official Webpack Website.
+
+[Webpack: When To Use And Why](https://andrewray.me/blog/webpack-when-to-use-and-why)&mdash;Andy Ray's Blog, 201.
 
 
 
-[^1]: What are the advantages of using Webpack&mdash;[GeeksforGeeks](https://www.geeksforgeeks.org/what-are-the-advantages-of-using-webpack/)
-[^2]: Why webpack?&mdash;[Official Webpack Website](https://webpack.js.org/concepts/why-webpack/).
-[^3]: Webpack: When To Use And Why&mdash;[Andy Ray's Blog](https://andrewray.me/blog/webpack-when-to-use-and-why).
+[^1]: You'll learn more about JavaScript modules next week.
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
