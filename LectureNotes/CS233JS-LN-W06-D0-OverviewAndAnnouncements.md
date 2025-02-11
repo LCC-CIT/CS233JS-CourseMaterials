@@ -30,6 +30,7 @@ author: Brian Bird
 ## Announcements
 
 - Our CIT lab mamager, Jacob Riddle, would like to have a movie/game day in the lab on Friday, February 28 from 11 am- 4:30 pm. Please share your interest by completing [this survey](https://docs.google.com/forms/d/e/1FAIpQLSeHS7OqR-gNMZnzU8EVZFsU_8qwEzT8YcbBLJlREReCd_x47A/viewform).
+- There are openings for students to work in the CIT lab.  If you were awarded work study funds for AY 2024-25, you can learn more and apply here: https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=9586&s=1
 
 ## Last Week
 
