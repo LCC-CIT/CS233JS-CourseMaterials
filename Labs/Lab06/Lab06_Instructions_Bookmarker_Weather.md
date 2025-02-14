@@ -1,4 +1,5 @@
-<h1>Lab 5: Web Bookmarker and Weather App</h13
+<h1>Lab 6: Web Bookmarker and Weather App</h13
+
 
 
 
@@ -59,7 +60,7 @@ Complete the programming problems described below. For each problem:
       - Each app running on the Webpack dev server with the URL visible. 
 
 
-  - Moodle Lab 5 Production Version assignment:  put the citstudent URLs for each web app in the online text.
+  - Moodle Lab 6 Production Version assignment:  put the citstudent URLs for each web app in the online text.
 
 
 
@@ -68,4 +69,4 @@ Complete the programming problems described below. For each problem:
 
 ---
 
-Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024.
+Adapted by Brian Bird, spring 2024, revised winter 2025, from lab instructions written by Mari Good for winter 2024.
