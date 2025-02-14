@@ -7,7 +7,7 @@
 
 # Objectives
 
-The objective of this lab is to give you more practice using the "new"[^1], widely supported, version of JavaScript: ES6. You will also be introduced to Node.js, NPM and several other tools that are part of modern JavaScript development. 
+The objective of this lab is to give you more practice using the "new"[^1], widely supported, version of JavaScript: ES6. You will also be introduced to Node.js, NPM, Webpack, and Babel which are dev tools commmonly used in modern JavaScript development. 
 
 # Instructions
 
@@ -17,33 +17,31 @@ Complete the web apps described below. For each problem:
   **Important**: Do all your work in the Classroom repository working folder, don't make a different repository.
 - Create a JavaScript solution that solves the problem. 
 - Test your solution in at least one browser running in the Webpack dev server on your local machine.
+- Use Webpack to create a production version of the application that is bundled and transpiled to a version of JavaScript (ES5) that is supported by all browsers.
 - Upload your solution to citstudent.lanecc.edu. Use a web browser to test your solutions running on the web server.
 
 ## 1. ToDo List
 
-- Complete the ToDoList application described in the screencasts. The html and css files for the application have been provided in the starter GitHub Classroom repository. Add JavaScript code by following the detailed instructions in the starting .js file. Test and debug your application.
-- Use Node, NPM, Webpack and Babel to create a production version of the application that is bundled and transpiled to a version of JavaScript (ES5) that is supported by all browsers.
+Complete the ToDoList application described in the screencasts. The html and css files for the application have been provided in the starter GitHub Classroom repository. Add JavaScript code by following the detailed instructions in the starting .js file. Test and debug your application.
 
 ## 2. Web Page Bookmarker
 
-- Complete the BookMarker application as described in the comments in the starting files for the application. Test and debug your application.
+Complete the BookMarker application as described in the comments in the starting files for the application. Test and debug your application.
 
-  Note: Here is a version of the `createMeme` method that uses a different strategy for resizing the images:
-  ```javascript
-  createMeme() {
-    // Clear the previous image from the page
-    this.$context.clearRect(0, 0, this.$canvas.width, 
-                                    this.$canvas.height);
-    // Calculate a canvas height to fit the aspect ratio of the image
-    const scaleFactor = this.$canvas.width / this.$image.width;
-    this.$canvas.height = this.$image.height * scaleFactor;
-  
-    // Draw the image and set it's size to match the canvas.
-    this.$context.drawImage(this.$image, 0, 0, this.$canvas.width,
-                                                this.$canvas.height); 
-  ```
+Note: Here is a version of the `createMeme` method that uses a different strategy for resizing the images:
+```javascript
+createMeme() {
+  // Clear the previous image from the page
+  this.$context.clearRect(0, 0, this.$canvas.width, 
+                                  this.$canvas.height);
+  // Calculate a canvas height to fit the aspect ratio of the image
+  const scaleFactor = this.$canvas.width / this.$image.width;
+  this.$canvas.height = this.$image.height * scaleFactor;
 
-- Use Node, Npm, Webpack and Babel to create a production version of the application that is bundled and  transpiled to a version of JavaScript that is supported by all browsers.
+  // Draw the image and set it's size to match the canvas.
+  this.$context.drawImage(this.$image, 0, 0, this.$canvas.width,
+                                              this.$canvas.height); 
+```
 
 # Submission
 
