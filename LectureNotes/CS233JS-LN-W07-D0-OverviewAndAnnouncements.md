@@ -37,10 +37,13 @@ author: Brian Bird
 
 ## Q and A
 
-- Lab 5&mdash;Meme Creator
+- Last week's lab: lab 5&mdash;Meme Creator
+
   - Do you have any questions or code you would like help with?
   - Any problems or issues with the instructions, code review or submission process?
   - Don't hesitate to ask for help!
+
+  
 
 ## This Week
 
@@ -53,11 +56,13 @@ author: Brian Bird
 
 ### Changes Since Mari's Videos Were Made
 
-- This week's lab was lab 5 but is now lab 6&mdash;Bookmarker version 2 and Weather app.
+- This week's lab, lab 6, bookmarker version 2 and a weather app, were lab 5 when Mari made the video.
+
+  
 
 ## Next Week
 
-### Term Project
+### Start the Term Project
 
 Next week, week 8, you will start your term project. But this week you should decide what your project will be. [Read the requirements here](../Labs/TermProject/CS233JS_ProjectRequirements.html).
 
