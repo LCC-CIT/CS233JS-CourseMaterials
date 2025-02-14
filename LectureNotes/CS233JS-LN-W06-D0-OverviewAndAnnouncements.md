@@ -1,6 +1,6 @@
 ---
 title: Week 6 Overview
-description: What's happening in week 4
+description: What's happening in week 6
 keywords: Announcements, Due Dates, Help
 generator: Typora
 author: Brian Bird
@@ -12,7 +12,7 @@ author: Brian Bird
 
 <h2>February 10 through February 16</h2>
 
-
+**CS233JS Intermediate Programming: JavaScript**
 
 | Topics by Week                                        |                                                     |
 | ----------------------------------------------------- | --------------------------------------------------- |
@@ -20,7 +20,7 @@ author: Brian Bird
 | 2. ES6, Classes and Git                               | 7. AJAX, ES6 promises, fetch API                    |
 | 3. More about Classes                                 | 8. Making API calls, graphs and charts, Google maps |
 | 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. | 9. Term Project                                     |
-| 5. Midterm Quiz                                       | 10. Review                                          |
+| 5. Review and Midterm Quiz                            | 10. Review                                          |
 | 11. Final Quiz                                        |                                                     |
 
 <h2>Contents</h2>
@@ -29,8 +29,10 @@ author: Brian Bird
 
 ## Announcements
 
-- Our CIT lab mamager, Jacob Riddle, would like to have a movie/game day in the lab on Friday, February 28 from 11 am- 4:30 pm. Please share your interest by completing [this survey](https://docs.google.com/forms/d/e/1FAIpQLSeHS7OqR-gNMZnzU8EVZFsU_8qwEzT8YcbBLJlREReCd_x47A/viewform).
+- Our CIT lab manager, Jacob Riddle, would like to have a movie/game day in the lab on Friday, February 28 from 11 am- 4:30 pm. Please share your interest by completing [this survey](https://docs.google.com/forms/d/e/1FAIpQLSeHS7OqR-gNMZnzU8EVZFsU_8qwEzT8YcbBLJlREReCd_x47A/viewform).
 - There are openings for students to work in the CIT lab.  If you were awarded work study funds for AY 2024-25, you can learn more and apply here: https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=9586&s=1
+
+
 
 ## Last Week
 
@@ -41,39 +43,30 @@ author: Brian Bird
 
 ### Lab 4
 
-This was due last Thursday, but it was the week of the midterm and most of you didn't get it finsihed yet.
+This was due last Thursday, but it was the week of the midterm and most of you didn't get it finished yet.
 
 - What questions to you have?
 - Don't hesitate to ask for help!
 
+
+
 ## This Week
 
-- Review this week's section on Moodle. 
-- Be sure to <u>watch or read all the required materials</u>.  
-    For online students, this includes the short class recordings which will be available after 4:00pm on Monday and Wednesday via the Zoom widget near the top of the Moodle page.
-- Things that have changed since Mari recorded her videos:
+### Objectives
 
-  - This week's lab was lab 4 but is now lab 5.
+- To develop your proficiency in using JavaScript development tools.
+- To introduce you to the canvas object and to the API for working with the canvas in JavaScript.
+- To develop your proficiency in designing, implementing,  testing and debugging client-side web-based applications written in JavaScript.
 
-### Lab 5
+### Changes Since Mari's Videos Were Made
 
-You'll be making one web app, a meme creator.
+- This week's lab was lab 4 but is now lab 5.
 
-- Read the instructions.
-  - Note that there is a link to Brian's finished Meme Maker app running on citstudent.
+  
 
-- Accept the GitHub Classroom for lab 5
-- Look at the code review form
+---
 
-### Due dates
 
-- Tuesday: Lab 4 code review, if you didn't already do one.
-- Thursday: 
-  - Reading quiz 5.
-  - Lab 4 production version, if you didn't already submit it.
-- Sunday:
-  - Share a beta version of lab 5 with your lab partner.  
-    Add your lab partner to your repository and let them know in your team channel on Discord.
 
 ## Reminders
 
