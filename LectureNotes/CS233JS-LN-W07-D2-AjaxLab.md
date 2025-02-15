@@ -67,7 +67,7 @@ After running any of these commands, you need to commit the changes.
 
 ### Getting Open Graph data
 
-The project uses the opengraph web api (aka web service) to get web site data. The free plan for this service limits you to 100 requests per month. Alternatively you can use [LinkPreview](https://www.linkpreview.net/), which has a limit of 60 requests per hour on the free plan!
+The project uses the opengraph web API to get web site data. The free plan for this service limits you to 100 requests per month. Alternatively you can use [LinkPreview](https://www.linkpreview.net/), which has a limit of 60 requests per hour on the free plan!
 
 You will need to make these changes to your code:
 

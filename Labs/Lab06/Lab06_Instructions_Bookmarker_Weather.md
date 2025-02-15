@@ -21,18 +21,58 @@ Complete the programming problems described below. For each problem:
   **Important**: Do all your work in the working folders of your GitHub Classroom repositories. Don't make new repositories.
 - Exchange code reviews of your work using with your lab partner.
 
-## 1. Bookmarker Version 2
+## Web App 1: Bookmarker Version 2
 
-- Create a branch in your lab 3 GitHub repository for the new version. The  starting files are the solution files from your first version of this application.
-- Add an image as well as a title to each bookmark by accessing data about each url from opengraph.io, or [linkpreview.net](http://www.linkpreview.net/)[^1]. The concepts, skills and syntax that you need to make this change to your original application are discussed in the lecture notes and videos, and will be demonstrated in class. Test and debug your application.
+- Create a branch in your lab 4 GitHub repository for the new version. The starting files are the solution files from your first version of this application.
+- Register for a free account on [opengraph.io](https://www.opengraph.io) or [linkpreview.net](http://www.linkpreview.net/).
+- Add an image as well as a title to each bookmark by accessing data about each url from opengraph.io, or linkpreview.net[^1]. The concepts, skills and syntax that you need to make this change to your original application are discussed in the lecture notes and videos, and will be demonstrated in class. Test and debug your application.
 - Use webpack to bundle all of the resources used by your application into one .js file.
 
-## 2. Weather Application
+### Alternative Way to Get Open Graph data
+
+The project uses the opengraph web API to get web site data. The free plan for this service limits you to 100 requests per month. Alternatively you can use [LinkPreview](https://www.linkpreview.net/), which has a limit of 60 requests per hour on the free plan!
+
+You will need to make these changes to your code:
+
+```javascript
+// In the constructor:
+this.apiUrl = "https://api.linkpreview.net";
+this.apiId = "fd3f9a0c9fafe271af5bd823cf3f0c02"; // Brian's key, use your own key
+
+// In addBookmark, the first call to fetch:
+fetch(`${this.apiUrl}?key=${this.apiId}&q=${url}`)
+
+// In addBookmark, when creating the bookmark object:
+const newBookmark = {
+                    title: data.title,
+                    image: data.image,
+                    link: urlForHref,
+                    description: description
+                };
+```
+
+
+
+## Web App 2: Weather Application
 
 - Accept the GitHub Classroom invitation and Clone the github repository to get the starting files for the application. Use git and github to manage your work.
 - Setup the development environment for the application. package.json and webpack.config.js have been provided. Run npm install from the  command line.
 - Complete the application as described in the comments in the  starting files for the application. Test and debug your application.
 - Use webpack to bundle all of the resources used by your application into ONE (development version) js file.
+
+### Forecast Date Object
+
+The openweather web API now returns a JavaScript Date object for forecast.dt. It is no longer necessary to convert from *epoch time* to a Date object. I modified the getDate method to return a date string from the JS Date object.
+
+```javascript
+// ruturn a string with the month, day and year from a JS Date object
+export function getDate(date) {
+    return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+}
+
+```
+
+
 
 # Submission
 
