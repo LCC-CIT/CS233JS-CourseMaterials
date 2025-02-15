@@ -9,30 +9,30 @@
 
 # Objectives
 
-The objective of this lab is to allow you to introduce you AJAX as a strategy for building applications as well as to the modern syntactical elements used to make AJAX calls.
+The objective of this lab is to introduce AJAX as a strategy for building web applications as well as modern approaches to making AJAX calls.
 
 # Instructions
 
 Complete the programming problems described below. For each problem:
 
-- Create a JavaScript solution that solves the problem. Test your solution in at least one browser running on your local machine.
-- Upload your solution to citstudent.lanecc.edu. Test your solution running on the server in at least one browser.
+- Create a JavaScript solution that solves the problem. Test your solution running on your local machine.
+- Upload your solution to citstudent.lanecc.edu. Test your solution running on the server.
 - Use Git and GitHub to manage your source code and design documents. 
   **Important**: Do all your work in the working folders of your GitHub Classroom repositories. Don't make new repositories.
 - Exchange code reviews of your work using with your lab partner.
 
 ## Web App 1: Bookmarker Version 2
 
-- Create a branch in your lab 4 GitHub repository for the new version. The starting files are the solution files from your first version of this application.
+- The starting files are the solution files from your first version of this application. Create a branch in your lab 4 GitHub Classroom repository for the new version. 
 - Register for a free account on [opengraph.io](https://www.opengraph.io) or [linkpreview.net](http://www.linkpreview.net/).
-- Add an image as well as a title to each bookmark by accessing data about each url from opengraph.io, or linkpreview.net[^1]. The concepts, skills and syntax that you need to make this change to your original application are discussed in the lecture notes and videos, and will be demonstrated in class. Test and debug your application.
+- Add an image as well as a title to each bookmark by accessing data about each url from opengraph.io, or linkpreview.net. The concepts, skills and syntax that you need to make this change to your original application are discussed in the lecture notes and videos. Test and debug your application.
 - Use webpack to bundle all of the resources used by your application into one .js file.
 
 ### Alternative Way to Get Open Graph data
 
-The project uses the opengraph web API to get web site data. The free plan for this service limits you to 100 requests per month. Alternatively you can use [LinkPreview](https://www.linkpreview.net/), which has a limit of 60 requests per hour on the free plan!
+The project uses the opengraph.io web API to get web site data. The free plan for this service limits you to 100 requests per month. Alternatively you can use [LinkPreview](https://www.linkpreview.net/), which has a limit of 60 requests per hour on the free plan!
 
-You will need to make these changes to your code:
+You will need to make these changes to your code[^1]:
 
 ```javascript
 // In the constructor:
@@ -104,7 +104,7 @@ export function getDate(date) {
 
 
 
-[^1]: Note that the [linkpreview documentation](https://docs.linkpreview.net/#query-parameters) says the query parameter name `key` is deprecated, but that is only true for HTTP POST requests. We are using a GET request so `key` is the right name for the API key parameter.
+[^1]: Note that the [linkpreview documentation](https://docs.linkpreview.net/#query-parameters) (as of spring 2024) says the query parameter name `key` is deprecated, but that is only true for HTTP POST requests. We are using a GET request so `key` is the right name for the API key parameter.
 [^2]: I'm asking for screen shots for this lab so that you can show me that you did use Node.js and the development tools introduced this week.
 
 ---

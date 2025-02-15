@@ -6,7 +6,7 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>Updating Web Page Data with AJAX</h1>
+<h1>Lab 6 Notes</h1></h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
@@ -23,7 +23,7 @@ author: Brian Bird
 
 [TOC]
 
-# Lab 5
+# Lab 6
 
 ## Web Bookmarker Completion
 
