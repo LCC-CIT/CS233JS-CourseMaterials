@@ -6,15 +6,15 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>Getting Site Meta-data Using AJAX</h1></h1>
+<h1>Getting Site Metadata Using AJAX</h1>
 
-**CS233JS Intermediate Programming: JavaScript
+**CS233JS Intermediate Programming: JavaScript**
 
 <h2>Contents</h2>
 
 [TOC]
 
-## About Web Site Meta-data
+## About Web Site Metadata
 
 The `head` element of a web page contains various types of data about the page and if the page is the home page, about the site. In this week's lab assignment, you will be enhancing the bookmarker app to get the site title, description and a preview image. One source of that information is the Open Graph protocol (see below). Another source are the `title` and various `meta` elements like `<meta name='description' content='a description of the site'`.
 
@@ -81,7 +81,7 @@ You can run this code in a browser console.
 
 
 
-#### Example Web App That Gets Site Meta-data
+#### Example Web App That Gets Site Metadata
 
 [Fetch Site Meta-data](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/OpenGraphExample/)
 
@@ -92,7 +92,11 @@ You can run this code in a browser console.
 [What is Open Graph and how can I use it for my website?](https://www.freecodecamp.org/news/what-is-open-graph-and-how-can-i-use-it-for-my-website/)&mdash;Colby Fayock
 Colby Fayock, FreeCodeCamp, 2020.
 
-[Linkpreview Documentation](https://docs.linkpreview.net/)
+[What Are Open Graph Meta Tags?](https://www.linkpreview.net/open-graph-meta-tags/)&mdash;Linkpreview Documentation
+
+[Linkpreview API](https://docs.linkpreview.net/)&mdash;Linkpreview Documentation
+
+[Using the JavaScript Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)&mdash;MDN, 2025.
 
 
 

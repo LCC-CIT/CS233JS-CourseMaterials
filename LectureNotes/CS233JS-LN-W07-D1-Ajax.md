@@ -14,7 +14,11 @@ author: Brian Bird
 
 [TOC]
 
-# AJAX Demo
+## Introduction
+
+The demo below is meant to supplement the explanation of AJAX given in Mari Good's videos and accompanying power point slides.
+
+## AJAX Demo
 
 Look at the MDN Guide: [Fetching Data from the Server](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data)
 
@@ -42,7 +46,7 @@ function fetchBlob(product) {
 
 
 
-# Reference
+## Reference
 
 [Fetching data from the server](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data)&mdash;MDN Guide, 2024.
 
