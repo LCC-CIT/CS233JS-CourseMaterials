@@ -5,20 +5,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenGraph Fetch Example</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Site Metadata Fetch Example</title>
+    <meta property="og:title" content="Site Metadata Fetch Example">
+    <meta property="og:description" content="This web app provides an example of fetching OpenGraph or alternate meta-data from a website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png">
 </head>
 <body>
     <h1>OpenGraph Fetch Example</h1>
     <form id="fetchForm">
         <label for="url">URL:</label>
-        <input type="text" id="url" name="url" value="https://www.freecodecamp.org" required>
-        <button type="submit">Fetch OpenGraph Data</button>
+        <input type="text" id="url" name="url" value="https://wikipedia.org" required>
+        <button type="submit">Fetch Site Meta-data</button>
     </form>
     <div id="result">
         <h2 id="title"></h2>
         <img id="image" src="" alt="OpenGraph Image" style="max-width: 25%;">
         <p id="description"></p>
     </div>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

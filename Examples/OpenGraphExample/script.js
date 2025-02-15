@@ -7,6 +7,7 @@ document.getElementById('fetchForm').addEventListener('submit', function(event) 
     const API_URL = "https://api.linkpreview.net/";
     const API_KEY = "fd3f9a0c9fafe271af5bd823cf3f0c02"; // This is a free API key, but you should get your own
 
+    // Fetch the OpenGraph data from the linkpreview API
     fetch(`${API_URL}?q=${SITE_URL}&key=${API_KEY}`)
     // Check the response and throw an error if it's not
         .then(response => {
