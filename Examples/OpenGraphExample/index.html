@@ -11,33 +11,52 @@
     <title>Site Metadata Fetch Example</title>
     <meta property="og:title" content="Site Metadata Fetch Example">
     <meta property="og:description"
-        content="This web app provides an example of fetching OpenGraph or alternate metadata from a website">
+        content="The code in this web app provides an example of fetching OpenGraph or alternate metadata from a website">
     <meta property="og:image"
         content="https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/OpenGraphExample/Images/SiteDetective.png">
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid black; 
+            width: fit-content; 
+        }
+
+        header img {
+            max-width: 150px;
+        }
+
+        header div {
+            margin-left: 20px;
+            text-align: left;
+            flex: 1;
+        }
+    </style>
 </head>
 
 <body>
     <h1>OpenGraph Fetch Example</h1>
+    <header>
+        <img src="Images/SiteDetective.png" alt="Site Detective">
+        <div>
+            This code in this web app provides an example of using the built-in JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">fetch</a> <i class="fas fa-external-link-alt fa-xs"></i> function<br>
+            to call the <a href="https://www.linkpreview.net" target="_blank">linkpreview</a> <i class="fas fa-external-link-alt fa-xs"></i> web API
+            to get Open Graph (or alternate) metadata from a web site.
+        </div>
+    </header>
     <p>
-        This web site provides an example of using the built-in <a
-            href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">fetch</a> <i
-            class="fas fa-external-link-alt fa-xs"></i> function to call the <a
-            href="https://www.linkpreview.net" target="_blank">linkpreview</a> <i
-            class="fas fa-external-link-alt fa-xs"></i> web API
-        to get Open Graph (or alternate) metadata from a web site.
-    </p>
-    <p>
-        Enter a URL in the form below and click the "Fetch Site Meta-data" button to see the site's title, description,
+        Enter a URL in the form below and click the "Fetch Site Metadata" button to see the site's title, description,
         and image.
     </p>
     <form id="fetchForm">
         <label for="url">URL:</label>
         <input type="text" id="url" name="url" placeholder="https://example.com" required>
-        <button type="submit">Fetch Site Meta-data</button>
+        <button type="submit">Fetch Site Metadata</button>
     </form>
     <div id="result">
         <h2 id="title"></h2>
-        <img id="image" src="" alt="OpenGraph Image" style="max-width: 25%;">
+        <img id="image" src="" alt="" style="max-width: 25%;">
         <p id="description"></p>
     </div>
     <script src="script.js"></script>

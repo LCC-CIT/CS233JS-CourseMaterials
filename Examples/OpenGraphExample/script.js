@@ -19,7 +19,11 @@ document.getElementById('fetchForm').addEventListener('submit', function(event) 
         // Parse the JSON and display the OpenGraph data on the page
         .then(data => {
             document.getElementById('title').textContent = data.title;
-            document.getElementById('image').src = data.image;
+            let image = document.getElementById('image')
+            image.src = data.image;
+            if (data.image === "") {
+                image.alt = "No image available";
+            }
             document.getElementById('description').textContent = data.description;
         })
         // Catch any errors and log them to the console
