@@ -83,7 +83,7 @@ You can run this code in a browser console.
 
 #### Example Web App That Gets Site Metadata
 
-[Fetch Site Meta-data](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/OpenGraphExample/)
+[Fetch Site Metadata](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/OpenGraphExample/)
 
 
 

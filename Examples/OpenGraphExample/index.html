@@ -2,17 +2,34 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Site Metadata Fetch Example</title>
     <meta property="og:title" content="Site Metadata Fetch Example">
-    <meta property="og:description" content="This web app provides an example of fetching OpenGraph or alternate metadata from a website">
-    <meta property="og:image" content="https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/OpenGraphExample/Images/SiteDetective.png">
+    <meta property="og:description"
+        content="This web app provides an example of fetching OpenGraph or alternate metadata from a website">
+    <meta property="og:image"
+        content="https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/OpenGraphExample/Images/SiteDetective.png">
 </head>
+
 <body>
     <h1>OpenGraph Fetch Example</h1>
+    <p>
+        This web site provides an example of using the built-in <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">fetch</a> <i
+            class="fas fa-external-link-alt fa-xs"></i> function to call the <a
+            href="https://www.linkpreview.net" target="_blank">linkpreview</a> <i
+            class="fas fa-external-link-alt fa-xs"></i> web API
+        to get Open Graph (or alternate) metadata from a web site.
+    </p>
+    <p>
+        Enter a URL in the form below and click the "Fetch Site Meta-data" button to see the site's title, description,
+        and image.
+    </p>
     <form id="fetchForm">
         <label for="url">URL:</label>
         <input type="text" id="url" name="url" placeholder="https://example.com" required>
@@ -25,4 +42,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
