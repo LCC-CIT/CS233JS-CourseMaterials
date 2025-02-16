@@ -23,7 +23,7 @@ Complete the programming problems described below. For each problem:
 
 ## Web App 1: Bookmarker Version 2
 
-- The starting files are the solution files from your first version of this application. Create a branch in your lab 4 GitHub Classroom repository for the new version. 
+- The starting files are the solution files from your previous version of this application. Copy the folder containing the first version of your bookmarker project into the working folder of the GitHub repository for this lab, use git to add it, commit it, and push it to your GitHub Classroom repository.
 - Register for a free account on [opengraph.io](https://www.opengraph.io) or [linkpreview.net](http://www.linkpreview.net/).
 - Add an image as well as a title to each bookmark by accessing data about each url from opengraph.io, or linkpreview.net. The concepts, skills and syntax that you need to make this change to your original application are discussed in the lecture notes and videos. Test and debug your application.
 - Use webpack to bundle all of the resources used by your application into one .js file.
