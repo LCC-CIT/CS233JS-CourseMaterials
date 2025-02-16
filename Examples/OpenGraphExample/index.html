@@ -18,9 +18,14 @@
         header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            border-bottom: 2px solid black; 
-            width: fit-content; 
+            width: fit-content;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+
+        header figure {
+            margin: 0; /* Remove default margin from figure */
+            display: inline;
         }
 
         header img {
@@ -36,14 +41,25 @@
 </head>
 
 <body>
-    <h1>OpenGraph Fetch Example</h1>
+    <h1>Web Site Preview App</h1>
+    <h2>Fetch Site Metadata from a Web API</h2>
     <header>
-        <img src="Images/SiteDetective.png" alt="Site Detective">
-        <div>
-            This code in this web app provides an example of using the built-in JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">fetch</a> <i class="fas fa-external-link-alt fa-xs"></i> function<br>
-            to call the <a href="https://www.linkpreview.net" target="_blank">linkpreview</a> <i class="fas fa-external-link-alt fa-xs"></i> web API
-            to get Open Graph (or alternate) metadata from a web site.
-        </div>
+        <figure>
+            <img src="Images/SiteDetective.png" alt="Site Detective">
+            <figcaption>Image by DALL-E 3</figcaption>
+            </figure>
+            <div>
+                <p>
+                This code in this web app provides an example of using the built-in JavaScript <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+                    target="_blank">fetch</a> <i class="fas fa-external-link-alt fa-xs"></i> function<br>
+                to call the <a href="https://www.linkpreview.net" target="_blank">linkpreview</a> <i
+                    class="fas fa-external-link-alt fa-xs"></i> web API
+                to get Open Graph (or alternate) metadata from a web site.</p>
+                <p>
+                This is the type of metadata that social media sites or apps use to display a preview of a web page.
+                </p>
+            </div>
     </header>
     <p>
         Enter a URL in the form below and click the "Fetch Site Metadata" button to see the site's title, description,
@@ -56,8 +72,10 @@
     </form>
     <div id="result">
         <h2 id="title"></h2>
-        <img id="image" src="" alt="" style="max-width: 25%;">
-        <p id="description"></p>
+        <figrue>
+            <img id="image" src="" alt="" style="max-width: 25%;">
+
+            <p id="description"></p>
     </div>
     <script src="script.js"></script>
 </body>
