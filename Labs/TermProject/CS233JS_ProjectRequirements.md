@@ -29,7 +29,7 @@ The project must:
 
 The project includes the following deliverables. Each deliverable has a due date to encourage you to work steadily on your project. There are samples of the first 2 deliverables as well as the code review form to give you a clearer understanding of expectations. These are the deliverables:
 
-- Project proposal / description and UI MockUp
+- Project proposal / description and UI Sketch/MockUp
 
 - AJAX call documentation
 
@@ -47,7 +47,7 @@ See the [Term Project Instructions](CS233JS_ProjectInstructions.html) for detail
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials written by Mari Good and revised  by [Brian Bird](https://profbird.dev), in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials written by Mari Good and adapted by [Brian Bird](https://profbird.dev), in 2024, revised in <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ---
 
