@@ -50,9 +50,10 @@ This was due last Thursday, but it was the week of the midterm and most of you d
 - Review this week's section on Moodle. 
 - Be sure to <u>watch or read all the required materials</u>.  
     For online students, this includes the short class recordings which will be available after 4:00pm on Monday and Wednesday via the Zoom widget near the top of the Moodle page.
-- Things that have changed since Mari recorded her videos:
+- Notes regarding Mari's videos:
 
-  - This week's lab was lab 4 but is now lab 5.
+  - Mari refers to this week's lab as "lab 4" but it is now lab 5.
+  - There is a video on CSS Flexbox, which is not related to the HTML 5 canvas, but is used for layout of the lab 5 meme creator web page. This was probably covered in your CIS 195 course and so it will be review.
 
 ### Lab 5
 
