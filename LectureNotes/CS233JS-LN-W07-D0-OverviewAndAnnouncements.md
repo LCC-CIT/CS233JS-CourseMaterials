@@ -30,10 +30,23 @@ author: Brian Bird
 
 ## Announcements
 
+### Last Week's Announcements
+
+These are still things you can do.
+
 - Our CIT lab manager, Jacob Riddle, would like to have a movie/game day in the lab on Friday, February 28 from 11 am- 4:30 pm. Please share your interest by completing [this survey](https://docs.google.com/forms/d/e/1FAIpQLSeHS7OqR-gNMZnzU8EVZFsU_8qwEzT8YcbBLJlREReCd_x47A/viewform).
 - There are openings for students to work in the CIT lab.  If you were awarded work study funds for AY 2024-25, you can learn more and apply here: https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=9586&s=1
 
+### This Week's Announcement
 
+- ### Regfest!
+
+  Get in-person help with advising and registration <u>this Saturday</u>, February 22nd, from 9am-2pm on the first floor of Building 1. This event is designed for students:
+
+  - who have not yet registered for Winter (and/or Spring) term/s, and/or
+  - those needing assistance with Financial Aid, Advising, or Student Accounts (Bursar).  
+
+  Regfests are popular! Plan to arrive by 1:00 pm at the latest. 
 
 ## Q and A
 
@@ -52,11 +65,11 @@ author: Brian Bird
 - To introduce you to asynchronous communication and the usage of AJAX to combine client-side and server-side processing.
 - To introduce you to ES6 promises.
 - To introduce you to the fetch API.
-- To develop your proficiency in designing, implementing,  testing and debugging client-side applications that make AJAX calls in  JavaScript.
+- To develop your proficiency in designing, implementing, testing and debugging client-side applications that make AJAX calls in JavaScript.
 
 ### Changes Since Mari's Videos Were Made
 
-- This week's lab, lab 6, bookmarker version 2 and a weather app, were lab 5 when Mari made the video.
+- This week's lab, lab 6, bookmarker version 2 and a weather app, was lab 5 when Mari made the video.
 
   
 
