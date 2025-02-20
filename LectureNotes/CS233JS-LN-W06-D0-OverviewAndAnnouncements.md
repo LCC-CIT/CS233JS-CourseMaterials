@@ -58,10 +58,11 @@ This was due last Thursday, but it was the week of the midterm and most of you d
 - To introduce you to the canvas object and to the API for working with the canvas in JavaScript.
 - To develop your proficiency in designing, implementing,  testing and debugging client-side web-based applications written in JavaScript.
 
-### Changes Since Mari's Videos Were Made
+### Notes on Mari's Videos and Starting Code
 
   - Mari refers to this week's lab as "lab 4" but it is now lab 5.
-  - There is a video on CSS Flexbox, which is not related to the HTML 5 canvas, but is used for layout of the lab 5 meme creator web page. This was probably covered in your CIS 195 course and so it will be review.
+  - In the lab 5 instructions, I provided an alternate way to set the size of images that you upload.
+  - Mari made a video on CSS Flexbox, which is not related to the HTML 5 canvas, but is used for layout of the lab 5 meme creator web page. This was probably covered in your CIS 195 course and so it will be review.
 
   
 

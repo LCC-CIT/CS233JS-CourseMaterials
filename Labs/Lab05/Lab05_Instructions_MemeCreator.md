@@ -46,6 +46,34 @@ There is an `<img>` element in the HTML file that has the attribute ` style="dis
 
 If you add a feature to use the last image the user uploaded as the new default image; by saving that image in local storage; you won't be able to assign that image to the `src` attribute of the `<img>` element and then imediately call `createMeme`, instead, you will need to set the `onload` event of the `<img>` element to call `createMeme` after the image has been loaded. Read about the [onload event on W3Schools](https://www.w3schools.com/tags/att_onload.asp).
 
+## Resizing the Image
+
+Here is an alternative way to resize images that you upload. Instead of using the `resizeCanvas` method in Mari's starting code, you can modify the `createMeme` method by replacing this code:
+
+```javascript
+/* Draw the image--Mari's code
+this.$canvas.height = this.image.height;
+this.$canvas.width = this.image.width;
+this.resizeCanvas(this.image.height, this.image.width);
+this.$context.drawImage(this.image, 0, 0);
+*/
+```
+
+with this code which will resize the image to fit the canvas:
+
+```javascript
+// Draw the image--Brian's code
+// Clear the previous image from the page
+this.$context.clearRect(0, 0, this.$canvas.width, this.$canvas.height);
+// Calculate a canvas height to fit the aspect ratio of the image
+const scaleFactor = this.$canvas.width / this.$image.width;
+this.$canvas.height = this.$image.height * scaleFactor;
+// Draw the image in the top left corner. Set height and width to that of the canvas.
+this.$context.drawImage(this.$image, 0, 0, this.$canvas.width, this.$canvas.height);
+```
+
+
+
 # Submission
 
 ## Beta Version and Code Review
