@@ -57,10 +57,10 @@ These are still things you can do.
 
 ### Objectives
 
-- to develop your understanding of ES6 promises and the fetch api.
+- to further develop your understanding of ES6 promises and the fetch api.
 - to introduce you to using chart.js to create graphs in a web application.
 - to introduce you to using google maps api to create maps in a web application.
-- to develop your proficiency in designing, implementing,  testing and debugging client-side applications that make AJAX calls in  JavaScript.
+- to further develop your proficiency in designing, implementing,  testing and debugging client-side applications that make AJAX calls in  JavaScript.
 
 ### Changes Since Mari's Videos Were Made
 
