@@ -64,8 +64,8 @@ These are still things you can do.
 
 ### Changes Since Mari's Videos Were Made
 
-- This week's lab, lab 7, was lab 6 when Mari made the video.
-
+- This week's lab, lab 7, was lab 6 when Mari made her videos.  
+This is the last lab assignment for this term!
 
 ### Starting the Term Project
 
