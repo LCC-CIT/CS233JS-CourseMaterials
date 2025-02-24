@@ -10,16 +10,7 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-| Topics by Week                                               |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 1. Intro to Course, Bootstrap and JavaScript Review, lab 1   | 6. HTML5 Canvas, CSS Flexbox, lab 4                          |
-| 2. ES6 Classes and Git, lab 2                                | 7.AJAX, ES6 promises, fetch API, lab 5                       |
-| 3. More about Classes                                        | 8.  <mark>Making API calls, graphs and charts, Google maps, lab 6</mark> |
-| 4. More time to finish the dice games, lab 2b (XC)           | 9. Term Project                                              |
-| 5. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. lab 3, Midterm Quiz | 10. Review                                                   |
-| 11. Final Quiz                                               |                                                              |
-
-<h2>Table of Contents</h2>
+<h2>Contents</h2>
 
 [TOC]
 
@@ -30,7 +21,7 @@ Let's review HTTP requests in general and XMLHttpRequsts (XHRs) in particular.
 
 ## HTTP Requests
 
-There are multiple HTTP request types. We are just going to look at GET requests here. A GET request does what it sounds like, it gets data which is returned in an HTTP response. A GET request consists of a web URL with optional query parameters. 
+There are multiple HTTP request types[^1]. We are just going to look at GET requests here. A GET request does what it sounds like, it gets data which is returned in an HTTP response. A GET request consists of a web URL with optional query parameters. 
 
 The code for all the following examples can be seen running on [this code demo web page](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/index.html). On the code demo page:
 
@@ -201,6 +192,6 @@ This specifies that webpack's `DefinePlugin` will create global constants based 
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
----
+[^1]: These are all of the HTTP request methods (the first five are the most commonly used): GET, POST, PUT, DELETE, PATCH, HEAD, CONNECT, OPTIONS, TRACE. For details, read [HTTP Request Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)&mdash;MDN Reference.

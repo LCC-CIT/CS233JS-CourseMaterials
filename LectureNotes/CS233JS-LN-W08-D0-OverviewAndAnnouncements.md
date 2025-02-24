@@ -19,7 +19,7 @@ author: Brian Bird
 | ---------------------------------------------------- | ------------------------------------------------------------ |
 | 1. Intro to Course, Bootstrap and JavaScript Review  | 6. HTML5 Canvas, CSS Flexbox                                 |
 | 2. ES6 Classes and Git                               | 7. AJAX, ES6 promises, fetch API                             |
-| 3. More about Classes                                | <mark>8. Making API calls, graphs and charts, Google maps</mark> |
+| 3. More about Classes                                | <mark>8. More on API calls. using graphs and charts, map API</mark> |
 | 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage | 9. Term Project                                              |
 | 5. Review and Midterm Quiz                           | 10. Review                                                   |
 | 11. Final Quiz                                       |                                                              |
@@ -39,9 +39,9 @@ These are still things you can do.
 
 ### This Week's Announcement
 
-- This Friday, February 28, is the last day to make Winter term schedule  changes. This includes adding or dropping a course, withdrawing, taking  an incomplete, or changing grading methods.
+- This Friday, February 28, is the last day to make Winter term schedule changes. This includes adding or dropping a course, withdrawing, taking an incomplete, or changing grading methods.
 
-  NOTE: You should consult an [advisor](https://www.lanecc.edu/get-support/academic-support/academic-advising) and/or [financial aid](https://www.lanecc.edu/costs-admission/paying-college/financial-aid) representative  before making these kinds of changes, especially withdrawing. These  types of changes may have implications for academic progress and/or  financial aid awards. This is not always the case, but it's best to be informed.
+  NOTE: You should consult an [advisor](https://www.lanecc.edu/get-support/academic-support/academic-advising) and/or [financial aid](https://www.lanecc.edu/costs-admission/paying-college/financial-aid) representative before making these kinds of changes, especially withdrawing. These types of changes may have implications for academic progress and/or financial aid awards. This is not always the case, but it's best to be informed.
 
 ## Q and A
 
@@ -57,9 +57,9 @@ These are still things you can do.
 
 ### Objectives
 
-- to further develop your understanding of ES6 promises and the fetch api.
+- to further develop your understanding of ES6 promises and the fetch API.
 - to introduce you to using chart.js to create graphs in a web application.
-- to introduce you to using google maps api to create maps in a web application.
+- to introduce you to using a maps API (Google or Azure maps) to create maps in a web application.
 - to further develop your proficiency in designing, implementing,  testing and debugging client-side applications that make AJAX calls in  JavaScript.
 
 ### Changes Since Mari's Videos Were Made
