@@ -23,7 +23,7 @@ Let's review HTTP requests in general and XMLHttpRequsts (XHRs) in particular.
 
 HyperText Transfer Protocol is the standard that describes the way web browsers and web servers communicate over the internet. It is a request-response protocol in which the browser sends a request, in the form of a Uniform Resource Locator (URL), which is often the address of a web page, and the server sends back data, which is often a web page.
 
-<img src="/Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/LectureNotes/Images/http_request_response_cycle.png" alt="http_request_response_cycle" style="zoom:80%;" />
+<img src="Images/http_request_response_cycle.png" alt="http_request_response_cycle" style="zoom:80%;" />
 
 ​									Image by [Tim DiSabatino](https://www.timdisab.com)
 
@@ -150,7 +150,17 @@ responsePromise.catch(function () {
 ```
 
 
+
+### Example Web Page
+
+This web page has code that makes HTTP requests using both HTML and JavaScript.
+
+[HTTP Request Demo Page](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/index.html)
+
+
+
 # More Dev Tools
+
 These are used in this week's lab.
 
 ## JSON Server
