@@ -1,5 +1,6 @@
-<h1>Lab 5: Web Bookmarker and Weather App</h13
-<h2>Table of Contents</h2>
+<h1>Lab 7: Event App</h1>
+<h2>Contents</h2>
+
 
 [TOC]
 
@@ -92,6 +93,6 @@ You can use either of these map APIs. the starter files have two versions of the
 
 ---
 
-Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024.
+Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024, revised by Brian Bird winter <time>2025</time>
 
 ​              
