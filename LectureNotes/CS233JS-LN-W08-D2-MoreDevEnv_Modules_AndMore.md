@@ -51,10 +51,7 @@ AMAP_KEY=PUT_YOUR_AZURE_API_KEY_HERE
           SERVER_URL: JSON.stringify(process.env.SERVER_URL),
           GMAP_KEY: JSON.stringify(process.env.GMAP_KEY),
           AMAP_KEY: JSON.stringify(process.env.AMAP_KEY)
-        }),
-        ...(process.env.NODE_ENV === 'production' ? [new JavaScriptObfuscator ({
-          rotateStringArray: true
-        })] : [])
+        })
   ```
 
 ## Modules
@@ -72,7 +69,10 @@ For lab 7, production version, this service is running at  http://citweb.lanecc.
 
 ## Production vs. Development Builds
 
-The main difference in lab 7 is using the local dev json-store instead of the one running on a web server.
+In lab 7:
+
+- CSS is extracted from JS files and bundled into separate CSS files.
+- Possible use: the local dev json-store could be used automatically instead of the one running on a web server.
 
 
 

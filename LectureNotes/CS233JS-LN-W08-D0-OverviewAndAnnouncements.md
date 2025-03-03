@@ -66,6 +66,7 @@ These are still things you can do.
 
 - This week's lab, lab 7, was lab 6 when Mari made her videos.  
 This is the last lab assignment for this term!
+- The link to the article, "Create a rest api with json-server" is no longer there. Instead you can read this article/tutorial: https://www.freecodecamp.org/news/json-server-for-frontend-development/
 
 ### Starting the Term Project
 
