@@ -8,7 +8,8 @@ These are the starting file repos used for the [GitHub Classroom](https://classr
 - [Lab 3: Dice game with OOP](https://github.com/LCC-CIT/CS233JS_Lab03)
 - [Lab 4: ToDo List and Bookmarker](https://github.com/LCC-CIT/CS233JS-Lab04)
 - [Lab 5: Meme Creator](https://github.com/LCC-CIT/CS233JS-Lab05)
-- [Lab 6: AJAX](https://github.com/LCC-CIT/CS233JS-Lab06)
+- [Lab 6: AJAX&mdash;Bookmarker V2 and Weather apps](https://github.com/LCC-CIT/CS233JS-Lab06)
+- Lab 7: [Event app](https://github.com/LCC-CIT/CS233JS-Lab07)
 
 For more information on courses and degrees at Lane Community College visit [https://www.lanecc.edu/cit](https://www.lanecc.edu/cit).
 

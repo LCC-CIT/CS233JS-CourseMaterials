@@ -1,5 +1,6 @@
-<h1>Lab 5: Web Bookmarker and Weather App</h13
-<h2>Table of Contents</h2>
+<h1>Lab 7: Event App</h1>
+<h2>Contents</h2>
+
 
 [TOC]
 
