@@ -6,14 +6,17 @@
 
 Each of the sections below are for a different deliverable as described in the [Term Project Requirements](CS233JS_ProjectRequirements.html).
 
-# Proposal: Description + UI MockUp
+# Proposal: Description + UI Sketch
 
 The objective of this first step in the project is to allow you to pick a topic and identify the functionality that you would like your application to provide.
 
 - Watch the video that introduces the project.
-- Read the project overview document.
-- Write a paragraph or two describing the application you would like to build.  The application must make an AJAX call and you may find it helpful to  look at [Public APIs Developers Can Use in Their Projects](https://www.freecodecamp.org/news/public-apis-for-developers/) to get an idea of some of the web APIs that are available to use in your project.
-- Create a diagram of the UI for the application. You may sketch the UI using paper and pencil or any of a number of UI diagramming tools. I often use Balsalmiq with students and can provide you with a free student account if you're interested.
+- Read the [project requirements](CS233JS_ProjectRequirements.html) document.
+- Write a paragraph or two describing the application you would like to build.  The application must make an AJAX call and you may find it helpful to look at the lists of free APIs below to get ideas for one to use in your project.
+  - [Public APIs Developers Can Use in Their Projects](https://www.freecodecamp.org/news/public-apis-for-developers/) 
+  - [Big List of Free and Open Public APIs](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/)
+- List the web API you plan to use and the other new JS technology introduced in this course (see the project requirements) that you will use in your project.
+- Create a diagram of the UI for the application. You may sketch the UI using paper and pencil or any of a number of UI diagramming tools. I often use [Balsalmiq](https://balsamiq.com/) with students and can provide you with a free student account if you're interested.
 
 ## Submission
 

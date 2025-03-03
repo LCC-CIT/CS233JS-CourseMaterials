@@ -13,9 +13,9 @@ The project must:
   
 -  Use client-side code written in JavaScript. 
   
-- Use classes for any parts of the project where it makes sense to use objects. Do not encapsulate the entire app in a single class.
+- Use at least one class. Use classes for any parts of the project where it makes sense, but do not encapsulate the entire app in a single class.
   
-- Separate the code that interacts with web page elements from the rest of the code.
+- Separate the code that interacts with web page elements (i/o code) from the rest of the code. The i/o code doesn't need to be in a class.
   
 - Include at least one AJAX request (call a web API).
 
@@ -23,7 +23,7 @@ The project must:
   
 - Be hosted on citstudent.lanecc.edu. 
   
-- Production code should be transpiled to a version of JavaScript that can be interpreted by modern browsers.
+- Production code should be transpiled and bundled using Babel and Webpack.
 
 ## Submission
 
