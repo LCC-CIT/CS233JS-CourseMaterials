@@ -28,9 +28,8 @@ author: Brian Bird
 
 [TOC]
 
-## Announcements
 
-### Announcements
+## Announcements
 
 - There are still openings for students to work in the CIT lab.  If you were awarded work study funds for AY 2024-25, you can learn more and apply here: https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=9586&s=1
 
@@ -46,14 +45,18 @@ author: Brian Bird
 
   
 
-## This Week: More on Making API Calls, Modules and the Node Dev Environment
+## This Week: Term Project Beta Version
 
 ### Objectives
 
-- to further develop your understanding of ES6 promises and the fetch API.
-- to introduce you to using chart.js to create graphs in a web application.
-- to introduce you to using a maps API (Google or Azure maps) to create maps in a web application.
-- to further develop your proficiency in designing, implementing,  testing and debugging client-side applications that make AJAX calls in  JavaScript.
+The learning objectives for the term project are to:
+
+- Synthesize the concepts and skills you have learned throughout the course.
+- Allow you to design and implement a front-end web-based application that can be used as a job search portfolio item.
+- Continue to develop your proficiency in working with modern JavaScript development tools.
+- Continue to develop your proficiency in working with API data.
+- Continue to develop your proficiency in making AJAX calls.
+- Continue to develop your proficiency in creating front-end browser-based applications that use some of the following technologies: local storage, the HTML5 canvas, chart.js, google maps, regular expressions.
 
 ### Changes Since Mari's Videos Were Made
 
