@@ -30,14 +30,8 @@ author: Brian Bird
 
 ## Announcements
 
-### Last Week's Announcements
-
-These are still things you can do.
-
 - Our CIT lab manager, Jacob Riddle, would like to have a movie/game day in the lab <u>this</u> Friday, February 28 from 11 am- 4:30 pm. If you haven't already, please share your interest by completing [this survey](https://docs.google.com/forms/d/e/1FAIpQLSeHS7OqR-gNMZnzU8EVZFsU_8qwEzT8YcbBLJlREReCd_x47A/viewform).
 - There are still openings for students to work in the CIT lab.  If you were awarded work study funds for AY 2024-25, you can learn more and apply here: https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=9586&s=1
-
-### This Week's Announcements
 
 - **Last week to withdraw or change grading options**. This Friday, February 28, is the last day to make Winter term schedule changes. This includes adding or dropping a course, withdrawing, taking an incomplete, or changing grading methods.
 

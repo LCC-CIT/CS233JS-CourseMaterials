@@ -32,7 +32,22 @@ author: Brian Bird
 - Our CIT lab manager, Jacob Riddle, would like to have a movie/game day in the lab on Friday, February 28 from 11 am- 4:30 pm. Please share your interest by completing [this survey](https://docs.google.com/forms/d/e/1FAIpQLSeHS7OqR-gNMZnzU8EVZFsU_8qwEzT8YcbBLJlREReCd_x47A/viewform).
 - There are openings for students to work in the CIT lab.  If you were awarded work study funds for AY 2024-25, you can learn more and apply here: https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=9586&s=1
 
+### Spring Term Registration
 
+Registration is now open. These are the classes recommended for [AAS in Software Development](https://lanecc.smartcatalogiq.com/en/2024-2025/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/) majors:
+
+- Required core courses:
+  - CS 162N: Computer Science 2 (Intermediate C# programming)
+- General education courses:
+  - WR 227Z: Technical Writing
+  - WR 121Z: Composition 1 (if you haven't take this yet)
+  - MTH 095: Intermediate Algebra (if you haven't taken this or a higher level math course yet)
+- Program elective options: 
+  - CS 235M: Advanced Mobile Application Development (prerequisite: CS 135M)  
+    Earn a certificate in Mobile Application Development
+  - CS 233P or C: Intermediate Programming: Python or C_++ (prerequisite: CS 133P or C)
+
+See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for a listing of the terms courses required for the AAS in Software Development are normally offered.
 
 ## Last Week
 
@@ -65,10 +80,6 @@ This was due last Thursday, but it was the week of the midterm and most of you d
   - Mari made a video on CSS Flexbox, which is not related to the HTML 5 canvas, but is used for layout of the lab 5 meme creator web page. This was probably covered in your CIS 195 course and so it will be review.
 
   
-
----
-
-
 
 ## Reminders
 

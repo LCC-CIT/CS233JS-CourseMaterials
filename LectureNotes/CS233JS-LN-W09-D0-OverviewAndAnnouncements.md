@@ -35,7 +35,24 @@ author: Brian Bird
 - **Taking the final quiz off-campus**.  If you live outside the Eugene/Springfield area and do not want to come to the LCC main campus to take the final, you need to <u>send an email this week</u> to online@lanecc.edu to arrange for your final to be proctored at a location near you. Please copy your instructor on the email.
 - **Library Study Jam next week.** The Library, Phi Theta Kappa (PTK) and Student Government will be hosting a Study Jam on Tuesday, March 11 from 3-5 pm in the Library. Free pizza, drinks and snacks will be available at 3 pm. Get tutoring and advising help, pet a therapy dog, and learn yoga relaxation techniques.
 
-## Due Dates
+### Spring Term Registration
+
+If you haven't registered for spring term yet (and some of you haven't), these are the classes recommended for [AAS in Software Development](https://lanecc.smartcatalogiq.com/en/2024-2025/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/) majors:
+
+- Required core courses:
+  - CS 162N: Computer Science 2 (Intermediate C# programming)
+- General education courses:
+  - WR 227Z: Technical Writing
+  - WR 121Z: Composition 1 (if you haven't take this yet)
+  - MTH 095: Intermediate Algebra (if you haven't taken this or a higher level math course yet)
+- Program elective options: 
+  - CS 235M: Advanced Mobile Application Development (prerequisite: CS 135M)  
+    Earn a certificate in Mobile Application Development
+  - CS 233P or C: Intermediate Programming: Python or C_++ (prerequisite: CS 133P or C)
+
+See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for a listing of the terms courses required for the AAS in Software Development are normally offered.
+
+### Due Dates
 
 Look at the due dates on Moodle
 
