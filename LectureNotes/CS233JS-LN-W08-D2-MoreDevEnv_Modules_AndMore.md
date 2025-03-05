@@ -39,11 +39,14 @@ AMAP_KEY=PUT_YOUR_AZURE_API_KEY_HERE
 
 ### Making the .env settings available in your code
 
-- via processx.env.Key  
-  When you add the dotenv module to your project in webpack.config.js (or in your source code?) it loads all of the variables in the .env file and they will be available in your code as process.env.KEY
-
+- via `processx.env`  
+  The dotenv module gets added to webpack.config.js by a `require` statement:
+  `require('dotenv').config();`
+  
+   When you build the project, dotenv loads all of the variables in the .env file and stores them in the`process.env` object for use when building the app. In your code you can also access them via `process.env`.
+  
 - Via global variables  
-  You can use the webpack DefinePlugin to create global variables for the setting that were loaded from the .env file:  
+  In addition, you can use the webpack `DefinePlugin` to create global variables for the settings that were loaded from the .env file:  
 
   ```javascript
   new webpack.DefinePlugin({
@@ -54,22 +57,26 @@ AMAP_KEY=PUT_YOUR_AZURE_API_KEY_HERE
         })
   ```
 
+These global variables can then be accessed anywhere in the source code of your project. This is how it is done in lab 7, the event app.
+
 ## Modules
 
- ES6 module (import and export) syntax to make 
-a function available in other js files.
+ ES6 module (import and export) syntax to make a function available in other js files:
+
+```javascript
 export default function validateRegistrationForm(formValues) { … } 
 import validateRegistrationForm from './services/formValidation/validateRegistrationForm';
+```
 
 ### json-server
 
-The NPM module, json-server,  allows us to both submit the data and get data by id. json-server is frequently used to “mock” a data store web api during the development process. Some of you may want to use it for your term project.
+The NPM module, json-server,  allows storing data and getting data by id. json-server is frequently used to “mock” a data store web api during the development process. Some of you may want to use it for your term project.
 
 For lab 7, production version, this service is running at  http://citweb.lanecc.net:5000/participants
 
 ## Production vs. Development Builds
 
-In lab 7:
+Things that are or could be different about production builds in lab 7:
 
 - CSS is extracted from JS files and bundled into separate CSS files.
 - Possible use: the local dev json-store could be used automatically instead of the one running on a web server.
