@@ -49,6 +49,7 @@ If you haven't registered for spring term yet (and some of you haven't), these a
   - CS 235M: Advanced Mobile Application Development (prerequisite: CS 135M)  
     Earn a certificate in Mobile Application Development
   - CS 233P or C: Intermediate Programming: Python or C_++ (prerequisite: CS 133P or C)
+  - For those pursing the Front-End Web Development certificate, CS 295R: Web Development 1: React was cancelled due to low enrollment. It will be offered again next winter or spring and will be a required course for the software dev degree under the 2025-26 catalog.
 
 See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for a listing of the terms courses required for the AAS in Software Development are normally offered.
 
