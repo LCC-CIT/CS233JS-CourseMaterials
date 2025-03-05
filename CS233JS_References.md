@@ -1,10 +1,12 @@
-# Useful Links and Free Resources
+<h1>Useful Links and Free Resources</h1>
 
-### for CS233JS, Intermediate Programming: JavaScript
+**for CS233JS, Intermediate Programming: JavaScript**
+
+<h2>Contents</h2>
 
 ------
 
-
+[toc]
 
 ## Tutorials
 
@@ -29,14 +31,14 @@
 
 *[The Modern JavaScript Tutorial](https://javascript.info/)*, (aka JavaScript.info) by Ilya Kantor, 2020, updated 2024.
 
-[MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+[MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide), Mozilla Developer Network has good quality, in-depth tutorials. MDN is the semi-official source for JavaScript (aka EcmaScript) documentation.
 
 
 
 ## Git Book and Site
 
-[Resources for Learning Git](http://try.github.io)—A collection of links to tutorials[
-Pro Git Book](https://git-scm.com/book/en/v2)—Free online tutorial and reference book
+[Resources for Learning Git](http://try.github.io)—A collection of links to Git tutorials[
+Pro Git Book](https://git-scm.com/book/en/v2)—Free online Git tutorial and reference book
 
 
 
@@ -56,11 +58,15 @@ Pro Git Book](https://git-scm.com/book/en/v2)—Free online tutorial and referen
 
 
 
-## Other Resources
+## Previous CIT Courses
+
+[CIS 195 Course Materials](https://lcc-cit.github.io/CS133JS-CourseMaterials/)&mdash;Instructors course materials for Web Authoring 1: HTML and CSS including code examples, on GitHub.
 
 [CS 133JS Course Materials](https://lcc-cit.github.io/CS133JS-CourseMaterials/)&mdash;Instructor's course materials for Beginning JavaScript, including code examples, on GitHub.
 
-[CS 233JS Course Materials](https://github.com/LCC-CIT/CS233JS-CourseMaterials)&mdash;Instructor's course materials Intermediate JavaScript, including code examples, on GitHub.
+[CS 233JS Course Materials](https://github.com/LCC-CIT/CS233JS-CourseMaterials)&mdash;Instructor's course materials Intermediate JavaScript, this course, including code examples, on GitHub.
+
+## Other Resources
 
 **LinkedIn Learning** provides many high quality JavaScript and other software development tutorials and courses. You can access LinkedIn Learning <u>free of cost</u> via the [LCC Library home page](https://library.lanecc.edu/). Click on the LinkedIn Learning icon near the bottom of the page for free LCC student access.
 
