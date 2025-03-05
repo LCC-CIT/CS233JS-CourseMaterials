@@ -39,7 +39,7 @@ author: Brian Bird
 
 If you haven't registered for spring term yet (and some of you haven't), these are the classes recommended for [AAS in Software Development](https://lanecc.smartcatalogiq.com/en/2024-2025/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/) majors:
 
-- Required core courses:
+- Required core course:
   - CS 162N: Computer Science 2 (Intermediate C# programming)
 - General education courses:
   - WR 227Z: Technical Writing
@@ -59,7 +59,7 @@ Look at the due dates on Moodle
 
 - Lab 7&mdash;Evant app due Thursday
 - No quiz
-- Term project: three things due including the beta version on Sunday
+- Term project: three items due including the beta version on Sunday
 
 ## Q and A
 
@@ -112,8 +112,17 @@ This week, you're continuing your term project.
 | **10<br />3/10&ndash;16** | Code Review                                                  | Tuesday, March 11                            |
 |                           | Production Version                                           | Thursday, March 13<br />Cut-off, Sunday 3/16 |
 
+## Help Links
 
+- Drop-in office hours on [Zoom](https://lanecc.zoom.us/j/93494931394) and in person M&mdash;Th, 4:00 to 4:50,  
+  or email birdb@lanecc.edu to meet at another time.
+
+- Tutors are available in the [CIT Computer Lab](https://www.lanecc.edu/programs-academics/academic-departments/business-technology-and-trades/computer-information-technology/cit-computer-lab), building 19, room 135, or [online](https://www.lanecc.edu/get-support/academic-support/academic-and-tutoring-services).
+- Class Discord [discussion channel](https://discord.com/channels/1290812758249701396/1324897172981809273). 
+- Tutorials, books and [more online resources](https://lcc-cit.github.io/CS233JS-CourseMaterials/CS233JS_References.html).
 
 ---
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+
+---
