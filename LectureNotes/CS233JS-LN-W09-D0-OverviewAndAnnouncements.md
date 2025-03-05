@@ -32,25 +32,34 @@ author: Brian Bird
 ## Announcements
 
 - **Lab assistant work-study jobs.** There are still openings for students to work in the CIT lab.  If you were awarded work study funds for AY 2024-25, you can learn more and apply here: https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=9586&s=1
-- **Taking the final quiz off-campus**.  If you live outside the Eugene/Springfield area and do not want to come to the LCC main campus to take the final, you need to send an email to online@lanecc.edu this week to arrange for your final to be proctored at a location near you. Please copy your instructor on the email.
+- **Taking the final quiz off-campus**.  If you live outside the Eugene/Springfield area and do not want to come to the LCC main campus to take the final, you need to <u>send an email this week</u> to online@lanecc.edu to arrange for your final to be proctored at a location near you. Please copy your instructor on the email.
+- **Library Study Jam next week.** The Library, Phi Theta Kappa (PTK) and Student Government will be hosting a Study Jam on Tuesday, March 11 from 3-5 pm in the Library. Free pizza, drinks and snacks will be available at 3 pm. Get tutoring and advising help, pet a therapy dog, and learn yoga relaxation techniques.
+
+## Due Dates
+
+Look at the due dates on Moodle
+
+- Lab 7&mdash;Evant app due Thursday
+- No quiz
+- Term project: three things due including the beta version on Sunday
 
 ## Q and A
 
-- Last week's lab: lab 7&mdash;Evant app
+- Lab 7
 
-  - Due Thursday
-
-- Term Project
-
-  - Beta version due this week
+  - New notes: I added a [new set of notes](CS233JS-LN-W08-D2-MoreDevEnv_Modules_AndMore.html) on topics related to the lab.
+  - Lab solution now [running on citstudent](http://citstudent.lanecc.edu/~brianb/CS233JS/Lab07/) so you can see how it should look/work.
 
 - Do you have any questions about the lab or term project?
 
   -  Is there code you would like help with?
+
   - Any problems or issues with the instructions, code review or submission process?
+
   - Don't hesitate to ask for help!
 
-  
+
+
 
 ## This Week: Term Project Beta Version
 
@@ -73,7 +82,8 @@ None that have come up so far.
 
 This week, you're continuing your term project.
 
-You will be making submissions for steps 2, 3 and 4 this week.
+- Look at the *sample API call research + documentation* on Moodle.
+- You will be making submissions for steps 2, 3 and 4 this week.
 
 | Week                      | Project Step                                                 | Due Date                                     |
 | ------------------------- | ------------------------------------------------------------ | -------------------------------------------- |

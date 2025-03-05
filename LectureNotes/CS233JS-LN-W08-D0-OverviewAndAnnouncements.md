@@ -37,11 +37,20 @@ These are still things you can do.
 - Our CIT lab manager, Jacob Riddle, would like to have a movie/game day in the lab <u>this</u> Friday, February 28 from 11 am- 4:30 pm. If you haven't already, please share your interest by completing [this survey](https://docs.google.com/forms/d/e/1FAIpQLSeHS7OqR-gNMZnzU8EVZFsU_8qwEzT8YcbBLJlREReCd_x47A/viewform).
 - There are still openings for students to work in the CIT lab.  If you were awarded work study funds for AY 2024-25, you can learn more and apply here: https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=9586&s=1
 
-### This Week's Announcement
+### This Week's Announcements
 
-- This Friday, February 28, is the last day to make Winter term schedule changes. This includes adding or dropping a course, withdrawing, taking an incomplete, or changing grading methods.
+- **Last week to withdraw or change grading options**. This Friday, February 28, is the last day to make Winter term schedule changes. This includes adding or dropping a course, withdrawing, taking an incomplete, or changing grading methods.
 
   NOTE: You should consult an [advisor](https://www.lanecc.edu/get-support/academic-support/academic-advising) and/or [financial aid](https://www.lanecc.edu/costs-admission/paying-college/financial-aid) representative before making these kinds of changes, especially withdrawing. These types of changes may have implications for academic progress and/or financial aid awards. This is not always the case, but it's best to be informed.
+  
+- **Free Balsamiq license**. For those who would like to use Balsamiq to make wireframe diagrams for their term projects web pages, I have obtained a free license for the class. [See this document](https://drive.google.com/file/d/1EFt21kYWe5hRtAZIiIInjVisE6BNEsYH/view?usp=sharing). 
+
+### Due Dates
+
+- Look at the due dates on Moodle
+  - Lab 6
+  - Quiz 7
+  - Term project proposal/description
 
 ## Q and A
 
