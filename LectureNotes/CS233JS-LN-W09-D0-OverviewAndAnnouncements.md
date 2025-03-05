@@ -31,15 +31,22 @@ author: Brian Bird
 
 ## Announcements
 
-- There are still openings for students to work in the CIT lab.  If you were awarded work study funds for AY 2024-25, you can learn more and apply here: https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=9586&s=1
+- **Lab assistant work-study jobs.** There are still openings for students to work in the CIT lab.  If you were awarded work study funds for AY 2024-25, you can learn more and apply here: https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=9586&s=1
+- **Taking the final quiz off-campus**.  If you live outside the Eugene/Springfield area and do not want to come to the LCC main campus to take the final, you need to send an email to online@lanecc.edu this week to arrange for your final to be proctored at a location near you. Please copy your instructor on the email.
 
 ## Q and A
 
 - Last week's lab: lab 7&mdash;Evant app
 
+  - Due Thursday
+
 - Term Project
 
-  - Do you have any questions or is there code you would like help with?
+  - Beta version due this week
+
+- Do you have any questions about the lab or term project?
+
+  -  Is there code you would like help with?
   - Any problems or issues with the instructions, code review or submission process?
   - Don't hesitate to ask for help!
 

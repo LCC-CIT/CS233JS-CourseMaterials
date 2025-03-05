@@ -94,5 +94,3 @@ You can use either of these map APIs. the starter files have two versions of the
 ---
 
 Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024, revised by Brian Bird winter <time>2025</time>
-
-​              

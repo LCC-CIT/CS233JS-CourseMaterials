@@ -154,10 +154,10 @@ Letter grades for the course will be determined by the following percentages:
 
 ### Quizzes
 
-<u>Quizzes</u>
+#### Weekly Quizzes
 Weekly quizzes are given that cover the required reading and tutorial videos for that week. These quizzes must be taken before the second class meeting of the week. They are "open book" (or video).
 
-<u>Midterm and Final Quizzes</u>
+#### Midterm and Final Quizzes
 
 The midterm and final quizzes are given in weeks 5 and 11. See the course schedule for exact dates and times. Quizzes are "closed book", but students may prepare a 8 1/2 x 11 sheet of notes to refer to during the quiz. These quizzes may be taken either:
 
@@ -165,7 +165,7 @@ The midterm and final quizzes are given in weeks 5 and 11. See the course schedu
 
 - online students will take the quiz In the Instructional Testing Center in the Center Building, room 311. See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for testing times and procedures.  
 
-  Students who live outside the Eugene/Springfield area can send an email to [online@lanecc.edu](mailto:online@lanecc.edu) well in advance of the test dates to arrange for your midterm and final to be proctored at a location near you.
+  Students who live outside the Eugene/Springfield area can send an email to [online@lanecc.edu](mailto:online@lanecc.edu) two weeks in advance of the test date to arrange for your midterm and final to be proctored at a location near you. Copy your instructor on the email.
 
 ### Code Reviews
 

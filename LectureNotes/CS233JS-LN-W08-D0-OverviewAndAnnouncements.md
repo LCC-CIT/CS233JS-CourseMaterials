@@ -78,7 +78,7 @@ Steps 1 through 3 are to prepare you to do the project. Step 4 is where you will
 
 | Week                      | Project Step                                                 | Due Date                                     |
 | ------------------------- | ------------------------------------------------------------ | -------------------------------------------- |
-| **8<br />2/24&ndash;3/2** | Step 1: [Description + UI Sketch](../Labs/TermProject/CS233JS_ProjectInstructions.html#proposal-description--ui-mockup) | Tuesday, Feb. 25                             |
+| **8<br />2/24&ndash;3/2** | <mark>Step 1: [Description + UI Sketch](../Labs/TermProject/CS233JS_ProjectInstructions.html#proposal-description--ui-mockup)</mark> | Tuesday, Feb. 25                             |
 | **9<br />3/3&ndash;3/9**  | Step 2: [API Call Research + Documentation](../Labs/TermProject/CS233JS_ProjectInstructions.html#api-call-research--documentation) | Tuesday, March 4                             |
 |                           | Step 3: [JavaScript Dev Environment + Static HTML & CSS](../Labs/TermProject/CS233JS_ProjectInstructions.html#dev-environment--html--css) | Thursday, March 6                            |
 |                           | Step 4: [Implementation](../Labs/TermProject/CS233JS_ProjectInstructions.html#production-version)<br />Beta Version | Sunday, March 9                              |
