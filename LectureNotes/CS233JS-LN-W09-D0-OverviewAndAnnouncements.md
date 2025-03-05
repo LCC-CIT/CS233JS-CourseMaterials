@@ -22,7 +22,7 @@ author: Brian Bird
 | 3. More about Classes                                | 8. More on API calls. using graphs and charts, map API |
 | 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage | 9. <mark>Term Project</mark>                           |
 | 5. Review and Midterm Quiz                           | 10. Review                                             |
-| 11. Final Quiz                                       |                                                        |
+|                                                      | 11. Final Quiz                                         |
 
 <h2>Contents</h2>
 
@@ -78,7 +78,7 @@ The learning objectives for the term project are to:
 
 None that have come up so far.
 
-### Term Project
+### Term Project Timeline
 
 This week, you're continuing your term project.
 
