@@ -6,7 +6,7 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>Working with Web APIs</h1>
+<h1>Setting up Dev Tools</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
@@ -23,9 +23,9 @@ author: Brian Bird
 
 [TOC]
 
+## Introduction
 
-
-# Setting up Dev Tools
+This is an example of how to set up all the dev tools for a Node project. The *Going to Boston* dice game is being used as an example.
 
 ## NPM and Package.json
 
