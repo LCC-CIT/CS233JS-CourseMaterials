@@ -31,11 +31,14 @@ author: Brian Bird
 
 ## Announcements
 
-- **Final Quiz Next Week**.  
-  - In the classroom : Monday at 2:00 to 4:00.
-  - In the testing center: Monday through Wednesday
-  - Last week was the deadline for making arrangements to have your quiz proctored in a location near you. Contact your instructor if you are not going to be able to come to the main campus for your final.
 - **Library Study Jam Tuesday.** The Library, Phi Theta Kappa (PTK) and Student Government will be hosting a Study Jam on Tuesday, March 11 from 3-5 pm in the Library. Free pizza, drinks and snacks will be available at 3 pm. Get tutoring and advising help, pet a therapy dog, and learn yoga relaxation techniques.
+- **Final Quiz Next Week**.  
+  - In the classroom : Monday 3/17 from 2:00 to 4:00.
+  - In the testing center: Monday 3/17 through Wednesday 3/19.  
+    See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for the testing center location and hours.
+  - Last week was the deadline for making arrangements to have your quiz proctored in a location near you. Contact your instructor if you are not going to be able to come to the main campus for your final.
+- **New notes.** I added more notes on [setting up a Node.js development environment](CS233JS-LN-W06-D2-NodeDevToolSetup.html) to the week 6 section on Moodle.
+- **Course Evaluation.** Please fill out the course evaluation. There is a link [here](https://eval.lanecc.edu) and at the bottom of this week's Moodle section.
 
 ### Spring Term Registration
 
@@ -60,12 +63,12 @@ See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1
 Look at the due dates on Moodle
 
 - Term project code review: Tuesday, March 11.  
-  This is ungraded and does not need to be submitted on Moodle, but I encourage you to have another student look at your project and give you feedback on it&mdash;including how it measures up to the [grading rubric]().
-- Term project production version: Thursday, March 13.
+  This is ungraded and does not need to be submitted on Moodle, but I encourage you to have another student look at your project and give you feedback on it&mdash;including how it measures up to the [grading rubric](../Labs/TermProject/CS233JS_TermProject_Rubric.htm).
+- **Term project production version: Thursday, March 13.**
 
 ## Q and A
 
-- Do you have any questions about a lab you might be finishing or term project?
+- Do you have any questions about a lab you might be finishing or the term project?
 
   -  Is there code you would like help with?
 
@@ -75,10 +78,7 @@ Look at the due dates on Moodle
 
 ### Term Project Timeline
 
-This week, you're continuing your term project.
-
-- Look at the *sample API call research + documentation* on Moodle.
-- You will be making submissions for steps 2, 3 and 4 this week.
+This week, you're finishing your term project.
 
 | Week                      | Project Step                                                 | Due Date                                     |
 | ------------------------- | ------------------------------------------------------------ | -------------------------------------------- |

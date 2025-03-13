@@ -1,31 +1,22 @@
 ---
-title: Project Completion
-description: TBD
+title: Node toolchain setup
+description: How to set up NPM, Weback and Babel
 keywords: package.json, npm, babel, webpack
 generator: Typora
 author: Brian Bird
 ---
 
-<h1>Working with Web APIs</h1>
+<h1>Setting up Dev Tools</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
-
-| Topics by Week                                               |                                                             |
-| ------------------------------------------------------------ | ----------------------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review, lab 1   | 6. HTML5 Canvas, CSS Flexbox, lab 4                         |
-| 2. ES6 Classes and Git, lab 2                                | 7.AJAX, ES6 promises, fetch API, lab 5                      |
-| 3. More about Classes                                        | 8.  Making API calls, graphs and charts, Google maps, lab 6 |
-| 4. More time to finish the dice games, lab 2b (XC)           | 9. Term Project                                             |
-| 5. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. lab 3, Midterm Quiz | 10. <mark>Project Completion</mark><br />and Review         |
-| 11. Final Quiz                                               |                                                             |
 
 <h2>Table of Contents</h2>
 
 [TOC]
 
+## Introduction
 
-
-# Setting up Dev Tools
+This is an example of how to set up all the dev tools for a Node project. The *Going to Boston* dice game is being used as an example.
 
 ## NPM and Package.json
 
@@ -265,6 +256,6 @@ npx webpack serve --open
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ---
