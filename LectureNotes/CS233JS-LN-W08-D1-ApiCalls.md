@@ -187,31 +187,7 @@ new webpack.DefinePlugin({
 
 This specifies that webpack's `DefinePlugin` will create global constants based on the values in the `.env` file. 
 
-## Lab 7
 
-### Map API
-
-#### Azure Maps
-
-[Getting Started with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys)&mdash;Microsoft Blog Post.
-
-- Requires an [Azure for Students](https://azure.microsoft.com/en-us/free/students) account.
-  - Free for 12 months, no credit card required, gives you $100 Azure account credit.
-  - Azure is used for other classes in our department.
-- 1,000 or more (depending on the type of transaction) free transactions (without using your student Azure credit).
-
-#### Google Maps
-
-- [Getting Started with Google Maps Platform](https://developers.google.com/maps/get-started)&mdash;GCP  Docs.
-  - [Add a Google Map with a Marker using JavaScript](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)&mdash;GCP Docs.
-
-- Requires a [GCP (Google Cloud Platform)](https://cloud.google.com) account.
-
-  - 90 day free trial, requires a credit card.
-  - Your card could be billed if you use more than $300 in "free" services during the trial period.  
-    A notification will be sent if this is about to happen.
-
-  - After the trial period, you get a $200 a month free credit for GCP services, including Google Maps.
 
 ## Reference
 
