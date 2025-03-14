@@ -40,9 +40,10 @@ You can use either of these map APIs. the starter files have two versions of the
 [Getting Started with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys)&mdash;Microsoft Blog Post.
 
 - Requires an [Azure for Students](https://azure.microsoft.com/en-us/free/students) account.
-  - Free for12 months, no credit card required.
+  - Free for12 months, <u>no credit card required</u>.
   - Azure is used for other classes in our department.
 - 1,000 or more (depending on the type of transaction) free transactions (without using your credit).
+- Here is your instructor's [code example](AzureMapsCode.html) for adding a map to the "about" page
 
 ### Google Maps
 
@@ -51,7 +52,7 @@ You can use either of these map APIs. the starter files have two versions of the
 
 - Requires a [GCP (Google Cloud Platform)](https://cloud.google.com) account.
 
-  - 90 free trial, requires a credit card.
+  - 90 day free trial, <u>requires a credit card</u>.
   - Your card could be billed if you use more than $300 in "free" services during the trial period.  
     A notification will be sent if this is about to happen.
 
@@ -89,8 +90,8 @@ You can use either of these map APIs. the starter files have two versions of the
   
 
 [^1]: I'm asking for screen shots for this lab so that you can show me that you did use Node.js and the development tools introduced this week.
-[^2]: When you connect a browser to your Event app running on citstudent, you will need to use an insecure HTTP connection, not a secure HTTPS  connection. This is because (unfortunately) the web API running on  citweb only provides a HTTP connection. If you  connect to your Event app on citstudent using HTTPS, your browser will  block the POST request that your code sends to citweb with this error  message: "Blocked loading mixed active content". 
+[^2]: When you connect a browser to your Event app running on citstudent, you will need to use an insecure HTTP connection, not a secure HTTPS connection. This is because (unfortunately) the web API running on citweb only provides a HTTP connection. If you  connect to your Event app on citstudent using HTTPS, your browser will  block the POST request that your code sends to citweb with this error message: "Blocked loading mixed active content". 
 
 ---
 
-Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024, revised by Brian Bird winter <time>2025</time>
+Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good, revised by Brian Bird winter <time>2025</time>
