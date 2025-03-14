@@ -4,11 +4,11 @@
 
 [TOC]
 
-# Objective
+## Objective
 
 The objective of this lab is to allow you to continue to practice using AJAX as a strategy for building applications as well as to continue to use Fetch and Promises to make calls to web APIs. 
 
-# Overall Process
+## Overall Process
 
 Complete the programming problem described below. For each problem:
 
@@ -17,7 +17,7 @@ Complete the programming problem described below. For each problem:
 3. **Use Git and GitHub** to manage your source code and design documents.
 4. **Evaluate your work** using the evaluation form provided.
 
-# Event Application Completion
+## Event Application Completion
 
 1. **Setup the webpack development environment** as described in the screencasts.
 2. **Complete the Event application** described in the screencasts. The html and css files for the application have been provided. Add JavaScript code by following the detailed instructions in the starting .js file. Test and debug your application.
@@ -31,11 +31,11 @@ Complete the programming problem described below. For each problem:
 3. **Improve the application** by designing and implementing a strategy for reusing the navigation code across all 3 pages. Test and debug your implementation.
 4. **Use webpack** to bundle all of the resources used by your application into a production version.
 
-## Map API Alternatives
+### Map API Alternatives
 
 You can use either of these map APIs. the starter files have two versions of the about.js and about.html files, one for each map API, you can choose the one you want to use.
 
-### Azure Maps
+#### Azure Maps
 
 [Getting Started with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys)&mdash;Microsoft Blog Post.
 
@@ -45,7 +45,7 @@ You can use either of these map APIs. the starter files have two versions of the
 - 1,000 or more (depending on the type of transaction) free transactions (without using your credit).
 - Here is your instructor's [code example](AzureMapsCode.html) for adding a map to the "about" page
 
-### Google Maps
+#### Google Maps
 
 - [Getting Started with Google Maps Platform](https://developers.google.com/maps/get-started)&mdash;GCP  Docs.
   - [Add a Google Map with a Marker using JavaScript](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)&mdash;GCP Docs.
@@ -60,9 +60,9 @@ You can use either of these map APIs. the starter files have two versions of the
 
 
 
-# Submission
+## Submission
 
-## Beta Version and Code Review
+### Beta Version and Code Review
 
 - Post to the Beta Version forum
   - When your code is 75% complete, add your lab partner as a collaborator on your GitHub repository.
@@ -72,7 +72,7 @@ You can use either of these map APIs. the starter files have two versions of the
 - Submit your code reivew to Moodle
   - Submit a copy of the code review you did to the Moodle Code Review assignment.
 
-## Production Version
+### Production Version
 
 - Publish to the CIT web server  
   - Upload your completed web app to [citstudent.lanecc.edu](http://citstudent.lanecc.edu).  Test the app on the web server[^2].  
