@@ -9,7 +9,7 @@ The project must:
 
 - Include one or more web pages, have a clear objective and be user-friendly.
 
-- Have a professional-looking UI that uses Bootstrap or another CSS framework with which you are familiar.
+- Have a professional-looking UI that uses Bootstrap or another CSS library with which you are familiar.
   
 -  Use client-side code written in JavaScript. 
   
