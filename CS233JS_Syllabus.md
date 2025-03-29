@@ -1,13 +1,13 @@
 <h1>Intermediate Programming: JavaScript</h1>
 
-**Syllabus for winter 2025**
+**Syllabus for spring 2025**
 
 | <u>Class</u>      |                                                              |      | <u>Instructor</u> |                                                              |
 | ----------------- | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ |
 | **Course Number** | CS 233JS                                                     |      | **Name**          | Brian Bird                                                   |
-| **CRN**           | Hybrid (on campus) 31788<br/>Online 31256                    |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
-| **Day & Time**    | M, W 2:00&ndash;3:50                                         |      | **Office Hours**  | M&mdash;Th 4:00&ndash;4:50                                   |
-| **Room**          | Building 19, Room 126<br /> or [Zoom meeting](https://lanecc.zoom.us/j/94584000329) |      | **Room**          | Building 19, Room 152<br />or [Zoom meeting](https://lanecc.zoom.us/j/93494931394) |
+| **CRN**           | 41250 Hybrid (on campus) <br/>Online 40818                   |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
+| **Day & Time**    | M, W 10:00&ndash;11:50                                       |      | **Office Hours**  | M, W 1:00&ndash;1:50<br>T, Th 2:00&ndash;2:50                |
+| **Room**          | Building 19, Room 128<br /> or [Zoom meeting](https://lanecc.zoom.us/j/94584000329) |      | **Room**          | Building 19, Room 152<br />or [Zoom meeting](https://lanecc.zoom.us/j/93494931394) |
 
 <h2>Table of Contents</h2>
 
@@ -219,14 +219,14 @@ For upcoming closures, please visit the [Center for Accessible Resources webpage
 
 ### Academic Calendar
 
-| Winter Term 2025                                |              |
-| ----------------------------------------------- | ------------ |
-| Term begins                                     | 1/6, Monday  |
-| Last day to receive refund                      | 1/13, Monday |
-| Martin Luther King Jr. holiday (college closed) | 1/20, Monday |
-| President's day holiday (college closed)        | 2/17, Monday |
-| Last day for schedule changes                   | 2/28, Friday |
-| Finals Week                                     | 3/17–3/21    |
+| Winter Term 2025                           |              |
+| ------------------------------------------ | ------------ |
+| Term begins                                | 3/31, Monday |
+| Last day to receive refund                 | 4/7, Monday  |
+| Spring faculty conference (college closed) | 5/2, Friday  |
+| Last day for schedule changes              | 5/23, Friday |
+| Memorial day holiday (college closed)      | 5/26, Monday |
+| Finals Week                                | 6/9–6/13     |
 
 View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on the LCC web site.  
 
