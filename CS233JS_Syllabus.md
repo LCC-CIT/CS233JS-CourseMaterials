@@ -93,12 +93,12 @@ All of the software required for this class is free.  You can use any operating 
 
 You will need to download these applications and install them on your computer. They are already installed on the computers in the classroom and CIT lab.
 
-- A code (text) editor to create and edit your web pages and JavaScript files. [Visual Studio Code](https://code.visualstudio.com/) is a free editor that can be downloaded and used on Windows, OS X (Mac OS) or Linux.
+- A code (text) editor to create and edit your web pages and JavaScript files. [Visual Studio Code](https://code.visualstudio.com/) is a free editor that can be downloaded and used on Windows, MacOS or Linux.
 
-- At least two modern browsers to view/test your web pages. The latest versions of [Chrome](https://www.google.com/chrome/), and [Firefox](https://www.mozilla.org/en-US/firefox/new/) are good options. Many other browsers like Safari, Opera, and Edge, are also suitable for your use in this class.
+- At least two web browsers to view/test your web pages. The latest versions of [Chrome](https://www.google.com/chrome/), and [Firefox](https://www.mozilla.org/en-US/firefox/new/) are good options. Many other browsers like Safari, Opera, and Edge, are also suitable for your use in this class.
 
 - An FTP client to upload your web pages to the [CIT department web server](http://citstudent.lanecc.edu).  
-  [FileZilla](https://filezilla-project.org/) is a free ftp client that can be downloaded and used on Windows, OS X, or Linux. 
+  [FileZilla](https://filezilla-project.org/) is a free ftp client that can be downloaded and used on Windows, MacOS, or Linux. 
 
 - Microsoft  Word (see the free Microsoft Office offer below) or a word processor that is compatible with Word, like the free, open source, [Libre Office](https://www.libreoffice.org).
 
