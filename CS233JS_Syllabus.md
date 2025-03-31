@@ -6,8 +6,8 @@
 | ----------------- | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ |
 | **Course Number** | CS 233JS                                                     |      | **Name**          | Brian Bird                                                   |
 | **CRN**           | 41250 Hybrid (on campus) <br/>Online 40818                   |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
-| **Day & Time**    | M, W 10:00&ndash;11:50                                       |      | **Office Hours**  | M, W 1:00&ndash;1:50<br>T, Th 2:00&ndash;2:50                |
-| **Room**          | Building 19, Room 128<br /> or [Zoom meeting](https://lanecc.zoom.us/j/94584000329) |      | **Room**          | Building 19, Room 152<br />or [Zoom meeting](https://lanecc.zoom.us/j/93494931394) |
+| **Day & Time**    | M, W 10:00&ndash;11:50                                       |      | **Office Hours**  | M&mdash;Th 1:00&ndash;1:50                                   |
+| **Room**          | Building 19, Room 128<br /> or [Zoom meeting](https://lanecc.zoom.us/j/96377530587) |      | **Room**          | Building 19, Room 152<br />or [Zoom meeting](https://lanecc.zoom.us/j/97305128975) |
 
 <h2>Table of Contents</h2>
 
@@ -219,7 +219,7 @@ For upcoming closures, please visit the [Center for Accessible Resources webpage
 
 ### Academic Calendar
 
-| Winter Term 2025                           |              |
+| Spring Term 2025                           |              |
 | ------------------------------------------ | ------------ |
 | Term begins                                | 3/31, Monday |
 | Last day to receive refund                 | 4/7, Monday  |
