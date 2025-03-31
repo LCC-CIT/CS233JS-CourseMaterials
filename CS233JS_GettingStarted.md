@@ -1,6 +1,6 @@
-# Getting Started Guide
+<h1>Getting Started Guide for CS 233JS</h1>
 
-Course introduction and getting started materials
+<h2>Intermediate Programming: JavaScript</h2>
 
 ## Table of contents
 
