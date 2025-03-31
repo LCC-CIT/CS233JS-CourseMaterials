@@ -87,7 +87,7 @@ All of the instructor's course materials including lecture notes, lab assignment
 
 ### Software
 
-All of the software required for this class is free.  You can use any operating system: Windows, Mac OS, or Linux. 
+All of the software required for this class is free.  You can use any operating system: Windows, MacOS, or Linux. 
 
 #### Software Required for Lab Assignments
 
@@ -155,7 +155,7 @@ Letter grades for the course will be determined by the following percentages:
 ### Quizzes
 
 #### Weekly Quizzes
-Weekly quizzes are given that cover the required reading and tutorial videos for that week. These quizzes must be taken before the second class meeting of the week. They are "open book" (or video).
+Weekly quizzes are given that cover the required reading and tutorial videos for that week. They are "open book" (or video).
 
 #### Midterm and Final Quizzes
 
@@ -260,18 +260,18 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 ### Tentative Course Schedule
 
-| Week        | Topic                                                        | Labs                                                         | Assessments                                                  |
-| ----------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **1** 1/6   | JavaScript Review and Bootstrap                              | Lab 1 Version 1 of stopwatch, concentration and tic-tac-toe. | Quiz 1<br />Lab 1 Beta                                       |
-| **2** 1/13  | ES6 Features and Git   ES6: Function expressions, arrow functions, JSON, template strings, restructuring, and classes. | Lab 2 Version 2 of stopwatch, concentration and tic-tac-toe. Refactor to use classes and other ES6 features. | Quiz 2<br />lab 1 code review<br />Lab 1 production Lab 2 Beta |
-| **3** 1/20  | Classes, composition, getters and setters                    | Lab 3, Dice game using ES6 Classes                           | Quiz 3<br />lab 2 code review<br />Lab 2 production Lab 3 Beta |
-| **4** 1/27  | JS Dev Tools: Node.js, NPM, Webpack, LocalStorage.           | Lab 4, Node and Webpack                                      | Quiz 4<br />lab 3 code review<br />Lab 3 production Lab 4 Beta |
-| **5** 2/3   | Midterm Quiz                                                 | No lab assignment                                            | Midterm quiz<br />lab 4 code review<br />Lab 4 production    |
-| **6** 2/10  | HTML5 Canvas, CSS Flexbox.                                   | Lab 5, Canvas and flex box                                   | Quiz 5<br />Lab 5 Beta<br />Term project proposal            |
-| **7** 2/17  | AJAX, ES6 promises, fetch API                                | Lab 6, AJAX and promises                                     | quiz 6<br />lab 5 code review<br />Lab 5 production Lab 6 Beta |
-| **8** 2/24  | Making API calls, graphs and charts, Google maps             | Lab 7, API calls                                             | quiz 6<br />lab 6 code review <br />Lab 6 production Lab 7 Beta |
-| **9** 3/3   | Term Project                                                 |                                                              | lab 7 code review<br />Lab 7 production Term project Beta    |
-| **10** 3/10 | Review                                                       |                                                              | Production version of term project                           |
-| **11** 3/17 | Finals week                                                  |                                                              | Final quiz                                                   |
+| Week            | Topic                                                        | Labs                                                         | Assessments                                                  |
+| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **1** 3/31      | JavaScript Review and Bootstrap                              | Lab 1 Version 1 of stopwatch, concentration and tic-tac-toe. | Quiz 1<br />Lab 1 Beta                                       |
+| **2**<br />4/7  | ES6 Features and Git   ES6: Function expressions, arrow functions, JSON, template strings, restructuring, and classes. | Lab 2 Version 2 of stopwatch, concentration and tic-tac-toe. Refactor to use classes and other ES6 features. | Quiz 2<br />lab 1 code review<br />Lab 1 production Lab 2 Beta |
+| **3**<br />4/14 | Classes, composition, getters and setters                    | Lab 3, Dice game using ES6 Classes                           | Quiz 3<br />lab 2 code review<br />Lab 2 production Lab 3 Beta |
+| **4** 4/21      | JS Dev Tools: Node.js, NPM, Webpack, LocalStorage.           | Lab 4, Node and Webpack                                      | Quiz 4<br />lab 3 code review<br />Lab 3 production Lab 4 Beta |
+| **5** 4/28      | Midterm Quiz                                                 | No lab assignment                                            | Midterm quiz<br />lab 4 code review<br />Lab 4 production    |
+| **6**<br />5/5  | HTML5 Canvas, CSS Flexbox.                                   | Lab 5, Canvas and flex box                                   | Quiz 5<br />Lab 5 Beta<br />Term project proposal            |
+| **7** 5/12      | AJAX, ES6 promises, fetch API                                | Lab 6, AJAX and promises                                     | quiz 6<br />lab 5 code review<br />Lab 5 production Lab 6 Beta |
+| **8** 5/19      | Making API calls, graphs and charts, Google maps             | Lab 7, API calls                                             | quiz 6<br />lab 6 code review <br />Lab 6 production Lab 7 Beta |
+| **9** 5/26      | Term Project                                                 |                                                              | lab 7 code review<br />Lab 7 production Term project Beta    |
+| **10** 6/2      | Review                                                       |                                                              | Production version of term project                           |
+| **11** 6/9      | Finals week                                                  |                                                              | Final quiz                                                   |
 
  
