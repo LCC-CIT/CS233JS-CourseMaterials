@@ -15,17 +15,17 @@ The objectives of this lab are:
 
 There are a few things Mari did differently than the way I would like you to do things:
 
-- She hasn't introduced you to `let` and`const` yet, but I have, so declare variables using `let` instead of `var`.
+- She hasn't introduced you to`let` and`const` yet, but you have learned about these in CS 133JS, so declare variables using `let` instead of `var`.
   - Use `const` to declare numbers that are used in the code:
     - In the stopwatch app, use a `const` for 60 (used twice).
     - In the concentration app, use a `const` for 20 (used once).
-- Don't put mutliple `return` statements in a function, for example in the brances of an if-else statement.
+- Don't put multiple `return` statements in a function, for example in the branches of an if-else statement.
 - In the Stopwatch app, don't write the `pad` function so that it sometimes returns a *string* and sometimes a *number*. The best practice is for a function to always return the same data type.
 
 ## Web App 1: Stopwatch - Version 1
 
 - Download the `stopWatchStart.zip` file and unzip it. The `indexStart.js` file has comments in it to guide you through the process of completing the code. 
-- Reanme the files by removing the word "start" from each file. In `index.html`, change the `src` attribute in the `script` element to use the new file name. 
+- Reaname the files by removing the word "start" from each file. In `index.html`, change the `src` attribute in the `script` element to use the new file name. 
   Complete the code in each of the starting files:
   - `unstyledIndexStart.html`, `indexStart.html`
     You can use either one of these files. 
@@ -34,7 +34,7 @@ There are a few things Mari did differently than the way I would like you to do 
     - `unstyledIndexStart.htm` has no Bootstrap styling. If you would like to do your own styling (optional) you can add it to this one.
     
   - `stylesStart.css` 
-    There is nothing in this fiile. If you want to add some CSS styling (optional) to the web app, you can add it here.
+    There is nothing in this file. If you want to add some CSS styling (optional) to the web app, you can add it here.
   
   - `indexStart.js` 
     Add JavaScript code to implement the stop watch functionality as you might have done in CS 133JS.  
@@ -89,6 +89,6 @@ Here is a link to [the grading rubric](https://lcc-cit.github.io/CS233JS-CourseM
 
 ----
 
-Adapted by Brian Bird in spring 2024 from lab instructions written by Mari Good for winter 2024, revised by Brian Bird winter <time>2025</time>.
+Adapted by Brian Bird in spring 2024 from lab instructions written by Mari Good for winter 2024, revised by Brian Bird spring <time>2025</time>.
 
 ---
