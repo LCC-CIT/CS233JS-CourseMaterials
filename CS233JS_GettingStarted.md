@@ -2,7 +2,7 @@
 
 <h2>Intermediate Programming: JavaScript</h2>
 
-## Table of contents
+<h3>Contents</h3>
 
 [TOC]
 
