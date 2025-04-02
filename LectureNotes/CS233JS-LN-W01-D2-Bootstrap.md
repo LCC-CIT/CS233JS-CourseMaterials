@@ -74,13 +74,23 @@ Example:
 
 Note that a web page can have multiple containers.
 
-Once you have a container, you can use other classes for styling. For example, the code below whould make the div have rounded corners, a light background an centered, heading 1 text.
+Once you have a container, you can use other classes for styling. For example, the code below would make the div have rounded corners, light background centered text, and heading 1 size and style.
 
 ```html
 <div class="h1 text-center bg-light rounded">
 ```
 
+## Layout
 
+The most important layout feature in Bootstrap is the Grid. This will be covered in CS 295N.
+
+## Exercise
+
+Create a new web page and add the code to load the Bootstrap libraries or edit the examples on the Bootstrap website on StackBlitz. Look at the documentation on the Bootstrap site and pick some style classes to experiment with. Some good ones to start with are
+
+- Typography: headings, alignment
+- Tables
+- Components
 
 # Reference
 
@@ -91,6 +101,6 @@ Once you have a container, you can use other classes for styling. For example, t
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, revised in 2025, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
