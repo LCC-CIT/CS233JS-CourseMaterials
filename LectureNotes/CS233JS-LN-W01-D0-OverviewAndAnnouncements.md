@@ -1,6 +1,6 @@
 ---
-title: Week 4 Overview
-description: What's happening in week 4
+title: Week 1 Overview
+description: What's happening in week 1
 keywords: Announcements, Due Dates, Help
 generator: Typora
 author: Brian Bird
@@ -29,23 +29,47 @@ author: Brian Bird
 
 ## Introduction
 
-- Review this week's section on Moodle. 
-- Be sure to <u>watch or read all the required materials</u>.  
-    For online students, this includes the short class recordings which will be available after 1:00 on Monday and Wednesday via the Zoom recordings page linked near the top of the Moodle page.
-- This week's classes will be more "flipped", meaning I won't lecture very much, instead I'll give you a lot of time to <u>code and get help with debugging</u>.
-- Things that have changed since Mari recorded her videos:
+- This class is a "flipped" class, meaning you will watch video lectures and coding demos before class (these were recorded by Mari Good), and in class, I'll give you a lot of time to <u>code and get help with debugging</u>.  
 
-  - The way grading is done and the course structure.
+  But, This first week I'll be doing more direct instruction since you won't have had a chance to watch Mari's videos before the first class.
+
+- Be sure to watch or read <u>all the required materials</u> on Moodle.  
+  For online students, this includes the class recordings which will be available after 1:00 on Monday and Wednesday via the <u>Zoom recordings</u> page linked near the top of the Moodle page.
+
+## Announcements
+
+- **No-show/drop**
+  Be aware of LCC's <u>no-show/drop</u> policy. You need to come to class once during the first week, or take the quiz in order to not be automatically dropped!
+- **Last day for a refund** 
+   Monday, April 7, is the last day to get a refund if you drop a class.
+- **Web server credentials**  
+   You will be getting an email sometime this week from `citlab@lanecc.edu` with your username and password for one of our department's web servers, `citweb.lanecc.net`.
+
+## This Week: Course Intro, JS Review and Bootstrap
+
+### Objectives
+
+- To review your understanding of JavaScript from CS 133JS.
+- To introduce the use of Bootstrap for styling web pages.
+
+###  Changes since Mari made her videos
+
+- The way grading is done and the course structure have changed, see the syllabus.
+- We will be declaring variables with`let` and constants with `const` instead of `var`.
 
 
-## Lab 1
+### Lab 1
 
 - Read the instructions
 - Look at the code review form
 
-## Due dates
+### Due dates
 
-Look at the due dates in the "Upcoming Events" section of the Moodle right-hand flyout.
+- This week:
+  - Thursday: Quiz 1 
+- Next week:
+  - Tuesday: Lab 1 code review (a self-review this time)
+  - Thursday: Lab 1 production (final) version.
 
 
 
@@ -72,7 +96,7 @@ Ask questions in the class [Discussion channel](https://discord.com/channels/129
 - If you are an on campus or online student who can join us during class time, then come to the classroom (building 19, room 128) or [join us on Zoom](https://lanecc.zoom.us/j/96377530587).
 - If you are an online student be sure to <u>watch the video recordings</u> of the short, in-class, lectures. Access these via the Zoom widget near the top of Moodle.
 
-**You will get more out of this class if you come or Zoom to class where you can get help with your lab assignments!**
+- You will get the most out of this class if you can come or Zoom to class where you can get help with your lab assignments! You can also get help during office hours or from a tutor in the lab (in person or on Zoom).
 
 
 
