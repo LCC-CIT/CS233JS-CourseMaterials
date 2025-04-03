@@ -60,7 +60,7 @@ Pro Git Book](https://git-scm.com/book/en/v2)—Free online Git tutorial and ref
 
 ## Previous CIT Courses
 
-[CIS 195 Course Materials](https://lcc-cit.github.io/CS133JS-CourseMaterials/)&mdash;Instructors course materials for Web Authoring 1: HTML and CSS including code examples, on GitHub.
+[CIS 195 Course Materials](https://lcc-cit.github.io/CIS195-CourseMaterials/)&mdash;Instructors course materials for Web Authoring 1: HTML and CSS including code examples, on GitHub.
 
 [CS 133JS Course Materials](https://lcc-cit.github.io/CS133JS-CourseMaterials/)&mdash;Instructor's course materials for Beginning JavaScript, including code examples, on GitHub.
 

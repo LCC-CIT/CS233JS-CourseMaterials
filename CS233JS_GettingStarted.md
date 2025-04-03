@@ -22,13 +22,12 @@ Read the rest of this page and the linked pages and then *let's have fun writing
 
 To begin this course, please complete the following steps:
 
-### Before the Class Starts
+### Before the first Class Meeting
 
-1. Read all of this Getting Started guid.
+1. Read all of this Getting Started guide.
 2. Read all of the [syllabus](CS233JS_Syllabus.html).
-3. Read the [Code Review Procedure](./Labs/CodeReviewProcedures.html).
 4. Familiarize yourself with the cycle of weekly learning activities (in the syllabus).
-5. Join Discord and introduce yourself.
+5. Your instructor will send you an invitation to the class [Discord](https://discord.com/) server. Once you've joined Discord <u>and</u> joined the class server, introduce yourself on the introductions channel.
 
 ### During the First Week
 
@@ -44,11 +43,11 @@ To begin this course, please complete the following steps:
 
 **To be successful in this course you will need:**
 
-- At least two modern Web Browsers like [Firefox](https://www.mozilla.org/en-US/firefox/new/) and [Chrome](https://www.google.com/chrome/).
+- A Web Browser like [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Chrome](https://www.google.com/chrome/) or [Safari](https://www.apple.com/safari/).
 - [Adobe Reader](http://get.adobe.com/reader/) for reading PDF files
-- Software for Word processing and viewing PowerPoint slides such as [MS Office](http://www.microsoftstore.com/store/msusa/en_US/cat/All-Office/categoryID.69403900?icid=Office_365_subnav_22092015_All_Office&s_kwcid=AL!4249!3!82552207853!e!!g!!microsoft office&WT.mc_id=pointitsem+Google+Adwords+5+-+Office+15+Suites&ef_id=UsDFgAAAAHy-iVuM:20160104142119:s), [OpenOffice.org](http://download.openoffice.org/) or [GoogleDocs](https://www.google.com/accounts/ServiceLogin?service=writely&passive=1209600&continue=http://docs.google.com/&followup=http://docs.google.com/&ltmpl=homepage) 
-- A code editor, [VisualStudio Code](https://code.visualstudio.com) which can run on MacOS, Windows or Linux.
-- An FTP client for uploading files to a web server,  [FileZilla](https://filezilla-project.org) for Mac OS, Windows and Linux is reccomended, alternatively, you could use [CoreFTP](http://coreftp.com) for Windows, or [CyberDuck](https://cyberduck.io) for Mac OS.
+- Software for editing Word documents and for viewing PowerPoint slides such as [MS Office](https://help.lanecc.edu/TDClient/389/Portal/KB/ArticleDet?ID=5328), [LibreOffice](https://www.libreoffice.org/) or [GoogleDocs](https://www.google.com/accounts/ServiceLogin?service=writely&passive=1209600&continue=http://docs.google.com/&followup=http://docs.google.com/&ltmpl=homepage) .
+- [VisualStudio Code](https://code.visualstudio.com), a code editor which can run on MacOS, Windows or Linux.
+-  [FileZilla](https://filezilla-project.org), an FTP client for uploading files to a web server which can run on Mac OS, Windows and Linux, or any other FTP client.
 
 
 
@@ -58,9 +57,19 @@ Moodle is the learning management system of the Lane Community College and the l
 
 - [How to Use Moodle](https://www.lanecc.edu/programs-academics/online-distance-learning/moodle-how-access-your-classes)
 
-## Course Structure
+### Course Structure
 
 This course is broken into weekly modules. The modules start on Monday and end on Sunday. Every week has an overview, assigned reading and videos, a quiz, and lab assignment.
+
+## Introduction to Zoom
+
+Classes will be streamed live on [Zoom](https://www.zoom.com/?lang=en-US). Online students may join the class during class time to participate in class discussions and to get coding help from the instructor. If class is at a time when the student can't participate, there will be recordings of the class the student can watch. 
+
+### Zoom Recordings
+
+Note that there may be multiple recordings of each class and that the Zoom video player has a button you have to press to get to the next slide.
+
+<img src="/Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/Images/ZoomVideoPlayerNextButton.png" alt="ZoomVideoPlayerNextButton" style="zoom:50%;" />
 
 ## On-line Course Communication
 
@@ -81,7 +90,7 @@ All course announcements will be posted by the instructor to the Announcements f
 ## Support
 ### CIT Computer Lab
 
-The on-campus computer lab in building 19, room 135, has computers and tutors avialble for you. Lab and tutoring hours will be announced in class.
+The on-campus [computer lab for the CIT department](https://www.lanecc.edu/programs-academics/academic-departments/business-technology-and-trades/computer-information-technology/cit-computer-lab), in building 19, room 135, has computers and tutors avialble for you. Lab and tutoring hours are shown on the web site.
 
 ### LCC Academic and Tutoring Services
 
