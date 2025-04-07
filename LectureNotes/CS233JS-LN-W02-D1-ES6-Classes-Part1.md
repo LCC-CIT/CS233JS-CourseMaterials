@@ -56,14 +56,14 @@ function Pigeon(name, breed, speed){
 
 To create an object, call the constructor with the keword `new`. Set the property values in the new object by passing them as arguments in the constructor function call:
 
-```
+```javascript
 const agatha = new Pigeon("Agatha", "Egyptian Swift", 50);
 const elizabeth = new Pigeon("Elizabeth", "Egyptian Swift", 60);
 ```
 
 We can use these objects just like we would a literal object:
 
-```
+```javascript
 agatha.speed = 55;
 agatha.fly();
 elizabeth.fly();
@@ -71,11 +71,9 @@ elizabeth.fly();
 
 
 
-
-
 ## Intro to Object Oriented Programming
 
-This week you are refactoring the three web apps from last week to use classes and *object oriented programming* (OOP) reather than just *procedural programming*.
+This week you are refactoring the three web apps from last week to use classes and objects. This programming paradigm is called *object oriented programming* (OOP). Code that just uses functions and not classes or object constructors is called *procedural programming*.
 
 ### ES6 Class Syntax
 
