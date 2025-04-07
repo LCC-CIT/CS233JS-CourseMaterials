@@ -40,10 +40,14 @@ author: Brian Bird
 
 - **No-show/drop**
   Be aware of LCC's <u>no-show/drop</u> policy. You need to come to class once during the first week, or take the quiz in order to not be automatically dropped!
+  
 - **Last day for a refund** 
    Monday, April 7, is the last day to get a refund if you drop a class.
+   
 - **Web server credentials**  
-   You will be getting an email sometime this week from `citlab@lanecc.edu` with your username and password for one of our department's web servers, `citweb.lanecc.net`.
+   <s>You will be getting an email sometime this week from `citlab@lanecc.edu` with your username and password for one of our department's web servers, `citweb.lanecc.net`.</s>
+   
+   It turns out that the citweb web server is not set up to host the web apps we make in this class, so continue using citstudent like you did in your previous classes.
 
 ## This Week: Course Intro, JS Review and Bootstrap
 
