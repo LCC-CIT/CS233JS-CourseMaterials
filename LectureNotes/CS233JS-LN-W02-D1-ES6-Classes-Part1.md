@@ -137,6 +137,33 @@ this.startButton.onclick = this.startTimer.bind(this);
 - It is the way to build an application using multiple objects where each object represents a "thing" in the application.
 - Classes should be "highly coherent" and "loosely coupled".
 
+Here's an example of a pigeon house (called a loft) which contains an array of pigeon objects:
+
+```javascript
+class Loft {
+  constructor(water, food) {
+    this.water = water; // percent full water
+    this.food = food; // percent full food
+    this.pigeons = [];  // array of pigeon objects
+  }
+
+  addPigeon(name, breed, speed) {
+    this.pigeons.push(new Pigeon(name, breed, speed));
+  }
+}
+
+// Create a loft with initial water and food levels
+const myLoft = new Loft(100, 100);
+// Add pigeons
+myLoft.addPigeon("Agatha", "Egyptian Swift", 50);
+myLoft.addPigeon("Elizabeth", "Egyptian Swift", 60);
+myLoft.addPigeon(""Jutta", "Utility", 45);
+console.log(myLoft);
+
+```
+
+
+
 ### Separation of Concerns
 
 In order to make your code easy to test, debug and update (add features), it is good to separate parts of the app that do different things from each other; like i/o and processing. 
