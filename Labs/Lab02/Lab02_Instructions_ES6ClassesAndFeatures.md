@@ -56,7 +56,7 @@ Refactor the code for Tic-tac-toe to be Object Oriented using two classes: one t
 
 ## Beta Version and Code Review
 
-- **Beta Version:** When your code is at least 75% done, [add your lab partner as a collaborator to your GitHub repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) and post a link to your repo in your team Discord channel with a  message to your lab partner letting them know they need to accept the invitation to your repo and that you are ready for a code review.
+- **Beta Version:** When your code is at least 75% done, [add your lab partner as a collaborator to your GitHub repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) and post a link to your repo in your team Discord channel with a message to your lab partner letting them know they need to accept the invitation to your repo and that you are ready for a code review.
 
   - **What 75% done means**:  
     All the code is there and 75% of it is working. There could still be a  few errors that show up in the console and a few things that don't work yet.

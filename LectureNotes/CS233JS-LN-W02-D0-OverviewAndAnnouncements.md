@@ -47,7 +47,9 @@ Look at the due dates on Moodle
 - To introduce the use of git and GitHub for software version control
 - To develop your proficiency in designing,  implementing, testing and debugging client-side web-based applications  written in JavaScript        
 
-### 
+### Changes Since Mari Recorded Her Videos
+
+- For web apps 2 and 3, Concentration and tic-tac-toe, follow Brian's directions instead of Mari's directions in videos 7 and 8.
 
 
 
