@@ -56,16 +56,24 @@ author: Brian Bird
 - To review your understanding of JavaScript from CS 133JS.
 - To introduce the use of Bootstrap for styling web pages.
 
+### What to Do
+
+- Watch tutorial videos 1 and 2 (Mari's screencasts).
+  - Watch video 3 and work on the lab 1 StopWatch app.
+- Go to Monday's class or watch the Zoom recording of the class.
+  - Continue working on lab 1.
+- Watch tutorial videos 4 through 7
+  - Work on the concentration and tic-tac-toe apps
+- Go to Wednesday's class or watch the recording
+  - Continue working on the lab assignment.
+- Take the quiz.
+- Review your own code.
+- Revise your code and submit the production version.
+
 ###  Changes since Mari made her videos
 
 - The way grading is done and the course structure have changed, see the syllabus.
 - We will be declaring variables with`let` and constants with `const` instead of `var`.
-
-
-### Lab 1
-
-- Read the instructions
-- Look at the code review form
 
 ### Due dates
 
