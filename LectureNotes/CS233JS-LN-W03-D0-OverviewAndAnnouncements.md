@@ -9,7 +9,7 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-<h1>Week 2 Overview for Spring 2025</h1>
+<h1>Week 3 Overview for Spring 2025</h1>
 
 <h2>April 14 through April 20</h2>
 
@@ -56,6 +56,10 @@ author: Brian Bird
 - Share a beta version your code with a lab partner.
 - Give and get a code review.
 - Revise your code and submit the production version.
+
+### Changes Since Brian's Tutorial Videos Were Recorded
+
+The lab used to be lab 2B, now it's lab 3, when the video was made, lab partners used a Moodle forum for collaboration, now you are using Discord.
 
 ### Due Dates
 

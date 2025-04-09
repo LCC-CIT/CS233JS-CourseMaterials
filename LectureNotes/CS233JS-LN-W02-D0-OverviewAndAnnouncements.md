@@ -1,6 +1,6 @@
 ---
-title: Week 8 Overview
-description: What's happening in week 8
+title: Week 2 Overview
+description: What's happening in week 2
 keywords: Announcements, Due Dates, Help
 generator: Typora
 author: Brian Bird
