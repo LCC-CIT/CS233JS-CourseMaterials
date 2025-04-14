@@ -18,13 +18,6 @@ author: Brian Bird
 
 Last week you learned how to create ES6 classes. This week you will learn more about OOP (Object Oriented Programming) and why you would want to use classes and objects.
 
-## Review of Card and Die Game Coding Basics
-
-If you would like some review of coding techniques from last term, you can look at the Die Roller web app example:
-
-- Die Roller running on citstudent: https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/DieRoller/
-- Die Roller code on GitHub: https://github.com/LCC-CIT/CS233JS-CourseMaterials/tree/main/Examples/DiceExamples
-
 
 
 # Object Oriented Programming
@@ -37,8 +30,8 @@ Last week you learned how to create ES6 classes. This week you will learn more a
 
   For example, imagine you are making a dice game like Bunco. The game uses three dice and can have multiple players, so it makes sense to have separate classes for die and player&mdash;then we can make multiple die and player objects
 
-- To group together methods and variables that are related to eachother so that code is easier to understand.  
-  In our Bunco game, we group methods and instace variables together in these classes:
+- To group together methods and variables that are related to each other so that code is easier to understand.  
+  In our Bunco game, we group methods and instance variables (aka properties) together in these classes:
 
   - Die
 
@@ -48,13 +41,13 @@ Last week you learned how to create ES6 classes. This week you will learn more a
 
 - To make refactoring easier by reducing dependencies.  
 
-  One of the dependecies that can really complcate our code is the code related to web page i/o (input/output). We can move that code out of the Game class and either put it in a sparate, special i/o  class, or just have a separate file containing i/o functions.
+  One of the dependencies that can really complicate our code is the code related to web page i/o (input/output). We can move that code out of the Game class and either put it in a sparate, special i/o  class, or just have a separate file containing i/o functions.
 
 
 
 ## Encapsulation
 
-Last week you learned that putting code into a class is called *encapsulation*. There is more to encapsulation that just putting code into a class. It also means that the class becomes a boudary that prevents other code from directly using the instance variables inside our class. This is a way of reducing dependencies and makes code easier to refactor. 
+Last week you learned that putting code into a class is called *encapsulation*. There is more to encapsulation that just putting code into a class. It also means that the class becomes a boundary that prevents other code from directly using the instance variables inside our class. This is a way of reducing dependencies and makes code easier to refactor. 
 
 #### Access Control
 
@@ -195,6 +188,6 @@ graph LR
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised spring <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
