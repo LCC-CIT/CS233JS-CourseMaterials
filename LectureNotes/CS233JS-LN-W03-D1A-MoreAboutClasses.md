@@ -10,18 +10,7 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-| Topics by Week                                       |                                                     |
-| ---------------------------------------------------- | --------------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review  | 6. HTML5 Canvas, CSS Flexbox                        |
-| 2. ES6 Classes and Git                               | 7. AJAX, ES6 promises, fetch API                    |
-| 3. <mark>More about Classes</mark>                   | 8. Making API calls, graphs and charts, Google maps |
-| 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage | 9. Term Project                                     |
-| 5. Midterm Review and Quiz                           | 10. Review                                          |
-| 11. Final Quiz                                       |                                                     |
-
-
-
-<h2>Table of Contents</h2>
+<h2>Contents</h2>
 
 [TOC]
 
@@ -38,9 +27,7 @@ If you would like some review of coding techniques from last term, you can look 
 
 
 
-# Object Oriented
-
-#  Programming
+# Object Oriented Programming
 
 Last week you learned how to create ES6 classes. This week you will learn more about OOP (Object Oriented Programming) and why you would want to use classes and objects. We will be looking at a web app for playing the dice game  [Bunco](https://en.wikipedia.org/wiki/Bunco) as an example.
 

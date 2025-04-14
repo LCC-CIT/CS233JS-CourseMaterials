@@ -31,11 +31,11 @@ Using the [Bunco](https://github.com/LCC-CIT/CS233JS-BuncoGame) and [Going to Bo
 
 You will need to make all instance variables private and use *getters* and *setters* for any instance variables that need to be accessed from outside the class.
 
-The best approach is to using the examples is to <u>not</u> copy an entire example game into your project. It usually works better to create the files you need and then copy over just the methods you know you can re-use from the example. 
+The best approach to using the examples is to <u>not</u> copy an entire example game into your project. It usually works better to create the files and class declarations you need and then copy over just the methods you think you can re-use from the example. 
 
-Use the appropriate version below depending on which lab version group you are in.
+Use the appropriate version of the assignment below depending on which lab version group you are in.
 
-### Version A
+### Assignment Version A
 
 Design and code the dice game of 10,000 (aka Farkle). Here are [instructions for playing the game](https://www.dice-play.com/Games/TenThousand.htm).
 
@@ -51,7 +51,7 @@ Some of the things that will be different from the Bunco game are:
 
   
 
-### Version B
+### Assignment Version B
 
 Design and code the dice game of ship, captain, crew. Here are [instructions for playing the game](https://en.wikipedia.org/wiki/Ship,_captain,_and_crew).
 
@@ -65,7 +65,7 @@ Design and code the dice game of ship, captain, crew. Here are [instructions for
 
   
 
-### Version C
+### Assignment Version C
 
 Design and code the dice game of sevens. Here are the [instructions for playing the game](https://www.dicegamedepot.com/sevens-dice-game-rules/).
 
@@ -87,8 +87,8 @@ Some of the things that will be different from the Bunco game are:
 
 - When your code is at least 75% done, [add your lab partner as a collaborator to your GitHub repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) and make a post in the Beta Version Forum with a link to your repository and a message to your lab partner letting them know you are ready for a code review.. You won't able to view your lab partner's post until you have posted in the forum yourself.  
 
-  This is what 75% done means:  
-  All the code is there and 75% of it is working. There could still be a  few errors that show up in the console and a few things that don't work yet.
+  - This is what 75% done means:  
+    All the code is there and 75% of it is working. There could still be a  few errors that show up in the console and a few things that don't work yet.
 
 - Do a code review for your lab partner using the code reveiw form for this lab and post the it in the Beta Version Forum for your lab partner as well as uploading it to the Moodle Code Review assignment. Use the provided .docx file for the code review (not a pdf) so your lab partner can edit the  "prod." column.
 
@@ -110,7 +110,7 @@ Here is a link to [the grading rubric](https://lcc-cit.github.io/CS233JS-CourseM
 
 ------
 
-Written by Brian Bird, Lane Community College, spring 2024, revised <time>2025</time>
+Written by Brian Bird, Lane Community College, spring 2024, revised spring <time>2025</time>
 
 ------
 

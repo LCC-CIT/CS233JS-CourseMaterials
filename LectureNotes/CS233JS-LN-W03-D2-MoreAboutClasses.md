@@ -10,18 +10,9 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-| Topics by Week                                         |                                                     |
-| ------------------------------------------------------ | --------------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review    | 6. HTML5 Canvas, CSS Flexbox                        |
-| 2. ES6 Classes and Git                                 | 7. AJAX, ES6 promises, fetch API                    |
-| 3. More about Classes                                  | 8. Making API calls, graphs and charts, Google maps |
-| 4.  JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. | 9. Term Project                                     |
-| 5. Midterm Quiz                                        | 10. Review                                          |
-| 11. Final Quiz                                         |                                                     |
 
 
-
-<h2>Table of Contents</h2>
+<h2>Contents</h2>
 
 [TOC]
 
