@@ -94,9 +94,9 @@ classDiagram
 
 The relationships between classes in this diagram are both *composition*, the "whole-part" relationship.
 
-- `Game` contains `Die` as a part. 
-  This is because `Game` contains an array named `dice` that holds the `Die` objects.
-- `Game` contains `Player` as a part. 
+- The`Game` class contains `Die` objects as parts. 
+  This is because `Game` contains an array named `dice` that holds `Die` objects.
+- The `Game` contains `Player` objects a parts. 
   This is becuase `Game` contains an array named `players` that holds `Player` objects.
 
 ### Dependencies
