@@ -57,29 +57,33 @@ A way to visually represent software design models that is independent of any pa
 
 ## UML Class Diagram for Bunco
 
-This is the class diagram for a Bunco dice game. The code is availble in a [GitHub repository](https://github.com/LCC-CIT/CS233JS-Going2Boston).
+This is the class diagram for a Bunco dice game. The code is available in a [GitHub repository](https://github.com/LCC-CIT/CS233JS-Going2Boston).
 
 ```mermaid
 classDiagram
     class Player {
-        - name
-        - totalScore
-        - roundScore
-        - roundsWon
+        - name : string
+        + number : number
+        + roundScore : number
+        + roundsWon : number
+        + get name() : string
         + roll(dice)
-        + calculateScore(dice, round)
+        + calculateScore(dice, round) : number
     }
     class Die {
-        - value
+        - value : number
+        + get value() : number
         + roll()
     }
     class Game {
         - players : Player[]
         - dice : Die[]
+        + get players() : Player[]
+        + get dice() : Die[]
         + addPlayer(name)
         + nextRound()
-        + rollDice()
-        + getGameWinner()
+        + rollDice() : scores
+        + getGameWinner() : Player
         +startNewGame()
     }
     Game "1" *-- "2..*" Player
@@ -97,14 +101,14 @@ The relationships between classes in this diagram are both *composition*, the "w
 - The`Game` class contains `Die` objects as parts. 
   This is because `Game` contains an array named `dice` that holds `Die` objects.
 - The `Game` contains `Player` objects a parts. 
-  This is becuase `Game` contains an array named `players` that holds `Player` objects.
+  This is because `Game` contains an array named `players` that holds `Player` objects.
 
 ### Dependencies
 
-Game depends on (uses) the Player and Die, but the Player and Die don't depend on anything.  
-One way to think about the dependencies is that methods in Game call methods in Player and Die, but not the revers.
+`Game` depends on (uses) the` Player` and` Die`, but the `Player` and `Die` don't depend on any classes.  
+One way to think about the dependencies is that methods in `Game` call methods in `Player` and `Die`, but not the reverse.
 
-In the full implementation of the game there is also an index.js file that contsins the code that instantiates a Game object and that handles interaction with the web page (index.htm.). Function calls in index.js call methods on the game object, but not the reverse.
+In the full implementation[^1] of the game there is also an index.js file that contains the code that instantiates a Game object and that handles interaction with the web page (index.htm.). Code in index.js calls methods on the game object, but not the reverse.
 
 ## References
 
@@ -115,6 +119,9 @@ In the full implementation of the game there is also an index.js file that conts
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised spring <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
+
+[^1]: Implementation means coding. This is in contrast to designing, which is what you are doing in a UML diagram.
+
