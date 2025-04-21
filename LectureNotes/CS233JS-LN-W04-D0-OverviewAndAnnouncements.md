@@ -68,9 +68,9 @@ author: Brian Bird
 
 ## Midterm quiz next week
 
-- On campus students (Hybrid modality) will take the midterm at class time on Wednesday, 2/5, in the classroom.
+- On campus students (Hybrid modality) will take the midterm at class time on Wednesday, in the classroom.
 - Online students will take the midterm at [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services), located in the Center building, room 311 (on the third floor). 
-  - The quiz will be open Wednesday, 2/5 through Saturday, 2/8. See the Instructional Testing web site for their hours.
+  - The quiz will be open Thursday through Saturday. See the Instructional Testing web site for their hours.
   - **Please note that ID is required.** <u>If you don't have ID let your instructor know in advance</u>.
   - **If you live outside the Eugene/Springfield area** and do not want to come to the LCC campus to take the final, you need to send an email to [online@lanecc.edu](mailto:online@lanecc.edu) and copy birdb@lanecc.edu well in advance of the test date to arrange for your quiz to be proctored at a location near you.
 

@@ -33,7 +33,7 @@ author: Brian Bird
 
 ## Node.js
 
-Node.js, often just called "Node"[^1], is an open-source, cross-platform runtime environment that allows JavaScript to run outside a browser, enabling server-side scripting and command line applications. It enables running JavaScript everywhere.
+Node.js, often just called simply "Node"[^1], is an open-source, cross-platform runtime environment that allows JavaScript to run outside a browser, enabling server-side scripting and command line applications. It enables running JavaScript everywhere.
 
 ### NPM
 
@@ -41,7 +41,7 @@ NPM, or Node Package Manager, is the default package manager for Node.js. It all
 
 ### Installation
 
-There are Node installers for Windows, Mac OS, and Linux. The installers includes NPM. [Download here](https://nodejs.org/en/download). 
+There are Node installers for Windows, Mac OS, and Linux. The installers will also install NPM. [Download here](https://nodejs.org/en/download). 
 
 ### Package.json
 
