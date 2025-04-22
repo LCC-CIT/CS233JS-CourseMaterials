@@ -33,15 +33,75 @@ author: Brian Bird
 
 ## Node.js
 
-Node.js, often just called "Node"[^1], is an open-source, cross-platform runtime environment that allows JavaScript to run outside a browser, enabling server-side scripting and command line applications. It enables running JavaScript everywhere.
+Node.js, often just called simply "Node"[^1], is an open-source, cross-platform runtime environment that allows JavaScript to run outside a browser, enabling server-side scripting and command line applications. It enables running JavaScript everywhere.
+
+In addition to enabling JavaScript apps to run witout a web browser, it enables JavaScript development tools that we will be using.
 
 ### NPM
 
-NPM, or Node Package Manager, is the default package manager for Node.js. It allows developers to install and manage JavaScript packages (code libraries) in their projects as well as share packages with other developers.
+NPM, or Node Package Manager, is the default *package manager* for Node.js. It allows developers to install and manage JavaScript packages (code libraries) in their projects as well as share packages with other developers.
 
 ### Installation
 
-There are Node installers for Windows, Mac OS, and Linux. The installers includes NPM. [Download here](https://nodejs.org/en/download). 
+There are Node installers for Windows, Mac OS, and Linux. The installers will also install NPM. [Download here](https://nodejs.org/en/download). 
+
+#### Hello Node
+
+Try writing a simple *Hello World* (or Hello Node) program. Put this code in a file named `hello.js`:
+
+```javascript
+console.log("Hello Node!")
+```
+
+Run it using this command:
+
+```javascript
+node hello.js
+```
+
+
+
+## Dev Tools
+
+### Babel
+
+Babel.js is a JavaScript compiler that converts modern JavaScript (ES6+) into backwards-compatible versions, like ES5, for older browsers and environments. It’s widely used in web development for compatibility purposes.
+
+These days (2025), you might use Bable to compile from some newer version of JS, like ES2024, to a version supported by all the browsers, which could be ES5 or ES6.
+
+Note: Node.js is required to run Babel.
+
+### Webpack
+
+Webpack is a *static module bundler* for JavaScript applications. What this means is that it takes all the dependencies, which includes JavaScript packages, images, css files, etc. and combines (bundles) them together into static modules (files) that it generates.  These are modules that a browser can understand and load faster and more efficiently.
+
+#### Installing Webpack
+
+You install webpack using NPM:
+
+```bash
+npm install webpack webpack-cli --save-dev
+```
+
+The `install` command is followed by the two things being installed: `webpack` itself and `webpack-cli` which is the command-line interface module for webpack. The flag, `--save-dev`,  means that these npm packages will be stored in the `packag.json` file in the `devDependencies` section.
+
+#### Webpack and Babel
+
+Webpack can be configured to use Babel to transpile your code. This has been done in the *webpack.config.js* file in the starter files for this week's lab assignment.
+
+#### Webpack Dev Server
+
+Webpack also includes a light-weight web server, *webpack-dev-server*, that you can run on your machine. This web server  "watches" your js code for changes and uses Bable to transpile it, then it reloads the transpiled code into the browser automatically as it changes.
+
+The package.json file in the starter files for your project includes a script for running the webpack dev server. You run it ty typing this on the command line:
+
+```bash
+npm run watch
+```
+
+Node.js is required to run Webpack.
+
+## Using Node and Dev Tools
 
 ### Package.json
 
@@ -85,48 +145,6 @@ To run a script type `npm run scriptName` on the command line. For example:
 ```bash
 npm run build
 ```
-
-
-
-## Babel
-
-Babel.js is a JavaScript compiler that converts modern JavaScript (ES6+) into backwards-compatible versions, like ES5, for older browsers and environments. It’s widely used in web development for compatibility purposes.
-
-These days (2025), you might use Bable to compile from some newer version of JS, like ES2024, to a version supported by all the browsers, which could be ES5 or ES6.
-
-Note: Node.js is required to run Babel.
-
-## Webpack
-
-Webpack is a *static module bundler* for JavaScript applications. What this means is that it takes all the dependencies, which includes JavaScript packages, images, css files, etc. and combines (bundles) them together into static modules (files) that it generates.  These are modules that a browser can understand and load faster and more efficiently.
-
-### Installing Webpack
-
-You install webpack using NPM:
-
-```bash
-npm install webpack webpack-cli --save-dev
-```
-
-The `install` command is followed by the two things being installed: `webpack` itself and `webpack-cli` which is the command-line interface module for webpack. The flag, `--save-dev`,  means that these npm packages will be stored in the `packag.json` file in the `devDependencies` section.
-
-### Webpack and Babel
-
-Webpack can be configured to use Babel to transpile your code. This has been done in the *webpack.config.js* file in the starter files for this week's lab assignment.
-
-### Webpack Dev Server
-
-Webpack also includes a light-weight web server, *webpack-dev-server*, that you can run on your machine. This web server  "watches" your js code for changes and uses Bable to transpile it, then it reloads the transpiled code into the browser automatically as it changes.
-
-The package.json file in the starter files for your project includes a script for running the webpack dev server. You run it ty typing this on the command line:
-
-```bash
-npm run watch
-```
-
-
-
-Node.js is required to run Webpack.
 
 
 
