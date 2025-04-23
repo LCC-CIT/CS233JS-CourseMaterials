@@ -44,7 +44,7 @@ In the ToDoList app, the `generateTaskHTML` function uses this.
 
 ### Local Storage
 
-An HTML5 feature that allows data storage in a user’s browser with no expiration. It’s part of the Web Storage API and unlike cookies, it isn’t sent to the server and can hold up to 5MB of data per domain. The data persists even after the browser window is closed.
+An HTML5 feature that allows data storage in a user’s browser with no expiration. It’s part of the Web Storage API and unlike cookies, data isn’t sent to the server and can hold up to 5MB of data per domain. The data persists even after the browser is closed.
 
 - localStorage["key"]
 - localStorage.getItem("key")
@@ -65,7 +65,7 @@ localStorage["userName"] = "Olivia Medina";
 console.log(localStorage.getItem("userName"));
 
 // Another way to set or change data
-localStorage.setItem()"userName", "Jules Torres";
+localStorage.setItem("userName", "Jules Torres");
 
 // Expected output: "Jules Torres"
 console.log(localStorage.getItem("userName"));
@@ -77,26 +77,14 @@ delete localStorage["userName"];
 console.log(localStorage["userName"]);
 ```
 
+All data stored in localStorate is converted to strings, so even if you store a number or a boolean value, when you retrieve the value it will be a string.
+
 Local storage is used in the ToDoList app tasks are stored in local storage in `loadTasks` and retrieved in the `constructor`, 
 
 ## Arrays
 
 ### `reduce`
-This method is used to apply a function to each element in an array to reduce the array to a single value. The function it applies is a  callback function which is executed the for each value in the array starting at index 0. Here's an example:
-
-```javascript
-let numbers = [1, 2, 3, 4, 5];
-
-// The annonymous function is a callback function that sums values
-let sum = numbers.reduce(function(accumulator, currentValue) {
-  return accumulator + currentValue;
-}, 0);
-
-// Expected output: 15
-console.log(sum);
-```
-
-The `Array.reduce()` method in JavaScript is used to apply a function to each element in an array to reduce the array to a single value. It executes the callback function for each value of the array from left-to-right.
+The `Array.reduce()` method in JavaScript is used to call a function for each element in an array to *reduce* the array to a single value&mdash;meaning to get a result that is a single value. It executes the callback function for each value of the array starting at index 0 and going to the highest index number of the array.
 
 Here's an example that calculates the sum of numbers in an array:
 
@@ -105,13 +93,14 @@ let numbers = [1, 2, 3, 4, 5];
 
 let sum = numbers.reduce(function(accumulator, currentValue) {
   return accumulator + currentValue;
-}, 0);
+}, 0);  // 0 is the initial value
 
 // Expected output: 15, the sum of numbers in the array
 console.log(sum);
 ```
 
-The variable `accumulator` is the accumulated total previously returned in the last invocation of the callback function, or on the first invocation, the initial value. The `currentValue` is the current element being processed in the array. The `0` after the callback function is the initial value set for the accumulator. 
+The variable `accumulator` is the accumulated total previously returned in the last call to the callback function, or on the first call, the initial value. The `currentValue` is the current element being processed in the array. The `0` after the callback function is the initial value assignmed to `accumulator`. 
+(You can omit the  initial value parameter in which case the first element of the array will be used as an initial value.)
 
 ### `forEach`
 
@@ -182,7 +171,7 @@ let mrScience = {
 
 ### JSON.stringify()
 
-This method is used to convert a JavaScript object or value into a string. It’s commonly used when storing data or sending it somewhere else, as the data needs to be a string for these kinds of operations.
+This method is used to convert a JavaScript object or value into a string. It’s commonly used when storing data or sending it somewhere else, as the data usually needs to be string type for these kinds of operations.
 
 Here’s an example using the mrScience object in the previous example:
 
