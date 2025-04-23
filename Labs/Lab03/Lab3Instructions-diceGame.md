@@ -85,12 +85,12 @@ Some of the things that will be different from the Bunco game are:
 
 ## Beta Version and Code Review
 
-- When your code is at least 75% done, [add your lab partner as a collaborator to your GitHub repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) and make a post in the Beta Version Forum with a link to your repository and a message to your lab partner letting them know you are ready for a code review.. You won't able to view your lab partner's post until you have posted in the forum yourself.  
+- When your code is at least 75% done, [add your lab partner as a collaborator to your GitHub repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) and share a link to your repository with them.
 
   - This is what 75% done means:  
     All the code is there and 75% of it is working. There could still be a  few errors that show up in the console and a few things that don't work yet.
 
-- Do a code review for your lab partner using the code reveiw form for this lab and post the it in the Beta Version Forum for your lab partner as well as uploading it to the Moodle Code Review assignment. Use the provided .docx file for the code review (not a pdf) so your lab partner can edit the  "prod." column.
+- Do a code review for your lab partner using the code reveiw form for this lab and share it with them as well as uploading it to the Moodle Code Review assignment. Use the provided .docx file for the code review (not a pdf) so your lab partner can edit the  "prod." column.
 
 ## Production Version
 
