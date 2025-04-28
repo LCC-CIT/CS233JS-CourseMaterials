@@ -147,16 +147,16 @@ The way this code works is that `textBox.classList` is a special DOM object that
 
 ## JSON 
 
-JSON is an acronym for JavaScript Object Notation and is a standard data storage and interchange format. 
+JSON is an acronym for JavaScript Object Notation and is a data formatting standard. The most common uses of JSON formatted data are: data storage, data interchange and configuration files.
 
-### JSON Object Literals. 
+### JSON Format
 
-A JSON object literal, or simply "JSON object", as it is more commonly called, is a collection of key-value pairs where the keys are strings and the values can be various types such as strings, numbers, booleans, arrays, or even other JSON objects.
+ JSON is formatted as a collection of key-value pairs where the keys are strings and the values can be various types such as strings, numbers, booleans, arrays, or objects.
 
 Here is an example:
 
 ```javascript
-let mrScience = {
+{
   "name": "Jason Lindsey",
   "age": 46,
   "isStudent": false,
@@ -164,14 +164,34 @@ let mrScience = {
   "address": {
     "street": "123 Main St",
     "city": "Sometown",
-    "state": "KY"
+    "state": "KY",
   }
 }
 ```
 
+#### JavaScript Object Format
+
+Here is a standard JavaScript object literal for comparison:
+
+```javascript
+let mrScience = {
+  name: "Jason Lindsey",
+  age: 46,
+  isStudent: false,
+  interests: ["Math", "Science"],
+  address: {
+    street: "123 Main St",
+    city: "Sometown",
+    state: "KY"
+  }
+}
+```
+
+**Q:** What differences do you notice between the two formats?
+
 ### JSON.stringify()
 
-This method is used to convert a JavaScript object or value into a string. It’s commonly used when storing data or sending it somewhere else, as the data usually needs to be string type for these kinds of operations.
+This method is used to convert a JavaScript object or value into a string. It’s commonly used when storing data (perhaps in localStorage) or sending it somewhere (such as to a web API), since the data usually needs to be string type for these kinds of operations.
 
 Here’s an example using the mrScience object in the previous example:
 
@@ -184,7 +204,7 @@ console.log(jsonString);
 
 ### JSON.parse()
 
-This method is used to convert a JSON object which is in the form of a string into a JavaScript object. It’s commonly used when retrieving data from storage or receiving data sent from somewhere else, since the data is often in JSON format and needs to be converted into a JavaScript object for use in JavaScript code.
+This method is used to convert a JSON string into a JavaScript object. It’s commonly used when retrieving data from storage or receiving data sent from a web API, since the data is normally in JSON format.
 
 Here’s an example:
 
@@ -211,7 +231,7 @@ console.log(mrScience.name);
 
 
 
-[^1]: Mari's list of "new" features is a little longer than mine because she included some features we already covered in my CS133JS class.
+[^1]: Mari's list of "new" features is a little longer than mine because she included some features we already covered in my CS 133JS class.
 
 ---
 
