@@ -21,7 +21,11 @@ Learn how to design and build a web app that employs *separation of concerns* by
 
 ## Write a Dice Game Web App
 
-Using the [Bunco](https://github.com/LCC-CIT/CS233JS-BuncoGame) and [Going to Boston](https://github.com/LCC-CIT/CS233JS-Going2Boston) dice games as examples, write a dice game of your own. Your dice game should have the following files:
+Using the [Bunco](https://github.com/LCC-CIT/CS233JS-BuncoGame) and [Going to Boston](https://github.com/LCC-CIT/CS233JS-Going2Boston) dice games as examples, write a dice game of your own. 
+
+In each of these dice games, the palyer will need to select some of the dice to set aside or for scoring. Let the player do that, don't write code to do that automatically. It's more fun for the player if they can choose the dice dice to score or set aside themselves.
+
+Your dice game should have the following files:
 
 - index.html&mdash;the web page that the players interact with. The dice will be shown on this page using images from an images folder.
 - index.js&mdash;will contain all the i/o code which will primarily be event handler funcitons.
@@ -31,7 +35,7 @@ Using the [Bunco](https://github.com/LCC-CIT/CS233JS-BuncoGame) and [Going to Bo
 
 You will need to make all instance variables private and use *getters* and *setters* for any instance variables that need to be accessed from outside the class.
 
-The best approach to using the examples is to <u>not</u> copy an entire example game into your project. It usually works better to create the files and class declarations you need and then copy over just the methods you think you can re-use from the example. 
+The best approach to using the examples is to <u>not</u> copy an entire example game into your project. It usually works better to create the files and class declarations you need and then copy over just the methods you think you can re-use from the example code. 
 
 Use the appropriate version of the assignment below depending on which lab version group you are in.
 
@@ -39,7 +43,7 @@ Use the appropriate version of the assignment below depending on which lab versi
 
 Design and code the dice game of 10,000 (aka Farkle). Here are [instructions for playing the game](https://www.dice-play.com/Games/TenThousand.htm).
 
-Some of the things that will be different from the Bunco game are:
+Some of the things that will be different from the Going to Boston game are:
 
 - 6 dice instead of 3.
 
@@ -55,6 +59,8 @@ Some of the things that will be different from the Bunco game are:
 
 Design and code the dice game of ship, captain, crew. Here are [instructions for playing the game](https://en.wikipedia.org/wiki/Ship,_captain,_and_crew).
 
+Some of the things that will be different from the Going to Boston game are:
+
 - 5 dice instead of 3.
 
 - Different rules for scoring.
@@ -69,7 +75,7 @@ Design and code the dice game of ship, captain, crew. Here are [instructions for
 
 Design and code the dice game of sevens. Here are the [instructions for playing the game](https://www.dicegamedepot.com/sevens-dice-game-rules/).
 
-Some of the things that will be different from the Bunco game are:
+Some of the things that will be different from the Going to Boston game are:
 
 - 6 dice instead of 3.
 
