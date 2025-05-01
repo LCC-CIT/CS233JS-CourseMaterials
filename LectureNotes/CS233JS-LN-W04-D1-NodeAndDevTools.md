@@ -69,7 +69,7 @@ node hello.js
   If you just installed Node and typing node -v results in an error saying the command isn't recognized, It could be because your terminal (or VS Code if you are using it's terminal) was open during installation which would mean the PATH environment variable with the path to Node wasn't loaded. The solution is to close your terminal and or VS Code and re-open it.
 - **npm commands cause an error (only an issue on Windows)**
   A common problem that occurs after installing Node and NPM is that when you try to run a command, like `npm install`, you get an error message like:
-          *File C:\Program Files\nodejs\npm.ps1 cannot be loaded because running scripts is disabled on this system.*
+      *File C:\Program Files\nodejs\npm.ps1 cannot be loaded because running scripts is disabled on this system.*
   This is because NPM commands on Windows are executed using a Power Shell script and running scripts might be restricted on your system. The solution is to open Power Shell as an administrator and execute this command:
   `Set-ExecutionPolicy RemoteSigned`
   If you need guidance on how to do this, see this short tutorial video: https://youtu.be/j78EdlptmJw?si=J8B76t9_sEzHa6p9
