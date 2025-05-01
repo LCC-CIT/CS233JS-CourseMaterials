@@ -41,11 +41,15 @@ In addition to enabling JavaScript apps to run witout a web browser, it enables 
 
 NPM, or Node Package Manager, is the default *package manager* for Node.js. It allows developers to install and manage JavaScript packages (code libraries) in their projects as well as share packages with other developers.
 
-### Installation
+### Installing Node and NPM
 
-There are Node installers for Windows, Mac OS, and Linux. The installers will also install NPM. [Download here](https://nodejs.org/en/download). 
+There are Node installers for Windows, Mac OS, and Linux. The installers install NPM along with Node. [Download here](https://nodejs.org/en/download). 
 
-#### Hello Node
+#### Testing the Installation
+
+Check to see if Node is installed by typing `node -v` on the command line which should respond with the version number. If Node is there, then also try typing `npm -v` and see if it shows you the Npm version number.
+
+##### Hello Node
 
 Try writing a simple *Hello World* (or Hello Node) program. Put this code in a file named `hello.js`:
 
@@ -59,7 +63,18 @@ Run it using this command:
 node hello.js
 ```
 
+#### Common Problems
 
+- **Node and NPM not responding after installation**
+  If you just installed Node and typing node -v results in an error saying the command isn't recognized, It could be because your terminal (or VS Code if you are using it's terminal) was open during installation which would mean the PATH environment variable with the path to Node wasn't loaded. The solution is to close your terminal and or VS Code and re-open it.
+- **npm commands cause an error (only an issue on Windows)**
+  A common problem that occurs after installing Node and NPM is that when you try to run a command, like `npm install`, you get an error message like: "File C:\Program Files\nodejs\npm.ps1 cannot be loaded because running scripts is disabled on this system." This is because NPM commands on Windows are executed using a Power Shell script and running scripts might be restricted on your system. The solution is to open Power Shell as an administrator and execute this command:
+  `Set-ExecutionPolicy RemoteSigned`
+  If you need guidance to do this, see this short tutorial video: https://youtu.be/j78EdlptmJw?si=J8B76t9_sEzHa6p9
+- **`npm install` not installing packages for your project**
+  This is usually because you are not running NPM in the same directory with the package.json file. You need to run `npm install` from the same directory that package.json is in so that it can read the list of packages to install.
+- **More common NPM problems**
+  There is a list of c[ommon problems and their solutions](https://docs.npmjs.com/common-errors) in the official Node documentation.
 
 ## Dev Tools
 
