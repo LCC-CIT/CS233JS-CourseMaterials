@@ -37,32 +37,35 @@ Registration is now open. These are the classes recommended for [AAS in Software
 
 #### Summer 2025
 
-- General education courses (if you haven't taken some of these yet):
+- Required general education courses (if you haven't taken some of these yet):
   - WR 227Z: Technical Writing
   - WR 121Z: Composition 1 
-  - MTH 095: Intermediate Algebra (if you haven't taken this or a higher level math course yet)
+  - MTH 095: Intermediate Algebra 
+  - Human Relations: [any courses from this list](https://lanecc.smartcatalogiq.com/en/current/2025-26-lcc-catalog/programs-of-study/career-technical-education-requirements/human-relations-requirement/)
 
 #### Fall 2025
 
 - Required core courses:
-  - CS 162N: Computer Science 2 (Intermediate C# programming)
+  - CS 234N: Advanced Programming: C#
+  - CS 295R: Web Development 1: React
 - Program elective options: 
-  - CS 235M: Advanced Mobile Application Development (prerequisite: CS 135M)  
-    Earn a certificate in Mobile Application Development
-  - CS 233P or C: Intermediate Programming: Python or C_++ (prerequisite: CS 133P or C)
+  - CS 210 - Intro to Artificial Intelligence Programming
+  - CIS 140U - Introduction to Unix/Linux
+- Genera Education
+  - Human Relations: [any courses from this list](https://lanecc.smartcatalogiq.com/en/current/2025-26-lcc-catalog/programs-of-study/career-technical-education-requirements/human-relations-requirement/)
 
-See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for a listing of the terms courses required for the AAS in Software Development are normally offered.
 
-## Last Week
+See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?usp=sharing) for a listing of the terms courses required for the AAS in Software Development are normally offered.
+
+## Last Week (Week 5)
 
 ### Midterm
 
-- Most of you did pretty well. The average score was 77% and the median was 81%.
-- There were some multiple choice questions with multiple correct answers that didn't correctly calculate partial credit. I have fixed those and your grades have been re-calculated.
+- Most of you did pretty well. The average score was 79%.
 
 ### Lab 4
 
-This was due last Thursday, but it was the week of the midterm and most of you didn't get it finished yet.
+This was due last Thursday, but it was the week of the midterm and about half of you didn't get it finished yet.
 
 - What questions to you have?
 - Don't hesitate to ask for help!
@@ -79,9 +82,9 @@ This was due last Thursday, but it was the week of the midterm and most of you d
 
 ### Notes on Mari's Videos and Starting Code
 
-  - Mari refers to this week's lab as "lab 4" but it is now lab 5.
+  - Mari refers to this week's lab, the meme creator,  as "lab 4" but it is now lab 5.
   - In the lab 5 instructions, I provided an alternate way to set the size of images that you upload.
-  - Mari made a video on CSS Flexbox, which is not related to the HTML 5 canvas, but is used for layout of the lab 5 meme creator web page. This was probably covered in your CIS 195 course and so it will be review.
+  - Mari recorded a video on CSS Flexbox, which is not related to the HTML 5 canvas, but is used for layout of the lab 5 meme creator web page. This may have been covered in your CIS 195 course and so it will probably be review.
 
   
 
@@ -91,7 +94,7 @@ This was due last Thursday, but it was the week of the midterm and most of you d
 
 #### Office Hours
 
-I have drop-in office hours on [Zoom](https://lanecc.zoom.us/j/93494931394) and in person, building 19, room 152, Monday through Thursday from 4:00 to 4:50. I'm available at other times too, just let me know when you'd like to meet. 
+I have drop-in office hours on Zoom and in person, building 19, room 152, Monday through Thursday from 1:00 to 1:50. I'm available at other times too, just let me know when you'd like to meet. 
 
 Don't hesitate to reach out if you have questions, would like help debugging code, or anything else! You can:
 
@@ -109,4 +112,4 @@ Ask questions in the class [Discussion channel](https://discord.com/channels/129
 
 
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Course Materials by [Brian Bird](https://profbird.dev), written in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript week 6 Overview by [Brian Bird](https://profbird.dev), written winter 2025, revised spring <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
