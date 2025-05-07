@@ -16,7 +16,28 @@ author: Brian Bird
 
 ## Introduction
 
-This is an example of how to set up all the dev tools for a Node project. The *Going to Boston* dice game is being used as an example.
+This is an example of how to set up all the dev tools for a Node project. The [Going to Boston](https://github.com/LCC-CIT/CS233JS-Going2Boston) dice game is being used as an example.
+
+## Prepare Your Source Code
+
+The .js files in the project are currently loaded into the browser by `<script>` elements in `index.html`
+
+```html
+<script src="scripts/die.js"></script>
+<script src="scripts/player.js"></script>
+<script src="scripts/game.js"></script>
+<script src="scripts/index.js"></script>
+```
+
+We need to remove all of these, because we will specify what files to load in the `webpack.config.js` file
+
+We also need to remove the link to the CSS file since that will be loaded by webpack as well.
+
+```html
+<link href="styles.css" rel="stylesheet">
+```
+
+
 
 ## NPM and Package.json
 
@@ -56,7 +77,6 @@ This is an example of how to set up all the dev tools for a Node project. The *G
 
    ````bash
    npm install --save-dev @babel/core @babel/cli @babel/preset-env
-   npm install webpack-cli --save-dev
    ````
 
    
@@ -85,7 +105,7 @@ But, since we are adding the babel plug-in and other customizations, we need to 
 
  module.exports = {
    mode: 'development',
-   entry: './src/index.js',
+   entry: './scripts/index.js',
    output: {
      path: path.resolve(__dirname, 'dist'),
      filename: 'going2boston.bundle.js',
@@ -183,6 +203,12 @@ new copyPlugin({
 
 ### Bable-loader
 
+Install a plug-in that will load bable so that it can be used to transpile your JS code to an older version of JS.
+
+```bash
+npm install --save-dev bable-loader
+```
+
 Add the babel-loader module to the webpack.config.js file:
 
 ```javascript
@@ -203,7 +229,10 @@ Add the babel-loader module to the webpack.config.js file:
        ]
      }
 ```
+
+
 ### Test webpack
+
 At this point you can test webpack by running this command:
 ```bash
 npx webpack
