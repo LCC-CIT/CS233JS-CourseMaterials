@@ -22,7 +22,7 @@ This is an example of how to set up all the dev tools for a Node project. The *G
 
 1. If Node.js and NPM are not already installed on your machine, install them.
 
-2. In your project folder, run: `npm init`  to generate a package.json file
+2. In your project folder, run: `npm init`  to generate a `package.json` file
    Example:
 
    ```json
@@ -52,32 +52,34 @@ This is an example of how to set up all the dev tools for a Node project. The *G
    ```
 
 ## Babel
-   Use this command to install babel and add it to the `devDependencies` in package.json: 
+   Use this command to install babel and add it to the `devDependencies` object in `package.json`: 
 
    ````bash
    npm install --save-dev @babel/core @babel/cli @babel/preset-env
-   npm install webpack-cli --save-prod
+   npm install webpack-cli --save-dev
    ````
 
    
 
 ## Webpack
 
-   - Install webpack and webpack CLI in your project's folder and simultaneously add it to the list of dependencies in package.json using these commands: 
+   - Use NPM to install the webpack and webpack CLI modules in your project's folder and simultaneously add them to the  `devDependencies` object in `package.json` file using these commands: 
      ```bash
-     npm install webpack --save-prod
-     npm install webpack-cli --save-prod
+     npm install webpack --save-dev
+     npm install webpack-cli --save-dev
      ```
    
      
    
    - As of version 4.0.0 of webpack, a `webpack.config.js` file isn't needed. If you don't create a configuration file, these defaults will be used:
    
-     - Entry:  ./src/index.js
-     - Output:  ./dist/main.js
+     - Entry:  `./src/index.js`
+       The entry point for the application. Webpack will start bundling with this file.
+     - Output:  `./dist/main.js`
+       This is where Webpack will put the bundled files.
      
 
-But, since we are adding the babel plug-in and other customizations, we need to create a configuration file. This is the default starting file from the webpack documentation:
+But, since we are adding the babel plug-in and other customizations, we need to create a configuration file. This one is based on the default starting file from the webpack documentation:
 ```javascript
  const path = require('path');
 
@@ -93,13 +95,13 @@ But, since we are adding the babel plug-in and other customizations, we need to 
 
 ### CSS bundling
 
-Install these loaders:
+Install these two loaders in your project:
 
 ```bash
 npm install --save-dev style-loader css-loader
 ```
 
-Configure the loaders:
+Configure the loaders in `webpack.config.js`:
 
 ```javascript
 module.exports = {
@@ -116,13 +118,19 @@ module.exports = {
 };
 ```
 
-Import the bundled css into index.js. Note that in this example styles.css is in the folder above index.js.
+Add a line to import the css file in `index.js`:
 
 ```javascript
 import '../styles.css';
 ```
 
+(Note that in this example we assume `styles.css` is in the folder above `index.js`.)
 
+#### What Does `import` do?
+
+In week 8, you will learn more about JavaScript ES modules[^1] and how to import and export them. For now, the important thing to know is that the ES `import` keyword brings in code or functionality from other modules. ES modules are usually a single JavaScript file, but it could also be a set of JavaScript files. 
+
+In the example above, a .css file is being imported instead of a .js file. This is only possible because we are using webpack and added a CSS loader plugin to it.
 
 ### HTML plug-in
 
@@ -235,9 +243,7 @@ npx webpack serve --open
 
 
 
-   
-
-# Reference
+## Reference
 
 [NPM documentation on packages and modules](https://docs.npmjs.com/packages-and-modules) 
 
@@ -254,8 +260,9 @@ npx webpack serve --open
 
 
 
----
-
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ---
+
+[^1]: there are two main kinds of modules in JavaScript: a) ES modules (ESM) which were introduced in ES6, use `import` and `export` syntax, are supported by modern browswer and node.js and normally have a .mjs file extension. b) Common JS modules (CJS) which was the default module type for node.js before ES6, use `require` and `module.exports` syntax and normally have a .js or .cjs extension.
+
