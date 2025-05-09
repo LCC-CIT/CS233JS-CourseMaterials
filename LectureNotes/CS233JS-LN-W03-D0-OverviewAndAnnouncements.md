@@ -30,7 +30,7 @@ author: Brian Bird
 
 ## Announcements
 
-- None yet
+- No announcements.
 
 ## This Week: More about Classes
 
@@ -43,23 +43,23 @@ author: Brian Bird
 
 ### What to Do
 
-- Read the section of the MDN Guide to Using classes as shown on Moodle
+- Read the section of the "MDN Guide to Using Classes" as shown on Moodle
 - Watch Brian's tutorial videos 1 through 4.
   - Start working on lab 3  
     There are three versions of lab 3, the version you do is determined by your Moodle lab assignment group.
-
 - Go to Monday's class or watch the Zoom recording of the class.
   - Continue working on lab 3.
-- Take the quiz
 - Go to Wednesday's class or watch the recording
   - Continue working on the lab assignment.
+- Take the quiz
 - Share a beta version your code with a lab partner.
 - Give and get a code review.
 - Revise your code and submit the production version.
 
 ### Changes Since Brian's Tutorial Videos Were Recorded
 
-The lab used to be lab 2B, now it's lab 3, when the video was made, lab partners used a Moodle forum for collaboration, now you are using Discord.
+- The lab used to be lab 2B, now it's lab 3.
+- Lab partners used to use a Moodle forum for collaboration, now you are using Discord.
 
 ### Due Dates
 

@@ -5,11 +5,11 @@
 
 [TOC]
 
-# Objectives
+## Objectives
 
 The objective of this lab is to give you more practice using the "new"[^1], widely supported, version of JavaScript: ES6. You will also be introduced to Node.js, NPM, Webpack, and Babel which are dev tools commmonly used in modern JavaScript development. 
 
-# Instructions
+## Instructions
 
 Complete the web apps described below. For each problem:
 
@@ -20,11 +20,11 @@ Complete the web apps described below. For each problem:
 - Use Webpack to create a production version of the application that is bundled and transpiled to a version of JavaScript (ES5) that is supported by all browsers.
 - Upload your solution to citstudent.lanecc.edu. Use a web browser to test your solutions running on the web server.
 
-## 1. ToDo List
+### 1. ToDo List
 
 Complete the ToDoList application described in the screencasts. The html and css files for the application have been provided in the starter GitHub Classroom repository. Add JavaScript code by following the detailed instructions in the starting .js file. Test and debug your application.
 
-## 2. Web Page Bookmarker
+### 2. Web Page Bookmarker
 
 Complete the BookMarker application as described in the comments in the starting files for the application. Test and debug your application.
 
@@ -43,9 +43,9 @@ createMeme() {
                                               this.$canvas.height); 
 ```
 
-# Submission
+## Submission
 
-## Beta Version and Code Review
+### Beta Version and Code Review
 
 - Post to the Beta Version forum
   - When your code is 75% complete, add your lab partner as a collaborator on your GitHub repository.
@@ -55,7 +55,7 @@ createMeme() {
 - Submit your code reivew to Moodle
   - Submit a copy of the code review you did to the Moodle Code Review assignment.
 
-## Production Version
+### Production Version
 
 - Publish to the CIT web server  
   - Upload your completed web apps to [citstudent.lanecc.edu](http://citstudent.lanecc.edu).  
@@ -72,6 +72,10 @@ createMeme() {
 
   - Moodle Lab 4 Production Version assignment:  put the citstudent URLs for each web app in the online text.
 
+## Grading
+
+Here is a link to the [grading rubric](CS233JS_Lab04_Rubric.htm) for this lab.
+
 
 
 [^1]: ES6, also known as [ECMAScript 2015](https://en.wikipedia.org/wiki/ECMAScript_version_history#6th_Edition_%E2%80%93_ECMAScript_2015) was finalized in June of 2015.
@@ -80,4 +84,4 @@ createMeme() {
 
 ---
 
-Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024 and revised winter <time>2025</time>	
+Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024 and revised spring <time>2025</time>	

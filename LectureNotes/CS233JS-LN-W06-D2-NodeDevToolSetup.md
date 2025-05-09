@@ -16,13 +16,66 @@ author: Brian Bird
 
 ## Introduction
 
-This is an example of how to set up all the dev tools for a Node project. The *Going to Boston* dice game is being used as an example.
+This is an example of how to set up all the dev tools for a Node project. The [Going to Boston](https://github.com/LCC-CIT/CS233JS-Going2Boston) dice game is being used as an example.
+
+## Prepare Your Source Code
+
+### Removing Links to Files from index.html
+
+The .js files in the project are currently loaded into the browser by `<script>` elements in `index.html`
+
+```html
+<script src="scripts/die.js"></script>
+<script src="scripts/player.js"></script>
+<script src="scripts/game.js"></script>
+<script src="scripts/index.js"></script>
+```
+
+We need to remove all of these script elements, because we will specify the `index.js` file as the entry point to the app in `webpack.config.js`  and use `import` statements to take care of the rest.
+
+We also need to remove the link to the CSS file since that will be loaded by webpack as well.
+
+```html
+<link href="styles.css" rel="stylesheet">
+```
+
+### Adding `export` and `import` statements to .js files
+
+Add `export` statements to all the class declarations and to the constant declaration in `game.js`
+
+Add to `game.js`
+
+```javascript
+import { Player } from './player.js';
+import { Die } from './die.js';
+```
+
+Add to `index.js`:
+
+```javascript
+import '../styles.css';
+import { Game } from './game.js';
+import { NUMBER_OF_DIE } from './game.js';
+```
+
+(Note that in this example we assume `styles.css` is in the folder above `index.js`.)
+
+#### What Does `import` do?
+
+In week 8, you will learn more about JavaScript ES modules[^1] and how to import and export them. For now, the important thing to know is that the ES `import` keyword brings in code or functionality from other modules. ES modules are usually a single JavaScript file, but it could also be a set of JavaScript files. 
+
+In the example above:
+
+-  A .css file is being imported instead of a .js file. This is only possible because we are using webpack and added a CSS loader plugin to it.
+- The `Game` class and the constant `NUMBER_OF_DIE` are being imported from the `game.js` file. The name inside the curly braces is the name of the thing to import.
+
+
 
 ## NPM and Package.json
 
 1. If Node.js and NPM are not already installed on your machine, install them.
 
-2. In your project folder, run: `npm init`  to generate a package.json file
+2. In your project folder, run: `npm init`  to generate a `package.json` file
    Example:
 
    ```json
@@ -52,38 +105,39 @@ This is an example of how to set up all the dev tools for a Node project. The *G
    ```
 
 ## Babel
-   Use this command to install babel and add it to the `devDependencies` in package.json: 
+   Use this command to install babel and add it to the `devDependencies` object in `package.json`: 
 
    ````bash
    npm install --save-dev @babel/core @babel/cli @babel/preset-env
-   npm install webpack-cli --save-prod
    ````
 
    
 
 ## Webpack
 
-   - Install webpack and webpack CLI in your project's folder and simultaneously add it to the list of dependencies in package.json using these commands: 
+   - Use NPM to install the webpack and webpack CLI modules in your project's folder and simultaneously add them to the  `devDependencies` object in `package.json` file using these commands: 
      ```bash
-     npm install webpack --save-prod
-     npm install webpack-cli --save-prod
+     npm install webpack --save-dev
+     npm install webpack-cli --save-dev
      ```
    
      
    
    - As of version 4.0.0 of webpack, a `webpack.config.js` file isn't needed. If you don't create a configuration file, these defaults will be used:
    
-     - Entry:  ./src/index.js
-     - Output:  ./dist/main.js
+     - Entry:  `./src/index.js`
+       The entry point for the application. Webpack will start bundling with this file.
+     - Output:  `./dist/main.js`
+       This is where Webpack will put the bundled files.
      
 
-But, since we are adding the babel plug-in and other customizations, we need to create a configuration file. This is the default starting file from the webpack documentation:
+But, since we are adding the babel plug-in and other customizations, we need to create a configuration file. This one is based on the default starting file from the webpack documentation:
 ```javascript
  const path = require('path');
 
  module.exports = {
    mode: 'development',
-   entry: './src/index.js',
+   entry: './scripts/index.js',
    output: {
      path: path.resolve(__dirname, 'dist'),
      filename: 'going2boston.bundle.js',
@@ -91,15 +145,21 @@ But, since we are adding the babel plug-in and other customizations, we need to 
  };
 ```
 
-### CSS bundling
+#### What is the `path` module?
 
-Install these loaders:
+The `path` module is a built-in Node.js module that provides utilities for working with file and directory paths. It is used to resolve paths in a cross-platform way (e.g., ensuring compatibility between Windows, macOS, and Linux).
+
+`__dirname` is a global variable in Node.js that represents the absolute path of the directory containing `webpack.config.js` . Here, it is being used as an argument to `path.resolve` to construct a relative path to the `dist` folder.
+
+### CSS loaders
+
+Install these two CSS loaders so that the style files in your project will be bundled.
 
 ```bash
 npm install --save-dev style-loader css-loader
 ```
 
-Configure the loaders:
+Configure the loaders in `webpack.config.js`:
 
 ```javascript
 module.exports = {
@@ -115,14 +175,6 @@ module.exports = {
   },
 };
 ```
-
-Import the bundled css into index.js. Note that in this example styles.css is in the folder above index.js.
-
-```javascript
-import '../styles.css';
-```
-
-
 
 ### HTML plug-in
 
@@ -175,6 +227,12 @@ new copyPlugin({
 
 ### Bable-loader
 
+Install a plug-in that will load bable so that it can be used to transpile your JS code to an older version of JS.
+
+```bash
+npm install --save-dev bable-loader
+```
+
 Add the babel-loader module to the webpack.config.js file:
 
 ```javascript
@@ -195,7 +253,10 @@ Add the babel-loader module to the webpack.config.js file:
        ]
      }
 ```
+
+
 ### Test webpack
+
 At this point you can test webpack by running this command:
 ```bash
 npx webpack
@@ -235,9 +296,7 @@ npx webpack serve --open
 
 
 
-   
-
-# Reference
+## Reference
 
 [NPM documentation on packages and modules](https://docs.npmjs.com/packages-and-modules) 
 
@@ -254,8 +313,9 @@ npx webpack serve --open
 
 
 
----
-
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ---
+
+[^1]: there are two main kinds of modules in JavaScript: a) ES modules (ESM) which were introduced in ES6, use `import` and `export` syntax, are supported by modern browswer and node.js and normally have a .mjs file extension. b) Common JS modules (CJS) which was the default module type for node.js before ES6, use `require` and `module.exports` syntax and normally have a .js or .cjs extension.
+

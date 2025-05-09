@@ -49,14 +49,14 @@ These review topics were covered in the first week of the term.
 
 These are the different ways to get a reference to an HTML element (or elements) using JavaScript:
 
-| Method / Return value                                        | Example                                                   |
-| :----------------------------------------------------------- | :-------------------------------------------------------- |
-| **`getElementById`**<br />Single element                     | `let myElement = document.getElementById('id')`           |
-| **`getElementsByClassName`**<br />HTMLCollection of elements | `let myElements = document.getElementsByClassName('cls')` |
-| **`getElementsByTagName`**<br />HTMLCollection of elements   | `let myElements = document.getElementsByTagName('div')`   |
-| **`querySelector`**<br />First matching element              | `let myElement = document.querySelector('#id')`           |
-| **`querySelectorAll`**<br />NodeList of elements             | `let myElements = document.querySelectorAll('.cls')`      |
-| **`getElementsByName`**<br />NodeList of elements            | `let myElements = document.getElementsByName('name')`     |
+| Method / Return value                                        | Example                                                      |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| **`getElementById`**<br />Single element                     | `let myElement = document.getElementById('id');`             |
+| **`getElementsByClassName`**<br />HTMLCollection of elements | `let myElements = document.getElementsByClassName('cls');`   |
+| **`getElementsByTagName`**<br />HTMLCollection of elements   | `let myElements = document.getElementsByTagName('div');`     |
+| **`querySelector`**<br />First matching element              | `let myElement = document.querySelector('#id');`             |
+| **`querySelectorAll`**<br />NodeList of elements             | `let myElements = document.querySelectorAll('.cssClassName');` |
+| **`getElementsByName`**<br />NodeList of elements            | `let myElements = document.getElementsByName('name');`       |
 
 ### Scope
 
@@ -64,13 +64,13 @@ Here’s a summary the different types of *scopes* in JavaScript, along with the
 
 ---
 
-| **Scope Type**     | **Description**                                              | **Example**                                                  |
+| **Scope Type**     | **Description**                                              | **Code Example**                                             |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Global Scope**   | Variables declared outside all functions/blocks. Accessible everywhere. | `const globalVar = "I'm global!"; `                          |
-| **Function Scope** | Variables declared inside a function. Accessible only within that function. | `function greet() { let message = "Hello"; } `               |
-| **Block Scope**    | Variables declared with `let`/`const` inside `{}` (e.g., `if`, `for`, `while`). | `if (true) { let blockVar = "I'm block-scoped!"; } `         |
-| **Class Scope**    | Variables declared in a class body (e.g., class name, static members). | `class MyClass { static message = "Hello"; }`                |
-| **Lexical Scope**  | Scope determined by the physical placement of code (e.g., nested functions). | `function outer() { let x = 10; function inner() { console.log(x); } } ` |
+| **Global Scope**   | Variables declared outside all functions or blocks. Accessible everywhere. | `const globalVar = "I'm global!"; `                          |
+| **Function Scope** | Variables declared inside a function. <br />Accessible only within that function. | `function greet() { let message = "Hello";`<br />` console.log(message ); } ` |
+| **Block Scope**    | Variables declared with `let`/`const` inside `{}` (e.g., `if`, `for`, `while`). | `if (a < b) { let diff = b - a;`<br />`console.log(diff); } ` |
+| **Class Scope**    | Variables declared in a class body <br />(e.g., instance variables, methods, etc.). | `class MyClass { message = "Hello"; }`                       |
+| **Lexical Scope**  | Scope determined by the placement of code (e.g., nested blocks). | `for(let i = 0; i < 10; i++) {` <br />  `if(i % 2 == 0) {`<br />     `console.log(i);`<br />  `}` <br />`}` |
 
 **Best Practices**
 
@@ -83,18 +83,20 @@ Here’s a summary the different types of *scopes* in JavaScript, along with the
 
 Here's a summary of ways to assign *event listeners* to *events*:
 
-| Method                 | Example                                 | Use Case                                |
-| ---------------------- | --------------------------------------- | --------------------------------------- |
-| `addEventListener`     | `element.addEventListener('click', fn)` | Modern, flexible, multiple listeners    |
-| Inline HTML Attributes | `<button onclick="fn()">`               | Quick prototyping (avoid in production) |
-| DOM Event Properties   | `element.onclick = fn`                  | Simple assignments (overwrites)         |
+| Method                 | Example                                  | Use Case                                |
+| ---------------------- | ---------------------------------------- | --------------------------------------- |
+| `addEventListener`     | `element.addEventListener('click', fn);` | Modern, flexible, multiple listeners    |
+| Inline HTML Attributes | `<button onclick="fn()">`                | Quick prototyping (avoid in production) |
+| DOM Event Properties   | `element.onclick = fn;`                  | Simple assignments (overwrites)         |
 
 **Best Practices**
 
 - Prefer `addEventListener` for better control and compatibility.
 - Avoid inline HTML event attributes for maintainability and separation of concerns.
 
-## Bootstrap
+## New Topics
+
+### Bootstrap
 
 This is a summary of the main Bootstrap concepts and features described in class:
 
@@ -109,7 +111,7 @@ This is a summary of the main Bootstrap concepts and features described in class
 | **Example Styling**       | `.h1`: Applies heading 1 styling.<br>`.text-center`: Centers the text.<br>`.bg-light`: Adds a light background.<br>`.rounded`: Adds rounded corners to the element. |
 | **Usage Example**         | ```html <div class="container-fluid"> <!-- HTML code goes here --> </div> ```<br>```html <div class="h1 text-center bg-light rounded"> <!-- Styled content --> </div> ``` |
 
-## Git
+### Git
 
 - Git is a *distributed version control system* for tracking changes in files. It is used for collaboration and version control in software development.
 - Git stores files in *repositories*. A *remote repositor*y (on GitHub for example) can be *cloned* into a *working directory* on a local computer to create a *local repository* which contains the current versions of files and contains a  `.git` folder where past versions are stored.
@@ -125,11 +127,9 @@ Here’s a summary of some basic Git commands:
 | **Push**    | Uploads local commits to a remote repository.                | `git push origin main`                                       |
 | **Status**  | Shows the current state of the working directory and staging area. | `git status` (lists untracked, modified, and staged files)   |
 
-### 
+### ES6 JavaScript Features
 
-## ES6 JavaScript Features
-
-This is a summary of some of the "new" JavaScript features added in ES6:
+This is a summary of some of the "new" JavaScript features added in ES6 (2015):
 
 | **Feature** / Description                                    | **Example**                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

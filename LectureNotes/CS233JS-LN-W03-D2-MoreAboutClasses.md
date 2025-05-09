@@ -1,33 +1,22 @@
 ---
-title: More OOP
-description: Why using classes and encapsulation makes your code better.
+title: Dice Game Programming
+description: How to design and code the dice game for the lab assignment.
 keywords: OOP, class, encapsulation, getter, setter
 generator: Typora
 author: Brian Bird
 ---
 
-<h1>More About Classes and OOP&mdash;Finishing the Dice Games</h1>
+<h1>More About Classes and OOP&mdash;Creating a Dice Game</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
-| Topics by Week                                         |                                                     |
-| ------------------------------------------------------ | --------------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review    | 6. HTML5 Canvas, CSS Flexbox                        |
-| 2. ES6 Classes and Git                                 | 7. AJAX, ES6 promises, fetch API                    |
-| 3. More about Classes                                  | 8. Making API calls, graphs and charts, Google maps |
-| 4.  JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. | 9. Term Project                                     |
-| 5. Midterm Quiz                                        | 10. Review                                          |
-| 11. Final Quiz                                         |                                                     |
 
 
-
-<h2>Table of Contents</h2>
+<h2>Contents</h2>
 
 [TOC]
 
-# Guidance for Finishing the Dice Games
-
-## Review
+## Review of OOP Concepts and Techniques
 
 - Review of how to use multiple classes.
   - One class declaration per file.
@@ -39,7 +28,9 @@ author: Brian Bird
 - Review getter and setters.
   - Look at the getters and setters in Player and see how they are used in Game. They are used as if they were public fields.
 
-## Designing the Game
+## Guidance for Writing a Dice Game
+
+### Designing the Game
 
 - Start by understanding the requirements.
   - What is the goal of the game (how do you win?)
@@ -51,13 +42,24 @@ author: Brian Bird
 - For the things that still need to be done, make a list of what they are, then write method stubs for those in each class where they fit. 
 - Look at which methods will be the ones that won't depend on other stub methods and write and test those first.
 
-## Testing and Debugging
+### Coding the Game
+
+#### Review of Coding Basics Applied to a Die Roller
+
+If you would like some review of coding techniques from last term, you can look at the Die Roller web app example:
+
+- Die Roller running on citstudent: https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/DieRoller/
+- Die Roller code on GitHub: https://github.com/LCC-CIT/CS233JS-CourseMaterials/tree/main/Examples/DiceExamples
+
+
+
+### Testing and Debugging
 
 Write a simple function that you can run from the console that you can use to test each method as you write it. You will create an object for the class that contains the method you want to test.
 
 
 
-# Examples
+## Examples
 
 [Bunco source code on GitHub](https://github.com/LCC-CIT/CS233JS-BuncoGame)
 
@@ -67,7 +69,7 @@ Write a simple function that you can run from the console that you can use to te
 
 [Going to Boston running on citstudent](https://citstudent.lanecc.edu/~brianb/CS233JS/Examples/Going2Boston/)
 
-# Reference
+## Reference
 
 [Using Classes Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes) on MDN
 
