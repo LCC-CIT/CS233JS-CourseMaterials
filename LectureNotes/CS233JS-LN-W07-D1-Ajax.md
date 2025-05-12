@@ -28,7 +28,7 @@ Look at the code here: [can-script.js](https://github.com/mdn/learning-area/blob
 
 ### Key Concepts
 
-- `Fetch` is a global function that will get data from a URL and return a `promise` object.
+- `Fetch` is a global, "built-in", JavaScript function that will get data from a URL and return a `promise` object.
 - A `promise` is like a placeholder that can be in one of three states:
   1. **Pending**: The initial state, when the promise has not yet been fulfilled or rejected.
   2. **Fulfilled**: The promise has completed successfully, and a data value is available.
@@ -36,8 +36,8 @@ Look at the code here: [can-script.js](https://github.com/mdn/learning-area/blob
 
 - `then` is a method on `promise` objects that is used to handle the fulfillment or rejection of a promise. 
   - It takes up to two arguments:
-    - A callback function for when the promise is fulfilled: This function is called with the promise's resolved value.
-    - (Optional) A callback function for when the promise is rejected: This function is called with the reason for the promise's rejection.
+    - A *callback function* that will be called when the promise is fulfilled: This function is called with the promise's resolved value.
+    - (Optional) A callback function to be called when the promise is rejected: This function is called with an argument for the reason for the promise's rejection.
   - It returns a `promise` so that `then` methods can be chained.
 
 ```javascript

@@ -20,6 +20,8 @@ This is an example of how to set up all the dev tools for a Node project. The [G
 
 ## Prepare Your Source Code
 
+### Removing Links to Files from index.html
+
 The .js files in the project are currently loaded into the browser by `<script>` elements in `index.html`
 
 ```html
@@ -29,13 +31,43 @@ The .js files in the project are currently loaded into the browser by `<script>`
 <script src="scripts/index.js"></script>
 ```
 
-We need to remove all of these, because we will specify what files to load in the `webpack.config.js` file
+We need to remove all of these script elements, because we will specify the `index.js` file as the entry point to the app in `webpack.config.js`  and use `import` statements to take care of the rest.
 
 We also need to remove the link to the CSS file since that will be loaded by webpack as well.
 
 ```html
 <link href="styles.css" rel="stylesheet">
 ```
+
+### Adding `export` and `import` statements to .js files
+
+Add `export` statements to all the class declarations and to the constant declaration in `game.js`
+
+Add to `game.js`
+
+```javascript
+import { Player } from './player.js';
+import { Die } from './die.js';
+```
+
+Add to `index.js`:
+
+```javascript
+import '../styles.css';
+import { Game } from './game.js';
+import { NUMBER_OF_DIE } from './game.js';
+```
+
+(Note that in this example we assume `styles.css` is in the folder above `index.js`.)
+
+#### What Does `import` do?
+
+In week 8, you will learn more about JavaScript ES modules[^1] and how to import and export them. For now, the important thing to know is that the ES `import` keyword brings in code or functionality from other modules. ES modules are usually a single JavaScript file, but it could also be a set of JavaScript files. 
+
+In the example above:
+
+-  A .css file is being imported instead of a .js file. This is only possible because we are using webpack and added a CSS loader plugin to it.
+- The `Game` class and the constant `NUMBER_OF_DIE` are being imported from the `game.js` file. The name inside the curly braces is the name of the thing to import.
 
 
 
@@ -113,9 +145,15 @@ But, since we are adding the babel plug-in and other customizations, we need to 
  };
 ```
 
-### CSS bundling
+#### What is the `path` module?
 
-Install these two loaders in your project:
+The `path` module is a built-in Node.js module that provides utilities for working with file and directory paths. It is used to resolve paths in a cross-platform way (e.g., ensuring compatibility between Windows, macOS, and Linux).
+
+`__dirname` is a global variable in Node.js that represents the absolute path of the directory containing `webpack.config.js` . Here, it is being used as an argument to `path.resolve` to construct a relative path to the `dist` folder.
+
+### CSS loaders
+
+Install these two CSS loaders so that the style files in your project will be bundled.
 
 ```bash
 npm install --save-dev style-loader css-loader
@@ -137,20 +175,6 @@ module.exports = {
   },
 };
 ```
-
-Add a line to import the css file in `index.js`:
-
-```javascript
-import '../styles.css';
-```
-
-(Note that in this example we assume `styles.css` is in the folder above `index.js`.)
-
-#### What Does `import` do?
-
-In week 8, you will learn more about JavaScript ES modules[^1] and how to import and export them. For now, the important thing to know is that the ES `import` keyword brings in code or functionality from other modules. ES modules are usually a single JavaScript file, but it could also be a set of JavaScript files. 
-
-In the example above, a .css file is being imported instead of a .js file. This is only possible because we are using webpack and added a CSS loader plugin to it.
 
 ### HTML plug-in
 

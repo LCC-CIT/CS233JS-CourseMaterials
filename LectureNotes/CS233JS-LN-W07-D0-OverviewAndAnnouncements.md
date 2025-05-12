@@ -9,9 +9,9 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-<h1>Week 7 Overview for Winter 2025</h1>
+<h1>Week 7 Overview for Spring 2025</h1>
 
-<h2>February 17 through February 23</h2>
+<h2>May 12 through May 18</h2>
 
 **CS233JS Intermediate Programming: JavaScript**
 
@@ -30,25 +30,18 @@ author: Brian Bird
 
 ## Announcements
 
-### Last Week's Announcements
-
-These are still things you can do.
-
-- Our CIT lab manager, Jacob Riddle, would like to have a movie/game day in the lab on Friday, February 28 from 11 am- 4:30 pm. Please share your interest by completing [this survey](https://docs.google.com/forms/d/e/1FAIpQLSeHS7OqR-gNMZnzU8EVZFsU_8qwEzT8YcbBLJlREReCd_x47A/viewform).
-- There are openings for students to work in the CIT lab.  If you were awarded work study funds for AY 2024-25, you can learn more and apply here: https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=9586&s=1
-
 ### This Week's Announcement
 
-- ### Regfest!
+- RegBreak CEN 219
+  Tuesday, May 13, 11am - 1pm
+  Wednesday, May 14: 11am - 1pm 
 
-  Get in-person help with advising and registration <u>this Saturday</u>, February 22nd, from 9am-2pm on the first floor of Building 1. This event is designed for students:
-
-  - who have not yet registered for Winter (and/or Spring) term/s, and/or
-  - those needing assistance with Financial Aid, Advising, or Student Accounts (Bursar).  
-
-  Regfests are popular! Plan to arrive by 1:00 pm at the latest. 
-
-## Q and A
+  Students can get assistance from Achievement Coaches
+  
+  - Free coffee and a KitKat once registered for fall.
+  - Every student who registers by May 31 could win one of twenty $50 prize packages.
+  
+- ### Q and A
 
 - Last week's lab: lab 5&mdash;Meme Creator
 
