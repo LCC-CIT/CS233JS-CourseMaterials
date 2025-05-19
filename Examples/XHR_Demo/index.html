@@ -64,6 +64,7 @@
         file and displays it on the page.</p>
     <p class="quote" id="quote1"></p>
 
+    <!-- Sending a synchronous HTTP request using the XMLHttpRequest object -->
     <script>
         let request = new XMLHttpRequest();
         request.open("GET", 'https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/GhandiQuote.txt', false); // `false` makes the request synchronous
@@ -84,26 +85,26 @@
 
 
     <p class="quote" id="quote2"></p>
-
+    <!-- Sending an asynchronous HTTP request using the fetch API and method chaining -->
     <script>
-        console.log("line 37, before fetch")
+        console.log("Before fetch")
         fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/GhandiQuote.txt')
             .then(response => {
-                console.log("line 40, in then(response)");
+                console.log("1st .then, got a response from fetch");
                 if (!response.ok) {
                     throw new Error("HTTP error " + response.status);
-                    console.log("line 43, in if not ok")
+                    console.log("1st .then, response from fetch not ok");
                 }
                 return response.text();
             })
             .then(text => {
-                console.log("line 48, in then(text)")
+                console.log("2nd .then, got text from response");
                 document.getElementById('quote2').innerHTML = text;
             })
             .catch(function () {
-                console.log('line 52: An error occurred');
+                console.log('.catch, an error occurred');
             });
-        console.log("line 54: all done");
+        console.log("After all methods chained to fetch");
     </script>
 
     <h4>fetch with procedural syntax</h4>
