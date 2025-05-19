@@ -40,20 +40,20 @@ author: Brian Bird
 
 ### Due Dates
 
-- Look at the due dates on Moodle
-  - Term project proposal/description due Tuesday
-  - Lab 6 production version: Thursday
-  - Quiz 7 closes Thursday
+Look at the due dates on Moodle
+- Term project proposal/description due Tuesday
+- Lab 6 production version: Thursday
+- Quiz 7 closes Thursday
 
 ## Q and A
 
-- Last week's lab: lab 6&mdash;Bookmarker V2 and Weather apps
+Last week's lab: lab 6&mdash;Bookmarker V2 and Weather apps
 
-  - Do you have any questions or is there code you would like help with?
-  - Any problems or issues with the instructions, code review or submission process?
-  - Don't hesitate to ask for help!
+- Do you have any questions or is there code you would like help with?
+- Any problems or issues with the instructions, code review or submission process?
+- Don't hesitate to ask for help!
 
-  
+
 
 ## This Week: More on AJAX and Making API Calls
 
