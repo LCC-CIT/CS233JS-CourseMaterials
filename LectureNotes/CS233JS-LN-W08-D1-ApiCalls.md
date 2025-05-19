@@ -1,7 +1,7 @@
 ---
-title: Web API
-description: TBD
-keywords: TBD
+title: Calling web APIs
+description: Review of HTTP protocol and XHRs. Overview of the fetch API. Example making calls to JSON server. How to use DotEnv to hide secrets.
+keywords: HTTP, XHR, fetch, XMLHttpRequest
 generator: Typora
 author: Brian Bird
 ---
@@ -17,7 +17,7 @@ author: Brian Bird
 ## XHR Calls Revisited
 
 Let's review HTTP requests in general and XMLHttpRequsts (XHRs) in particular.  
-**Note**:  when we talk about "XHRs" we mean any HTTP request sent from code. It doesn't matter how the requests are sent; by the JavaScript `XMLHttpRequest` object, or the fetch API or some other way. XHR is not a different protocol from HTTP, it's just another way of sending it.
+**Note**:  when we talk about "XHRs" we mean any HTTP request sent from code. It doesn't matter how the requests are sent; by the  JavaScript `XMLHttpRequest` object, or the fetch API or some other way. XHR is not a different protocol from HTTP, it's just another way of sending it.
 
 ### Review of the HTTP Protocol
 
@@ -162,30 +162,12 @@ This web page has code that makes HTTP requests using both HTML and JavaScript.
 
 These are used in this week's lab.
 
-### JSON Server
+- json-server  
+  An NPM module that provides an API for storing data and getting data by id.
+- DotEnv. 
+  A .env file stores configuration information for the app. In particular it is used to store secrets, like API keys and login crednetials.
 
-Q: How is this different from the webpack dev server?
-
-### DotEnv
-
-GitDefender alert about web api key.
-
-Store api key in environment variables.
-
-#### Webpack Define Plugin
-
-The `webpack.config.js` file for this project has this in the `plugins` section:
-
-```json
-/* app uses global SERVER_URL rather than process.env.SERVER_URL */
-new webpack.DefinePlugin({
-  NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-  SERVER_URL: JSON.stringify(process.env.SERVER_URL),
-  GMAP_KEY: JSON.stringify(process.env.GMAP_KEY),
-})
-```
-
-This specifies that webpack's `DefinePlugin` will create global constants based on the values in the `.env` file. 
+We'll cover these two tools in detail in the next class.
 
 
 
