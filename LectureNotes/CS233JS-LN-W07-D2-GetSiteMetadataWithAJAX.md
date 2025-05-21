@@ -16,21 +16,21 @@ author: Brian Bird
 
 ## About Web Site Metadata
 
-The `head` element of a web page contains various types of data about the page and if the page is the home page, about the site. In this week's lab assignment, you will be enhancing the bookmarker app to get the site title, description and a preview image. One source of that information is the Open Graph protocol (see below). Another source are the `title` and various `meta` elements like `<meta name='description' content='a description of the site'`.
+The `head` element of a web page contains various types of data about the page and if the page is the home page of a site, about the site. In this week's lab assignment, you will be enhancing the bookmarker app to get the site title, description and a preview image. One source of that information is the Open Graph protocol (see below). Other sources are elements in the `head` like the `title` and various `meta` elements like `<meta name='description' content='a description of the site'`.
 
 ## Open Graph Protocol
 
 The Open Graph protocol is a set of `<meta>` tags added to a webpage. It was originally developed by Facebook and is now used by many social media platforms and web sites. Here’s a bit more detail:
 
-- **Purpose**: The Open Graph protocol standardizes the use of metadata within a webpage to represent the content of the page. This allows the page to be the same as other objects on social media, like photos or videos.
-- **Usage**: By adding Open Graph tags to the HTML of your webpage, you can determine what information is displayed when your webpage is shared on social media. This can include the title, description, image, and more.
-- **Syntax**: Open Graph tags are meta tags containing a property attribute name with the `og` prefix and a content attribute containing information. 
+- **Purpose**: The Open Graph protocol standardizes the use of metadata within a webpage to represent the content of the page. 
+- **Usage**: By adding Open Graph meta tags to the HTML of your webpage, you can determine what information is displayed when your webpage is shared on social media. This can include the title, description, image, and more.
+- **Syntax**: Open Graph meta tags contain a property attribute names with the `og` prefix and a content attribute containing information. 
   For example: `<meta property="og:title" content="my really awesome web site">`
-- **Requirement**: At a minimum, you should include basic Open Graph tags like `og:title`, `og:type`, `og:image`, and `og:url` in your webpage’s HTML for effective previews on social media.
+- **Requirement**: At a minimum, you should include basic Open Graph tags like `og:title`, `og:type`, `og:image`, and `og:url` in your webpage for effective previews on social media.
 
 #### Example Open Graph HTML Meta Elements
 
-These are fromt he [Wikipedia](https://wikipedia.org) head element
+These are from the [Wikipedia](https://wikipedia.org) `head` element
 
 ```html
 <meta property="og:title" content="Wikipedia, the free encyclopedia">
@@ -49,7 +49,7 @@ Linkpreview is a company that offers a *web API* (aka *web service*) for getting
 
 #### JavaScript Code
 
-This code will call the linkpreview API to get the Open Graph data for freeCodeCamp,.org using the fetch function. 
+This code will call the linkpreview API to get the Open Graph data for [freeCodeCamp](https://freecodecamp.org) using the fetch function. 
 
 You can run this code in a browser console.
 

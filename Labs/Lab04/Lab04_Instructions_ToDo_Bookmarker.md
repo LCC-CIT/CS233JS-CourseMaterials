@@ -28,21 +28,6 @@ Complete the ToDoList application described in the screencasts. The html and css
 
 Complete the BookMarker application as described in the comments in the starting files for the application. Test and debug your application.
 
-Note: Here is a version of the `createMeme` method that uses a different strategy for resizing the images:
-```javascript
-createMeme() {
-  // Clear the previous image from the page
-  this.$context.clearRect(0, 0, this.$canvas.width, 
-                                  this.$canvas.height);
-  // Calculate a canvas height to fit the aspect ratio of the image
-  const scaleFactor = this.$canvas.width / this.$image.width;
-  this.$canvas.height = this.$image.height * scaleFactor;
-
-  // Draw the image and set it's size to match the canvas.
-  this.$context.drawImage(this.$image, 0, 0, this.$canvas.width,
-                                              this.$canvas.height); 
-```
-
 ## Submission
 
 ### Beta Version and Code Review

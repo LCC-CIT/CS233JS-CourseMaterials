@@ -16,6 +16,8 @@ author: Brian Bird
 
 ## .env File
 
+Have you seen GitDefender alerts about web api keys in your source code? This is a solution to that problem.
+
 A .env file stores configuration information for the app. 
 
 - Why shouldn’t configuration information like the api key for google 
@@ -70,7 +72,7 @@ import validateRegistrationForm from './services/formValidation/validateRegistra
 
 ### json-server
 
-The NPM module, json-server,  allows storing data and getting data by id. json-server is frequently used to “mock” a data store web api during the development process. Some of you may want to use it for your term project.
+The NPM module, json-server, allows storing data and getting data by id. json-server is frequently used to “mock” a data store web api during the development process. Some of you may want to use it for your term project.
 
 For lab 7, production version, this service is running at  http://citweb.lanecc.net:5000/participants
 
