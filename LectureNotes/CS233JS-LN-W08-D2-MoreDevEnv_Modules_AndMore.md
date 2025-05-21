@@ -1,7 +1,8 @@
 ---
+
 title: Web API
-description: TBD
-keywords: TBD
+description: Example of making calls to JSON server. How to use DotEnv to hide secrets.
+keywords: .env, json-server
 generator: Typora
 author: Brian Bird
 ---
@@ -41,11 +42,13 @@ AMAP_KEY=PUT_YOUR_AZURE_API_KEY_HERE
 
 ### Making the .env settings available in your code
 
-- via `processx.env`  
-  The dotenv module gets added to webpack.config.js by a `require` statement:
+- via `process.env`  
+  `process.env` is a global object in Node.js where the environment variables for the current process can be stored.
+  
+  The `dotenv` module gets added to webpack.config.js by the statement:
   `require('dotenv').config();`
   
-   When you build the project, dotenv loads all of the variables in the .env file and stores them in the`process.env` object for use when building the app. In your code you can also access them via `process.env`.
+   When you build the project, `dotenv` loads all of the variables in the .env file and stores them in the `process.env` object for use when building the app. In your code you can also access them via `process.env`.
   
 - Via global variables  
   In addition, you can use the webpack `DefinePlugin` to create global variables for the settings that were loaded from the .env file:  
@@ -63,22 +66,30 @@ These global variables can then be accessed anywhere in the source code of your 
 
 ## Modules
 
- ES6 module (import and export) syntax to make a function available in other js files:
+ You can use ES6 module (import and export) syntax to make a function available in other js files.
+
+This code is in src/services/validateRegistrationForm.js:
 
 ```javascript
 export default function validateRegistrationForm(formValues) { … } 
+```
+
+This code is in src/home.js:
+```javascript
 import validateRegistrationForm from './services/formValidation/validateRegistrationForm';
 ```
 
+You can review importing and exporting modules in the [week 6 lecture notes](CS233JS-LN-W06-D2-NodeDevToolSetup.html)
+
 ### json-server
 
-The NPM module, json-server, allows storing data and getting data by id. json-server is frequently used to “mock” a data store web api during the development process. Some of you may want to use it for your term project.
+The NPM module, `json-server`, allows storing data and getting data by id. `json-server` is frequently used to “mock” a data store web API during the development process. Some of you may want to use it for your term project.
 
 For lab 7, production version, this service is running at  http://citweb.lanecc.net:5000/participants
 
 ## Production vs. Development Builds
 
-Things that are or could be different about production builds in lab 7:
+Ways that production builds in lab 7 could be different from development builds:
 
 - CSS is extracted from JS files and bundled into separate CSS files.
 - Possible use: the local dev json-store could be used automatically instead of the one running on a web server.
