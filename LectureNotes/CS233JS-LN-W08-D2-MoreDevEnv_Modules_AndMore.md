@@ -42,27 +42,66 @@ AMAP_KEY=PUT_YOUR_AZURE_API_KEY_HERE
 
 ### Making the .env settings available in your code
 
-- via `process.env`  
-  `process.env` is a global object in Node.js where the environment variables for the current process can be stored.
-  
-  The `dotenv` module gets added to webpack.config.js by the statement:
-  `require('dotenv').config();`
-  
-   When you build the project, `dotenv` loads all of the variables in the .env file and stores them in the `process.env` object for use when building the app. In your code you can also access them via `process.env`.
-  
-- Via global variables  
-  In addition, you can use the webpack `DefinePlugin` to create global variables for the settings that were loaded from the .env file:  
+#### via `process.env`  
+`process.env` is a global object in Node.js where the environment variables for the current process can be stored.
 
-  ```javascript
-  new webpack.DefinePlugin({
-          NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-          SERVER_URL: JSON.stringify(process.env.SERVER_URL),
-          GMAP_KEY: JSON.stringify(process.env.GMAP_KEY),
-          AMAP_KEY: JSON.stringify(process.env.AMAP_KEY)
-        })
-  ```
+The `dotenv` module gets added to webpack.config.js by the statement:
+`require('dotenv').config();`
 
-These global variables can then be accessed anywhere in the source code of your project. This is how it is done in lab 7, the event app.
+ When you build the project, `dotenv` loads all of the variables in the .env file and stores them in the `process.env` object for use when building the app. In your code you can also access them via `process.env`.
+
+#### Via global variables  
+
+This is how it is done in lab 7, the event app.
+The webpack `DefinePlugin` is used to create global variables for the settings loaded from the .env file:  
+
+```javascript
+new webpack.DefinePlugin({
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+        SERVER_URL: JSON.stringify(process.env.SERVER_URL),
+        GMAP_KEY: JSON.stringify(process.env.GMAP_KEY),
+        AMAP_KEY: JSON.stringify(process.env.AMAP_KEY)
+      })
+```
+
+# Using Constants from DefinePlugin in Your Code
+
+The `webpack.DefinePlugin` in your config allows you to create global constants that can be used directly in your JavaScript code. In your webpack configuration, you've defined the following constants:
+
+- `NODE_ENV`
+- `SERVER_URL`
+- `GMAP_KEY`
+- `AMAP_KEY`
+
+## How to Use These Constants
+
+You can use these constants directly in your code without importing or requiring them. They work as global variables:
+
+```javascript
+// Example usage in any of your JS files
+console.log("Current environment:", NODE_ENV);
+
+// Using the server URL for API calls
+fetch(`${SERVER_URL}/api/data`)
+  .then(response => response.json())
+  .then(data => console.log(data));
+
+// Using API keys
+const mapOptions = {
+  apiKey: GMAP_KEY,
+  // other options...
+};
+
+// Using AMAP key
+const amapConfig = {
+  key: AMAP_KEY,
+  // other configuration...
+};
+```
+
+- When the app is built, Webpack replaces every occurrence of these variables with their actual values in the bundled output file.
+- If you change any values in your .env file, you'll need to restart your webpack dev server for the changes to take effect.
+- These global variables can then be accessed anywhere in the source code of your project. 
 
 ## Modules
 
