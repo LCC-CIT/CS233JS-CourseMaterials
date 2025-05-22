@@ -90,7 +90,7 @@ const amapConfig = {
 };
 ```
 
-- When the app is built, Webpack replaces every occurrence of these variables with their actual values in the bundled output file.
+- When the app is built, Webpack replaces every occurrence of these constants with their actual values in the bundled output file.
 - If you change any values in your .env file, you'll need to restart your webpack dev server for the changes to take effect.
 - These global variables can then be accessed anywhere in the source code of your project. 
 
