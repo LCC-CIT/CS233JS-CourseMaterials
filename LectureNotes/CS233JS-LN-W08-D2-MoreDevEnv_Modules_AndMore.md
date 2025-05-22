@@ -1,6 +1,6 @@
 ---
 
-title: Web API
+title: Store secrets in .env
 description: Example of making calls to JSON server. How to use DotEnv to hide secrets.
 keywords: .env, json-server
 generator: Typora
@@ -50,7 +50,7 @@ The `dotenv` module gets added to webpack.config.js by the statement:
 
  When you build the project, `dotenv` loads all of the variables in the .env file and stores them in the `process.env` object for use when building the app. In your code you can also access them via `process.env`.
 
-#### Via global variables  
+#### Via global constants  
 
 This is how it is done in lab 7, the event app.
 The webpack `DefinePlugin` is used to create global variables for the settings loaded from the .env file:  
@@ -64,18 +64,9 @@ new webpack.DefinePlugin({
       })
 ```
 
-# Using Constants from DefinePlugin in Your Code
+##### How to Use These Constants
 
-The `webpack.DefinePlugin` in your config allows you to create global constants that can be used directly in your JavaScript code. In your webpack configuration, you've defined the following constants:
-
-- `NODE_ENV`
-- `SERVER_URL`
-- `GMAP_KEY`
-- `AMAP_KEY`
-
-## How to Use These Constants
-
-You can use these constants directly in your code without importing or requiring them. They work as global variables:
+You can use these constants directly in your code without importing or requiring them. They work as global variables. Here are examples from several differnt files in lab 7:
 
 ```javascript
 // Example usage in any of your JS files
