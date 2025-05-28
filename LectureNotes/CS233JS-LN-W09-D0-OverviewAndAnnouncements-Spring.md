@@ -32,7 +32,7 @@ author: Brian Bird
 ## Announcements
 
 - **Taking the final quiz off-campus**.  If you live outside the Eugene/Springfield area and do not want to come to the LCC main campus to take the final, you need to <u>send an email this week</u> to online@lanecc.edu to arrange for your final to be proctored at a location near you. Please copy your instructor on the email.
-- **Library Study Jam next week.**  Details TBD
+- **Library Study Jam next week.**  The Library will be hosting a study jam on Tuesday, June 3rd from 3-5 PM. Free pizza, drinks, & therapy dogs! (edited)
 
 ### Summer and Fall Term Registration
 
