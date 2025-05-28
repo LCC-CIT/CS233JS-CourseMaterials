@@ -32,7 +32,7 @@ author: Brian Bird
 ## Announcements
 
 - **Taking the final quiz off-campus**.  If you live outside the Eugene/Springfield area and do not want to come to the LCC main campus to take the final, you need to <u>send an email this week</u> to online@lanecc.edu to arrange for your final to be proctored at a location near you. Please copy your instructor on the email.
-- **Library Study Jam next week.**  The Library will be hosting a study jam on Tuesday, June 3rd from 3-5 PM. Free pizza, drinks, & therapy dogs! (edited)
+- **Library Study Jam next week.**  The Library will be hosting a study jam on Tuesday, June 3rd from 3-5 PM. Free pizza, drinks, & therapy dogs!
 
 ### Summer and Fall Term Registration
 
@@ -116,7 +116,7 @@ This week, you're continuing your term project.
 
 ## Help Links
 
-- Drop-in office hours on [Zoom](https://lanecc.zoom.us/j/93494931394) and in person M&mdash;Th, 4:00 to 4:50,  
+- Drop-in office hours on [Zoom](https://lanecc.zoom.us/j/97305128975) and in person M&mdash;Th, 4:00 to 4:50,  
   or email birdb@lanecc.edu to meet at another time.
 
 - Tutors are available in the [CIT Computer Lab](https://www.lanecc.edu/programs-academics/academic-departments/business-technology-and-trades/computer-information-technology/cit-computer-lab), building 19, room 135, or [online](https://www.lanecc.edu/get-support/academic-support/academic-and-tutoring-services).
