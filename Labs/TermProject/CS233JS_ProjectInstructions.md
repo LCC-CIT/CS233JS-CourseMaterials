@@ -7,7 +7,7 @@
 
 Each of the sections below are for a different deliverable as described in the [Term Project Requirements](CS233JS_ProjectRequirements.html).
 
-## Proposal: Description + UI Sketch
+## 1. Proposal: Description + UI Sketch
 
 The objective of this first step in the project is to allow you to pick a topic and identify the functionality that you would like your application to provide.
 
@@ -25,7 +25,7 @@ The objective of this first step in the project is to allow you to pick a topic 
 - Share your document either formally or informally with at least one other student in class. Revise the document based on feedback that you think is relevant.
 - Upload the document you created in Moodle.
 
-## API Call Research + Documentation
+## 2. API Call Research + Documentation
 
 The objective of this step in the project is to allow you to gather detailed information about the API you'll be using in your project. This should also help you refine the functionality of your application.
 
@@ -41,7 +41,7 @@ The objective of this step in the project is to allow you to gather detailed inf
 - Share your document either formally or informally with your lab partner (or another student if your lab partner is not available). Revise the document based on feedback that you think is relevant.
 - Upload the document you created to Moodle.
 
-## Dev Environment + HTML & CSS
+## 3. Dev Environment + HTML & CSS
 
 The objective of this step in the  project is to allow you to implement a static version of the UI for your project in HTML and CSS. This should also help you refine the look and feel of your application.
 
@@ -67,7 +67,16 @@ The objective of this step in the  project is to allow you to implement a static
 - Share your document either formally or informally with at least one other  student in class. Revise the document based on feedback that you think  is relevant.
 - Upload the document you created in moodle.
 
-## Production Version
+## 4 Beta Version and Code Review
+
+- When your code is 75% complete, add your lab partner as a collaborator on your GitHub repository (if it is a private repository).
+- Let your lab partner know you are ready for a code review via a post to Discord.
+- After your lab partner has made you a collaborator on their repository, do a code review for them using the code review form provided on Moodle.
+- Give your lab partner a copy of the code review by posting it.
+
+- Submit a copy of the code review you did to the Moodle Code Review assignment.
+
+## 5 Production Version
 
 ### Finish the Project
 
@@ -82,7 +91,6 @@ The objective of this step in the project is to allow you to implement a first v
   
   - Complete the functions (or methods) one at a time, testing as you go. You may find it helpful to write an algorithm in pseudocode (or English) for any function that is complex. Some functions may be  complex enough to require you to divide the code up into several  "helper" functions.
   - Optional: Document your work as you complete each piece of functionality. You may have sections of your code that you'd like to continue to work on but choose to "set aside" because of time constraints. Your documentation will be essential for your self-evaluation.
-    *For 2024, this step is optional.*
   - Add, commit to git and push to GitHub as you complete each piece of functionality as well.
   
 - Take one or more screen shots of your application on your machine.

@@ -64,11 +64,11 @@ You can use either of these map APIs. the starter files have two versions of the
 
 ### Beta Version and Code Review
 
-- Post to the Beta Version forum
+- Share a Beta Version with a lab partner
   - When your code is 75% complete, add your lab partner as a collaborator on your GitHub repository.
-  - Make a post in the Beta forum on Moodle letting your lab partner know you are ready for a code review.
+  - Let your lab partner know you are ready for a code review via a post to your lab partner Discord channel.
   - After your lab partner has made you a collaborator on their repository, do a code review for them using the code review form provided on Moodle.
-  - Give your lab partner a copy of the code review by posting it in the forum.
+  - Give your lab partner a copy of the code review by posting it.
 - Submit your code reivew to Moodle
   - Submit a copy of the code review you did to the Moodle Code Review assignment.
 

@@ -105,14 +105,14 @@ This week, you're continuing your term project.
 - Look at the *sample API call research + documentation* on Moodle.
 - You will be making submissions for steps 2, 3 and 4 this week.
 
-| Week   | Project Step                                                 |
-| ------ | ------------------------------------------------------------ |
-| **8**  | Step 1: [Description + UI Sketch](../Labs/TermProject/CS233JS_ProjectInstructions.html#proposal-description--ui-mockup) |
-| **9**  | <mark>Step 2: [API Call Research + Documentation](../Labs/TermProject/CS233JS_ProjectInstructions.html#api-call-research--documentation)</mark> |
-|        | <mark>Step 3: [JavaScript Dev Environment + Static HTML & CSS](../Labs/TermProject/CS233JS_ProjectInstructions.html#dev-environment--html--css)</mark> |
-|        | <mark>Step 4: [Implementation](../Labs/TermProject/CS233JS_ProjectInstructions.html#production-version)<br />Beta Version</mark> |
-| **10** | Code Review                                                  |
-|        | Production Version                                           |
+| Week   | Project Step                                                 | Due      |
+| ------ | ------------------------------------------------------------ | -------- |
+| **8**  | Step 1: [Description + UI Sketch](../Labs/TermProject/CS233JS_ProjectInstructions.html#1-proposal-description--ui-mockup) | Tuesday  |
+| **9**  | <mark>Step 2: [API Call Research + Documentation](../Labs/TermProject/CS233JS_ProjectInstructions.html#2-api-call-research--documentation)</mark> | Tuesday  |
+|        | <mark>Step 3: [JavaScript Dev Environment + Static HTML & CSS](../Labs/TermProject/CS233JS_ProjectInstructions.html#3-dev-environment--html--css)</mark> | Thursday |
+|        | <mark>Step 4a: [Beta Version](../Labs/TermProject/CS233JS_ProjectInstructions.html#4-production-version)</mark> | Sunday   |
+| **10** | Step 4b: [Code Review](../Labs/TermProject/CS233JS_ProjectInstructions.html#4-production-version) | Tuesday  |
+|        | Step 5: [Production Version](../Labs/TermProject/CS233JS_ProjectInstructions.html#5-production-version) | Thursday |
 
 ## Help Links
 
