@@ -1,12 +1,13 @@
 <h1>Term Project Instructions</h1>
+**CS 233JS, Intermediate Programming: JavaScript**
 
-<h2>Table of Contents</h2>
+<h2>Contents</h2>
 
 [TOC]
 
 Each of the sections below are for a different deliverable as described in the [Term Project Requirements](CS233JS_ProjectRequirements.html).
 
-# Proposal: Description + UI Sketch
+## Proposal: Description + UI Sketch
 
 The objective of this first step in the project is to allow you to pick a topic and identify the functionality that you would like your application to provide.
 
@@ -18,13 +19,13 @@ The objective of this first step in the project is to allow you to pick a topic 
 - List the web API you plan to use and the other new JS technology introduced in this course (see the project requirements) that you will use in your project.
 - Create a diagram of the UI for the application. You may sketch the UI using paper and pencil or any of a number of UI diagramming tools. I often use [Balsalmiq](https://balsamiq.com/) with students and can provide you with a free student account if you're interested.
 
-## Submission
+### Submission
 
 - Create a document that includes each of the requirements listed above.
 - Share your document either formally or informally with at least one other student in class. Revise the document based on feedback that you think is relevant.
 - Upload the document you created in Moodle.
 
-# API Call Research + Documentation
+## API Call Research + Documentation
 
 The objective of this step in the project is to allow you to gather detailed information about the API you'll be using in your project. This should also help you refine the functionality of your application.
 
@@ -34,13 +35,13 @@ The objective of this step in the project is to allow you to gather detailed inf
 - Practice making the API call you'll make in code in your application. You may need to get an API key for the API. Document a sample URL for the API and any parameters that your application may need to modify.
 - Analyze the JSON results from the API call. Document the structure of the JSON object and identify any of the specific data that your application will need. Document the structure of the JSON response when an invalid API call is made too.
 
-## Submission
+### Submission
 
 - Create a word processing document that includes each of the requirements listed above.
 - Share your document either formally or informally with your lab partner (or another student if your lab partner is not available). Revise the document based on feedback that you think is relevant.
 - Upload the document you created to Moodle.
 
-# Dev Environment + HTML & CSS
+## Dev Environment + HTML & CSS
 
 The objective of this step in the  project is to allow you to implement a static version of the UI for your project in HTML and CSS. This should also help you refine the look and feel of your application.
 
@@ -60,15 +61,15 @@ The objective of this step in the  project is to allow you to implement a static
 - Take one or more screen shots of your application on your machine.
 - Push your HTML and CSS to your github repository.
 
-## Submission
+### Submission
 
 - Create a word processing document that includes one or more screen shots of  your application as well as the URL for your github repository.
 - Share your document either formally or informally with at least one other  student in class. Revise the document based on feedback that you think  is relevant.
 - Upload the document you created in moodle.
 
-# Production Version
+## Production Version
 
-## Finish the Project
+### Finish the Project
 
 The objective of this step in the project is to allow you to implement a first version of your application in JavaScript. 
 
@@ -87,14 +88,14 @@ The objective of this step in the project is to allow you to implement a first v
 - Take one or more screen shots of your application on your machine.
 - Create a production build of your application and upload the production build to citstudent.lanecc.net.
 
-## Do a Self-Evaluation
+### Do a Self-Evaluation
 
-  **Optional for 2024**
+  **Optional**  
 The objective of this step in the project is to allow you to reflect  on your progress as well as the process as you build your application. 
 
 Review the [Sample Project Self Evaluation](SampleProjectSelf-Evaluation.html).
 
-## Submission
+### Submission
 
 - Upload a document to Moodle that includes:
   -  One or more screen shots of your application running on your machine.
@@ -103,13 +104,13 @@ Review the [Sample Project Self Evaluation](SampleProjectSelf-Evaluation.html).
      -  The URL of the webpack dev server visible in a screen-shot of the app running in a browser.
   -  The URL for your GitHub repository.
   -  The URL for your production code running on [citstudent.lanecc.edu](citstudent.lanecc.edu).
-- Upload a document containing your self-evaluation (optional for 2024).
+- Upload a document containing your self-evaluation (optional).
 
 
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials written by Mari Good and revised by [Brian Bird](https://profbird.dev), in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials written by Mari Good and revised by [Brian Bird](https://profbird.dev), in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ---
 
