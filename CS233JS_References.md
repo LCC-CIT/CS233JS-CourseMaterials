@@ -8,7 +8,15 @@
 
 [toc]
 
-## Tutorials
+## Resources for this Course
+
+[Code Review Procedures]([https:/lcc-cit.github.io/CS233JS-CourseMaterials/Labs/CodeReviewProcedures.html)  
+
+[Coding Style and Best Practices]([https:/lcc-cit.github.io/CS233JS-CourseMaterials/Labs/CS233JS_StyleAndBestPractice.html)  
+
+[How to upload web sites to citstudent](https://lcc-cit.github.io/CIS195-CourseMaterials/Lessons/UploadingWebSites.html)
+
+## JavaScript Tutorials
 
 [W3Schools JavaScript Tutorial](https://www.w3schools.com/js/DEFAULT.asp) - One of the best places to learn the basics of JavaScript. Unfortunately, Warning: this site sometimes contains advertising that I (Brian) consider objectionable.
 
@@ -37,7 +45,7 @@
 
 
 
-## Git Book and Site
+## Git Book and Tutorials
 
 [Resources for Learning Git](http://try.github.io)—A collection of links to Git tutorials[
 Pro Git Book](https://git-scm.com/book/en/v2)—Free online Git tutorial and reference book
