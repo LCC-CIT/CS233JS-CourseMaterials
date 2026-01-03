@@ -1,0 +1,185 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../CS233JS_Lab03_Rubric.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../CS233JS_Lab03_Rubric.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72">
+
+<table border=0 cellpadding=0 cellspacing=0 width=654 style='border-collapse:
+ collapse;table-layout:fixed;width:490pt'>
+ <col width=243 style='mso-width-source:userset;mso-width-alt:7765;width:182pt'>
+ <col width=48 style='mso-width-source:userset;mso-width-alt:1536;width:36pt'>
+ <col width=304 style='mso-width-source:userset;mso-width-alt:9728;width:228pt'>
+ <col width=59 style='mso-width-source:userset;mso-width-alt:1877;width:44pt'>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 class=xl65 width=243 style='height:16.0pt;width:182pt'>Lab 3:
+  Dice Game</td>
+  <td width=48 style='width:36pt'></td>
+  <td width=304 style='width:228pt'></td>
+  <td width=59 style='width:44pt'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 class=xl71 style='height:16.0pt'>Requirements</td>
+  <td class=xl71>Points</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 class=xl70 style='height:16.0pt'>Functionality</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Roll dice</td>
+  <td align=right>3</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Move dice</td>
+  <td align=right>5</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Turn taking</td>
+  <td align=right>6</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Turn score</td>
+  <td align=right>6</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Rounds and round score</td>
+  <td align=right>6</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Show winner</td>
+  <td class=xl72 align=right>4</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Sub-total</td>
+  <td class=xl70 align=right>30</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 colspan=4 style='height:16.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 class=xl70 style='height:16.0pt'>Best Practices and Style</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Developer’s name, date in each file</td>
+  <td align=right>2</td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Separation of io from logic</td>
+  <td align=right>7</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Use of classes</td>
+  <td align=right>5</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Style and formatting</td>
+  <td class=xl72 align=right>4</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Sub-total</td>
+  <td class=xl70 align=right>18</td>
+  <td class=xl68 width=304 style='width:228pt'></td>
+  <td></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 colspan=4 style='height:16.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 class=xl70 style='height:16.0pt'>Code review</td>
+  <td class=xl70 align=right>2</td>
+  <td></td>
+  <td class=xl66></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl70 style='height:17.0pt'></td>
+  <td class=xl70></td>
+  <td></td>
+  <td class=xl66></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl70 style='height:17.0pt'>Total:</td>
+  <td class=xl73 align=right>50</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 colspan=4 style='height:16.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Group A: 10,000</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 class=xl76 style='height:16.0pt'>Group B: Ship, captain, crew</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 style='height:16.0pt'>Group C: Sevens</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=243 style='width:182pt'></td>
+  <td width=48 style='width:36pt'></td>
+  <td width=304 style='width:228pt'></td>
+  <td width=59 style='width:44pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

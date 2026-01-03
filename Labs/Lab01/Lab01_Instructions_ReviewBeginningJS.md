@@ -1,17 +1,41 @@
-<h1>Lab 1: Review of Beginning JavaScript</h1>
+<h1>Lab 1: JavaScript Review + Bootstrap Intro
+
+   
 
 [TOC]
 
-# Objectives
+## Objectives
 
 The objectives of this lab are:
 
-1. Review JavaScript syntax you learned in CS 133JS.
+1. Review what you learned in CS 133JS, Beginning JavaScript.
 2. Introduce you to Bootstrap, a CSS framework.
 
 
 
-# Instructions
+## Part 1: W3 Schools Quizzes and Tutorials
+
+If you don't already have an account on W3 Schools (it's free), create one and sign in so you can track your progress.
+
+	### JavaScript Review
+
+Take the [W3 Schools JavaScript quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS). There are 25 questions. For any questions you have difficulty answering or answer incorrectly, do the associated tutorial.
+
+You will submit a screen-shot showing your final score after doing any tutorials and retaking the quiz.
+
+### Bootstrap 5 Intro
+
+Do the first three [W3 Schools Bootstrap 5 Tutorials](https://www.w3schools.com/bootstrap5/index.php):
+
+- Get Started
+- Containers
+- Grid Basic
+
+Be sure to sign in so that you can track your progress and submit a screen shot showing you completed the first three tutorials.
+
+
+
+## Part 2: Web App
 
 There are a few things Mari did differently than the way I would like you to do things:
 
@@ -22,10 +46,10 @@ There are a few things Mari did differently than the way I would like you to do 
 - Don't put multiple `return` statements in a function, for example in the branches of an if-else statement.
 - In the Stopwatch app, don't write the `pad` function so that it sometimes returns a *string* and sometimes a *number*. The best practice is for a function to always return the same data type.
 
-## Web App 1: Stopwatch - Version 1
+### Web App 1: Stopwatch - Version 1
 
-- Download the `stopWatchStart.zip` file and unzip it. The `indexStart.js` file has comments in it to guide you through the process of completing the code. 
-- Reaname the files by removing the word "start" from each file. In `index.html`, change the `src` attribute in the `script` element to use the new file name. 
+- Download the [stopWatchStart.zip](https://drive.google.com/drive/folders/156k99ByO2jnzu1kkTWECPCTWIex6RT8g?usp=sharing) file and unzip it. The `indexStart.js` file has comments in it to guide you through the process of completing the code. 
+- Rename the files by removing the word "start" from each file. In `index.html`, change the `src` attribute in the `script` element to use the new file name. 
   Complete the code in each of the starting files:
   - `unstyledIndexStart.html`, `indexStart.html`
     You can use either one of these files. 
@@ -43,45 +67,34 @@ There are a few things Mari did differently than the way I would like you to do 
 - Test and debug your application.
 - You can try out a completed version of the web app here: [https://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/stopWatch/](http://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/stopWatch/)
 
-## Web App 2: Concentration - Version 1
 
-- Download the staring file, `concentrationStart.zip`.
-- Add JavaScript code to implement the concentration (aka memory) game functionality as you might have done in CS 133JS.  
-- Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking concentration board on the page. You can add as much or as little as you wish.
-- Test and debug your application.
-- You can try out a completed version of the web app here: 
-  [https://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/concentration/](http://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/concentration/)
 
-## Web App 3: TicTacToe - Version 1
+### Code Review
 
-- Download the staring file, `tttStart.zip`.
-- Add JavaScript code to implement the tic tac toe game functionality as you might have done in CS 133JS.
-- Add Bootstrap styles (as well as custom styles) to the starting files to create an attractive looking tic tac toe board on the page. Again, add as much or little as you wish.
-- Test and debug your application.
-- You can try out a completed version of the web app here: 
-  [https://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/ticTacToe/](http://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/ticTacToe/)
+Do a review of your own code for the stopwatch app using the code review form.
 
 
 
-# Code Review
+## Submission
 
-Do a review of your own code using the code review form posted on Moodle.
+### Publish to the CIT web server  
+Upload your completed web apps to [citstudent.lanecc.edu](http://citstudent.lanecc.edu).  Test the app on the web server to verify that it still works.  
 
+- If you need to refresh your memory on how to use FileZilla, here are the instructions from the web authoring class: [How to upload web sites to citstudent](https://lcc-cit.github.io/CIS195-CourseMaterials/Lessons/UploadingWebSites.html).
 
+### Upload to Moodle
 
-# Submission
+#### Moodle Lab 1 Code review assignment: 
 
-## Publish to the CIT web server  
-Upload your completed web apps to [citstudent.lanecc.edu](http://citstudent.lanecc.edu).  Test all 3 apps on the web server.  
+- Upload your completed code review form. This week you are just reviewing your own code.
 
-- If you need to refresh your memory on how to do this, here are the instructions from the web authoring class: [How to upload web sites to citstudent](https://lcc-cit.github.io/CIS195-CourseMaterials/Lessons/UploadingWebSites.html).
+#### Moodle Lab 1 Production Version assignment:
 
-## Upload to Moodle
+- Upload a screen-shot of your final score on the JavaScript Quiz.
+- Upload a screen-shot of your Bootstrap tutorial progress.
+- Put the citstudent URLs for your web app in the online text.
 
-- Moodle Lab 1 Code review assignment: upload your completed code review form. This week you are just reviewing your own code.
-- Moodle Lab 1 Production Version assignment:  put the citstudent URLs for each web app in the online text.
-
-# Assessment
+## Assessment
 
 Here is a link to [the grading rubric](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab01/CS233JS_Lab01_Rubric.htm).
 
@@ -89,6 +102,6 @@ Here is a link to [the grading rubric](https://lcc-cit.github.io/CS233JS-CourseM
 
 ----
 
-Adapted by Brian Bird in spring 2024 from lab instructions written by Mari Good for winter 2024, revised by Brian Bird spring <time>2025</time>.
+Adapted by Brian Bird in spring 2024 from lab instructions written by Mari Good for winter 2024, revised by Brian Bird winter <time>2026</time>.
 
 ---
