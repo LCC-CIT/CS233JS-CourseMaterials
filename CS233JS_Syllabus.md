@@ -213,8 +213,8 @@ View [academic calendars](https://www.lanecc.edu/programs-academics/registration
 
 - **Monday:** Start assigned reading/videos and participate in class.
 - **Tuesday:** Complete code review of last week's lab.
-- **Wednesday:** Participate in class, or watch videos.
-- **Thursday:** Quiz deadline and lab production submission.
+- **Wednesday:** Participate in class, or watch videos and quiz deadline.
+- **Thursday:** Lab production version submission.
 - **Sunday:** Post beta version of the current week's lab.
 
 ### Tentative Course Schedule
