@@ -51,9 +51,9 @@ The first week will be an exception, I will do more teaching in class, to get yo
 
 #### For online students
 
-The main difference from last term is that you will be watching short tutorial videos instead of the long class lecture recordings I made for my previous online classes. You should still watch the class Zoom recordings, for announcements and additional guidance.
+The main difference from last term is that you will be watching short tutorial videos instead of the long class lecture recordings I made for my previous online classes. You should still watch the class Zoom recordings, for short teachings, announcements and additional guidance.
 
-You can still join the class live via Zoom so that you can ask questions and get help while you are working on your lab assignments. And, you are welcome to come to class in person if your schedule allows it.
+You can always join the class live via Zoom so that you can ask questions and get help while you are working on your lab assignments. And, you are welcome to come to class in person if your schedule allows it.
 
 # Course Tour
 
@@ -63,7 +63,7 @@ You can still join the class live via Zoom so that you can ask questions and get
   - Purpose of quizzes isn’t testing, it’s learning and accountability.
 - Lab assignments
   
-  - For the first problem in each assignment, Mari will walk you through the solution. For the rest of the problems, you will solve them partially, or completely on your own.
+  - For the first problem in each assignment, Mari will walk you through the solution. For the rest of the problems, they will already be partially, done and some you will solve completely on your own.
   
   - You will upload your solutions (web apps) to [citstudent](http://citstudent.lanecc.edu), and post the URL and a code review on [Moodle](https://classes.lanecc.edu).
 - Code reviews
@@ -73,7 +73,7 @@ You can still join the class live via Zoom so that you can ask questions and get
     - You learn from seeing how other people solve problems.
     - They are used by development teams in the real world.
   
-  - You will be assigned the same lab partners later this week. Let me know if there is someone you would like for a lab partner.
+  - You will be assigned lab partners later this week. Let me know if there is someone you would like for a lab partner.
   - Look at the [code review guide](../Labs/CodeReviewProcedures.html).
   
 
@@ -81,6 +81,6 @@ You can still join the class live via Zoom so that you can ask questions and get
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
