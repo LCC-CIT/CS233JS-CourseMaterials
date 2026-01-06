@@ -4,7 +4,6 @@
 
 <h2>Contents</h2>
 
-
 [TOC]
 
 ## Objectives
@@ -20,7 +19,7 @@ The objectives of this lab are:
 
 If you don't already have an account on W3 Schools (it's free), create one and sign in so you can track your progress.
 
-	### JavaScript Review
+### JavaScript Review
 
 Take the [W3 Schools JavaScript quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS). There are 25 questions. For any questions you have difficulty answering or answer incorrectly, do the associated tutorial.
 
