@@ -76,7 +76,7 @@ You will publish your programming lab assignments to the same web server, [citst
 
 #### Course Materials
 
-All of the instructor's course materials including lecture notes, lab assignments, etc., are stored in a [repository on GitHub](https://github.com/LCC-CIT/CS133JS-CourseMaterials) as well as being linked on the Moodle course page.
+All of the instructor's course materials including lecture notes, lab assignments, etc., are stored in a [repository on GitHub](https://github.com/LCC-CIT/CS233JS-CourseMaterials) as well as being linked on the Moodle course page.
 
 ### Software
 
