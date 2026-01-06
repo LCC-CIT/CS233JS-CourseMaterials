@@ -1,6 +1,9 @@
-<h1>Lab 1: JavaScript Review + Bootstrap Intro
+<h1>Lab 1: JavaScript Review + Bootstrap Intro</h1>
 
-   
+**CS 233JS, Intermediate Programming: JavaScript**
+
+<h2>Contents</h2>
+
 
 [TOC]
 
