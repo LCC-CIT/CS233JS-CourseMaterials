@@ -25,16 +25,16 @@ author: Brian Bird
 
 [TOC]
 
-# Introduction
+## Introduction
 
 Bootstrap is an open source CSS and JavaScript library for layout and styling of web pages. It’s *responsive* and *mobile-first* and is one of the the most popular front-end libraries. 
 
 - *Responsive* web design that the web page will adapt to the screen size, platform and orientation of the user's browser.
 - *Mobile-first* means designing a web site starting with the mobile version, which is then adapted to larger screens.
 
-# Using Bootstrap
+## Using Bootstrap
 
-## Add it to a Web Page
+### Add it to a Web Page
 
 In the `<head>` element of the web page:
 
@@ -55,7 +55,7 @@ In the `<head>` element of the web page:
 - `name="viewport"` specifies that the meta tag is setting the *viewport* properties. The *viewport* is the visible area of a web page on a device's screen.
 - `content="width=device-width, initial-scale=1"` sets the viewport to match the device's width and sets the initial zoom level to 1.
 
-## Using it in a Web Page
+### Using it in a Web Page
 
 The Bootstrap library contains style sheets with a huge number of CSS classes. The main way you control styling and layout of your web pages is by adding these classes to the elements of your page. 
 
@@ -80,13 +80,13 @@ Once you have a container, you can use other classes for styling. For example, t
 <div class="h1 text-center bg-light rounded">
 ```
 
-## Layout
+### Layout
 
-The most important layout feature in Bootstrap is the Grid. This will be covered in CS 295N.
+The most important layout feature in Bootstrap is the Grid. This will be covered next week.
 
 ## Exercise
 
-Create a new web page and add the code to load the Bootstrap libraries or edit the examples on the Bootstrap website on StackBlitz. Look at the documentation on the Bootstrap site and pick some style classes to experiment with. Some good ones to start with are
+Create a new web page and add the code to load the Bootstrap libraries or edit the examples on the [Bootstrap website on StackBlitz](https://stackblitz.com/edit/stackblitz-starters-apdfhfva?description=A%20simple%20Boostrap%20starter&file=index.html&title=Bootstrap%205%20Starter). Look at the documentation on the Bootstrap site and pick some style classes to experiment with. Some good ones to start with are
 
 - Typography: headings, alignment
 - Tables
@@ -101,6 +101,6 @@ Create a new web page and add the code to load the Bootstrap libraries or edit t
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, revised in 2025, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
