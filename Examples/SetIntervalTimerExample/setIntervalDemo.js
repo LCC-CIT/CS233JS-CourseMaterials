@@ -1,4 +1,5 @@
 /* setInterval Demo - Simple Countdown Timer
+   Written by Brian Bird using GitHub Copilot, 1/7/25
    This demo shows the basics of setInterval() and clearInterval().
    
    Key Concepts:
@@ -8,11 +9,12 @@
 */
 
 let timeLeft = 10;  // Start at 10 seconds
-let intervalId = null;
+let intervalId = null;  // This will be an ID number for the instance of setInterval() that is running
 
-window.onload = init;
+window.onload = init;   // Call init when the web page has loaded.
 
 function init() {
+    // Assign event handlers for the buttons.
     document.getElementById("startBtn").onclick = start;
     document.getElementById("stopBtn").onclick = stop;
     updateDisplay();
