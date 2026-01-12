@@ -219,16 +219,16 @@ View [academic calendars](https://www.lanecc.edu/programs-academics/registration
 
 ### Tentative Course Schedule
 
-| **Week**         | **Topic**                       | **Lab**                                                     | **Assessments** |
-| ---------------- | ------------------------------- | ----------------------------------------------------------- | --------------- |
-| **1**<br />1/5   | JavaScript Review and Bootstrap | Lab 1 Review: stopwatch, concentration & tic-tac-toe ver. 1 | Quiz 1, Lab 1   |
-| **2**<br />1/12  | ES6 Features and Git            | Lab 2 stopwatch, concentration & tic-tac-toe ver. 2         | Quiz 2, Lab 1   |
-| **3**<br />1/19  | Classes and Composition         | Lab 3 Dice Game                                             | Quiz 3, Lab 2   |
-| **4**<br />1/26  | Node.js, NPM, Webpack           | Lab 4 Webpack                                               | Quiz 4, Lab 3   |
-| **5**<br />2/2   | Midterm Quiz                    | No lab assignment                                           | Midterm quiz    |
-| **6**<br />2/9   | Canvas & Flexbox                | Lab 5 Canvas                                                | Quiz 5, Lab 5   |
-| **7**<br />2/16  | AJAX & Fetch API                | Lab 6 AJAX                                                  | Quiz 6, Lab 5   |
-| **8**<br />2/23  | API Calls & Charts              | Lab 7 API calls                                             | Quiz 7, Lab 6   |
-| **9**<br />3/2   | Term Project                    |                                                             | Lab 7           |
-| **10**<br />3/9  | Review                          |                                                             | Final Project   |
-| **11**<br />3/16 | Finals week                     |                                                             | Final quiz      |
+| **Week**         | **Topic**                       | **Lab**                                                     | **Quiz**                           |
+| ---------------- | ------------------------------- | ----------------------------------------------------------- | ---------------------------------- |
+| **1**<br />1/5   | JavaScript Review and Bootstrap | Lab 1 Review: stopwatch, concentration & tic-tac-toe ver. 1 | Quiz 1, JS Review                  |
+| **2**<br />1/12  | ES6 Features, Classes and Git   | Lab 2 concentration & tic-tac-toe ver. 1                    | Quiz 2, Bootstrap                  |
+| **3**<br />1/19  | ES6 Features and Git            | Lab 3  stopwatch, concentration & tic-tac-toe ver. 2        | 2Quiz 3, ES 6 features and classes |
+| **4**<br />1/26  | Node.js, NPM, Webpack           | Lab 4 Webpack                                               | Quiz 4                             |
+| **5**<br />2/2   | Midterm Quiz                    | No lab assignment                                           | Midterm quiz                       |
+| **6**<br />2/9   | Canvas & Flexbox                | Lab 5 Canvas                                                | Quiz 5                             |
+| **7**<br />2/16  | AJAX & Fetch API                | Lab 6 AJAX                                                  | Quiz 6                             |
+| **8**<br />2/23  | API Calls & Charts              | Lab 7 API calls                                             | Quiz 7                             |
+| **9**<br />3/2   | Term Project                    |                                                             | Lab 7                              |
+| **10**<br />3/9  | Review                          |                                                             | Final Project                      |
+| **11**<br />3/16 | Finals week                     |                                                             | Final quiz                         |
