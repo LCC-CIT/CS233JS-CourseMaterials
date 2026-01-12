@@ -44,7 +44,6 @@ There are a few things Mari did differently than the way I would like you to do 
 - She hasn't introduced you to`let` and`const` yet, but you have learned about these in CS 133JS, so declare variables using `let` instead of `var`.
   - Use `const` to declare numbers that are used in the code:
     - In the stopwatch app, use a `const` for 60 (used twice).
-    - In the concentration app, use a `const` for 20 (used once).
 - Don't put multiple `return` statements in a function, for example in the branches of an if-else statement.
 - In the Stopwatch app, don't write the `pad` function so that it sometimes returns a *string* and sometimes a *number*. The best practice is for a function to always return the same data type.
 
