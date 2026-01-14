@@ -30,16 +30,35 @@ author: Brian Bird
 ## Introduction
 
 - Be sure to <u>watch</u> and/or <u>read</u> all the required materials on Moodle.  
-  - For online students, this includes the class recordings which will be available shortly after class finishes via the <u>Zoom recordings widget</u> which is near the top of the Moodle page.  
-    <img src="Images\ZoomWidgetOnMoodle.png" alt="ZoomWidgetOnMoodle" style="zoom:50%;" />
-  - For everyone, this includes the pre-recorded videos by Brian and/or Mari, the reading assignment and the lab instructions.
+  - For **online students**, this includes the class recordings which will be available shortly after class finishes via the <u>Zoom recordings widget</u> which is near the top of the Moodle page.  
+    <img src="Images\ZoomWidgetOnMoodle.png" alt="ZoomWidgetOnMoodle" style="zoom:90%;" />
+    
+  - For **everyone**, this includes the pre-recorded videos by Brian and/or Mari, the reading assignment and the lab instructions.  
+    <img src="Images/Reading.png" alt="Reading" style="zoom:40%;" />  
+  
+    <img src="Images/LectureVideosAndNotes.png" alt="LectureVideosAndNotes" style="zoom:40%;" />  
+  
+    <img src="Images/LabInstructions.png" alt="LabInstructions" style="zoom:50%;" />  
   
 
 ## Announcements
 
-- **Web server credentials** 
+- **Web server credentials**  
+   If anyone needs new user login credentials for citstudent, let me know.
+   
+- **Global Game Jam!** <img src="/Users/birdb/Projects/CS233JS-Repos/CS233JS-CourseMaterials/LectureNotes/Images/GlobalGameJamLogo.svg" alt="GlobalGameJamLogo" style="zoom:67%;" />  
+   *Get together and create games in one weekend with devs in over 800 locations worldwide.*  
+   LCC building 19, room 135 (CIT lab).  Food provided!
+   
+   - Friday 1/30, 2:00pm to 9:00pm
+   - Saturday 1/31, 9:00am to 9:00pm
+   - Sunday 2/1, 9:00am to 7:00pm
+   
+   [Register here](https://globalgamejam.org/user/login).
+   
+- Next Monday, 1/19 is a holiday, Martin Luther King Jr. day. LCC will be closed. There will not be a class.
 
-   If anyone needs new user login credentials for citstudent, let me know. 
+   
 
 ## This Week: More JS Review and Bootstrap
 
@@ -88,7 +107,7 @@ There are tutors available in the CIT Lab, building 19, room 135, or [online](ht
 
 #### Discord
 
-Ask questions in the class Discussion channel. I'll answer questions pretty quickly on weekdays, often on Saturday and sometimes on Sunday. Other students will often help you too!
+Ask questions in the Discord discussion channel. I'll answer questions pretty quickly on weekdays, often on Saturday and sometimes even on Sunday. Other students will often help you too!
 
 
 
