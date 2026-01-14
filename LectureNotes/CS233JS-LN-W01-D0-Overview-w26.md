@@ -29,8 +29,11 @@ author: Brian Bird
 
 ## Introduction
 
-- Be sure to watch or read <u>all the required materials</u> on Moodle.  
-  For online students, this includes the class recordings which will be available shortly after class is over via the <u>Zoom recordings</u> widget which is near the top of the Moodle page.
+- Be sure to <u>watch</u> and/or <u>read</u> all the required materials on Moodle.  
+  - For online students, this includes the class recordings which will be available shortly after class finishes via the <u>Zoom recordings widget</u> which is near the top of the Moodle page.  
+    <img src="Images\ZoomWidgetOnMoodle.png" alt="ZoomWidgetOnMoodle" style="zoom:50%;" />
+  - For everyone, this includes the pre-recorded videos by Brian and/or Mari, the reading assignment and the lab instructions.
+  
 
 ## Announcements
 
