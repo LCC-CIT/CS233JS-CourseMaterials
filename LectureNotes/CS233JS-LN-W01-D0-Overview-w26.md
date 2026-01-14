@@ -46,7 +46,7 @@ author: Brian Bird
 ### Objectives
 
 - To review your understanding of JavaScript from CS 133JS.
-- To continue learing to use of Bootstrap for styling web pages.
+- To continue learning to use of Bootstrap for styling web pages.
 
 ### Due dates
 
