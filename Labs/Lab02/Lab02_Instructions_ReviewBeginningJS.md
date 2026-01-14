@@ -30,7 +30,7 @@ Be sure to sign in so that you can track your progress and submit a screen shot 
 - Navs
 - Navbar
 
-Take the [W3 Schools Bootstrap 5 quiz]([Bootstrap 5 Quiz](https://www.w3schools.com/bootstrap5/bootstrap_quiz.php)). There are 25 questions. For any questions you have difficulty answering or answer incorrectly, do or review the associated tutorial.
+Take the [W3 Schools Bootstrap 5 quiz](https://www.w3schools.com/bootstrap5/bootstrap_quiz.php). There are 25 questions. For any questions you have difficulty answering or answer incorrectly, do or review the associated tutorial.
 
 You will submit a screen-shot showing your final score after doing any tutorials and retaking the quiz. A score of 22 or higher will be considered 100% for this part of the lab assignment.
 
