@@ -105,22 +105,22 @@ console.log(pigeon.fly());
 #### Why use classes?
 
 - To make code easier to reuse.
-- To group together methods and variables that are related to eachother so that code is easier to understand.
+- To group together methods and variables that are related to each other so that code is easier to understand.
 - To make refactoring easier by reducing dependencies.
 
 #### How are classes and objects related?
 
-- A class is like a template or a cookie cutter it is used to make objects.
-- Objects (also called instances of a class) are what get executed. Many objects can be made from one class.  
-  Exception: next week you will learn about static methods and variables which can be used directly in a class wihtout making an object.
+- A *class* is like a template or a cookie cutter it is used to make *objects*.
+- Objects (also called instances of a class) are what get executed (run) You can't execute the code in a class. Many objects can be made from one class.  
+  Exception: next week you will learn about *static* methods which can be executed in a class wihtout making an object.
 
 ### What does `this` refer to?
 
 JavaScript has something called a *lexical this*. It's pretty diffeent from most other programming languages. The `this` keyword means different things in different contexts:
 
-- In class, it will refer to the object that is created by the class. The significance of it relating to the object and not the class is that there can be many objects made from a class.
-- In a method (or function) that is an event handler, it refers to the HTML element that generated the event. For example a `<div>` or a `<button>` 
-- In a method (or function) that is used a callback, it refers to the object that called it. For example, in the stopwatch app, you pass a callback function, `incrementTimer`,  to the `setInterval` function. Inside `incrementTimer`, `this` refers to the browser's window object since `setInterval` is a global function.
+- In <u>class</u>, it will refer to the object that is created by the class. The significance of it relating to the object and not the class is that there can be many objects made from a class.
+- In a method (or function) that is an <u>event handler</u>, it refers to the HTML element that generated the event. For example a `<div>` or a `<button>` 
+- In a method (or function) that is used a <u>callback</u>, it refers to the object that called it. For example, in the stopwatch app, you pass a callback function, `incrementTimer`,  to the `setInterval` function. Inside `incrementTimer`, `this` refers to the browser's window object since `setInterval` is a global function.
 
 ### When do you need to use `bind`?
 
@@ -133,7 +133,7 @@ this.startButton.onclick = this.startTimer.bind(this);
 ### Classes that Contain Instances of Other Classes
 
 - An *object* is also called an *instance* of a class.
-- When a class contains an instance of a class, this is called I.
+- When a class contains an instance of another class, this is called *aggregation*, this is sometimes called the "has a" relationship.
 - It is the way to build an application using multiple objects where each object represents a "thing" in the application.
 - Classes should be "highly coherent" and "loosely coupled".
 
@@ -162,7 +162,7 @@ console.log(myLoft);
 
 ```
 
-
+In this example, the `Loft` *has* an array of `Pigeon` objects. This is *aggregation*.
 
 ### Separation of Concerns
 
@@ -172,17 +172,17 @@ In order to make your code easy to test, debug and update (add features), it is 
 
 This game can be refactored to have these classes:
 
-- Card
-- Board
-- Game
+- `Card`
+- `Board`
+- `Game`
 
-The Board class will have Card objects in it and the Game class will have a Board object in it.
+The `Board` class will have `Card `objects in it and the `Game` class will have a Board object in it.
 
 In order to follow the principle of separation of concerns, we can separate out the i/o (everything that has to do with the html page) from the processing. In order to do this:
 
-- The Card class will just work with letters that represent suit and value rather than directly using card images.
-- The Board class won't have any event listeners or any code that interacts with the html page in it.
-- The Game class will be the only class that interacts with the html page.
+- The `Card` class will just work with variables holding letters or numbers that represent suit and value rather than directly using card image file names.
+- The `Board`class won't have any event listeners or any code that interacts with the html page in it.
+- The `Game` class will be the only class that interacts with the html page.
 
 
 
@@ -205,6 +205,6 @@ In order to follow the principle of separation of concerns, we can separate out 
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised spring of <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised spring of <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
