@@ -9,17 +9,17 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-<h1>Week 3 Overview for Spring 2025</h1>
+<h1>Week 3 Overview for winter 2026</h1>
 
-<h2>April 14 through April 20</h2>
+<h2>January 19 through 25</h2>
 
 **CS233JS Intermediate Programming: JavaScript**
 
 | Topics by Week                                       |                                                        |
 | ---------------------------------------------------- | ------------------------------------------------------ |
 | 1. Intro to Course, Bootstrap and JavaScript Review  | 6. HTML5 Canvas, CSS Flexbox                           |
-| 2. ES6 Classes and Git                               | 7. AJAX, ES6 promises, fetch API                       |
-| <mark>3. More about Classes</mark>                   | 8. More on API calls. using graphs and charts, map API |
+| 2. Bootstrap and JavaScript Review (continued)       | 7. AJAX, Async/Await                                   |
+| <mark>3. ES6 classes and Git</mark>                  | 8. More on API calls. using graphs and charts, map API |
 | 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage | 9. Term Project                                        |
 | 5. Review and Midterm Quiz                           | 10. Review                                             |
 | 11. Final Quiz                                       |                                                        |
@@ -39,7 +39,7 @@ author: Brian Bird
 - Understand how using classes and Object Oriented Programming (OOP) can make your code better. 
 - Get a more complete understanding of *encapsulation*. 
 - Learn how to read Unified Modeling Language (UML) class diagrams.
-- Apply OOP concepts to designing and building a simple web app.
+- Apply OOP concepts to designing and building simple web apps.
 
 ### What to Do
 
