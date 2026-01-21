@@ -46,7 +46,7 @@ author: Brian Bird
 - **Web server credentials**  
    If anyone needs new user login credentials for citstudent, let me know.
    
-- **Global Game Jam!** <img src="/Users/birdb/Projects/CS233JS-Repos/CS233JS-CourseMaterials/LectureNotes/Images/GlobalGameJamLogo.svg" alt="GlobalGameJamLogo" style="zoom:67%;" />  
+- **Global Game Jam!** <img src="Images/GlobalGameJamLogo.svg" alt="GlobalGameJamLogo" style="zoom:67%;" />  
    *Get together and create games in one weekend with devs in over 800 locations worldwide.*  
    LCC building 19, room 135 (CIT lab).  Food provided!
    
