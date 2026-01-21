@@ -8,24 +8,13 @@ author: Brian Bird
 
 <h1>New JS Features Used in Lab Apps</h1>
 
-**CS233JS Intermediate Programming: JavaScript**
-
-| Topics by Week                                       |                                                     |
-| ---------------------------------------------------- | --------------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review  | 6. HTML5 Canvas, CSS Flexbox                        |
-| 2. <mark>ES6 Classes and Git</mark>                  | 7. AJAX, ES6 promises, fetch API                    |
-| 3. More about Classes                                | 8. Making API calls, graphs and charts, Google maps |
-| 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage | 9. Term Project                                     |
-| 5. Midterm Review and Quiz                           | 10. Review                                          |
-| 11. Final Quiz                                       |                                                     |
-
-
+**CS233JS Intermediate Programming: JavaScript
 
 <h2>Table of Contents</h2>
 
 [TOC]
 
-# Introduction
+## Introduction
 
 This week you are refactoring the three web apps from last week to use classes as well as some other "new" (as of 2015) features added in ES6 and some features that you didn't learn in CS 133JS. Some of these are discussed below.
 
@@ -169,7 +158,7 @@ console.log(b); // 2
 
 Note that when doing destructuring assignment, the variables that will be assigned values can be declared with const or let directly in the destructuring statement. They don't need to be declared in advance, but if they are already declared, they can still be used for destructuring assignment.
 
-# Reference
+## Reference
 
 [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#arrow_functions) on MDN
 
@@ -181,7 +170,7 @@ Note that when doing destructuring assignment, the variables that will be assign
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
 
