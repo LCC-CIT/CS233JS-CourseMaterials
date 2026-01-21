@@ -91,10 +91,10 @@ Upload your completed web apps to [citstudent.lanecc.edu](http://citstudent.lane
 
 Here is a link to [the grading rubric](CS233JS_Lab03_Rubric.htm).
 
-  
-
 ----
 
 Adapted by Brian Bird in spring 2024 from lab instructions written by Mari Good for winter 2024, revised by Brian Bird winter <time>2026</time>.
+
+---
 
 ---
