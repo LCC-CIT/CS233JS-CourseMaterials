@@ -15,7 +15,7 @@ The objectives of this lab are:
 
 #### Set Up a GitHub Account
 
-If you don’t already have a GitHub account, create one now.
+If you don’t already have a GitHub account, create one now. As a student, you can get a free pro account plus other benefits by joining [GitHub Education](https://github.com/education).
 
 If you haven’t already installed Git on your computer, [download it](https://git-scm.com/downloads) and install it now.
 
@@ -89,7 +89,7 @@ Upload your completed web apps to [citstudent.lanecc.edu](http://citstudent.lane
 
 ## Assessment
 
-Here is a link to [the grading rubric](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab02/CS233JS_Lab02_Rubric.htm).
+Here is a link to [the grading rubric](CS233JS_Lab03_Rubric.htm).
 
   
 
