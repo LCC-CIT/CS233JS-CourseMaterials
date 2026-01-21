@@ -30,24 +30,34 @@ author: Brian Bird
 
 ## Announcements
 
-- No announcements.
+- Monday is Martin Luther King Jr. day and the college is closed, so there is no class.
 
-## This Week: More about Classes
+## This Week
+
+You will learn more JavaScript features (from ES6), including classes.
 
 ### Objectives
 
-- Understand how using classes and Object Oriented Programming (OOP) can make your code better. 
-- Get a more complete understanding of *encapsulation*. 
-- Learn how to read Unified Modeling Language (UML) class diagrams.
-- Apply OOP concepts to designing and building simple web apps.
+- to introduce you to additional features of JavaScript that were added in the ES6 (2015) version.
+  - Arrow functions
+  - Default parameters
+  - Template literals
+  - Array constructor
+  - Destructuring assignment
+- to introduce the use of *git* and GitHub for software version control.
+- to introduce you to object oriented programming (OOP) with *classes* (an ES6 feature).
+  - How to do OOP program design
+  - How to represent OOP designs in a Unified Modeling Language (UML) class diagram.
+
+
 
 ### What to Do
 
 - Read the section of the "MDN Guide to Using Classes" as shown on Moodle
-- Watch Brian's tutorial videos 1 through 4.
+- Watch Brian's tutorial videos.
   - Start working on lab 3  
     There are three versions of lab 3, the version you do is determined by your Moodle lab assignment group.
-- Go to Monday's class or watch the Zoom recording of the class.
+- Go to Wednesday's class or watch the Zoom recording of the class.
   - Continue working on lab 3.
 - Go to Wednesday's class or watch the recording
   - Continue working on the lab assignment.
