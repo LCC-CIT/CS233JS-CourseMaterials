@@ -6,10 +6,16 @@
 
 ## Summary of GH Classroom 
 
-- Distribute starting files to students
-  - Each student gets a copy of the instructor's template repository
+Distributes starting files to students
+- Instructor creates a template repository for each lab assignment.
+
+  The template repositories for any course should be listed on the README page of the course materials repository. For example, the [CS 233JS course repo README](https://github.com/LCC-CIT/CS233JS-CourseMaterials).
   
-    
+- The instructor creates or re-uses a GitHub classroom. In a new classroom the instructor adds assignment. (Reused classrooms will have existing assignments). Creating an assignment will create a new repository from the template repo for that assignment.
+
+- Each student gets a fork of the assignment repository.
+
+  
 
 ## GitHub Classroom Web Page
 
@@ -50,7 +56,8 @@ By default, all student repositories are cloned. To get a different number of re
 ## Reference
 
 - [GitHub Education](https://github.com/edu) main page on GitHub
-- [GitHub Classroom](https://classroom.github.com/) main page on GitHub
+- [GitHub Classroom documentation](https://docs.github.com/en/education/manage-coursework-with-github-classroom/get-started-with-github-classroom/about-github-classroom)
+- [GitHub Classroom](https://classroom.github.com/) main page on GitHub&mdash;for creating and managing classrooms.
 - [GitHub CLI](https://cli.github.com/) main page on GitHub
   - [Using GitHub Classroom with the GitHub CLI](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/using-github-classroom-with-github-cli)
 
