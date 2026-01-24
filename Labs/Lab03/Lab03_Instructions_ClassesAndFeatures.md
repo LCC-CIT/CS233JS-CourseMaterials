@@ -6,8 +6,8 @@
 
 The objectives of this lab are:
 
-1. Learn to write ES6 style classes and create objects from them
-2. Introduce you to additional ES6 features.
+1. Learn to write ES6 style classes and create objects from them.
+2. Get practice using additional ES6 features.
 
 
 
@@ -98,9 +98,13 @@ Upload your completed web apps to [citstudent.lanecc.edu](http://citstudent.lane
 - Upload the code review your lab partner did for you with the <u>"prod." column completed by you</u>.
 
 
+
+
 ## Assessment
 
 Here is a link to [the grading rubric](CS233JS_Lab03_Rubric.htm).
+
+
 
 ----
 
