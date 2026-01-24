@@ -73,7 +73,8 @@ Refactor the code for Tic-tac-toe to be Object Oriented using two classes: one t
 - **Code Review:** Do a code review for your lab partner using the code reveiw form for this lab and share it with your lab partner as well as uploading it to the Moodle Code Review assignment. Use the provided .docx file for the code review (not a pdf) so your lab partner can edit the  "prod." column.
 
   - [Code Review Guide](../CodeReviewProcedures.html)
-  - [Style and Best Practices Guide](Labs/CS233JS_StyleAndBestPractice.html)
+  - [Style and Best Practices Guide](../CS233JS_StyleAndBestPractice.html)
+  - [Code Review Form](CodeReview_for_Lab_3.docx)
 
 
 
@@ -87,12 +88,14 @@ Upload your completed web apps to [citstudent.lanecc.edu](http://citstudent.lane
 
 ### Upload to Moodle
 
-- **Moodle Lab 3 Code review assignment**: 
-  - Upload the code review your lab partner did for you.
+#### Moodle Lab 3 Code review assignment
 
-- **Moodle Lab 3 Production Version assignment:**  
-  - Put the citstudent URLs for each web app in the online text.
-  - Upload the code review your lab partner did for you with the "prod." column completed by you.
+- Upload the code review you did for your lab partner.
+
+#### Moodle Lab 3 Production Version assignment
+
+- Put the citstudent URLs for each web app in the online text.
+- Upload the code review your lab partner did for you with the <u>"prod." column completed by you</u>.
 
 
 ## Assessment
