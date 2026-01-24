@@ -13,6 +13,8 @@ The objectives of this lab are:
 
 ## Instructions
 
+### Git
+
 #### Set Up a GitHub Account
 
 If you don’t already have a GitHub account, create one now. As a student, you can get a free pro account plus other benefits by joining [GitHub Education](https://github.com/education).
@@ -42,15 +44,17 @@ There is a separate folder for each of the three web apps.
 
 After pushing, check your files on GitHub to make sure everything is there.
 
-### Web App 1: Stopwatch - Version 2
+### Web Apps
+
+#### Web App 1: Stopwatch - Version 2
 
 Refactor the code for the stopwatch app so that it is all in one class. Use the comments in the starter file and Mari's video as a guide.
 
-### Web App 2: Concentration - Version 2
+#### Web App 2: Concentration - Version 2
 
 Refactor the code for Concentration so that it is Object Oriented using three classes: Card, Board, and Game. Use the comments in the starting file and Brian's video as a guide.
 
-### Web App 3: Tic-tac-toe - Version 2
+#### Web App 3: Tic-tac-toe - Version 2
 
 Refactor the code for Tic-tac-toe to be Object Oriented using two classes: one to hold the game logic and the other to hold the i/o code that interacts with the HTML page.
 
@@ -67,6 +71,10 @@ Refactor the code for Tic-tac-toe to be Object Oriented using two classes: one t
   - Everyone is doing the same lab assignment. You are **on your honor to not copy your lab partner's code** when you do the code revivew.
 
 - **Code Review:** Do a code review for your lab partner using the code reveiw form for this lab and share it with your lab partner as well as uploading it to the Moodle Code Review assignment. Use the provided .docx file for the code review (not a pdf) so your lab partner can edit the  "prod." column.
+
+  - [Code Review Guide](../CodeReviewProcedures.html)
+  - [Style and Best Practices Guide](Labs/CS233JS_StyleAndBestPractice.html)
+
 
 
 

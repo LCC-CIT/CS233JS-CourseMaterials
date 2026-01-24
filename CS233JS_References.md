@@ -10,9 +10,9 @@
 
 ## Resources for this Course
 
-[Code Review Procedures]([https:/lcc-cit.github.io/CS233JS-CourseMaterials/Labs/CodeReviewProcedures.html)  
+[Code Review Procedures](Labs/CodeReviewProcedures.html)  
 
-[Coding Style and Best Practices]([https:/lcc-cit.github.io/CS233JS-CourseMaterials/Labs/CS233JS_StyleAndBestPractice.html)  
+[Coding Style and Best Practices](Labs/CS233JS_StyleAndBestPractice.html)  
 
 [How to upload web sites to citstudent](https://lcc-cit.github.io/CIS195-CourseMaterials/Lessons/UploadingWebSites.html)
 
@@ -63,18 +63,18 @@ Pro Git Book](https://git-scm.com/book/en/v2)—Free online Git tutorial and ref
 ## Computer Information Technology Department
 
 [CIT Department](https://www.lanecc.edu/cit)—Degree programs and other dept. Info
-[CIT department web server homepage](https://citstudent.lanecc.edu) —links to software and other resources.
+[CIT department web server homepage-citstudent](https://citstudent.lanecc.edu) —links to software and other resources.
 [CIT Computer Lab](https://www.lanecc.edu/programs-academics/academic-departments/business-technology-and-trades/computer-information-technology/cit-computer-lab)—computers, coffee and tutors. Hang out, collaborate, study.
 
 
 
 ## Previous CIT Courses
 
-[CIS 195 Course Materials](https://lcc-cit.github.io/CIS195-CourseMaterials/)&mdash;Instructors course materials for Web Authoring 1: HTML and CSS including code examples, on GitHub.
+[CIS 195 Course Materials Home Page](https://lcc-cit.github.io/CIS195-CourseMaterials/)&mdash;Instructors course materials for Web Authoring 1: HTML and CSS including code examples, on GitHub.
 
-[CS 133JS Course Materials](https://lcc-cit.github.io/CS133JS-CourseMaterials/)&mdash;Instructor's course materials for Beginning JavaScript, including code examples, on GitHub.
+[CS 133JS Course Materials Home Page](https://lcc-cit.github.io/CS133JS-CourseMaterials/)&mdash;Instructor's course materials for Beginning JavaScript, including code examples, on GitHub.
 
-[CS 233JS Course Materials](https://github.com/LCC-CIT/CS233JS-CourseMaterials)&mdash;Instructor's course materials Intermediate JavaScript, this course, including code examples, on GitHub.
+[CS 233JS Course Materials Repository](https://github.com/LCC-CIT/CS233JS-CourseMaterials)&mdash;Instructor's course materials Intermediate JavaScript, this course, including code examples, on GitHub.
 
 ## Other Resources
 
@@ -82,8 +82,11 @@ Pro Git Book](https://git-scm.com/book/en/v2)—Free online Git tutorial and ref
 
 [Glossary of Computer Science](https://en.wikipedia.org/wiki/Glossary_of_computer_science) Wikipedia
 
+
+
 ------
 
+Compiled by [Brian Bird](https://profbird.dev), 2020, revised by Brian Bird <time>2026</time>.
 
+---
 
-Compiled by [Brian Bird](https://profbird.dev), 2020, revised by Brian Bird 2025.
