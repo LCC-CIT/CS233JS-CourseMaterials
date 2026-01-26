@@ -8,28 +8,40 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-<h1>Week 4 Overview for Spring 2025</h1>
+<h1>Week 4 Overview for Winter 2026</h1>
 
-<h2>April 21 through April 27</h2>
+<h2>January 26 through February 1</h2>
 
 
 
 | Topics by Week                                               |                                                     |
 | ------------------------------------------------------------ | --------------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review          | 6. HTML5 Canvas, CSS Flexbox                        |
-| 2. ES6, Classes and Git                                      | 7. AJAX, ES6 promises, fetch API                    |
-| 3. More about Classes                                        | 8. Making API calls, graphs and charts, Google maps |
-| 4. <mark>JS Dev Tools: Node.js, NPM, Webpack, LocalStorage.</mark> | 9. Term Project                                     |
-| 5. Midterm Quiz                                              | 10. Review                                          |
-| 11. Final Quiz                                               |                                                     |
+| 1. Intro to Course, Bootstrap and JavaScript Review          | 6. HTML5 canvas                                     |
+| 2. More bootstrap and JS review                              | 7. AJAX, ES6 promises, fetch API                    |
+| 3.  ES6, classes and Git                                     | 8. Making API calls, graphs and charts, Google maps |
+| 4. <mark>JS Dev Tools: Node.js, NPM, Webpack, LocalStorage.</mark> | 9. Term project                                     |
+| 5. Midterm quiz                                              | 10. Review                                          |
+| 11. Final quiz                                               |                                                     |
 
 <h2>Contents</h2>
 
 [TOC]
 
+## Announcements
+
+- **Global Game Jam!** <img src="/Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/LectureNotes/Images/GlobalGameJamLogo.svg" alt="GlobalGameJamLogo" style="zoom:67%;" />  
+  *Get together and create games in one weekend with devs in over 800 locations worldwide.*  
+  LCC building 19, room 135 (CIT lab).  Food provided!
+
+  - Friday 1/30, 2:00pm to 9:00pm
+  - Saturday 1/31, 9:00am to 9:00pm
+  - Sunday 2/1, 9:00am to 7:00pm
+
+  [Register here](https://globalgamejam.org/user/login).
+
 ## Objectives
 
-- To introduce you to commonly used JavaScript development tools including Node.js, Babel, and Webpack.
+- To introduce you to commonly used JavaScript development tools including Node.js and Webpack.
 
 - To introduce you to using the web browser's LocalStorage for storing client-side data.
 
@@ -38,15 +50,9 @@ author: Brian Bird
 ## Things to do this week
 
 - Review this week's section on Moodle. 
-- Be sure to <u>watch or read all the required materials linked on Moodle</u>.  
-    For online students, this includes the short class recordings which will be available after 4:00 on Monday and Wednesday via the Zoom widget near the top of the Moodle page.
-
-- This week's class will be more "flipped", meaning I won't lecture very much, instead I'll give you a lot of time to <u>code and get help with debugging</u>.
-- Things that have changed since Mari recorded her videos:
-
-  - This week's lab was lab 3 but is now lab 4.
-  - Browser compatibility with ES6 used to be an issue, but now all browsers support ES6 and even newer version of JavaScript as well. 
-  - The link to the browser compatibility chart in Mari's notes is now broken. Here's a replacement: [ECMAScript Browser Compatibility Table](https://compat-table.github.io/compat-table/es6/).
+- Be sure to <u>read all the required materials linked on Moodle</u>.  
+    For online students, also watch the class recordings which will be available shortly after class via the Zoom widget near the top of the Moodle page.
+- This week's class will be less  "flipped", meaning all the teaching will be done in class instead of via Mari's videos.
 
 
 ### Lab 4
@@ -80,7 +86,7 @@ author: Brian Bird
 
 #### Office Hours
 
-I have drop-in office hours on [Zoom](https://lanecc.zoom.us/j/93494931394) and in person, building 19, room 152, Monday through Thursday from 1:00 to 1:50. I'm available at other times too, just let me know when you'd like to meet. 
+See the main Moodle page for my office hours which are in person and on Zoom.
 
 Don't hesitate to reach out if you have questions, would like help debugging code, or anything else!
 
@@ -90,15 +96,15 @@ There are tutors available in the CIT Lab, building 19, room 135, or [online](ht
 
 #### Discord
 
-Ask questions in the class [Discord Discussion channel](https://discord.com/channels/1290812758249701396/1324897172981809273). I'll answer questions pretty quickly on weekdays, often on Saturday and sometimes on Sunday. Other students will often help you too!
+Ask questions in the class Discord Discussion channel. I'll answer questions pretty quickly on weekdays, often on Saturday and sometimes on Sunday. Other students will often help you too!
 
 ### Class participation
 
-- If you are an on campus or online student who can join us during class time, I encourage you to come to the classroom (building 19, room 128) or [join us on Zoom](https://lanecc.zoom.us/j/96377530587).
-- If you are an online student be sure to <u>watch the video recordings</u> of the short, in-class, lectures. Access these via the Zoom Meetings and Recordings link near the top of the Moodle page.
+- If you are an on campus or online student who can join us during class time, I encourage you to come to the classroom or join us on Zoom.
+- If you are an online student be sure to <u>watch the video recordings</u> of the in-class lectures. Access these via the Zoom Meetings and Recordings link near the top of the Moodle page.
 
 **You will get more out of this class if you come or Zoom to class where you can get help with your lab assignments!**
 
 
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Course Materials by [Brian Bird](https://profbird.dev), written winter 2025, revised spring <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Course Materials by [Brian Bird](https://profbird.dev), written winter 2025, revised spring <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

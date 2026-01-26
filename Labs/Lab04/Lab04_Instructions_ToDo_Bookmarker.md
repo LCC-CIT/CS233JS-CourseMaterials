@@ -7,7 +7,7 @@
 
 ## Objectives
 
-The objective of this lab is to give you more practice using the "new"[^1], widely supported, version of JavaScript: ES6. You will also be introduced to Node.js, NPM, Webpack, and Babel which are dev tools commmonly used in modern JavaScript development. 
+The objective of this lab is to give you more practice using JavaScript features introduced in ES6. You will also be introduced to Node.js, NPM, and Webpack which are dev tools commmonly used in modern JavaScript development. 
 
 ## Instructions
 
@@ -17,7 +17,7 @@ Complete the web apps described below. For each problem:
   **Important**: Do all your work in the Classroom repository working folder, don't make a different repository.
 - Create a JavaScript solution that solves the problem. 
 - Test your solution in at least one browser running in the Webpack dev server on your local machine.
-- Use Webpack to create a production version of the application that is bundled and transpiled to a version of JavaScript (ES5) that is supported by all browsers.
+- Use Webpack to create a production version of the application that is bundled.
 - Upload your solution to citstudent.lanecc.edu. Use a web browser to test your solutions running on the web server.
 
 ### 1. ToDo List
@@ -69,4 +69,4 @@ Here is a link to the [grading rubric](CS233JS_Lab04_Rubric.htm) for this lab.
 
 ---
 
-Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024 and revised spring <time>2025</time>	
+Adapted by Brian Bird, spring 2024, from lab instructions written by Mari Good for winter 2024 and revised winter <time>2026</time>	
