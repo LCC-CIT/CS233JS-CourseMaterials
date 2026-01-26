@@ -1,7 +1,7 @@
 ---
 title: Node.js + Tools
 description: Node.js and dev tools in the Node development eco-system.
-keywords: Node, NPM, Babel, Webpack
+keywords: Node, NPM, Webpack
 generator: Typora
 author: Brian Bird
 ---
@@ -18,7 +18,7 @@ author: Brian Bird
 
 ## Objectives for This Week
 
-- To introduce you to commonly used JavaScript development tools including Node.js, Babel, and Webpack.
+- To introduce you to commonly used JavaScript development tools including Node.js and Webpack.
 - To introduce you to using the web browser's LocalStorage for storing client-side data.
 - To develop your proficiency in designing, implementing, testing and debugging JavaScript web apps.
 

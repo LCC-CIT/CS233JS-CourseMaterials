@@ -65,8 +65,10 @@ author: Brian Bird
 
 - Tuesday: The code review for Lab 3 (last week's lab).
   (The beta version was due Sunday.)
-- Thursday: 
+- Wednesday: 
   - Reading quiz 4.
+  
+- Thursday: 
   - Lab 3 production version.
 - Sunday:
   - Share a beta version of lab 4 with your lab partner.  
@@ -86,7 +88,7 @@ author: Brian Bird
 
 #### Office Hours
 
-See the main Moodle page for my office hours which are in person and on Zoom.
+See the main Moodle page for my office hours which are in person in building 19, room 152, and [on Zoom](https://lanecc.zoom.us/j/8982554800).
 
 Don't hesitate to reach out if you have questions, would like help debugging code, or anything else!
 
