@@ -29,7 +29,7 @@ author: Brian Bird
 
 ## Announcements
 
-- **Global Game Jam!** <img src="/Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/LectureNotes/Images/GlobalGameJamLogo.svg" alt="GlobalGameJamLogo" style="zoom:67%;" />  
+- **Global Game Jam!** <img src="Images/GlobalGameJamLogo.svg" alt="GlobalGameJamLogo" style="zoom:67%;" />  
   *Get together and create games in one weekend with devs in over 800 locations worldwide.*  
   LCC building 19, room 135 (CIT lab).  Food provided!
 
