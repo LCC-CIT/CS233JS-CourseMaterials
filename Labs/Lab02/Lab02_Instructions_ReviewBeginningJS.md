@@ -19,15 +19,21 @@ Do the eight [W3 Schools Bootstrap 5 Tutorials](https://www.w3schools.com/bootst
 Be sure to sign in so that you can track your progress and submit a screen shot showing you completed the tutorials.
 
 - Typography
+
 - Colors  
   (skip tables)
+  
 - Images
-- Jumbotron  
-  (skip alerts)
+
+  (Skip jumbotron and alerts)
+
 - Buttons
+
 - Button Groups  
-  (skip a bunch)
+  (Skip a bunch of topics)
+  
 - Navs
+
 - Navbar
 
 Take the [W3 Schools Bootstrap 5 quiz](https://www.w3schools.com/bootstrap5/bootstrap_quiz.php). There are 25 questions. For any questions you have difficulty answering or answer incorrectly, do or review the associated tutorial.
