@@ -147,7 +147,7 @@ JSON is an acronym for JavaScript Object Notation and is a data formatting stand
 Here is an example:
 
 ```javascript
-{
+''{
   "name": "Jason Lindsey",
   "age": 46,
   "isStudent": false,
@@ -156,8 +156,8 @@ Here is an example:
     "street": "123 Main St",
     "city": "Sometown",
     "state": "KY",
-  }
-}
+  },
+}'
 ```
 
 #### JavaScript Object Format
