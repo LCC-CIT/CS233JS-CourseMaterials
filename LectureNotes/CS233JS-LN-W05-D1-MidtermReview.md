@@ -5,7 +5,7 @@ keywords: html elements, es6, bootstrap, node.js, webpack, babel
 author: Brian Bird
 ---
 
-<h1>Midtarm Review</h1>
+<h1>Midterm Review</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
