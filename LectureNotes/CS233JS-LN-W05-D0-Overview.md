@@ -42,12 +42,18 @@ Free bus rides • Accessible parking • Free and open to the public • Free f
 
 For some reason the src/js folder didn't get included in the BookMarkerStart and ToDoListStart folders in the Lab 4 GitHub Classroom repositories that you downloaded. I've tried to add those for you via GitHub Classroom, but it doesn't seem to be working. You'll need to just download the files from here and add the js folders yourselves. Let me know if you have questions or need help doing this.
 
+### Discord Announcements
+
+This is just a reminder that I make [announcements on Discord](https://discord.gg/yG9ZTrv2bx) throughout the week. If you don't check Discord regularly, you can [set up email notifications](https://support.discord.com/hc/en-us/articles/4408820335767-How-can-I-manage-my-email-notifications-settings) for new posts.
+
+
+
 ## This Week's Learning Objectives
 
 - Review the first four weeks of JavaScript concepts and techniques.
 - Check your progress by taking the midterm quiz.
 
-## Things to do this week
+### Things to do this week
 
 Note: there is no new lab assignment this week.
 
@@ -58,6 +64,8 @@ Note: there is no new lab assignment this week.
     - Online students will take the midterm at [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services), located in the Center building, room 311 (on the third floor). 
         - The quiz will be open Wednesday through Saturday. See the Instructional Testing web site for their hours.
         - Please note that ID is required. <u>If you don't have ID let your instructor know in advance</u>.
+        
+        
 
 ## Due dates
 
@@ -69,6 +77,8 @@ Note: there is no new lab assignment this week.
   - Lab 4 production version.
 - Saturday:
   - Last day to take the midterm quiz in Instructional Testing Services.
+  
+  
 
 
 ## Getting Help
@@ -85,8 +95,8 @@ You can DM our embedded tutor, Jackie Rael on Discord, @jackieR to make a tutori
 
 **Discord**
 
-Ask questions in the class Discord Discussion channel. I'll answer questions pretty quickly on weekdays, often on Saturday and sometimes on Sunday. Other students will often help you too!
+Ask questions in the class Discord Discussion forum. I'll answer questions pretty quickly on weekdays, often on Saturday and sometimes even on Sunday. Other students will often help you too!
 
 
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Course Materials by [Brian Bird](https://profbird.dev), written winter 2025, revised winter<time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Course Materials by [Brian Bird](https://profbird.dev), written winter 2025, revised winter <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
