@@ -13,7 +13,7 @@ The objective of this lab is to give you more practice using JavaScript features
 
 Complete the web apps described below. For each problem:
 
-- Accept the invitation to the GitHub Classroom repository containing the starter files. Use Git and GitHub to manage your source code.
+- Accept the invitation to the GitHub Classroom repository containing the starter files. (Classroom will send you an email asking you to confirm your acceptance.) Use Git and GitHub to manage your source code.
   **Important**: Do all your work in the Classroom repository working folder, don't make a different repository.
 - Create a JavaScript solution that solves the problem. 
 - Test your solution in at least one browser running in the Webpack dev server on your local machine.

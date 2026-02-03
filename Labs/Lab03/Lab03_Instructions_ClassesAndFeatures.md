@@ -23,7 +23,9 @@ If you haven’t already installed Git on your computer, [download it](https://g
 
 #### Clone the Repository Containing Starting Files
 
-Click the link to accept the GitHub Classroom assignment on Moodle. Choose your name from the GitHub Classroom roster, then follow any additional instructions. GitHub Classroom will create a private GitHub repository for you for this lab and will redirect your browser to the repository page on GitHub. 
+Click the link to accept the GitHub Classroom assignment on Moodle. Classroom will send you an email asking you to confirm that you are accepting the invitation. After you do this the Classroom page will open in your browser.
+
+Choose your name from the Classroom roster, then follow any additional instructions. Classroom will create a private GitHub repository for you for this lab and will redirect your browser to the repository page on GitHub. 
 
 *Clone* the repository to your local computer:
 
@@ -44,11 +46,13 @@ There is a separate folder for each of the three web apps.
 
 After pushing, check your files on GitHub to make sure everything is there.
 
+**Important**: Do all your work in the Classroom repository working folder, don't make a different repository.
+
 ### Web Apps
 
 #### Web App 1: Stopwatch - Version 2
 
-Refactor the code for the stopwatch app so that it is all in one class. Use the comments in the starter file and Mari's video as a guide.
+Refactor the code from version 1 of the stopwatch app so that it is all in one class. Use the comments in the starter file and Mari's video as a guide.
 
 #### Web App 2: Concentration - Version 2
 
