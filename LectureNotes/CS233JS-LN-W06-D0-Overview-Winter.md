@@ -33,7 +33,7 @@ author: Brian Bird
 
 ### Spring Term Registration
 
-Registration is now open. These are the classes recommended for [AAS in Software Development]https://lanecc.smartcatalogiq.com/current/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas) majors:
+Registration is now open. These are the classes recommended for [AAS in Software Development](https://lanecc.smartcatalogiq.com/current/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas) majors:
 
 - Required core courses:
   - CS 162N: Computer Science 2 (Intermediate C# programming)
