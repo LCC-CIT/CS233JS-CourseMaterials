@@ -8,7 +8,7 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-<h1>Week 6 Overview for Spring 2025</h1>
+<h1>Week 6 Overview for Winter 2026</h1>
 
 <h2>May 5 through May 11</h2>
 
