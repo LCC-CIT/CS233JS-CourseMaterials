@@ -1,6 +1,6 @@
 ---
 title: Node toolchain setup
-description: How to set up NPM, Weback and Babel
+description: How to set up NPM, Wepack and Babel
 keywords: package.json, npm, babel, webpack
 generator: Typora
 author: Brian Bird
@@ -41,7 +41,14 @@ We also need to remove the link to the CSS file since that will be loaded by web
 
 ### Adding `export` and `import` statements to .js files
 
-Add `export` statements to all the class declarations and to the constant declaration in `game.js`
+Add `export` statements to all the class declarations and to the constant declaration in `game.js`  
+Example:  
+
+```javascript
+export const NUMBER_OF_DIE = 3;
+
+export class Game { ...
+```
 
 Add to `game.js`
 
@@ -58,7 +65,7 @@ import { Game } from './game.js';
 import { NUMBER_OF_DIE } from './game.js';
 ```
 
-(Note that in this example we assume `styles.css` is in the folder above `index.js`.)
+(In this example we assume `styles.css` is in the parent folder of the one containing `index.js`.)
 
 #### What Does `import` do?
 
@@ -104,7 +111,10 @@ In the example above:
    }
    ```
 
+In this package.json file, no dependencies (packages) have been added yet. Those will be added as we install packages later in this tutorial.
+
 ## Babel
+
    Use this command to install babel and add it to the `devDependencies` object in `package.json`: 
 
    ````bash
@@ -140,7 +150,7 @@ But, since we are adding the babel plug-in and other customizations, we need to 
    entry: './scripts/index.js',
    output: {
      path: path.resolve(__dirname, 'dist'),
-     filename: 'going2boston.bundle.js',
+     filename: '[name].bundle.js',
    },
  };
 ```
@@ -150,6 +160,8 @@ But, since we are adding the babel plug-in and other customizations, we need to 
 The `path` module is a built-in Node.js module that provides utilities for working with file and directory paths. It is used to resolve paths in a cross-platform way (e.g., ensuring compatibility between Windows, macOS, and Linux).
 
 `__dirname` is a global variable in Node.js that represents the absolute path of the directory containing `webpack.config.js` . Here, it is being used as an argument to `path.resolve` to construct a relative path to the `dist` folder.
+
+`[name]` is a Webpack output filename placeholder. Webpack replaces it at build time with each chunk’s name.
 
 ### CSS loaders
 
@@ -196,6 +208,7 @@ plugins: [
   new htmlWebpackPlugin({
     template: "./index.html"
   })
+]
 ```
 
 ### Copy plug-in
@@ -317,5 +330,5 @@ npx webpack serve --open
 
 ---
 
-[^1]: there are two main kinds of modules in JavaScript: a) ES modules (ESM) which were introduced in ES6, use `import` and `export` syntax, are supported by modern browswer and node.js and normally have a .mjs file extension. b) Common JS modules (CJS) which was the default module type for node.js before ES6, use `require` and `module.exports` syntax and normally have a .js or .cjs extension.
+[^1]: there are two main kinds of modules in JavaScript: a) ES modules (ESM) which were introduced in ES6, use `import` and `export` syntax, are supported by modern browser and node.js and normally have a .mjs file extension. b) Common JS modules (CJS) which was the default module type for node.js before ES6, use `require` and `module.exports` syntax and normally have a .js or .cjs extension.
 
