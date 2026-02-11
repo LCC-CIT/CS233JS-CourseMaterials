@@ -10,7 +10,7 @@ author: Brian Bird
 
 <h1>Week 6 Overview for Winter 2026</h1>
 
-<h2>February 10 through February 16</h2>
+<h2>February 9 through February 15</h2>
 
 **CS233JS Intermediate Programming: JavaScript**
 
