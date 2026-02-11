@@ -39,6 +39,19 @@ We also need to remove the link to the CSS file since that will be loaded by web
 <link href="styles.css" rel="stylesheet">
 ```
 
+And finally, we will also remove the script elements that pull Bootstrap libraries from a CDN:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+```
+
+
+
 ### Adding `export` and `import` statements to .js files
 
 Add `export` statements to all the class declarations and to the constant declaration in `game.js`  
@@ -61,6 +74,7 @@ Add to `index.js`:
 
 ```javascript
 import '../styles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Game } from './game.js';
 import { NUMBER_OF_DIE } from './game.js';
 ```
@@ -112,6 +126,8 @@ In the example above:
    ```
 
 In this package.json file, no dependencies (packages) have been added yet. Those will be added as we install packages later in this tutorial.
+
+
 
 ## Babel
 
@@ -266,6 +282,17 @@ Add the babel-loader module to the webpack.config.js file:
        ]
      }
 ```
+
+
+
+### Bootstrap
+
+Install the Bootstrap package using NPM. There is nothing to add to webpack.config.js since webpack will see the include statement for Bootstrap that is in index.js
+
+```bash
+npm install --save bootstrap
+```
+
 
 
 ### Test webpack
