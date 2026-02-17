@@ -1,7 +1,7 @@
 ---
 title: HTML Canvas
 description: HTML Canvas and more about the Node.js dev toolchain
-keywords: Canvas, Node, NPM, Babel, Webpack
+keywords: Canvas, Node, NPM, Canvas context, ESM import, HTML download
 generator: Typora
 author: Brian Bird
 ---
@@ -9,15 +9,6 @@ author: Brian Bird
 <h1>Using the HTML Canvas Element In JavaScript</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
-
-| Topics by Week                                        |                                                     |
-| ----------------------------------------------------- | --------------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review   | 6. <mark>HTML5 Canvas, CSS Flexbox</mark>           |
-| 2. ES6 Classes and Git                                | 7. AJAX, ES6 promises, fetch API                    |
-| 3. More about Classes                                 | 8. Making API calls, graphs and charts, Google maps |
-| 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. | 9. Term Project                                     |
-| 5. Midterm Quiz                                       | 10. Review                                          |
-| 11. Final Quiz                                        |                                                     |
 
 
 
@@ -29,7 +20,7 @@ author: Brian Bird
 
 ### Introduction
 
-The HTML canvas element allows your web applications to dynamically draw graphics on the surface of a web page using code. To do this, you'll typically start by getting a reference to either a 2D or 3D context. You then call various methods on the context object to draw shapes, text, images, and other objects directly on the canvas.
+The HTML canvas element allows your web applications to dynamically draw graphics on the surface of a web page using code. To do this, you'll typically start by getting a reference to either a 2D or 3D context object. You then call various methods on the context object to draw shapes, text, images, and other objects directly on the canvas.
 
 ### Setting the Size of the Canvas
 
@@ -49,9 +40,9 @@ this.$canvas.width = 800; // Sets the canvas width to 800 pixels
 
 ### Getting a Context Object
 
-The canvas context objec" provides methods and properties for drawing and manipulating graphics on the canvas.
+The canvas context object provides methods and properties for drawing and manipulating graphics on the canvas.
 
-The code below gets a reference to a HTML canvas element on a web page, then creates a context object that can be used by JavaScript code to draw in 2D (two dimensions) on the canvas.
+The code below gets a reference to a HTML canvas element on a web page, then creates a context object that can be used by JavaScript to draw in 2D (two dimensions) on the canvas.
 
 ```javascript
     this.$canvas = document.querySelector('#imgCanvas');
@@ -189,7 +180,7 @@ By adding the `download` attribute to the anchor tag, you instruct the browser t
 
 
 
-# References
+## References
 
 [JavaScript import declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)&mdash;MDN
 
@@ -201,4 +192,4 @@ By adding the `download` attribute to the anchor tag, you instruct the browser t
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2025, revised in <time>2026</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

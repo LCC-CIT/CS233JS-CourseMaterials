@@ -54,7 +54,7 @@ And finally, we will also remove the script elements that pull Bootstrap librari
 
 ### Adding `export` and `import` statements to .js files
 
-Add `export` statements to all the class declarations and to the constant declaration in `game.js`  
+Add ESM (ES Module) `export` statements to all the class declarations and to the constant declaration in `game.js`  
 Example:  
 
 ```javascript
@@ -63,7 +63,7 @@ export const NUMBER_OF_DIE = 3;
 export class Game { ...
 ```
 
-Add to `game.js`
+Add ESM `impor` statements to `game.js`
 
 ```javascript
 import { Player } from './player.js';
@@ -129,16 +129,6 @@ In this package.json file, no dependencies (packages) have been added yet. Those
 
 
 
-## Babel
-
-   Use this command to install babel and add it to the `devDependencies` object in `package.json`: 
-
-   ````bash
-   npm install --save-dev @babel/core @babel/cli @babel/preset-env
-   ````
-
-   
-
 ## Webpack
 
    - Use NPM to install the webpack and webpack CLI modules in your project's folder and simultaneously add them to the  `devDependencies` object in `package.json` file using these commands: 
@@ -146,11 +136,9 @@ In this package.json file, no dependencies (packages) have been added yet. Those
      npm install webpack --save-dev
      npm install webpack-cli --save-dev
      ```
-   
-     
-   
+
    - As of version 4.0.0 of webpack, a `webpack.config.js` file isn't needed. If you don't create a configuration file, these defaults will be used:
-   
+
      - Entry:  `./src/index.js`
        The entry point for the application. Webpack will start bundling with this file.
      - Output:  `./dist/main.js`
@@ -254,37 +242,6 @@ new copyPlugin({
 
 
 
-### Bable-loader
-
-Install a plug-in that will load bable so that it can be used to transpile your JS code to an older version of JS.
-
-```bash
-npm install --save-dev bable-loader
-```
-
-Add the babel-loader module to the webpack.config.js file:
-
-```javascript
-     module: {
-       rules: [
-         {
-           test: /\.(?:js|mjs|cjs)$/,
-           exclude: /node_modules/,
-           use: {
-             loader: 'babel-loader',
-             options: {
-               presets: [
-                 ['@babel/preset-env', { targets: "defaults" }]
-               ]
-             }
-           }
-         }
-       ]
-     }
-```
-
-
-
 ### Bootstrap
 
 Install the Bootstrap package using NPM. There is nothing to add to webpack.config.js since webpack will see the include statement for Bootstrap that is in index.js
@@ -349,11 +306,9 @@ npx webpack serve --open
 - [babel-loader](https://webpack.js.org/loaders/babel-loader/)
 - [Development and the dev server](https://webpack.js.org/guides/development/)
 
-[Babel documentation](https://babeljs.io/docs/)
 
 
-
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ---
 
