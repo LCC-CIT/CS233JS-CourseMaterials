@@ -110,7 +110,7 @@ function initialize(products) {
   }
 
   // REFACTORED: Converted to async/await
-  // This needs to be async because it makes a network request for the image.
+  // This function needs to be declared async because it makes a network request.
   async function fetchBlob(product) {
     const url = `images/${product.image}`;
 
