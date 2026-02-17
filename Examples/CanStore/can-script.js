@@ -1,4 +1,11 @@
-// We replace the top-level .then() chain with an async function 'start'.
+/* Refactored by Brian Bird, 2/17/2026, using Gemini 3.0 from original code by MDN Web Docs, 
+which is licensed under CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
+
+This script fetches products data from a JSON file, 
+then sets up the app logic to allow users to filter products by category and search term. 
+It also handles fetching and displaying product images. */
+
+
 // This fetches the data once and then kicks off the app.
 async function start() {
   try {

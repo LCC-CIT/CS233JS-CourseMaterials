@@ -22,7 +22,7 @@ The demo below is meant to supplement the explanation of AJAX given in Mari Good
 
 Look at the MDN Guide: [Fetching Data from the Server](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data)
 
-Experiment with the [Can Store](https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/)  web app running on GitHub.
+Experiment with the [Can Store](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/CanStore/)  web app running on GitHub.
 
 Look at the code here: [can-script.js](https://github.com/mdn/learning-area/blob/main/javascript/apis/fetching-data/can-store/can-script.js), in particular the `fetchBlob` function.
 
