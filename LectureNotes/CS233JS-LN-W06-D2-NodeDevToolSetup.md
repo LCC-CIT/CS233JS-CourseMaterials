@@ -303,7 +303,6 @@ npx webpack serve --open
 [Webpack documentation](https://webpack.js.org/concepts/)
 
 - [Configuration](https://webpack.js.org/concepts/configuration/)
-- [babel-loader](https://webpack.js.org/loaders/babel-loader/)
 - [Development and the dev server](https://webpack.js.org/guides/development/)
 
 
