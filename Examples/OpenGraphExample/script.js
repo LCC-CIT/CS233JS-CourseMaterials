@@ -1,4 +1,5 @@
-/* Written by by Brian Bird, 2/15/25, with help from GitHub Copilot */
+/* Written by by Brian Bird, 2/15/25, with help from GitHub Copilot 
+   Refactored to use async / await by Brian Bird using Claude Sonnet 4.6 on 2/18/26 */
 
 // Fetch OpenGraph data from a URL when the form is submitted
 document.getElementById('fetchForm').addEventListener('submit', getMetadata);
