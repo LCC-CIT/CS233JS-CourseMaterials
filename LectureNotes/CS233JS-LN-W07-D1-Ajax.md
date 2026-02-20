@@ -14,19 +14,35 @@ author: Brian Bird
 
 [TOC]
 
-## Introduction
+## Introduction to AJAX
 
-The demo below is meant to supplement the explanation of AJAX given in Mari Good's videos and accompanying power point slides.
+*AJAX (Asynchronous JavaScript and XML)* is a web technique used to update parts of a webpage without requiring a full page reload. It allows code running in a browser to communicate with a server in the background to perform tasks such as updating a single HTML element, fetching data from a web API, or reading a JSON file located at an HTTP address. AJAX enables the creation of fast, dynamic user interfaces that feel more like desktop applications than static documents.
+
+### Fetch
+
+Modern JavaScript uses the *Fetch API* to implement these asynchronous HTTP requests[^1]. Fetch is a streamlined, Promise-based interface that replaces the older, more complex *XMLHttpRequest (XHR)* object. While Fetch is the current standard, you will often hear developers use "XHR" as a legacy nickname for any background data request. 
+
+In a browser’s Network tab, traffic is usually filtered into separate "Fetch" and "XHR" types based on the JavaScript method used to make the HTTP request; however, to the server, they are identical HTTP requests. The server simply sees an incoming request for a resource and sends a response.
+
+### Asynchronous Requests
+
+In standard *synchronous* code, the browser executes code line-by-line. If a call is made to request data, the entire browser tab will "freeze" and become unresponsive. This is because the JavaScript engine is busy waiting for the data.
+
+An *asynchronous* request has these characteristics:
+
+- *Non-blocking:* When you call `fetch()`, the browser starts the HTTP request in the background and immediately moves on to the next line of code.
+- *The Callback/Promise:* You provide a set of instructions (a Promise) for the browser to follow once the data eventually arrives.
+- *Concurrency:* This allows the user to keep interacting with the UI—filling out forms, clicking or scrolling—while the data is being fetched behind the scenes.
 
 ## AJAX Demo
 
-Look at the MDN Guide: [Fetching Data from the Server](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data), but just skim the section starting with "Finally we're ready to use the Fetch API", since the example there uses `.then` promise chaining. Our example below, uses the more modern `async` / `await` approach.
+Look at the MDN Guide: [Fetching Data from the Server](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data), but just skim the section starting with "*Finally we're ready to use the Fetch API*", since the example there uses `.then` promise chaining. Our example below, uses the more modern `async` / `await` approach.
 
 Experiment with the [Can Store](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/CanStore/) web app running on GitHub.
 
 Look at the code here: [can-script.js]https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/CanStore/can-script.js), in particular the `fetchBlob` function (which has been refactored to use async / await).
 
-### Key Concepts
+## JavaScript Promises and the Fetch API
 
 - `Fetch` is a global, "built-in", JavaScript function that will get data from a URL and return a `promise` object.
 - A `promise` is like a placeholder that can be in one of three states:
@@ -82,4 +98,6 @@ This tutorial and it's code examples use the older `.then()` promise chaining sy
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2026</time> with assistance from Gemeini 3.0, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ---
+
+[^1]: Fetch is not limited to making `GET` requests. While `GET` is the default method used when you only provide a URL, the Fetch API is designed to handle the full range of HTTP verbs such as `POST` , `PUT`, and `DELETE`.
 
