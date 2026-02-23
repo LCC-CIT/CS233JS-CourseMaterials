@@ -23,7 +23,7 @@ The project must:
   
 - Be hosted on citstudent.lanecc.edu. 
   
-- Production code should be transpiled and bundled using Babel and Webpack.
+- Production code should be bundled using Webpack.
 
 ## Submission
 
