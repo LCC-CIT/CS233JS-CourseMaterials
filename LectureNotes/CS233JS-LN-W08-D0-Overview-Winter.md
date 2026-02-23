@@ -7,11 +7,7 @@ author: Brian Bird
 
 ---
 
-**CS233JS Intermediate Programming: JavaScript**
-
 <h1>Week 8 Overview for Winter 2026</h1>
-
-<h2>May 19 through May 25</h2>
 
 **CS233JS Intermediate Programming: JavaScript**
 
