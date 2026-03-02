@@ -28,7 +28,14 @@ author: Brian Bird
 
 [TOC]
 
-### Spring Term Registration
+## Announcements
+
+**LCC Foundation Scholarships** 
+The LCC Foundation scholarship application is now open! Just one simple application connects LCC students to hundreds of scholarship opportunities available ONLY to them. Apply before the March 3rd deadline! This is for students who will be at LCC for the 2026-27 academic year.
+
+Resource: [More Information](https://out.smore.com/e/5xfb7/638W3H?__$u__) | Contact: [Kaisa Lightfoot - LCC Foundation](https://out.smore.com/e/5xfb7/y-lGQ7?__$u__)
+
+## Spring Term Registration
 
 If you haven't registered for spring term yet (and some of you haven't), these are the classes recommended for [AAS in Software Development](https://lanecc.smartcatalogiq.com/en/2024-2025/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/) majors:
 
@@ -45,7 +52,7 @@ If you haven't registered for spring term yet (and some of you haven't), these a
 
 See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for a listing of the terms courses required for the AAS in Software Development are normally offered.
 
-### Due Dates
+## Due Dates
 
 Look at the due dates on Moodle
 
