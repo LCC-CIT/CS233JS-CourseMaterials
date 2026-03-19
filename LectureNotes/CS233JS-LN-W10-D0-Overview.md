@@ -11,6 +11,8 @@ author: Brian Bird
 
 <h1>Week 10 Overview for Winter 2026</h1>
 
+<h2>March 10 through March 16</h2>
+
 **CS233JS Intermediate Programming: JavaScript**
 
 | Topics by Week                                       |                                                        |
