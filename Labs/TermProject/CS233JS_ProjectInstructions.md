@@ -63,7 +63,7 @@ The objective of this step in the  project is to allow you to implement a static
 
 ### Submission
 
-- Create a word processing document that includes one or more screen shots of  your application as well as the URL for your github repository.
+- Create a document that includes one or more screen shots of  your application as well as the URL for your github repository.
 - Share your document either formally or informally with at least one other  student in class. Revise the document based on feedback that you think  is relevant.
 - Upload the document you created in moodle.
 
