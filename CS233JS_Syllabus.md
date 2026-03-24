@@ -15,50 +15,52 @@
 
 ## Course Description
 
-This is the second in a sequence of 2 courses that teaches students to develop client-side or front-end code for browser-based applications. The course introduces intermediate level programming concepts and skills as well as JavaScript syntax, tools and frameworks required for modern front-end development.
+This is the second in a sequence of 2 courses focused on developing client-side ( front-end) browser-based applications. The course introduces intermediate level programming concepts and skills as well as JavaScript syntax, tools and frameworks.
 
 ## Learning Outcome
 
-The intention of the course is to enable you to use modern technologies and tools to create more advanced front-end components that might be part of any web site.
+The intention of the course is to enable you to use current JavaScript technologies and tools to create more advanced front-end web applications.
 
 ### Teaching Methods
 
-This hybrid course accommodates on-campus and online students through a blend of lectures, discussions, and hands-on labs. Online students can participate synchronously via Zoom or asynchronously by watching session recordings.
+This course is offered in both hybrid and online modalities:
 
-Students will work with lab partners to do code reviews and provide helpful feedback for improving each other’s code quality. Online students can collaborate with their lab partners asynchronously.
+-  Hybrid: this combines online materials and on-campus class meetings which are a combination of lecture, discussion and lab (in-class coding). Students are expected to come in-person, but may participate via Zoom when circumstances prevent them from coming in person.
+- Online: This is the asychronous modality. Students will watch lecture resordings and interact with the instructor and other students online.
+
+Students taking the course in either modality will work with lab partners to help eachother with coding, do code reviews and provide helpful feedback for improving each other’s code quality.
 
 ## Course Content
 
-| **Technologies** |                        |             |
-| ---------------- | ---------------------- | ----------- |
-| Bootstrap        | CSS Flexbox            | HTML Canvas |
-| JavaScript       | ECMAScript 6+ features | JSON        |
-| Node.js and NPM  | Babel                  | Webpack     |
-| AJAX with Fetch  | Git and GitHub         |             |
+| **Technologies**       |                            |               |
+| ---------------------- | -------------------------- | ------------- |
+| Node.js and NPM        | Modern ECMAScript features | HTML Canvas   |
+| Fetch with async/await | Git and GitHub             | JSON          |
+| Vite                   | Vitest                     | Local storage |
 
 | **Themes and Issues**        |                             |                               |
 | ---------------------------- | --------------------------- | ----------------------------- |
 | Dynamic and static web sites | Client and server-side code | Web application architecture  |
 | JavaScript technologies      | Syntax, semantics and style | Giving and receiving feedback |
 
-| **Concepts**                          |         |              |
-| ------------------------------------- | ------- | ------------ |
-| Variables, scope and binding (review) | Objects | Classes      |
-| Functional programming                | AJAX    | Web services |
+| **Concepts** |                        |                             |
+| ------------ | ---------------------- | --------------------------- |
+| Unit testing | Functional programming | Object oriented programming |
+| Code reviews | Asynchronous code      | Web services                |
 
 | **Skills**                                                   |
 | ------------------------------------------------------------ |
 | Explain the relationship between presentation layer, client-side programming and server side programming in modern web applications. Explain the usage of JavaScript in modern web applications. |
-| Effectively use intermediate and advanced syntactical elements of modern JavaScript (ES 6) including: variable scope (let and const) template literals, objects, de-structuring assignment, anonymous function, arrow functions, classes, modules. |
-| Effectively use JavaScript tools, modules, libraries and frameworks that are typical in modern JavaScript development including: replit.com, node.js, npm, babel, webpack, fetch, axios, concurrently. |
-| Design and implement a variety of sophisticated JavaScript applications including: a ToDo list, a Bookmarking application, a Meme Creator , a Meetup application with charting and mapping features, a Weather application. |
+| Effectively use intermediate and advanced syntactical elements of modern JavaScript (ES 6+) including: template literals, objects, de-structuring assignment, anonymous function, arrow functions, classes, modules. |
+| Effectively use JavaScript tools, modules, libraries and frameworks that are typical in modern JavaScript development including: node.js, npm, Vite and Vitest. |
+| Design and implement a variety of medium complexity JavaScript applications. |
 | Discuss concepts, themes and issues orally and in writing.   |
-| Evaluate your own web site implementation work. Evaluate the web site implementation work of other students and provide constructive feedback orally and in writing. |
+| Evaluate your own web site implementation work. Evaluate the web site implementation work of other students and provide constructive feedback. |
 | Respond appropriately to and assimilate feedback provided by other students and your instructor. |
 
 ## Learning Resources
 
-There is no textbook required for the course. The content of the course centers on the development of several more advanced web applications using modern features of JavaScript. In the process of building the applications the course will illustrate the usage of JavaScript modules, libraries and frameworks that are typical of a modern JavaScript development environment. Your instructor will provide written and video tutorials on a variety of topics. Screencasts that demonstrate all the concepts and skills required for completion of each lab will also be provided. Starting files for each lab assignment will be provided on GitHub beginning with the second lab.
+There is no textbook required for the course. The content of the course centers on the development of web applications using modern features of JavaScript. In the process of building the applications the course will illustrate the usage of JavaScript modules, libraries and frameworks that are typical of a modern JavaScript development environment. Your instructor will provide written and video tutorials and coding demo screencasts.
 
 ### Optional Textbook
 
@@ -72,7 +74,7 @@ Moodle is the Learning Management System (LMS) used for this course; LCC’s Moo
 
 #### Web Server
 
-You will publish your programming lab assignments to the same web server, [citstudent.lanecc.edu](http://citstudent.lanecc.edu/), that you used in CIS195, Web Authoring: HTML. Please send your instructor an email message if you have not used this server before and need your user id and password.
+You will publish your programming lab assignments to the same web server, [citstudent.lanecc.edu](http://citstudent.lanecc.edu/), that you used in CIS 195, Web Authoring: HTML. Please send your instructor an email message if you have not used this server before and need your user id and password.
 
 #### Course Materials
 
@@ -118,14 +120,14 @@ See the [LCC Tutoring Services](https://www.lanecc.edu/get-support/academic-supp
 
 The table below summarizes the possible points for each assessment task as well as the course as a whole:
 
-| **Assessment Tasks**      | **Points Each**          | **Total Points** |
-| ------------------------- | ------------------------ | ---------------- |
-| Labs 1–7                  | 50                       | 350              |
-| Code Reviews 1–7          | 10                       | 70               |
-| Quizzes 1–7               | 10                       | 70               |
-| Term Project              | 210                      | 210              |
-| Midterm and Final Quizzes | Midterm: 100, Final: 200 | 300              |
-| **Course Total**          |                          | **1000**         |
+| **Assessment Tasks**         | **Points**               | **Total Points** |
+| ---------------------------- | ------------------------ | ---------------- |
+| Labs and code reviews 1–7    | 40                       | 280              |
+| Quizzes 1–8                  | 10                       | 80               |
+| Term Project and code review | 290                      | 290              |
+| Midterm and Final Quizzes    | Midterm: 100, Final: 200 | 300              |
+| Participation                | 5 per week               | 50               |
+| **Course Total**             |                          | **1000**         |
 
 Letter grades for the course will be determined by the following percentages:
 
@@ -141,18 +143,19 @@ Letter grades for the course will be determined by the following percentages:
 
 #### Weekly Quizzes
 
-Weekly quizzes are given that cover the required reading and tutorial videos for that week. They are "open book" (or video).
+Weekly quizzes are given that cover the required reading and/or tutorial videos for that week. They are "open book".
 
 #### Midterm and Final Quizzes
 
-The midterm and final quizzes are given in weeks 5 and 11. See the course schedule for exact dates and times. Quizzes are "closed book", but students may prepare a 8 1/2 x 11 sheet of notes to refer to during the quiz. These quizzes may be taken either:
+The midterm and final quizzes are given in weeks 5 and 11. See the course schedule for exact dates and times. These are "closed book", but students may prepare a 8 1/2 x 11 sheet of notes to refer to during the quiz. These quizzes may be taken either:
 
-- On-campus students (hybrid modality) will take the quiz in the classroom during the normal class time.
-- Online students will take the quiz in the Instructional Testing Center in the Center Building, room 311. See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for testing times and procedures.
+- On-campus in the classroom during the normal class time.
+- In [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services), in the Center Building, room 311. See their web site for testing times and procedures.
+- Students who live outside the Eugene-Springfield area need to contact their instructor at least two weeks before the midterm or final to arrange an alternate testing venue.
 
 ### Code Reviews
 
-Students will work in groups of two or three, to review the *beta* versions of each other’s lab assignment solutions. The code review does not affect the grade of the student whose work is being reviewed.
+Students will work in groups of two or three, to review the *beta* (draft) versions of each other’s lab assignment solutions. Students will be graded on the accuracy of their code reviews. The review will not affect the grade of the student whose work is being reviewed.
 
 ### Academic Honesty
 
@@ -166,7 +169,12 @@ If students submit code that uses JavaScript features or programming techniques 
 
 ### Participation and Attendance
 
-While participation and attendance are essential to succeed in this class, they will not be graded.
+Participation is graded. 
+
+- For on-campus students, this includes attendance, discussion and lab work. 
+- For online students this includes watching the recorded lectures interacting in online discussions.
+
+Weekly participation is essential to success in this course!
 
 ### No Show Drop
 
@@ -176,7 +184,7 @@ The college’s “no show, drop” policy requires that: during the first week 
 
 - Grades for lab production versions submitted after the due date will be reduced by 10%.
 - No late assignments may be submitted after the end of week 10.
-- Code reviews, quizzes and exams cannot be taken after the due date.
+- Code reviews, quizzes and exams cannot be submitted or taken after the due date unless you recieve permission from the instructor due to extenuating circumstances.
 
 ## Accessibility and Campus Navigation
 
@@ -211,24 +219,31 @@ View [academic calendars](https://www.lanecc.edu/programs-academics/registration
 
 ### Weekly Learning Activities
 
-- **Monday:** Start assigned reading/videos and participate in class.
-- **Tuesday:** Complete code review of last week's lab.
-- **Wednesday:** Participate in class, or watch videos and quiz deadline.
-- **Thursday:** Lab production version submission.
-- **Sunday:** Post beta version of the current week's lab.
+- **Monday**
+  - Start reading and/or watching the assigned tutorials
+
+- **Wednesday**
+  - Take the reading quiz
+
+- **Thursday**
+  - Submit the beta (draft) lab assignment solution
+
+- **Sunday**
+  - Submit the production (final) lab assignment solution
+
 
 ### Tentative Course Schedule
 
-| **Week**         | **Topic**                       | **Lab**                                                     | **Quiz**                           |
-| ---------------- | ------------------------------- | ----------------------------------------------------------- | ---------------------------------- |
-| **1**<br />1/5   | JavaScript Review and Bootstrap | Lab 1 Review: stopwatch, concentration & tic-tac-toe ver. 1 | Quiz 1, JS Review                  |
-| **2**<br />1/12  | ES6 Features, Classes and Git   | Lab 2 concentration & tic-tac-toe ver. 1                    | Quiz 2, Bootstrap                  |
-| **3**<br />1/19  | ES6 Features and Git            | Lab 3  stopwatch, concentration & tic-tac-toe ver. 2        | 2Quiz 3, ES 6 features and classes |
-| **4**<br />1/26  | Node.js, NPM, Webpack           | Lab 4 Webpack                                               | Quiz 4                             |
-| **5**<br />2/2   | Midterm Quiz                    | No lab assignment                                           | Midterm quiz                       |
-| **6**<br />2/9   | Canvas & Flexbox                | Lab 5 Canvas                                                | Quiz 5                             |
-| **7**<br />2/16  | AJAX & Fetch API                | Lab 6 AJAX                                                  | Quiz 6                             |
-| **8**<br />2/23  | API Calls & Charts              | Lab 7 API calls                                             | Quiz 7                             |
-| **9**<br />3/2   | Term Project                    |                                                             | Lab 7                              |
-| **10**<br />3/9  | Review                          |                                                             | Final Project                      |
-| **11**<br />3/16 | Finals week                     |                                                             | Final quiz                         |
+| **Week** | **Topic**                          | **Lab**                                        | **Quiz**          |
+| -------- | ---------------------------------- | ---------------------------------------------- | ----------------- |
+| **1**    | JavaScript review                  | Lab 1                                          | JS Review quiz    |
+| **2**    | ES6 features & Git                 | Lab 2                                          | ES6 & Git quiz    |
+| **3**    | Classes and OOP                    | Lab 3                                          | OOP quiz          |
+| **4**    | Node.js, NPM & Vite                | Lab 4                                          | Node quiz         |
+| **5**    | Midterm quiz  <br />Project design | No lab assignment  <br />Term project proposal | Midterm quiz      |
+| **6**    | Unit testing with Vitest           | Lab 5                                          | Unit testing quiz |
+| **7**    | Fetch & async/await                | Lab 6                                          | Async quiz        |
+| **8**    | HTML canvas                        | Lab 7                                          | Canvas quiz       |
+| **9**    | Functional programming             | Term project part 1                            | Functional quiz   |
+| **10**   | Review                             | Term project part 2                            | Practice final    |
+| **11**   | Finals week                        |                                                | Final quiz        |
