@@ -5,9 +5,9 @@
 |                   | **Class**                                                    |      |                            | **Instructor**                                               |
 | ----------------- | ------------------------------------------------------------ | ---- | -------------------------- | ------------------------------------------------------------ |
 | **Course Number** | CS 233JS                                                     |      | **Name**                   | Brian Bird                                                   |
-| **CRN**           | 32622 Hybrid (on campus)  Online 32408                       |      | **E-mail**<br />**Mobile** | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)<br />[‪(541) 525-0213‬](tel:5415250213) |
-| **Day & Time**    | M, W 10:00–11:50                                             |      | **Office Hours**           | M, W 1:00–1:50<br />Tu, Th 2:00–2:50                         |
-| **Room**          | Building 19, Room 126  or [Zoom meeting](https://lanecc.zoom.us/j/97504785419) |      | **Room**                   | Building 19, Room 152 or [Zoom meeting](https://lanecc.zoom.us/j/8982554800) |
+| **CRN**           | 41049 Hybrid (on campus)  Online 40715                       |      | **E-mail**<br />**Mobile** | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)<br />[‪(541) 525-0213‬](tel:5415250213) |
+| **Day & Time**    | M, W 10:00–11:50                                             |      | **Office Hours**           | M&mdash;Th 1:00–1:50                                         |
+| **Room**          | Building 19, Room 128  or [Zoom meeting](https://lanecc.zoom.us/j/98707016990) |      | **Room**                   | Building 19, Room 152 or [Zoom meeting](https://lanecc.zoom.us/j/8982554800) |
 
 <h2>Table of Contents</h2>
 
@@ -196,18 +196,18 @@ Please be aware that any accessible tables and chairs in this room should remain
 
 ## Schedules
 
-### Academic Calendar
+## Academic Calendar
 
-| **Winter Term 2026**                        |              |
-| ------------------------------------------- | ------------ |
-| Term begins                                 | 1/5, Monday  |
-| Last day to drop and receive a refund       | 1/12, Monday |
-| Martin Luther King Jr. Day (college closed) | 1/19, Monday |
-| Presidents' Day (college closed)            | 2/16, Monday |
-| Last day for schedule changes               | 2/27, Friday |
-| Finals Week                                 | 3/16–3/20    |
+| Spring Term 2026                           |              |
+| ------------------------------------------ | ------------ |
+| Term begins                                | 3/30, Monday |
+| Last day to receive refund                 | 4/6, Monday  |
+| Spring faculty conference (college closed) | 5/1, Friday  |
+| Last day for schedule changes              | 5/22, Friday |
+| Memorial day holiday (college closed)      | 5/25, Monday |
+| Finals Week                                | 6/8–6/12     |
 
-View [academic calendars](https://www.lanecc.edu/programs-academics/registration-schedules-and-academic-calendar) on the LCC web site.
+View [academic calendars](https://www.lanecc.edu/programs-academics/registration-schedules-and-academic-calendar/academic-calendar) on the LCC web site.
 
 ### Weekly Learning Activities
 
