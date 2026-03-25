@@ -1,6 +1,6 @@
 <h1>Intermediate Programming: JavaScript</h1>
 
-**Syllabus for winter 2026**
+**Syllabus for spring 2026**
 
 |                   | **Class**                                                    |      |                            | **Instructor**                                               |
 | ----------------- | ------------------------------------------------------------ | ---- | -------------------------- | ------------------------------------------------------------ |
@@ -241,7 +241,7 @@ View [academic calendars](https://www.lanecc.edu/programs-academics/registration
 | **3**    | Classes and OOP                    | Lab 3                                          | OOP quiz          |
 | **4**    | Node.js, NPM & Vite                | Lab 4                                          | Node quiz         |
 | **5**    | Midterm quiz  <br />Project design | No lab assignment  <br />Term project proposal | Midterm quiz      |
-| **6**    | Unit testing with Vitest           | Lab 5                                          | Unit testing quiz |
+| **6**    | Unit testing, debugging techniques | Lab 5                                          | Unit testing quiz |
 | **7**    | Fetch & async/await                | Lab 6                                          | Async quiz        |
 | **8**    | HTML canvas                        | Lab 7                                          | Canvas quiz       |
 | **9**    | Functional programming             | Term project part 1                            | Functional quiz   |
