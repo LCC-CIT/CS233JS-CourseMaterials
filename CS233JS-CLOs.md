@@ -1,5 +1,5 @@
 # CS 233JS CLOs
-
+## Weekly Topics
 1. Review
 2. More review + Styling
    - Styling with Bootstrap or Tailwind
@@ -33,3 +33,8 @@
 9. Term project
    - Add to job search portfolio
 
+
+
+## CLOs
+
+1. Learn intermediate level application design concepts such as 
