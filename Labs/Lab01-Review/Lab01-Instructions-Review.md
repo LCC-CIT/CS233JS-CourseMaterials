@@ -22,43 +22,11 @@ The objectives of this lab are:
 
 ## Part 1:
 
-Complete the solutions to the programming challenges in the [Lab 1 Programming Exercises](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab01-Review/CS233JS_Lab01_Part1.html) document. You can use any JavaScript environment you like to write and test your code, for example:
+Complete the solutions to the programming challenges in the [Lab 1 JavaScript Review Exercises](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab01-Review/CS233JS_Lab01_Part1.html) HTML and JavaScript files. Use a code editor (such as Visual Studio Code) to write and test your code.
 
 ## Part 2: Web App
 
-There are a few things Mari did differently than the way I would like you to do things:
 
-- She hasn't introduced you to`let` and`const` yet, but you have learned about these in CS 133JS, so declare variables using `let` instead of `var`.
-  - Use `const` to declare numbers that are used in the code:
-    - In the stopwatch app, use a `const` for 60 (used twice).
-- Don't put multiple `return` statements in a function, for example in the branches of an if-else statement.
-- In the Stopwatch app, don't write the `pad` function so that it sometimes returns a *string* and sometimes a *number*. The best practice is for a function to always return the same data type.
-
-### Web App 1: Stopwatch - Version 1
-
-- Download the [stopWatchStart.zip](https://drive.google.com/drive/folders/156k99ByO2jnzu1kkTWECPCTWIex6RT8g?usp=sharing) file and unzip it. The `indexStart.js` file has comments in it to guide you through the process of completing the code.
-
-- Rename the files by removing the word "start" from each file. In `index.html`, change the `src` attribute in the `script` element to use the new file name. 
-  Complete the code in each of the starting files:
-  
-  - `unstyledIndexStart.html`, `indexStart.html` You can use either one of these files.
-    
-    - `IndexStart.html` is already styled with Bootstrap, there is nothing you need to add to this file.
-    
-    - `unstyledIndexStart.htm` has no Bootstrap styling. If you would like to do your own styling (optional) you can add it to this one.
-  
-  - `stylesStart.css` 
-    There is nothing in this file. If you want to add some CSS styling (optional) to the web app, you can add it here.
-  
-  - `indexStart.js` 
-    Add JavaScript code to implement the stop watch functionality as you might have done in CS 133JS.
-    
-    - FYI, the global variable `timer` does not actually store an object. It holds the ID number of a timer object created by calling the built-in JavaScript function `setInterval`.
-    - Read more about the `setInterval` function in [this MDN document](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval). In particular, note that it uses your `incrementTimer` function as a *callback function* (a function that it calls).
-
-- Test and debug your application.
-
-- You can try out a completed version of the web app here: [https://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/stopWatch/](http://citstudent.lanecc.edu/~brianb/CS233JS/Lab01/stopWatch/)
 
 ### Code Review
 
