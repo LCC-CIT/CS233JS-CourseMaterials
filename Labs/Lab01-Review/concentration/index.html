@@ -5,56 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS 233JS Concentration</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <div class="container pt-5">
+    <!-- Outer page container used for centering and spacing -->
+    <div class="game-shell">
 
-        <div class="container" id="board">
-            <div class="pb-2" id="status">Matches: 0 Tries: 0</div>
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div id="0" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="1" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="2" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="3" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="4" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div class="col-1"></div>
+        <!-- Main game board container -->
+        <div class="game-board" id="board">
+            <!-- Live score text updated by JavaScript -->
+            <div class="game-status" id="status">Matches: 0 Tries: 0</div>
+
+            <!-- Row 1 of cards -->
+            <div class="card-row">
+                <div id="0" name="card" class="game-card"></div>
+                <div id="1" name="card" class="game-card"></div>
+                <div id="2" name="card" class="game-card"></div>
+                <div id="3" name="card" class="game-card"></div>
+                <div id="4" name="card" class="game-card"></div>
             </div>
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div id="5" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="6" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="7" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="8" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="9" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div class="col-sm-1"></div>
+
+            <!-- Row 2 of cards -->
+            <div class="card-row">
+                <div id="5" name="card" class="game-card"></div>
+                <div id="6" name="card" class="game-card"></div>
+                <div id="7" name="card" class="game-card"></div>
+                <div id="8" name="card" class="game-card"></div>
+                <div id="9" name="card" class="game-card"></div>
             </div>
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div id="10" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="11" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="12" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="13" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="14" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div class="col-sm-1"></div>
+
+            <!-- Row 3 of cards -->
+            <div class="card-row">
+                <div id="10" name="card" class="game-card"></div>
+                <div id="11" name="card" class="game-card"></div>
+                <div id="12" name="card" class="game-card"></div>
+                <div id="13" name="card" class="game-card"></div>
+                <div id="14" name="card" class="game-card"></div>
             </div>
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div id="15" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="16" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="17" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="18" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div id="19" name="card" class="col-sm-2 card">&nbsp;</div>
-                <div class="col-sm-1"></div>
+
+            <!-- Row 4 of cards -->
+            <div class="card-row">
+                <div id="15" name="card" class="game-card"></div>
+                <div id="16" name="card" class="game-card"></div>
+                <div id="17" name="card" class="game-card"></div>
+                <div id="18" name="card" class="game-card"></div>
+                <div id="19" name="card" class="game-card"></div>
             </div>
-        </div><!-- /.board -->
+        </div>
     </div>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Game behavior logic -->
     <script src="src/index.js"></script>
 </body>
 
