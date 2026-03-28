@@ -1,0 +1,137 @@
+/* Use border-box so width/height includes border and padding. */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove default page margin and allow full-height layout. */
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+/* Base page styling for font and background color. */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+/* Center the game area and keep it from getting too wide. */
+.game-shell {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+/* Visual container for the full board and status area. */
+.game-board {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #d7d9df;
+  border-radius: 12px;
+  background: #ffffff;
+  display: grid;
+  row-gap: 8px;
+}
+
+/* Emphasize the score text. */
+.game-status {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* Each board row is a 5-column grid (5 dominoes per row). */
+.domino-row {
+  display: grid;
+  grid-template-columns: repeat(5, 64px);
+  justify-content: center;
+  column-gap: 8px;
+}
+
+/* Domino tile base appearance. */
+.game-domino {
+  width: 64px;
+  height: 120px;
+  border: 2px solid #111827;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.1s, box-shadow 0.1s;
+}
+
+/* Amber highlight on the first-picked non-double domino. */
+.game-domino.selected {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 2px #f59e0b;
+}
+
+/* Keep the grid slot visible but hide the tile content once removed. */
+.game-domino.removed {
+  visibility: hidden;
+}
+
+/* ---- Domino face layout ---- */
+
+/* Flex column that fills the full tile height. */
+.domino-face {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Each half occupies equal vertical space and uses a 3×3 pip grid. */
+.domino-half {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  flex: 1;
+  padding: 5px;
+  gap: 2px;
+}
+
+/* Every pip-cell fills its grid cell. */
+.pip-cell {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Active pip cells render as filled dark circles. */
+.pip-cell.pip {
+  background: #1f2937;
+  border-radius: 50%;
+}
+
+/* Horizontal divider between the two halves. */
+.domino-divider {
+  height: 2px;
+  background: #111827;
+  flex-shrink: 0;
+}
+
+/* ---- Domino back ---- */
+.domino-back {
+  height: 100%;
+  background: #1e3a5f;
+}
+
+/* ---- Narrow-screen layout ---- */
+@media (max-width: 620px) {
+  .game-board {
+    row-gap: 5px;
+  }
+
+  /* Keep 5 columns but use smaller tile sizes and spacing. */
+  .domino-row {
+    grid-template-columns: repeat(5, 48px);
+    column-gap: 5px;
+  }
+
+  .game-domino {
+    width: 48px;
+    height: 90px;
+  }
+}
