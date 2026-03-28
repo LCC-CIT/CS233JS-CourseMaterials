@@ -7,185 +7,181 @@
     user has cleared all 20 cards from the board.
 */
 
-// The folder where your card images are stored
+// -------------------- Constants --------------------
 const IMAGE_PATH = 'Cards/';
-// An array that stores the images for each card
 const NUMBER_OF_CARDS = 20;
-const images = Array(NUMBER_OF_CARDS).fill(null);
-// The index of the first card picked by the user
-let firstPick = -1;
-// The index of the second card picked by the user
-let secondPick = -1;
-// Statistics about this "round"
-let matches = 0;
-let tries = 0;
+const CHECK_DELAY_MS = 2000;
+const CARD_VALUE_INDEX = 4;
+const CARD_VALUE_LENGTH = 1;
+const TOTAL_PAIRS = NUMBER_OF_CARDS / 2;
 
+// -------------------- Game State --------------------
+const game = {
+    images: Array(NUMBER_OF_CARDS).fill(null),
+    firstPick: -1,
+    secondPick: -1,
+    matches: 0,
+    tries: 0
+};
+
+// -------------------- Initialization --------------------
 // Initializes the page after it's loaded.
-function init()
-{
-    // fill the array of images by calling fillImages
+function init() {
     fillImages();
-    // shuffle them by calling shuffle images
     shuffleImages();
-    // show the number of matches on the page by calling showMatches
     showMatches();
-    // enable all of the card elements on the page by calling enableAllCards
     enableAllCards();
-    // show the backs of all of the cards by calling showAllBacks
     showAllBacks();
 }
 
-// shows the number of matches and tries in the status element on the page
-function showMatches() {
-    // update the element on the page to display the variable matches and tries
-    document.getElementById("status").innerHTML = "Matches: " + matches + " Tries: " + tries;
-}
-
-// fills the array images with 10 pairs of card filenames
-// card filenames follow this pattern:  cardvs.jpg where
-// v is the first char of the value of the card and 
-// s is the first char of the suit of the card
-// example:  cardjh.jpg is the jack of hearts
+// Fills the images array with 10 pairs of card filenames.
+// Card filenames follow this pattern: cardvs.jpg where
+// v is the first character of the value and
+// s is the first character of the suit.
+// Example: cardjh.jpg is the jack of hearts.
 function fillImages() {
     const values = ['a', 'k', 'q', 'j', 't', '9', '8', '7', '6', '5'];
     const suits = ['h', 's'];
-    // create a variable called index and set it to 0
     let imageIndex = 0;
-    // create a for loop that iterates through each value in the values array
-    for(const value of values) {
-        // create a for loop that iterates through each suit in the suits array
+    for (const value of values) {
         for (const suit of suits) {
-            // set the element in the images array at index to a string that contains card + value + suit + .jpg
-            images[imageIndex] = "card" + value + suit + ".jpg";
-            // increment the index
+            game.images[imageIndex] = 'card' + value + suit + '.jpg';
             imageIndex++;
-        // end for loop for the suits
         }
-    // end for loop for the values
     }
 }
 
 // Shuffles the elements in the images array
 function shuffleImages() {
-    // Iterate through the images array swapping each card with another randomly selected card
     for (let i = 0; i < NUMBER_OF_CARDS; i++) {
-        // set rndIndex to a random number between 0 and 19
-        let rndIndex = Math.trunc(Math.random() * (NUMBER_OF_CARDS - 1));
-        // set a variable called temp to the current image from the array
-        let temp = images[i];
-        // set current image from the array to the element in images at the rndIndex
-        images[i] = images[rndIndex];
-        // set the element at the rndIndex to temp
-        images[rndIndex] = temp;
-    }   
-    // end for loop
-}
-
-// Assigns the handleclick function to the onclick event for all cards
-// on the page.  (All cards have the name attribute 'card'.)
-// Sets the cursor (part of the style) to 'pointer'
-function enableAllCards() {
-    let cards = document.getElementsByName("card");
-    for (const card of cards) {
-        card.onclick = handleClick;
-        card.style.cursor = "pointer";
+        let rndIndex = Math.trunc(Math.random() * NUMBER_OF_CARDS);
+        let temp = game.images[i];
+        game.images[i] = game.images[rndIndex];
+        game.images[rndIndex] = temp;
     }
-    // end for loop
-}
-
-// Enables only the cards whose backgroundImage style property is not 'none'
-function enableAllRemainingCards() {
-    let cards = document.getElementsByName("card");
-   for (let i = 0; i < cards.length; i++) {
-        if (cards[i].style.backgroundImage != 'none') {
-            cards[i].onclick = handleClick;
-            cards[i].style.cursor = 'pointer';
-        }
-    }
-    // end for loop
-}
-
-// Shows the back of one card based on it's index
-// each card has an id attribute set to it's index in the html page
-// the backgroundImage (style) is set to the url of the image
-// for a card back to "show the back"
-function showBack(index) {
-    let card = document.getElementById(index);
-    card.style.backgroundImage = "url(" + IMAGE_PATH + "black_back.jpg)";
 }
 
 // Shows the back for all cards
 function showAllBacks() {
-    for (let i = 0; i < NUMBER_OF_CARDS; i++)
-        showBack(i);
-    // end for loop
+    for (let i = 0; i < NUMBER_OF_CARDS; i++) {
+        showCardBack(i);
+    }
 }
 
+// -------------------- Game Flow --------------------
 // This function is called when the user clicks on a card.
-// It causes the card face to be shown and if it's the seocn
+// It causes the card face to be shown and if it's the second
 // card clicked, checks for a match.
 function handleClick() {
-    let index = this.id;
-    this.style.backgroundImage = 'url(' + IMAGE_PATH + images[index] + ')';
+    let index = Number(this.id);
+    showCardFace(index);
     disableCard(index);
-    if (firstPick == -1) {
-        firstPick = index;
+    if (game.firstPick === -1) {
+        game.firstPick = index;
     }
     else {
-        secondPick = index;
+        game.secondPick = index;
         disableAllCards();
-        setTimeout(checkCards, 2000);
+        setTimeout(checkCards, CHECK_DELAY_MS);
     }
-}
-
-// Disable one card based on it's index.
-function disableCard(index) {
-    let card = document.getElementById(index);
-    card.onclick = () => {}; 
-    card.style.cursor = 'none';
-}
-
-// Disable all of the cards.
-function disableAllCards() {
-
 }
 
 // Checks the 2 cards that have been picked for matches.
 function checkCards() {
-    tries++;
-    if (isMatch() == true) {
-        matches++;
-        removeCard(firstPick);
-        removeCard(secondPick);
-        if (matches < 10) {
+    game.tries++;
+    if (isMatch()) {
+        game.matches++;
+        removeCard(game.firstPick);
+        removeCard(game.secondPick);
+        if (game.matches < TOTAL_PAIRS) {
             enableAllRemainingCards();
         }
     }
     else {
-        showBack(firstPick);
-        showBack(secondPick);
+        showCardBack(game.firstPick);
+        showCardBack(game.secondPick);
         enableAllRemainingCards();
     }
     showMatches();
-    firstPick = -1;
-    secondPick = -1;
+    resetPicks();
 }
 
-// Determines if the images in firstPick and secondPick are matches
-// 2 cards are a match if they have the same value
-// cardvs.jpg is the pattern for card file names
+// -------------------- Helpers --------------------
+// Returns the HTML element for one card index.
+function getCardElement(index) {
+    return document.getElementById(index);
+}
+
+// Shows the back of one card based on its index.
+function showCardBack(index) {
+    let card = getCardElement(index);
+    card.style.backgroundImage = 'url(' + IMAGE_PATH + 'black_back.jpg)';
+}
+
+// Shows the face of one card based on its index.
+function showCardFace(index) {
+    let card = getCardElement(index);
+    card.style.backgroundImage = 'url(' + IMAGE_PATH + game.images[index] + ')';
+}
+
+// Disable one card based on its index.
+function disableCard(index) {
+    let card = getCardElement(index);
+    card.onclick = null;
+    card.style.cursor = 'default';
+}
+
+// Disable all cards.
+function disableAllCards() {
+    let cards = document.getElementsByName('card');
+    for (const card of cards) {
+        card.onclick = null;
+        card.style.cursor = 'default';
+    }
+}
+
+// Assigns the handleClick function to all cards.
+function enableAllCards() {
+    let cards = document.getElementsByName('card');
+    for (const card of cards) {
+        card.onclick = handleClick;
+        card.style.cursor = 'pointer';
+    }
+}
+
+// Enables only cards that are still on the board.
+function enableAllRemainingCards() {
+    let cards = document.getElementsByName('card');
+    for (let i = 0; i < cards.length; i++) {
+        if (cards[i].style.backgroundImage !== 'none') {
+            cards[i].onclick = handleClick;
+            cards[i].style.cursor = 'pointer';
+        }
+    }
+}
+
+function resetPicks() {
+    game.firstPick = -1;
+    game.secondPick = -1;
+}
+
+// Returns true when both picked cards have the same value.
 function isMatch() {
-    if (images[firstPick].substr(4, 1) == images[secondPick].substr(4, 1))
-        return true;
-    else
-        return false;
+    let value1 = game.images[game.firstPick].substr(CARD_VALUE_INDEX, CARD_VALUE_LENGTH);
+    let value2 = game.images[game.secondPick].substr(CARD_VALUE_INDEX, CARD_VALUE_LENGTH);
+    return value1 === value2;
 }
 
-// Removes one card from the board based by it's index.
-// Sets the backgroundImage to 'none' to remove the card.
+// Removes one card from the board by setting its background to none.
 function removeCard(index) {
-    var card = document.getElementById(index);
+    let card = getCardElement(index);
     card.style.backgroundImage = 'none';
+}
+
+// -------------------- UI --------------------
+// Shows the number of matches and tries in the status element.
+function showMatches() {
+    document.getElementById('status').innerHTML = 'Matches: ' + game.matches + ' Tries: ' + game.tries;
 }
 
 window.onload = init;
