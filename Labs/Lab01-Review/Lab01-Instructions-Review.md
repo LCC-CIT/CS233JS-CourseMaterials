@@ -14,11 +14,9 @@ author: Brian Bird
 
 [TOC]
 
-## Objectives
+## Objective
 
-The objectives of this lab are:
-
-1. Review what you learned in CS 133JS, Beginning JavaScript.
+The objective of this lab is to review what you learned in CS 133JS, Beginning JavaScript.
 
 ## Part 1:
 

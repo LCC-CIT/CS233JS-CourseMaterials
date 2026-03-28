@@ -8,18 +8,18 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-<h1>Week 1 Overview for Winter 2026</h1>
+<h1>Week 1 Overview for Spring 2026</h1>
 
-<h2>January 5 through 11</h2>
+<h2>March 30 through April 5</h2>
 
-| Topics by Week                                                   |                                                     |
-| ---------------------------------------------------------------- | --------------------------------------------------- |
-| <mark>1. Intro to Course, Bootstrap and JavaScript Review</mark> | 6. HTML5 Canvas, CSS Flexbox                        |
-| 2. Bootstrap and JS Review (continued)                           | 7. AJAX, ES6 promises, fetch API                    |
-| 3. ES6, Classes and Git                                          | 8. Making API calls, graphs and charts, Google maps |
-| 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage             | 9. Term Project                                     |
-| 5. Midterm Quiz                                                  | 10. Review                                          |
-| 11. Final Quiz                                                   |                                                     |
+| Topics by Week                                               |                                       |
+| ------------------------------------------------------------ | ------------------------------------- |
+| <mark>1. Intro to Course, Bootstrap and JavaScript Review</mark> | 6. Unit testing, debugging techniques |
+| 2. ES6 features and Git                                      | 7. Asynchronous programming           |
+| 3. ES6 Classes and Object Oriented Programming               | 8. HTML5 Canvas                       |
+| 4. Node.js, NPM, Vite <br />Local Storage                    | 9. Functional programming             |
+| 5. Midterm Quiz. <br />Project Design                        | 10. Review                            |
+| 11. Final Quiz                                               |                                       |
 
 <h2>Contents</h2>
 
