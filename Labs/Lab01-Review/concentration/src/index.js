@@ -12,6 +12,7 @@ const NUMBER_OF_CARDS = 20;
 
 // -------------------- Main Flow --------------------
 // These functions act as the "glue" between the game logic and the UI
+// which are defined in sections below.
 
 // Initializes the page after it's loaded.
 function init() {
@@ -24,10 +25,10 @@ function init() {
 }
 
 // This function is called when the user clicks on a card.
-// It coordinates between the ui showing the card and logic tracking the pick.
+// It coordinates between the ui showing the card and game logic tracking the pick.
 function handleClick() {
     const CHECK_DELAY_MS = 2000;
-    let index = Number(this.id);
+    let index = Number(this.id);  // index represets the card location in the cards array and on the page.
     
     // Track the pick in our logic
     gameLogic.pickCard(index);
@@ -36,15 +37,15 @@ function handleClick() {
     ui.showCardFace(index, gameLogic.cards[index]);
     ui.disableCard(index);
     
-    // Check if we need to resolve a match
+    // Check if we need to check for a match and complete the turn
     if (gameLogic.secondPick !== -1) {
         ui.disableAllCards();
-        setTimeout(resolveTurn, CHECK_DELAY_MS);
+        setTimeout(completeTurn, CHECK_DELAY_MS);
     }
 }
 
 // Checks the 2 cards that have been picked for matches.
-function resolveTurn() {
+function completeTurn() {
     const TOTAL_PAIRS = NUMBER_OF_CARDS / 2;
     gameLogic.tries++;
     
