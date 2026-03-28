@@ -1,15 +1,16 @@
+---
 title: Lab 1, Part 1
 description: Review of beginning JavaScript
 keywords: review, beginning programming, JavaScript
 material: Lab Instructions
 generator: MarkText
 author: Brian Bird
-
-# Lab 1: JavaScript Review
+---
+<h1>Lab 1: JavaScript Review</h1>
 
 **CS 233JS, Intermediate Programming: JavaScript**
 
-## Contents
+<h2>Contents</h2>
 
 [TOC]
 
@@ -20,6 +21,8 @@ The objectives of this lab are:
 1. Review what you learned in CS 133JS, Beginning JavaScript.
 
 ## Part 1:
+
+Complete the solutions to the programming challenges in the [Lab 1 Programming Exercises](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab01-Review/CS233JS_Lab01_Part1.html) document. You can use any JavaScript environment you like to write and test your code, for example:
 
 ## Part 2: Web App
 
