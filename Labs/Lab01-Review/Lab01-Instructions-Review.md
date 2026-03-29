@@ -18,7 +18,7 @@ author: Brian Bird
 
 The objective of this lab is to review what you learned in CS 133JS, Beginning JavaScript.
 
-## Part 1:
+## Part 1: Exercises
 
 Complete the solutions to the programming challenges in the [Lab 1 JavaScript Review Exercises](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab01-Review/CS233JS_Lab01_Part1.html) HTML and JavaScript files. Use a code editor (such as Visual Studio Code) to write and test your code.
 
