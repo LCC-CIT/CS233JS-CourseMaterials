@@ -204,7 +204,7 @@ Please be aware that any accessible tables and chairs in this room should remain
 
 ## Schedules
 
-## Academic Calendar
+### Academic Calendar
 
 | Spring Term 2026                           |              |
 | ------------------------------------------ | ------------ |
@@ -217,33 +217,28 @@ Please be aware that any accessible tables and chairs in this room should remain
 
 View [academic calendars](https://www.lanecc.edu/programs-academics/registration-schedules-and-academic-calendar/academic-calendar) on the LCC web site.
 
-### Weekly Learning Activities
+### Weekly Deadlines
 
-- **Monday**
-  - Start reading and/or watching the assigned tutorials
+- **Wednesday:** Reading quiz
 
-- **Wednesday**
-  - Take the reading quiz
+- **Thursday:** Beta (draft) version of the lab assignment
 
-- **Thursday**
-  - Submit the beta (draft) lab assignment solution
-
-- **Sunday**
-  - Submit the production (final) lab assignment solution
+- **Saturday:** Code review of a lab partner's beta version
+- **Sunday:** Production (final) version of the lab assignment
 
 
 ### Tentative Course Schedule
 
-| **Week** | **Topic**                          | **Lab**                                        | **Quiz**          |
-| -------- | ---------------------------------- | ---------------------------------------------- | ----------------- |
-| **1**    | JavaScript review                  | Lab 1                                          | JS Review quiz    |
-| **2**    | ES6 features & Git                 | Lab 2                                          | ES6 & Git quiz    |
-| **3**    | Classes and OOP                    | Lab 3                                          | OOP quiz          |
-| **4**    | Node.js, NPM & Vite                | Lab 4                                          | Node quiz         |
-| **5**    | Midterm quiz  <br />Project design | No lab assignment  <br />Term project proposal | Midterm quiz      |
-| **6**    | Unit testing, debugging techniques | Lab 5                                          | Unit testing quiz |
-| **7**    | Fetch & async/await                | Lab 6                                          | Async quiz        |
-| **8**    | HTML canvas                        | Lab 7                                          | Canvas quiz       |
-| **9**    | Functional programming             | Term project part 1                            | Functional quiz   |
-| **10**   | Review                             | Term project part 2                            | Practice final    |
-| **11**   | Finals week                        |                                                | Final quiz        |
+| **Week** | **Topic**                          | **Lab**                             | **Quiz**          |
+| -------- | ---------------------------------- | ----------------------------------- | ----------------- |
+| **1**    | JavaScript review                  | Lab 1                               | JS Review quiz    |
+| **2**    | ES6 features & Git                 | Lab 2                               | ES6 & Git quiz    |
+| **3**    | Classes and OOP                    | Lab 3                               | OOP quiz          |
+| **4**    | Node.js, NPM & Vite                | Lab 4                               | Node quiz         |
+| **5**    | Midterm quiz  <br />Project design | No lab  <br />Term project proposal | Midterm quiz      |
+| **6**    | Unit testing, debugging techniques | Lab 5                               | Unit testing quiz |
+| **7**    | Fetch & async/await                | Lab 6                               | Async quiz        |
+| **8**    | HTML canvas                        | Lab 7                               | Canvas quiz       |
+| **9**    | Functional programming             | Term project part 1                 | Functional quiz   |
+| **10**   | Review                             | Term project part 2                 | Practice final    |
+| **11**   | Finals week                        |                                     | Final quiz        |
