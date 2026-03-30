@@ -35,6 +35,23 @@ body {
   font-weight: 600;
 }
 
+.game-instructions {
+  padding: 0.75rem;
+  border: 1px solid #d7d9df;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.game-instructions h2 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1rem;
+}
+
+.game-instructions p {
+  margin: 0;
+  line-height: 1.35;
+}
+
 .target-row {
   display: flex;
   align-items: center;
