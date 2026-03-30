@@ -28,7 +28,7 @@ This course is offered in both hybrid and online modalities:
 -  Hybrid: this combines online materials and on-campus class meetings which are a combination of lecture, discussion and lab (in-class coding). Students are expected to come in-person, but may participate via Zoom when circumstances prevent them from coming in person.
 - Online: This is the asychronous modality. Students will watch lecture resordings and interact with the instructor and other students online.
 
-Students taking the course in either modality will work with lab partners to help eachother with coding, do code reviews and provide helpful feedback for improving each other’s code quality.
+Students taking the course in either modality will work with lab partners to help each other with coding, do code reviews and provide helpful feedback for improving each other’s code quality.
 
 ## Course Content
 
