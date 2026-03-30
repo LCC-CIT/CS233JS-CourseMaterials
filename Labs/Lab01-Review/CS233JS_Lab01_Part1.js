@@ -51,7 +51,7 @@ function findIndexOfThree() {
 
 /* 6. Initialize a 2D array of integers: 
 1, 2, 3, 4
-1, 3, 5 7
+1, 3, 5, 7
 2, 4, 6, 8
 return the sum of all the elements */
 function sum2DArray() {
@@ -71,8 +71,10 @@ function describeCar() {
     return car.describe();
 }
 
-/* 8. Create an object literal that represents a student's class list and contains a property for each class they are taking. 
-Add a method that uses a loop to return the average grade.
+/* 8. Create an object literal that represents a student's class list and 
+contains a property for each class they are taking. Add a method 
+that uses a loop to return the average grade. You can add any number of classes, 
+but the average grade should be 90.
 */
 function averageClassGrade() {
     const classList = {
