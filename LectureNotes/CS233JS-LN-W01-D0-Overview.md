@@ -31,8 +31,8 @@ Welcome to the second term of JavaScript programming! I hope you are excited to 
 
 About half of you are taking the class online and the other half are taking it in person (the "hybird" modality). Here is how things will work for each group:
 
-- In-person: class will be a mix of lecture and assistance working on lab assignments. Attendance is part of the parrticipation grade for the class. (Lecture recordings will only be made available on request for excused absence from class.)
-- On-line: students can particpate in the class Zoom meeting or watch recordings of lectures. The class participaiton grade will be based on either joining the class Zoom meeting or providing evidence of watching the lecture recordings.
+- In-person: class will be a mix of lecture and assistance working on lab assignments. Attendance is part of the participation grade for the class. (Lecture recordings will only be made available on request for excused absence from class.)
+- On-line: students can particpate in the class [Zoom meeting](https://lanecc.zoom.us/j/98707016990) or watch recordings of lectures. The class participaiton grade will be based on either joining the class Zoom meeting or providing evidence of watching the lecture recordings.
 
 ## Announcements
 
