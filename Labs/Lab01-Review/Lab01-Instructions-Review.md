@@ -24,7 +24,7 @@ Complete the solutions to the programming challenges in the [Lab 1 JavaScript Re
 
 ## Part 2: Web App
 
-You wil do project A, B or C depending on the lab assignment version group you are in. These web apps can be implemented using the same overall program design as the example Concentration game web app.
+You wil do project A, B or C depending on the lab assignment version group you are in. These web apps will be implemented using the same overall program design as the example Concentration game web app. There are starter files for each project. You will complete the parts of the code indicated by the TODO: comments.
 
 ### Project A: "Double Trouble" Domino Game
 
