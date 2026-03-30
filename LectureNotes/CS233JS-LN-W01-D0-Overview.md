@@ -56,7 +56,7 @@ About half of you are taking the class online and the other half are taking it i
 
 1. Introductory stuff
 
-   - Read the syllabus (we'll discuss it briefly in class too)
+   - Read the syllabus (we'll discuss it briefly in class too).
    - Join the class Discord server. [Click here for a invitation.](https://discord.gg/9cTvqfgucs)
    - Take the student survey.
 2. Do the assigned reading and take the quiz.
@@ -64,23 +64,23 @@ About half of you are taking the class online and the other half are taking it i
 4. Watch a recording of me coding a web app that will be an example you can follow for part 2 of the lab.
 5. Do lab 1, Part 2, a web app. 
 
-   - Post a beta version on Discord.
+   - Share your beta version with a lab partner.
    - Review a lab partner's code and submit the code review to Moodle.
-   - Submit your web app on Moodle and upload it citstudent.
+   - Submit your web app on Moodle and upload it to citstudent.
 
 ### Due dates
 
-- Wednesday : Quiz 1 
+- Wednesday, 4/1: Quiz 1 
 
-- Thursday: Lab 1 beta version
-- Saturday: Lab 1 code review
-- Sunday: Lab 1 production (final) version.
+- Friday, 4/3: Lab 1 beta version
+- Saturday, 4/4: Lab 1 code review
+- Sunday, 4/5: Lab 1 production (final) version.
 
-## Reminders
 
-### Getting Help
 
-#### Office Hours
+## Getting Help
+
+### Office Hours
 
 I have drop-in office hours on [Zoom](https://lanecc.zoom.us/j/8982554800) and in person, building 19, room 152:
 
@@ -94,10 +94,10 @@ Don't hesitate to reach out if you have questions, would like help debugging cod
 - Phone (voice or text): [‪(541) 525-0213‬](tel:5415250213)
 - Discord: @profbird
 
-#### Tutoring
+### Tutoring
 
 There are tutors available in the CIT Lab, building 19, room 135, or [online](https://www.lanecc.edu/get-support/academic-support/academic-and-tutoring-services).
 
-#### Discord
+### Discord
 
 Ask questions in the class Discussion channel. I'll answer questions pretty quickly on weekdays, often on Saturday and sometimes on Sunday. Other students will often help you too!

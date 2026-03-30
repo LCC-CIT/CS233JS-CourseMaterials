@@ -221,7 +221,7 @@ View [academic calendars](https://www.lanecc.edu/programs-academics/registration
 
 - **Wednesday:** Reading quiz
 
-- **Thursday:** Beta (draft) version of the lab assignment
+- **Friday:** Beta (draft) version of the lab assignment
 
 - **Saturday:** Code review of a lab partner's beta version
 - **Sunday:** Production (final) version of the lab assignment

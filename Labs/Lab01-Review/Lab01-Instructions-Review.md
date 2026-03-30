@@ -57,6 +57,41 @@ A single domino is dealt face up. Next to it is a face-down domino. The player m
 - **UI (`ui`):** Very focused: `showLeftDomino(filename)`, `showRightDominoBack()`, `showRightDominoFace(filename)`, and button click bindings.
 - **Flow:** Click "High" button -> `gameLogic.evaluateGuess('high')`. Tell UI to reveal the right domino. `setTimeout` for 2 seconds. Update Score. Shift right domino data to left domino data in logic. Tell UI to update left domino image and show a blank back for the right domino. Wait for next click.
 
+## Submission
+
+### Beta Version and Code Review
+
+- Share your part 2 beta version with a lab partner.
+  - Your code  should be at least 75% complete and working.
+  - Share the code in your lab partner channel on Discord.
+  - On Moodle, submit a report that you shared your beta version.
+- Do a code reveiw for your lab partner.
+  -  Post the completed review form on Discord.
+  - Submit your code reivew to Moodle.
+
+- Revise your code and improve it based in part on feedback from your lab partner.
+
+### Production Version
+
+- Upload your completed part 2 web app to [citstudent.lanecc.edu](http://citstudent.lanecc.edu). Test the app on the web server to verify that it still works there.
+
+  - If you need to refresh your memory on how to use FileZilla, here are the instructions from the web authoring class: [How to upload web sites to citstudent](https://lcc-cit.github.io/CIS195-CourseMaterials/Lessons/UploadingWebSites.html).
+
+- Submit the following to Moodle:
+
+  - Part 1
+    - upload a zip file containing the .html and .js files with your completed exercise solutions.
+
+  - Part 2:
+    - Upload the code reivew from your lab partner with the "production" column filled with out by you.
+    - Upload a zip file containing the source code.
+    - Put the citstudent URL for your web app in the online text.
+
+
+
+
+## Old Submission
+
 ## Code Review
 
 Do a review of your own code for the part 2 web app using the code review form.
@@ -71,11 +106,11 @@ Upload your completed web app to [citstudent.lanecc.edu](http://citstudent.lanec
 
 ### Upload to Moodle
 
-#### Moodle Lab 1 Code review assignment:
+#### Lab 1 Code review assignment:
 
-- Upload your completed code review form. This week you are just reviewing your own code.
+- Upload your completed code review form. 
 
-#### Moodle Lab 1 Production Version assignment:
+#### Lab 1 Production Version assignment:
 
 - Part 1
   - Upload a zip file containing the .html and .js file with your completed exercise solutions.
