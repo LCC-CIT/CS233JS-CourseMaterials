@@ -130,12 +130,11 @@ const gameLogic = {
     },
 
     dealStartingDominos: function () {
-        this.currentDomino = this.boneyard.pop();
-        this.nextDomino = this.boneyard.pop();
+        // TODO: Choose the two starting dominos
     },
 
     getTotalPips: function (domino) {
-        return domino.leftPips + domino.rightPips;
+        // TODO: Add up the total value of the domino
     },
 
     getDominoFilename: function (domino) {
