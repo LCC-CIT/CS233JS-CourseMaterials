@@ -122,29 +122,11 @@ const gameLogic = {
     isGameOver: false,
 
     fillBoneyard: function () {
-        this.boneyard = [];
-
-        for (let left = 0; left <= 6; left++) {
-            for (let right = left; right <= 6; right++) {
-                this.boneyard.push(new Domino(left, right));
-            }
-        }
-
-        this.currentDomino = null;
-        this.nextDomino = null;
-        this.score = 0;
-        this.lives = STARTING_LIVES;
-        this.isResolving = false;
-        this.isGameOver = false;
+        // TODO: fill the boneyard with domino objects and reset game state.
     },
 
     shuffleBoneyard: function () {
-        for (let i = this.boneyard.length - 1; i > 0; i--) {
-            const randomIndex = Math.trunc(Math.random() * (i + 1));
-            const temp = this.boneyard[i];
-            this.boneyard[i] = this.boneyard[randomIndex];
-            this.boneyard[randomIndex] = temp;
-        }
+        // TODO: shuffle the boneyard randomly.
     },
 
     dealStartingDominos: function () {
@@ -161,28 +143,11 @@ const gameLogic = {
     },
 
     evaluateGuess: function (guess) {
-        const currentTotal = this.getTotalPips(this.currentDomino);
-        const nextTotal = this.getTotalPips(this.nextDomino);
-
-        let isCorrect = false;
-
-        if (guess === 'high') {
-            isCorrect = nextTotal >= currentTotal;
-        }
-        else if (guess === 'low') {
-            isCorrect = nextTotal <= currentTotal;
-        }
-
-        return {
-            isCorrect: isCorrect,
-            currentTotal: currentTotal,
-            nextTotal: nextTotal
-        };
+        // TODO: evaluate the guess and return whether it is correct.
     },
 
     advanceRound: function () {
-        this.currentDomino = this.nextDomino;
-        this.nextDomino = this.boneyard.length > 0 ? this.boneyard.pop() : null;
+        // TODO: advance to the next round by shifting dominos and drawing a new hidden domino.
     }
 };
 
@@ -212,18 +177,15 @@ const ui = {
     },
 
     showLeftDomino: function (filename) {
-        this.leftDominoElement.textContent = this.renderFilenameAsText(filename);
-        this.leftDominoElement.classList.remove('back');
+        // TODO: show the face of the left domino.
     },
 
     showRightDominoBack: function () {
-        this.rightDominoElement.textContent = '';
-        this.rightDominoElement.classList.add('back');
+        // TODO: show the back of the right domino.
     },
 
     showRightDominoFace: function (filename) {
-        this.rightDominoElement.textContent = this.renderFilenameAsText(filename);
-        this.rightDominoElement.classList.remove('back');
+        // TODO: show the face of the right domino.
     },
 
     bindGuessButtons: function (clickHandler) {
@@ -238,8 +200,7 @@ const ui = {
     },
 
     disableGuessButtons: function () {
-        this.highButton.disabled = true;
-        this.lowButton.disabled = true;
+        // TODO: disable the guess buttons.
     },
 
     enableGuessButtons: function () {
@@ -248,10 +209,6 @@ const ui = {
     },
 
     updateStatus: function (score, lives, remaining, message = '') {
-        let text = 'Score: ' + score + ' | Lives: ' + lives + ' | Remaining: ' + remaining;
-        if (message !== '') {
-            text += ' | ' + message;
-        }
-        this.statusElement.textContent = text;
+        // TODO: show score, lives, remaining dominos, and optional message in the status element.
     }
 };
