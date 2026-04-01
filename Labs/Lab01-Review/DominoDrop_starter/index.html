@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Written by Brian Bird, 3/29/2026, using GitHub Copilot-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS 233JS Domino Drop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="game-shell">
+        <div class="game-board" id="board">
+            <div class="game-instructions">
+                <h2>How to Play</h2>
+                <p>
+                    Click a face-down domino to reveal it. If its total pips are strictly greater than the Target,
+                    it is removed. After more than half of the dominos have been cleared, each successful removal
+                    also reduces the Target total by 1. The initial Target starts with a total between 6 and 10. If
+                    a clicked domino is lower or equal, it flips back down. The first time you click a specific
+                    too-low domino, you get a warning and keep your life. If you click that same too-low domino
+                    again, you lose a life. Clear all 20 dominos before you run out of 5 lives.
+                </p>
+            </div>
+
+            <div class="game-status" id="status">Lives: 3 Removed: 0/20</div>
+
+            <div class="target-row">
+                <span class="target-label">Target</span>
+                <div class="target-domino" id="target-domino"></div>
+            </div>
+
+            <div class="domino-row">
+                <div id="0" name="domino" class="domino-card"></div>
+                <div id="1" name="domino" class="domino-card"></div>
+                <div id="2" name="domino" class="domino-card"></div>
+                <div id="3" name="domino" class="domino-card"></div>
+                <div id="4" name="domino" class="domino-card"></div>
+            </div>
+
+            <div class="domino-row">
+                <div id="5" name="domino" class="domino-card"></div>
+                <div id="6" name="domino" class="domino-card"></div>
+                <div id="7" name="domino" class="domino-card"></div>
+                <div id="8" name="domino" class="domino-card"></div>
+                <div id="9" name="domino" class="domino-card"></div>
+            </div>
+
+            <div class="domino-row">
+                <div id="10" name="domino" class="domino-card"></div>
+                <div id="11" name="domino" class="domino-card"></div>
+                <div id="12" name="domino" class="domino-card"></div>
+                <div id="13" name="domino" class="domino-card"></div>
+                <div id="14" name="domino" class="domino-card"></div>
+            </div>
+
+            <div class="domino-row">
+                <div id="15" name="domino" class="domino-card"></div>
+                <div id="16" name="domino" class="domino-card"></div>
+                <div id="17" name="domino" class="domino-card"></div>
+                <div id="18" name="domino" class="domino-card"></div>
+                <div id="19" name="domino" class="domino-card"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>

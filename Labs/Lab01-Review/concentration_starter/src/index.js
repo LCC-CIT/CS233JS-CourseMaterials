@@ -5,6 +5,8 @@
     After a brief pause the cards are removed from the board if they match
     or are turned "face down" if they are not.  The game is over when the 
     user has cleared all 20 cards from the board.
+
+    Written by Brian Bird, 3/29/2026, using GitHub Copilot and based on code from Mari Good.
 */
 
 // -------------------- Constants --------------------
