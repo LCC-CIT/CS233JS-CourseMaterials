@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Written by Brian Bird, 3/27/2026 -->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 1, Part 1</title>
+    <script src="CS233JS_Lab01_Part1.js"></script>
+</head>
+
+<body>
+    <h1>Lab 1, Part 1, JavaScript Review Exercises</h1>
+    <p>Open this file and the associated <a href="https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab01-Review/CS233JS_Lab01_Part1.js" download>CS233JS_Lab01_Part1.js</a> (right-click on the link and download this) file in a code editor.
+        Complete each of the exercise problems in the .js file. This web page will show you 
+        whether your solution is correct or not.
+    </p>
+
+    <script>
+        // This function is used in the web page to check the solutions.
+        function checkAnswer(elementId, correctAnswer, answer) {
+            const element = document.getElementById(elementId);
+            element.innerHTML += answer;
+            if (correctAnswer === answer) {
+                element.innerHTML += ", correct";
+                element.style.backgroundColor = "LightGreen";
+            } else {
+                element.innerHTML += ", incorrect";
+                element.style.backgroundColor = "red";
+            }
+        }
+    </script>
+
+    <p><span id="1a">1a. Check file type for .pdf: </span><br>
+        <span id="1b">1b. Check file type for .doc: </span><br>
+        <span id="1c">1c. Check file type for .docx: </span><br>
+        <span id="1d">1d. Check file type for .jpg: </span>
+    </p>
+    <script>
+        // Test allowed file types
+        let result = checkFileType(".pdf");
+        checkAnswer("1a", "Accepted", result);
+        result = checkFileType(".doc");
+        checkAnswer("1b", "Accepted", result);
+        result = checkFileType(".docx");
+        checkAnswer("1c", "Accepted", result);
+
+        // Test disallowed file type
+        result = checkFileType(".jpg");
+        checkAnswer("1d", "Wrong type", result);
+    </script>
+
+
+
+    <p><span id="2">2. Character Count: </span></p>
+    <script>
+        // There are 34 characters in the sentence (including spaces and .)
+        let sentence = "Not all those who wander are lost.";
+        let count = countChars(sentence);
+        checkAnswer("2", 34, count);
+    </script>
+
+    <p><span id="3">3. Word Count: </span></p>
+    <script>
+        // There are 12 words in the sentence
+        sentence = "The fault, dear Brutus, is not in our stars, but in ourselves.";
+        count = countWords(sentence);
+        checkAnswer("3", 12, count);
+    </script>
+
+    <p><span id="4a">4a. Power function for 2^0: </span><br>
+        <span id="4b">4b. Power function for 2^3: </span>
+    </p>
+    <script>
+        // Test 2 to raised to the power of 0
+        let output = power(2, 0);
+        checkAnswer("4a", 1, output);
+        // Test 2 to raised to the 3rd power
+        output = power(2, 3);
+        checkAnswer("4b", 8, output);
+    </script>
+
+    <p><span id="5">5. Find index of 3 in the array: </span></p>
+    <script>
+        output = findIndexOfThree();
+        checkAnswer("5", 4, output);
+    </script>
+
+    <p><span id="6">6. Sum all numbers in the 2D array: </span></p>
+    <script>
+        output = sum2DArray();
+        checkAnswer("6", 46, output);
+    </script>
+
+    <p><span id="7">7. Car description string: </span></p>
+    <script>
+        output = describeCar();
+        checkAnswer("7", "2003 white Toyota Prius", output);
+    </script>
+
+    <p><span id="8">8. Average class grade: </span></p>
+    <script>
+        output = averageClassGrade();
+        checkAnswer("8", 90, output);
+    </script>
+
+    <p>9. Use a button to get input<br>
+    Enter your favorite dessert: <input id="favoriteDessertInput"> 
+    <button id="favoriteDessertButton">Enter</button><br>
+    <span id="9">Favorite dessert: <span id="favoriteDessertOutput"></span></p>
+    <script>
+        const favoriteDesertButton = document.getElementById("favoriteDessertButton");
+        favoriteDesertButton.addEventListener("click", function () {
+            let output = echoFavoriteDessert();
+            let input = document.getElementById("favoriteDessertInput").value;
+            checkAnswer("9", input, output);
+        });
+    </script>
+
+    <p><span id="10a">10a. Validate a user name as containing between 8 and 15 upper or lower case letters or numbers.: </span><br>
+        <span id="10b">10b. Don't match an invalid user name: </span></p>
+    <script>
+        result = pattern.test("SRogers99");
+        checkAnswer("10a", true, result);
+        result = pattern.test("CaptainAmerica2000") || 
+            pattern.test("SRogers") || pattern.test("SRogers_99");
+        checkAnswer("10b", false, result);
+    </script>
+
+
+</body>
+
+</html>

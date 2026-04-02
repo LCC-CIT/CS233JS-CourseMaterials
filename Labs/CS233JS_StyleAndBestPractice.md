@@ -39,7 +39,7 @@ There are a few "best practices" mixed in with these style conventions where the
 
   - Names should be descriptive and in camelCase.
 
-  - Should have at most one return statement.
+  - Use only one, or a few return statements. If there are multiple return statements, the logical flow should be obvious.
 
   - Should have a single purpose.
 

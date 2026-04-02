@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS 233JS BoneYard Bluff</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="game-shell">
+        <div class="game-board" id="board">
+            <h1>BoneYard Bluff</h1>
+            <p class="game-instructions">
+                Guess whether the hidden domino is Higher or Lower than the face-up domino based on total pips.
+                A correct guess scores a point and moves the revealed domino to the left. Ties count as wins.
+                You can survive up to 5 wrong guesses. Reach a streak of 10.
+            </p>
+
+            <div class="game-status" id="status">Score: 0 | Lives: 5 | Remaining: 26</div>
+
+            <div class="domino-lane">
+                <div class="domino-slot">
+                    <div class="slot-label">Current Domino</div>
+                    <div id="left-domino" class="domino-card"></div>
+                </div>
+                <div class="domino-slot">
+                    <div class="slot-label">Hidden Domino</div>
+                    <div id="right-domino" class="domino-card back"></div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="high-btn" type="button">High</button>
+                <button id="low-btn" type="button">Low</button>
+                <button id="reset-btn" type="button">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* Use border-box so width/height includes border and padding. */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove default page margin and allow full-height layout. */
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+/* Base page styling for font and background color. */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+/* Center the game area and keep it from getting too wide. */
+.game-shell {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+/* Visual container for the full board and status area. */
+.game-board {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #d7d9df;
+  border-radius: 12px;
+  background: #ffffff;
+  display: grid;
+  row-gap: 6px;
+}
+
+/* Emphasize the score text. */
+.game-status {
+  font-weight: 600;
+}
+
+/* Each board row is a 5-column grid (5 cards per row). */
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(5, 88px);
+  justify-content: center;
+  column-gap: 6px;
+}
+
+/* Card size and appearance. */
+.game-card {
+  width: 88px;
+  height: 132px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #111827;
+  border-radius: 6px;
+  /* Slightly zoom/crop image to hide baked-in right/bottom shadow in source files. */
+  background: #ffffff left top / 106% 106% no-repeat;
+  overflow: hidden;
+}
+
+/* Smaller layout for narrow screens. */
+@media (max-width: 620px) {
+  .game-board {
+    row-gap: 4px;
+  }
+
+  /* Keep 5 columns but use smaller card sizes and spacing. */
+  .card-row {
+    grid-template-columns: repeat(5, 62px);
+    column-gap: 4px;
+  }
+
+  .game-card {
+    width: 62px;
+    height: 94px;
+  }
+
+  .game-board {
+    padding: 0.75rem;
+  }
+}
