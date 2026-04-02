@@ -103,42 +103,15 @@ const gameLogic = {
     failedPickHistory: {},
 
     fillDominos: function () {
-        this.dominos = [];
-
-        for (let i = 0; i < NUMBER_OF_DOMINOS; i++) {
-            const left = Math.trunc(Math.random() * 7);
-            const right = Math.trunc(Math.random() * 7);
-            this.dominos.push(new Domino(left, right));
-        }
-
-        let targetLeft = Math.trunc(Math.random() * 7);
-        let targetRight = Math.trunc(Math.random() * 7);
-
-        while (targetLeft + targetRight < 6 || targetLeft + targetRight > 10) {
-            targetLeft = Math.trunc(Math.random() * 7);
-            targetRight = Math.trunc(Math.random() * 7);
-        }
-
-        this.dominos.push(new Domino(targetLeft, targetRight));
-
-        this.currentTargetIndex = NUMBER_OF_DOMINOS;
-        this.currentPick = -1;
-        this.removedCount = 0;
-        this.lives = STARTING_LIVES;
-        this.failedPickHistory = {};
+        // TODO: fill the dominos array with random domino objects and a starting target.
     },
 
     shuffleGridDominos: function () {
-        for (let i = NUMBER_OF_DOMINOS - 1; i > 0; i--) {
-            const randomIndex = Math.trunc(Math.random() * (i + 1));
-            const temp = this.dominos[i];
-            this.dominos[i] = this.dominos[randomIndex];
-            this.dominos[randomIndex] = temp;
-        }
+        // TODO: shuffle the grid dominos array randomly.
     },
 
     pickDomino: function (index) {
-        this.currentPick = index;
+        // TODO: record the player's pick by setting currentPick.
     },
 
     getTotalPips: function (domino) {
@@ -146,10 +119,7 @@ const gameLogic = {
     },
 
     isHigherThanTarget: function () {
-        const pickedDomino = this.dominos[this.currentPick];
-        const targetDomino = this.dominos[this.currentTargetIndex];
-
-        return this.getTotalPips(pickedDomino) > this.getTotalPips(targetDomino);
+        // TODO: return true when the picked domino total is greater than the target total.
     },
 
     acceptPick: function () {
@@ -190,7 +160,7 @@ const gameLogic = {
     },
 
     resetPick: function () {
-        this.currentPick = -1;
+        // TODO: reset currentPick to -1 for the next turn.
     }
 };
 
@@ -215,23 +185,15 @@ const ui = {
     },
 
     showAllBacks: function () {
-        for (let i = 0; i < NUMBER_OF_DOMINOS; i++) {
-            this.showDominoBack(i);
-        }
+        // TODO: iterate over dominoElements and show the back for each domino.
     },
 
     showDominoBack: function (index) {
-        const domino = this.dominoElements[index];
-        domino.textContent = '';
-        domino.classList.remove('removed');
-        domino.classList.add('back');
+        // TODO: show the back of the domino at the given index.
     },
 
     showGridDominoFace: function (index, dominoObj) {
-        const domino = this.dominoElements[index];
-        domino.textContent = this.formatDominoText(dominoObj);
-        domino.classList.remove('back');
-        domino.classList.remove('removed');
+        // TODO: show the face of the domino at the given index.
     },
 
     updateTarget: function (dominoObj) {
@@ -239,16 +201,11 @@ const ui = {
     },
 
     disableDomino: function (index) {
-        const domino = this.dominoElements[index];
-        domino.onclick = null;
-        domino.style.cursor = 'default';
+        // TODO: disable the domino at the given index.
     },
 
     disableAllDominos: function () {
-        for (const domino of this.dominoElements) {
-            domino.onclick = null;
-            domino.style.cursor = 'default';
-        }
+        // TODO: iterate over dominoElements and disable each domino.
     },
 
     enableAllDominos: function (clickHandler, onlyRemaining = false) {
@@ -262,20 +219,10 @@ const ui = {
     },
 
     removeDomino: function (index) {
-        const domino = this.dominoElements[index];
-        domino.textContent = '';
-        domino.classList.remove('back');
-        domino.classList.add('removed');
-        domino.onclick = null;
-        domino.style.cursor = 'default';
+        // TODO: remove the domino at the given index from the board.
     },
 
     updateStatus: function (lives, removedCount, message = '') {
-        let text = 'Lives: ' + lives + ' Removed: ' + removedCount + '/' + NUMBER_OF_DOMINOS;
-        if (message !== '') {
-            text += ' | ' + message;
-        }
-
-        this.statusElement.innerHTML = text;
+        // TODO: show lives, removed count, and optional message in the status element.
     }
 };
