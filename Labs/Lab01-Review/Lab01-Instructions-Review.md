@@ -26,6 +26,8 @@ Complete the solutions to the programming challenges in the [Lab 1 JavaScript Re
 
 You wil do project A, B or C depending on the lab assignment version group you are in. These web apps will be implemented using the same overall program design as the example Concentration game web app. There are starter files for each project. You will complete the parts of the code indicated by the TODO: comments.
 
+Note that you do not need to provide domino images for these games. The dominos are shown on the web page using CSS and HTML techniques.
+
 ### Project A: "Double Trouble" Domino Game
 
 **The Game:**
