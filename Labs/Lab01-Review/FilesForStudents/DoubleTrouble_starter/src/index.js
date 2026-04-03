@@ -27,7 +27,11 @@ const PIP_LAYOUTS = {
 // These functions act as the "glue" between the game logic and the UI
 // which are defined in sections below.
 
-// Initializes the page after it's loaded.
+/**
+ * Initializes the page after it's loaded.
+ * Sets up the DOM elements, generates and shuffles the dominos, updates the score, and enables interaction.
+ * @returns {void}
+ */
 function init() {
     ui.cacheDominoElements();
     gameLogic.fillDominoes();
@@ -37,8 +41,11 @@ function init() {
     ui.showAllBacks();
 }
 
-// This function is called when the user clicks on a domino.
-// It coordinates between the ui showing the domino and game logic tracking the pick.
+/**
+ * Event handler for when the user clicks on a domino.
+ * Coordinates between the ui showing the domino and game logic tracking the pick.
+ * @returns {void}
+ */
 function handleClick() {
     const CHECK_DELAY_MS = 4000;
     let index = Number(this.id);  // index represents the domino location in the dominoes array and on the page.
@@ -87,7 +94,11 @@ function handleClick() {
     }
 }
 
-// Checks the 2 non-double dominos that have been picked for a sum-to-12 match.
+/**
+ * Checks the 2 non-double dominos that have been picked for a sum-to-12 match.
+ * Prepares the game state and board for the next turn.
+ * @returns {void}
+ */
 function completeTurn() {
     gameLogic.turns++;
 
@@ -116,7 +127,12 @@ window.onload = init;
 // The gameLogic object handles the rules and state of the game.
 // It does not interact with the HTML document or CSS styles.
 
-// Domino object constructor used in gameLogic object.
+/**
+ * Domino object constructor used in gameLogic object.
+ * @param {number} left - The pip value for the left half of the domino.
+ * @param {number} right - The pip value for the right half of the domino.
+ * @returns {void}
+ */
 function Domino(left, right) {
     this.left = left;
     this.right = right;
@@ -131,28 +147,44 @@ const gameLogic = {
     cleared: 0,      // number of dominos cleared so far
     turns: 0,        // number of turns taken so far
 
-    // Fills the dominoes array with a fixed curated set of 15 dominos:
-    //   3 doubles (removed instantly) + 6 non-double pairs that each sum to 12.
+    /**
+     * Fills the dominoes array with a fixed curated set of 15 dominos:
+     * 3 doubles (removed instantly) + 6 non-double pairs that each sum to 12.
+     * @returns {void}
+     */
     fillDominoes: function() {
         // TODO: fill the dominoes array with a fixed curated set of 15 dominos.
     },
 
-    // Shuffles the elements in the dominoes array.
+    /**
+     * Shuffles the elements in the dominoes array.
+     * @returns {void}
+     */
     shuffleDominoes: function() {
         // TODO: shuffle the dominoes array randomly.
     },
 
-    // Records a player's domino pick.
+    /**
+     * Records a player's domino pick.
+     * @param {number} index - The index position of the picked domino.
+     * @returns {void}
+     */
     pickDomino: function(index) {
         // TODO: record the player's pick by setting firstPick and secondPick.
     },
 
-    // Resets the picks for the next turn.
+    /**
+     * Resets the picks for the next turn.
+     * @returns {void}
+     */
     resetPicks: function() {
         // TODO: reset firstPick and secondPick to -1 for the next turn.
     },
 
-    // Returns true when the two picked non-double dominos sum to exactly 12 pips.
+    /**
+     * Returns true when the two picked non-double dominos sum to exactly 12 pips.
+     * @returns {boolean} True if the two picked dominos sum to 12, false otherwise.
+     */
     isMatch: function() {
         // TODO: return true if the two picked non-double dominos sum to 12, false otherwise.
     }
@@ -165,7 +197,10 @@ const gameLogic = {
 const ui = {
     dominoElements: [],
 
-    // Caches domino elements by index for reuse.
+    /**
+     * Caches domino elements by index for reuse.
+     * @returns {void}
+     */
     cacheDominoElements: function() {
         this.dominoElements = [];
         for (let i = 0; i < NUMBER_OF_DOMINOES; i++) {
@@ -173,23 +208,39 @@ const ui = {
         }
     },
 
-    // Shows the back for all dominos.
+    /**
+     * Shows the back for all dominos.
+     * @returns {void}
+     */
     showAllBacks: function() {
         // TODO: iterate over dominoElements and show the back for each domino.
     },
 
-    // Shows the back of one domino based on its index.
+    /**
+     * Shows the back of one domino based on its index.
+     * @param {number} index - The index of the domino element.
+     * @returns {void}
+     */
     showDominoBack: function(index) {
         // TODO: show the back of the domino at the given index.
     },
 
-    // Shows the face of one domino based on its index and domino object.
+    /**
+     * Shows the face of one domino based on its index and domino object.
+     * @param {number} index - The index of the domino element.
+     * @param {Object} domino - The domino object containing pip data.
+     * @returns {void}
+     */
     showDominoFace: function(index, domino) {
         // TODO: show the face of the domino at the given index.
     },
 
-    // Builds the inner HTML for one domino half using a 3×3 pip grid.
-    // Positions 1–9 map left-to-right, top-to-bottom; active positions get the .pip class.
+    /**
+     * Builds the inner HTML for one domino half using a 3×3 pip grid.
+     * Positions 1–9 map left-to-right, top-to-bottom; active positions get the .pip class.
+     * @param {number} pipCount - The number of pips to display for the half.
+     * @returns {string} The constructed HTML string representing the half.
+     */
     buildHalfHTML: function(pipCount) {
         let html = '<div class="domino-half">';
         for (let pos = 1; pos <= 9; pos++) {
@@ -200,23 +251,38 @@ const ui = {
         return html;
     },
 
-    // Adds the amber selection highlight to the first-picked domino.
+    /**
+     * Adds the amber selection highlight to the first-picked domino.
+     * @param {number} index - The index of the domino element to highlight.
+     * @returns {void}
+     */
     highlightDomino: function(index) {
         this.dominoElements[index].classList.add('selected');
     },
 
-    // Disables one domino based on its index.
+    /**
+     * Disables one domino based on its index preventing further clicks.
+     * @param {number} index - The index of the domino element.
+     * @returns {void}
+     */
     disableDomino: function(index) {
         // TODO: disable the domino at the given index.
     },
 
-    // Disables all dominos.
+    /**
+     * Disables all dominos preventing interaction during delays.
+     * @returns {void}
+     */
     disableAllDominoes: function() {
         // TODO: iterate over dominoElements and disable each domino.
     },
 
-    // Assigns the clickHandler function to dominos (all dominos by default,
-    // or only those still on the board when onlyRemaining is true).
+    /**
+     * Assigns the clickHandler function to dominos.
+     * @param {Function} clickHandler - The click event callback function.
+     * @param {boolean} [onlyRemaining=false] - Whether to only target dominoes without the 'removed' class.
+     * @returns {void}
+     */
     enableAllDominoes: function(clickHandler, onlyRemaining = false) {
         for (let i = 0; i < NUMBER_OF_DOMINOES; i++) {
             let el = this.dominoElements[i];
@@ -227,17 +293,31 @@ const ui = {
         }
     },
 
-    // Removes one domino from the board by hiding it while keeping its grid space.
+    /**
+     * Removes one domino from the board by hiding it while keeping its grid space.
+     * @param {number} index - The index of the domino element to remove.
+     * @returns {void}
+     */
     removeDomino: function(index) {
         // TODO: remove the domino at the given index from the board.
     },
 
-    // Updates the score display.
+    /**
+     * Updates the score display on the screen.
+     * @param {number} cleared - The current count of cleared dominoes.
+     * @param {number} turns - The number of turns elapsed.
+     * @param {number} [sum=0] - The total pip sum for currently picked tiles.
+     * @returns {void}
+     */
     updateScore: function(cleared, turns, sum = 0) {
         // TODO: show cleared, turns, and sum in the status element.
     },
 
-    // Replaces the score display with a win message.
+    /**
+     * Replaces the score display with a win message.
+     * @param {number} turns - Total taken turns to display in the win message.
+     * @returns {void}
+     */
     showWin: function(turns) {
         document.getElementById('status').innerHTML =
             'You cleared the board in ' + turns + ' turn' + (turns === 1 ? '' : 's') + '!';

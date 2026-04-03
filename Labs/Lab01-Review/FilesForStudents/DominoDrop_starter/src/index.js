@@ -16,6 +16,11 @@ const STARTING_LIVES = 5;
 const HALF_CLEARED_COUNT = NUMBER_OF_DOMINOS / 2;
 
 // -------------------- Main Flow --------------------
+/**
+ * Initializes the game by setting up the DOM elements, generating and shuffling dominos,
+ * rendering the UI, and enabling interactions.
+ * @returns {void}
+ */
 function init() {
     ui.cacheDominoElements();
     gameLogic.fillDominos();
@@ -26,6 +31,11 @@ function init() {
     ui.enableAllDominos(handleClick);
 }
 
+/**
+ * Event handler for when a user clicks on a grid domino.
+ * Reveals the selected domino and schedules the logic check after a short delay.
+ * @returns {void}
+ */
 function handleClick() {
     const CHECK_DELAY_MS = 1500;
     const index = Number(this.id);
@@ -38,6 +48,11 @@ function handleClick() {
     setTimeout(resolvePick, CHECK_DELAY_MS);
 }
 
+/**
+ * Checks the player's picked domino against the target domino, applying game rules
+ * for reducing the target, losing lives, and updating the UI accordingly.
+ * @returns {void}
+ */
 function resolvePick() {
     const pickIndex = gameLogic.currentPick;
 
@@ -89,6 +104,12 @@ function resolvePick() {
 window.onload = init;
 
 // -------------------- Core Logic --------------------
+/**
+ * Constructor pattern for creating a new domino piece.
+ * @param {number} leftPips - The number of pip dots on the left.
+ * @param {number} rightPips - The number of pip dots on the right.
+ * @returns {void}
+ */
 function Domino(leftPips, rightPips) {
     this.leftPips = leftPips;
     this.rightPips = rightPips;
@@ -102,26 +123,53 @@ const gameLogic = {
     lives: STARTING_LIVES,
     failedPickHistory: {},
 
+    /**
+     * Initializes the dominos array with a set of dominos and one target.
+     * @returns {void}
+     */
     fillDominos: function () {
         // TODO: fill the dominos array with random domino objects and a starting target.
     },
 
+    /**
+     * Randomly scrambles the order of the grid dominos.
+     * @returns {void}
+     */
     shuffleGridDominos: function () {
         // TODO: shuffle the grid dominos array randomly.
     },
 
+    /**
+     * Records the user's currently selected grid domino.
+     * @param {number} index - The index of the selected domino in the array.
+     * @returns {void}
+     */
     pickDomino: function (index) {
         // TODO: record the player's pick by setting currentPick.
     },
 
+    /**
+     * Calculates the total sum of pips for a given domino.
+     * @param {Object} domino - The domino object.
+     * @returns {number} The sum of its left and right pips.
+     */
     getTotalPips: function (domino) {
         return domino.leftPips + domino.rightPips;
     },
 
+    /**
+     * Determines whether the currently picked domino's value is higher
+     * than the target domino's value.
+     * @returns {boolean} True if the picked domino is higher than target, false otherwise.
+     */
     isHigherThanTarget: function () {
         // TODO: return true when the picked domino total is greater than the target total.
     },
 
+    /**
+     * Processes a valid choice, tracks progression, and occasionally reduces the ongoing target.
+     * @returns {boolean} True if the target was reduced, false if it remained the same.
+     */
     acceptPick: function () {
         this.removedCount++;
 
@@ -138,6 +186,11 @@ const gameLogic = {
         return false;
     },
 
+    /**
+     * Processes an invalid choice, managing the warning state of each incorrect pick,
+     * and deducting consecutive error penalties (lives).
+     * @returns {boolean} True if the player lost a life from this mistake, false otherwise.
+     */
     rejectPick: function () {
         const pickIndex = this.currentPick;
         const hasFailedBefore = this.failedPickHistory[pickIndex] === true;
@@ -151,14 +204,26 @@ const gameLogic = {
         return false;
     },
 
+    /**
+     * Checks if all necessary game dominos have been successfully cleared.
+     * @returns {boolean} True if board is cleared, false otherwise.
+     */
     hasClearedBoard: function () {
         return this.removedCount === NUMBER_OF_DOMINOS;
     },
 
+    /**
+     * Checks if the player has lost all their available lives.
+     * @returns {boolean} True if out of lives, false otherwise.
+     */
     isOutOfLives: function () {
         return this.lives <= 0;
     },
 
+    /**
+     * Resets the player's tracked pick for the upcoming turn round.
+     * @returns {void}
+     */
     resetPick: function () {
         // TODO: reset currentPick to -1 for the next turn.
     }
@@ -170,6 +235,10 @@ const ui = {
     targetElement: null,
     statusElement: null,
 
+    /**
+     * Finds and stores references to key UI elements like dominos, target element, and status.
+     * @returns {void}
+     */
     cacheDominoElements: function () {
         this.dominoElements = [];
         for (let i = 0; i < NUMBER_OF_DOMINOS; i++) {
@@ -180,34 +249,74 @@ const ui = {
         this.statusElement = document.getElementById('status');
     },
 
+    /**
+     * Formats the domino object into a string visualization.
+     * @param {Object} domino - The domino object.
+     * @returns {string} The text format showing both side pips, separated by |.
+     */
     formatDominoText: function (domino) {
         return domino.leftPips + ' | ' + domino.rightPips;
     },
 
+    /**
+     * Iterates over dominoElements and shows their back faces.
+     * @returns {void}
+     */
     showAllBacks: function () {
         // TODO: iterate over dominoElements and show the back for each domino.
     },
 
+    /**
+     * Restores a specific domino to show its backside (face down).
+     * @param {number} index - The dominos array index indicating the element to process.
+     * @returns {void}
+     */
     showDominoBack: function (index) {
         // TODO: show the back of the domino at the given index.
     },
 
+    /**
+     * Unveils the face (pips) of a specific domino block.
+     * @param {number} index - The dominos array index mapping to its element.
+     * @param {Object} dominoObj - The relevant domino's data holding pips.
+     * @returns {void}
+     */
     showGridDominoFace: function (index, dominoObj) {
         // TODO: show the face of the domino at the given index.
     },
 
+    /**
+     * Refreshes the display text of the master target domino.
+     * @param {Object} dominoObj - The current target domino object containing the pips.
+     * @returns {void}
+     */
     updateTarget: function (dominoObj) {
         this.targetElement.textContent = this.formatDominoText(dominoObj);
     },
 
+    /**
+     * Restricts interactivity and click behavior on a particular domino UI component.
+     * @param {number} index - The specific array index mapping to the domino element.
+     * @returns {void}
+     */
     disableDomino: function (index) {
         // TODO: disable the domino at the given index.
     },
 
+    /**
+     * Iterates through domino elements, globally locking their interactions (clicks).
+     * @returns {void}
+     */
     disableAllDominos: function () {
         // TODO: iterate over dominoElements and disable each domino.
     },
 
+    /**
+     * Reactivates clicking and interactions for various DOM domino elements based on their status.
+     * @param {Function} clickHandler - The function event attached onto onclick callbacks.
+     * @param {boolean} onlyRemaining - If false, all elements activate; otherwise only non-removed elements are re-enabled. Defaults to false.
+     * @returns {void}
+     */
     enableAllDominos: function (clickHandler, onlyRemaining = false) {
         for (const domino of this.dominoElements) {
             const isRemoved = domino.classList.contains('removed');
@@ -218,10 +327,22 @@ const ui = {
         }
     },
 
+    /**
+     * Hides and disables a correctly selected grid domino element completely.
+     * @param {number} index - The element's index corresponding to its placement on the board.
+     * @returns {void}
+     */
     removeDomino: function (index) {
         // TODO: remove the domino at the given index from the board.
     },
 
+    /**
+     * Renders UI diagnostic indicators about lives tracking, completed levels, and alert messaging to players.
+     * @param {number} lives - Current amount of active lives remaining.
+     * @param {number} removedCount - Count tracking the dominos already correctly destroyed/cleared.
+     * @param {string} message - An optional message logging info (e.g. user win). Defaults to empty string.
+     * @returns {void}
+     */
     updateStatus: function (lives, removedCount, message = '') {
         // TODO: show lives, removed count, and optional message in the status element.
     }
