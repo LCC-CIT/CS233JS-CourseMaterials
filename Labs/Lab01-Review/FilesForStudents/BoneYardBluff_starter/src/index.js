@@ -14,7 +14,7 @@ const WIN_STREAK = 10;
 const REVEAL_DELAY_MS = 2000;
 const STARTING_LIVES = 5;
 
-// PIP_LAYOUTS maps one half of a domino numerical value (array indicies 0-6) to the specific
+// PIP_LAYOUTS maps one half of a domino numerical value (properties 0-6) to the specific
 // spots in a 3 x 3 grid where pips (dots) should be placed to represent that number.
 
 // The values in the array represent pip locations in the grid:
@@ -32,6 +32,10 @@ const PIP_LAYOUTS = {
 };
 
 // -------------------- Main Flow --------------------
+/**
+ * Initializes the game by setting up UI elements and event listeners,
+ * and starts the first game.
+ */
 function init() {
   ui.cacheDominoElements();
   ui.bindGuessButtons(handleGuess);
@@ -40,6 +44,10 @@ function init() {
   resetGame();
 }
 
+/**
+ * Resets the game state, dealing a new starting hand and resetting score and lives.
+ * Calls UI methods to reflect the new starting state.
+ */
 function resetGame() {
   gameLogic.fillBoneyard();
   gameLogic.shuffleBoneyard();
@@ -49,12 +57,17 @@ function resetGame() {
   gameLogic.isGameOver = false;
   gameLogic.isResolving = false;
 
-  ui.showLeftDomino(gameLogic.getDominoFilename(gameLogic.currentDomino));
+  ui.showLeftDomino(gameLogic.currentDomino);
   ui.showRightDominoBack();
   ui.updateStatus(gameLogic.score, gameLogic.lives, gameLogic.boneyard.length);
   ui.enableGuessButtons();
 }
 
+/**
+ * Handles the player clicking "higher" or "lower".
+ * Determines if the round can proceed, evaluates the player's guess,
+ * reveals the hidden domino, and sets a timeout to complete the round.
+ */
 function handleGuess() {
   if (
     gameLogic.isResolving ||
@@ -68,22 +81,28 @@ function handleGuess() {
   gameLogic.isResolving = true;
   ui.disableGuessButtons();
 
-  const result = gameLogic.evaluateGuess(guess);
-  ui.showRightDominoFace(gameLogic.getDominoFilename(gameLogic.nextDomino));
+  const isCorrect = gameLogic.evaluateGuess(guess);
+  ui.showRightDominoFace(gameLogic.nextDomino);
 
   setTimeout(function () {
-    completeRound(result);
+    completeRound(isCorrect);
   }, REVEAL_DELAY_MS);
 }
 
-function completeRound(result) {
-  if (result.isCorrect) {
+/**
+ * Completes the current round by applying the evaluated guess result.
+ * Updates the score or lives accordingly, checks for win/loss conditions,
+ * and resets the board to prepare for the next guess.
+ * @param {boolean} isCorrect - The result of the guess.
+ */
+function completeRound(isCorrect) {
+  if (isCorrect) {
     gameLogic.score++;
     gameLogic.advanceRound();
 
     if (gameLogic.score >= WIN_STREAK) {
       gameLogic.isGameOver = true;
-      ui.showLeftDomino(gameLogic.getDominoFilename(gameLogic.currentDomino));
+      ui.showLeftDomino(gameLogic.currentDomino);
       ui.showRightDominoBack();
       ui.updateStatus(
         gameLogic.score,
@@ -96,7 +115,7 @@ function completeRound(result) {
 
     if (gameLogic.nextDomino === null) {
       gameLogic.isGameOver = true;
-      ui.showLeftDomino(gameLogic.getDominoFilename(gameLogic.currentDomino));
+      ui.showLeftDomino(gameLogic.currentDomino);
       ui.showRightDominoBack();
       ui.updateStatus(
         gameLogic.score,
@@ -107,7 +126,7 @@ function completeRound(result) {
       return;
     }
 
-    ui.showLeftDomino(gameLogic.getDominoFilename(gameLogic.currentDomino));
+    ui.showLeftDomino(gameLogic.currentDomino);
     ui.showRightDominoBack();
     ui.updateStatus(
       gameLogic.score,
@@ -121,7 +140,7 @@ function completeRound(result) {
 
     if (gameLogic.lives <= 0) {
       gameLogic.isGameOver = true;
-      ui.showLeftDomino(gameLogic.getDominoFilename(gameLogic.currentDomino));
+      ui.showLeftDomino(gameLogic.currentDomino);
       ui.showRightDominoBack();
       ui.updateStatus(
         gameLogic.score,
@@ -134,7 +153,7 @@ function completeRound(result) {
 
     if (gameLogic.nextDomino === null) {
       gameLogic.isGameOver = true;
-      ui.showLeftDomino(gameLogic.getDominoFilename(gameLogic.currentDomino));
+      ui.showLeftDomino(gameLogic.currentDomino);
       ui.showRightDominoBack();
       ui.updateStatus(
         gameLogic.score,
@@ -145,7 +164,7 @@ function completeRound(result) {
       return;
     }
 
-    ui.showLeftDomino(gameLogic.getDominoFilename(gameLogic.currentDomino));
+    ui.showLeftDomino(gameLogic.currentDomino);
     ui.showRightDominoBack();
     ui.updateStatus(
       gameLogic.score,
@@ -163,6 +182,12 @@ window.onload = init;
 
 // -------------------- Core Logic --------------------
 // Domino object constructor used in gameLogic object
+/**
+ * Creates a new Domino object.
+ * @param {number} leftPips - The number of pips on the left half of the domino.
+ * @param {number} rightPips - The number of pips on the right half of the domino.
+ * @returns {void}
+ */
 function Domino(leftPips, rightPips) {
   this.leftPips = leftPips;
   this.rightPips = rightPips;
@@ -177,38 +202,59 @@ const gameLogic = {
   isResolving: false,
   isGameOver: false,
 
+  /**
+   * Fills the boneyard array with all standard dominos.
+   * There are 6 X 6 dominos in a standard set.
+   * Has no parameters and returns noting.
+   */
   fillBoneyard: function () {
-    // TODO: fill the boneyard with domino objects and reset game state.
+    // TODO: fill the boneyard array with domino objects and reset game state.
   },
 
+  /**
+   * Shuffles the dominoes in the boneyard randomly.
+   * Has no parameters and eturns nothing.
+   */
   shuffleBoneyard: function () {
     // TODO: shuffle the boneyard randomly.
   },
 
+  /**
+   * Deals the first two dominos out of the boneyard: one visible, one hidden.
+   * Has no parameters and eturns nothing.
+   */
   dealStartingDominos: function () {
-    // TODO: Choose the two starting dominos
+    // TODO: Choose the two starting dominos, put them in currentDomino and nextDomino.
   },
 
+  /**
+   * Calculates the total sum of pips on a domino.
+   * @param {Object} domino - The domino object to sum up.
+   * @returns {number} The total number of pips (value of domino).
+   */
   getTotalPips: function (domino) {
     // TODO: Add up the total value of the domino
   },
 
-  getDominoFilename: function (domino) {
-    return "domino_" + domino.leftPips + "_" + domino.rightPips;
-  },
-
+  /**
+   * Compares the next domino's total pips against the current domino's total pips
+   * to determine if the player's guess ("high" or "low") was correct.
+   * @param {string} guess - The player's guess, either "high" or "low".
+   * @returns {boolean} Whether the guess was correct.
+   */
   evaluateGuess: function (guess) {
     const currentTotal = this.getTotalPips(this.currentDomino);
     const nextTotal = this.getTotalPips(this.nextDomino);
     let isCorrect = false;
     // TODO: evaluate the guess and return whether it is correct.
-    return {
-      isCorrect: isCorrect,
-      currentTotal: currentTotal,
-      nextTotal: nextTotal,
-    };
+    return isCorrect;
   },
 
+  /**
+   * Shifts the hidden domino into the visible spot, and draws a new hidden domino
+   * if there are any remaining in the boneyard.
+   * Returns nothing
+   */
   advanceRound: function () {
     // TODO: advance to the next round by shifting dominos and drawing a new hidden domino.
   },
@@ -225,6 +271,11 @@ const ui = {
   lowButton: null,
   resetButton: null,
 
+  /**
+   * Caches references to DOM elements used frequently in the UI,
+   * assigning them to properties of the ui object to improve performance.
+   * @returns {void}
+   */
   cacheDominoElements: function () {
     this.leftDominoElement = document.getElementById("left-domino");
     this.rightDominoElement = document.getElementById("right-domino");
@@ -234,6 +285,12 @@ const ui = {
     this.resetButton = document.getElementById("reset-btn");
   },
 
+  /**
+   * Builds the HTML for one half of a domino, generating the grid cells.
+   * Based on the pipCount, it adds a "pip" class to the correct cell positions.
+   * @param {number} pipCount - Total number of pips required (usually 0 to 6).
+   * @returns {string} The raw HTML string representing half of a domino.
+   */
   buildHalfHTML: function (pipCount) {
     let html = '<div class="domino-half">';
     for (let pos = 1; pos <= 9; pos++) {
@@ -244,10 +301,16 @@ const ui = {
     return html;
   },
 
-  buildDominoFaceHTML: function (filename) {
-    const parts = filename.split("_");
-    const left = Number(parts[1]);
-    const right = Number(parts[2]);
+  /**
+   * Builds the complete HTML layout structure of a face-up domino.
+   * It takes a domino object to generate the pip counts for both halves,
+   * and inserts a divider line between them.
+   * @param {Object} domino - The domino object to visually render.
+   * @returns {string} The full HTML string representing a rendered domino.
+   */
+  buildDominoFaceHTML: function (domino) {
+    const left = domino.leftPips;
+    const right = domino.rightPips;
 
     return (
       '<div class="domino-face">' +
@@ -258,21 +321,40 @@ const ui = {
     );
   },
 
-  showLeftDomino: function (filename) {
-    this.leftDominoElement.innerHTML = this.buildDominoFaceHTML(filename);
+  /**
+   * Shows a domino face up in the left domino element slot.
+   * @param {Object} domino - The domino object to reveal.
+   * @returns {void}
+   */
+  showLeftDomino: function (domino) {
+    this.leftDominoElement.innerHTML = this.buildDominoFaceHTML(domino);
     this.leftDominoElement.classList.remove("back");
   },
 
+  /**
+   * Displays the right-side domino face down (its back cover).
+   * @returns {void}
+   */
   showRightDominoBack: function () {
     this.rightDominoElement.innerHTML = '<div class="domino-back"></div>';
     this.rightDominoElement.classList.add("back");
   },
 
-  showRightDominoFace: function (filename) {
-    this.rightDominoElement.innerHTML = this.buildDominoFaceHTML(filename);
+  /**
+   * Dispays the right-side domino face up, revealing its actual pips.
+   * @param {Object} domino - The domino object to reveal.
+   * @returns {void}
+   */
+  showRightDominoFace: function (domino) {
+    this.rightDominoElement.innerHTML = this.buildDominoFaceHTML(domino);
     this.rightDominoElement.classList.remove("back");
   },
 
+  /**
+   * Binds the passed click handler function to the high and low guess buttons.
+   * @param {Function} clickHandler - Function to be executed when the buttons are clicked.
+   * @returns {void}
+   */
   bindGuessButtons: function (clickHandler) {
     this.highButton.dataset.guess = "high";
     this.lowButton.dataset.guess = "low";
@@ -280,20 +362,41 @@ const ui = {
     this.lowButton.onclick = clickHandler;
   },
 
+  /**
+   * Binds the passed click handler function to the reset button.
+   * @param {Function} clickHandler - Function to be executed when the reset button is clicked.
+   * @returns {void}
+   */
   bindResetButton: function (clickHandler) {
     this.resetButton.onclick = clickHandler;
   },
 
+  /**
+   * Disables the interaction of high/low buttons during round resolution.
+   * @returns {void}
+   */
   disableGuessButtons: function () {
     this.highButton.disabled = true;
     this.lowButton.disabled = true;
   },
 
+  /**
+   * Enables the interaction of high/low guess buttons.
+   * @returns {void}
+   */
   enableGuessButtons: function () {
     this.highButton.disabled = false;
     this.lowButton.disabled = false;
   },
 
+  /**
+   * Updates the visual game status including score, lives, and boneyard count.
+   * @param {number} score - Present game score.
+   * @param {number} lives - Present total of the user's remaining lives.
+   * @param {number} remaining - Number of dominoes still remaining in the boneyard.
+   * @param {string} [message=""] - Message text detailing round status or game outcome.
+   * @returns {void}
+   */
   updateStatus: function (score, lives, remaining, message = "") {
     let text =
       "Score: " + score + " | Lives: " + lives + " | Remaining: " + remaining;
