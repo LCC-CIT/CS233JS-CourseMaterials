@@ -44,7 +44,6 @@ function handleClick() {
     ui.showGridDominoFace(index, gameLogic.dominos[index]);
     ui.disableDomino(index);
     ui.disableAllDominos();
-
     setTimeout(resolvePick, CHECK_DELAY_MS);
 }
 
