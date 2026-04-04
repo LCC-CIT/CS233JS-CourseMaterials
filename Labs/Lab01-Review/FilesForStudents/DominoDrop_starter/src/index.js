@@ -22,13 +22,13 @@ const HALF_CLEARED_COUNT = NUMBER_OF_DOMINOS / 2;
  * @returns {void}
  */
 function init() {
-    ui.cacheDominoElements();
-    gameLogic.fillDominos();
-    gameLogic.shuffleGridDominos();
-    ui.showAllBacks();
-    ui.updateTarget(gameLogic.dominos[gameLogic.currentTargetIndex]);
-    ui.updateStatus(gameLogic.lives, gameLogic.removedCount);
-    ui.enableAllDominos(handleClick);
+    ui.cacheDominoElements();  // Get references to domino elements, store in ui object
+    gameLogic.fillDominos();   // Fill the dominos array with domino objects
+    gameLogic.shuffleGridDominos();   // Randomly shuffle the dominos array
+    ui.showAllBacks();   // Hide the dominos by setting each domino div to an opaque style
+    ui.updateTarget(gameLogic.dominos[gameLogic.currentTargetIndex]);  // Show the target domino
+    ui.updateStatus(gameLogic.lives, gameLogic.removedCount);  // Show the game stats
+    ui.enableAllDominos(handleClick);  // Make all dominos clickable
 }
 
 /**
@@ -105,7 +105,7 @@ window.onload = init;
 
 // -------------------- Core Logic --------------------
 /**
- * Constructor pattern for creating a new domino piece.
+ * Constructor for creating a domino object.
  * @param {number} leftPips - The number of pip dots on the left.
  * @param {number} rightPips - The number of pip dots on the right.
  * @returns {void}
@@ -116,11 +116,11 @@ function Domino(leftPips, rightPips) {
 }
 
 const gameLogic = {
-    dominos: [],
-    currentTargetIndex: NUMBER_OF_DOMINOS,
-    currentPick: -1,
-    removedCount: 0,
-    lives: STARTING_LIVES,
+    dominos: [],   // array that will hold all the dominos in the grid
+    currentTargetIndex: NUMBER_OF_DOMINOS,  // Index of the target domino
+    currentPick: -1,  // Index of the domino picked, -1 when none picked.
+    removedCount: 0,  // Number of dominos removed (wins)
+    lives: STARTING_LIVES,  
     failedPickHistory: {},
 
     /**
@@ -128,7 +128,8 @@ const gameLogic = {
      * @returns {void}
      */
     fillDominos: function () {
-        // TODO: fill the dominos array with random domino objects and a starting target.
+        // TODO: fill the dominos array with domino objects and 
+        // choose one as a starting target.
     },
 
     /**
