@@ -7,7 +7,7 @@
     the domino flips back down. The first time a specific too-low domino is clicked,
     no life is lost. Clicking that same too-low domino again loses a life.
 
-    Written by Brian Bird, 3/29/2026, using GitHub Copilot
+    Written by Brian Bird, 3/29/2026, using GitHub Copilot, revised by Brian Bird 4/3/26
 */
 
 // -------------------- Constants --------------------
@@ -116,31 +116,31 @@ function Domino(leftPips, rightPips) {
 
 const gameLogic = {
     dominos: [],   // array that will hold all the dominos in the grid
-    currentTargetIndex: NUMBER_OF_DOMINOS,  // Index of the target domino
+    currentTargetIndex: NUMBER_OF_DOMINOS,   // The target domino is always at this index.
     currentPick: -1,  // Index of the domino picked, -1 when none picked.
     removedCount: 0,  // Number of dominos removed (wins)
     lives: STARTING_LIVES,  
     failedPickHistory: {},
 
     /**
-     * Initializes the dominos array with a set of dominos and one target.
+     * Initializes the dominos array with a set of dominos and one target domino.
      * @returns {void}
      */
     fillDominos: function () {
         // TODO: fill the dominos array with domino objects and 
-        // choose one as a starting target.
+        // put the target domino at the currentTargetIndex.
     },
 
     /**
-     * Randomly scrambles the order of the grid dominos.
+     * Randomly scrambles the order of the dominos in the array.
      * @returns {void}
      */
     shuffleGridDominos: function () {
-        // TODO: shuffle the grid dominos array randomly.
+        // TODO: shuffle the array of dominos randomly.
     },
 
     /**
-     * Records the user's currently selected grid domino.
+     * Records the user's currently selected domino by index.
      * @param {number} index - The index of the selected domino in the array.
      * @returns {void}
      */
@@ -272,7 +272,8 @@ const ui = {
      * @returns {void}
      */
     showDominoBack: function (index) {
-        // TODO: show the back of the domino at the given index.
+        // TODO: show the back of the domino at the given index by
+        // removing the "removed" style and adding the "back" style.
     },
 
     /**
@@ -282,7 +283,8 @@ const ui = {
      * @returns {void}
      */
     showGridDominoFace: function (index, dominoObj) {
-        // TODO: show the face of the domino at the given index.
+        // TODO: show the face of the domino at the given index by
+        // putting the values in the div element and removing the "back" and "removed" styles.
     },
 
     /**
@@ -300,7 +302,8 @@ const ui = {
      * @returns {void}
      */
     disableDomino: function (index) {
-        // TODO: disable the domino at the given index.
+        // TODO: disable the domino at the given index by removing
+        // it's click event handler and setting the cursor style to "default".
     },
 
     /**
@@ -333,7 +336,8 @@ const ui = {
      * @returns {void}
      */
     removeDomino: function (index) {
-        // TODO: remove the domino at the given index from the board.
+        // TODO: remove the domino at the given index from the board by setting the 
+        // div element's style to "removed".
     },
 
     /**
