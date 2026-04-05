@@ -120,14 +120,14 @@ See the [LCC Tutoring Services](https://www.lanecc.edu/get-support/academic-supp
 
 The table below summarizes the possible points for each assessment task as well as the course as a whole:
 
-| **Assessment Tasks**      | **Points**                 | **Total Points** |
-| ------------------------- | -------------------------- | ---------------- |
-| Labs and code reviews 1–7 | Six are 45 each, one is 50 | 320              |
-| Quizzes 1–8               | 10 each                    | 80               |
-| Term Project              | 200                        | 200              |
-| Midterm and Final Quizzes | Midterm: 100, Final: 200   | 300              |
-| Participation             | 10 per week                | 100              |
-| **Course Total**          |                            | **1000**         |
+| **Assessment Tasks**      | **Points**               | **Total Points** |
+| ------------------------- | ------------------------ | ---------------- |
+| Labs and code reviews 1–7 | 50 each                  | 350              |
+| Quizzes 1–8               | 10 each                  | 80               |
+| Term Project              | 170                      | 170              |
+| Midterm and Final Quizzes | Midterm: 100, Final: 200 | 300              |
+| Participation             | 10 per week              | 100              |
+| **Course Total**          |                          | **1000**         |
 
 Letter grades for the course will be determined by the following percentages:
 

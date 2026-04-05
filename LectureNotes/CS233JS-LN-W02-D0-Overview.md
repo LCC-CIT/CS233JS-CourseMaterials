@@ -36,8 +36,13 @@ TBD
 
 ### Objectives
 
-- Be able to use key features of a "new" version of JavaScript - ES6 (released in 2015).
-
+- Be able to use key features of JavaScript that were added in the ES6 (2015) version:
+  - Arrow functions
+  - Default parameters
+  - Destructuring
+  - Spread operator
+  - Template strings
+  - Modules
 - Be able to use Git and GitHub for software version control.
 - To continue developing your proficiency in designing,  implementing, testing and debugging client-side web-based applications  written in JavaScript        
 
