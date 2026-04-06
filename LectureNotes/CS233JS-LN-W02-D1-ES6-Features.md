@@ -1,7 +1,8 @@
 ---
+
 title: ES6
-description: New ES 6 Features used in the lab assignment
-keywords: Bootstrap
+description: Key ES 6 Features 
+keywords: ES6
 generator: Typora
 author: Brian Bird
 ---
@@ -79,66 +80,6 @@ document.getElementById("status").innerHTML = "Next Player: " + player;
 document.getElementById("status").innerHTML = `Next Player: ${player}`;
 ```
 
-
-
-## The Array Constructor
-
-Last term we learned how to create objects as either *object literals* or by using an *object constructor*.
-
-Remember these?
-
-```javascript
-// Object literal
-const pigeon = {
-	name: "Agatha",
-  breed: "Egyptian Swift",
-  speed: 50,
-  fly: function(){
-    return this.name + " is flying at " + this.speed + " MPH.";
-  }
-}
-```
-
-```javascript
-// Object constructor
-function Pigeon(name, breed, speed){
-	this.name = name;
-  this.breed = breed;
-  this.speed = speed;
-  this.fly = function(){
-    return this.name + " is flying at " + this.speed + " MPH.";
-  };
-}
-
-// Create a Pigeon object
-const agatha = new Pigeon("Agatha", "Egyptian Swift", 50);
-```
-
-The `Array` object constructor is a built-in, prewritten, constructor that you can use to create arrays. It comes with a set of pre-defined methods that will be in any array you create with the `Array` constructor. Here is an example from the concentration game:
-
-```javascript
-const NUMBER_OF_CARDS = 20;
-this.images = Array(NUMBER_OF_CARDS).fill(null);  
-```
-
-In the code above, the `new` keyword isn't needed since the `fill` method itself returns an array. The code above creates an array and initializes each element to null just as if we had done this:
-
-```javascript
-const NUMBER_OF_CARDS = 20;
-this.images = [];
-for (let i = 0; i < NUMBER_OF_CARDS; i++) {
-images.push(null);
-}
-```
-
-Note that the `new` operator is optional with the `Array` constructor (I don't know why!) Here are three ways to create an array that are equivalent:
-
-```javascript
-this.winningLine = new Array();
-this.winningLine = Array();
-this.winningLine = [];
-```
-
 ## Destructuring Assignment
 
 Destructuring assignment in JavaScript is a feature that simplifies unpacking <u>values from arrays</u> or <u>properties from objects</u> and assigning them to variables. 
@@ -167,6 +108,62 @@ console.log(b); // 2
 
 Note that when doing destructuring assignment, the variables that will be assigned values can be declared with const or let directly in the destructuring statement. They don't need to be declared in advance, but if they are already declared, they can still be used for destructuring assignment.
 
+## The Spread Operator `...`
+
+The spread operator is "syntactic sugar"  used to "unpack" or "expand" elements from an iterable (like an array or an object) into a new context. 
+
+### Spreading Arrays
+
+The spread operator allows you to combine multiple arrays or add new elements to an array
+
+**Example: Merging Playlists**
+
+```javascript
+const chillVibes = ['Lo-fi', 'Jazz'];
+const workoutHits = ['Rock', 'Techno'];
+
+// Unpacking both arrays into a new "super" array
+const dailyMix = [...chillVibes, 'Classical', ...workoutHits];
+
+console.log(dailyMix); 
+// Output: ['Lo-fi', 'Jazz', 'Classical', 'Rock', 'Techno']
+```
+
+------
+
+### Spreading Objects
+
+Object spreading is the industry standard for state management (common in frameworks like React). It allows you to create a *shallow copy* of an object while updating specific properties.
+
+**Example: Updating User Profiles**
+
+```javascript
+const user = {
+  id: 101,
+  name: 'Alex',
+  role: 'Student'
+};
+
+// Create a new object, spread the existing user data, 
+// and overwrite the 'role' property.
+const updatedUser = {
+  ...user,
+  role: 'Graduate'
+};
+
+console.log(updatedUser);
+// Output: { id: 101, name: 'Alex', role: 'Graduate' }
+console.log(user.role); 
+// Output: 'Student' (The original object remains untouched!)
+```
+
+------
+
+### Notes:
+
+- **Order Matters:** In objects, if you spread an object and then define a property with the same name, the later one "wins" and overwrites the previous value.
+- **Immutability**. Instead of modifying an existing array or object (mutating it), you "spread" the old values into a new one, adding or changing only what you need.
+
 ## Reference
 
 [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#arrow_functions) on MDN
@@ -176,6 +173,10 @@ Note that when doing destructuring assignment, the variables that will be assign
 [Array Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#constructor) on MDN
 
 [Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) on MDN
+
+*Parts of these notes were drafted using Gemini 3.*
+
+
 
 ------
 
