@@ -1,5 +1,5 @@
 ---
-title: Lab 1, Part 1
+title: Lab 1
 description: Review of beginning JavaScript
 keywords: review, beginning programming, JavaScript
 material: Lab Instructions
