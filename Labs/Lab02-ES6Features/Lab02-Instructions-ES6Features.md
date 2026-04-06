@@ -6,7 +6,7 @@ material: Lab Instructions
 generator: Typora
 author: Brian Bird
 ---
-<h1>Lab 2: ES6 Key Features/h1>
+<h1>Lab 2: ES6 Key Features</h1>
 
 **CS 233JS, Intermediate Programming: JavaScript**
 
