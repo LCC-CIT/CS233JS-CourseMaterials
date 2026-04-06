@@ -8,7 +8,7 @@ author: Brian Bird
 
 <h1>New JS Features Used in Lab Apps</h1>
 
-**CS233JS Intermediate Programming: JavaScript
+**CS233JS Intermediate Programming: JavaScript**
 
 <h2>Table of Contents</h2>
 

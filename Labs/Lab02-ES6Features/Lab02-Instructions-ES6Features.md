@@ -51,6 +51,7 @@ Apply each of these new JS features where they are appropriate&mdash;meaning whe
 - Share your part 2 beta version with a lab partner.
   - Your code  should be at least 75% complete and working.
   - Share the code in your lab partner channel on Discord.
+    - Share a link to your **GitHub repository**.
   - On Moodle, submit a report that you shared your beta version.
 - Do a code reveiw for your lab partner.
   -  Post the completed review form on Discord.
@@ -67,9 +68,10 @@ Apply each of these new JS features where they are appropriate&mdash;meaning whe
   - Part 1
     - upload a zip file containing the .html and .js files with your completed exercise solutions.
 
-  - Part 2:
+  - Part 2:  
+    This will be stored in a GitHub repository.
     - Upload the code reivew from your lab partner with the "production" column filled with out by you.
-    - Upload a link to your GitHub repository
+    - Upload a link to your **GitHub repository**.
     - Put the citstudent URL for your web app in the online text.
 
 
