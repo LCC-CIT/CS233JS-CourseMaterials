@@ -1,7 +1,7 @@
 ---
 title: ES Modules
 description: How to use ES Modules
-keywords: Module
+keywords: Module, import, export, ESM, default export
 generator: Typora
 author: Brian Bird
 ---
@@ -21,15 +21,16 @@ Modules are just JavaScript files. You can break up your program into separate s
  For example, you can export a function to make it available in other files like this:
 
 ```javascript
-export default function validateRegistrationForm(formValues) {
+// This file's path and file name: ./services/validateForm.js
+export function validateRegistrationForm(formValues) {
   // function definition not shown 
 } 
 ```
 
-And import it like this
+And import it like this:
 
 ```javascript
-import validateForm from './services/validateForm';
+import validateForm from './services/validateForm.js';
 ```
 
 ### Adding `export` and `import` statements to .js files
@@ -50,6 +51,16 @@ Code at the top of a module importing the object:
 
 ```javascript
 import {gameLogic} from "./gameLogic.js";
+```
+
+#### Renaming an Import
+
+If you are importing an item that might cause a name conflict, you can rename it like this:
+
+```javascript
+import { gameLogic as gameStateAndRules } from "./gameLogic.js";
+// Then use the renamed object like this:
+gameStateAndRules.someMethod();
 ```
 
 #### Exporting and Importing multiple items
@@ -73,20 +84,31 @@ Code at the top of a module importing the constant and object:
 import {ui, NUMBER_OF_CARDS} from "./ui.js";
 ```
 
+#### Importing a whole module
+
+Instead of importing individual items form a module, the whole module can be imported like this:
+
+```javascript
+import * as Module from "./gmaeLogic.js";
+// Then use it like this:
+Module.gameLogic.someMethod();
+```
+
+#### Specifying a Default Export
+
+We could make the `gameLogic` object the default export from *gameLogic.js* by removing `export` from the object definition and putting this line at the bottom of the file:
+
+```javascript
+export default gameLogic;
+```
+
+In a file that imports this, the code at the top of the file would look like this:
+
+```javascript
+import gameLogic from "./gameLogic.js"
+```
 
 
-
-
-
-
-#### What Does `import` do?
-
-In week 8, you will learn more about JavaScript ES modules[^1] and how to import and export them. For now, the important thing to know is that the ES `import` keyword brings in code or functionality from other modules. ES modules are usually a single JavaScript file, but it could also be a set of JavaScript files. 
-
-In the example above:
-
--  A .css file is being imported instead of a .js file. This is only possible because we are using webpack and added a CSS loader plugin to it.
--  The `Game` class and the constant `NUMBER_OF_DIE` are being imported from the `game.js` file. The name inside the curly braces is the name of the thing to import.
 
 ## Reference
 
@@ -96,6 +118,6 @@ In the example above:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ---
