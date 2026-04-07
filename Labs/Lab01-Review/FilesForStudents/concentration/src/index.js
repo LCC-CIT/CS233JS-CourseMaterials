@@ -1,9 +1,11 @@
+// Written by Brian Bird, 3/29/2026, using GitHub Copilot and based on code from Mari Good.
+
 /*  Overview
     This application simulates a concentration or memory game of 20 cards.
     The game begins with 20 (10 pairs of 2) cards "face down" on the board.
     The user clicks 2 cards at a time.  The cards are displayed "face up".
     After a brief pause the cards are removed from the board if they match
-    or are turned "face down" if they are not.  The game is over when the 
+    or are turned "face down" if they are not.  The game is over when the
     user has cleared all 20 cards from the board.
 */
 
@@ -16,55 +18,54 @@ const NUMBER_OF_CARDS = 20;
 
 // Initializes the page after it's loaded.
 function init() {
-    ui.cacheCardElements();
-    gameLogic.fillCards();
-    gameLogic.shuffleCards();
-    ui.updateScore(gameLogic.matches, gameLogic.tries);
-    ui.enableAllCards(handleClick);
-    ui.showAllBacks();
+  ui.cacheCardElements();
+  gameLogic.fillCards();
+  gameLogic.shuffleCards();
+  ui.updateScore(gameLogic.matches, gameLogic.tries);
+  ui.enableAllCards(handleClick);
+  ui.showAllBacks();
 }
 
 // This function is called when the user clicks on a card.
 // It coordinates between the ui showing the card and game logic tracking the pick.
 function handleClick() {
-    const CHECK_DELAY_MS = 2000;
-    let index = Number(this.id);  // index represets the card location in the cards array and on the page.
-    
-    // Track the pick in our logic
-    gameLogic.pickCard(index);
-    
-    // Update the UI
-    ui.showCardFace(index, gameLogic.cards[index]);
-    ui.disableCard(index);
-    
-    // Check if we need to check for a match and complete the turn
-    if (gameLogic.secondPick !== -1) {
-        ui.disableAllCards();
-        setTimeout(completeTurn, CHECK_DELAY_MS);
-    }
+  const CHECK_DELAY_MS = 2000;
+  let index = Number(this.id); // index represets the card location in the cards array and on the page.
+
+  // Track the pick in our logic
+  gameLogic.pickCard(index);
+
+  // Update the UI
+  ui.showCardFace(index, gameLogic.cards[index]);
+  ui.disableCard(index);
+
+  // Check if we need to check for a match and complete the turn
+  if (gameLogic.secondPick !== -1) {
+    ui.disableAllCards();
+    setTimeout(completeTurn, CHECK_DELAY_MS);
+  }
 }
 
 // Checks the 2 cards that have been picked for matches.
 function completeTurn() {
-    const TOTAL_PAIRS = NUMBER_OF_CARDS / 2;
-    gameLogic.tries++;
-    
-    if (gameLogic.isMatch()) {
-        gameLogic.matches++;
-        ui.removeCard(gameLogic.firstPick);
-        ui.removeCard(gameLogic.secondPick);
-    }
-    else {
-        ui.showCardBack(gameLogic.firstPick);
-        ui.showCardBack(gameLogic.secondPick);
-    }
+  const TOTAL_PAIRS = NUMBER_OF_CARDS / 2;
+  gameLogic.tries++;
 
-    if (gameLogic.matches < TOTAL_PAIRS) {
-        ui.enableAllCards(handleClick, true);
-    }
-    
-    ui.updateScore(gameLogic.matches, gameLogic.tries);
-    gameLogic.resetPicks();
+  if (gameLogic.isMatch()) {
+    gameLogic.matches++;
+    ui.removeCard(gameLogic.firstPick);
+    ui.removeCard(gameLogic.secondPick);
+  } else {
+    ui.showCardBack(gameLogic.firstPick);
+    ui.showCardBack(gameLogic.secondPick);
+  }
+
+  if (gameLogic.matches < TOTAL_PAIRS) {
+    ui.enableAllCards(handleClick, true);
+  }
+
+  ui.updateScore(gameLogic.matches, gameLogic.tries);
+  gameLogic.resetPicks();
 }
 
 window.onload = init;
@@ -75,135 +76,141 @@ window.onload = init;
 
 // Card object constructor used in gameLogic object
 function Card(value, suit) {
-    this.value = value;
-    this.suit = suit;
+  this.value = value;
+  this.suit = suit;
 }
 
 const gameLogic = {
-    cards: [],
-    firstPick: -1,  // index of the first card picked, -1 if no card has been picked yet
-    secondPick: -1, // index of the second card picked, -1 if no card has been picked yet
-    matches: 0,     // number of matches found so far
-    tries: 0,       // number of tries so far
+  cards: [],
+  firstPick: -1, // index of the first card picked, -1 if no card has been picked yet
+  secondPick: -1, // index of the second card picked, -1 if no card has been picked yet
+  matches: 0, // number of matches found so far
+  tries: 0, // number of tries so far
 
-    // Fills the cards array with 10 pairs of card objects.
-    fillCards: function() {
-        const values = ['a', 'k', 'q', 'j', 't', '9', '8', '7', '6', '5'];
-        const suits = ['h', 's'];
+  // Fills the cards array with 10 pairs of card objects.
+  fillCards: function () {
+    const values = ["a", "k", "q", "j", "t", "9", "8", "7", "6", "5"];
+    const suits = ["h", "s"];
 
-        this.cards = [];
-        for (const value of values) {
-            for (const suit of suits) {
-                this.cards.push(new Card(value, suit));
-            }
-        }
-    },
-
-    // Shuffles the elements in the cards array.
-    shuffleCards: function() {
-        for (let i = 0; i < NUMBER_OF_CARDS; i++) {
-            let rndIndex = Math.trunc(Math.random() * NUMBER_OF_CARDS);
-            let temp = this.cards[i];
-            this.cards[i] = this.cards[rndIndex];
-            this.cards[rndIndex] = temp;
-        }
-    },
-
-    // Records a player's card pick
-    pickCard: function(index) {
-        if (this.firstPick === -1) {
-            this.firstPick = index;
-        } else {
-            this.secondPick = index;
-        }
-    },
-
-    // Resets the picks for the next turn
-    resetPicks: function() {
-        this.firstPick = -1;
-        this.secondPick = -1;
-    },
-
-    // Returns true when both picked cards have the same value.
-    isMatch: function() {
-        let card1 = this.cards[this.firstPick];
-        let card2 = this.cards[this.secondPick];
-        return card1.value === card2.value;
+    this.cards = [];
+    for (const value of values) {
+      for (const suit of suits) {
+        this.cards.push(new Card(value, suit));
+      }
     }
+  },
+
+  // Shuffles the elements in the cards array.
+  shuffleCards: function () {
+    for (let i = 0; i < NUMBER_OF_CARDS; i++) {
+      let rndIndex = Math.trunc(Math.random() * NUMBER_OF_CARDS);
+      let temp = this.cards[i];
+      this.cards[i] = this.cards[rndIndex];
+      this.cards[rndIndex] = temp;
+    }
+  },
+
+  // Records a player's card pick
+  pickCard: function (index) {
+    if (this.firstPick === -1) {
+      this.firstPick = index;
+    } else {
+      this.secondPick = index;
+    }
+  },
+
+  // Resets the picks for the next turn
+  resetPicks: function () {
+    this.firstPick = -1;
+    this.secondPick = -1;
+  },
+
+  // Returns true when both picked cards have the same value.
+  isMatch: function () {
+    let card1 = this.cards[this.firstPick];
+    let card2 = this.cards[this.secondPick];
+    return card1.value === card2.value;
+  },
 };
 
 // -------------------- UI --------------------
 // The ui object handles all interaction with the HTML document
 // It only modifies visual elements and relies on gameLogic for data
-const IMAGE_PATH = 'Cards/';
+const IMAGE_PATH = "Cards/";
 
 const ui = {
-    cardElements: [],
+  cardElements: [],
 
-    // Caches card elements by index for reuse.
-    cacheCardElements: function() {
-        this.cardElements = [];
-        for (let i = 0; i < NUMBER_OF_CARDS; i++) {
-            this.cardElements.push(document.getElementById(i));
-        }
-    },
-
-    // Shows the back for all cards
-    showAllBacks: function() {
-        for (let i = 0; i < NUMBER_OF_CARDS; i++) {
-            this.showCardBack(i);
-        }
-    },
-
-    // Shows the back of one card based on its index.
-    showCardBack: function(index) {
-        let card = this.cardElements[index];
-        card.style.backgroundImage = 'url(' + IMAGE_PATH + 'black_back.jpg)';
-    },
-
-    // Shows the face of one card based on its index and card object.
-    showCardFace: function(index, cardObj) {
-        let card = this.cardElements[index];
-        card.style.backgroundImage = 'url(' + IMAGE_PATH + 'card' + cardObj.value + cardObj.suit + '.jpg' + ')';
-    },
-
-    // Disable one card based on its index.
-    disableCard: function(index) {
-        let card = this.cardElements[index];
-        card.onclick = null;
-        card.style.cursor = 'default';
-    },
-
-    // Disable all cards.
-    disableAllCards: function() {
-        let cards = this.cardElements;
-        for (const card of cards) {
-            card.onclick = null;
-            card.style.cursor = 'default';
-        }
-    },
-
-    // Assigns the clickHandler function to cards (all cards by default).
-    enableAllCards: function(clickHandler, onlyRemaining = false) {
-        let cards = this.cardElements;
-        for (const card of cards) {
-            if (!onlyRemaining || card.style.backgroundImage !== 'none') {
-                card.onclick = clickHandler;
-                card.style.cursor = 'pointer';
-            }
-        }
-    },
-
-    // Removes one card from the board by setting its background to none.
-    removeCard: function(index) {
-        let card = this.cardElements[index];
-        card.style.backgroundImage = 'none';
-    },
-
-    // Shows the number of matches and tries in the status element.
-    updateScore: function(matches, tries) {
-        document.getElementById('status').innerHTML = 'Matches: ' + matches + ' Tries: ' + tries;
+  // Caches card elements by index for reuse.
+  cacheCardElements: function () {
+    this.cardElements = [];
+    for (let i = 0; i < NUMBER_OF_CARDS; i++) {
+      this.cardElements.push(document.getElementById(i));
     }
+  },
+
+  // Shows the back for all cards
+  showAllBacks: function () {
+    for (let i = 0; i < NUMBER_OF_CARDS; i++) {
+      this.showCardBack(i);
+    }
+  },
+
+  // Shows the back of one card based on its index.
+  showCardBack: function (index) {
+    let card = this.cardElements[index];
+    card.style.backgroundImage = "url(" + IMAGE_PATH + "black_back.jpg)";
+  },
+
+  // Shows the face of one card based on its index and card object.
+  showCardFace: function (index, cardObj) {
+    let card = this.cardElements[index];
+    card.style.backgroundImage =
+      "url(" +
+      IMAGE_PATH +
+      "card" +
+      cardObj.value +
+      cardObj.suit +
+      ".jpg" +
+      ")";
+  },
+
+  // Disable one card based on its index.
+  disableCard: function (index) {
+    let card = this.cardElements[index];
+    card.onclick = null;
+    card.style.cursor = "default";
+  },
+
+  // Disable all cards.
+  disableAllCards: function () {
+    let cards = this.cardElements;
+    for (const card of cards) {
+      card.onclick = null;
+      card.style.cursor = "default";
+    }
+  },
+
+  // Assigns the clickHandler function to cards (all cards by default).
+  enableAllCards: function (clickHandler, onlyRemaining = false) {
+    let cards = this.cardElements;
+    for (const card of cards) {
+      if (!onlyRemaining || card.style.backgroundImage !== "none") {
+        card.onclick = clickHandler;
+        card.style.cursor = "pointer";
+      }
+    }
+  },
+
+  // Removes one card from the board by setting its background to none.
+  removeCard: function (index) {
+    let card = this.cardElements[index];
+    card.style.backgroundImage = "none";
+  },
+
+  // Shows the number of matches and tries in the status element.
+  updateScore: function (matches, tries) {
+    document.getElementById("status").innerHTML =
+      "Matches: " + matches + " Tries: " + tries;
+  },
 };
-
-

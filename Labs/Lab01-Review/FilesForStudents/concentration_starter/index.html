@@ -1,63 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!-- Written by Brian Bird, 3/29/2026, using GitHub Copilot and based on code from Mari Good. -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS 233JS Concentration</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <!-- Written by Brian Bird, 3/29/2026, using GitHub Copilot and based on code from Mari Good. -->
 
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CS 233JS Concentration</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-    <!-- Outer page container used for centering and spacing -->
-    <div class="game-shell">
+    <body>
+        <!-- Outer page container used for centering and spacing -->
+        <div class="game-shell">
+            <!-- Main game board container -->
+            <div class="game-board" id="board">
+                <!-- Live score text updated by JavaScript -->
+                <div class="game-status" id="status">Matches: 0 Tries: 0</div>
 
-        <!-- Main game board container -->
-        <div class="game-board" id="board">
-            <!-- Live score text updated by JavaScript -->
-            <div class="game-status" id="status">Matches: 0 Tries: 0</div>
+                <!-- Row 1 of cards -->
+                <div class="card-row">
+                    <div id="0" name="card" class="game-card"></div>
+                    <div id="1" name="card" class="game-card"></div>
+                    <div id="2" name="card" class="game-card"></div>
+                    <div id="3" name="card" class="game-card"></div>
+                    <div id="4" name="card" class="game-card"></div>
+                </div>
 
-            <!-- Row 1 of cards -->
-            <div class="card-row">
-                <div id="0" name="card" class="game-card"></div>
-                <div id="1" name="card" class="game-card"></div>
-                <div id="2" name="card" class="game-card"></div>
-                <div id="3" name="card" class="game-card"></div>
-                <div id="4" name="card" class="game-card"></div>
-            </div>
+                <!-- Row 2 of cards -->
+                <div class="card-row">
+                    <div id="5" name="card" class="game-card"></div>
+                    <div id="6" name="card" class="game-card"></div>
+                    <div id="7" name="card" class="game-card"></div>
+                    <div id="8" name="card" class="game-card"></div>
+                    <div id="9" name="card" class="game-card"></div>
+                </div>
 
-            <!-- Row 2 of cards -->
-            <div class="card-row">
-                <div id="5" name="card" class="game-card"></div>
-                <div id="6" name="card" class="game-card"></div>
-                <div id="7" name="card" class="game-card"></div>
-                <div id="8" name="card" class="game-card"></div>
-                <div id="9" name="card" class="game-card"></div>
-            </div>
+                <!-- Row 3 of cards -->
+                <div class="card-row">
+                    <div id="10" name="card" class="game-card"></div>
+                    <div id="11" name="card" class="game-card"></div>
+                    <div id="12" name="card" class="game-card"></div>
+                    <div id="13" name="card" class="game-card"></div>
+                    <div id="14" name="card" class="game-card"></div>
+                </div>
 
-            <!-- Row 3 of cards -->
-            <div class="card-row">
-                <div id="10" name="card" class="game-card"></div>
-                <div id="11" name="card" class="game-card"></div>
-                <div id="12" name="card" class="game-card"></div>
-                <div id="13" name="card" class="game-card"></div>
-                <div id="14" name="card" class="game-card"></div>
-            </div>
-
-            <!-- Row 4 of cards -->
-            <div class="card-row">
-                <div id="15" name="card" class="game-card"></div>
-                <div id="16" name="card" class="game-card"></div>
-                <div id="17" name="card" class="game-card"></div>
-                <div id="18" name="card" class="game-card"></div>
-                <div id="19" name="card" class="game-card"></div>
+                <!-- Row 4 of cards -->
+                <div class="card-row">
+                    <div id="15" name="card" class="game-card"></div>
+                    <div id="16" name="card" class="game-card"></div>
+                    <div id="17" name="card" class="game-card"></div>
+                    <div id="18" name="card" class="game-card"></div>
+                    <div id="19" name="card" class="game-card"></div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Game behavior logic -->
-    <script src="src/index.js"></script>
-</body>
-
+        <!-- Game behavior logic -->
+        <script src="src/index.js"></script>
+    </body>
 </html>

@@ -1,6 +1,6 @@
 ---
 title: ES Modules
-description: New ES Modules
+description: How to use ES Modules
 keywords: Module
 generator: Typora
 author: Brian Bird
@@ -16,13 +16,15 @@ author: Brian Bird
 
 ## Modules
 
- You can use ES6 module (import and export) syntax to make a function available in other js files.
+Modules are simply JavaScript files. You can break up your program into separate sections by putting each section in a different file and then using `export` and `mport` statements to connect them together.
+
+ For example, you can export a function to make it available in other files like this:
 
 ```javascript
 export default function validateRegistrationForm(formValues) { … } 
 ```
 
-This code is in src/home.js:
+And import it like this
 
 ```javascript
 import validateRegistrationForm from './services/formValidation/validateRegistrationForm';
@@ -30,32 +32,32 @@ import validateRegistrationForm from './services/formValidation/validateRegistra
 
 ### Adding `export` and `import` statements to .js files
 
-Add ESM (ES Module) `export` statements to all the class declarations and to the constant declaration in `game.js`  
-Example:  
+The simplest example of this is exporting and importing a single item, for example an object.
+
+#### Exporting and Importing a single item
+
+This would be in the module exporting the object:
 
 ```javascript
-export const NUMBER_OF_DIE = 3;
-
-export class Game { ...
+export const gameLogic = {
+   // Code in the literal object definition omitted
+}
 ```
 
-Add ESM `impor` statements to `game.js`
+This would be in the module importing the object:
 
 ```javascript
-import { Player } from './player.js';
-import { Die } from './die.js';
+import {gameLogic} from "./gameLogic.js"
+// The code that uses gameLogic would be somewhere below
 ```
 
-Add to `index.js`:
+#### Exporting and Importing a multiple items
 
-```javascript
-import '../styles.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Game } from './game.js';
-import { NUMBER_OF_DIE } from './game.js';
-```
 
-(In this example we assume `styles.css` is in the parent folder of the one containing `index.js`.)
+
+
+
+
 
 #### What Does `import` do?
 
