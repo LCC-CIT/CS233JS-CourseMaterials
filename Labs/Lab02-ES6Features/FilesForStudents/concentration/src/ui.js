@@ -6,10 +6,10 @@
 // It only modifies visual elements and relies on gameLogic for data
 
 // -------------------- Constants --------------------
-export const NUMBER_OF_CARDS = 20;
+const NUMBER_OF_CARDS = 20;
 const IMAGE_PATH = 'Cards/';
 
-export const ui = {
+const ui = {
     cardElements: [],
 
     // Caches card elements by index for reuse.
@@ -77,3 +77,5 @@ export const ui = {
         document.getElementById('status').innerHTML = 'Matches: ' + matches + ' Tries: ' + tries;
     }
 };
+
+export { ui, NUMBER_OF_CARDS };

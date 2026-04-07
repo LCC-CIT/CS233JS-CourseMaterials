@@ -16,42 +16,62 @@ author: Brian Bird
 
 ## Modules
 
-Modules are simply JavaScript files. You can break up your program into separate sections by putting each section in a different file and then using `export` and `mport` statements to connect them together.
+Modules are just JavaScript files. You can break up your program into separate sections by putting each section in a different file and then using `export` and `mport` statements to connect them together.
 
  For example, you can export a function to make it available in other files like this:
 
 ```javascript
-export default function validateRegistrationForm(formValues) { … } 
+export default function validateRegistrationForm(formValues) {
+  // function definition not shown 
+} 
 ```
 
 And import it like this
 
 ```javascript
-import validateRegistrationForm from './services/formValidation/validateRegistrationForm';
+import validateForm from './services/validateForm';
 ```
 
 ### Adding `export` and `import` statements to .js files
 
-The simplest example of this is exporting and importing a single item, for example an object.
+The simplest example is exporting and importing a single item, for example an object.
 
 #### Exporting and Importing a single item
 
-This would be in the module exporting the object:
+Code in a module with filename *gameLogic.js* exporting an object:
 
 ```javascript
 export const gameLogic = {
    // Code in the literal object definition omitted
-}
+};
 ```
 
-This would be in the module importing the object:
+Code at the top of a module importing the object:
 
 ```javascript
-import {gameLogic} from "./gameLogic.js"
-// The code that uses gameLogic would be somewhere below
+import {gameLogic} from "./gameLogic.js";
 ```
 
-#### Exporting and Importing a multiple items
+#### Exporting and Importing multiple items
+
+Code in a module with filename *ui.js* exporting a constant and an object:
+
+```javascript
+const NUMBER_OF_CARDS = 20;
+
+const ui = {
+  // Code in this object not shown
+};
+
+// The export statement is at the bottom of the file
+export { ui, NUMBER_OF_CARDS };
+```
+
+Code at the top of a module importing the constant and object:
+
+```javascript
+import {ui, NUMBER_OF_CARDS} from "./ui.js";
+```
 
 
 

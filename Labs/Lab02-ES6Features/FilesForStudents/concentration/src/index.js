@@ -1,8 +1,8 @@
 // Written by Brian Bird, 3/29/2026, using GitHub Copilot and based on code from Mari Good.
 // Revised by Brian Bird 4/6/26 
 
-import {gameLogic} from "./gameLogic.js"
-import {ui, NUMBER_OF_CARDS} from "./ui.js"
+import {gameLogic} from "./gameLogic.js";
+import {ui, NUMBER_OF_CARDS} from "./ui.js";
 
 /*  Overview
     This application simulates a concentration or memory game of 20 cards.
