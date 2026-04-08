@@ -20,7 +20,7 @@ The objective of this lab is to apply what you have learned about key ES6 JavaSc
 
 ## Part 1: Exercises
 
-Complete the solutions to the programming challenges in the [Lab 2 ES6 Feature Exercises](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab02-ES6Features/CS233JS_Lab02_Part1.html) HTML and JavaScript files. Use Visual Studio Code to write and run your code.
+Complete the solutions to the programming challenges in the [Lab 2 ES6 Feature Exercises](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab02-ES6Features/FilesForStudents/CS233JS_Lab02_Part1.html) HTML and JavaScript files. Use Visual Studio Code to write and run your code.
 
 ## Part 2: Web App
 
