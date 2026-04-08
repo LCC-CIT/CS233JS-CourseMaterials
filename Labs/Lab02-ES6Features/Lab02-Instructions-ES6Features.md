@@ -16,7 +16,7 @@ author: Brian Bird
 
 ## Objective
 
-The objective of this lab is to apply what you have learned about key ES6 JavaScript features and to start using Git and GitHub.
+The objective of this lab is to apply what you have learned about key ES6 JavaScript features <s>and to start using Git and GitHub</s>.
 
 ## Part 1: Exercises
 
@@ -51,8 +51,9 @@ Apply each of these new JS features where they are appropriate&mdash;meaning whe
 
 - Share your part 2 beta version with a lab partner.
   - Your code  should be at least 75% complete and working.
-  - Share the code in your lab partner channel on Discord.
-    - **Share a link to your GitHub repository**.
+  - Share the code in your lab partner channel on Discord. You can share it by:
+    - Uploading a zip file, or
+    - Sharing a link to your GitHub repository (optional).
   - On Moodle, submit a report that you shared your beta version.
 - Do a code review for your lab partner.
   -  Post the completed review form on Discord.
@@ -66,14 +67,12 @@ Apply each of these new JS features where they are appropriate&mdash;meaning whe
 
 - Submit the following to Moodle:
 
-  - Part 1
-    - upload a **zip file** containing the .html and .js files with your completed exercise solutions.
-
-  - Part 2:  
-    Store the web app in a GitHub repository.
-    - Upload the **code review** from your lab partner with the "production" column filled with out by you.
-    - Put a link to your **GitHub repository** in the online text.
-    - Put the **citstudent URL** for your web app in the online text.
+  - Part 1 and 2
+    - Upload a zip file containing the completed files for parts 1 and 2.
+      - Or put a link to a GitHub repository with your code in the online text (optional).
+    
+    - Upload the code review from your lab partner with the "production" column filled with out by you.
+    - Put the citstudent URL for your web app in the online text.
 
 
 
