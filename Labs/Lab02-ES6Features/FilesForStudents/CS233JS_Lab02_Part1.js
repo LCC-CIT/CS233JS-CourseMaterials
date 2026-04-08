@@ -7,14 +7,14 @@
 1. Arrow function with an implicit return.
 Complete the arrow function named tripleNumber so it returns a number multiplied by 3.
 */
-const tripleNumber = number => 0
+const tripleNumber = number => 0;
 
 /*
 2. Arrow function that returns a boolean.
 Complete isLongWord so it returns true when a word has more than 6 letters.
 Hint: use the .length property to get the length of a string.
 */
-const isLongWord = word => false
+const isLongWord = word => false;
 
 /*
 3. Arrow function with a default parameter.
