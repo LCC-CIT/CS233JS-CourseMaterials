@@ -16,7 +16,7 @@ author: Brian Bird
 
 ## Modules
 
-Modules are just JavaScript files. You can break up your program into separate sections by putting each section in a different file and then using `export` and `mport` statements to connect them together.
+A Module is just JavaScript file that has one or more `export` statements in it. You can break your program up into separate sections by putting each section in a different file and then use `export` to share items (functions, objects, arrays, etc.) from a module and `mport` statements to pull those items into another file.
 
  For example, you can export a function to make it available in other files like this:
 
@@ -32,6 +32,12 @@ And import it like this:
 ```javascript
 import validateForm from './services/validateForm.js';
 ```
+
+
+
+*Remember: Putting an export statement in a JavaScript file turns it into a module.*
+
+
 
 ### Adding `export` and `import` statements to .js files
 

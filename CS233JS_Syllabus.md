@@ -6,7 +6,7 @@
 | ----------------- | ------------------------------------------------------------ | ---- | -------------------------- | ------------------------------------------------------------ |
 | **Course Number** | CS 233JS                                                     |      | **Name**                   | Brian Bird                                                   |
 | **CRN**           | 41049 Hybrid (on campus)  Online 40715                       |      | **E-mail**<br />**Mobile** | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)<br />[‪(541) 525-0213‬](tel:5415250213) |
-| **Day & Time**    | M, W 10:00–11:50                                             |      | **Office Hours**           | M&mdash;Th 1:00–1:50                                         |
+| **Day & Time**    | M, W 10:00–11:50                                             |      | **Office Hours**           | M, W 12:00–12:50  <br />Th 11:00&ndash;11:50                 |
 | **Room**          | Building 19, Room 128  or [Zoom meeting](https://lanecc.zoom.us/j/98707016990) |      | **Room**                   | Building 19, Room 152 or [Zoom meeting](https://lanecc.zoom.us/j/8982554800) |
 
 <h2>Table of Contents</h2>
