@@ -13,6 +13,9 @@ function Card(value, suit) {
     this.suit = suit;
 }
 
+// Note: The methods in gameLogic should not be converted to arrows. Most of them use this, 
+// and arrow functions will not be bound to this from the calling context.
+
 export const gameLogic = {
     cards: [],
     firstPick: -1,  // index of the first card picked, -1 if no card has been picked yet
@@ -60,8 +63,9 @@ export const gameLogic = {
 
     // Returns true when both picked cards have the same value.
     isMatch: function() {
-        let card1 = this.cards[this.firstPick];
-        let card2 = this.cards[this.secondPick];
-        return card1.value === card2.value;
+        // Converted to use destructuring.
+        let { value: value1 } = this.cards[this.firstPick];
+        let { value: value2 } = this.cards[this.secondPick];
+        return value1 === value2;
     }
 };

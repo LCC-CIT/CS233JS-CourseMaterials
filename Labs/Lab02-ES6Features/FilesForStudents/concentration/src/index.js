@@ -17,18 +17,19 @@ import {ui, NUMBER_OF_CARDS} from "./ui.js";
 // These functions act as the "glue" between the game logic and the UI
 // which are defined in sections below.
 
-// Initializes the page after it's loaded.
-function init() {
+// Initializes the page after it's loaded. (Converted to an arrow function.)
+const init = () => {
     ui.cacheCardElements();
     gameLogic.fillCards();
     gameLogic.shuffleCards();
     ui.updateScore(gameLogic.matches, gameLogic.tries);
     ui.enableAllCards(handleClick);
     ui.showAllBacks();
-}
+};
 
 // This function is called when the user clicks on a card.
 // It coordinates between the ui showing the card and game logic tracking the pick.
+// Note: This should not be converted to an arrow function because it relies on this.id from the DOM event handler binding. 
 function handleClick() {
     const CHECK_DELAY_MS = 2000;
     let index = Number(this.id);  // index represets the card location in the cards array and on the page.
@@ -47,19 +48,21 @@ function handleClick() {
     }
 }
 
-// Checks the 2 cards that have been picked for matches.
-function completeTurn() {
+// Checks the 2 cards that have been picked for matches. (Converted to an arrow function.)
+const completeTurn = () => {
     const TOTAL_PAIRS = NUMBER_OF_CARDS / 2;
+    // Converted to use destructuring.
+    const { firstPick, secondPick } = gameLogic;
     gameLogic.tries++;
     
     if (gameLogic.isMatch()) {
         gameLogic.matches++;
-        ui.removeCard(gameLogic.firstPick);
-        ui.removeCard(gameLogic.secondPick);
+        ui.removeCard(firstPick);
+        ui.removeCard(secondPick);
     }
     else {
-        ui.showCardBack(gameLogic.firstPick);
-        ui.showCardBack(gameLogic.secondPick);
+        ui.showCardBack(firstPick);
+        ui.showCardBack(secondPick);
     }
 
     if (gameLogic.matches < TOTAL_PAIRS) {
@@ -68,7 +71,7 @@ function completeTurn() {
     
     ui.updateScore(gameLogic.matches, gameLogic.tries);
     gameLogic.resetPicks();
-}
+};
 
 window.onload = init;
 

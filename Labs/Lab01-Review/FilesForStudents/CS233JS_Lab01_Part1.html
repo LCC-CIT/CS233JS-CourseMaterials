@@ -104,14 +104,14 @@
     </script>
 
     <p>9. Use a button to get input<br>
-    Enter your favorite dessert: <input id="favoriteDessertInput"> 
-    <button id="favoriteDessertButton">Enter</button><br>
-    <span id="9">Favorite dessert: <span id="favoriteDessertOutput"></span></p>
+    Enter your favorite dessert: <input id="favoriteDesertInput"> 
+    <button id="favoriteDesertButton">Enter</button><br>
+    <span id="9">Favorite desert: <span id="favoriteDesertOutput"></span></p>
     <script>
-        const favoriteDesertButton = document.getElementById("favoriteDessertButton");
+        const favoriteDesertButton = document.getElementById("favoriteDesertButton");
         favoriteDesertButton.addEventListener("click", function () {
-            let output = echoFavoriteDessert();
-            let input = document.getElementById("favoriteDessertInput").value;
+            let output = echoFavoriteDesert();
+            let input = document.getElementById("favoriteDesertInput").value;
             checkAnswer("9", input, output);
         });
     </script>

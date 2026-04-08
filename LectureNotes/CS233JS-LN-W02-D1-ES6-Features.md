@@ -7,9 +7,9 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>New JS Features Used in Lab Apps</h1>
+<h1>Key JS Features Introduced in ES6</h1>
 
-**CS233JS Intermediate Programming: JavaScript
+**CS233JS Intermediate Programming: JavaScript**
 
 <h2>Table of Contents</h2>
 
@@ -24,7 +24,7 @@ This week you are refactoring the three web apps from last week to use classes a
 The arrow function syntax is just another way of writing anonymous functions. They are mostly just "syntactic sugar":
 
 ```javascript
-// A "normal" anonymous function used as an event handler
+// A traditional anonymous function used as an event handler
 document.querySelector("button").addEventListener("click", 
   function () {
 		 document.querySelector("span").textContent = "Button pressed!";
@@ -157,9 +157,7 @@ console.log(user.role);
 // Output: 'Student' (The original object remains untouched!)
 ```
 
-------
-
-### Notes:
+**Notes:**
 
 - **Order Matters:** In objects, if you spread an object and then define a property with the same name, the later one "wins" and overwrites the previous value.
 - **Immutability**. Instead of modifying an existing array or object (mutating it), you "spread" the old values into a new one, adding or changing only what you need.

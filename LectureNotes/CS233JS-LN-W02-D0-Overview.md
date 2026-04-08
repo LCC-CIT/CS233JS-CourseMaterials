@@ -15,14 +15,14 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-| Topics by Week                                 |                                       |
-| ---------------------------------------------- | ------------------------------------- |
-| 1. Intro to Course and JavaScript review       | 6. Asynchronous programming           |
-| <mark>2. ES6 features and Git</mark>           | 7. Unit testing, debugging techniques |
-| 3. ES6 classes and Object Oriented Programming | 8. HTML5 canvas                       |
-| 4. Node.js, NPM, Vite <br />Local Storage      | 9. Functional programming             |
-| 5. Midterm quiz. <br />Project design          | 10. Review                            |
-| 11. Final quiz                                 |                                       |
+| Topics by Week                              |                                       |
+| ------------------------------------------- | ------------------------------------- |
+| 1. Intro to Course and JavaScript review    | 6. Asynchronous programming           |
+| <mark>2. ES6 JS features  and Git</mark>    | 7. Unit testing, debugging techniques |
+| 3. ES6 classes, Object Oriented Programming | 8. HTML5 canvas                       |
+| 4. Node.js, NPM, Vite <br />Local Storage   | 9. Functional programming             |
+| 5. Midterm quiz. <br />Project design       | 10. Review                            |
+| 11. Final quiz                              |                                       |
 
 <h2>Contents</h2>
 
@@ -43,7 +43,7 @@ TBD
   - Spread operator
   - Template strings
   - Modules
-- Be able to use Git and GitHub for software version control.
+- Be able to use Git and GitHub for software version control.  
 - To continue developing your proficiency in designing,  implementing, testing and debugging client-side web-based applications  written in JavaScript        
 
 ### Due Dates

@@ -88,16 +88,16 @@ function averageClassGrade() {
 Complete echoFavoriteDessert() so it gets the desert name from 
 the input element and returns it.
 */
-function echoFavoriteDessert() {
+function echoFavoriteDesert() {
     const favoriteDessert = "";
     // TODO: Get the name of the desert from the input element on the web page
     return favoriteDessert;
 }
 
-function setFavoriteDessert() {
+function setFavoriteDesert() {
     const input = document.getElementById("favoriteDessertInput");
     const output = document.getElementById("favoriteDessertOutput");
-    output.innerHTML = favoriteDessertText(input.value);
+    output.innerHTML = favoriteDesertText(input.value);
 }
 
 // 10. Validate a username. Write a regex pattern that will match a string containing 

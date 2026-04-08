@@ -16,15 +16,15 @@ author: Brian Bird
 
 ## Objective
 
-The objective of this lab is to review what you learned in CS 133JS, Beginning JavaScript.
+The objective of this lab is to apply what you have learned about key ES6 JavaScript features and to start using Git and GitHub.
 
 ## Part 1: Exercises
 
-Complete the solutions to the programming challenges in the [Lab 2 ES6 Feature Exercises](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab02-ES6Features/CS233JS_Lab02_Part1.html) HTML and JavaScript files. Use Visual Studio Code to write and test your code.
+Complete the solutions to the programming challenges in the [Lab 2 ES6 Feature Exercises](https://lcc-cit.github.io/CS233JS-CourseMaterials/Labs/Lab02-ES6Features/CS233JS_Lab02_Part1.html) HTML and JavaScript files. Use Visual Studio Code to write and run your code.
 
 ## Part 2: Web App
 
-You wil do project A, B or C depending on the lab assignment version group you are in. 
+You will do project A, B or C depending on the lab assignment version group you are in. 
 
 - Project A:  "Double Trouble" Domino Game
 
@@ -34,11 +34,12 @@ You wil do project A, B or C depending on the lab assignment version group you a
 Refactor your web app to use the new JS features we're learing this week:
 
 - Modules
-- Arrow functions. You don't need to change all the functions into arrow functions. Just the event handler assignments and "one liner" functions or methods.
+- Arrow functions. You don't need to change all the functions into arrow functions, just the ones that are suitable for conversion.
 - Default parameters
 - Destructuring assignment
-- The spread operator
-- Templete strings (template literals)
+- <s>The spread operator</s>  
+  (There aren't any good places to sue this.)
+- Template strings (template literals)
 
 Apply each of these new JS features where they are appropriate&mdash;meaning where they will simplify your code.
 
@@ -51,11 +52,11 @@ Apply each of these new JS features where they are appropriate&mdash;meaning whe
 - Share your part 2 beta version with a lab partner.
   - Your code  should be at least 75% complete and working.
   - Share the code in your lab partner channel on Discord.
-    - Share a link to your **GitHub repository**.
+    - **Share a link to your GitHub repository**.
   - On Moodle, submit a report that you shared your beta version.
-- Do a code reveiw for your lab partner.
+- Do a code review for your lab partner.
   -  Post the completed review form on Discord.
-  - Submit your code reivew to Moodle.
+  - Submit your code review to Moodle.
 
 - Revise your code and improve it based in part on feedback from your lab partner.
 
@@ -66,13 +67,13 @@ Apply each of these new JS features where they are appropriate&mdash;meaning whe
 - Submit the following to Moodle:
 
   - Part 1
-    - upload a zip file containing the .html and .js files with your completed exercise solutions.
+    - upload a **zip file** containing the .html and .js files with your completed exercise solutions.
 
   - Part 2:  
-    This will be stored in a GitHub repository.
-    - Upload the code reivew from your lab partner with the "production" column filled with out by you.
-    - Upload a link to your **GitHub repository**.
-    - Put the citstudent URL for your web app in the online text.
+    Store the web app in a GitHub repository.
+    - Upload the **code review** from your lab partner with the "production" column filled with out by you.
+    - Put a link to your **GitHub repository** in the online text.
+    - Put the **citstudent URL** for your web app in the online text.
 
 
 

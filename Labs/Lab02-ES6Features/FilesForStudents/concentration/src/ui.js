@@ -9,6 +9,9 @@
 const NUMBER_OF_CARDS = 20;
 const IMAGE_PATH = 'Cards/';
 
+// Note: All of the methods are better not converted to arrows. Most of them use this, 
+// and arrow functions will not be bound to this from the calling context.
+
 const ui = {
     cardElements: [],
 
@@ -30,13 +33,16 @@ const ui = {
     // Shows the back of one card based on its index.
     showCardBack: function(index) {
         let card = this.cardElements[index];
-        card.style.backgroundImage = 'url(' + IMAGE_PATH + 'black_back.jpg)';
+        // Converted to a template literal.
+        card.style.backgroundImage = `url(${IMAGE_PATH}black_back.jpg)`;
     },
 
     // Shows the face of one card based on its index and card object.
-    showCardFace: function(index, cardObj) {
+    showCardFace: function(index, { value, suit }) {
         let card = this.cardElements[index];
-        card.style.backgroundImage = 'url(' + IMAGE_PATH + 'card' + cardObj.value + cardObj.suit + '.jpg' + ')';
+        // Converted to a template literal.
+        // Converted to use destructuring.
+        card.style.backgroundImage = `url(${IMAGE_PATH}card${value}${suit}.jpg)`;
     },
 
     // Disable one card based on its index.
@@ -74,7 +80,8 @@ const ui = {
 
     // Shows the number of matches and tries in the status element.
     updateScore: function(matches, tries) {
-        document.getElementById('status').innerHTML = 'Matches: ' + matches + ' Tries: ' + tries;
+        // Converted to a template literal.
+        document.getElementById('status').innerHTML = `Matches: ${matches} Tries: ${tries}`;
     }
 };
 
