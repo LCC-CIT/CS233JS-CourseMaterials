@@ -15,14 +15,14 @@ author: Brian Bird
 
 **CS233JS Intermediate Programming: JavaScript**
 
-| Topics by Week                              |                                       |
-| ------------------------------------------- | ------------------------------------- |
-| 1. Intro to Course and JavaScript review    | 6. Asynchronous programming           |
-| <mark>2. ES6 JS features  and Git</mark>    | 7. Unit testing, debugging techniques |
-| 3. ES6 classes, Object Oriented Programming | 8. HTML5 canvas                       |
-| 4. Node.js, NPM, Vite <br />Local Storage   | 9. Functional programming             |
-| 5. Midterm quiz. <br />Project design       | 10. Review                            |
-| 11. Final quiz                              |                                       |
+| Topics by Week                                      |                                             |
+| --------------------------------------------------- | ------------------------------------------- |
+| 1. Intro to Course and JavaScript review            | 6. Asynchronous programming                 |
+| <mark>2. ES6 JS features  and Git</mark>            | 7. Unit testing, debugging techniques       |
+| 3. ES6 classes, Object Oriented Programming and Git | 8. HTML5 canvas                             |
+| 4. Node.js, NPM, Vite <br />Local Storage           | 9. Functional programming                   |
+| 5. Midterm quiz. <br />Project design               | 10. Term Project Completion.   <br />Review |
+| 11. Final quiz                                      |                                             |
 
 <h2>Contents</h2>
 
