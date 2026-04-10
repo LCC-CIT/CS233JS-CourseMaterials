@@ -38,10 +38,10 @@ Refactor your web app to use the new JS features we're learing this week:
 - Default parameters
 - Destructuring assignment
 - <s>The spread operator</s>  
-  (There aren't any good places to sue this.)
+  (There aren't any good places to use this.)
 - Template strings (template literals)
 
-Apply each of these new JS features where they are appropriate&mdash;meaning where they will simplify your code.
+Apply each of these new JS features where they are appropriate&mdash;meaning where they will simplify or in some way improve your code (readability, conciseness, elegance).
 
 
 
