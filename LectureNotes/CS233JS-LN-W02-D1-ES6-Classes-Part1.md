@@ -77,7 +77,7 @@ This week you are refactoring the three web apps from last week to use classes a
 
 ### ES6 Class Syntax
 
-A bunch of new features were added to the JavaScript language in 2015 in the ES6 specification. One of these was classes. A JavaScript *class* is very similar to a constructor function, but with a different syntax. Here's an example of a class:
+ A JavaScript *class* is very similar to a constructor function, but with a different syntax. Here's an example of a class declaration:
 
 ```javascript
 class Pigeon {
@@ -88,7 +88,7 @@ class Pigeon {
     }
 
     fly() {
-        return this.name + " is flying at " + this.speed + " MPH.";
+        return ${this.name} is flying at ${this.speed} MPH.`;
     }
 }
 ```
@@ -99,6 +99,16 @@ Here is an example of code to create new pigeon object can call the fly method:
 const pigeon = new Pigeon("Percy", "Rock Pigeon", 25);
 console.log(pigeon.fly());
 ```
+
+#### A Note on Arrow functions in Class Declarations
+
+If we wanted to convert the fly method to use arrow function syntax, it would look like this:
+
+```javascript
+fly = () => `${this.name} is flying at ${this.speed} MPH.`;
+```
+
+**But!** While arrow functions in classes are great for *React components* or *event handlers*, **standard (traditional) methods are usually preferred for general logic** because they are more memory-efficient[^1]
 
 ### OOP Concepts
 
@@ -182,17 +192,10 @@ This application has already been separated into modules and already has objects
     Keeps track of game state and has methods that implement the game rules.  
     Doesn't have any event listeners or any code that interacts with the html page in it
 
-
-  The `Board` class will have `Card `objects in it and the `Game` class will have a Board object in it.
-
-  In order to follow the principle of separation of concerns, we can separate out the i/o (everything that has to do with the html page) from the processing. In order to do this:
-
 - ui.js  
 
   - `UI` class  
     Does everything involving interaction with with the web page.
-
-
 
 
 
@@ -217,4 +220,5 @@ This application has already been separated into modules and already has objects
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised spring of <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
-------------
+
+[^1]: It’s a common misconception that arrow functions are just "syntactic sugar." While they do the same *job*, they are physically stored in memory differently when used inside a class. When you define a standard method, JavaScript attaches it to the *Prototype* of the class.When you use an arrow function as a class property, it is automatically initialized inside the constructor. This means it is attached directly to the *Instance* (`this`).
