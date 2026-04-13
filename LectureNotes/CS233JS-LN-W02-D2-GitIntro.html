@@ -6,7 +6,7 @@
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, h5 { white-space: pre-wrap; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -26,14 +26,15 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font: inherit; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
 #write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+svg sub, svg sup { position: static; }
 .nodeLabel p { padding-right: 2px; padding-left: 2px; }
 .typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
-foreignobject { overflow: visible; }
+foreignObject { overflow: visible; }
 p { line-height: inherit; }
 h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
 p { orphans: 4; }
@@ -57,8 +58,8 @@ thead, tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
-.CodeMirror-linenumber { user-select: none; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -78,7 +79,7 @@ div.hr:focus { cursor: none; }
 svg { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
@@ -91,7 +92,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export * { print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -112,7 +113,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
@@ -142,14 +143,14 @@ code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
-a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom: 0px; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
 video { max-width: 100%; display: block; margin: 0px auto; }
-iframe { max-width: 100%; width: 100%; border: none; }
+iframe { max-width: 100%; width: 100%; border: medium; }
 .highlight td, .highlight tr { border: 0px; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
@@ -178,7 +179,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
-.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
 .outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
 .outline-expander:hover::before { content: ""; }
@@ -191,14 +192,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
 .outline-label:hover { text-decoration: underline; }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
-.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
 .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
-.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
 .typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
@@ -212,7 +213,7 @@ mjx-container { break-inside: avoid; }
 .md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
 .md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
 .md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
-.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
 .md-alert-text-note { color: rgb(9, 105, 218); }
 .md-alert-text-important { color: rgb(130, 80, 223); }
 .md-alert-text-warning { color: rgb(154, 103, 0); }
@@ -613,10 +614,11 @@ header, .context-menu, .megamenu-content, footer{
 }
 </style>
 <style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+<style type='text/css'  id="style-mac-print"> @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}</style>
 
 <title>Git</title>
 </head>
-<body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1>Intro to Git</h1><p><strong><span>CS233JS Intermediate Programming: JavaScript</span></strong></p><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n55"><a class="md-toc-inner" href="#1-git-clone">1. <code>git clone</code></a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n60"><a class="md-toc-inner" href="#2-git-add">2. <code>git add</code></a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n65"><a class="md-toc-inner" href="#3-git-commit">3. <code>git commit</code></a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n70"><a class="md-toc-inner" href="#4-git-push">4. <code>git push</code></a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n75"><a class="md-toc-inner" href="#5-git-pull">5. <code>git pull</code></a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n81"><a class="md-toc-inner" href="#the-workflow-at-a-glance">The Workflow at a Glance</a></span></p></div><h2 id='1-git-clone'><span>1. </span><code>git clone</code></h2><p><strong><span>The Starting Point.</span></strong><span> Before you can do anything, you need a local copy of the project. This command copies an existing repository from a remote server (like GitHub) onto your computer.</span></p><ul><li><p><strong><span>Usage:</span></strong><span> </span><code>git clone &lt;url&gt;</code></p></li></ul><h2 id='2-git-add'><span>2. </span><code>git add</code></h2><p><strong><span>The Staging Area.</span></strong><span> Once you’ve edited your files, Git needs to know which changes you want to include in your next &quot;snapshot.&quot; This command moves changes from your working directory to the </span><strong><span>Staging Area</span></strong><span>.</span></p><ul><li><p><strong><span>Usage:</span></strong><span> </span><code>git add &lt;file-name&gt;</code><span> or </span><code>git add .</code><span> (to add everything).</span></p></li></ul><h2 id='3-git-commit'><span>3. </span><code>git commit</code></h2><p><strong><span>The Snapshot.</span></strong><span> This permanently records the changes you &quot;added&quot; in the previous step to your local history. Every commit requires a message explaining what you changed.</span></p><ul><li><p><strong><span>Usage:</span></strong><span> </span><code>git commit -m &quot;Brief description of changes&quot;</code></p></li></ul><h2 id='4-git-push'><span>4. </span><code>git push</code></h2><p><strong><span>Sharing Your Work.</span></strong><span> Your commits are currently only on your machine. To share them with your team or back them up online, you &quot;push&quot; them from your local repository to the remote server.</span></p><ul><li><p><strong><span>Usage:</span></strong><span> </span><code>git push origin main</code></p></li></ul><h2 id='5-git-pull'><span>5. </span><code>git pull</code></h2><p><strong><span>Staying Up to Date.</span></strong><span> If you are working in a team, others will be pushing their own changes. This command fetches those changes from the server and merges them into your local files so you aren&#39;t working on an outdated version.</span></p><ul><li><p><strong><span>Usage:</span></strong><span> </span><code>git pull origin main</code></p></li></ul><hr /><h3 id='the-workflow-at-a-glance'><span>The Workflow at a Glance</span></h3><figure class='table-figure'><table><thead><tr><th><strong><span>Command</span></strong></th><th><strong><span>Action</span></strong></th><th><strong><span>Location Impacted</span></strong></th></tr></thead><tbody><tr><td><strong><span>Clone</span></strong></td><td><span>Download project</span></td><td><span>Remote $\rightarrow$ Local</span></td></tr><tr><td><strong><span>Add</span></strong></td><td><span>Track changes</span></td><td><span>Working Directory $\rightarrow$ Staging</span></td></tr><tr><td><strong><span>Commit</span></strong></td><td><span>Save snapshot</span></td><td><span>Staging $\rightarrow$ Local History</span></td></tr><tr><td><strong><span>Push</span></strong></td><td><span>Upload changes</span></td><td><span>Local History $\rightarrow$ Remote</span></td></tr><tr><td><strong><span>Pull</span></strong></td><td><span>Download updates</span></td><td><span>Remote $\rightarrow$ Local History</span></td></tr></tbody></table></figure><p>&nbsp;</p><p><em><span>Note: These notes were drafted using Gemini 3.</span></em></p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License"></a><span> Intermediate JavaScript Lecture Notes by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written in </span><time><span>2026</span></time><span>, are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><p>&nbsp;</p></div></div>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1>Intro to Git</h1><p><strong><span>CS233JS Intermediate Programming: JavaScript</span></strong></p><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n6"><a class="md-toc-inner" style="" href="#git-commands">Git Commands</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n67"><a class="md-toc-inner" style="" href="#git-clone"><code>git clone</code></a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n10"><a class="md-toc-inner" style="" href="#git-add"><code>git add</code></a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n15"><a class="md-toc-inner" style="" href="#git-commit"><code>git commit</code></a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n20"><a class="md-toc-inner" style="" href="#git-push"><code>git push</code></a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n25"><a class="md-toc-inner" style="" href="#git-pull"><code>git pull</code></a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n32"><a class="md-toc-inner" style="" href="#the-workflow-at-a-glance">The Workflow at a Glance</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n69"><a class="md-toc-inner" style="" href="#intro-to-github">Intro to GitHub</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n144"><a class="md-toc-inner" style="" href="#forking-an-existing-repository">Forking an Existing Repository</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n93"><a class="md-toc-inner" style="" href="#creating-a-repository-from-scratch">Creating a Repository from Scratch</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n151"><a class="md-toc-inner" style="" href="#cloning-a-remote-repository">Cloning a Remote Repository</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n171"><a class="md-toc-inner" style="" href="#how-to-get-the-url-from-github">How to Get the URL from GitHub</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n160"><a class="md-toc-inner" style="" href="#cloning-via-the-command-line">Cloning via the Command Line</a></span></p></div><h2 id='git-commands'><span>Git Commands</span></h2><h3 id='git-clone'><code>git clone</code></h3><p><strong><span>The Starting Point.</span></strong><span> Before you can do anything, you need a local copy of the project. This command copies an existing repository from a remote server (like GitHub) onto your computer.</span></p><ul><li><p><strong><span>Usage:</span></strong><span> </span><code>git clone &lt;url&gt;</code></p></li></ul><h3 id='git-add'><code>git add</code></h3><p><strong><span>The Staging Area.</span></strong><span> Once you’ve edited your files, Git needs to know which changes you want to include in your next &quot;snapshot.&quot; This command moves changes from your working directory to the </span><strong><span>Staging Area</span></strong><span>.</span></p><ul><li><p><strong><span>Usage:</span></strong><span> </span><code>git add &lt;file-name&gt;</code><span> or </span><code>git add .</code><span> (to add everything).</span></p></li></ul><h3 id='git-commit'><code>git commit</code></h3><p><strong><span>The Snapshot.</span></strong><span> This permanently records the changes you &quot;added&quot; in the previous step to your local history. Every commit requires a message explaining what you changed.</span></p><ul><li><p><strong><span>Usage:</span></strong><span> </span><code>git commit -m &quot;Brief description of changes&quot;</code></p></li></ul><h3 id='git-push'><code>git push</code></h3><p><strong><span>Sharing Your Work.</span></strong><span> Your commits are currently only on your machine. To share them with your team or back them up online, you &quot;push&quot; them from your local repository to the remote server.</span></p><ul><li><p><strong><span>Usage:</span></strong><span> </span><code>git push origin main</code></p></li></ul><h3 id='git-pull'><code>git pull</code></h3><p><strong><span>Staying Up to Date.</span></strong><span> If you are working in a team, others will be pushing their own changes. This command fetches those changes from the server and merges them into your local files so you aren&#39;t working on an outdated version.</span></p><ul><li><p><strong><span>Usage:</span></strong><span> </span><code>git pull origin main</code></p></li></ul><hr /><h3 id='the-workflow-at-a-glance'><span>The Workflow at a Glance</span></h3><figure class='table-figure'><table><thead><tr><th><strong><span>Command</span></strong></th><th><strong><span>Action</span></strong></th><th><strong><span>Location Impacted</span></strong></th></tr></thead><tbody><tr><td><strong><span>Clone</span></strong></td><td><span>Download project</span></td><td><span>Remote $\rightarrow$ Local</span></td></tr><tr><td><strong><span>Add</span></strong></td><td><span>Track changes</span></td><td><span>Working Directory $\rightarrow$ Staging</span></td></tr><tr><td><strong><span>Commit</span></strong></td><td><span>Save snapshot</span></td><td><span>Staging $\rightarrow$ Local History</span></td></tr><tr><td><strong><span>Push</span></strong></td><td><span>Upload changes</span></td><td><span>Local History $\rightarrow$ Remote</span></td></tr><tr><td><strong><span>Pull</span></strong></td><td><span>Download updates</span></td><td><span>Remote $\rightarrow$ Local History</span></td></tr></tbody></table></figure><p>&nbsp;</p><h2 id='intro-to-github'><span>Intro to GitHub</span></h2><p><span>While Git is the tool that tracks your changes locally, GitHub is a cloud-based platform that hosts your Git repositories. It provides a central location for teams to collaborate and back up code.</span></p><p>&nbsp;</p><h3 id='forking-an-existing-repository'><span>Forking an Existing Repository</span></h3><ul><li><p><span>Creates a personal copy of someone else&#39;s project under your GitHub account.</span></p></li><li><p><span>Use Case: When you want to contribute to an open-source project or use a template for your own work.</span></p></li></ul><h3 id='creating-a-repository-from-scratch'><span>Creating a Repository from Scratch</span></h3><ul><li><p><span>Start a new project from scratch on GitHub.</span></p></li><li><p><span>Setup: You can initialize it with a </span><code>README.md</code><span> (to describe the project) and a </span><code>.gitignore</code><span> (to tell Git which files to ignore, like </span><code>node_modules</code><span>).</span></p></li></ul><p><span>To clone a repository from GitHub using the command line, you are essentially downloading a full copy of the project’s files and its entire version history to your local machine.</span></p><h3 id='cloning-a-remote-repository'><span>Cloning a Remote Repository</span></h3><h4 id='how-to-get-the-url-from-github'><span>How to Get the URL from GitHub</span></h4><p><span>Before running a command, you need the unique address of the repository:</span></p><ol><li><p><span>Navigate to the main page of the repository on GitHub.</span></p></li><li><p><span>Click the green </span><strong><span>&quot;&lt;&gt; Code&quot;</span></strong><span> button located above the file list.</span></p></li><li><p><span>Under the </span><strong><span>HTTPS</span></strong><span> tab (which is the most common for beginners), click the </span><strong><span>copy icon</span></strong><span> (two overlapping squares) to copy the URL to your clipboard.</span></p></li></ol><h4 id='cloning-via-the-command-line'><span>Cloning via the Command Line</span></h4><p><span>Once you have the URL, open your terminal or command prompt and follow these steps:</span></p><ul><li><p><span>Use </span><code>cd</code><span> to move into the folder where you want the project to live.</span></p></li><li><p><span>Type </span><code>git clone</code><span> followed by a space and then paste the URL.</span></p><ul><li><p><span> Example: </span><code>git clone https://github.com/username/repository-name.git</code><span>.</span></p></li></ul></li></ul><p><span>After the process completes, Git will have created a new directory named after the repository, linked it to the &quot;origin&quot; server on GitHub, and downloaded all the project data.</span></p><p>&nbsp;</p><p><em><span>Note: These notes were drafted using Gemini 3.</span></em></p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License"></a><span> Intermediate JavaScript Lecture Notes by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written in spring </span><time><span>2026</span></time><span>, are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><p>&nbsp;</p></div></div>
 </body>
 </html>
