@@ -1,4 +1,4 @@
-<h1>Lab 3: ES 6 Classes and Features</h1>
+<h1>Lab 3: ES 6 Classes</h1>
 
 [TOC]
 
