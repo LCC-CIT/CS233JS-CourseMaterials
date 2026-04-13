@@ -108,7 +108,7 @@ If we wanted to convert the fly method to use arrow function syntax, it would lo
 fly = () => `${this.name} is flying at ${this.speed} MPH.`;
 ```
 
-**But!** While arrow functions in classes are great for *React components* or *event handlers*, **standard (traditional) methods are usually preferred for general logic** because they are more memory-efficient because a tridional function will only be attached to the class prototype once, while an arrow function will be attached to every object created from the class.[^1]
+**But!** While arrow functions in classes are great for *React components* or *event handlers*, **standard (traditional) methods are usually preferred for general logic** because they are more memory-efficient. This is because a tridional function will only be attached to a class prototype once, while an arrow function will be attached to every object created from the class.[^1]
 
 ### OOP Concepts
 
