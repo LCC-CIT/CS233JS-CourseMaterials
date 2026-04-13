@@ -1,4 +1,4 @@
-<h1>Lab 3: ES 6 Classes</h1>
+<h1>Lab 3: ES 6 Classes and Git</h1>
 
 [TOC]
 
@@ -6,16 +6,14 @@
 
 The objectives of this lab are:
 
-1. Practice using Git and GitHub
+1. Practice using Git and GitHub.
 2. Learn to write ES6 style classes and create objects from them.
 
 
 
-## Instructions
+## Instructions for Part 1
 
-### Git
-
-#### Set Up a GitHub Account
+### Set Up a GitHub Account
 
 If you don’t already have a GitHub account, create one now. As a student, you can get a free pro account plus other benefits by joining [GitHub Education](https://github.com/education).
 
@@ -30,7 +28,7 @@ If you haven’t already installed Git on your computer, [download it](https://g
 5. Initialize (Optional): Check the boxes to add a README.md file for a project description or a .gitignore file to specify which files Git should ignore.
 6. Finalize: Click the "Create repository" button.
 
-#### Clone the Repository 
+### Clone the Repository 
 
 *Clone* the repository to your local computer:
 
@@ -39,35 +37,38 @@ If you haven’t already installed Git on your computer, [download it](https://g
 3. On your computer, in a terminal app (or GitBash, PowerShell, etc.). At the folder where you want to clone the repository, type:  
    `git clone addressofyourrepository` 
    (Using the address you copied above.)
-
-   There is a separate folder for each of the three web apps.
-
-   **Tip**: As you finish each part of each web app, use the following Git commands to keep your Git repository up to date by *committing* and  *pushing* your code:
-
-- git status
-- git add –A
-- git commit –m “some message”
-- git push
-
-After pushing, check your files on GitHub to make sure everything is there.
+4. 
 
 
-### Refactor your Domino App and Push it to GitHub
+### Refactor your Domino App
 
 1. Add the latest version of your domino app to the local repository.
 2. Modify your domino app to use classes.
-3. Stage Your Changes: Use `git add` to move your edited files into the Staging Area so Git knows which changes to include in your next snapshot.
+
+### Commit the Changes and Push them to GitHub
+
+1. Stage Your Changes: Use `git add` to move your edited files into the Staging Area so Git knows which changes to include in your next snapshot.
    - Usage: `git add <file-name>` or `git add .` to stage all changes in the directory.
-4. Commit the revised code: Use `git commit` to permanently record those staged changes to your Local History.
+2. Commit the revised code: Use `git commit` to permanently record those staged changes to your Local History.
    - Usage: `git commit -m "Your descriptive message"`.
    - Note: Every commit requires a message explaining the update.
-5. Push to the Remote: Use `git push` to upload your local commits to the Remote Server (GitHub).
-   - Usage: `git push origin main`.
-   - Impact: This moves your work from Local History $\rightarrow$ Remote so others can see it.
+3. Push to the Remote: Use `git push` to upload your local commits to the Remote Server (GitHub).
+   - Usage: `git push origin main`, or simply `git push` to push back to the default origin.
+   - Impact: This moves your work from Local repository$\rightarrow$ Remote so others can see it.
+
+After pushing, check your files on GitHub to make sure everything is there.  
+You can also check the status of your local repository with the command:
+ `git status`
 
 
 
-*Note, parts of these instrucitons were drafted using Gemini 3.*
+## Instructions for Part 2
+
+Coming soon...
+
+
+
+*Note, some parts of these instrucitons were drafted using Gemini 3.*
 
 ----
 
