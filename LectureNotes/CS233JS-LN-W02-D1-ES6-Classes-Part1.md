@@ -116,19 +116,13 @@ console.log(pigeon.fly());
 
 ### What does `this` refer to?
 
-JavaScript has something called a *lexical this*. It's pretty diffeent from most other programming languages. The `this` keyword means different things in different contexts:
+The keyword `this` in JavaScript is a bit diffeent from most other programming languages in that it means different things in different contexts:
 
-- In <u>class</u>, it will refer to the object that is created by the class. The significance of it relating to the object and not the class is that there can be many objects made from a class.
-- In a method (or function) that is an <u>event handler</u>, it refers to the HTML element that generated the event. For example a `<div>` or a `<button>` 
-- In a method (or function) that is used a <u>callback</u>, it refers to the object that called it. For example, in the stopwatch app, you pass a callback function, `incrementTimer`,  to the `setInterval` function. Inside `incrementTimer`, `this` refers to the browser's window object since `setInterval` is a global function.
+- When using a **`class`**, it will refer to the object that is created by the class.
+  - Remember that execution happens in an object not a class. One class can be used to create multiple objects and each object has it's own `this`.
 
-### When do you need to use `bind`?
-
-If you want a method's `this` to refrence a different object than the default one, you can use bind to change the object that `this` will refer to inside that method. For example, in the stopwatch app, `startButton` is called by a button's  onclick event. By default, inside `startButton`, `this` will refer to the button, but by using `bind` we can force `this` to refer to an object of the stopwatch class.
-
-``` javascript
-this.startButton.onclick = this.startTimer.bind(this);
-```
+- In a method (or function) that is an <u>**event handler,**</u> it refers to the HTML element that generated the event. For example a `<div>` or a `<button>` 
+- In a method (or function) that is used a **callback**, it refers to the object that called it. For example, in the concentraion and domino apps, you pass a callback function, `completeTurn`,  to the browser's DOM  function `setInterval` . Inside `completeTerm`, `this` refers to the browser's window object (`setInterval` is a global function defined in the DOM).
 
 ### Classes that Contain Instances of Other Classes
 
@@ -196,6 +190,8 @@ In order to follow the principle of separation of concerns, we can separate out 
 
   - [JavaScript Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)&mdash;MDN
 
+  - [setInterval function](https://www.w3schools.com/jsref/met_win_setinterval.asp)&mdash;W3Schools
+
 - Notes from CS 133JS, Beginning JavaScript:
 
   - [Objects](https://lcc-cit.github.io/CS133JS-CourseMaterials/LectureNotes/CS133JS-LN-W07-D1-Objects.html)
@@ -205,6 +201,6 @@ In order to follow the principle of separation of concerns, we can separate out 
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised winter of <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised spring of <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
