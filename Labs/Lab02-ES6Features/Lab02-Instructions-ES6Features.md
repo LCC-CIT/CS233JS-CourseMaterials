@@ -54,7 +54,10 @@ Apply each of these new JS features where they are appropriate&mdash;meaning whe
   - Share the code in your lab partner channel on Discord. You can share it by:
     - Uploading a zip file, or
     - Sharing a link to your GitHub repository (optional).
-  - On Moodle, submit a report that you shared your beta version.
+  - On Moodle, submit the link to your GitHub repository and report:
+    - How complete was your web app, was it working?
+    - Who did you share your beta code with? 
+    - What date and time did you share it?
 - Do a code review for your lab partner.
   -  Post the completed review form on Discord.
   - Submit your code review to Moodle.
@@ -71,7 +74,7 @@ Apply each of these new JS features where they are appropriate&mdash;meaning whe
     - Upload a zip file containing the completed files for parts 1 and 2.
       - Or put a link to a GitHub repository with your code in the online text (optional).
     
-    - Upload the code review from your lab partner with the "production" column filled with out by you.
+    - Upload the code review from your lab partner with the "production" column filled out by you.
     - Put the citstudent URL for your web app in the online text.
 
 
