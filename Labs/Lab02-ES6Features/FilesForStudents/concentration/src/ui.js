@@ -38,10 +38,10 @@ const ui = {
     },
 
     // Shows the face of one card based on its index and card object.
+	// Converted to use destructuring for the card object parameter.
     showCardFace: function(index, { value, suit }) {
         let card = this.cardElements[index];
         // Converted to a template literal.
-        // Converted to use destructuring.
         card.style.backgroundImage = `url(${IMAGE_PATH}card${value}${suit}.jpg)`;
     },
 
