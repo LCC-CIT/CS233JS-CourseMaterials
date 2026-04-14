@@ -1,6 +1,8 @@
 # CS233JS-CourseMaterials
 In CS 233JS, students learn features of JavaScript introduced in ES6, includeing ES6 classes, as well as how to use Node.js, Webpack, Babel and ohter JS dev tools. The prerequisite for this course is CS 133JS, Beginning Programming: JavaScript, here is the [link to CS 133JS course materials repository](https://github.com/LCC-CIT/CS133JS-CourseMaterials). You may also access documents in this repository via [the repository's web address](https://lcc-cit.github.io/CS233JS-CourseMaterials).
 
+**Spring 2026: I am currently revising and updating this course, so the lab solution and starter file repositories are in the process of being revised or replaced.**
+
 Solutions to the lab assignments are in [the CS 233JS Lab Solutions repository](https://github.com/ProfBird/CS233JS-LabSolutions).
 
 These are the starting file repos used for the [GitHub Classroom](https://classroom.github.com) for this course:
