@@ -1,4 +1,4 @@
-<h1>Lab 3: ES 6 Classes and Git</h1>
+<h1>Lab 3 Instructions: ES 6 Classes and Git</h1>
 
 [TOC]
 
@@ -11,7 +11,7 @@ The objectives of this lab are:
 
 
 
-## Instructions for Part 1
+## Part 1: GitHub and Domino Classes
 
 ### Set Up a GitHub Account
 
@@ -62,13 +62,75 @@ You can also check the status of your local repository with the command:
 
 
 
-## Instructions for Part 2
+## Part 2: A Dice Game with Classes
 
-Coming soon...
+Your instructor has provided you with a web app version of the dice game "Ship, Captian, Crew". The [source code can be downloaded here](https://download-directory.github.io/?url=https://github.com/LCC-CIT/CS233JS-CourseMaterials/tree/main/Labs/Lab03-Classes/ShipCaptainCrew). Use this code as an example to make a similar dice game. You should be able to re-use 90% of the code from the example. The dice game you make depends on the lab assignment version you are doing.
+
+### Version A: Going to Boston
+
+You will make a simiplfied version of this game (Simplified becuase you will not keep track of rounds). Here are the rules you will implement in your game:
+
+- Each player gets 3 rolls per turn.
+- On each roll, you must keep (hold) the highest rolled die.
+- After all three dice are kept (held), the sum of your dice is your score.
+- Each player gets one turn.
+- The player with the highest score wins!
+
+### Version B: Midnight
+
+- Roll 6 dice. You must hold at least 1 die each roll.
+- You must hold a 1 and a 4 to qualify.
+- Your score is the sum of your remaining four dice.
+- Each player gets one turn.
+- Roll until all 6 dice are held. Highest score wins!
+
+### Version C: Threes Away
+
+The goal is to get the LOWEST score possible.
+
+3s count as zero (0). All other numbers count as face value.
+
+You roll 5 dice and must hold at least one die per roll.
+
+Once all 5 dice are held, your turn is over, and your score is the sum of the dice.
+
+Each player gets one turn.
+
+The player with the lowest score wins!
 
 
 
-*Note, some parts of these instrucitons were drafted using Gemini 3.*
+## Submission
+
+### Beta Version and Code Review
+
+- Share your part 2 beta version with a lab partner.
+  - Your code  should be at least 75% complete and working.
+  - Share the code in your lab partner channel on Discord by sharing a link to your GitHub repository.
+  - On Moodle, submit the link to your GitHub repository and report:
+    - How complete was your web app, was it working?
+    - Who did you share your beta code with? 
+    - What date and time did you share it?
+- Do a code review for your lab partner.
+  -  Post the completed review form on Discord.
+  -  Submit your code review to Moodle.
+- Revise your code and improve it based in part on feedback from your lab partner.
+
+### Production Version
+
+- Upload your completed part 2 web app to [citstudent.lanecc.edu](http://citstudent.lanecc.edu). Test the app on the web server to verify that it still works there.
+
+- Submit the following to Moodle:
+
+  - Part 1 and 2
+    - Put a link to your GitHub repositoryin the online text.
+
+    - Upload the code review from your lab partner with the "production" column filled out by you.
+    - Put the citstudent URL for your web app in the online text.
+
+
+
+*Note, some parts of these instructions were drafted using Gemini 3.*
 
 ----
 

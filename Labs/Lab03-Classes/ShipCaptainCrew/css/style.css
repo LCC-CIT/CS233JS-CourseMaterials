@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    padding: 20px;
+}
+
+#app {
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #0055a4;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+button {
+    background-color: #0055a4;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #003366;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #aaaaaa;
+    border-color: #666666;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.instruction-text {
+    color: #666666;
+    font-size: 14px;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.message-display {
+    color: #f44336;
+    font-weight: bold;
+    min-height: 20px;
+    margin: 5px 0 15px 0;
+}
+
+.player-inputs {
+    margin-bottom: 20px;
+}
+
+.player-inputs label {
+    display: block;
+    margin: 10px 0;
+}
+
+.player-inputs input {
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* Rules Box */
+.rules-box {
+    text-align: left;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    background-color: #fafafa;
+}
+
+.rules-box h3 {
+    margin-top: 0;
+}
+
+/* Dice styling */
+.dice-container {
+    margin: 30px 0;
+}
+
+.die {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #eeeeee;
+    border: 2px solid #333333;
+    font-size: 65px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 10px;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.die:hover {
+    transform: scale(1.05);
+}
+
+.die.held {
+    background-color: #4caf50;
+    color: white;
+}
+
+.die.cargo {
+    background-color: #ff9800;
+    color: white;
+}
+
+.die.failed {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+/* Scoreboard */
+#score-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#score-list li {
+    background-color: #eeeeee;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+}
