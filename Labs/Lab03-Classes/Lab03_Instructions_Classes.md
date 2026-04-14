@@ -64,7 +64,7 @@ You can also check the status of your local repository with the command:
 
 ## Part 2: A Dice Game with Classes
 
-Your instructor has provided you with a web app version of the dice game "Ship, Captian, Crew". The [source code can be downloaded here](https://download-directory.github.io/?https://github.com/LCC-CIT/CS233JS-CourseMaterials/tree/main/Labs/Lab03-Classes/ShipCaptainCrew). Use this code as an example to make a similar dice game. You should be able to re-use 90% of the code from the example. The dice game you make depends on the lab assignment version you are doing.
+Your instructor has provided you with a web app version of the dice game "Ship, Captian, Crew". The [source code can be downloaded here](https://download-directory.github.io/?url=https://github.com/LCC-CIT/CS233JS-CourseMaterials/tree/main/Labs/Lab03-Classes/ShipCaptainCrew). Use this code as an example to make a similar dice game. You should be able to re-use 90% of the code from the example. The dice game you make depends on the lab assignment version you are doing.
 
 ### Version A: Going to Boston
 
