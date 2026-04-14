@@ -1,4 +1,4 @@
-<h1>Lab 3: ES 6 Classes and Git</h1>
+<h1>Lab 3 Instructions: ES 6 Classes and Git</h1>
 
 [TOC]
 
@@ -11,7 +11,7 @@ The objectives of this lab are:
 
 
 
-## Instructions for Part 1
+## Part 1: GitHub and Domino Classes
 
 ### Set Up a GitHub Account
 
@@ -62,13 +62,13 @@ You can also check the status of your local repository with the command:
 
 
 
-## Instructions for Part 2
+## Part 2: A Dice Game with Classes
 
-Coming soon...
+Your instructor has provided you with a simplified version of the dice game "Ship, Captian, Crew". The source code can be downloaded here
 
 
 
-*Note, some parts of these instrucitons were drafted using Gemini 3.*
+*Note, some parts of these instructions were drafted using Gemini 3.*
 
 ----
 

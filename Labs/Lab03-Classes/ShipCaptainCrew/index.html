@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship, Captain, Crew</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Ship, Captain, Crew</h1>
+            <p>Roll a 6, then 5, then 4, then maximize the score on the remaining two dice!</p>
+        </header>
+
+        <main>
+            <!-- Setup Screen -->
+            <section id="setup-screen" class="active">
+                <h2>Game Setup</h2>
+                <div class="rules-box">
+                    <h3>How to Play:</h3>
+                    <ul>
+                        <li>Each player gets up to 3 rolls per turn.</li>
+                        <li>You must get a <strong>6 (Ship)</strong>, then a <strong>5 (Captain)</strong>, and then a
+                            <strong>4 (Crew)</strong>.
+                        </li>
+                        <li>Once you have all three, the sum of your remaining two dice is your <strong>Cargo
+                                score</strong>.</li>
+                        <li>The player with the highest Cargo score wins!</li>
+                    </ul>
+                </div>
+                <div class="player-inputs">
+                    <label>Player 1 Name <input type="text" id="player1-name" placeholder="Player 1"></label>
+                    <label>Player 2 Name <input type="text" id="player2-name" placeholder="Player 2"></label>
+                </div>
+                <button id="start-game-btn">Start Game</button>
+            </section>
+
+            <!-- Game Screen -->
+            <section id="game-screen" class="hidden">
+                <div id="game-status">
+                    <h2 id="current-player-display">Player's Turn</h2>
+                    <p class="instruction-text">Click on the dice you want to hold between rolls!</p>
+                    <p id="message-display" class="message-display"></p>
+                </div>
+
+                <div id="dice-container" class="dice-container">
+                    <!-- Dice DOM elements will be mapped here -->
+                </div>
+
+                <div class="controls">
+                    <button id="roll-btn">Roll Dice (3 left)</button>
+                    <button id="next-turn-btn" class="hidden">End Turn</button>
+                </div>
+            </section>
+
+            <!-- Scoreboard Screen -->
+            <section id="scoreboard-screen" class="hidden">
+                <h2>Game Over!</h2>
+                <h3 id="winner-display"></h3>
+                <ul id="score-list"></ul>
+                <button id="new-game-btn">Play Again</button>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
