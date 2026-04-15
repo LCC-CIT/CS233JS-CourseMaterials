@@ -1,3 +1,6 @@
+/* Written by Brian Bird, 3/29/2026, using GitHub Copilot and based on code from Mari Good. 
+   Revised by Brian Bird 4/6/26 */
+
 /* Use border-box so width/height includes border and padding. */
 * {
   box-sizing: border-box;

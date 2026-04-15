@@ -6,7 +6,7 @@
     If the guess is correct, score increases, the revealed domino becomes the
     new left domino, and a fresh hidden domino is drawn. Reach a score of 10 to win.
 
-    Written by Brian Bird, 3/29/2026, using GitHub Copilot
+    Written by Brian Bird, 3/29/2026, using GitHub Copilot, revised by B. Bird 4/15/26
 */
 
 // -------------------- Constants --------------------
@@ -38,8 +38,9 @@ const PIP_LAYOUTS = {
  */
 function init() {
   ui.cacheDominoElements();
-  ui.bindGuessButtons(handleGuess);
-  ui.bindResetButton(resetGame);
+  ui.highButton.onclick = handleHighGuess;
+  ui.lowButton.onclick = handleLowGuess;
+  ui.resetButton.onclick = resetGame;
 
   resetGame();
 }
@@ -64,11 +65,25 @@ function resetGame() {
 }
 
 /**
- * Handles the player clicking "higher" or "lower".
+ * Handles the player clicking the "higher" button.
+ */
+function handleHighGuess() {
+  processGuess("high");
+}
+
+/**
+ * Handles the player clicking the "lower" button.
+ */
+function handleLowGuess() {
+  processGuess("low");
+}
+
+/**
  * Determines if the round can proceed, evaluates the player's guess,
  * reveals the hidden domino, and sets a timeout to complete the round.
+ * @param {string} guess - The player's guess, either "high" or "low".
  */
-function handleGuess() {
+function processGuess(guess) {
   if (
     gameLogic.isResolving ||
     gameLogic.isGameOver ||
@@ -77,7 +92,6 @@ function handleGuess() {
     return;
   }
 
-  const guess = this.dataset.guess;
   gameLogic.isResolving = true;
   ui.disableGuessButtons();
 
@@ -350,25 +364,14 @@ const ui = {
     this.rightDominoElement.classList.remove("back");
   },
 
-  /**
-   * Binds the passed click handler function to the high and low guess buttons.
-   * @param {Function} clickHandler - Function to be executed when the buttons are clicked.
+    /**
+   * Dispays the left-side domino face up, revealing its actual pips.
+   * @param {Object} domino - The domino object to reveal.
    * @returns {void}
    */
-  bindGuessButtons: function (clickHandler) {
-    this.highButton.dataset.guess = "high";
-    this.lowButton.dataset.guess = "low";
-    this.highButton.onclick = clickHandler;
-    this.lowButton.onclick = clickHandler;
-  },
-
-  /**
-   * Binds the passed click handler function to the reset button.
-   * @param {Function} clickHandler - Function to be executed when the reset button is clicked.
-   * @returns {void}
-   */
-  bindResetButton: function (clickHandler) {
-    this.resetButton.onclick = clickHandler;
+  showLeftDominoFace: function (domino) {
+    this.leftDominoElement.innerHTML = this.buildDominoFaceHTML(domino);
+    this.leftDominoElement.classList.remove("back");
   },
 
   /**
