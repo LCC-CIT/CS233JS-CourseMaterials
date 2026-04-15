@@ -7,19 +7,21 @@
 The objectives of this lab are:
 
 1. Practice using Git and GitHub.
-2. Learn to write ES6 style classes and create objects from them.
+2. Learn to write ES6 style classes and create and use objects from them.
 
 
 
 ## Part 1: GitHub and Domino Classes
 
-### Set Up a GitHub Account
+### Set Up Your Git Repository
+
+#### Create a GitHub Account
 
 If you don’t already have a GitHub account, create one now. As a student, you can get a free pro account plus other benefits by joining [GitHub Education](https://github.com/education).
 
 If you haven’t already installed Git on your computer, [download it](https://git-scm.com/downloads) and install it now.
 
-### Create a New GitHub Repository for Lab 3
+#### Create a New GitHub Repository for Lab 3
 
 1. Log In: Sign in to your GitHub account at [github.com](https://github.com/).
 
@@ -33,11 +35,11 @@ If you haven’t already installed Git on your computer, [download it](https://g
 
 6. Finalize: Click the "Create repository" button.
 
-   #### Create a Personal Access Token
+   ##### Create a Personal Access Token
 
    GitHub now requires users to use a *personal access token* to pull or push to their repository. [This is a link to their instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) for setting that up. (BTW, if you create a "classic" token, the process is a little simpler.)
 
-### Clone the Repository 
+#### Clone the Repository 
 
 *Clone* the repository to your local computer:
 
@@ -55,7 +57,7 @@ If you haven’t already installed Git on your computer, [download it](https://g
    - See the Concentration game code for an example of this.
    - See the coding demo video (the link is on the LMS page) for examples and explanation.
 
-### Commit the Changes and Push them to GitHub
+#### Commit the Changes and Push them to GitHub
 
 1. Stage Your Changes: Use `git add` to move your edited files into the Staging Area so Git knows which changes to include in your next snapshot.
    - Usage: `git add <file-name>` or `git add .` to stage all changes in the directory.
