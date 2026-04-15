@@ -22,11 +22,20 @@ If you haven’t already installed Git on your computer, [download it](https://g
 ### Create a New GitHub Repository for Lab 3
 
 1. Log In: Sign in to your GitHub account at [github.com](https://github.com/).
+
 2. Start New Repository: Click the "+" icon in the top-right corner of any page and select "New repository".
+
 3. Name the Project: Enter a short, memorable name for your repository in the Repository name field.
+
 4. Set Visibility: Choose between Public (anyone can see it) or Private (only you and invited collaborators can see it).
+
 5. Initialize (Optional): Check the boxes to add a README.md file for a project description or a .gitignore file to specify which files Git should ignore.
+
 6. Finalize: Click the "Create repository" button.
+
+   #### Create a Personal Access Token
+
+   GitHub now requires users to use a *personal access token* to pull or push to their repository. [This is a link to their instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) for setting that up. (BTW, if you create a "classic" token, the process is a little simpler.)
 
 ### Clone the Repository 
 
@@ -65,6 +74,8 @@ You can also check the status of your local repository with the command:
 ## Part 2: A Dice Game with Classes
 
 Your instructor has provided you with a web app version of the dice game "Ship, Captian, Crew". The [source code can be downloaded here](https://download-directory.github.io/?url=https://github.com/LCC-CIT/CS233JS-CourseMaterials/tree/main/Labs/Lab03-Classes/ShipCaptainCrew). Use this code as an example to make a similar dice game. You should be able to re-use 90% of the code from the example. The dice game you make depends on the lab assignment version you are doing.
+
+Note: You don't need to make your properties private or use getters and setters.
 
 ### Version A: Going to Boston
 
