@@ -46,13 +46,14 @@ If you haven’t already installed Git on your computer, [download it](https://g
 3. On your computer, in a terminal app (or GitBash, PowerShell, etc.). At the folder where you want to clone the repository, type:  
    `git clone addressofyourrepository` 
    (Using the address you copied above.)
-4. 
 
 
 ### Refactor your Domino App
 
 1. Add the latest version of your domino app to the local repository.
 2. Modify your domino app to use classes.
+   - See the Concentration game code for an example of this.
+   - See the coding demo video (the link is on the LMS page) for examples and explanation.
 
 ### Commit the Changes and Push them to GitHub
 
