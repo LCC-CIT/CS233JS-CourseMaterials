@@ -1,4 +1,5 @@
 import Game from './models/Game.js';
+// Written by Brian Bird, 4/10/2026 with AI assistance from Gemini 3.1 in Antigravity.
 
 // ---- Module State & DOM Elements ---- //
 const game = new Game();

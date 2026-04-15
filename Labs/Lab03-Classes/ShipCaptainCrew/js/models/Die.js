@@ -1,3 +1,6 @@
+// Written by Brian Bird, 4/10/2026
+// This class represents a single die in the game.
+
 export default class Die {
     constructor() {
         this.value = 1;
