@@ -63,7 +63,7 @@ If you haven’t already installed Git on your computer, [download it](https://g
    - Note: Every commit requires a message explaining the update.
 3. Push to the Remote: Use `git push` to upload your local commits to the Remote Server (GitHub).
    - Usage: `git push origin main`, or simply `git push` to push back to the default origin.
-   - Impact: This moves your work from Local repository$\rightarrow$ Remote so others can see it.
+   - Impact: This moves your work from your local repository to the remote so others can see it.
 
 After pushing, check your files on GitHub to make sure everything is there.  
 You can also check the status of your local repository with the command:
@@ -73,7 +73,7 @@ You can also check the status of your local repository with the command:
 
 ## Part 2: A Dice Game with Classes
 
-Your instructor has provided you with a web app version of the dice game "Ship, Captian, Crew". The [source code can be downloaded here](https://download-directory.github.io/?url=https://github.com/LCC-CIT/CS233JS-CourseMaterials/tree/main/Labs/Lab03-Classes/ShipCaptainCrew). Use this code as an example to make a similar dice game. You should be able to re-use 90% of the code from the example. The dice game you make depends on the lab assignment version you are doing.
+Your instructor has provided you with a web app version of the dice game "Ship, Captain, Crew". The [source code can be downloaded here](https://download-directory.github.io/?url=https://github.com/LCC-CIT/CS233JS-CourseMaterials/tree/main/Labs/Lab03-Classes/ShipCaptainCrew). Use this code as an example to make a similar dice game. You should be able to re-use 90% of the code from the example. The dice game you make depends on the lab assignment version you are doing.
 
 Note: You don't need to make your properties private or use getters and setters.
 
