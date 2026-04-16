@@ -35,7 +35,7 @@ const PIP_LAYOUTS = {
 function init() {
   ui.cacheDominoElements();
   gameLogic.fillDominoes();
-  gameLogic.shuffleDominoes();
+  gameLogic.shuffleDominos();
   ui.updateScore(gameLogic.cleared, gameLogic.turns, 0);
   ui.enableAllDominoes(handleClick);
   ui.showAllBacks();
@@ -164,7 +164,7 @@ const gameLogic = {
    * Shuffles the elements in the dominoes array.
    * @returns {void}
    */
-  shuffleDominoes: function () {
+  shuffleDominos: function () {
     // TODO: shuffle the dominoes array randomly.
   },
 
