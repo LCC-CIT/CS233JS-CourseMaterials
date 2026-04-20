@@ -17,10 +17,12 @@ The objectives of this lab are:
 
 ### Set Up Your Git Repository
 
-1. Create a New GitHub Repository for Lab 4.
-2. Download the Starter Files.  
+1. Create a New GitHub Repository for Lab 4.  
+   Put a .gitignore file for node.js in the repository as the first commit.
+2. Clone the Repository to your local computer.
+3. Download the Starter Files.  
    Download the starter files for this lab from Moodle and copy them into your local repository folder.
-3. Clone the Repository to your local computer.
+4. Add and commit the new files, then push them up to GitHub.
 
 ### Follow the ToDo List Example
 
@@ -39,6 +41,8 @@ Which app you build depends on your assignment group:
 #### Version A: Web Page Bookmarker
 
 Build a **BookMarker** app that lets users save, view, and delete web page bookmarks. Each bookmark should store at minimum a title and a URL. Bookmarks should be persisted using `localStorage` so they survive a page refresh.
+
+*Note: Starter files and an example running on citstudent for you to try are coming soon!*
 
 #### Version B: TBD
 
