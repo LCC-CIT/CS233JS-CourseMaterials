@@ -5,8 +5,12 @@ export class TaskModel {
   constructor() {
     try {
       // Restore prior user state so tasks persist between browser sessions.
-      this.tasks = JSON.parse(localStorage.getItem("tasks"));
-      if (!this.tasks) throw new Error("No tasks found");
+      const savedTasks = JSON.parse(localStorage.getItem("tasks"));
+      if (!Array.isArray(savedTasks) || !savedTasks.every((task) => this._isValidTask(task))) {
+        throw new Error("Invalid tasks payload");
+      }
+
+      this.tasks = savedTasks;
     } catch {
       // Seed starter data to keep first launch usable when storage is empty/corrupt.
       this.tasks = [
@@ -15,6 +19,15 @@ export class TaskModel {
         { description: 'Renew Library Account', isComplete: false },
       ];
     }
+  }
+
+  _isValidTask(task) {
+    return (
+      typeof task === 'object' &&
+      task !== null &&
+      typeof task.description === 'string' &&
+      typeof task.isComplete === 'boolean'
+    );
   }
 
   _commit(tasks) {

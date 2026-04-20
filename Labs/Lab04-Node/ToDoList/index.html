@@ -29,6 +29,7 @@
         <div class="row input-area">
           <div class="col-sm-1"></div>
           <div class="form-group col-sm-9">
+            <label for="addTask" class="form-label">New Task</label>
             <input type="text" placeholder="New Task" class="form-control" id="addTask">
           </div>
           <div class="form-group col-sm-1">
@@ -38,49 +39,8 @@
           <div class="col-sm-1"></div>
         </div>
 
-        <!-- JS treats this list as the render target and replaces its innerHTML on updates. -->
-        <ul class="list-group" id="taskList">
-          <!-- Seed items are fallback/example markup; JS re-renders this list from model state. -->
-          <li class="list-group-item checkbox">
-            <div class="row">
-              <div class="col-sm-1 pt-2 checkbox">
-                <label><input name="toggleTaskStatus" type="checkbox" value="" class="" checked></label>
-              </div>
-              <div class="col-sm-10 task-text complete">
-                First item
-              </div>
-              <div class="col-sm-1 pt-2 delete-icon-area">
-                <a name="deleteTask" class="" href="/"><i class="bi-trash delete-icon"></i></a>
-              </div>
-            </div>
-          </li>
-          <li class="list-group-item checkbox">
-            <div class="row">
-              <div class="col-sm-1 pt-2 checkbox">
-                <label><input name="toggleTaskStatus" type="checkbox" value="" class=""></label>
-              </div>
-              <div class="col-sm-10 task-text">
-                Second item
-              </div>
-              <div class="col-sm-1 pt-2 delete-icon-area">
-                <a name="deleteTask" class="" href="/"><i class="bi-trash delete-icon"></i></a>
-              </div>
-            </div>
-          </li>
-          <li class="list-group-item checkbox">
-            <div class="row">
-              <div class="col-sm-1 pt-2 checkbox">
-                <label><input name="toggleTaskStatus" type="checkbox" value="" class=""></label>
-              </div>
-              <div class="col-sm-10 task-text">
-                Third item
-              </div>
-              <div class="col-sm-1 pt-2 delete-icon-area">
-                <a name="deleteTask" class="" href="/"><i class="bi-trash delete-icon"></i></a>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <!-- JS renders this list entirely from model state via Lit template. -->
+        <ul class="list-group" id="taskList"></ul>
       </div>
 
       <div class="col-sm-2"></div>
