@@ -1,0 +1,14 @@
+{
+  "name": "todolist",
+  "version": "1.0.1",
+  "description": "A web app for managing a todo list",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite src",
+    "build": "vite build src",
+    "preview": "vite preview src"
+  },
+  "devDependencies": {
+    "vite": "^5.4.21"
+  }
+}
