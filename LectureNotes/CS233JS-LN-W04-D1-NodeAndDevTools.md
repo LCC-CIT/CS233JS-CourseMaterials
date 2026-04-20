@@ -166,6 +166,66 @@ npm run build
 
 
 
+## Vite Workflow
+
+Here is the typical sequence of CLI commands you will use when working on a Vite project from start to finish.
+
+### 1. Install Project Dependencies
+
+When you first clone or download a project (or any time you add a new package), install all dependencies listed in `package.json`:
+
+```bash
+npm install
+```
+
+This reads the `devDependencies` (and `dependencies`) from `package.json` and downloads everything into a `node_modules` folder. You only need to run this once per machine, or after `package.json` changes.
+
+> **Note:** Never commit the `node_modules` folder to Git — it is large and can be recreated at any time with `npm install`. A `.gitignore` file in Vite projects already excludes it by default.
+
+### 2. Start the Development Server
+
+While you are writing and testing code, run the Vite dev server:
+
+```bash
+npm run dev
+```
+
+Vite will print a local URL (typically `http://localhost:5173`) to the terminal. Open that URL in a browser to see your app. The dev server:
+
+- **Watches** your source files and instantly updates the browser whenever you save a change (Hot Module Replacement).
+- **Serves files as native ES modules** — no bundling step is needed, so startup is nearly instant.
+
+Press `Ctrl + C` in the terminal to stop the dev server.
+
+### 3. Build for Production
+
+When your app is complete and ready to deploy, generate an optimized production bundle:
+
+```bash
+npm run build
+```
+
+Vite compiles and bundles all your source files into a `dist/` folder. The output files are minified and optimized for fast browser loading. The `dist/` folder is what you upload to a web server.
+
+### 4. Preview the Production Build (Optional)
+
+Before deploying, you can serve the `dist/` folder locally to verify the production build works correctly:
+
+```bash
+npm run preview
+```
+
+This starts a simple static file server for the `dist/` folder (typically at `http://localhost:4173`). It is **not** a dev server — file changes will not be reflected until you run `npm run build` again.
+
+### Summary: Command Quick Reference
+
+| Command | When to use it |
+|---|---|
+| `npm install` | After cloning a repo or adding new packages |
+| `npm run dev` | While writing and testing code (development) |
+| `npm run build` | When ready to deploy; outputs to `dist/` |
+| `npm run preview` | To test the production build locally before uploading |
+
 ## Reference
 
 - [Node.js official site](https://nodejs.org/en)
