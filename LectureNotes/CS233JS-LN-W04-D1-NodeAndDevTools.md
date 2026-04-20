@@ -26,7 +26,7 @@ author: Brian Bird
 
 Node.js, often just called simply "Node", is an open-source, cross-platform runtime environment that allows JavaScript to run outside a browser, enabling server-side scripting and command line applications. It enables running JavaScript everywhere.
 
-In addition to enabling JavaScript apps to run witout a web browser, it enables JavaScript development tools that we will be using.
+In addition to enabling JavaScript apps to run without a web browser, it enables JavaScript development tools that we will be using.
 
 ### NPM
 
