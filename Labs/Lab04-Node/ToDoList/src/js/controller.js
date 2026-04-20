@@ -7,12 +7,12 @@ export class TaskController {
     this.view = view;
 
     // Centralize state-to-view updates here so model changes always re-render consistently.
-    this.model.bindTodoListChanged(this.onTodoListChanged);
+    this.model.subscribeTodoListChanged(this.onTodoListChanged);
     
     // Register UI handlers once so interactions flow through one orchestration point.
-    this.view.bindAddTask(this.handleAddTask);
-    this.view.bindDeleteTask(this.handleDeleteTask);
-    this.view.bindToggleTask(this.handleToggleTask);
+    this.view.onAddTask(this.handleAddTask);
+    this.view.onDeleteTask(this.handleDeleteTask);
+    this.view.onToggleTask(this.handleToggleTask);
 
     // Trigger an initial paint to keep the UI in sync with persisted model state.
     this.onTodoListChanged(this.model.tasks);

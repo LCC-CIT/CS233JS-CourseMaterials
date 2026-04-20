@@ -45,7 +45,7 @@ export class TaskView {
     `;
   }
 
-  bindAddTask(handler) {
+  onAddTask(handler) {
     this.addButton.addEventListener('click', () => {
       if (this.taskDescription.trim() !== '') {
         handler(this.taskDescription);
@@ -57,7 +57,7 @@ export class TaskView {
     });
   }
 
-  bindDeleteTask(handler) {
+  onDeleteTask(handler) {
     // Delegate from list container so handlers keep working after list re-renders.
     this.app.addEventListener('click', event => {
       const deleteItem = event.target.closest('a[name="deleteTask"]');
@@ -69,7 +69,7 @@ export class TaskView {
     });
   }
 
-  bindToggleTask(handler) {
+  onToggleTask(handler) {
     // Delegate from list container so dynamic checkboxes do not need per-item listeners.
     this.app.addEventListener('change', event => {
       if (event.target.name === 'toggleTaskStatus') {

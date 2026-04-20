@@ -24,7 +24,7 @@ export class TaskModel {
     this.onTodoListChanged(tasks);
   }
 
-  bindTodoListChanged(callback) {
+  subscribeTodoListChanged(callback) {
     this.onTodoListChanged = callback;
   }
 
