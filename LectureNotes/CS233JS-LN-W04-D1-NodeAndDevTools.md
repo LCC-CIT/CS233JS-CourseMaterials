@@ -1,7 +1,7 @@
 ---
 title: Node.js + Tools
 description: Node.js and dev tools in the Node development eco-system.
-keywords: Node, NPM, Webpack
+keywords: Node, NPM, Vite
 generator: Typora
 author: Brian Bird
 ---
@@ -18,13 +18,13 @@ author: Brian Bird
 
 ## Objectives for This Week
 
-- To introduce you to commonly used JavaScript development tools including Node.js and Webpack.
+- To introduce you to commonly used JavaScript development tools including Node.js and Vite.
 - To introduce you to using the web browser's LocalStorage for storing client-side data.
 - To develop your proficiency in designing, implementing, testing and debugging JavaScript web apps.
 
 ## Node.js
 
-Node.js, often just called simply "Node"[^1], is an open-source, cross-platform runtime environment that allows JavaScript to run outside a browser, enabling server-side scripting and command line applications. It enables running JavaScript everywhere.
+Node.js, often just called simply "Node", is an open-source, cross-platform runtime environment that allows JavaScript to run outside a browser, enabling server-side scripting and command line applications. It enables running JavaScript everywhere.
 
 In addition to enabling JavaScript apps to run witout a web browser, it enables JavaScript development tools that we will be using.
 
@@ -71,31 +71,54 @@ node hello.js
 
 ## Dev Tools
 
-### Webpack
+### Module Bundlers
 
-Webpack is a *static module bundler* for JavaScript applications. What this means is that it takes all the dependencies, which includes JavaScript packages, images, css files, etc. and combines (bundles) them together into static modules (files) that it generates.  These are modules that a browser can understand and load faster and more efficiently.
+A *module bundler* is a tool that takes all the separate files that make up a web application — JavaScript modules, CSS stylesheets, images, fonts, and other assets — and combines ("bundles") them into one or a small number of optimized output files that a browser can efficiently load.
 
-#### Installing Webpack
+#### Why Bundlers Are Needed
 
-You install webpack using NPM:
+Modern JavaScript applications are typically written as many small, focused modules that import from one another. Browsers need to fetch every individual file over the network, and historically they were not efficient at loading dozens or hundreds of small files (due to the overhead of multiple HTTP requests). Bundlers solve this by:
+
+- **Combining files** — merging many source files into fewer output files, reducing the number of network requests.
+- **Resolving dependencies** — automatically following `import`/`require` statements to pull in everything the app needs.
+- **Optimizing assets** — minifying (removing whitespace and shortening variable names) JavaScript and CSS to reduce file sizes.
+- **Transpiling modern code** — converting cutting-edge JavaScript syntax into older syntax that a wider range of browsers can understand.
+
+#### How Bundlers Replace Older Approaches
+
+Before bundlers, developers had to manage dependencies manually. The older approach typically involved:
+
+- Adding multiple `<script>` tags to HTML, one for each JavaScript file or library, and carefully ordering them so each script loaded before the code that depended on it.
+- Downloading third-party libraries (like jQuery or Bootstrap) and storing copies of them in the project folder, then updating them by hand.
+- Concatenating and minifying files manually (or with ad-hoc shell scripts) before deploying.
+
+Bundlers automate all of this. You simply `import` what you need in your code, run the bundler, and it produces a deployment-ready output with everything included and optimized — no manual `<script>` tag management or library copying required.
+
+### Vite
+
+Vite (pronounced "veet", French for *fast*) is a modern front-end build tool and development server. Unlike older bundlers that must process your entire project upfront, Vite serves source files to the browser during development using native ES modules, so it only processes the files the browser actually requests — making startup nearly instant. For production, it bundles everything into optimized static files that browsers can load efficiently.
+
+#### Installing Vite
+
+You install Vite using NPM:
 
 ```bash
-npm install webpack webpack-cli --save-dev
+npm install vite --save-dev
 ```
 
-The `install` command is followed by the two things being installed: `webpack` itself and `webpack-cli` which is the command-line interface module for webpack. The flag, `--save-dev`,  means that these npm packages will be stored in the `packag.json` file in the `devDependencies` section.
+The flag `--save-dev` means that Vite will be recorded in the `package.json` file under the `devDependencies` section, since it is a tool used during development rather than a package shipped with your app.
 
-#### Webpack Dev Server
+#### Vite Dev Server
 
-Webpack also includes a light-weight web server, *webpack-dev-server*, that you can run on your machine. This web server  "watches" your js code for changes and uses Bable to transpile it, then it reloads the transpiled code into the browser automatically as it changes.
+Vite includes a built-in development server that "watches" your source files for changes and instantly reflects them in the browser without a full page reload — a feature called *Hot Module Replacement (HMR)*. This makes for a very fast development experience.
 
-The package.json file in the starter files for your project includes a script for running the webpack dev server. You run it ty typing this on the command line:
+The `package.json` file in the starter files for your project includes a script for running the Vite dev server. You run it by typing this on the command line:
 
 ```bash
-npm run watch
+npm run dev
 ```
 
-Node.js is required to run Webpack.
+Node.js is required to run Vite.
 
 ## Using Node and Dev Tools
 
@@ -107,11 +130,7 @@ Each Node project has a package.json file. One of the things it contains is a li
 
 ```json
 "devDependencies": {
-    "html-webpack-plugin": "^5.5.0",
-    "copy-webpack-plugin": "^11.0.0",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.1"
+    "vite": "^5.0.0"
   }
 ```
 
@@ -127,13 +146,19 @@ npm install
 
 ```json
 "scripts": {
-"webpack": "webpack",
-"build": "webpack --config webpack.config.js", 
-"watch": "webpack serve --open"
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
 }
 ```
 
-To run a script type `npm run scriptName` on the command line. For example:
+To run a script type `npm run scriptName` on the command line. For example, to start the development server:
+
+```bash
+npm run dev
+```
+
+Or to build a production-ready bundle:
 
 ```bash
 npm run build
@@ -147,17 +172,18 @@ npm run build
 
   - [Official NPM documentation](https://docs.npmjs.com/)
 
-- [Webpack official site](https://webpack.js.org/)
+- [Vite official site](https://vitejs.dev/)
 
-  - [Webpack Getting Started Guide](https://webpack.js.org/guides/getting-started/)
+  - [Vite Getting Started Guide](https://vitejs.dev/guide/)
 
 - [ECMAScript Version History](https://en.wikipedia.org/wiki/ECMAScript_version_history)
 
 - [ECMAScript Browser Compatibility Table](https://compat-table.github.io/compat-table/es6/). 
 
-  
 
-[^1]: In her notes and video, Mari introduced you to Array.splice() and Array.push(), but in my (Brian's) CS133JS class, you were already introduced to those.
+
+
+*Note: Parts of these lecture notes were drafted using Claude Sonnet 4.6.*
 
 ---
 
