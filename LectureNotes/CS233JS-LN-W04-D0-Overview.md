@@ -55,8 +55,6 @@ author: Brian Bird
 
 ## Due dates
 
-- Tuesday: The code review for Lab 3 (last week's lab).
-  (The beta version was due Sunday.)
 - Wednesday: 
   - Reading quiz 4.
 - Friday: 
