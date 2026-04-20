@@ -31,17 +31,18 @@ export class TaskModel {
   addTask(taskDescription) {
     // New tasks default to incomplete to match typical todo workflow expectations.
     const newTask = { description: taskDescription, isComplete: false };
-    this.tasks.push(newTask);
-    this._commit(this.tasks);
+    this._commit([...this.tasks, newTask]);
   }
 
   deleteTask(index) {
-    this.tasks.splice(index, 1);
-    this._commit(this.tasks);
+    this._commit(this.tasks.filter((_, taskIndex) => taskIndex !== index));
   }
 
   toggleTaskStatus(index) {
-    this.tasks[index].isComplete = !this.tasks[index].isComplete;
-    this._commit(this.tasks);
+    this._commit(
+      this.tasks.map((task, taskIndex) =>
+        taskIndex === index ? { ...task, isComplete: !task.isComplete } : task
+      )
+    );
   }
 }

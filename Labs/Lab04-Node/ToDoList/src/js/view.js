@@ -27,15 +27,15 @@ export class TaskView {
     this.app.innerHTML = tasksHtml;
   }
 
-  generateTaskHtml(task, index) {
+  generateTaskHtml({ description, isComplete }, index) {
     return `
       <li class="list-group-item checkbox" data-index="${index}">
         <div class="row">
           <div class="col-sm-1 pt-2 checkbox">
-            <label><input name="toggleTaskStatus" type="checkbox" value="" class="" ${task.isComplete ? "checked" : ""}></label>
+            <label><input name="toggleTaskStatus" type="checkbox" value="" class="" ${isComplete ? "checked" : ""}></label>
           </div>
-          <div class="col-sm-10 task-text ${task.isComplete ? "complete" : ""}">
-            ${task.description}
+          <div class="col-sm-10 task-text ${isComplete ? "complete" : ""}">
+            ${description}
           </div>
           <div class="col-sm-1 pt-2 delete-icon-area">
             <a name="deleteTask" class="" href="/" ><i class="bi-trash delete-icon"></i></a>
@@ -59,10 +59,11 @@ export class TaskView {
 
   onDeleteTask(handler) {
     // Delegate from list container so handlers keep working after list re-renders.
-    this.app.addEventListener('click', event => {
-      const deleteItem = event.target.closest('a[name="deleteTask"]');
+    this.app.addEventListener('click', ({ target, preventDefault }) => {
+      const deleteItem = target.closest('a[name="deleteTask"]');
       if (deleteItem) {
-        event.preventDefault();
+        // Prevent anchor navigation because deletion should stay in the current app state.
+        preventDefault();
         const index = parseInt(deleteItem.closest('li').getAttribute('data-index'), 10);
         handler(index);
       }
@@ -71,9 +72,9 @@ export class TaskView {
 
   onToggleTask(handler) {
     // Delegate from list container so dynamic checkboxes do not need per-item listeners.
-    this.app.addEventListener('change', event => {
-      if (event.target.name === 'toggleTaskStatus') {
-        const index = parseInt(event.target.closest('li').getAttribute('data-index'), 10);
+    this.app.addEventListener('change', ({ target }) => {
+      if (target.name === 'toggleTaskStatus') {
+        const index = parseInt(target.closest('li').getAttribute('data-index'), 10);
         handler(index);
       }
     });
