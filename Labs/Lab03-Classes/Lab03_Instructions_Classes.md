@@ -118,9 +118,9 @@ The player with the lowest score wins!
 
 ### Beta Version and Code Review
 
-- Share your part 2 beta version with a lab partner.
-  - Your code  should be at least 75% complete and working.
-  - Share the code in your lab partner channel on Discord by sharing a link to your GitHub repository.
+- Share both part 1 and 2 beta versions with a lab partner.
+  - Your code should be at least 75% complete and working.
+  - Share the code in your lab partner channel on Discord by sharing a <u>link to your GitHub repository</u>.
   - On Moodle, submit the link to your GitHub repository and report:
     - How complete was your web app, was it working?
     - Who did you share your beta code with? 
