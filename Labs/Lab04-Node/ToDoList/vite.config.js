@@ -29,21 +29,9 @@ export default defineConfig(() => {
   const isObfuscationEnabled = process.env.OBFUSCATE === 'true';
 
   return {
-    // Root in src to preserve current teaching-lab folder layout without moving files.
-    root: 'src',
-    publicDir: false,
-    server: {
-      open: '/index.html',
-    },
     build: {
-      // Emit outside src to avoid mixing generated artifacts with source files.
-      outDir: '../dist',
-      emptyOutDir: true,
       // Keep sourcemaps for student debugging and easier grading support.
       sourcemap: true,
-      rollupOptions: {
-        input: 'src/index.html',
-      },
     },
     plugins: [obfuscateBuildPlugin(isObfuscationEnabled)],
   };

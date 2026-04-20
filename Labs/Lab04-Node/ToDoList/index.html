@@ -9,6 +9,7 @@
   <title>To-Do-List</title>
 </head>
 <body>
+  <!-- Static app header. JS does not modify this section. -->
   <div class="navbar navbar-expand-sm bg-dark">
     <div class="container-fluid">
       <ul class="navbar-nav">
@@ -24,18 +25,22 @@
       <div class="col-sm-8">
         <h2>ToDo List</h2>
 
+        <!-- JS reads this input value when creating a new task. -->
         <div class="row input-area">
           <div class="col-sm-1"></div>
           <div class="form-group col-sm-9">
             <input type="text" placeholder="New Task" class="form-control" id="addTask">
           </div>
           <div class="form-group col-sm-1">
+            <!-- JS listens for clicks on this button to trigger add-task flow. -->
             <button id="addButton" class="btn btn-primary">Add</button>
           </div>
           <div class="col-sm-1"></div>
         </div>
 
+        <!-- JS treats this list as the render target and replaces its innerHTML on updates. -->
         <ul class="list-group" id="taskList">
+          <!-- Seed items are fallback/example markup; JS re-renders this list from model state. -->
           <li class="list-group-item checkbox">
             <div class="row">
               <div class="col-sm-1 pt-2 checkbox">
@@ -84,6 +89,6 @@
   </div><!-- /.container -->
 
   <!-- Keep one module entry so Vite owns dependency graphing, bundling, and cache busting. -->
-  <script type="module" src="./js/index.js"></script>
+  <script type="module" src="/src/js/index.js"></script>
 </body>
 </html>
