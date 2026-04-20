@@ -1,3 +1,4 @@
+/* Keep content area spacing explicit so the default Bootstrap layout feels less cramped. */
 .starter-template {
   padding: 40px 15px;
   text-align: center;
@@ -10,6 +11,7 @@
 }
 .task-text {
   display: flex;
+  /* Vertically centering text improves scanability against icon/checkbox columns. */
   align-items: center;
   height: 40px;
 }
@@ -22,8 +24,10 @@
   height: 40px;
 }
 .delete-icon {
+  /* Red communicates destructive actions and lowers accidental clicks. */
   color: red;
 }
 .complete {
+  /* Strikethrough reinforces completion state beyond checkbox affordance. */
   text-decoration: line-through;
 }

@@ -1,16 +1,20 @@
+/* By Brian Bird spring 2026 based on code from Mari Good in 2024, 
+refactored using GitHub Copilot */
+
 export class TaskController {
   constructor(model, view) {
     this.model = model;
     this.view = view;
 
-    // Display initial tasks
+    // Centralize state-to-view updates here so model changes always re-render consistently.
     this.model.bindTodoListChanged(this.onTodoListChanged);
     
+    // Register UI handlers once so interactions flow through one orchestration point.
     this.view.bindAddTask(this.handleAddTask);
     this.view.bindDeleteTask(this.handleDeleteTask);
     this.view.bindToggleTask(this.handleToggleTask);
 
-    // Initial render
+    // Trigger an initial paint to keep the UI in sync with persisted model state.
     this.onTodoListChanged(this.model.tasks);
   }
 
