@@ -19,7 +19,7 @@ author: Brian Bird
 | 1. Intro to Course and JavaScript Review                     | 6. Asynchronous Programming               |
 | 2. Key ES6 Features                                          | 7. Unit testing, debugging techniques     |
 | 3. ES6 Classes, Object Oriented Programming and Git          | 8. HTML5 Canvas                           |
-| <mark>4. JS Dev Tools: Node.js, NPM, Vite, LocalStorage</mark> | 9. Functional Programming                 |
+| <mark>4. JS Dev Tools: Node, NPM, Vite & LocalStorage</mark> | 9. Functional Programming                 |
 | 5. Review and Midterm Quiz. <br />Project Design             | 10. Term Project Completion. <br />Review |
 | 11. Final Quiz                                               |                                           |
 
@@ -47,11 +47,11 @@ author: Brian Bird
 
 ## Objectives
 
-- To introduce you to commonly used JavaScript development tools including Node.js and Vite.
+- To introduce you to commonly used JavaScript development tools including **Node.js, NPM and Vite** (pronounced "veet").
 
-- To introduce you to using the web browser's LocalStorage for storing client-side data.
+- To introduce you to using the web browser's **LocalStorage** for storing client-side data.
 
-- To continue developing your proficiency in designing, implementing, testing and debugging JavaScript web apps.
+- To continue improving your proficiency at **developing JS web apps**: designing, implementing, testing and debugging.
 
 ## Due dates
 
