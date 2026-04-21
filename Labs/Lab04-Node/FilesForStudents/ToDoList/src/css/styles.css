@@ -1,0 +1,25 @@
+.content-area {
+  margin: 30px;
+}
+.input-area {
+  margin: 25px;
+}
+.task-text {
+  display: flex;
+  /* Vertically centering text improves scanability against icon/checkbox columns. */
+  align-items: center;
+  height: 40px;
+}
+.delete-icon-area {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.delete-icon {
+  /* Red communicates destructive actions and lowers accidental clicks. */
+  color: red;
+}
+.complete {
+  /* Strikethrough reinforces completion state beyond checkbox affordance. */
+  text-decoration: line-through;
+}
