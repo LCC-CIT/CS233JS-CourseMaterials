@@ -63,16 +63,42 @@ node hello.js
 - **More common NPM problems**
   There is a list of c[ommon problems and their solutions](https://docs.npmjs.com/common-errors) in the official Node documentation.
 
-## Installing Node Modules and package.json
+## Creating a Project that Uses Node Modules
 
-Every Node project has a `package.json` file in its root folder. This file describes the project and lists the packages it depends on. A minimal example looks like this:
+### npm init
+
+When you start a new JavaScript project that will use Node modules, the first step is to create a `package.json` file. You do this by running `npm init` in your project folder:
+
+```bash
+npm init
+```
+
+NPM will ask you a series of questions — project name, version, description, entry point, author, license, etc. — and build the file from your answers. If you want to skip all the questions and accept sensible defaults, use the `-y` flag (*yes to everything*):
+
+```bash
+npm init -y
+```
+
+Either way, you end up with a `package.json` file in your project folder. Here is what the default output looks like:
 
 ```json
 {
   "name": "my-project",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
 ```
+
+You can edit this file by hand at any time. Once it exists, you are ready to install packages with NPM.
+
+### Installing Node Modules
 
 To install a package and automatically add it to `package.json`, use `npm install` followed by the package name:
 
@@ -80,12 +106,11 @@ To install a package and automatically add it to `package.json`, use `npm instal
 npm install lodash
 ```
 
-Now the package.json file will look like this:
+Now the package.json file will have a new field named `dependencies` like this:
 
 ```json
 {
-  "name": "my-project",
-  "version": "1.0.0",
+  // ... other fields,
   "dependencies": {
     "lodash": "^4.18.1"
   }
@@ -102,8 +127,7 @@ The flag `--save-dev`  is used because this is a development tool (not needed in
 
 ```json
 {
-  "name": "my-project",
-  "version": "1.0.0",
+  // ... other fields,
   "dependencies": {
     "lodash": "^4.18.1"
   },
@@ -113,13 +137,12 @@ The flag `--save-dev`  is used because this is a development tool (not needed in
 }
 ```
 
-To install *all* packages listed in an existing `package.json` (for example, after cloning a project), run:
+To install *all* packages listed in an existing `package.json` into the node_modules folder on your computer(for example, after cloning a project), run:
 
 ```bash
 npm install
 ```
 
-This downloads everything into a `node_modules` folder in the project directory.
 
 
 
