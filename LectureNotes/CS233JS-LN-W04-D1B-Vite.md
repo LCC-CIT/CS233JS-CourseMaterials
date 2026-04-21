@@ -101,6 +101,42 @@ Or to build a production-ready bundle:
 npm run build
 ```
 
+## Vite Configuration File
+
+`vite.config.js` is an optional file at the project root that exports a configuration object. You use it when you need to change dev-server behavior, build output, path aliases, or add *plugins* (small extensions that hook into Vite’s pipeline). 
+
+Below, `resolve.alias` maps `@` to your `src` folder so imports like `import { utils } from '@/utils.js'` stay short and readable; `server.open` tells Vite to open the browser when you start the dev server; and `build.sourcemap` controls whether Vite *emits source maps* for the production build. None of these require installing an extra plugin — they are ordinary config options.
+
+```js
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+import { defineConfig } from 'vite'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
+export default defineConfig({
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
+  server: {
+    open: true,
+  },
+  build: {
+    sourcemap: true,
+  },
+})
+```
+
+`defineConfig`: A helper from Vite that does not change how your app runs; it helps editors and TypeScript (if you ever rename the file to `.ts`) validate option names. Plain `export default { /* … */ }` would behave the same.
+
+If this optional file is omitted, Vite uses defaults: project root is where you run the CLI, entry is `index.html` in that root, the dev server listens on `http://localhost:5173`, and the production build writes to `dist/`. 
+
+### Source maps 
+
+After `npm run build`, the output JavaScript is usually minified and bundled, which makes errors hard to read in the browser. *Source maps* are companion files (for example `main.js` plus `main.js.map`) that map the built code back to your original source files. With `sourcemap: true`, browser developer tools can show stack traces and breakpoints against your real line numbers and filenames instead of the minified bundle. That helps when you are debugging a deployed site. 
+
 
 
 ## Vite Workflow
