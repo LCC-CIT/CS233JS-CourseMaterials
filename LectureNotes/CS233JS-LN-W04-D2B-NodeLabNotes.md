@@ -1,7 +1,7 @@
 ---
-title: More ES6
-description: More about new ES6 features.
-keywords: local storage, json, array methods
+title: Node lab
+description: Notes on the Node.js lab.
+keywords: source map, development, production, bundle, deployment
 generator: Typora
 author: Brian Bird
 ---
@@ -46,16 +46,12 @@ author: Brian Bird
 
 
 
-
-
 ## Reference
 
 [MDN Web Docs: JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 
 
 
-[^1]: Mari's list of "new" features is a little longer than mine because she included some features we already covered in my CS133JS class.
-
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, updated in <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
