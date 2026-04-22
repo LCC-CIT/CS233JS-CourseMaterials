@@ -1,0 +1,23 @@
+.content-area {
+  margin: 30px;
+}
+.input-area {
+  margin: 25px;
+}
+.book-text {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.delete-icon-area {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.delete-icon {
+  color: red;
+}
+.read {
+  text-decoration: line-through;
+  color: gray;
+}
