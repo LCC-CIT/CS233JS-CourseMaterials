@@ -106,7 +106,8 @@ To install a package and automatically add it to `package.json`, use `npm instal
 npm install lodash
 ```
 
-Now the package.json file will have a new field named `dependencies` like this:
+Now the package.json file will have a new field named `dependencies` like this:  
+(The ^ means that when automatically updating packages, only the parts after the 4. can be higher numbers.)
 
 ```json
 {
@@ -155,13 +156,14 @@ Once a package is installed with NPM, you can use it in any of your JavaScript f
 Suppose you installed [lodash](https://lodash.com/), a popular utility library:
 
 ```bash
-npm install lodash
+npm install lodash-es
 ```
 
 In your JavaScript file, import only the function(s) you need:
+(`loadsh-es` is the ESM version of the library)
 
 ```javascript
-import { capitalize } from 'lodash';
+import { capitalize } from 'lodash-es';
 
 const name = capitalize('brian');  // 'Brian'
 console.log(name);
@@ -170,27 +172,25 @@ console.log(name);
 Or import the whole library under a single name:
 
 ```javascript
-import _ from 'lodash';
+import _ from 'lodash-es';
 
 const numbers = [3, 1, 4, 1, 5, 9];
 const sorted = _.sortBy(numbers);  // [1, 1, 3, 4, 5, 9]
 console.log(sorted);
 ```
 
-### Key Points
 
-- The string in quotes (`'lodash'`) is the **package name**, exactly as it appears on [npmjs.com](https://www.npmjs.com/).
-- Use *named imports* (`{ capitalize }`) when you only need specific functions — this allows bundlers to include only what you use (*tree-shaking*).
-- Use a *default import* (`_`) when you want the whole package.
-- The package must be installed (`npm install`) before the import will work.
 
 ## Reference
 
 - [Node.js official site](https://nodejs.org/en)
 
 - [Official NPM documentation](https://docs.npmjs.com/)
+  - [Package.json](https://docs.npmjs.com/cli/v11/configuring-npm/package-json)
+  - [Version number syntax in package.json](https://github.com/npm/node-semver#versions)
 
 
+- [lodash documentation](https://lodash.com/docs)
 
 *Note: Parts of these lecture notes were drafted using Claude Sonnet 4.6.*
 
