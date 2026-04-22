@@ -57,32 +57,6 @@ Local storage is used in the ToDoList app tasks are stored in local storage in `
 
 
 
-### `forEach`
-
-This method is used to execute a callback function once for each array element. It’s a way to iterate over the elements of an array. It is an alternative to using a `for of` loop.
-
-Here is an example where `forEach` is used to iterate over the array and multiply the value stored in each element by 10.
-
-```javascript
-let array = [1, 3, 4, 7];
-
-array.forEach(function(value) {
-  console.log(value * 10);
-});
-
-// Expected output:
-// 10
-// 30
-// 40
-// 70
-```
-
-In this example an anonymous function is provided to `forEach` that takes one argument, the current array element being processed, multiplies it by 10, and returns the result.
-
-This method is used in the ToDoList app in the `addEventHandlers` method.
-
-
-
 ## JSON 
 
 JSON is an acronym for JavaScript Object Notation and is a data formatting standard. The most common uses of JSON formatted data are: data storage, data interchange and configuration files.

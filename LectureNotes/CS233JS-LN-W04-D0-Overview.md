@@ -32,7 +32,7 @@ author: Brian Bird
 ## Announcements
 
 - **LCC Job Fair 2026!**  
-  <img src="/Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/Images/LCC-JobFair.png" alt="LCC Job Fair 2026 logo" style="zoom:35%;" />    
+  <img src="../Images/LCC-JobFair.png" alt="LCC Job Fair 2026 logo" style="zoom:35%;" />    
 
   The Lane Community College Job Fair will be May 21 from 1 p.m. - 4 p.m. on the 2nd floor of the center building. 
 
@@ -71,7 +71,7 @@ author: Brian Bird
 - On campus students (Hybrid modality) will take the midterm at class time on Wednesday, in the classroom.
 - Online students will take the midterm at [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services), located in the Center building, room 311 (on the third floor). 
   - The quiz will be open Wednesday through Saturday. See the Instructional Testing web site for their hours.
-  - **Please note that ID is required.** <u>If you don't have ID let your instructor know in advance</u>.
+  - **Please note that photo ID is required.** <u>If you don't have ID let your instructor know in advance</u>.
   - **If you live outside the Eugene/Springfield area** and do not want to come to the LCC campus to take the final, you need to send an email to [online@lanecc.edu](mailto:online@lanecc.edu) and copy birdb@lanecc.edu well in advance of the test date to arrange for your quiz to be proctored at a location near you.
 
 

@@ -6,7 +6,7 @@
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, h5 { white-space: pre-wrap; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -26,7 +26,7 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+button, input, select, textarea { color: inherit; font: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
@@ -34,7 +34,7 @@ input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px;
 svg sub, svg sup { position: static; }
 .nodeLabel p { padding-right: 2px; padding-left: 2px; }
 .typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
-foreignObject { overflow: visible; }
+foreignobject { overflow: visible; }
 p { line-height: inherit; }
 h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
 p { orphans: 4; }
@@ -58,8 +58,8 @@ thead, tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
-.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -79,7 +79,7 @@ div.hr:focus { cursor: none; }
 svg { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
@@ -92,7 +92,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { print-color-adjust: exact; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -113,7 +113,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
@@ -143,14 +143,14 @@ code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
-a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
-iframe { max-width: 100%; width: 100%; border: medium; }
+iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
@@ -179,7 +179,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
-.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
 .outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
 .outline-expander:hover::before { content: ""; }
@@ -192,14 +192,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
 .outline-label:hover { text-decoration: underline; }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
-.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
 .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
-.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
 .typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
@@ -213,7 +213,7 @@ mjx-container { break-inside: avoid; }
 .md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
 .md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
 .md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
-.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
 .md-alert-text-note { color: rgb(9, 105, 218); }
 .md-alert-text-important { color: rgb(130, 80, 223); }
 .md-alert-text-warning { color: rgb(154, 103, 0); }
@@ -614,13 +614,12 @@ header, .context-menu, .megamenu-content, footer{
 }
 </style>
 <style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
-<style type='text/css'  id="style-mac-print"> @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}</style>
 
 <title>Week 4 Overview</title>
 </head>
-<body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><p><strong><span>CS233JS Intermediate Programming: JavaScript</span></strong></p><h1>Week 4 Overview for Spring 2026</h1><h2>April 20 through 26</h2><p><strong><span>CS233JS Intermediate Programming: JavaScript</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Topics by Week</span></th><th>&nbsp;</th></tr></thead><tbody><tr><td><span>1. Intro to Course and JavaScript Review</span></td><td><span>6. Asynchronous Programming</span></td></tr><tr><td><span>2. Key ES6 Features</span></td><td><span>7. Unit testing, debugging techniques</span></td></tr><tr><td><span>3. ES6 Classes, Object Oriented Programming and Git</span></td><td><span>8. HTML5 Canvas</span></td></tr><tr><td><mark><span>4. JS Dev Tools: Node, NPM, Vite &amp; LocalStorage</span></mark></td><td><span>9. Functional Programming</span></td></tr><tr><td><span>5. Review and Midterm Quiz. </span><br /><span>Project Design</span></td><td><span>10. Term Project Completion. </span><br /><span>Review</span></td></tr><tr><td><span>11. Final Quiz</span></td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p><h2>Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n367"><a class="md-toc-inner" style="" href="#announcements">Announcements</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n376"><a class="md-toc-inner" style="" href="#objectives">Objectives</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n384"><a class="md-toc-inner" style="" href="#due-dates">Due dates</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n403"><a class="md-toc-inner" style="" href="#midterm-quiz-next-week">Midterm quiz next week</a></span></p></div><h2 id='announcements'><span>Announcements</span></h2><ul><li><p><strong><span>LCC Job Fair 2026!</span></strong><span></span><br/><img src="/Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/Images/LCC-JobFair.png" alt="LCC Job Fair 2026 logo" style="zoom:35%;" /><span>    </span></p><p><span>The Lane Community College Job Fair will be May 21 from 1 p.m. - 4 p.m. on the 2nd floor of the center building. </span></p><p><strong><span>Resource:</span></strong><span> </span><a href='https://out.smore.com/e/q9cks/xd6j18?__$u__'><span>More Information</span></a><span> </span><strong><span>| Contact:</span></strong><span> [Kirsten Rawding. </span></p></li><li><p><strong><span>Tinker with AI at the Fusion Lab: Thursdays 2-4 p.m.</span></strong><span></span><br/><span>Ready to dive into Generative AI? Join the campus community in the Fusion Lab - Tinkery, a weekly hub for students, staff, and faculty to explore emergent technology (Modeled after the Stanford AI Tinkery) - a collaborative space for creative problem-solving and hands-on &quot;tinkering.&quot; We hope to see you there!</span>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><p><strong><span>CS233JS Intermediate Programming: JavaScript</span></strong></p><h1>Week 4 Overview for Spring 2026</h1><h2>April 20 through 26</h2><p><strong><span>CS233JS Intermediate Programming: JavaScript</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Topics by Week</span></th><th>&nbsp;</th></tr></thead><tbody><tr><td><span>1. Intro to Course and JavaScript Review</span></td><td><span>6. Asynchronous Programming</span></td></tr><tr><td><span>2. Key ES6 Features</span></td><td><span>7. Unit testing, debugging techniques</span></td></tr><tr><td><span>3. ES6 Classes, Object Oriented Programming and Git</span></td><td><span>8. HTML5 Canvas</span></td></tr><tr><td><mark><span>4. JS Dev Tools: Node, NPM, Vite &amp; LocalStorage</span></mark></td><td><span>9. Functional Programming</span></td></tr><tr><td><span>5. Review and Midterm Quiz. </span><br /><span>Project Design</span></td><td><span>10. Term Project Completion. </span><br /><span>Review</span></td></tr><tr><td><span>11. Final Quiz</span></td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p><h2>Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n31"><a class="md-toc-inner" href="#announcements">Announcements</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n40"><a class="md-toc-inner" href="#objectives">Objectives</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n48"><a class="md-toc-inner" href="#due-dates">Due dates</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n70"><a class="md-toc-inner" href="#midterm-quiz-next-week">Midterm quiz next week</a></span></p></div><h2 id='announcements'><span>Announcements</span></h2><ul><li><p><strong><span>LCC Job Fair 2026!</span></strong><span></span><br/><img src="../Images/LCC-JobFair.png" alt="LCC Job Fair 2026 logo" style="zoom:35%;" /><span>    </span></p><p><span>The Lane Community College Job Fair will be May 21 from 1 p.m. - 4 p.m. on the 2nd floor of the center building. </span></p><p><strong><span>Resource:</span></strong><span> </span><a href='https://out.smore.com/e/q9cks/xd6j18?__$u__'><span>More Information</span></a><span> </span><strong><span>| Contact:</span></strong><span> [Kirsten Rawding. </span></p></li><li><p><strong><span>Tinker with AI at the Fusion Lab: Thursdays 2-4 p.m.</span></strong><span></span><br/><span>Ready to dive into Generative AI? Join the campus community in the Fusion Lab - Tinkery, a weekly hub for students, staff, and faculty to explore emergent technology (Modeled after the Stanford AI Tinkery) - a collaborative space for creative problem-solving and hands-on &quot;tinkering.&quot; We hope to see you there!</span>
 <span>Dedicated AI Sessions take place every Thursday from 2 p.m. -4 p.m. in CEN 219 (Main Campus). Whether you want to experiment with new tools like Gemini and NotebookLM, vibe code visually engaging course materials, or discuss the impact of AI on education, the Fusion Lab is the space to do it. No experience is required—just bring your curiosity and help us explore what’s possible...through tinkering.</span>
-<span>These times don&#39;t work for you, or you have questions? Contact Instructional Design Services.</span></p><p><strong><span>Contact:</span></strong><span> </span><a href='https://out.smore.com/e/q9cks/8JlrEL?__$u__'><span>Instructional Design Services</span></a><span>, </span><a href='https://out.smore.com/e/q9cks/MJX4ni?__$u__'><span>Kevin Steeves</span></a><span>  </span></p></li></ul><h2 id='objectives'><span>Objectives</span></h2><ul><li><p><span>To introduce you to commonly used JavaScript development tools including </span><strong><span>Node.js, NPM and Vite</span></strong><span> (pronounced &quot;veet&quot;).</span></p></li><li><p><span>To introduce you to using the web browser&#39;s </span><strong><span>LocalStorage</span></strong><span> for storing client-side data.</span></p></li><li><p><span>To continue improving your proficiency at </span><strong><span>developing JS web apps</span></strong><span>: designing, implementing, testing and debugging.</span></p></li></ul><h2 id='due-dates'><span>Due dates</span></h2><ul><li><p><span>Wednesday: </span></p><ul><li><p><span>Reading quiz 4.</span></p></li></ul></li><li><p><span>Friday: </span></p><ul><li><p><span>lab 4 beta version.</span><br/><span>Add your lab partner to your repository and let them know in your team channel on Discord.</span></p></li></ul></li><li><p><span>Saturday</span></p><ul><li><p><span>Lab 4 code review.</span></p></li></ul></li><li><p><span>Sunday:</span></p><ul><li><p><span>Lab 3 production version.</span></p></li></ul></li></ul><h2 id='midterm-quiz-next-week'><span>Midterm quiz next week</span></h2><ul><li><p><span>On campus students (Hybrid modality) will take the midterm at class time on Wednesday, in the classroom.</span></p></li><li><p><span>Online students will take the midterm at </span><a href='https://www.lanecc.edu/get-support/academic-support/instructional-testing-services'><span>Instructional Testing Services</span></a><span>, located in the Center building, room 311 (on the third floor). </span></p><ul><li><p><span>The quiz will be open Wednesday through Saturday. See the Instructional Testing web site for their hours.</span></p></li><li><p><strong><span>Please note that ID is required.</span></strong><span> </span><u><span>If you don&#39;t have ID let your instructor know in advance</span></u><span>.</span></p></li><li><p><strong><span>If you live outside the Eugene/Springfield area</span></strong><span> and do not want to come to the LCC campus to take the final, you need to send an email to </span><a href='mailto:online@lanecc.edu'><span>online@lanecc.edu</span></a><span> and copy </span><a href='mailto:birdb@lanecc.edu' target='_blank' class='url'>birdb@lanecc.edu</a><span> well in advance of the test date to arrange for your quiz to be proctored at a location near you.</span></p></li></ul></li></ul><p>&nbsp;</p><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License"></a><span> Intermediate JavaScript Course Materials by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written winter 2025, revised spring </span><time><span>2026</span></time><span>, are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p></div></div>
+<span>These times don&#39;t work for you, or you have questions? Contact Instructional Design Services.</span></p><p><strong><span>Contact:</span></strong><span> </span><a href='https://out.smore.com/e/q9cks/8JlrEL?__$u__'><span>Instructional Design Services</span></a><span>, </span><a href='https://out.smore.com/e/q9cks/MJX4ni?__$u__'><span>Kevin Steeves</span></a><span>  </span></p></li></ul><h2 id='objectives'><span>Objectives</span></h2><ul><li><p><span>To introduce you to commonly used JavaScript development tools including </span><strong><span>Node.js, NPM and Vite</span></strong><span> (pronounced &quot;veet&quot;).</span></p></li><li><p><span>To introduce you to using the web browser&#39;s </span><strong><span>LocalStorage</span></strong><span> for storing client-side data.</span></p></li><li><p><span>To continue improving your proficiency at </span><strong><span>developing JS web apps</span></strong><span>: designing, implementing, testing and debugging.</span></p></li></ul><h2 id='due-dates'><span>Due dates</span></h2><ul><li><p><span>Wednesday: </span></p><ul><li><p><span>Reading quiz 4.</span></p></li></ul></li><li><p><span>Friday: </span></p><ul><li><p><span>lab 4 beta version.</span><br/><span>Add your lab partner to your repository and let them know in your team channel on Discord.</span></p></li></ul></li><li><p><span>Saturday</span></p><ul><li><p><span>Lab 4 code review.</span></p></li></ul></li><li><p><span>Sunday:</span></p><ul><li><p><span>Lab 3 production version.</span></p></li></ul></li></ul><h2 id='midterm-quiz-next-week'><span>Midterm quiz next week</span></h2><ul><li><p><span>On campus students (Hybrid modality) will take the midterm at class time on Wednesday, in the classroom.</span></p></li><li><p><span>Online students will take the midterm at </span><a href='https://www.lanecc.edu/get-support/academic-support/instructional-testing-services'><span>Instructional Testing Services</span></a><span>, located in the Center building, room 311 (on the third floor). </span></p><ul><li><p><span>The quiz will be open Wednesday through Saturday. See the Instructional Testing web site for their hours.</span></p></li><li><p><strong><span>Please note that photo ID is required.</span></strong><span> </span><u><span>If you don&#39;t have ID let your instructor know in advance</span></u><span>.</span></p></li><li><p><strong><span>If you live outside the Eugene/Springfield area</span></strong><span> and do not want to come to the LCC campus to take the final, you need to send an email to </span><a href='mailto:online@lanecc.edu'><span>online@lanecc.edu</span></a><span> and copy </span><a href='mailto:birdb@lanecc.edu' target='_blank' class='url'>birdb@lanecc.edu</a><span> well in advance of the test date to arrange for your quiz to be proctored at a location near you.</span></p></li></ul></li></ul><p>&nbsp;</p><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License"></a><span> Intermediate JavaScript Course Materials by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written winter 2025, revised spring </span><time><span>2026</span></time><span>, are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p></div></div>
 </body>
 </html>
