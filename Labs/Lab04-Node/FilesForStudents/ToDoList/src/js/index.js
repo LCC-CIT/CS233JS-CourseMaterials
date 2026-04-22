@@ -17,6 +17,7 @@ import { TaskController } from './controller.js';
     by Brian Bird using GitHub Copilot in spring of 2026
 */
 
+/** Initializes the MVC components after the DOM is fully loaded. */
 document.addEventListener('DOMContentLoaded', () => {
   // Wire MVC only after the DOM exists so selectors in TaskView always resolve.
   new TaskController(new TaskModel(), new TaskView());

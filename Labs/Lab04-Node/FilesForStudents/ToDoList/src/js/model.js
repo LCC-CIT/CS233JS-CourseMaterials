@@ -2,6 +2,7 @@
 refactored using GitHub Copilot */
 
 export class TaskModel {
+  /** Initializes the TaskModel, loading tasks from localStorage or using default tasks. */
   constructor() {
     try {
       // Restore prior user state so tasks persist between browser sessions.
@@ -21,6 +22,7 @@ export class TaskModel {
     }
   }
 
+  /** Validates if a task object has the required properties and types. */
   _isValidTask(task) {
     return (
       typeof task === 'object' &&
@@ -30,6 +32,7 @@ export class TaskModel {
     );
   }
 
+  /** Updates the task list and persists changes to localStorage while notifying subscribers. */
   _commit(tasks) {
     // Persist and notify together so storage and UI do not drift out of sync.
     this.tasks = tasks;
@@ -37,20 +40,24 @@ export class TaskModel {
     this.onTodoListChanged(tasks);
   }
 
+  /** Registers a callback to be invoked when the task list changes. */
   subscribeTodoListChanged(callback) {
     this.onTodoListChanged = callback;
   }
 
+  /** Adds a new task with the given description, defaulting to incomplete status. */
   addTask(taskDescription) {
     // New tasks default to incomplete to match typical todo workflow expectations.
     const newTask = { description: taskDescription, isComplete: false };
     this._commit([...this.tasks, newTask]);
   }
 
+  /** Removes the task at the specified index from the task list. */
   deleteTask(index) {
     this._commit(this.tasks.filter((_, taskIndex) => taskIndex !== index));
   }
 
+  /** Toggles the completion status of the task at the specified index. */
   toggleTaskStatus(index) {
     this._commit(
       this.tasks.map((task, taskIndex) =>

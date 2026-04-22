@@ -2,6 +2,7 @@
 refactored using GitHub Copilot */
 
 export class TaskController {
+  /** Initializes the TaskController, wiring model and view interactions. */
   constructor(model, view) {
     this.model = model;
     this.view = view;
@@ -18,18 +19,22 @@ export class TaskController {
     this.onTodoListChanged(this.model.tasks);
   }
 
+  /** Updates the view with the current list of tasks. */
   onTodoListChanged = (tasks) => {
     this.view.displayTasks(tasks);
   };
 
+  /** Adds a new task with the given description to the model. */
   handleAddTask = (taskDescription) => {
     this.model.addTask(taskDescription);
   };
 
+  /** Deletes the task at the specified index from the model. */
   handleDeleteTask = (index) => {
     this.model.deleteTask(index);
   };
 
+  /** Toggles the completion status of the task at the specified index in the model. */
   handleToggleTask = (index) => {
     this.model.toggleTaskStatus(index);
   };
