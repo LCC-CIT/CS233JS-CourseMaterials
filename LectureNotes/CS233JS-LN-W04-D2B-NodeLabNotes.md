@@ -1,5 +1,5 @@
 ---
-title: Node lab
+title: Node lab notes
 description: Notes on the Node.js lab.
 keywords: source map, development, production, bundle, deployment
 generator: Typora
@@ -48,7 +48,10 @@ author: Brian Bird
 
 ## Reference
 
-[MDN Web Docs: JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
+- [lit-html documentation](https://lit.dev/docs/templates/overview/)&mdash;[Lit website](https://lit.dev/)
+
+- [Vite Getting Started Guide](https://vite.dev/guide/)&mdash;Vite website
+  - [Vite Build Options](https://vite.dev/config/build-options)
 
 
 
