@@ -17,14 +17,16 @@ The objectives of this lab are:
 
 ### Set Up Your Git Repository
 
-1. Create a New GitHub Repository for Lab 4.
-2. Download the Starter Files.  
+1. Create a New GitHub Repository for Lab 4.  
+   Put a .gitignore file for node.js in the repository as the first commit.
+2. Clone the Repository to your local computer.
+3. Download the Starter Files.  
    Download the starter files for this lab from Moodle and copy them into your local repository folder.
-3. Clone the Repository to your local computer.
+4. Add and commit the new files, then push them up to GitHub.
 
-### Follow the ToDo List Example
+### Study the ToDo List Example
 
-Your instructor has provided a completed **ToDo List** web app (included in the starter files) that demonstrates how to structure a Vite-based JavaScript project. Study this example carefully before building your own app. Pay attention to:
+Your instructor has provided a completed **ToDo List** web app (included with the starter files) that demonstrates how to structure a Vite-based JavaScript project. Study this example carefully before building your own app. Pay attention to:
 
 - How the project files are organized.
 - How JavaScript modules are imported and used.
@@ -32,39 +34,33 @@ Your instructor has provided a completed **ToDo List** web app (included in the 
 
 The ToDo List app lets a user add, complete, and remove tasks, and persists them using the browser's `localStorage`. Your app will follow a similar pattern.
 
-### Build Your App
+### Complete Your App
 
-Which app you build depends on your assignment group:
+Which app you build depends on your assignment group.
+Regardless of which app you are building, for each one you will:
+1. Create a new folder for the app. Don't copy the starter files into it.
+2. Use `npm init` to create a package.json file
+3. Install the lit-html pacakge
+4. Install Vite
+5. Copy the .html, .css and vite.config.json files into your project folder
+6. Create new files for the three .js modules and refactor the code in starter file into them, addeing the approrpriate module import and export statements.
+7. Complete the //TODO sections.
+8. Use Vite to bundle the code.
+
+Use the Vite dev server to run the app while you are testing and debgugging it.
 
 #### Version A: Web Page Bookmarker
 
-Build a **BookMarker** app that lets users save, view, and delete web page bookmarks. Each bookmark should store at minimum a title and a URL. Bookmarks should be persisted using `localStorage` so they survive a page refresh.
+This app that lets users save, view, and delete web page bookmarks. Each bookmark should store at minimum a title and a URL. Bookmarks should be persisted using `localStorage` so they survive a page refresh.
 
-#### Version B: TBD
+#### Version B: Expense Tracker
 
-*This version has not yet been determined. Check Moodle for updates.*
+This app that lets users log, view, and delete individual expenses. Each expense stores a description and a dollar amount. Expenses should be persisted using `localStorage` so they survive a page refresh.
 
-#### Version C: TBD
+#### Version C: Grocery List
 
-*This version has not yet been determined. Check Moodle for updates.*
+This app lets users add, view, and delete grocery items. Each item stores a name and a quantity. The list should be persisted using `localStorage` so it survives a page refresh.
 
-### Development Workflow
-
-For whichever version you build:
-
-1. Install dependencies by running the following in the project's root folder:
-   ```bash
-   npm install
-   ```
-2. Start the Vite development server and test your app as you build it:
-   ```bash
-   npm run dev
-   ```
-3. When your app is complete, generate the production build:
-   ```bash
-   npm run build
-   ```
-4. Test your app in at least one browser using the Vite dev server on your local machine before submitting.
 
 ## Submission
 
@@ -102,7 +98,7 @@ For whichever version you build:
 
 
 
-[^1]: Screenshots are requested for this lab so that you can show that you used Node.js and the Vite development tools introduced this week.
+[^1]: Screenshots are requested for this lab so that you can show that you used the Node.js and Vite development tools.
 
 ---
 

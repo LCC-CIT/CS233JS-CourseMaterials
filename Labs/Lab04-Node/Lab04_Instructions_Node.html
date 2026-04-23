@@ -6,7 +6,7 @@
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, h5 { white-space: pre-wrap; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -26,7 +26,7 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font: inherit; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
@@ -34,7 +34,7 @@ input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px;
 svg sub, svg sup { position: static; }
 .nodeLabel p { padding-right: 2px; padding-left: 2px; }
 .typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
-foreignobject { overflow: visible; }
+foreignObject { overflow: visible; }
 p { line-height: inherit; }
 h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
 p { orphans: 4; }
@@ -58,8 +58,8 @@ thead, tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
-.CodeMirror-linenumber { user-select: none; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -79,7 +79,7 @@ div.hr:focus { cursor: none; }
 svg { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
@@ -92,7 +92,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export * { print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -113,7 +113,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
@@ -143,14 +143,14 @@ code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
-a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom: 0px; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
 video { max-width: 100%; display: block; margin: 0px auto; }
-iframe { max-width: 100%; width: 100%; border: none; }
+iframe { max-width: 100%; width: 100%; border: medium; }
 .highlight td, .highlight tr { border: 0px; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
@@ -179,7 +179,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
-.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
 .outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
 .outline-expander:hover::before { content: ""; }
@@ -192,14 +192,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
 .outline-label:hover { text-decoration: underline; }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
-.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
 .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
-.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
 .typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
@@ -213,7 +213,7 @@ mjx-container { break-inside: avoid; }
 .md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
 .md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
 .md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
-.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
 .md-alert-text-note { color: rgb(9, 105, 218); }
 .md-alert-text-important { color: rgb(130, 80, 223); }
 .md-alert-text-warning { color: rgb(154, 103, 0); }
@@ -222,87 +222,6 @@ mjx-container { break-inside: avoid; }
 .md-alert-text { font-size: 0.9rem; font-weight: 700; }
 .md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
 .md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
-
-</style>
-<style type='text/css'  id="style-codemirror">.CodeMirror { height: auto; }
-.CodeMirror.cm-s-inner { background: inherit; }
-.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
-.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
-.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
-.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
-.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
-.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
-.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
-.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
-.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
-.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
-.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
-.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
-.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
-.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
-.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
-.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
-.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
-.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
-.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
-.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
-.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
-.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
-.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
-.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
-.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
-.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
-.cm-negative { color: rgb(221, 68, 68); }
-.cm-positive { color: rgb(34, 153, 34); }
-.cm-header, .cm-strong { font-weight: 700; }
-.cm-del { text-decoration: line-through; }
-.cm-em { font-style: italic; }
-.cm-link { text-decoration: underline; }
-.cm-error { color: red; }
-.cm-invalidchar { color: red; }
-.cm-constant { color: rgb(38, 139, 210); }
-.cm-defined { color: rgb(181, 137, 0); }
-div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
-div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
-.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
-.CodeMirror { position: relative; overflow: hidden; }
-.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
-.CodeMirror-sizer { position: relative; }
-.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
-.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
-.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
-.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
-.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
-.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
-.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
-.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
-.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
-.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
-.CodeMirror-lines { cursor: text; }
-.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
-.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
-.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
-.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
-.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
-.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
-.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
-.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
-.CodeMirror-measure pre { position: static; }
-.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
-.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
-.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
-.cm-searching { background: rgba(255, 255, 0, 0.4); }
-span.cm-underlined { text-decoration: underline; }
-span.cm-strikethrough { text-decoration: line-through; }
-.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
-.cm-tw-deleted { text-decoration: line-through; }
-.cm-tw-header5 { font-weight: 700; }
-.cm-tw-listitem:first-child { padding-left: 10px; }
-.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
-.cm-tw-underline { text-decoration: underline; }
-@media print {
-  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
-}
 
 </style>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext' type='text/css' />
@@ -695,12 +614,14 @@ header, .context-menu, .megamenu-content, footer{
 }
 </style>
 <style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+<style type='text/css'  id="style-mac-print"> @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}</style>
 
 <title>Lab04_Instructions_Node</title>
 </head>
-<body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1>Lab 4: Node.js Dev Tools and JavaScript Web Apps</h1><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n191"><a class="md-toc-inner" href="#objectives">Objectives</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n200"><a class="md-toc-inner" href="#instructions">Instructions</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n201"><a class="md-toc-inner" href="#set-up-your-git-repository">Set Up Your Git Repository</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n232"><a class="md-toc-inner" href="#follow-the-todo-list-example">Follow the ToDo List Example</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n242"><a class="md-toc-inner" href="#build-your-app">Build Your App</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n244"><a class="md-toc-inner" href="#version-a-web-page-bookmarker">Version A: Web Page Bookmarker</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n246"><a class="md-toc-inner" href="#version-b-tbd">Version B: TBD</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n248"><a class="md-toc-inner" href="#version-c-tbd">Version C: TBD</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n250"><a class="md-toc-inner" href="#development-workflow">Development Workflow</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n264"><a class="md-toc-inner" href="#submission">Submission</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n265"><a class="md-toc-inner" href="#beta-version-and-code-review">Beta Version and Code Review</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n294"><a class="md-toc-inner" href="#production-version">Production Version</a></span></p></div><h2 id='objectives'><span>Objectives</span></h2><p><span>The objectives of this lab are:</span></p><ol start='' ><li><p><span>Practice using Node.js, NPM, and Vite, which are dev tools commonly used in modern JavaScript development.</span></p></li><li><p><span>Practice using ES6 JavaScript features including classes, modules, and arrow functions.</span></p></li><li><p><span>Practice using Git and GitHub to manage your source code.</span></p></li></ol><h2 id='instructions'><span>Instructions</span></h2><h3 id='set-up-your-git-repository'><span>Set Up Your Git Repository</span></h3><ol><li><p><span>Create a New GitHub Repository for Lab 4.</span></p></li><li><p><span>Download the Starter Files.</span><br/><span>Download the starter files for this lab from Moodle and copy them into your local repository folder.</span></p></li><li><p><span>Clone the Repository to your local computer.</span></p></li></ol><h3 id='follow-the-todo-list-example'><span>Follow the ToDo List Example</span></h3><p><span>Your instructor has provided a completed </span><strong><span>ToDo List</span></strong><span> web app (included in the starter files) that demonstrates how to structure a Vite-based JavaScript project. Study this example carefully before building your own app. Pay attention to:</span></p><ul><li><p><span>How the project files are organized.</span></p></li><li><p><span>How JavaScript modules are imported and used.</span></p></li><li><p><span>How the Vite dev server is started (</span><code>npm run dev</code><span>) and how the production build is generated (</span><code>npm run build</code><span>).</span></p></li></ul><p><span>The ToDo List app lets a user add, complete, and remove tasks, and persists them using the browser&#39;s </span><code>localStorage</code><span>. Your app will follow a similar pattern.</span></p><h3 id='build-your-app'><span>Build Your App</span></h3><p><span>Which app you build depends on your assignment group:</span></p><h4 id='version-a-web-page-bookmarker'><span>Version A: Web Page Bookmarker</span></h4><p><span>Build a </span><strong><span>BookMarker</span></strong><span> app that lets users save, view, and delete web page bookmarks. Each bookmark should store at minimum a title and a URL. Bookmarks should be persisted using </span><code>localStorage</code><span> so they survive a page refresh.</span></p><h4 id='version-b-tbd'><span>Version B: TBD</span></h4><p><em><span>This version has not yet been determined. Check Moodle for updates.</span></em></p><h4 id='version-c-tbd'><span>Version C: TBD</span></h4><p><em><span>This version has not yet been determined. Check Moodle for updates.</span></em></p><h3 id='development-workflow'><span>Development Workflow</span></h3><p><span>For whichever version you build:</span></p><ol start='' ><li><p><span>Install dependencies by running the following in the project&#39;s root folder:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51562px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">npm</span> install</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre></li><li><p><span>Start the Vite development server and test your app as you build it:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51562px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">npm</span> run dev</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre></li><li><p><span>When your app is complete, generate the production build:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.51562px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">npm</span> run build</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre></li><li><p><span>Test your app in at least one browser using the Vite dev server on your local machine before submitting.</span></p></li></ol><h2 id='submission'><span>Submission</span></h2><h3 id='beta-version-and-code-review'><span>Beta Version and Code Review</span></h3><ul><li><p><span>Share your beta version with a lab partner.</span></p><ul><li><p><span>Your code should be at least 75% complete and working.</span></p></li><li><p><span>Share it in your lab partner channel on Discord by posting a </span><u><span>link to your GitHub repository</span></u><span>.</span></p></li><li><p><span>On Moodle, submit the link to your GitHub repository and report:</span></p><ul><li><p><span>How complete was your web app — was it working?</span></p></li><li><p><span>Who did you share your beta code with?</span></p></li><li><p><span>What date and time did you share it?</span></p></li></ul></li></ul></li><li><p><span>Commit and push your beta version to GitHub so your lab partner can view the code.</span></p></li><li><p><span>Do a code review for your lab partner.</span></p><ul><li><p><span>Post the completed review form on Discord.</span></p></li><li><p><span>Submit your code review to Moodle.</span></p></li></ul></li><li><p><span>Revise and improve your code based in part on feedback from your lab partner.</span></p></li></ul><h3 id='production-version'><span>Production Version</span></h3><ul><li><p><span>Publish to the CIT web server.</span></p><ul><li><p><span>Upload your completed web app to </span><a href='http://citstudent.lanecc.edu'><span>citstudent.lanecc.edu</span></a><span>.</span>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1>Lab 4: Node.js Dev Tools and JavaScript Web Apps</h1><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n5"><a class="md-toc-inner" style="" href="#objectives">Objectives</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n14"><a class="md-toc-inner" style="" href="#instructions">Instructions</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n15"><a class="md-toc-inner" style="" href="#set-up-your-git-repository">Set Up Your Git Repository</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n25"><a class="md-toc-inner" style="" href="#study-the-todo-list-example">Study the ToDo List Example</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n35"><a class="md-toc-inner" style="" href="#complete-your-app">Complete Your App</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n55"><a class="md-toc-inner" style="" href="#version-a-web-page-bookmarker">Version A: Web Page Bookmarker</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n57"><a class="md-toc-inner" style="" href="#version-b-expense-tracker">Version B: Expense Tracker</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n59"><a class="md-toc-inner" style="" href="#version-c-grocery-list">Version C: Grocery List</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n62"><a class="md-toc-inner" style="" href="#submission">Submission</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n63"><a class="md-toc-inner" style="" href="#beta-version-and-code-review">Beta Version and Code Review</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n92"><a class="md-toc-inner" style="" href="#production-version">Production Version</a></span></p></div><h2 id='objectives'><span>Objectives</span></h2><p><span>The objectives of this lab are:</span></p><ol start='' ><li><p><span>Practice using Node.js, NPM, and Vite, which are dev tools commonly used in modern JavaScript development.</span></p></li><li><p><span>Practice using ES6 JavaScript features including classes, modules, and arrow functions.</span></p></li><li><p><span>Practice using Git and GitHub to manage your source code.</span></p></li></ol><h2 id='instructions'><span>Instructions</span></h2><h3 id='set-up-your-git-repository'><span>Set Up Your Git Repository</span></h3><ol start='' ><li><p><span>Create a New GitHub Repository for Lab 4.</span><br/><span>Put a .gitignore file for node.js in the repository as the first commit.</span></p></li><li><p><span>Clone the Repository to your local computer.</span></p></li><li><p><span>Download the Starter Files.</span><br/><span>Download the starter files for this lab from Moodle and copy them into your local repository folder.</span></p></li><li><p><span>Add and commit the new files, then push them up to GitHub.</span></p></li></ol><h3 id='study-the-todo-list-example'><span>Study the ToDo List Example</span></h3><p><span>Your instructor has provided a completed </span><strong><span>ToDo List</span></strong><span> web app (included with the starter files) that demonstrates how to structure a Vite-based JavaScript project. Study this example carefully before building your own app. Pay attention to:</span></p><ul><li><p><span>How the project files are organized.</span></p></li><li><p><span>How JavaScript modules are imported and used.</span></p></li><li><p><span>How the Vite dev server is started (</span><code>npm run dev</code><span>) and how the production build is generated (</span><code>npm run build</code><span>).</span></p></li></ul><p><span>The ToDo List app lets a user add, complete, and remove tasks, and persists them using the browser&#39;s </span><code>localStorage</code><span>. Your app will follow a similar pattern.</span></p><h3 id='complete-your-app'><span>Complete Your App</span></h3><p><span>Which app you build depends on your assignment group.</span>
+<span>Regardless of which app you are building, for each one you will:</span></p><ol start='' ><li><p><span>Create a new folder for the app. Don&#39;t copy the starter files into it.</span></p></li><li><p><span>Use </span><code>npm init</code><span> to create a package.json file</span></p></li><li><p><span>Install the lit-html pacakge</span></p></li><li><p><span>Install Vite</span></p></li><li><p><span>Copy the .html, .css and vite.config.json files into your project folder</span></p></li><li><p><span>Create new files for the three .js modules and refactor the code in starter file into them, addeing the approrpriate module import and export statements.</span></p></li><li><p><span>Complete the //TODO sections.</span></p></li><li><p><span>Use Vite to bundle the code.</span></p></li></ol><p><span>Use the Vite dev server to run the app while you are testing and debgugging it.</span></p><h4 id='version-a-web-page-bookmarker'><span>Version A: Web Page Bookmarker</span></h4><p><span>This app that lets users save, view, and delete web page bookmarks. Each bookmark should store at minimum a title and a URL. Bookmarks should be persisted using </span><code>localStorage</code><span> so they survive a page refresh.</span></p><h4 id='version-b-expense-tracker'><span>Version B: Expense Tracker</span></h4><p><span>This app that lets users log, view, and delete individual expenses. Each expense stores a description and a dollar amount. Expenses should be persisted using </span><code>localStorage</code><span> so they survive a page refresh.</span></p><h4 id='version-c-grocery-list'><span>Version C: Grocery List</span></h4><p><span>This app lets users add, view, and delete grocery items. Each item stores a name and a quantity. The list should be persisted using </span><code>localStorage</code><span> so it survives a page refresh.</span></p><h2 id='submission'><span>Submission</span></h2><h3 id='beta-version-and-code-review'><span>Beta Version and Code Review</span></h3><ul><li><p><span>Share your beta version with a lab partner.</span></p><ul><li><p><span>Your code should be at least 75% complete and working.</span></p></li><li><p><span>Share it in your lab partner channel on Discord by posting a </span><u><span>link to your GitHub repository</span></u><span>.</span></p></li><li><p><span>On Moodle, submit the link to your GitHub repository and report:</span></p><ul><li><p><span>How complete was your web app — was it working?</span></p></li><li><p><span>Who did you share your beta code with?</span></p></li><li><p><span>What date and time did you share it?</span></p></li></ul></li></ul></li><li><p><span>Commit and push your beta version to GitHub so your lab partner can view the code.</span></p></li><li><p><span>Do a code review for your lab partner.</span></p><ul><li><p><span>Post the completed review form on Discord.</span></p></li><li><p><span>Submit your code review to Moodle.</span></p></li></ul></li><li><p><span>Revise and improve your code based in part on feedback from your lab partner.</span></p></li></ul><h3 id='production-version'><span>Production Version</span></h3><ul><li><p><span>Publish to the CIT web server.</span></p><ul><li><p><span>Upload your completed web app to </span><a href='http://citstudent.lanecc.edu'><span>citstudent.lanecc.edu</span></a><span>.</span>
 <span>Be sure to upload </span><u><span>only the files contained in the </span><code>dist</code><span> folder</span></u><span> (generated by </span><code>npm run build</code><span>).</span></p></li><li><p><span>Test the app on the web server to verify it still works there.</span></p></li></ul></li><li><p><span>Submit the following to Moodle:</span></p><ul><li><p><span>A link to your GitHub repository in the online text.</span></p></li><li><p><span>The code review from your lab partner, with the &quot;production&quot; column filled out by you.</span></p></li><li><p><span>Screen shots showing</span><sup class='md-footnote'><a href='#dfref-footnote-1' name='ref-footnote-1'>1</a></sup><span>:</span></p><ul><li><p><span>Your project files in the VS Code file explorer and the terminal showing the Vite dev server running.</span></p></li><li><p><span>Your app running on the Vite dev server with the URL visible.</span></p></li><li><p><span>Your app running on citstudent with the URL visible.</span></p></li></ul></li><li><p><span>The citstudent URL for your web app in the online text.</span></p></li></ul></li></ul><p>&nbsp;</p><hr /><p><span>Written by Brian Bird, spring </span><time><span>2026</span></time><span>.</span></p><div class='footnotes-area'  ><hr/>
-<div class='footnote-line'><span class='md-fn-count'>1</span> <span>Screenshots are requested for this lab so that you can show that you used Node.js and the Vite development tools introduced this week.</span> <a name='dfref-footnote-1' href='#ref-footnote-1' title='back to document' class='reversefootnote' >↩</a></div></div></div></div>
+<div class='footnote-line'><span class='md-fn-count'>1</span> <span>Screenshots are requested for this lab so that you can show that you used the Node.js and Vite development tools.</span> <a name='dfref-footnote-1' href='#ref-footnote-1' title='back to document' class='reversefootnote' >↩</a></div></div></div></div>
 </body>
 </html>

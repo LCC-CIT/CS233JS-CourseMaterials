@@ -46,8 +46,8 @@ There are a few "best practices" mixed in with these style conventions where the
 - Classes
 
   - Names should be in PascalCase (aka TitleCase).
-  - Instance variables should be private.
-  - Getters and Setters should be used to access instance variables in objects created from the class.
+  - Each class should be in a separate module unless it's very small. 
+  - Should be highly coherent and loosely coupled. 
 
   
 
@@ -74,7 +74,7 @@ There are a few "best practices" mixed in with these style conventions where the
 
 - Use `===` whenever possible since `==` does *type coercion* which can lead to unexpected results. 
 
--  Always handle errors in promises and callbacks.
+-  Always handle errors in asynchronous code (promises, callbacks, etc.).
 
 - Minimize the use of global variables. They can cause conflicts in large codebases.
 
