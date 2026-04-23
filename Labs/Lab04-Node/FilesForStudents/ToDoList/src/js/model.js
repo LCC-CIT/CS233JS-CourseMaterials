@@ -7,7 +7,7 @@ export class TaskModel {
     try {
       // Restore prior user state so tasks persist between browser sessions.
       const savedTasks = JSON.parse(localStorage.getItem("tasks"));
-      if (!Array.isArray(savedTasks) || !savedTasks.every((task) => this._isValidTask(task))) {
+      if (!Array.isArray(savedTasks) || !savedTasks.every((task) => this.isValidTask(task))) {
         throw new Error("Invalid tasks payload");
       }
 
@@ -23,7 +23,7 @@ export class TaskModel {
   }
 
   /** Validates if a task object has the required properties and types. */
-  _isValidTask(task) {
+  isValidTask(task) {
     return (
       typeof task === 'object' &&
       task !== null &&
@@ -33,7 +33,8 @@ export class TaskModel {
   }
 
   /** Updates the task list and persists changes to localStorage while notifying subscribers. */
-  _commit(tasks) {
+  
+  commit(tasks) {
     // Persist and notify together so storage and UI do not drift out of sync.
     this.tasks = tasks;
     localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -49,17 +50,17 @@ export class TaskModel {
   addTask(taskDescription) {
     // New tasks default to incomplete to match typical todo workflow expectations.
     const newTask = { description: taskDescription, isComplete: false };
-    this._commit([...this.tasks, newTask]);
+    this.commit([...this.tasks, newTask]);
   }
 
   /** Removes the task at the specified index from the task list. */
   deleteTask(index) {
-    this._commit(this.tasks.filter((_, taskIndex) => taskIndex !== index));
+    this.commit(this.tasks.filter((_, taskIndex) => taskIndex !== index));
   }
 
   /** Toggles the completion status of the task at the specified index. */
   toggleTaskStatus(index) {
-    this._commit(
+    this.commit(
       this.tasks.map((task, taskIndex) =>
         taskIndex === index ? { ...task, isComplete: !task.isComplete } : task
       )
