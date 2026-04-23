@@ -15,7 +15,7 @@ class BookModel {
     try {
       const savedBooks = null; // array to hold books
       // TODO: Add a line of code that retrieves books from local storage into savedBooks
-      if (!Array.isArray(savedBooks) || !this._allValid(savedBooks)) {
+      if (!Array.isArray(savedBooks) || !this.allValid(savedBooks)) {
         throw new Error("Invalid books payload");
       }
       this.books = savedBooks;
@@ -28,7 +28,7 @@ class BookModel {
     }
   }
 
-  _isValidBook(book) {
+  isValidBook(book) {
     return (
       typeof book === 'object' &&
       book !== null &&
@@ -38,16 +38,16 @@ class BookModel {
     );
   }
 
-  _allValid(books) {
+  allValid(books) {
     for (let i = 0; i < books.length; i++) {
-      if (!this._isValidBook(books[i])) {
+      if (!this.isValidBook(books[i])) {
         return false;
       }
     }
     return true;
   }
 
-  _commit(books) {
+  commit(books) {
     // TODO: write this method
   }
 
@@ -57,23 +57,23 @@ class BookModel {
 
   addBook(title, author) {
     const newBook = { title, author, isRead: false };
-    
+
     // Build a new array with the added book.
-    
+
     // TODO: add the new book to the array of books and put it in local storage
 
   }
 
   deleteBook(index) {
     // Build a new array without the book at the given index.
-  
+
     // TODO: Remove the book from the array and update local storage.
 
   }
 
   toggleBookStatus(index) {
     // Build a new array with the toggled book status.
-  
+
     // TODO: Toggle the book status and update local storage.
   }
 }
@@ -182,7 +182,7 @@ class BookController {
     this.view = view;
 
     this.model.subscribeBookListChanged(this.onBookListChanged);
-    
+
     this.view.onAddBook(this.handleAddBook);
     this.view.onDeleteBook(this.handleDeleteBook);
     this.view.onToggleBook(this.handleToggleBook);
