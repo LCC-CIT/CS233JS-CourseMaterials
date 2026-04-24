@@ -40,6 +40,7 @@ I'll add notes later.
 
 I am using a *ToDo List* app from Mari's lab assignment on Node as an example app. I used an AI coding assistant to refactor it and didin't realize that it had added some more advanced features like callbacks, .map, and .foreach. Next time we should consider:
 
+- Use a NPM package that is simpler to understand than `lit-html`. Maybe use `lodash` instead.
 - Refactoring the example app and starter files to use a simpler architecture that doesn't include callbacks for decoupling the view from the controller. But there are complications:
   - Lab instructions and notes will need to be revised
   - Video recordings will need to be redone.
