@@ -16,6 +16,33 @@ author: Brian Bird
 
 [TOC]
 
+## Application Architecture
+
+***Model–View–Controller* (MVC)** splits an interactive app into three roles: the *model* (data and rules), the *view* (presentation — templates, DOM), and the *controller* (handles input, updates the model, refreshes the view). The point is to separate data, UI, and reaction to user actions so each is easier to follow and change.
+
+This lab uses that architecture loosely. A strict MVC implementation would have more to it. 
+
+The diagram below shows dependencies in the MVC architecture: 
+
+- The controller depends on the view and model
+- The view depends on the model. 
+- The model has no dependencies.
+
+```mermaid
+flowchart TB
+  M[Model — state and rules]
+  V[View — presentation]
+  C[Controller — input and coordination]
+
+  V --> M
+  C --> M
+  C --> V
+```
+
+- **View → Model** — the view reads or reflects model state when rendering.
+- **Controller → Model** — the controller updates state in response to user actions.
+- **Controller → View** — the controller triggers or schedules updates to what the user sees (in a strict textbook MVC, some of this is indirect; in this lab it may be more direct).
+
 ## The `lit-html` package
 
 - Look at how the syntax is similar to a template string.
