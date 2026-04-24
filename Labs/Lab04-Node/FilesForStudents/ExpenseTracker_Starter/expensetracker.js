@@ -88,6 +88,7 @@ class ExpenseView {
   }
 
   displayExpenses(expenses) {
+    // TODO: Refactor this to use the lit-html package
     let html = '';
     for (let i = 0; i < expenses.length; i++) {
       const expense = expenses[i];

@@ -117,7 +117,7 @@ class BookView {
   }
 
   displayBooks(books) {
-    // Refactor this method to use the NPM lit-html package
+    // TODO: Refactor this to use the lit-html package
     let html = '';
     for (let i = 0; i < books.length; i++) {
       const book = books[i];

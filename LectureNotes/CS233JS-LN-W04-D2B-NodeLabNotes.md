@@ -46,7 +46,10 @@ flowchart TB
 ## The `lit-html` package
 
 - Look at how the syntax is similar to a template string.
-- In the browser's debugger, look at what is returned by `html` and by `render`.
+- In the browser's debugger, look at methods in the View class and at what is returned by:
+  -  `tasksTemplate` using `html`. 
+  -  `displayTasks` using `render`.
+
 - Compare the development and production versions of `lit-html`.
   - See the dev version running on the dev server: message in console, large dependency visible in debugger
   - See the production version by displaying dist/index.html with live server.
@@ -75,7 +78,8 @@ flowchart TB
 
 ## Reference
 
-- [lit-html documentation](https://lit.dev/docs/templates/overview/)&mdash;[Lit website](https://lit.dev/)
+- [lit-html documentation](https://lit.dev/docs/templates/overview/)&mdash;Lit website
+  - [Using lit-html standalone](https://lit.dev/docs/libraries/standalone-templates/)&mdash;this is what we are using
 
 - [Vite Getting Started Guide](https://vite.dev/guide/)&mdash;Vite website
   - [Vite Build Options](https://vite.dev/config/build-options)

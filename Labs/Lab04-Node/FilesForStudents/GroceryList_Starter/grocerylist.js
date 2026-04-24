@@ -88,6 +88,7 @@ class GroceryView {
   }
 
   displayGroceries(groceries) {
+    // TODO: Refactor this to use the lit-html package
     let html = '';
     for (let i = 0; i < groceries.length; i++) {
       const grocery = groceries[i];

@@ -195,7 +195,7 @@ class BookmarkView {
    * Build the HTML for all bookmarks using a for loop.
    */
   displayBookmarks(bookmarks) {
-    // Refactor this method to use the NPM lit-html package
+    // TODO: Refactor this to use the lit-html package
     let html = '';
     for (let i = 0; i < bookmarks.length; i++) {
       const bookmark = bookmarks[i];
