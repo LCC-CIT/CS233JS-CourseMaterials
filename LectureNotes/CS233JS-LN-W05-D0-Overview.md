@@ -30,7 +30,7 @@ author: Brian Bird
 ## Announcements
 
 **LCC Job Fair 2026!**  
-<img src="/Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/Images/LCC-JobFair.png" alt="LCC Job Fair 2026 logo" style="zoom:35%;" />    
+<img src="../Images/LCC-JobFair.png" alt="LCC Job Fair 2026 logo" style="zoom:35%;" />    
 
 The Lane Community College Job Fair will be May 21 from 1 p.m. - 4 p.m. on the 2nd floor of the center building. 
 
