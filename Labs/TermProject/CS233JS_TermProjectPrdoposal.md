@@ -9,10 +9,7 @@ author: Brian Bird
 
 
 
-<h1>Term Project Proposal</h1
-
-
-
+<h1>Term Project Proposal</h1>
 **CS 233JS, Intermediate Programming: JavaScript**
 
 ## Objectives
