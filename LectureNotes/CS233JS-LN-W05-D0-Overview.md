@@ -36,6 +36,17 @@ The Lane Community College Job Fair will be May 21 from 1 p.m. - 4 p.m. on the 2
 
 **Resource:** [More Information](https://out.smore.com/e/q9cks/xd6j18?__$u__) **| Contact:** [Kirsten Rawding. 
 
+
+
+## This Week's Learning Objectives
+
+- Review the first four weeks of JavaScript concepts and techniques.
+- Check your progress by taking the midterm quiz.
+- Understand more about how to design the structure of an applicaiton.
+- Choose a term project and write a proposal.
+
+
+
 ## Midterm quiz this week
 
 - **On campus students** (Hybrid modality) will take the midterm **at class time on Wednesday**, in the classroom.
@@ -44,22 +55,17 @@ The Lane Community College Job Fair will be May 21 from 1 p.m. - 4 p.m. on the 2
   - Please note that **photo ID is required**. <u>If you don't have ID let your instructor know in advance</u>.
   - **If you live outside the Eugene/Springfield area** and do not want to come to the LCC campus to take the final, you need to send an email to [online@lanecc.edu](mailto:online@lanecc.edu) and copy birdb@lanecc.edu well in advance of the test date to arrange for your quiz to be proctored at a location near you.
 
-## This Week's Learning Objectives
 
-- Review the first four weeks of JavaScript concepts and techniques.
-- Check your progress by taking the midterm quiz.
 
 ## Due dates
 
-- Tuesday: The code review for Lab 4 (last week's lab).
-  (The beta version was due Sunday.)
 - Wednesday: 
   - Midterm quiz in classroom.
-- Thursday: 
-  - Lab 4 production version.
+- Wednesday&mdash;Saturday: 
+  - Midterm quiz in Instructional Testing Services.
 - Saturday:
-  - Last day to take the midterm quiz in Instructional Testing Services.
-  
+  - Term project proposal.
+
   
 
 
