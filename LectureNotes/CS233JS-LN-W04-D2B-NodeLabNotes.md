@@ -76,7 +76,7 @@ flowchart TB
 
 
 
-## Reference
+## References
 
 - [lit-html documentation](https://lit.dev/docs/templates/overview/)&mdash;Lit website
   - [Using lit-html standalone](https://lit.dev/docs/libraries/standalone-templates/)&mdash;this is what we are using
