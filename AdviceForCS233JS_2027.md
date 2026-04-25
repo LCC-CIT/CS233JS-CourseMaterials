@@ -30,7 +30,11 @@ Recommendations:
 
 ### Lab02-ES6 Feature
 
-I'll add notes later.
+- I had AI add comments to all the functions and it used JS Doc comments that include types. I actually like this, but hadn't taught the students about it.
+  - Consider either removing the JS Doc comments or teaching about this.
+- The Boneyard Bluff domino game needs to be refactored to make it more winnable:
+  - The target needs to keep decreasing as wins are made (the version in my solutions repo does this)
+  - The boneyard needs to be made up of dominos that are not too low in value.
 
 ### Lab03-Classes
 
