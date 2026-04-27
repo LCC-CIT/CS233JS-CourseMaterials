@@ -53,6 +53,7 @@ flowchart TB
 - Compare the development and production versions of `lit-html`.
   - See the dev version running on the dev server: message in console, large dependency visible in debugger
   - See the production version by displaying dist/index.html with live server.
+  - Read [additional notes on lit-html](../Labs/Lab04-Node/lit-htmlNotes.html) written by your instructor.
 
 ## Source Map
 

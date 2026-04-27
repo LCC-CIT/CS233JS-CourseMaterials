@@ -40,7 +40,7 @@ Which app you build depends on your assignment group.
 Regardless of which app you are building, for each one you will:
 1. Create a new folder for the app. Don't copy the starter files into it.
 2. Use `npm init` to create a package.json file
-3. Install the lit-html pacakge
+3. Install the [lit-html pacakge](lit-htmlNotes.html)
 4. Install Vite
 5. Copy the .html, .css and vite.config.json files into your project folder
 6. Create new files for the three .js modules and refactor the code in starter file into them, addeing the approrpriate module import and export statements.
