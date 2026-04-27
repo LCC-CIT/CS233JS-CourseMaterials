@@ -10,6 +10,7 @@ author: Brian Bird
 
 
 <h1>Term Project Proposal</h1>
+
 **CS 233JS, Intermediate Programming: JavaScript**
 
 ## Objectives
@@ -26,7 +27,7 @@ The project should:
   - Use ES Modules.
   - Separate the code that interacts with web page elements (i/o code) from the rest of the code. 
   - Include at least one asynchronous call  to a web API.
-  - Use two other JS technologies from this list:
+  - Use two additional JS technologies from this list:
     - arrow functions.
     - local storage.
     - html canvas.
@@ -34,8 +35,8 @@ The project should:
   - Be hosted on citstudent.lanecc.edu. 
 - Use best coding practices like avoiding global variables, writing DRY code, proper indentation, descriptive variable names, explanatory comments, etc.
 - Provide good user experience by using input validation, do-again loops or resets, clear instructions, etc.
--  Require more effort than an average lab assignment, but not more than two lab assignments.
-- Not be the same as any of the class or tutorial examples.
+-  Require about the same effort as two lab assignments.
+- Not be the same as any of the class, tutorial, or textbook apps.
 - Not be the same as a project being done by another student in the class.
 -  Not use code you got from someone else, the internet, or AI.
 -  Provide attribution where appropriate.
@@ -46,7 +47,7 @@ The project should:
 
 These are just ideas to help spark your imagination. You don't have to do one of these projects.
 
-- Dice games like "pig".
+- Dice, card or domino games that are different and slightly more complex than the ones you did in class.
 - Grid based games like "Obstruction[^1]".
 - A text based game like "Hunt the Wumpus".
 
@@ -58,7 +59,7 @@ These are just ideas to help spark your imagination. You don't have to do one of
 
 ## Proposal
 
-Write two paragraphs describing what your project will be. I don't expect you to know how you will use the JS features we haven't covered yet, but describe how it will use JS features you know about so far.
+Write two paragraphs describing what your project will be. I don't expect you to know how you will use the JS features we haven't covered yet, but describe how it will use JS features you have learned so far.
 
 ## Submission
 
