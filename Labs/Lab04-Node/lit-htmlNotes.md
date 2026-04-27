@@ -52,7 +52,8 @@ Standard literals treat all data as strings. Lit-html is **context-aware**:
 
 ## Reference
 
-[Templates Overview](https://lit.dev/docs/templates/overview/)&mdash;Lit Documentation
+- [Templates Overview](https://lit.dev/docs/templates/overview/)&mdash;Lit Documentation
+  - [Using lit-html standalone](https://lit.dev/docs/libraries/standalone-templates/)&mdash;this is what we are using
 
 
 
