@@ -139,7 +139,7 @@ This is a summary of some of the "new" JavaScript features added in ES6 (2015):
 
 
 
-### Classes and Object Oriented Programming
+#### Classes and Object Oriented Programming
 
 Here’s a table summarizing the *Object-Oriented Programming* (OOP) concepts presented in class:
 
@@ -156,7 +156,7 @@ Here’s a table summarizing the *Object-Oriented Programming* (OOP) concepts pr
 | **Separation of Concerns**           | Divide code into distinct parts (e.g., I/O and processing).  | Card class: Handles card logic.<br>Board class: Manages cards.<br>Game class: Handles HTML interaction. |
 | **Highly Cohesive, Loosely Coupled** | Classes should have a single responsibility and minimal dependencies. | Easier to test, debug, and update.                           |
 
-### JavaScript Development Tools (Node.js, etc.)
+#### JavaScript Development Tools (Node.js, etc.)
 
 This table summarizes the JavaScript development tools covered in this class:
 
@@ -171,7 +171,7 @@ This table summarizes the JavaScript development tools covered in this class:
 
 
 
-Note: Parts of this documnet were drafted using DeepSeek R1 and revisions drafted using Gemini 3.1 pro.
+Note: Parts of this document were drafted using DeepSeek R1 and revisions drafted using Gemini 3.1 pro.
 
 ---
 
