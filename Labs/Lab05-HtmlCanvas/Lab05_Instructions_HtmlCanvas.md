@@ -37,20 +37,33 @@ Your starter code is fully functional and has no // TODO comments. You will be a
 Add these features:
 
 - Automatic storage and retrieval of profiles from local storage.
-- 
+- Photo filters like Grayscale, Sepia, and Sharpening to enhance your image. Use the [`node-pixels`](https://www.npmjs.com/package/node-pixels) package. On your web page, provide the filters you want in a drop-down list.
+- Circular profile frame, with image or background outside the frame clipped.
+- Controls to change background and border color.
+- Option to add an outline to the text and choose it's color.
+- Drag and zoom your photo to get the perfect crop and positioning.
 
 #### Version B:
 
 Add these features:
 
 - Automatic storage and retrieval of profiles from local storage.
-- 
+- Photo filters like Grayscale, Sepia, and Sharpening to enhance your image. Use the [`node-pixels`](https://www.npmjs.com/package/node-pixels) package. On your web page, provide the filters you want in a drop-down list.
+- Controls to change font size and color.
+- Option to add an outline to the text and choose it's color.
+- Oval profile frame, with image or background outside the frame clipped.
+- Interactive Stickers that you can place and drag anywhere on your picture.
 
 #### Version C: 
 
 Add these features:
 
 - Automatic storage and retrieval of profiles from local storage.
+- Photo filters like Grayscale, Sepia, and Sharpening to enhance your image. Use the [`node-pixels`](https://www.npmjs.com/package/node-pixels) package. On your web page, provide the filters you want in a drop-down list.
+- Rectangular profile frame with rounded corners and image or background outside the frame clipped.
+- Controls to change font family and style.
+- Option to add an outline to the text and choose it's color.
+- Freestyle drawing that lets you sketch directly on your profile picture with a customizable pen.
 
 
 ## Submission
