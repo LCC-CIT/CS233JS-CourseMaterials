@@ -1,7 +1,7 @@
 ---
 title: HTML Canvas
-description: HTML Canvas and more about the Node.js dev toolchain
-keywords: Canvas, Node, NPM, Canvas context, ESM import, HTML download
+description: How to use the HTML canvas element and canvas API
+keywords: Canvas, Canvas context, HTML download
 generator: Typora
 author: Brian Bird
 ---
@@ -31,9 +31,9 @@ When you assign a value to the `width` and/or `height` properties, it sets the w
 **Example:**
 
 ```javascript
-this.$canvas = document.querySelector('#imgCanvas');
-this.$canvas.width = 800; // Sets the canvas width to 800 pixels
-this.$canvas.width = 800; // Sets the canvas width to 800 pixels
+const canvas = document.querySelector('#imgCanvas');
+canvas.width = 800; // Sets the canvas width to 800 pixels
+canvas.width = 800; // Sets the canvas width to 800 pixels
 ```
 
 
@@ -45,11 +45,21 @@ The canvas context object provides methods and properties for drawing and manipu
 The code below gets a reference to a HTML canvas element on a web page, then creates a context object that can be used by JavaScript to draw in 2D (two dimensions) on the canvas.
 
 ```javascript
-    this.$canvas = document.querySelector('#imgCanvas');
-    this.$context = this.$canvas.getContext('2d');
+    // Assume we have already gotten a canvas object
+    const context = canvas.getContext('2d');
 ```
 
 
+
+###Computer graphics coordinate system
+
+In two dimensional computer graphics, a cartesian coordinate system is used in which the x-axis starts at the left and extends to the right and the y-axis starts at the top and extends to the bottom.
+
+<img src="Images/Computer_coordinates_2D.png" alt="2D computer graphics coordinate system" style="zoom:80%;" />
+
+*Image from [Program Arcade Games with Python and PyGame](http://programarcadegames.com/index.php?chapter=introduction_to_graphics)*
+
+#### 
 
 ### Some Context Object Properties and Methods
 
@@ -59,37 +69,37 @@ The code below gets a reference to a HTML canvas element on a web page, then cre
 
 Sets the current text style to use when drawing text. The value is a string that specifies the font size and font family. 
 
-Example:  `this.$context.font = '12pt sans-serif';`
+Example:  `context.font = '12pt sans-serif';`
 
 ##### `textAlign`
 
 Sets the alignment of the text relative to the specified x-coordinate. Possible values are `'left'`, `'right'`, `'center'`, `'start'`, and `'end'`. Here, it centers the text horizontally.
 
-Example:  `this.$context.textAlign = 'center';`
+Example:  `context.textAlign = 'center';`
 
 ##### `textBaseline`
 
 Sets the vertical alignment of the text relative to the y-coordinate. Possible values are `'top'`, `'hanging'`, `'middle'`, `'alphabetic'`, `'ideographic'`, and `'bottom'`. Here, it aligns the text to the top of the y-coordinate.
 
-Example:   `this.$context.textBaseline = 'top';`
+Example:   `context.textBaseline = 'top';`
 
 ##### `lineWidth`
 
 Sets the width of lines for strokes. The value is a number specifying the line width in pixels. 
 
-Example:  `this.$context.lineWidth = 5;`
+Example:  `context.lineWidth = 5;`
 
 ##### `strokeStyle`
 
 Sets the color or style to use for the lines around shapes (strokes). The value can be a color, gradient, or pattern.
 
-Example:  `this.$context.strokeStyle = 'black';`
+Example:  `context.strokeStyle = 'black';`
 
 ##### `fillStyle`
 
 Sets the color or style to use inside shapes (fills). The value can be a color, gradient, or pattern. Here, it sets the fill color to white.
 
-Example:  `this.$context.fillStyle = 'white';`
+Example:  `context.fillStyle = 'white';`
 
 
 
@@ -109,7 +119,7 @@ Parameters:
 
 - height: The height of the rectangle to clear.
 
-Example:  `this.$context.clearRect(0, 0, this.$canvas.width, this.$canvas.height);`
+Example:  `context.clearRect(0, 0, canvas.width, canvas.height);`
 ##### `drawImage`
 
 Draws an image onto the canvas. It can also be used to draw a portion of an image or to scale the image.
@@ -123,7 +133,7 @@ Parameters:
 - `dHeight`: The height to draw the image in the destination canvas. This allows scaling of the image.
 
 Example: 
-`this.$context.drawImage(this.$image, 0, 0, this.$canvas.width, this.$canvas.height);`
+`context.drawImage(image, 0, 0, canvas.width, canvas.height);`
 
 ##### `strokeText`
 
@@ -136,7 +146,7 @@ Parameters:
 - `y`: The y-coordinate of the point at which to begin drawing the text.
 - `maxWidth` (optional): The maximum width to draw the text. If specified, the text will be scaled to fit within this width.
 
-Example:` this.$context.strokeText('Hello, World!', 100, 50);`
+Example:` context.strokeText('Hello, World!', 100, 50);`
 
 ##### `fillText`
 
@@ -149,21 +159,7 @@ Parameters:
 - `y`: The y-coordinate of the point at which to begin drawing the text.
 - `maxWidth` (optional): The maximum width to draw the text. If specified, the text will be scaled to fit within this width.
 
-Example:  `this.$context.fillText('Hello, World!', 100, 50);`
-
-
-
-## Import
-
-The JavaScript `import` feature was added in ES6. This keyword can be used in statements that import:
-
-- CSS files  
-  Example: `import '../css/styles.css';`
-
-- JavaScript modules  
-  Example: `import './general';`
-
-  In the Meme creator app in the lab assignment, general.js is being import as a module just just for the "side effect" of importing the CSS files that were imported in general.js
+Example:  `context.fillText('Hello, World!', 100, 50);`
 
 
 
@@ -182,9 +178,11 @@ By adding the `download` attribute to the anchor tag, you instruct the browser t
 
 ## References
 
-[JavaScript import declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)&mdash;MDN
+[Canvas HTML Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/canvas)&mdash;MDN
 
-[Canvas Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)&mdash;MDN
+[Canvas JavaScript API Reference](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)&mdash;MDN
+
+[Canvas JavaScript API Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)&mdash;MDN
 
 [FileReader Object](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)&mdash;MDN
 
