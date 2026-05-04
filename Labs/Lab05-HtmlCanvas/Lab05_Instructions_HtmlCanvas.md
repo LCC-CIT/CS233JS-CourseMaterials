@@ -9,7 +9,9 @@
 
 The objectives of this lab are to:
 
-1. Give you more practice with JS dev tools like Node, NPM and Vite.  
+1. Get more  practice with JS dev tools like Node, NPM and Vite.
+1. Get more experience using a node package (`node-pixels`)
+1. Get more practicce writing code that uses local storage.
 1. Get experience programming with the HTML5 Canvas.  
 
 ## Instructions
@@ -25,7 +27,16 @@ The objectives of this lab are to:
 
 ### Study the MemeMaker2 Example
 
-Your instructor has provided a completed  web app  that demonstrates how to use the HTML Canvas in a JavaScript project. Study this example carefully before building your own app. 
+Your instructor has provided a completed  web app  that demonstrates how to use the HTML Canvas in a JavaScript project. Study this example carefully before building your own app. Here are the things you should look at:
+
+- The Readme.md file&mdash;read it! It explains how the app is structured and what it does.
+- Run the app, experiment with it and see what it does.
+- Look at the source code. For each file read the high-level comments to see what the structure of that module is.
+  - Start with the .html page and look to see what it loads and where the `<canvas>` element is.
+  - Look at the `MemeUiController.js` file. Note that this is the first module to be loaded and it manages interaction with the DOM (with the exception of canvas API calls).
+  - Look at the `memeLogicServices.js` file. Note that this contains a class that does all the logical processing as well as operations that use the canvas API
+  - 
+- 
 
 ### Complete Your App
 
