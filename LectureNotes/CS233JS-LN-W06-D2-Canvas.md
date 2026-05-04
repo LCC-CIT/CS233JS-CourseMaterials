@@ -53,7 +53,7 @@ The code below gets a reference to a HTML canvas element on a web page, then cre
 
 ###Computer graphics coordinate system
 
-In two dimensional computer graphics, a cartesian coordinate system is used in which the x-axis starts at the left and extends to the right and the y-axis starts at the top and extends to the bottom.
+In two dimensional computer graphics, a cartesian coordinate system is used in which the *x-axis* starts at the left and extends to the right and the *y-axis* starts at the top and extends to the bottom.
 
 <img src="Images/Computer_coordinates_2D.png" alt="2D computer graphics coordinate system" style="zoom:80%;" />
 
