@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Maker Starter</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Profile Maker Starter</a>
+    </div>
+  </nav>
+
+  <div class="body">
+    <!-- hidden images for drawing on the canvas -->
+    <img id="userImage" src="" style="display:none" alt="User uploaded photo">
+
+    <div class="canvas-area">
+      <canvas id="imgCanvas" class="img-canvas">
+        Canvas Not supported in your browser... Sorry!
+      </canvas>
+    </div>
+
+    <div class="input-area">
+
+      <div class="form-group">
+        <label for="image">Your Photo:</label>
+        <input type="file" id="image" class="form-control" accept=".png,.jpg,.jpeg">
+      </div>
+
+      <div class="form-group">
+        <label for="bottomText">Bottom Text:</label>
+        <input type="text" id="bottomText" class="form-control" placeholder="Bottom text">
+      </div>
+
+      <a class="btn btn-primary download-button" id="downloadPic" href="#" download="profile.png">Download</a>
+
+    </div>
+
+  </div>
+
+  <div class="has-error" style="display: none;"></div>
+
+  <script type="module" src="./src/js/profileUiController.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+/* Adabped by Brian Bird, 5/9/2024 from code provided by Mari Good */
+
+.body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.canvas-area {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.img-canvas {
+  /* Removed border so the canvas doesn't show a square outline */
+}
+.input-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.form-group {
+  width: 90%;
+}
+.download-button {
+  margin-top: 10px;
+}

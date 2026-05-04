@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Adapted by Brian Bird, 5/9/2024 from code provided by Mari Good
+       for CS233JS lab 4 at Lane Community College -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meme Creator</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Meme Creator</a>
+    </div>
+  </nav>
+
+  <div class="body">
+    <!-- this image is not displayed, it is the source for drawing the image on the canvas -->
+    <img id="defaultImage" src="" style="display:none" alt="Default image">
+    <div class="canvas-area">
+      <canvas id="imgCanvas" class="img-canvas">
+        Canvas Not supported in your browser... Sorry!
+      </canvas>
+    </div>
+
+    <div class="input-area">
+
+      <div class="form-group">
+        <label for="image">Source Image:</label>
+        <input type="file" id="image" class="form-control" accept=".png,.jpg,.jpeg">
+      </div>
+
+      <div class="form-group">
+        <label for="topText">Top Text:</label>
+        <input type="text" id="topText" class="form-control" placeholder="Top text">
+      </div>
+      <div class="form-group">
+        <label for="bottomText">Bottom Text:</label>
+        <input type="text" id="bottomText" class="form-control" placeholder="Bottom text">
+      </div>
+
+      <div class="form-group">
+        <label for="filterSelect">Choose a Filter:</label>
+        <select id="filterSelect" class="form-control">
+          <option value="none">None</option>
+          <option value="grayscale">Grayscale</option>
+          <option value="highpass">Highpass</option>
+          <option value="saturation">Saturation</option>
+          <option value="laplacian">Laplacian</option>
+          <option value="mirror">Mirror</option>
+          <option value="thresholding">Thresholding</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="scaleRange">Image Size:</label>
+        <input type="range" id="scaleRange" class="form-range" min="0.5" max="2" step="0.05" value="1">
+      </div>
+
+      <div class="form-group">
+        <label for="rotateRange">Rotation:</label>
+        <input type="range" id="rotateRange" class="form-range" min="-180" max="180" step="1" value="0">
+      </div>
+
+      <div class="form-group">
+        <label for="bgColor">Background Color:</label>
+        <input type="color" id="bgColor" class="form-control form-control-color w-100" value="#000000">
+      </div>
+
+      <a class="btn btn-primary download-button" id="downloadMeme" href="./images/img_whenYourCodeWorks_big.jpg" download="meme.png">Download</a>
+
+    </div>
+
+  </div>
+
+  <div class="has-error" style="display: none;"></div>
+
+  <script type="module" src="./src/js/memeUiController.js"></script>
+</body>
+
+</html>
