@@ -32,14 +32,12 @@ author: Brian Bird
 ## Announcements
 
 - **LCC Job Fair 2026!**  
-  <img src="/Users/birdb/Projects/CS233JS-Repos/CS233JS-CourseMaterials/Images/LCC-JobFair.png" alt="LCC Job Fair 2026 logo" style="zoom:35%;" />    
+  <img src="Images/LCC-JobFair.png" alt="LCC Job Fair 2026 logo" style="zoom:35%;" />    
 
-  The Lane Community College Job Fair will be May 21 from 1 p.m. - 4 p.m. on the 2nd floor of the center building. 
-
-  **Resource:** [More Information](https://out.smore.com/e/q9cks/xd6j18?__$u__) **| Contact:** [Kirsten Rawding. 
+  The Lane Community College Job Fair will be on May 21 from 1 p.m. - 4 p.m. on the 2nd floor of the center building.  [More Information](https://out.smore.com/e/q9cks/xd6j18?__$u__) **| Contact:** [Kirsten Rawding. 
 
 - **Summer and Fall Term Registration**  
-  Registration is now open. These are the classes recommended for (https://lanecc.smartcatalogiq.com/en/current/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas)) majors: 
+  Registration is now open. These are the classes recommended for [Software Devleopment](https://lanecc.smartcatalogiq.com/en/current/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas) majors: 
 
   **Summer**
 
@@ -47,7 +45,7 @@ author: Brian Bird
     - WR 227Z: Technical Writing
     - WR 121Z: Composition 1 
     - MTH 095: Intermediate Algebra 
-    - Human Relations: [any courses from this list](https://lanecc.smartcatalogiq.com/en/current/2025-26-lcc-catalog/programs-of-study/career-technical-education-requirements/human-relations-requirement/)  
+    - Human Relations: [any courses from this list](https://lanecc.smartcatalogiq.com/en/current/lcc-catalog/programs-of-study/career-technical-education-requirements/human-relations-requirement)  
 
   **Fall**
 
@@ -61,10 +59,11 @@ author: Brian Bird
     - CS 260 Data Structures 1
 
   - General Education
-    - Human Relations: [any courses from this list](https://lanecc.smartcatalogiq.com/en/current/2025-26-lcc-catalog/programs-of-study/career-technical-education-requirements/human-relations-requirement/)
+    - Human Relations
 
+See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for a listing of the terms courses required for the AAS in Software Development are normally offered.  
 
-See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?usp=sharing) for a listing of the terms courses required for the AAS in Software Development are normally offered.  ***Note: this is the 2025-26 version. The 2026-27 version will have some differences and is not available yet.***
+***Note: All catalog links have been updated to point to the  2026-2027 catalog***
 
 
 
