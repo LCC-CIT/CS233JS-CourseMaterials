@@ -16,14 +16,14 @@ author: Brian Bird
 
 
 
-| Topics by Week                                        |                                                     |
-| ----------------------------------------------------- | --------------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review   | <mark>6. HTML5 canvas</mark>                        |
-| 2. More bootstrap and JS review                       | 7. Asynchronous  coding                             |
-| 3.  ES6, classes and Git                              | 8. Making API calls, graphs and charts, Google maps |
-| 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. | 9. Term project                                     |
-| 5. Term Project Intro<br />Midterm quiz               | 10. Review                                          |
-| 11. Final quiz                                        |                                                     |
+| Topics by Week                                        |                                               |
+| ----------------------------------------------------- | --------------------------------------------- |
+| 1. Intro to Course, Bootstrap and JavaScript Review   | <mark>6. HTML5 canvas</mark>                  |
+| 2. More bootstrap and JS review                       | 7. Asynchronous programming, calling web APIs |
+| 3.  ES6, classes and Git                              | 8. Unit testing, debugging techniques         |
+| 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. | 9. Functional programming                     |
+| 5. Project Design<br />Midterm quiz                   | 10. Term Project Completion. <br />Review     |
+| 11. Final quiz                                        |                                               |
 
 <h2>Contents</h2>
 
@@ -63,7 +63,7 @@ author: Brian Bird
 
 See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for a listing of the terms courses required for the AAS in Software Development are normally offered.  
 
-***Note: All catalog links have been updated to point to the  2026-2027 catalog***
+***Note: All catalog links have been updated to point to the 2026-2027 catalog***
 
 
 
@@ -75,6 +75,18 @@ See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1
 - To introduce you to the canvas object and to the API for working with the canvas in JavaScript.
 - Continue to develop your proficiency in implementing, testing and debugging client-side web-based applications written in JavaScript.
 
+### Due dates
 
+- Wednesday: 
+  - Reading quiz 4.
+- Friday: 
+  - lab 5 beta version.  
+    Add your lab partner to your repository and let them know in your team channel on Discord.
+
+- Saturday
+  - Lab 5 code review.
+- Sunday:
+  - Lab 5 production version.
+  - 
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript week 6 Overview by [Brian Bird](https://profbird.dev), written winter 2025, revised spring <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

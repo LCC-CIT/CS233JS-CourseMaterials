@@ -16,9 +16,9 @@ author: Brian Bird
 
 | Topics by Week                                               |                                           |
 | ------------------------------------------------------------ | ----------------------------------------- |
-| 1. Intro to Course and JavaScript Review                     | 6. Asynchronous Programming               |
-| 2. Key ES6 Features                                          | 7. Unit testing, debugging techniques     |
-| 3. ES6 Classes, Object Oriented Programming and Git          | 8. HTML5 Canvas                           |
+| 1. Intro to Course and JavaScript Review                     | 6. HTML5 Canvas                           |
+| 2. Key ES6 Features                                          | 7. Asynchronous Programming               |
+| 3. ES6 Classes, Object Oriented Programming and Git          | 8. Unit testing, debugging techniques     |
 | <mark>4. JS Dev Tools: Node, NPM, Vite & LocalStorage</mark> | 9. Functional Programming                 |
 | 5. Review and Midterm Quiz. <br />Project Design             | 10. Term Project Completion. <br />Review |
 | 11. Final Quiz                                               |                                           |
@@ -64,7 +64,7 @@ author: Brian Bird
 - Saturday
   - Lab 4 code review.
 - Sunday:
-  - Lab 3 production version.
+  - Lab 4 production version.
 
 ## Midterm quiz next week
 
