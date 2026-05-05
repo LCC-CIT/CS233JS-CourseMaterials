@@ -79,14 +79,17 @@ See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1
 
 - Wednesday: 
   - Reading quiz 4.
+  
 - Friday: 
   - lab 5 beta version.  
     Add your lab partner to your repository and let them know in your team channel on Discord.
 
 - Saturday
   - Lab 5 code review.
+  
 - Sunday:
   - Lab 5 production version.
-  - 
+  
+  
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript week 6 Overview by [Brian Bird](https://profbird.dev), written winter 2025, revised spring <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
