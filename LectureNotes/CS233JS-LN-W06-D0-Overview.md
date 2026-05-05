@@ -10,7 +10,7 @@ author: Brian Bird
 
 <h1>Week 6 Overview for Spring 2026</h1>
 
-<h2>May 5 through May 11</h2>
+<h2>May 4 through May 11</h2>
 
 **CS233JS Intermediate Programming: JavaScript**
 
