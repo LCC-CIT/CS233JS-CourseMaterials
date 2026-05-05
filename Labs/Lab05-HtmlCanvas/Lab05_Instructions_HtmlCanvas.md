@@ -33,14 +33,13 @@ Your instructor has provided a completed  web app  that demonstrates how to use 
 - Run the app, experiment with it and see what it does.
 - Look at the source code. For each file read the high-level comments to see what the structure of that module is.
   - Start with the .html page and look to see what it loads and where the `<canvas>` element is.
-  - Look at the `MemeUiController.js` file. Note that this is the first module to be loaded and it manages interaction with the DOM (with the exception of canvas API calls).
-  - Look at the `memeLogicServices.js` file. Note that this contains a class that does all the logical processing as well as operations that use the canvas API
-  - 
-- 
+  - Look at the *MemeUiController.js file*. Note that this is the first module to be loaded and it manages interaction with the DOM (with the exception of canvas API calls).
+  - Look at the *memeLogicServices.js* file. Note that this contains a class that does all the logical processing as well as operations that use the canvas API.
+  - Look at the modules in the *classes* folder to see how some of the individual features have been implemented in classes.
 
 ### Complete Your App
 
-Your starter code is fully functional and has no // TODO comments. You will be adding features rather than completing incomplete code. The features you add depend on the version of the lab you are assigned to do.
+Your starter code is fully functional and has no // TODO comments. You will be adding features rather than finishing incomplete code. The features you add depend on the version of the lab you are assigned to do.
 
 
 #### Version A:
