@@ -78,7 +78,7 @@ See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1
 ### Due dates
 
 - Wednesday: 
-  - Reading quiz 4.
+  - Reading quiz 5.
   
 - Friday: 
   - lab 5 beta version.  
