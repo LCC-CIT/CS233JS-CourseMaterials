@@ -10,7 +10,7 @@
 The objectives of this lab are to:
 
 1. Get more  practice with JS dev tools like Node, NPM and Vite.
-1. Get more experience using a node package (`node-pixels`)
+1. Get more experience using a node package (`lena.js`)
 1. Get more practicce writing code that uses local storage.
 1. Get experience programming with the HTML5 Canvas.  
 
@@ -47,7 +47,7 @@ Your starter code is fully functional and has no // TODO comments. You will be a
 Add these features:
 
 - Automatic storage and retrieval of profiles from local storage.
-- Photo filters like Grayscale, Sepia, and Sharpening to enhance your image. Use the [`node-pixels`](https://www.npmjs.com/package/node-pixels) package. On your web page, provide the filters you want in a drop-down list.
+- Photo filters like Grayscale, Sepia, and Sharpening to enhance your image. Use the [`lena.js`](https://www.fellipe.com/demos/lena-js/) package. On your web page, provide the filters you want in a drop-down list.
 - Circular profile frame, with image or background outside the frame clipped.
 - Controls to change background and border color.
 - Option to add an outline to the text and choose it's color.
@@ -58,7 +58,7 @@ Add these features:
 Add these features:
 
 - Automatic storage and retrieval of profiles from local storage.
-- Photo filters like Grayscale, Sepia, and Sharpening to enhance your image. Use the [`node-pixels`](https://www.npmjs.com/package/node-pixels) package. On your web page, provide the filters you want in a drop-down list.
+- Photo filters like Grayscale, Sepia, and Sharpening to enhance your image. Use the [`lena.js`](https://www.fellipe.com/demos/lena-js/) package. On your web page, provide the filters you want in a drop-down list.
 - Controls to change font size and color.
 - Option to add an outline to the text and choose it's color.
 - Oval profile frame, with image or background outside the frame clipped.
@@ -69,7 +69,7 @@ Add these features:
 Add these features:
 
 - Automatic storage and retrieval of profiles from local storage.
-- Photo filters like Grayscale, Sepia, and Sharpening to enhance your image. Use the [`node-pixels`](https://www.npmjs.com/package/node-pixels) package. On your web page, provide the filters you want in a drop-down list.
+- Photo filters like Grayscale, Sepia, and Sharpening to enhance your image. Use the [`lena.js`](https://www.fellipe.com/demos/lena-js/) package. On your web page, provide the filters you want in a drop-down list.
 - Rectangular profile frame with rounded corners and image or background outside the frame clipped.
 - Controls to change font family and style.
 - Option to add an outline to the text and choose it's color.
