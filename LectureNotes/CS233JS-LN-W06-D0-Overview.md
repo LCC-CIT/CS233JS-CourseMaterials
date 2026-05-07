@@ -12,18 +12,16 @@ author: Brian Bird
 
 <h2>May 4 through May 11</h2>
 
-**CS233JS Intermediate Programming: JavaScript**
 
 
-
-| Topics by Week                                        |                                               |
-| ----------------------------------------------------- | --------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review   | <mark>6. HTML5 canvas</mark>                  |
-| 2. More bootstrap and JS review                       | 7. Asynchronous programming, calling web APIs |
-| 3.  ES6, classes and Git                              | 8. Unit testing, debugging techniques         |
-| 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. | 9. Functional programming                     |
-| 5. Project Design<br />Midterm quiz                   | 10. Term Project Completion. <br />Review     |
-| 11. Final quiz                                        |                                               |
+| Topics by Week                                      |                                               |
+| --------------------------------------------------- | --------------------------------------------- |
+| 1. Intro to Course, Bootstrap and JavaScript Review | <mark>6. HTML5 canvas</mark>                  |
+| 2. Key ES6 Features                                 | 7. Asynchronous programming, calling web APIs |
+| 3. ES6 classes, OOP and Git                         | 8. Unit testing, debugging techniques         |
+| 4. JS Dev Tools: Node.js, NPM, Vite, LocalStorage.  | 9. Functional programming                     |
+| 5. Project Design<br />Midterm quiz                 | 10. Term Project Completion. <br />Review     |
+| 11. Final quiz                                      |                                               |
 
 <h2>Contents</h2>
 
@@ -63,7 +61,10 @@ author: Brian Bird
 
 See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for a listing of the terms courses required for the AAS in Software Development are normally offered.  
 
-***Note: All catalog links have been updated to point to the 2026-2027 catalog***
+**Notes: **
+
+- ***All catalog links have been updated to point to the 2026-2027 catalog***
+- ***There is currently (as of 5/6/26) a problem with the registration system preventing registration in some of the CIT classes. I will notify everyone when this is fixed***
 
 
 
@@ -77,17 +78,21 @@ See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1
 
 ### Due dates
 
+***5/6/26 update, lab 5 is being delayed by a week.***
+
+***This week is a good time to make some significant progress on your term project***
+
 - Wednesday: 
   - Reading quiz 5.
   
-- Friday: 
+- Friday, 5/15: 
   - lab 5 beta version.  
     Add your lab partner to your repository and let them know in your team channel on Discord.
 
-- Saturday
+- Saturday, 5/16
   - Lab 5 code review.
   
-- Sunday:
+- Sunday, 5/17:
   - Lab 5 production version.
   
   

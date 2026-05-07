@@ -14,14 +14,14 @@ author: Brian Bird
 
 
 
-| Topics by Week                                        |                                               |
-| ----------------------------------------------------- | --------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review   | 6. HTML5 canvas                               |
-| 2. More bootstrap and JS review                       | 7. Asynchronous programming, calling web APIs |
-| 3.  ES6, classes and Git                              | 8. Unit testing, debugging techniques         |
-| 4. JS Dev Tools: Node.js, NPM, Webpack, LocalStorage. | 9. Functional programming                     |
-| <mark>5. Project Design<br />Midterm quiz</mark>      | 10. Term Project Completion. <br />Review     |
-| 11. Final quiz                                        |                                               |
+| Topics by Week                                     |                                               |
+| -------------------------------------------------- | --------------------------------------------- |
+| 1. Intro to Course and JavaScript Review           | 6. HTML5 canvas                               |
+| 2. Key ES6 Features                                | 7. Asynchronous programming, calling web APIs |
+| 3. ES6 classes, OOP and Git                        | 8. Unit testing, debugging techniques         |
+| 4. JS Dev Tools: Node.js, NPM, Vite, LocalStorage. | 9. Functional programming                     |
+| <mark>5. Project Design<br />Midterm quiz</mark>   | 10. Term Project Completion. <br />Review     |
+| 11. Final quiz                                     |                                               |
 
 <h2>Contents</h2>
 
