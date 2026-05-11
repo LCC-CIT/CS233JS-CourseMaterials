@@ -29,6 +29,18 @@ function handleImageChange(event) {
     }
 }
 
+/** Re-renders on every keystroke so the preview tracks the input live. */
+function handleTopTextChange(event) {
+    canvasModel.topText = event.target.value;
+    canvasModel.render(canvasElement);
+}
+
+/** Re-renders on every keystroke so the preview tracks the input live. */
+function handleBottomTextChange(event) {
+    canvasModel.bottomText = event.target.value;
+    canvasModel.render(canvasElement);
+}
+
 /**
  * Refreshes the anchor's href with a PNG of the current canvas just before the
  * browser's default click action fires; the anchor's `download` attribute then
@@ -45,6 +57,8 @@ function handleDownloadClick(event) {
 /** Registers all event listeners. */
 function setupEventListeners() {
     document.getElementById('image').addEventListener('change', handleImageChange);
+    document.getElementById('topText').addEventListener('input', handleTopTextChange);
+    document.getElementById('bottomText').addEventListener('input', handleBottomTextChange);
     document.getElementById('downloadPic').addEventListener('click', handleDownloadClick);
 }
 
