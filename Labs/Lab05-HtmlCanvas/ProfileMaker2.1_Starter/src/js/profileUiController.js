@@ -85,7 +85,7 @@ function sizeCanvas() {
  * and renders the default image so the canvas is never empty.
  */
 export function init() {
-    const DEFAULT_IMAGE_FILE = "./images/img_whenYourCodeWorks_big.jpg";
+    const DEFAULT_IMAGE_FILE = "./images/defaultProfileImage.jpg";
 
     setupEventListeners();
     sizeCanvas();
