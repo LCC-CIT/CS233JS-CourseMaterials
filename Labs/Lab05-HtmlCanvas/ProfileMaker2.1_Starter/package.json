@@ -1,0 +1,18 @@
+{
+  "name": "profilemaker-2.1",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "lena.js": "^0.9.0"
+  }
+}
