@@ -137,8 +137,14 @@ canvas.addEventListener('mousedown', (event) => {
 
 
 
+## References
+
+[Canvas JavaScript API Reference](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)&mdash;MDN
+
+[CanvasRenderingContext2D: filter property](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/filter)&mdash;MDN
+
+
+
 ***Note: This document was drafted using Gemini CLI and Gemini 3.0***
-
-
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2026, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).

@@ -51,7 +51,7 @@ The code below gets a reference to a HTML canvas element on a web page, then cre
 
 
 
-###Computer graphics coordinate system
+### Computer graphics coordinate system
 
 In two dimensional computer graphics, a cartesian coordinate system is used in which the *x-axis* starts at the left and extends to the right and the *y-axis* starts at the top and extends to the bottom.
 
@@ -59,7 +59,7 @@ In two dimensional computer graphics, a cartesian coordinate system is used in w
 
 *Image from [Program Arcade Games with Python and PyGame](http://programarcadegames.com/index.php?chapter=introduction_to_graphics)*
 
-#### 
+
 
 ### Some Context Object Properties and Methods
 
