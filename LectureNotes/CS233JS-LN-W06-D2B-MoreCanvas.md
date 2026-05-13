@@ -22,49 +22,83 @@ The `filter` property of the canvas context allows you to apply graphical effect
 
 **Example:**
 ```javascript
-const context = canvas.getContext('2d');
-context.filter = 'grayscale(100%) brightness(1.2)';
-context.drawImage(image, 0, 0);
+const ctx = canvas.getContext('2d');
+ctx.filter = 'grayscale(100%) brightness(1.2)';
+ctx.drawImage(image, 0, 0);
 ```
 
 ## Paths and Clipping
 
 ### Clipping Shapes
 
-Clipping allows you to define a region of the canvas where drawing is "allowed." Anything drawn outside the clipped region will be hidden (clipped). You define a path and then call `context.clip()`.
+Clipping allows you to define a region of the canvas where drawing is "allowed." Anything drawn outside the clipped region will be hidden (clipped). You define a path and then call `ctx.clip()`.
 
 #### Circular Clipping
 Use the `arc` method to create a circle path, then clip.
 
 **Example:**
 ```javascript
-context.beginPath();
-context.arc(100, 100, 50, 0, Math.PI * 2); // x, y, radius, startAngle, endAngle
-context.clip();
-context.drawImage(image, 50, 50, 100, 100); // Image will appear inside the circle
+ctx.beginPath();
+ctx.arc(100, 100, 50, 0, Math.PI * 2); 
+ctx.clip();
+ctx.drawImage(image, 50, 50, 100, 100); 
 ```
+
+**Parameters for `arc`:**
+
+`arc(x, y, radius, startAngle, endAngle)`
+
+- `x, y`: The x and y coordinates of the arc's center.
+- `radius`: The distance from the center to any point on the arc.
+- `startAngle`: The angle at which the arc starts, measured clockwise from the positive x-axis (in radians).
+- `endAngle`: The angle at which the arc ends (in radians).
+
+**Parameters for `drawImage`:**
+
+`drawImage(image, x, y, width, height)`
+
+- `image`: The element (image, video, or another canvas) to draw.
+- `x, y`: The x and y coordinates in the destination canvas to place the top left of the image.
+- `width, height`: The width and height to draw the image in the destination canvas (scales the image).
 
 #### Oval (Ellipse) Clipping
 Use the `ellipse` method to create an oval path.
 
 **Example:**
 ```javascript
-context.beginPath();
-context.ellipse(100, 100, 80, 50, 0, 0, Math.PI * 2); // x, y, radiusX, radiusY, rotation...
-context.clip();
-context.drawImage(image, 20, 50, 160, 100);
+ctx.beginPath();
+ctx.ellipse(100, 100, 80, 50, 0, 0, Math.PI * 2);
+ctx.clip();
 ```
+
+**Parameters for `ellipse`:**
+
+`ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle)`
+
+- `x, y`: The  coordinates of the ellipse's center.
+- `radiusX`: The ellipse's major-axis radius (width).
+- `radiusY`: The ellipse's minor-axis radius (height).
+- `rotation`: The rotation of the ellipse, expressed in radians.
+- `startAngle`: The angle at which the ellipse starts (in radians).
+- `endAngle`: The angle at which the ellipse ends (in radians).
 
 #### Rounded Rectangles
 Use the `roundRect` method to create a rectangle with rounded corners.
 
 **Example:**
 ```javascript
-context.beginPath();
-context.roundRect(10, 10, 180, 130, 20); // x, y, width, height, radius
-context.clip();
-context.drawImage(image, 10, 10, 180, 130);
+ctx.beginPath();
+ctx.roundRect(10, 10, 180, 130, 20); 
+ctx.clip();
 ```
+
+**Parameters for `roundRect`:**
+
+`roundRect(x, y, width, height, radii)`
+
+- `x, y`: The coordinates of the rectangle's upper-left corner.
+- `width, height`: The width and height of the rectangle.
+- `radii`: A number or list of numbers specifying the radii of the circular arcs used for the corners.
 
 ## Transformations
 
@@ -77,18 +111,28 @@ Moves the origin (0,0) of the canvas to a new location.
 
 **Example:**
 ```javascript
-context.translate(offsetX, offsetY); // Move the "paper" under the pen
-context.drawImage(image, 0, 0);
+ctx.translate(offsetX, offsetY); 
 ```
+
+**Parameters for `translate`:**
+
+- `x`: Distance to move in the horizontal direction.
+- `y`: Distance to move in the vertical direction.
 
 #### `scale` (Zooming)
 Changes the size of the coordinate system.
 
 **Example:**
 ```javascript
-context.scale(2.0, 2.0); // Everything drawn after this will be twice as big
-context.drawImage(image, 0, 0);
+ctx.scale(scaleX, scaleY); 
 ```
+
+**Parameters for `scale`:**
+
+The scaling factors below are positive float numbers.
+
+- `scaleX`: Scaling factor in the horizontal direction.
+- `scaleY`: Scaling factor in the vertical direction.
 
 ## Interactivity
 
@@ -98,22 +142,18 @@ To make objects "interactive" (like stickers you can drag), you need to keep tra
 
 **Simple Logic Example:**
 ```javascript
-let stickerX = 100;
-let stickerY = 100;
-
 function draw() {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(stickerImage, stickerX, stickerY);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(stickerImage, stickerX, stickerY);
 }
-
-canvas.addEventListener('mousemove', (event) => {
-    if (isDragging) {
-        stickerX = event.offsetX;
-        stickerY = event.offsetY;
-        draw();
-    }
-});
 ```
+
+**Parameters for `clearRect`:**
+
+`clearRect(x, y, width, height)`
+
+- `x, y`: The coordinates of the top-left corner of the rectangle to clear.
+- `width, height`: The width and height of the rectangle to clear.
 
 ### Freestyle Drawing
 
@@ -121,19 +161,22 @@ Freestyle drawing uses mouse events to create a series of small line segments.
 
 **Example:**
 ```javascript
-canvas.addEventListener('mousemove', (event) => {
-    if (isDrawing) {
-        context.lineTo(event.offsetX, event.offsetY);
-        context.stroke();
-    }
-});
+// Inside a mousemove event handler:
+ctx.lineTo(event.offsetX, event.offsetY);
+ctx.stroke();
 
-canvas.addEventListener('mousedown', (event) => {
-    isDrawing = true;
-    context.beginPath();
-    context.moveTo(event.offsetX, event.offsetY);
-});
+// Inside a mousedown event handler:
+ctx.beginPath();
+ctx.moveTo(event.offsetX, event.offsetY);
 ```
+
+**Parameters for `lineTo`:**
+- `x`: The x-coordinate of the end of the line.
+- `y`: The y-coordinate of the end of the line.
+
+**Parameters for `moveTo`:**
+- `x`: The x-coordinate of the point to move to.
+- `y`: The y-coordinate of the point to move to.
 
 
 
@@ -141,7 +184,9 @@ canvas.addEventListener('mousedown', (event) => {
 
 [Canvas JavaScript API Reference](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)&mdash;MDN
 
-[CanvasRenderingContext2D: filter property](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/filter)&mdash;MDN
+[Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)&mdash;MDN
+
+[Canvas 2D Rendering Context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D)&mdash;MDN
 
 
 

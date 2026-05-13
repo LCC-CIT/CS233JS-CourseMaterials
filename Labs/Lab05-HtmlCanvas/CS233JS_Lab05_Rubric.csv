@@ -1,0 +1,13 @@
+Requirements,Possible Points,Score,Comments
+Code review (production column completed),2,,
+GitHub repository setup (.gitignore README),3,,
+Universal Features: Local Storage (save/load profile),5,,
+Universal Features: Photo Filters (4+ options in dropdown),5,,
+Universal Features: NPM Package usage (e.g. lena.js confetti),5,,
+Version Features: Requirement 1 (Clipping shape),5,,
+Version Features: Requirement 2 (Color/Style controls),5,,
+Version Features: Requirement 3 (Text outline),5,,
+Version Features: Requirement 4 (Interactivity/Transformations),5,,
+Publishing: Pushed to GitHub and published on CIT server,5,,
+Style and Best Practices,5,,
+Total,50,0,
