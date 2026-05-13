@@ -69,7 +69,7 @@ Add these features:
 - Controls to change font size and color.
 - Option to add an outline to the text and choose it's color.
 - Oval profile frame, with image or background outside the frame clipped.
-- Interactive Stickers that you can place and drag anywhere on your picture.
+- Stickers (little images) that you can place and drag anywhere on your picture.
 
 #### Version C: 
 
