@@ -10,7 +10,7 @@ import CanvasModel from './canvasModel.js';
 const hiddenImageElement = document.getElementById('hiddenImage');
 const canvasElement = document.getElementById('canvas');
 
-export const canvasModel = new CanvasModel();
+const canvasModel = new CanvasModel();
 
 // ==========================================
 // EVENT HANDLERS
@@ -130,7 +130,7 @@ export function init() {
 
     const saved = CanvasModel.loadFromLocalStorage();
     if (saved?.imageUrl) {
-        Object.assign(canvasModel, saved);
+        Object.assign(canvasModel, saved); // Copy saved proerties into canvasModel
         document.getElementById('topText').value = saved.topText;
         document.getElementById('bottomText').value = saved.bottomText;
         document.getElementById('filterSelect').value = saved.filter;
@@ -139,7 +139,7 @@ export function init() {
         document.getElementById('bgColor').value = saved.bgColor;
         setImageElement(saved.imageUrl);
     } else {
-        // Pull HTML defaults into the model so the first render matches what the form shows.
+        // Put HTML values into the model so the first render matches what the form shows.
         canvasModel.filter = document.getElementById('filterSelect').value;
         canvasModel.scale = parseFloat(document.getElementById('scaleRange').value);
         canvasModel.rotate = parseFloat(document.getElementById('rotateRange').value);
