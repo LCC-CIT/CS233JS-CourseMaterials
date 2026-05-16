@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meme Creator</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Hidden image element used as the source for canvas drawing -->
+      <img id="hiddenImage" src="" style="display:none" alt="Hidden image">
+
+      <div class="col-md-8 d-flex align-items-center justify-content-center p-3">
+        <canvas id="canvas">
+          <!--- Show this message if <canvas> is not recognized -->
+          Canvas not supported in your browser.
+        </canvas>
+      </div>
+
+      <div class="col-md-4 d-flex flex-column align-items-center justify-content-center p-3">
+
+        <div class="mb-3 w-75">
+          <label for="image" class="form-label">Source Image:</label>
+          <input type="file" id="image" class="form-control" accept=".png,.jpg,.jpeg">
+        </div>
+
+        <div class="mb-3 w-75">
+          <label for="topText" class="form-label">Top Text:</label>
+          <input type="text" id="topText" class="form-control" placeholder="Top text">
+        </div>
+
+        <div class="mb-3 w-75">
+          <label for="bottomText" class="form-label">Bottom Text:</label>
+          <input type="text" id="bottomText" class="form-control" placeholder="Bottom text">
+        </div>
+
+
+
+        <a class="btn btn-primary mt-2" id="downloadMeme" href="#" download="meme.jpg">Download</a>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>

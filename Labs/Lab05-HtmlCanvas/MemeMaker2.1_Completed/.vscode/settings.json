@@ -1,0 +1,7 @@
+{
+  "workbench.externalBrowser": "chrome",
+  "workbench.externalUriOpeners": {
+    "http://*": "default",
+    "https://*": "default"
+  }
+}
