@@ -23,7 +23,8 @@ export const canvasModel = new CanvasModel();
 function handleImageChange(event) {
     const file = event.target.files[0];
     if (file) {
-        canvasModel.imageUrl = URL.createObjectURL(event.target.files[0]);
+        // Get just the URL out of the dataURL blob in file
+        canvasModel.imageUrl = URL.createObjectURL(file);
         canvasModel.storeInLocalStorage();
         const reader = new FileReader();
         // setImageElement will be called after the file has been read
@@ -144,5 +145,6 @@ export function init() {
         canvasModel.rotate = parseFloat(document.getElementById('rotateRange').value);
         canvasModel.bgColor = document.getElementById('bgColor').value;
         setImageElement(DEFAULT_IMAGE_FILE);
+        canvasModel.imageUrl = DEFAULT_IMAGE_FILE;
     }
 }

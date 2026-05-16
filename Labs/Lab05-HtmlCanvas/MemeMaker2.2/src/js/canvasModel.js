@@ -14,18 +14,25 @@ export default class CanvasModel {
     constructor() {
         /** @type {HTMLImageElement|null} The image to draw on the canvas. */
         this.image = null;
+
         /** @type {string|null} URL or data URL of the image, used for persistence. */
         this.imageUrl = null;
+
         /** @type {string} */
         this.topText = '';
+
         /** @type {string} */
         this.bottomText = '';
+
         /** @type {string} Active filter name (e.g. 'none', 'grayscale'). */
         this.filter = 'none';
+
         /** @type {number} Scale multiplier (1 = original size). */
         this.scale = 1;
+
         /** @type {number} Rotation in degrees. */
         this.rotate = 0;
+        
         /** @type {string} CSS hex color string for the background. */
         this.bgColor = '#ffffff';
     }
