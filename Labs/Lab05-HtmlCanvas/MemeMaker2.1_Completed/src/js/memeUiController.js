@@ -32,12 +32,14 @@ function handleImageChange(event) {
 /** Re-renders on every keystroke so the preview tracks the input live. */
 function handleTopTextChange(event) {
     canvasModel.topText = event.target.value;
+    canvasModel.storeInLocalStorage();
     canvasModel.render(canvasElement);
 }
 
 /** Re-renders on every keystroke so the preview tracks the input live. */
 function handleBottomTextChange(event) {
     canvasModel.bottomText = event.target.value;
+    canvasModel.storeInLocalStorage();
     canvasModel.render(canvasElement);
 }
 
@@ -70,6 +72,8 @@ function setupEventListeners() {
  */
 function setImageElement(url) {
     hiddenImageElement.src = url;
+    canvasModel.imageUrl = url;
+    canvasModel.storeInLocalStorage();
     canvasModel.image = hiddenImageElement;
     hiddenImageElement.onload = () => {
         canvasModel.render(canvasElement);
@@ -88,8 +92,20 @@ function sizeCanvas() {
  */
 export function init() {
     const DEFAULT_IMAGE_FILE = "./images/img_whenYourCodeWorks_big.jpg";
-    
+
     setupEventListeners();
     sizeCanvas();
-    setImageElement(DEFAULT_IMAGE_FILE);
+
+    const saved = CanvasModel.loadFromLocalStorage();
+    if (saved?.imageUrl) {
+        Object.assign(canvasModel, saved);
+        document.getElementById('topText').value = saved.topText;
+        document.getElementById('bottomText').value = saved.bottomText;
+        setImageElement(saved.imageUrl);
+    }
+    else {
+        setImageElement(DEFAULT_IMAGE_FILE);
+                document.getElementById('topText').value = '';
+        document.getElementById('bottomText').value = '';
+    }
 }

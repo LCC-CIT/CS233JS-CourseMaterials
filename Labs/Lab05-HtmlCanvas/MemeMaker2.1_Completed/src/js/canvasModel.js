@@ -3,6 +3,8 @@
  * Plain data model holding all settings needed to render the canvas.
  */
 
+const STORAGE_KEY = 'mememaker-model';
+
 /**
  * Stores the current state of the canvas rendering parameters and draws itself.
  */
@@ -10,12 +12,34 @@ export default class CanvasModel {
     constructor() {
         /** @type {HTMLImageElement|null} The image to draw on the canvas. */
         this.image = null;
+
+        this.imageUrl = ``;
         
         /** @type {string} */
         this.topText = '';
 
         /** @type {string} */
         this.bottomText = '';
+    }
+
+  /** Persists the model state (excluding the non-serializable image element) to localStorage. */
+    storeInLocalStorage() {
+        const { image, ...serializable } = this;
+        try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(serializable));
+        } catch {
+            // QuotaExceededError: data URL too large — silently skip
+            console.log("Data URL was too big for localStorage");
+        }
+    }
+
+        /**
+     * Returns the previously saved model state, or null if none exists.
+     * @returns {object|null}
+     */
+    static loadFromLocalStorage() {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        return stored ? JSON.parse(stored) : null;
     }
 
     /**
