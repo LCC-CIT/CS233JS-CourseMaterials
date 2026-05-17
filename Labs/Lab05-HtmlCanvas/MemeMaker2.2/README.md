@@ -7,7 +7,7 @@ This project is a CS 233JS reference implementation of a Meme Maker web applicat
 The application is split into three small modules under `src/js/`:
 
 ### `main.js` — Entry Point
-Imports the Bootstrap stylesheet and the controller, then calls `init()`. Because the controller is loaded as an ES module, the DOM is already parsed by the time `init()` runs. In Vite's dev mode it also exposes the controller and the `canvasModel` instance on `window` for console debugging.
+Imports the Bootstrap stylesheet and the controller, then calls `init()`. Because the controller is loaded as an ES module, the DOM is already parsed by the time `init()` runs. In Vite's dev mode it also exposes the controller on `window` for console debugging.
 
 ### `memeUiController.js` — DOM and Event Layer
 This module owns all interaction with the DOM. Its responsibilities include:
@@ -20,6 +20,7 @@ This module owns all interaction with the DOM. Its responsibilities include:
   - `scaleRange` / `rotateRange` — range sliders (`input`); values are parsed to `Number` before being stored on the model.
   - `bgColor` — color picker (`input`).
   - `downloadMeme` — anchor (`click`) → assigns `canvas.toDataURL('image/jpeg')` to the link's `href` so the browser's native `download` attribute saves the file.
+  - `resetMeme` — button (`click`) → clears local storage and reloads the page to reset all defaults.
 - Sizing the canvas to fit the viewport (capped at 500&nbsp;px).
 - Restoring saved state from `localStorage` on startup, or falling back to a default image and the form's initial values.
 
@@ -29,9 +30,11 @@ The `CanvasModel` class is a plain data object that also knows how to draw itsel
 - `topText`, `bottomText`, `filter`, `scale`, `rotate`, `bgColor`.
 
 It exposes:
-- `render(canvasElement)` — clears the canvas, paints the background, applies the scale/rotate transform around the canvas center, draws the image, applies the active Lena.js filter to the pixel data, then layers the meme text on top via the private `#drawText` method.
-- `storeInLocalStorage()` — serializes the model (excluding the non-serializable `image` element) to `localStorage`. Silently skips on quota errors.
-- `static loadFromLocalStorage()` — returns the previously saved plain object, or `null`.
+- `setAll(settings)` — bulk updates model properties without triggering immediate redraws.
+- `render()` — clears the canvas, paints the background, applies the scale/rotate transform around the canvas center, draws the image, applies the active Lena.js filter to the pixel data, then layers the meme text on top via the private `#drawText` method.
+- `loadFromLocalStorage()` — returns the previously saved plain object, or `null`.
+
+It also uses a private `#storeInLocalStorage()` method to serialize the model (excluding the non-serializable `image` element) to `localStorage`.
 
 ## Technical Capabilities
 
