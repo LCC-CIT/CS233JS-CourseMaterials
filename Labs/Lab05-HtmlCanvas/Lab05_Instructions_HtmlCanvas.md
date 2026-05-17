@@ -49,6 +49,7 @@ Everyone will add these features their lab:
   - Use the [`lena.js`](https://www.fellipe.com/demos/lena-js/) NPM package.
   -  Use the [canvas filter feature](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/filter) to add filters.
 - Something that uses a NPM package. If you added the filters using *lena.js*, then this requirement is fulfilled. If not, you can add another package like [canvas-confetti](https://www.npmjs.com/package/canvas-confetti) to put confetti on the page when the user downloads a profile picture.
+- Option to add an outline to the text and choose it's color.
 
 
 
@@ -59,7 +60,6 @@ Add these features:
 
 - Circular profile frame, with image or background outside the frame clipped.
 - Controls to change background and border color.
-- Option to add an outline to the text and choose it's color.
 - Drag and zoom your photo to get the perfect crop and positioning.
 
 #### Version B:
@@ -67,7 +67,6 @@ Add these features:
 Add these features:
 
 - Controls to change font size and color.
-- Option to add an outline to the text and choose it's color.
 - Oval profile frame, with image or background outside the frame clipped.
 - Stickers (little images) that you can place and drag anywhere on your picture.
 
@@ -75,10 +74,9 @@ Add these features:
 
 Add these features:
 
-- Rectangular profile frame with rounded corners and image or background outside the frame clipped.
+- Rectangular profile frame with rounded corners and image outside the frame clipped.
 - Controls to change font family and style.
-- Option to add an outline to the text and choose it's color.
-- Freestyle drawing that lets you sketch directly on your profile picture with a customizable pen.
+- Freestyle drawing that lets you sketch directly on your profile picture with a pen.
 
 
 ## Submission
