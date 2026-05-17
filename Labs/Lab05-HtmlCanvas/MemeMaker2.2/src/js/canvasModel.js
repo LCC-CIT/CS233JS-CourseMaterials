@@ -1,6 +1,7 @@
 /**
  * @file canvasModel.js
- * Plain data model holding all settings needed to render the canvas.
+ * Data model holding all settings and methods needed to render the canvas. */
+ /* Written by Brian Bird spring 2026 with AI assistance.
  */
 
 import * as LenaJS from 'lena.js';
@@ -15,7 +16,7 @@ export default class CanvasModel {
     #image = null;
 
     /** @type {string|null} URL or data URL of the image, used for persistence. */
-    #imageDataUrl = null;
+    #imageUrl = null;
 
     /** @type {string} */
     #topText = '';
@@ -31,9 +32,9 @@ export default class CanvasModel {
 
     /** @type {number} Rotation in degrees. */
     #rotate = 0;
-    
+
     /** @type {string} CSS hex color string for the background. */
-    #bgColor = '#ffffff';
+    #bgColor = '#000000';
 
     /** @type {HTMLCanvasElement} The canvas element to draw on. */
     #canvasElement = null;
@@ -49,17 +50,48 @@ export default class CanvasModel {
     // SETTERS
     // ==========================================
 
+    /**
+     * Bulk updates model properties from a settings object without triggering immediate redraws.
+     * Keys left out (or set to undefined) leave the corresponding field at its current value.
+     * @param {object} settings
+     */
+    setAll(settings) {
+        if (settings.imageUrl !== undefined) {
+            this.#imageUrl = settings.imageUrl;
+        }
+        if (settings.topText !== undefined) {
+            this.#topText = settings.topText;
+        }
+        if (settings.bottomText !== undefined) {
+            this.#bottomText = settings.bottomText;
+        }
+        if (settings.filter !== undefined) {
+            this.#filter = settings.filter;
+        }
+        if (settings.scale !== undefined) {
+            this.#scale = settings.scale;
+        }
+        if (settings.rotate !== undefined) {
+            this.#rotate = settings.rotate;
+        }
+        if (settings.bgColor !== undefined) {
+            this.#bgColor = settings.bgColor;
+        }
+    }
+
     set image(value) {
         this.#image = value;
         if (!value) {
-            this.#imageDataUrl = null;
+            this.#imageUrl = null;
             this.#storeInLocalStorage();
             return;
         }
 
         const resizeImage = () => {
             const canvas = this.#canvasElement;
-            if (!canvas) return;
+            if (!canvas) {
+                return;
+            }
             
             const w = canvas.width;
             const h = canvas.height;
@@ -67,7 +99,7 @@ export default class CanvasModel {
             const ctx = canvas.getContext('2d');
             ctx.clearRect(0, 0, w, h);
             ctx.drawImage(value, 0, 0, w, h);
-            this.#imageDataUrl = canvas.toDataURL('image/jpeg', 0.7);
+            this.#imageUrl = canvas.toDataURL('image/jpeg', 0.7);
             this.#storeInLocalStorage();
             this.render();
         };
@@ -112,7 +144,7 @@ export default class CanvasModel {
     /** Persists the model state (excluding the non-serializable image element) to localStorage. */
     #storeInLocalStorage() {
         const serializable = {
-            imageUrl: this.#imageDataUrl,
+            imageUrl: this.#imageUrl,
             topText: this.#topText,
             bottomText: this.#bottomText,
             filter: this.#filter,
@@ -131,15 +163,7 @@ export default class CanvasModel {
         const stored = localStorage.getItem(STORAGE_KEY);
         if (stored) {
             const parsed = JSON.parse(stored);
-            ({
-                imageUrl: this.#imageDataUrl,
-                topText: this.#topText,
-                bottomText: this.#bottomText,
-                filter: this.#filter,
-                scale: this.#scale,
-                rotate: this.#rotate,
-                bgColor: this.#bgColor
-            } = parsed);
+            this.setAll(parsed);
             return parsed;
         }
         return null;
@@ -149,28 +173,36 @@ export default class CanvasModel {
      * Clears the canvas and redraws the image using the current model state.
      */
     render() {
-        if (!this.#canvasElement) return;
+        if (!this.#canvasElement) {
+            return;
+        }
         const ctx = this.#canvasElement.getContext('2d');
         const { width, height } = this.#canvasElement;
 
-        // Background — visible only when the image is scaled down or rotated away from the edges.
+        ctx.clearRect(0, 0, width, height);
+
+        if (this.#image) {
+            // Scale and rotate around the canvas center so the image stays anchored to the middle.
+            ctx.save();
+            ctx.translate(width / 2, height / 2);
+            ctx.rotate(this.#rotate * Math.PI / 180);
+            ctx.scale(this.#scale, this.#scale);
+            ctx.translate(-width / 2, -height / 2);
+            ctx.drawImage(this.#image, 0, 0, width, height);
+            ctx.restore();
+
+            // Filter runs over the canvas pixel data after the image is drawn.
+            if (this.#filter !== 'none') {
+                const imageData = ctx.getImageData(0, 0, width, height);
+                ctx.putImageData(LenaJS[this.#filter](imageData), 0, 0);
+            }
+        }
+
+        // Draw background behind the image using destination-over
+        ctx.globalCompositeOperation = 'destination-over';
         ctx.fillStyle = this.#bgColor;
         ctx.fillRect(0, 0, width, height);
-
-        // Scale and rotate around the canvas center so the image stays anchored to the middle.
-        ctx.save();
-        ctx.translate(width / 2, height / 2);
-        ctx.rotate(this.#rotate * Math.PI / 180);
-        ctx.scale(this.#scale, this.#scale);
-        ctx.translate(-width / 2, -height / 2);
-        ctx.drawImage(this.#image, 0, 0, width, height);
-        ctx.restore();
-
-        // Filter runs over the canvas pixel data after the image is drawn; text is layered on top after.
-        if (this.#filter !== 'none') {
-            const imageData = ctx.getImageData(0, 0, width, height);
-            ctx.putImageData(LenaJS[this.#filter](imageData), 0, 0);
-        }
+        ctx.globalCompositeOperation = 'source-over'; // restore default
 
         this.#drawText(ctx);
     }
@@ -180,7 +212,9 @@ export default class CanvasModel {
      * @param {CanvasRenderingContext2D} ctx
      */
     #drawText(ctx) {
-        if (!this.#canvasElement) return;
+        if (!this.#canvasElement) {
+            return;
+        }
         const { width, height } = this.#canvasElement;
         const fontSize = Math.floor(width / 10);
         ctx.font = `bold ${fontSize}px Impact, sans-serif`;

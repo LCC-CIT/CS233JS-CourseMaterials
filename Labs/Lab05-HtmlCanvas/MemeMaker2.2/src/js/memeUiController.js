@@ -3,6 +3,8 @@
  * Handles all DOM interaction: element references, event listener registration,
  * and event handlers.
  */
+ /* Adapted by Brian Bird, 5/9/2024 from code provided by Mari Good, 
+ *  Refactored extensively by B. Bird 5/16/26 with AI assistance. */
 
 import CanvasModel from './canvasModel.js';
 
@@ -11,14 +13,23 @@ const imageInputElement = document.getElementById('image');
 const hiddenImageElement = document.getElementById('hiddenImage');
 const canvasElement = document.getElementById('canvas');
 
-// canvasModel only being exported for debugging.
-export const canvasModel = new CanvasModel(canvasElement);
+const DEFAULT_IMAGE_FILE = './images/DevsCelebratingWorkingCode.png';
+const DEFAULT_SETTINGS = {
+    topText: '',
+    bottomText: '',
+    filter: 'none',
+    scale: 1,
+    rotate: 0,
+    bgColor: '#000000'
+};
+
+const canvasModel = new CanvasModel(canvasElement);
 
 // ==========================================
 // EVENT HANDLERS
 // ==========================================
 
-/** Assigns all event handler to events. */
+/** Assigns all event handlers to events. */
 function setupEventListeners() {
     imageInputElement.addEventListener('change', handleImageChange);
     document.getElementById('topText').addEventListener('input', handleTopTextChange);
@@ -30,7 +41,6 @@ function setupEventListeners() {
     document.getElementById('downloadMeme').addEventListener('click', handleDownloadClick);
     document.getElementById('resetMeme').addEventListener('click', handleResetClick);
 }
-
 
 /**
  * Reads the picked file as a base64 data URL (not an object URL) so the image
@@ -47,13 +57,13 @@ function handleImageChange(event) {
     }
 }
 
-/** Re-renders and persists on every keystroke so the preview tracks the input live. */
+/** Re-renders on every keystroke so the preview tracks the input live. */
 function handleTopTextChange(event) {
     canvasModel.topText = event.target.value;
     canvasModel.render();
 }
 
-/** Re-renders and persists on every keystroke so the preview tracks the input live. */
+/** Re-renders on every keystroke so the preview tracks the input live. */
 function handleBottomTextChange(event) {
     canvasModel.bottomText = event.target.value;
     canvasModel.render();
@@ -95,15 +105,6 @@ function handleDownloadClick(event) {
 /** Clears local storage and reloads the page to reset all defaults. */
 function handleResetClick() {
     localStorage.clear();
-
-    // Reset DOM elements so the browser caches the defaults upon reload
-    document.getElementById('topText').value = '';
-    document.getElementById('bottomText').value = '';
-    document.getElementById('filterSelect').value = 'none';
-    document.getElementById('scaleRange').value = '1';
-    document.getElementById('rotateRange').value = '0';
-    document.getElementById('bgColor').value = '#000000';
-
     location.reload();
 }
 
@@ -112,15 +113,13 @@ function handleResetClick() {
 // ==========================================
 
 /**
- * Sets the hidden image element's src, adds it to canvasModel, and renders it in the HTML canvas.
+ * Sets the hidden image element's src and hands it to canvasModel.
+ * The model's image setter takes care of rendering once the image has loaded.
  * @param {string} url - plain URL or data URL (URL + image data as a string)
  */
 function setImageElement(url) {
     hiddenImageElement.src = url;
     canvasModel.image = hiddenImageElement;
-    hiddenImageElement.onload = () => {
-        canvasModel.render();
-    };
 }
 
 /** Sizes the canvas to fit the viewport (capped at 500px). */
@@ -129,33 +128,32 @@ function sizeCanvas() {
     canvasElement.width = Math.min(500, window.innerWidth - 30);
 }
 
+/** Applies object with settings to the UI controls */
+function applySettingsToForm(settings) {
+    document.getElementById('topText').value = settings.topText;
+    document.getElementById('bottomText').value = settings.bottomText;
+    document.getElementById('filterSelect').value = settings.filter;
+    document.getElementById('scaleRange').value = String(settings.scale);
+    document.getElementById('rotateRange').value = String(settings.rotate);
+    document.getElementById('bgColor').value = settings.bgColor;
+}
+
 /**
  * Initializes the application: wires up event listeners, sizes the canvas,
  * restores any saved model state, and renders the first frame.
  */
 export function init() {
-    const DEFAULT_IMAGE_FILE = "./images/DevsCelebratingWorkingCode.png";
-
     setupEventListeners();
     sizeCanvas();
 
     const saved = canvasModel.loadFromLocalStorage();
     if (saved?.imageUrl) {
-        document.getElementById('topText').value = saved.topText;
-        document.getElementById('bottomText').value = saved.bottomText;
-        document.getElementById('filterSelect').value = saved.filter;
-        document.getElementById('scaleRange').value = saved.scale;
-        document.getElementById('rotateRange').value = saved.rotate;
-        document.getElementById('bgColor').value = saved.bgColor;
+        applySettingsToForm(saved);
         setImageElement(saved.imageUrl);
     } else {
-        // Put HTML values into the model so the first render matches what the form shows.
-        canvasModel.filter = document.getElementById('filterSelect').value;
-        canvasModel.scale = parseFloat(document.getElementById('scaleRange').value);
-        canvasModel.rotate = parseFloat(document.getElementById('rotateRange').value);
-        canvasModel.bgColor = document.getElementById('bgColor').value;
+        canvasModel.setAll(DEFAULT_SETTINGS);
+        applySettingsToForm(DEFAULT_SETTINGS);
         setImageElement(DEFAULT_IMAGE_FILE);
         imageInputElement.value = '';
-        canvasModel.imageUrl = DEFAULT_IMAGE_FILE;
     }
 }
