@@ -34,7 +34,7 @@ Look at the MDN Guide: [Fetching Data from the Server](https://developer.mozilla
 
 Experiment with the [Can Store](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/CanStore/) web app running on GitHub.
 
-Look at the code here: [can-script.js]https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/CanStore/can-script.js), in particular the `fetchBlob` function (which has been refactored to use async / await).
+Look at the code here: [can-script.js](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/CanStore/can-script.js), in particular the `fetchBlob` function (which has been refactored to use async / await).
 
 ## JavaScript Promises and the Fetch API
 
@@ -82,6 +82,8 @@ async function fetchBlob(product) {
 ## Reference
 
 [Asynchronous JavaScript](https://www.w3schools.com/JS/js_asynchronous.asp)&mdash;W3 Schools
+
+[Asynchronous JavaScript](https://www.freecodecamp.org/learn/javascript-v9/#lecture-understanding-asynchronous-programming)&mdash;Free Code Camp
 
 [Promises, Async/Await](https://javascript.info/async)&mdash;The Modern JavaScript Tutorial, 2022&ndash;2025. 
 (Some sections are dated earlier than others.)
