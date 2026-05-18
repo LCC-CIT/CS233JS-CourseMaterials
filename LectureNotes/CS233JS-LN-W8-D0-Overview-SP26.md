@@ -1,96 +1,105 @@
 ---
-title: Week 7 Overview
-description: What's happening in week 7
-keywords: Announcements, Due Dates, Help
+title: Week 8 Overview
+description: What's happening in week 8
+keywords: Announcements, Learning objectives, Due Dates
 generator: Typora
 author: Brian Bird
-
 ---
 
 **CS233JS Intermediate Programming: JavaScript**
 
 <h1>Week 8 Overview for Spring 2026</h1>
 
-<h2>May 12 through May 18</h2>
-
-**CS233JS Intermediate Programming: JavaScript**
+<h2>May 18 through May 24</h2>
 
 
 
-| Topics by Week                                      |                                           |
-| --------------------------------------------------- | ----------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review |                                           |
-| 2. Key ES6 Features                                 | <mark>7. HTML5 canvas</mark>              |
-| 3. ES6 classes, OOP and Git                         | 8. Unit testing, debugging techniques     |
-| 4. JS Dev Tools: Node.js, NPM, Vite, LocalStorage.  | 9. Functional programming                 |
-| 5. Project Design<br />Midterm quiz                 | 10. Term Project Completion. <br />Review |
-| 11. Final quiz                                      |                                           |
+| Topics by Week                                      |                                                            |
+| --------------------------------------------------- | ---------------------------------------------------------- |
+| 1. Intro to Course, Bootstrap and JavaScript Review | 6. HTML5 canvas                                            |
+| 2. Key ES6 Features                                 | 7. Starting the term project                               |
+| 3. ES6 classes, OOP and Git                         | <mark>8. Asynchronous programming, calling web APIs</mark> |
+| 4. JS Dev Tools: Node.js, NPM, Vite, LocalStorage.  | 9. Unit testing                                            |
+| 5. Project Design<br />Midterm quiz                 | 10. Term Project Completion. <br />Review                  |
+| 11. Final quiz                                      |                                                            |
 
-<h2>Table of Contents</h2>
+<h2>Contents</h2>
 
 [TOC]
 
 ## Announcements
 
-### This Week's Announcement
+- **LCC Job Fair 2026!**  
+  <img src="Images/LCC-JobFair.png" alt="LCC Job Fair 2026 logo" style="zoom:35%;" />    
 
-- RegBreak CEN 219
-  Tuesday, May 13, 11am - 1pm
-  Wednesday, May 14: 11am - 1pm 
+  The Lane Community College Job Fair will be on May 21 from 1 p.m. - 4 p.m. on the 2nd floor of the center building.  [More Information](https://out.smore.com/e/q9cks/xd6j18?__$u__) **| Contact:** [Kirsten Rawding. 
 
-  Students can get assistance from Achievement Coaches
-  
-  - Free coffee and a KitKat once registered for fall.
-  - Every student who registers by May 31 could win one of twenty $50 prize packages.
-  
-- ### Q and A
+- **Last week to withdraw or change grading options**. This Friday, May 23, is the last day to make schedule changes for this term. This includes dropping a course, withdrawing, or changing grading methods.
 
-- Last week's lab: lab 5&mdash;Meme Creator
+  NOTE: You should consult an [advisor](https://www.lanecc.edu/get-support/academic-support/academic-advising) and/or [financial aid](https://www.lanecc.edu/costs-admission/paying-college/financial-aid) representative before making these kinds of changes, especially withdrawing. These types of changes may have implications for academic progress and/or financial aid awards. This is not always the case, but it's best to be informed.
 
-  - Do you have any questions or code you would like help with?
-  - Any problems or issues with the instructions, code review or submission process?
-  - Don't hesitate to ask for help!
+- **Memorial day** is Monday, May 25, there will be no classes.
 
-  
+- **Summer and Fall Term Registration**  
+  These are the classes recommended for [Software Devleopment](https://lanecc.smartcatalogiq.com/en/current/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas) majors: 
+
+  **Summer**
+
+  - Required general education courses (if you haven't taken some of these yet):
+    - WR 227Z: Technical Writing
+    - WR 121Z: Composition 1 
+    - MTH 095: Intermediate Algebra 
+    - Human Relations: [any courses from this list](https://lanecc.smartcatalogiq.com/en/current/lcc-catalog/programs-of-study/career-technical-education-requirements/human-relations-requirement)  
+  - CS 234N: Advanced Programming with C#
+
+  **Fall**
+
+  - Required core courses:
+    - CS 212: AI Programming 1
+    - CS 295R: Web Development 1: React
+    - CS 206 Co-op Ed: Computer Information Technology Seminar
+
+  - Program elective options: 
+    - CIS 140U or 240U - Unix/Linux
+    - CS 260 Data Structures 1
+
+  - General Education
+    - Human Relations
+
+See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for a listing of the terms courses required for the AAS in Software Development are normally offered.  
+
+- ***All catalog links have been updated to point to the 2026-2027 catalog***
+- ***Registration problems with CS 112, CS 212, and CS 213 have been fixed***
+
+
 
 ## This Week
 
 ### Objectives
 
-- To introduce you to asynchronous communication and the usage of AJAX to combine client-side and server-side processing.
-- To introduce you to ES6 promises.
-- To introduce you to the fetch API.
-- To develop your proficiency in designing, implementing, testing and debugging client-side applications that make AJAX calls in JavaScript.
+- To understand how JavaScript promises work.
+- To be able to write asynchronous code.
+- To use the `fetch` object to call web APIs
+- To continue developing your proficiency in  implementing, testing and debugging JavaScript web applications.
 
-### Changes Since Mari's Videos Were Made
+### Due dates
 
-- This week's lab, lab 6, bookmarker version 2 and a weather app, was lab 5 when Mari made the video.
+- Wednesday, 5/20
+  - Reading quiz 6
 
-  
+- Friday, 5/22: 
+  - Lab 6 beta version.  
+  - Term project UI diagram
 
-## Next Week
+- Saturday, 5/23
+  - Lab 6 code review.
 
-### Start the Term Project
+- Sunday, 5/24:
+  - Lab 6 production version.
 
-Next week, week 8, you will start your term project. But this week you should decide what your project will be. [Read the requirements here](../Labs/TermProject/CS233JS_ProjectRequirements.html).
-
-You will be making submissions at each step of the project, as shown below. I adjusted some of the due dates to space out the submissions better.
-
-Steps 1 through 3 are to prepare you to do the project. Step 4 is where you will do most of the work, you will do this weeks 9 and 10 when there will be no new lab assignments.
-
-| Week   | Project Step                                                 |
-| ------ | ------------------------------------------------------------ |
-| **8**  | Step 1: [Description + UI Sketch](../Labs/TermProject/CS233JS_ProjectInstructions.html#proposal-description--ui-mockup) |
-| **9**  | Step 2: [API Call Research + Documentation](../Labs/TermProject/CS233JS_ProjectInstructions.html#api-call-research--documentation) |
-|        | Step 3: [JavaScript Dev Environment + Static HTML & CSS](../Labs/TermProject/CS233JS_ProjectInstructions.html#dev-environment--html--css) |
-|        | Step 4: [Implementation](../Labs/TermProject/CS233JS_ProjectInstructions.html#production-version)<br />Beta Version |
-| **10** | Code Review                                                  |
-|        | Production Version                                           |
-
-See Moodle for the specific due dates for each project step.
 
 
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials by [Brian Bird](https://profbird.dev), written winter 2025, revised spring <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
