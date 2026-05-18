@@ -6,7 +6,7 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>Updating Web Page Data using AJAX</h1>
+<h1>Getting Data Asynchronously</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
@@ -14,19 +14,19 @@ author: Brian Bird
 
 [TOC]
 
-## Introduction to AJAX
+## Asynchronous Requests
+
+In standard *synchronous* code, the browser executes code line-by-line. If a call is made to request data, the entire browser tab will "freeze" and become unresponsive. This is because the JavaScript engine is busy waiting for the data.
+
+An *asynchronous* request is *Non-blocking:* When you call `fetch()`, the browser starts the HTTP request in the background and immediately moves on to the next line of code. This allows the user to keep interacting with the UI—filling out forms, clicking or scrolling—while the data is being fetched behind the scenes.
+
+###  AJAX
 
 *AJAX (Asynchronous JavaScript and XML)* is a web technique used to update parts of a webpage without requiring a full page reload. It allows code running in a browser to communicate with a server in the background to perform tasks such as updating a single HTML element, fetching data from a web API, or reading a JSON file located at an HTTP address. AJAX enables the creation of fast, dynamic user interfaces that feel more like desktop applications than static documents.
 
 ### Fetch
 
 Modern JavaScript uses the *Fetch API* to implement these asynchronous HTTP requests[^1]. Fetch is a streamlined, Promise-based interface that replaces the older, more complex *XMLHttpRequest (XHR)* object. While Fetch is the current standard, you will often hear developers use "XHR" as a legacy nickname for any background data request[^2]. 
-
-### Asynchronous Requests
-
-In standard *synchronous* code, the browser executes code line-by-line. If a call is made to request data, the entire browser tab will "freeze" and become unresponsive. This is because the JavaScript engine is busy waiting for the data.
-
-An *asynchronous* request is *Non-blocking:* When you call `fetch()`, the browser starts the HTTP request in the background and immediately moves on to the next line of code. This allows the user to keep interacting with the UI—filling out forms, clicking or scrolling—while the data is being fetched behind the scenes.
 
 ## AJAX Demo
 
