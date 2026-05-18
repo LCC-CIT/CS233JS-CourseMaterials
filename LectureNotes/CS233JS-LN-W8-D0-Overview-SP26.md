@@ -32,7 +32,7 @@ author: Brian Bird
 - **LCC Job Fair 2026!**  
   <img src="Images/LCC-JobFair.png" alt="LCC Job Fair 2026 logo" style="zoom:35%;" />    
 
-  The Lane Community College Job Fair will be on May 21 from 1 p.m. - 4 p.m. on the 2nd floor of the center building.  [More Information](https://out.smore.com/e/q9cks/xd6j18?__$u__) **| Contact:** [Kirsten Rawding. 
+  The Lane Community College Job Fair will be on Thursday, May 21, from 1 p.m. - 4 p.m. on the 2nd floor of the center building.  [More Information](https://out.smore.com/e/q9cks/xd6j18?__$u__) **| Contact:** [Kirsten Rawding. 
 
 - **Last week to withdraw or change grading options**. This Friday, May 22, is the last day to make schedule changes for this term. This includes dropping a course, withdrawing, or changing grading methods.
 
