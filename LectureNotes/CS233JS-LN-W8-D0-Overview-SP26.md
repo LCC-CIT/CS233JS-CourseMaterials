@@ -34,7 +34,7 @@ author: Brian Bird
 
   The Lane Community College Job Fair will be on May 21 from 1 p.m. - 4 p.m. on the 2nd floor of the center building.  [More Information](https://out.smore.com/e/q9cks/xd6j18?__$u__) **| Contact:** [Kirsten Rawding. 
 
-- **Last week to withdraw or change grading options**. This Friday, May 23, is the last day to make schedule changes for this term. This includes dropping a course, withdrawing, or changing grading methods.
+- **Last week to withdraw or change grading options**. This Friday, May 22, is the last day to make schedule changes for this term. This includes dropping a course, withdrawing, or changing grading methods.
 
   NOTE: You should consult an [advisor](https://www.lanecc.edu/get-support/academic-support/academic-advising) and/or [financial aid](https://www.lanecc.edu/costs-admission/paying-college/financial-aid) representative before making these kinds of changes, especially withdrawing. These types of changes may have implications for academic progress and/or financial aid awards. This is not always the case, but it's best to be informed.
 
