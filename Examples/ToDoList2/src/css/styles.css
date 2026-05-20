@@ -1,0 +1,39 @@
+.content-area {
+  margin: 30px;
+}
+.input-area {
+  margin: 25px;
+}
+.task-text {
+  display: flex;
+  /* Vertically centering text improves scanability against icon/checkbox columns. */
+  align-items: center;
+  height: 40px;
+}
+.delete-icon-area {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.delete-icon {
+  /* Red communicates destructive actions and lowers accidental clicks. */
+  color: red;
+}
+.complete {
+  /* Strikethrough reinforces completion state beyond checkbox affordance. */
+  text-decoration: line-through;
+}
+.quote-banner {
+  /* Subtle left border visually separates the async quote from the task UI. */
+  border-left: 4px solid #0d6efd;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+.quote-banner .blockquote-footer {
+  margin-top: 0.4rem;
+}
+.how-to-link {
+  font-size: 0.85rem;
+  padding-bottom: 0.4rem;
+}
