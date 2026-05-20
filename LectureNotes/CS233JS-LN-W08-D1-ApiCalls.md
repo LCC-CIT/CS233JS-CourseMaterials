@@ -275,6 +275,6 @@ We'll cover these two tools in detail in the next class.
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) These Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2026</time> with help from Gemini 3.0, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) These Intermediate JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2024, revised in <time>2026</time> with help from Gemini 3.0 and Claude Opus 4.7, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: These are all of the HTTP request methods (the first five are the most commonly used): GET, POST, PUT, DELETE, PATCH, HEAD, CONNECT, OPTIONS, TRACE. For details, read [HTTP Request Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)&mdash;MDN Reference.
