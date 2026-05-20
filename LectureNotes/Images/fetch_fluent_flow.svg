@@ -1,0 +1,186 @@
+<svg viewBox="0 0 1000 1500" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#333"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#e65100"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#c62828"/>
+    </marker>
+    <marker id="arrowGrey" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#777"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#222">fetch() with Fluent Syntax — Execution Flow &amp; Timing</text>
+  <text x="500" y="68" text-anchor="middle" font-size="14" fill="#555">Same flow as the procedural version, but the Promise variables are hidden inside the chain.</text>
+
+  <!-- ====== PHASE 1 (synchronous) ====== -->
+  <rect x="20" y="90" width="960" height="640" fill="#e8f4fd" rx="10" stroke="#90caf9" stroke-width="1"/>
+  <text x="40" y="118" font-size="16" font-weight="bold" fill="#0d47a1">PHASE 1 — Synchronous (the whole chain is parsed and all callbacks are registered, top to bottom)</text>
+  <text x="40" y="138" font-size="12" fill="#1565c0" font-style="italic">Each .then() / .catch() is called on the Promise returned by the previous call — none of the callbacks run yet.</text>
+
+  <!-- Step 1: fetch -->
+  <circle cx="55" cy="175" r="14" fill="#1565c0"/>
+  <text x="55" y="180" text-anchor="middle" font-size="14" font-weight="bold" fill="white">1</text>
+  <rect x="80" y="155" width="450" height="40" fill="white" stroke="#1565c0" stroke-width="1.5" rx="6"/>
+  <text x="95" y="180" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">fetch('...GhandiQuote.txt')</text>
+
+  <line x1="535" y1="175" x2="568" y2="175" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="575" y="165" font-size="12" fill="#0d47a1" font-weight="bold">Returns immediately</text>
+  <text x="575" y="181" font-size="12" fill="#333">Browser starts the HTTP request on a</text>
+  <text x="575" y="197" font-size="12" fill="#333">separate thread. The call evaluates to a</text>
+  <text x="575" y="213" font-size="12" fill="#333">pending Promise — unnamed, but it</text>
+  <text x="575" y="229" font-size="12" fill="#333">becomes the receiver for the next .then().</text>
+
+  <line x1="305" y1="195" x2="305" y2="230" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: first .then -->
+  <circle cx="55" cy="290" r="14" fill="#1565c0"/>
+  <text x="55" y="295" text-anchor="middle" font-size="14" font-weight="bold" fill="white">2</text>
+  <rect x="80" y="240" width="450" height="115" fill="white" stroke="#1565c0" stroke-width="1.5" rx="6"/>
+  <text x="95" y="260" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">  .then(response => {</text>
+  <text x="115" y="278" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">    if (!response.ok) {</text>
+  <text x="135" y="296" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">      throw new Error(…);</text>
+  <text x="115" y="314" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">    }</text>
+  <text x="115" y="332" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">    return response.text();</text>
+  <text x="95" y="350" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">  })</text>
+
+  <line x1="535" y1="298" x2="568" y2="298" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="575" y="275" font-size="12" fill="#0d47a1" font-weight="bold">Registers callback A</text>
+  <text x="575" y="291" font-size="12" fill="#333">Called on the Promise from step 1.</text>
+  <text x="575" y="307" font-size="12" fill="#333">Returns yet another pending Promise.</text>
+  <text x="575" y="323" font-size="12" fill="#333">The callback body does NOT run yet —</text>
+  <text x="575" y="339" font-size="12" fill="#333">it is stored for later invocation when</text>
+  <text x="575" y="355" font-size="12" fill="#333">the fetch resolves.</text>
+
+  <line x1="305" y1="355" x2="305" y2="390" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: second .then -->
+  <circle cx="55" cy="430" r="14" fill="#1565c0"/>
+  <text x="55" y="435" text-anchor="middle" font-size="14" font-weight="bold" fill="white">3</text>
+  <rect x="80" y="395" width="450" height="80" fill="white" stroke="#1565c0" stroke-width="1.5" rx="6"/>
+  <text x="95" y="415" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">  .then(text => {</text>
+  <text x="115" y="433" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">    document.getElementById('quote')</text>
+  <text x="135" y="451" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">      .innerHTML = text;</text>
+  <text x="95" y="469" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">  })</text>
+
+  <line x1="535" y1="430" x2="568" y2="430" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="575" y="415" font-size="12" fill="#0d47a1" font-weight="bold">Registers callback B</text>
+  <text x="575" y="431" font-size="12" fill="#333">Called on the Promise returned by</text>
+  <text x="575" y="447" font-size="12" fill="#333">step 2. Will run when that Promise</text>
+  <text x="575" y="463" font-size="12" fill="#333">resolves with the parsed text.</text>
+
+  <line x1="305" y1="475" x2="305" y2="510" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: catch -->
+  <circle cx="55" cy="545" r="14" fill="#c62828"/>
+  <text x="55" y="550" text-anchor="middle" font-size="14" font-weight="bold" fill="white">4</text>
+  <rect x="80" y="515" width="450" height="80" fill="white" stroke="#c62828" stroke-width="1.5" rx="6"/>
+  <text x="95" y="535" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">  .catch(function () {</text>
+  <text x="115" y="553" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">    console.log('An error occurred');</text>
+  <text x="95" y="571" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">  });</text>
+
+  <line x1="535" y1="550" x2="568" y2="550" stroke="#c62828" stroke-width="1.5"/>
+  <text x="575" y="540" font-size="12" fill="#c62828" font-weight="bold">Registers error handler</text>
+  <text x="575" y="556" font-size="12" fill="#333">Will run if any Promise in the chain</text>
+  <text x="575" y="572" font-size="12" fill="#333">above rejects (network error, !ok, etc.).</text>
+
+  <line x1="305" y1="595" x2="305" y2="632" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- End-of-sync banner -->
+  <rect x="180" y="637" width="640" height="60" fill="#1565c0" rx="6"/>
+  <text x="500" y="662" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Chain finished — control returns to the browser.</text>
+  <text x="500" y="682" text-anchor="middle" font-size="12" fill="#e3f2fd" font-style="italic">All four Promises in this chain exist, all pending. The script does not block; the network request is in flight.</text>
+
+  <!-- ====== TRANSITION ====== -->
+  <text x="500" y="755" text-anchor="middle" font-size="14" fill="#555" font-style="italic">⋯ time passes while the request travels to the server and back ⋯</text>
+
+  <!-- ====== PHASE 2 ====== -->
+  <rect x="20" y="785" width="960" height="600" fill="#fff3e0" rx="10" stroke="#ffb74d" stroke-width="1"/>
+  <text x="40" y="813" font-size="16" font-weight="bold" fill="#e65100">PHASE 2 — Asynchronous (each callback fires when its Promise resolves)</text>
+
+  <!-- Step 5 -->
+  <circle cx="55" cy="865" r="14" fill="#e65100"/>
+  <text x="55" y="870" text-anchor="middle" font-size="14" font-weight="bold" fill="white">5</text>
+  <rect x="80" y="843" width="450" height="50" fill="white" stroke="#e65100" stroke-width="1.5" rx="6"/>
+  <text x="95" y="865" font-size="13" fill="#222" font-weight="bold">Server response arrives → fetch's Promise resolves</text>
+  <text x="95" y="883" font-size="11" fill="#666" font-style="italic">Resolved value is a Response object.</text>
+
+  <line x1="535" y1="868" x2="568" y2="868" stroke="#e65100" stroke-width="1.5"/>
+  <text x="575" y="865" font-size="12" fill="#bf360c" font-weight="bold">Triggers callback A from step 2</text>
+  <text x="575" y="881" font-size="12" fill="#333">Queued on the microtask queue.</text>
+
+  <line x1="305" y1="893" x2="305" y2="928" stroke="#e65100" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 6 -->
+  <circle cx="55" cy="970" r="14" fill="#e65100"/>
+  <text x="55" y="975" text-anchor="middle" font-size="14" font-weight="bold" fill="white">6</text>
+  <rect x="80" y="935" width="450" height="80" fill="white" stroke="#e65100" stroke-width="1.5" rx="6"/>
+  <text x="95" y="956" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">response => {</text>
+  <text x="115" y="974" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">  if (!response.ok) throw …;</text>
+  <text x="115" y="992" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">  return response.text();</text>
+  <text x="95" y="1010" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">}</text>
+
+  <line x1="535" y1="975" x2="568" y2="975" stroke="#e65100" stroke-width="1.5"/>
+  <text x="575" y="955" font-size="12" fill="#bf360c" font-weight="bold">Callback A runs</text>
+  <text x="575" y="971" font-size="12" fill="#333">Checks status. On error, throws —</text>
+  <text x="575" y="987" font-size="12" fill="#333">skips ahead to step 9.</text>
+  <text x="575" y="1007" font-size="12" fill="#333">On success, returns response.text(),</text>
+  <text x="575" y="1023" font-size="12" fill="#333">which is itself a Promise.</text>
+
+  <line x1="305" y1="1015" x2="305" y2="1050" stroke="#e65100" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 7 -->
+  <circle cx="55" cy="1085" r="14" fill="#e65100"/>
+  <text x="55" y="1090" text-anchor="middle" font-size="14" font-weight="bold" fill="white">7</text>
+  <rect x="80" y="1058" width="450" height="55" fill="white" stroke="#e65100" stroke-width="1.5" rx="6"/>
+  <text x="95" y="1080" font-size="13" fill="#222" font-weight="bold">response.text() resolves with a string</text>
+  <text x="95" y="1098" font-size="11" fill="#666" font-style="italic">Body fully received and decoded.</text>
+
+  <line x1="535" y1="1085" x2="568" y2="1085" stroke="#e65100" stroke-width="1.5"/>
+  <text x="575" y="1080" font-size="12" fill="#bf360c" font-weight="bold">Triggers callback B from step 3</text>
+  <text x="575" y="1096" font-size="12" fill="#333">Queued and then run.</text>
+
+  <line x1="305" y1="1113" x2="305" y2="1148" stroke="#e65100" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 8 -->
+  <circle cx="55" cy="1185" r="14" fill="#e65100"/>
+  <text x="55" y="1190" text-anchor="middle" font-size="14" font-weight="bold" fill="white">8</text>
+  <rect x="80" y="1155" width="450" height="65" fill="white" stroke="#e65100" stroke-width="1.5" rx="6"/>
+  <text x="95" y="1176" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">text => {</text>
+  <text x="115" y="1194" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">  document.getElementById('quote')</text>
+  <text x="135" y="1212" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">    .innerHTML = text;  }</text>
+
+  <line x1="535" y1="1188" x2="568" y2="1188" stroke="#e65100" stroke-width="1.5"/>
+  <text x="575" y="1175" font-size="12" fill="#bf360c" font-weight="bold">Callback B runs</text>
+  <text x="575" y="1191" font-size="12" fill="#333">DOM updated; the quote appears on</text>
+  <text x="575" y="1207" font-size="12" fill="#333">the page.</text>
+
+  <!-- Error branch -->
+  <line x1="305" y1="1235" x2="305" y2="1270" stroke="#c62828" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowRed)"/>
+  <text x="320" y="1257" font-size="11" font-style="italic" fill="#c62828">…or, if anything in the chain rejected:</text>
+
+  <!-- Step 9 -->
+  <circle cx="55" cy="1305" r="14" fill="#c62828"/>
+  <text x="55" y="1310" text-anchor="middle" font-size="14" font-weight="bold" fill="white">9</text>
+  <rect x="80" y="1278" width="450" height="60" fill="white" stroke="#c62828" stroke-width="1.5" rx="6"/>
+  <text x="95" y="1300" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">function () {</text>
+  <text x="115" y="1317" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">  console.log('An error occurred');</text>
+  <text x="95" y="1334" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#222">}</text>
+
+  <line x1="535" y1="1308" x2="568" y2="1308" stroke="#c62828" stroke-width="1.5"/>
+  <text x="575" y="1298" font-size="12" fill="#c62828" font-weight="bold">.catch() handler runs</text>
+  <text x="575" y="1314" font-size="12" fill="#333">A single .catch() at the end of the chain</text>
+  <text x="575" y="1330" font-size="12" fill="#333">handles errors from any step above.</text>
+
+  <!-- Footer -->
+  <rect x="40" y="1400" width="920" height="80" fill="#fffde7" stroke="#fbc02d" stroke-width="1" rx="6"/>
+  <text x="500" y="1422" text-anchor="middle" font-size="13" font-weight="bold" fill="#5d4037">Same timing as the procedural version</text>
+  <text x="500" y="1441" text-anchor="middle" font-size="12" fill="#333">Method chaining is purely syntactic sugar. The intermediate Promises still exist — they are just</text>
+  <text x="500" y="1457" text-anchor="middle" font-size="12" fill="#333">the unnamed return values of fetch() and each .then(). Phase 1 still finishes completely</text>
+  <text x="500" y="1473" text-anchor="middle" font-size="12" fill="#333">before any callback in Phase 2 fires.</text>
+</svg>

@@ -129,7 +129,9 @@ responsePromise.catch(function () {
 });
 ```
 
+<img src="Images/fetch_procedural_flow.svg" alt="Execution flow and timing for the procedural fetch syntax" style="zoom:90%;" />
 
+​									Execution flow and timing for the procedural syntax above.
 
 ##### `fetch` Method with Fluent Syntax
 
@@ -150,6 +152,10 @@ fetch('https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/Ghand
  		console.log('An error occurred');
   });
 ```
+
+<img src="Images/fetch_fluent_flow.svg" alt="Execution flow and timing for the fluent fetch syntax" style="zoom:90%;" />
+
+​									Execution flow and timing for the fluent (chained) syntax above.
 
 ##### `fetch` Method with Async/Await
 
@@ -181,9 +187,62 @@ While fluent syntax is a step up from older callback methods, the **async/await*
 fetchQuote();
 ```
 
+<img src="Images/fetch_async_await_flow.svg" alt="Execution flow and timing for the async/await fetch syntax" style="zoom:90%;" />
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Main as Main Thread<br/>(Browser)
+    participant Fn as fetchQuote()<br/>async function
+    participant Net as Network /<br/>Remote Server
+
+    User->>Main: page loads
+    Main->>Fn: fetchQuote()
+    activate Fn
+    Note over Fn: enter try block
+
+    Fn->>Net: fetch(url)<br/>HTTP GET request
+    Note over Fn: await suspends fetchQuote()<br/>main thread stays free
+    deactivate Fn
+    activate Main
+    Note over Main: browser remains<br/>responsive (not blocked)
+    deactivate Main
+
+    Net-->>Fn: HTTP Response<br/>(status + headers)
+    activate Fn
+    Note over Fn: Promise resolves →<br/>fetchQuote() resumes<br/>response object received
+
+    alt response.ok is false
+        Fn->>Fn: throw new Error("HTTP error " + status)
+        Note over Fn: jumps to catch block
+        Fn->>Main: console.log('An error occurred:', error)
+    else response.ok is true
+        Fn->>Fn: await response.text()
+        Note over Fn: await suspends again<br/>while body streams in
+        deactivate Fn
+        activate Main
+        Note over Main: browser remains<br/>responsive (not blocked)
+        deactivate Main
+
+        Fn->>Fn: text fully parsed
+        activate Fn
+        Note over Fn: Promise resolves →<br/>fetchQuote() resumes<br/>text string received
+
+        Fn->>Main: document.getElementById('quote')<br/>.innerHTML = text
+        activate Main
+        Note over Main: DOM updated,<br/>quote displayed on page
+        deactivate Main
+    end
+
+    deactivate Fn
+    Note over Fn: function exits
+```
+
+Execution flow and timing for the async/await syntax above.
+
 #### Example Web Page
 
-This web page has code that makes HTTP requests using both HTML and JavaScript.
+The web page linked below has code that makes HTTP requests using both HTML and JavaScript.
 
 [HTTP Request Demo Page](https://lcc-cit.github.io/CS233JS-CourseMaterials/Examples/XHR_Demo/index.html)
 
