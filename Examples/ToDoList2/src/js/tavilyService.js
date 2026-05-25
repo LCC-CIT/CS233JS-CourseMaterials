@@ -1,14 +1,10 @@
-const TAVILY_API_URL = 'https://api.tavily.com/search';
-const TAVILY_API_KEY = import.meta.env.VITE_TAVILY_API_KEY;
+const TAVILY_API_URL = '/api/tavily/search';
 
 export async function fetchHowToLink(taskDescription) {
   try {
     const response = await fetch(TAVILY_API_URL, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${TAVILY_API_KEY}`,
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         query: `How do I ${taskDescription}`,
         include_answer: 'basic',

@@ -34,12 +34,15 @@ export class TaskController {
   }
 
   handleAddTask = async (taskDescription) => {
+    this.view.clearApiError();
     const index = this.model.tasks.length;
     this.model.addTask(taskDescription);
     const linkData = await fetchHowToLink(taskDescription);
-    // Guard against stale index if tasks were added/deleted while the fetch was in flight.
     if (linkData && this.model.tasks[index]?.description === taskDescription) {
+      // Guard against stale index if tasks were added/deleted while the fetch was in flight.
       this.model.updateTaskLink(index, linkData);
+    } else if (!linkData) {
+      this.view.showApiError('Could not fetch a how-to link for this task. The task was saved.');
     }
   };
 
