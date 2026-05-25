@@ -91,7 +91,7 @@ No beta version or code review are required.
 
 ## Help Links
 
-- Drop-in office hours on [Zoom](Zoom](https://lanecc.zoom.us/j/8982554800) and in person M, W, 12:00 to 1:50; Thursday 11:00 to 11:50 
+- Drop-in office hours on [Zoom](https://lanecc.zoom.us/j/8982554800) and in person M, W, 12:00 to 1:50; Thursday 11:00 to 11:50 
   or email birdb@lanecc.edu to meet at another time.
 - Tutors are available in the [CIT Computer Lab](https://www.lanecc.edu/programs-academics/academic-departments/business-technology-and-trades/computer-information-technology/cit-computer-lab), building 19, room 135, or [online](https://www.lanecc.edu/get-support/academic-support/academic-and-tutoring-services).
 - Class Discord [discussion channel](https://discord.com/channels/1290812758249701396/1324897172981809273). 
