@@ -14,14 +14,14 @@ author: Brian Bird
 
 
 
-| Topics by Week                                      |                                                              |
-| --------------------------------------------------- | ------------------------------------------------------------ |
-| 1. Intro to Course, Bootstrap and JavaScript Review | 6. HTML5 canvas                                              |
-| 2. Key ES6 Features                                 | 7. Starting the term project                                 |
-| 3. ES6 classes, OOP and Git                         | 8. Asynchronous programming, calling web APIs                |
-| 4. JS Dev Tools: Node.js, NPM, Vite, LocalStorage.  | 9. <mark>More on calling web APIs, more term project work</mark> |
-| 5. Project Design<br />Midterm quiz                 | 10. Unit testing, Review                                     |
-| 11. Final quiz                                      | 11. Final Quiz                                               |
+| Topics by Week                                      |                                               |
+| --------------------------------------------------- | --------------------------------------------- |
+| 1. Intro to Course, Bootstrap and JavaScript Review | 6. HTML5 canvas                               |
+| 2. Key ES6 Features                                 | 7. Starting the term project                  |
+| 3. ES6 classes, OOP and Git                         | 8. Asynchronous programming, calling web APIs |
+| 4. JS Dev Tools: Node.js, NPM, Vite, LocalStorage.  | 9. <mark>More on calling web APIs</mark>      |
+| 5. Project Design<br />Midterm quiz                 | 10. Unit testing, Review                      |
+| 11. Final quiz                                      | 11. Final Quiz                                |
 
 <h2>Contents</h2>
 
@@ -75,7 +75,7 @@ See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1
 
 ### Optional Extra Credit Lab: CORS and Web Hosting
 
-This week, we have an optional, extra credit lab assignment. In this lab, you will publish your web app to a different web host. This is a practical exercise that will show you how to solve CORS (Cross-Origin Resource Sharing) issues by deploying your app to a hosting provider that handles or bypasses CORS restrictions.
+This week, we have an optional, extra credit lab assignment. In this lab, you will publish your web app to a different web host where API calls can be made securely. This is a practical exercise that will show you how to solve CORS (Cross-Origin Resource Sharing) issues by deploying your app to a hosting provider that handles or bypasses CORS restrictions and that keeps your API key secure.
 
 No beta version or code review are required.
 
@@ -97,6 +97,11 @@ No beta version or code review are required.
 - Class Discord [discussion channel](https://discord.com/channels/1290812758249701396/1324897172981809273). 
 - Tutorials, books and [more online resources](https://lcc-cit.github.io/CS233JS-CourseMaterials/CS233JS_References.html).
 
+
+
 ---
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials by [Brian Bird](https://profbird.dev), written winter 2025, revised spring <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+
+---
+
