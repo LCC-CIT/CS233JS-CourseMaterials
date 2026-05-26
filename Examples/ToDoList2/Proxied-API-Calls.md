@@ -270,20 +270,6 @@ Cloudflare Function → Browser  (response with { results: [...] })
 
 ---
 
-## Why Not Just Use the API Key in the Browser?
-
-You might wonder why the original ToDo app — which calls `api.tavily.com` directly from the browser with the key inlined — is a problem. For a homework assignment on `localhost`, it technically works. But in production:
-
-1. **Anyone can read the key.** Open DevTools → Sources → find the bundled JS → the key is a plain string. A malicious user can exhaust your API quota, incur charges, or abuse the key.
-
-2. **CORS.** If Tavily ever removes its CORS headers, the app breaks entirely.
-
-3. **Quota theft.** Exposed keys are scraped by bots that scan public JavaScript bundles on the web.
-
-The proxy pattern solves all three: the key stays on the server, CORS becomes irrelevant, and there is nothing to scrape.
-
----
-
 ## Adding More APIs
 
 This pattern scales to any number of proxied APIs. For a second proxied API, you would:
