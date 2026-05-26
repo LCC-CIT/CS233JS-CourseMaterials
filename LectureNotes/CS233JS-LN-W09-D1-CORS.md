@@ -6,7 +6,8 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>Web Security and Cross-Origin Resource Sharing/h1>
+<h1>Web Security and Cross-Origin Resource Sharing</h1>
+
 
 **CS233JS Intermediate Programming: JavaScript**
 
