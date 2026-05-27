@@ -242,13 +242,13 @@ Your app is live, but the proxy function will fail until you give Cloudflare you
 
 Your frontend app is now hosted globally on a secure CDN. Users interact with your UI normally, but your API key is locked away — first behind your local `.env` file during development, and then behind Cloudflare's secure environment variables in production.
 
-*Note: This tutorial was drafted usiing Gemini Flash 3.5*
+*Note: This tutorial was drafted usiing Claude Sonnet 4.6 and Gemini Flash 3.5*
 
 
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials by [Brian Bird](https://profbird.dev), written winter 2025, revised spring <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials by [Brian Bird](https://profbird.dev), written spring <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ---
 

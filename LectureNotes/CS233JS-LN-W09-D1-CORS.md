@@ -123,11 +123,13 @@ open -na "Google Chrome" --args --user-data-dir=/tmp/chrome-dev --disable-web-se
 - `--user-data-dir` is required — Chrome ignores the security flag without it. Using a temporary directory keeps this profile separate from your normal browsing profile.
 - Close this window when done. Do not use it for regular web browsing.
 
+*Note: These notes were drafted usiing Gemini Flash 3.5*
+
 
 
 ---
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials by [Brian Bird](https://profbird.dev), written winter 2025, revised spring <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials by [Brian Bird](https://profbird.dev), written spring <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ---
 
