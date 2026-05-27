@@ -7,7 +7,7 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>More on Web APIs, Dev Environment and Modules</h1>
+<h1>Using .env to Manage App Secrets</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
