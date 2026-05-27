@@ -15,18 +15,20 @@ author: Brian Bird
 
 ## Introduction
 
-This tutorial will guide you step-by-step through taking a standard frontend web application that exposes its API key in the browser and moving it to [Cloudflare Pages](https://pages.cloudflare.com/).
+This tutorial guides you through taking a standard frontend web app that exposes its API key in the browser and making it secure by deploying it to [Cloudflare Pages](https://pages.cloudflare.com/).
 
-By the end of this guide, your app will use Cloudflare’s file-based Functions to safely proxy requests to a third-party API. 
+The approach has two phases:
 
-- Your API key will be hidden securely on the server side. 
-- Your local development will run entirely inside a standard Vite pipeline.
+- **Local development:** Vite's built-in dev server proxy intercepts API calls and injects your API key from a local `.env` file — your key never leaves your machine and is never bundled into the browser.
+- **Production (Cloudflare Pages):** A Cloudflare serverless function acts as the proxy, reading the key from Cloudflare's secure environment variables.
+
+This pattern — a `.env` file for local secrets and a dev-server proxy for local API calls — is standard across many frameworks (Next.js, Create React App, Vue CLI). What you learn here transfers to other projects and deployment targets.
 
 ## The Goal: Before vs. After
 
 ### Before (Insecure)
 
-Your frontend JavaScript code sends a request directly to a third-party API. Anyone can open the browser’s **Network tab**, see your API key, and steal it.
+Your frontend JavaScript sends a request directly to a third-party API. Anyone can open the browser's **Network tab**, see your API key, and steal it.
 
 ```javascript
 // Insecure client-side call
@@ -37,36 +39,17 @@ fetch(`https://api.web-service.com/data?key=${apiKey}`)
 
 ### After (Secure)
 
-Your frontend JavaScript calls a relative URL on your own domain (`/api/web-service`). Cloudflare catches this call, securely injects the hidden API key on the backend, fetches the data from the third-party service, and passes the clean data back to your browser.
+Your frontend JavaScript calls a relative URL on your own domain (`/api/web-service`). In local development, Vite intercepts the call and adds the key from your `.env` file. In production, a Cloudflare serverless function intercepts the call, adds the key from Cloudflare's secure environment, and returns the data to your browser.
 
 ## Step 1: Set Up Your Project with Vite
 
-To get the benefits of modern local environment testing without extra command-line tools, we will use **Vite** along with Cloudflare's official Vite emulation plugin.
+Make sure Vite is installed as a dev dependency in your project:
 
-1. In your project folder, make sure you have installed the required Cloudflare development plugin:
+```bash
+npm install --save-dev vite
+```
 
-   ```bash
-   npm install --save-dev @cloudflare/vite-plugin
-   ```
-
-2. Open your `vite.config.js` file and add the Cloudflare plugin to your setup:
-
-   ```javascript
-   // vite.config.js
-   import { defineConfig } from "vite";
-   import { cloudflare } from "@cloudflare/vite-plugin";
-   
-   export default defineConfig({
-     plugins: [cloudflare()],
-   });
-   ```
-
-3. Create a bare-minimum `wrangler.toml` file in the root directory of your project. This file is just a configuration blueprint that tells Cloudflare's build engine how to behave:
-
-   ```toml
-   name = "student-api-proxy"
-   compatibility_date = "2026-05-01"
-   ```
+You should also have a `vite.config.js` file in the root of your project. You will configure it in Step 3.
 
 ## Step 2: Keep Your Local Key Safe with `.env`
 
@@ -80,83 +63,161 @@ To test your app on your computer without saving your real API key to GitHub, cr
    SECRET_THIRD_PARTY_KEY="your_actual_private_api_key_here"
    ```
 
-3. **Crucial:** Ensure your `.gitignore` file includes `.env` so this file is never uploaded to public GitHub repositories!
+3. **Crucial:** Make sure your `.gitignore` file includes `.env` so this file is never uploaded to GitHub!
 
-## Step 3: Create the Secure API Proxy Function
+4. Optionally create a `.env.example` file (safe to commit) so teammates know which variables to set:
 
-Instead of writing a complex Node.js or Express server, Cloudflare allows you to create serverless files using standard browser JavaScript syntax (`Request` and `Response` objects).
+   ```text
+   SECRET_THIRD_PARTY_KEY=your_key_here
+   ```
 
-1. In the root of your project, create a new folder named `functions`.
-2. Inside that folder, create a subfolder named `api`.
-3. Create a file named `web-service.js` inside that subfolder. Replace web-service with the name of the web service api you are calling .
+## Step 3: Configure the Vite Dev Server Proxy
 
-Paste the following code into it:
+During local development, Vite's built-in proxy forwards requests from your frontend to the third-party API and injects your secret key — all on the server side.
+
+Open (or create) `vite.config.js` and add the following:
 
 ```javascript
-// functions/api/weather.js
+import { defineConfig, loadEnv } from 'vite';
+
+export default defineConfig(({ mode }) => {
+  // Load ALL .env variables (the '' prefix means don't filter to only VITE_-prefixed ones),
+  // so API keys are available here in the server config but never bundled into the browser.
+  const env = loadEnv(mode, process.cwd(), '');
+
+  return {
+    base: './',
+    build: {
+      sourcemap: true,
+    },
+    server: {
+      // During local development, Vite intercepts requests to /api/web-service/*,
+      // strips the /api/web-service prefix, forwards them to the real API server,
+      // and injects the API key here on the server — never in the browser.
+      proxy: {
+        '/api/web-service': {
+          target: 'https://api.web-service.com',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api\/web-service/, ''),
+          headers: {
+            Authorization: `Bearer ${env.SECRET_THIRD_PARTY_KEY}`,
+          },
+        },
+      },
+    },
+  };
+});
+```
+
+Replace `/api/web-service` and `https://api.web-service.com` with the actual path prefix and base URL for the API you are calling. Replace `SECRET_THIRD_PARTY_KEY` with the variable name you used in your `.env` file.
+
+**Key points:**
+
+- `loadEnv(mode, process.cwd(), '')` — The third argument `''` tells Vite to load *all* `.env` variables, not just `VITE_`-prefixed ones. Using the `VITE_` prefix would expose the key in the browser bundle, which is exactly what we are trying to avoid.
+- `changeOrigin: true` — Makes the proxy rewrite the `Host` header to match the target, which most APIs require.
+- `rewrite` — Strips the `/api/web-service` prefix before forwarding to the target, so `/api/web-service/search` becomes `/search`.
+- `headers` — Adds the Authorization header to every proxied request on the server side.
+
+## Step 4: Create the Cloudflare Functions Proxy
+
+The Vite proxy only runs during local development. In production on Cloudflare Pages, a serverless function plays the same role: it intercepts requests, injects the API key, and forwards the call.
+
+1. In the root of your project, create a folder named `functions`.
+2. Inside that, create a subfolder named `api`.
+3. Inside `api`, create a subfolder named after your web service, and inside that create a file named `[[path]].js` — for example, `functions/api/web-service/[[path]].js`.
+
+**About the `[[path]]` filename:** Cloudflare Pages uses file-based routing, meaning the folder and file structure under `functions/` determines which URLs trigger which functions. A filename with double brackets like `[[path]]` is a catch-all wildcard — it matches any sub-path at any depth under that folder. So `functions/api/web-service/[[path]].js` handles all of these with a single file:
+
+| Browser requests… | Cloudflare runs… |
+|---|---|
+| `/api/web-service/search` | `functions/api/web-service/[[path]].js` |
+| `/api/web-service/news` | `functions/api/web-service/[[path]].js` |
+| `/api/web-service/data/recent` | `functions/api/web-service/[[path]].js` |
+
+If your API only has one endpoint, you could instead create a simple named file (e.g., `functions/api/web-service/search.js`) and skip the URL-rewriting line entirely.
+
+Paste the following code and adapt it to your API:
+
+```javascript
+// functions/api/web-service/[[path]].js
+//
+// Catch-all proxy: /api/web-service/* → https://api.web-service.com/*
+//
+// The [[path]] filename matches any sub-path under this folder, so one file
+// handles all endpoints (/api/web-service/search, /api/web-service/news, etc.).
+//
+// The pathname.replace() strips the /api/web-service prefix so the path forwarded
+// to the API is what it expects — e.g., /api/web-service/search becomes /search.
+//
+// SECRET_THIRD_PARTY_KEY is set in the Cloudflare Pages dashboard (see Step 8).
 
 export async function onRequest(context) {
-  // 1. Grab the hidden API key from the environment context
-  // (In local development, this pulls from your .env file)
-  const apiKey = context.env.SECRET_THIRD_PARTY_KEY;
+  const { request, env } = context;
 
-  // 2. Safely call the third-party API behind the scenes
-  const targetUrl = `https://api.web-service.com/data?key=${apiKey}`;
+  // Strip the /api/web-service prefix: /api/web-service/search → https://api.web-service.com/search
+  const url = new URL(request.url);
+  const targetUrl = `https://api.web-service.com${url.pathname.replace('/api/web-service', '')}`;
 
   try {
-    const apiResponse = await fetch(targetUrl);
-    const data = await apiResponse.json();
-
-    // 3. Return the data to your frontend using standard Web Response syntax
-    return new Response(JSON.stringify(data), {
-      headers: { "Content-Type": "application/json" },
+    return await fetch(targetUrl, {
+      method: request.method,
+      headers: {
+        Authorization: `Bearer ${env.SECRET_THIRD_PARTY_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: request.method === 'GET' ? undefined : await request.text(),
     });
   } catch (error) {
-    return new Response(JSON.stringify({ error: "Failed to fetch data" }), {
+    return new Response(JSON.stringify({ error: 'Failed to fetch data' }), {
       status: 500,
-      headers: { "Content-Type": "application/json" },
+      headers: { 'Content-Type': 'application/json' },
     });
   }
 }
 ```
 
-## Step 4: Update Your Frontend JavaScript
+**Note:** The `context.env` object is how Cloudflare Functions access environment variables. In production, `env.SECRET_THIRD_PARTY_KEY` is the value you set in the Cloudflare dashboard (Step 8). There is no `.env` file on the server — Cloudflare manages secrets securely.
 
-Now update your frontend application code (e.g., your `main.js` or component file) to stop targeting the third-party URL directly. Instead, hit your brand new relative endpoint.
+## Step 5: Update Your Frontend JavaScript
+
+Update your frontend code to call the relative proxy URL instead of the third-party API directly. The browser never sees the API key.
 
 ```javascript
-// Old Insecure Line: 
-// fetch("https://api.weather-service.com/data?key=SECRET_XYZ123")
+// Old insecure line:
+// fetch("https://api.web-service.com/data?key=SECRET_XYZ123")
 
-// New Secure Line:
-fetch("/api/weather")
+// New secure line — calls your own proxy endpoint:
+fetch("/api/web-service/data")
   .then((res) => res.json())
   .then((data) => {
-    console.log("Successfully fetched secure data:", data);
-    // Render data to your UI DOM elements here
+    console.log("Secure data received:", data);
+    // Render data to your UI here
   })
   .catch((err) => console.error("Error:", err));
 ```
 
-## Step 5: Run and Test Locally
+The same relative URL (`/api/web-service/...`) works in both environments:
 
-You do not need to install any custom Cloudflare command-line interfaces to view your work locally.
+- Locally: Vite's proxy intercepts it (Step 3).
+- In production: Cloudflare's function intercepts it (Step 4).
 
-Simply run your standard Vite development command in your terminal:
+## Step 6: Run and Test Locally
+
+Run your standard Vite development command:
 
 ```bash
 npm run dev
 ```
 
-Open your browser to `http://localhost:5173`. When your frontend code fires `fetch('/api/web-service')`, the `@cloudflare/vite-plugin` seamlessly intercepts the call, maps it to your local `functions/api/web-service.js` file, injects the key out of your local `.env`, and satisfies the request.
+Open your browser to `http://localhost:5173`. When your frontend calls `/api/web-service/...`, Vite intercepts the request, adds your API key from `.env`, and forwards it to the third-party API. Your key never appears in the browser's Network tab.
 
-## Step 6: Deploy to Cloudflare Pages via GitHub
+## Step 7: Deploy to Cloudflare Pages via GitHub
 
-Once everything runs flawlessly on your local machine, it is time to publish your secure app to the web.
+Once everything works locally, publish your app.
 
 1. Commit your project code and push it to your **GitHub** repository.
 2. Log into your **Cloudflare Dashboard**.
-3. Navigate to **Workers & Pages** -> **Create Application** -> **Pages** tab -> **Connect to Git**.
+3. Navigate to **Workers & Pages** → **Create Application** → **Pages** tab → **Connect to Git**.
 4. Select your GitHub repository.
 5. In the Build Settings configuration window:
    - **Framework Preset:** Select `Vite`.
@@ -164,24 +225,22 @@ Once everything runs flawlessly on your local machine, it is time to publish you
    - **Build output directory:** `dist`
 6. Click **Save and Deploy**.
 
-## Step 7: Save Your Production Key in Cloudflare
+## Step 8: Save Your Production Key in Cloudflare
 
-Your application is now live on the web, but your proxy function will fail until you provide Cloudflare with your real production API key.
+Your app is live, but the proxy function will fail until you give Cloudflare your real API key.
 
-1. Inside your Cloudflare Pages project dashboard, click on the *Settings* tab at the top.
-2. Select *Environment Variables* from the left-hand sidebar menu.
-3. Under the *Production* section, click *Add variables*.
-4. Set up your production key:
+1. Inside your Cloudflare Pages project dashboard, click the **Settings** tab.
+2. Select **Environment Variables** from the left-hand sidebar.
+3. Under the **Production** section, click **Add variables**.
+4. Add your key:
    - Variable name: `SECRET_THIRD_PARTY_KEY`
-   - Value: *[Paste your actual secret API provider token here]*
-5. Click *Save*.
-6. **Important:** Go back to your *Deployments* tab and trigger a fresh deployment (or push a tiny change to GitHub). This forces Cloudflare to rebuild the project and securely bind your newly added production environment keys to your API proxy code.
+   - Value: *your actual API key*
+5. Click **Save**.
+6. **Important:** Go back to the **Deployments** tab and trigger a fresh deployment (or push a small change to GitHub). This forces Cloudflare to rebuild and bind your new environment variable to the function.
 
 ## Success!
 
-Your frontend app is now hosted globally on a secure CDN. Browser users can see your UI and interact with your app seamlessly, but your API key remains securely locked away behind Cloudflare's serverless infrastructure.
-
-*Note: This tutorial was drafted usiing Gemini Flash 3.5*
+Your frontend app is now hosted globally on a secure CDN. Users interact with your UI normally, but your API key is locked away — first behind your local `.env` file during development, and then behind Cloudflare's secure environment variables in production.
 
 
 
@@ -190,4 +249,3 @@ Your frontend app is now hosted globally on a secure CDN. Browser users can see 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Intermediate JavaScript course materials by [Brian Bird](https://profbird.dev), written winter 2025, revised spring <time>2026</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ---
-
