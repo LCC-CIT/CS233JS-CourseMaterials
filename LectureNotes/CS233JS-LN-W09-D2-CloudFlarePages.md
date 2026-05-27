@@ -51,11 +51,11 @@ npm install --save-dev vite
 
 You should also have a `vite.config.js` file in the root of your project. You will configure it in Step 3.
 
-## Step 2: Keep Your Local Key Safe with `.env`
+## Step 2: Keep Your Local Key Safe with `.env.local`
 
 To test your app on your computer without saving your real API key to GitHub, create a local environment file.
 
-1. Create a file named `.env` in the root of your project folder.
+1. Create a file named `.env.local` in the root of your project folder. Vite projects created with `npm create vite` already include `*.local` in `.gitignore`, so this file is automatically excluded from git — no extra `.gitignore` entry needed.
 
 2. Add your secret key inside it:
 
@@ -63,9 +63,7 @@ To test your app on your computer without saving your real API key to GitHub, cr
    SECRET_THIRD_PARTY_KEY="your_actual_private_api_key_here"
    ```
 
-3. **Crucial:** Make sure your `.gitignore` file includes `.env` so this file is never uploaded to GitHub!
-
-4. Optionally create a `.env.example` file (safe to commit) so teammates know which variables to set:
+3. Optionally create a `.env.example` file (safe to commit) so teammates know which variables to set:
 
    ```text
    SECRET_THIRD_PARTY_KEY=your_key_here
@@ -134,7 +132,7 @@ The Vite proxy only runs during local development. In production on Cloudflare P
 | `/api/web-service/news`        | `functions/api/web-service/[[path]].js` |
 | `/api/web-service/data/recent` | `functions/api/web-service/[[path]].js` |
 
-If your API only has one endpoint, you could instead create a simple named file (e.g., `functions/api/web-service/search.js`) and skip the URL-rewriting line entirely.
+If your API only has one endpoint, you could instead create a file with a simple name (e.g., `functions/api/web-service/search.js`) and skip the URL-rewriting line entirely.
 
 Paste the following code into the file described above and adapt it to your API:
 
@@ -175,6 +173,14 @@ export async function onRequest(context) {
   }
 }
 ```
+
+Adapt the following for your actual web service:
+
+- **Folder and file path** — Rename the `web-service` folder to match your API (e.g., `functions/api/openweather/[[path]].js`). The folder name becomes part of the URL your frontend calls.
+- **`/api/web-service` prefix** — Replace every occurrence of `/api/web-service` with the path prefix you chose above (e.g., `/api/openweather`). There are two occurrences: the `pathname.replace()` call and the `targetUrl` template literal.
+- **`https://api.web-service.com`** — Replace with the actual base URL of the third-party API (e.g., `https://api.openweathermap.org`).
+- **`SECRET_THIRD_PARTY_KEY`** — Replace with the variable name you used in your `.env.local` file (e.g., `OPENWEATHER_API_KEY`). Use the same name when adding the secret in the Cloudflare dashboard (Step 8).
+- **`Authorization: \`Bearer ${...}\``** — Change the header name and format to match what your API requires. Some APIs use `Authorization: Bearer <token>`, others use a custom header like `X-Api-Key`, and others expect the key as a query-string parameter. Check your API's documentation.
 
 **Note:** The `context.env` object is how Cloudflare Functions access environment variables. In production, `env.SECRET_THIRD_PARTY_KEY` is the value you set in the Cloudflare dashboard (Step 8). There is no `.env` file on the server — Cloudflare manages secrets securely.
 
