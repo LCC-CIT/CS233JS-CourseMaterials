@@ -106,14 +106,13 @@ In CloudFlare Pages, you set environment variables under:
 
 You can set different values for Production and Preview environments, which is useful for pointing preview deployments at a test API and production deployments at the real one.
 
-For example:
+**For non-secret configuration values** (like a public server URL), use `VITE_`-prefixed variables. When CloudFlare runs `vite build`, those variables are injected and baked into the output bundle, exactly as if you had a `.env.production` file locally:
 
 | Variable | Preview value | Production value |
 |---|---|---|
 | `VITE_SERVER_URL` | `http://localhost:3000/participants` | `https://api.example.com/participants` |
-| `VITE_AMAP_KEY` | `(dev key)` | `(production key)` |
 
-When CloudFlare runs `vite build` during deployment, those variables are available exactly as if you had a `.env.production` file locally — no changes needed in your code.
+**For secret API keys** (like a third-party web service key), do *not* use the `VITE_` prefix. Set the key under a plain name such as `SECRET_THIRD_PARTY_KEY` in the Cloudflare dashboard. A Cloudflare serverless function reads it at runtime via `context.env.SECRET_THIRD_PARTY_KEY` — the key is never baked into the browser bundle. See the CloudFlare Pages deployment notes for the complete proxy pattern.
 
 ### Non-secret Production Config via .env.production
 
