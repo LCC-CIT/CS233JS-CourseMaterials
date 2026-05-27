@@ -22,7 +22,7 @@ The *Same-Origin Policy* (SOP) is a foundational security mechanism implemented 
 requests, they must strictly isolate the data environment of every website you connect to. The *Same-Origin Policy* acts as a digital firewall, ensuring that code running on one web site domain (origin) can only interact with resources from that  same domain. This preserves user privacy and security.
 
 **Example of what SOP prevents**
-In browsers didn't have SOP and you logged into your online bank in one browser tab and accidentally opened a malicious website in another, the malicious site's JavaScript could freely read your bank account data, steal your browser session cookies, or execute unauthorized transactions on your behalf. 
+If browsers didn't have SOP and you logged into your online bank in one browser tab and accidentally opened a malicious website in another, the malicious site's JavaScript could freely read your bank account data, steal your browser session cookies, or execute unauthorized transactions on your behalf. 
 Because browsers automatically attach your saved credentials and active session cookies to outgoing HTTP 
 
 
@@ -72,7 +72,7 @@ If the browser makes a cross-origin request and this header is absent from the r
 Many APIs are intentionally designed to be called from a <u>server</u>, not directly from a browser. There are two main reasons providers omit CORS headers:
 
 **1. API key security**
-APIs that require a key expect that key to be kept secret on a server. If CORS were allowed, a developer could call the API directly from browser code — but that would expose the API key to anyone who inspects the page's source or uses the developer tools network tab to view the HTTP request. Omitting CORS headers forces developers to route requests through a backend on the server, keeping the key hidden.
+APIs that require a key expect that key to be kept secret on a server. If CORS were allowed, a developer could call the API directly from browser code — but that would expose the API key to anyone who inspects the page's source or uses the developer tools network tab to view the HTTP request. Omitting CORS headers forces developers to route requests through a proxy on the server, keeping the key hidden.
 
 **2. Design intent**
 Some APIs are simply built for server-to-server communication and have no expectation of being called from a browser. Since CORS headers aren't needed for server-to-server calls, the provider doesn't include them.
@@ -88,12 +88,12 @@ Browser  →  Your Server  →  External API (searchupcdata.com)
          ←               ←
 ```
 
-This approach also keeps any API credentials safely on the server and out of the browser.
+This approach also keeps any API credentials on the server and out of the browser.
 
 A backend proxy on the server can be implemented as:
 
 - A route in a Node.js/Express server.
-- A serverless function (AWS Lambda, Vercel Function, Netlify Function, etc.).
+- A serverless function (AWS Lambda, Vercel Function, Netlify Function, Cloudflare function, etc.).
 - Any other server-side environment.
 
 The Vite dev server's built-in proxy feature works the same way during, but local development only.
