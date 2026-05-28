@@ -41,7 +41,7 @@ fetch(`https://api.web-service.com/data?key=${apiKey}`)
 
 Your frontend JavaScript calls a relative URL on your own domain (`/api/web-service`). In local development, Vite intercepts the call and adds the key from your `.env` file. In production, a Cloudflare serverless function intercepts the call, adds the key from Cloudflare's secure environment, and returns the data to your browser.
 
-## Part 1: Set Up and Test the Vite Proxy
+## Set Up and Test the Vite Proxy
 
 This section can be completed and tested independently before setting up Cloudflare.
 
@@ -153,7 +153,7 @@ npm run dev
 
 Open your browser to `http://localhost:5173`. When your frontend calls `/api/web-service/...`, Vite intercepts the request, adds your API key from `.env`, and forwards it to the third-party API. Your key never appears in the browser's Network tab.
 
-## Part 2: Deploy to Cloudflare Pages
+## Write a Cloudflare Proxy Function and Deploy to Pages
 
 Once the Vite proxy is working locally, deploy your app to Cloudflare Pages.
 
@@ -252,7 +252,7 @@ Your app is live, but the proxy function will fail until you give Cloudflare you
 5. Click *Save*.
 6. **Important:** Go back to the *Deployments* tab and trigger a fresh deployment (or push a small change to GitHub). This forces Cloudflare to rebuild and bind your new environment variable to the function.
 
-## Success!
+### Success!
 
 Your frontend app is now hosted on a secure CDN. Users interact with your UI normally, but your API key is locked away — first behind your local `.env` file during development, and then behind Cloudflare's secure environment variables in production.
 
@@ -270,7 +270,7 @@ Your frontend app is now hosted on a secure CDN. Users interact with your UI nor
 
 
 
-*Note: This tutorial was drafted usiing Claude Sonnet 4.6 and Gemini Flash 3.5*
+*Note: This tutorial was drafted usiing Claude Sonnet 4.6, revised using Gemini Flash 3.5 and Minimax 2.7*
 
 ---
 
