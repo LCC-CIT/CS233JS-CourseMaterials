@@ -52,12 +52,12 @@ Searches the web for a "how to" article related to a new task and returns a link
 ### API endpoint
 
 ```
-POST /api/tavily/search
+POST https://api.tavily.com/search
 ```
 
 ### Authentication
 
-The API key is stored securely server-side inside a `.env` file as `TAVILY_API_KEY` (without the `VITE_` prefix to prevent exposure to the browser). The browser makes a same-origin request to the proxy path, and Vite's dev server proxy (or Cloudflare Pages Functions in production) injects the bearer token server-side.
+The API key is stored in the `.env` file as `VITE_TAVILY_API_KEY` and accessed at build time via `import.meta.env.VITE_TAVILY_API_KEY`. It is sent as a Bearer token in the `Authorization` header.
 
 ### How it works
 
@@ -66,7 +66,10 @@ export async function fetchHowToLink(taskDescription) {
   try {
     const response = await fetch(TAVILY_API_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${TAVILY_API_KEY}`,
+      },
       body: JSON.stringify({
         query: `How do I ${taskDescription}`,
         include_answer: 'basic',
@@ -102,7 +105,7 @@ export async function fetchHowToLink(taskDescription) {
 | | `quoteService.js` | `tavilyService.js` |
 |---|---|---|
 | HTTP method | GET | POST |
-| Auth required | No | Yes (via server proxy) |
+| Auth required | No | Yes (Bearer token) |
 | Request body | None | JSON with query and options |
 | When called | Once at app startup | Each time a task is added |
 | Returns | `{ quote, author }` or `null` | `{ url, title }` or `null` |
