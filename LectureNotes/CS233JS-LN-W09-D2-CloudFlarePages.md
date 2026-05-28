@@ -258,6 +258,8 @@ Your frontend app is now hosted on a secure CDN. Users interact with your UI nor
 
 [Env Variables and Modes](https://vite.dev/guide/env-and-mode)&mdash;Vite
 
+[Server Options: server.proxy](https://vite.dev/config/server-options#server-proxy)&mdash;Vite
+
 
 
 *Note: This tutorial was drafted usiing Claude Sonnet 4.6 and Gemini Flash 3.5*
