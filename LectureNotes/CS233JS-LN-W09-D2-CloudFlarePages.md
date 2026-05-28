@@ -5,7 +5,7 @@ generator: Typora
 author: Brian Bird
 ---
 
-<h1>Deploy a Front-End Web App to Cloud Flare</h1>
+<h1>Deploy a Front-End Web App to Cloudflare</h1>
 
 **CS233JS Intermediate Programming: JavaScript**
 
