@@ -20,6 +20,11 @@ The project is designed to demonstrate:
 - API integration with graceful failure handling
 - separation of concerns through semi-MVC architecture.
 
+## Prerequisites for Running This App
+
+- Get an API key from [Tavily](https://www.tavily.com) and put it in a .env file.
+- Unblock access-control-allow-origin to allow CORS responses fromt the Tavily API.
+
 ## Architecture
 
 The codebase follows an MVC-oriented module split:
