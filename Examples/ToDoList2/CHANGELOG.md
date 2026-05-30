@@ -21,9 +21,6 @@ All notable changes to this project are documented in this file.
   - Added `TaskModel.updateTaskLink(index, linkData)`.
   - Added async add-task flow in controller to fetch/update how-to links.
   - Added optional link rendering in task rows and `.how-to-link` style.
-  - Added secure API proxy:
-    - Configured Vite dev server proxy to forward `/api/tavily/*` calls to Tavily API and inject local `TAVILY_API_KEY`.
-    - Implemented Cloudflare Pages serverless proxy function (`functions/api/tavily/[[path]].js`) to securely forward requests and bind production API keys, keeping them out of the browser.
 
 ### Changed
 
@@ -69,7 +66,7 @@ All notable changes to this project are documented in this file.
 
 - Vite builds are configured with `base: './'` for subdirectory-safe deploys.
 - Vite builds emit source maps for easier production debugging.
-- Tavily API key is held securely server-side inside environment variables and injected via proxy (Vite dev proxy locally, Cloudflare Pages Function in production), keeping it invisible to the browser.
+- Tavily API key is client-side in this lab context and visible in browser tooling; acceptable for coursework, not for production.
 - Quote API uses `https://dummyjson.com/quotes/random` because ZenQuotes is blocked by browser CORS.
 
 Format: based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).

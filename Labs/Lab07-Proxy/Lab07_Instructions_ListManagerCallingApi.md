@@ -18,7 +18,7 @@ The objectives of this lab are:
 
 Set up a free account on [Cloudflare](https://www.cloudflare.com). The best way to do this is to choose the option to create an account on Cloudflare using your GitHub account. 
 
-Follow the steps shown in [Deploy a Front-End Web App to Cloud Flare](../LectureNotes/CS233JS-LN-W09-D2-CloudFlarePages.html) to modify your web app from the previous lab so that:
+Follow the steps shown in [Deploy a Front-End Web App to Cloud Flare](../../LectureNotes/CS233JS-LN-W09-D2-CloudFlarePages.html) to modify your web app from the previous lab so that:
 
 - There are no CORS errors when making API calls.
 - Your API key is not exposed in your source code or in the network tab in your browser's dev tools.

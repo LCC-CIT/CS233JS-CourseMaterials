@@ -20,6 +20,11 @@ The project is designed to demonstrate:
 - API integration with graceful failure handling
 - separation of concerns through semi-MVC architecture.
 
+## Prerequisites for Running This App
+
+- Get an API key from [Tavily](https://www.tavily.com) and put it in a .env file.
+- Unblock access-control-allow-origin to allow CORS responses fromt the Tavily API.
+
 ## Architecture
 
 The codebase follows an MVC-oriented module split:
@@ -109,19 +114,18 @@ Notes:
 
 - Website: [Tavily](https://tavily.com)
 - Module: `src/js/tavilyService.js`
-- Endpoint: `/api/tavily/search` (Proxied same-origin route)
+- Endpoint: `https://api.tavily.com/search`
 - Function: `fetchHowToLink(taskDescription)`
 - Query shape: `How do I {taskDescription}`
 - Behavior:
-  - sends POST request to same-origin proxy URL without client-side API keys
+  - sends POST request with bearer token from `VITE_TAVILY_API_KEY`
   - returns `{ url, title }` from the first result
   - returns `null` when request fails or no result is found
 
 Notes:
 
-- The API key is stored securely server-side as `TAVILY_API_KEY` (with no `VITE_` prefix to prevent browser bundle leakage).
-- Vite's dev proxy forwards local requests and injects the key during development.
-- Cloudflare Pages Functions act as the proxy and inject the environment variable in production.
+- The API key is read from Vite environment variables (`import.meta.env`).
+- For this lab, the key is used client-side; this is acceptable for coursework but not recommended for production systems.
 
 ## Project Structure
 
@@ -129,18 +133,3 @@ Notes:
 - `src/js/` - MVC modules and service modules
 - `src/css/styles.css` - custom styling
 - `CHANGELOG.md` - project revision history and notable changes
-
-## Potential Improvements: Unique IDs for Task State
-
-Currently, the tasks are stored in an array and tracked by their array index (e.g. `tasks[index]`). When a user performs asynchronous actions (like fetching a "how-to" link), there is a risk of a race condition if tasks are added or deleted before the network request resolves:
-1. User adds `"Task A"` (placed at index 3) and an API request begins.
-2. Before the API responds, the user deletes `"Task B"` at index 1.
-3. The array shrinks and `"Task A"` shifts to index 2.
-4. The API response resolves and tries to update the task at index 3, which is now incorrect or out of bounds.
-
-### Recommended Fix: Unique IDs
-To make the application robust and demonstrate production-ready state management patterns:
-- Generate a unique string identifier for each task when it is created using the Web API `crypto.randomUUID()`.
-- Store and identify tasks by this `id` attribute instead of their array `index`.
-- Modify event listeners in the View to read a `data-id` attribute from the `<li>` element.
-- Look up and update tasks in the Model and Controller by matching `task.id === id`.

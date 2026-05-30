@@ -24,26 +24,6 @@ export class TaskView {
     this.input.classList.add('is-invalid');
   }
 
-  showApiError(message) {
-    this.clearApiError();
-    const alert = document.createElement('div');
-    alert.id = 'apiErrorAlert';
-    alert.className = 'alert alert-warning d-flex justify-content-between align-items-start mt-2';
-    alert.setAttribute('role', 'alert');
-    alert.innerHTML = `<span>${message}</span>`;
-    const closeBtn = document.createElement('button');
-    closeBtn.type = 'button';
-    closeBtn.className = 'btn-close ms-3';
-    closeBtn.setAttribute('aria-label', 'Close');
-    closeBtn.addEventListener('click', () => alert.remove());
-    alert.appendChild(closeBtn);
-    this.app.parentNode.insertBefore(alert, this.app);
-  }
-
-  clearApiError() {
-    document.getElementById('apiErrorAlert')?.remove();
-  }
-
   displayQuote(quoteData) {
     // Silently no-op when the API failed so the rest of the UI is unaffected.
     if (!quoteData) return;
