@@ -20,7 +20,7 @@ The project should:
      - html canvas.
    - Have unit tests.
    - Be hosted on citstudent.lanecc.edu. 
--  Use best coding practices like avoiding global variables, writing DRY code, proper indentation, descriptive variable names, explanatory comments, etc.
+-  Use best practices for coding like avoiding global variables, writing DRY code, proper indentation, descriptive variable names, explanatory comments, etc.
 -  Provide good user experience by using input validation, do-again loops or resets, clear instructions, etc.
 -  Require about the same effort as two lab assignments.
 -  Not be the same as any of the class, tutorial, or textbook apps.
