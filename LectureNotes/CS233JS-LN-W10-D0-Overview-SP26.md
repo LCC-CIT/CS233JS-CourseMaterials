@@ -14,14 +14,14 @@ author: Brian Bird
 
 
 
-| Topics by Week                                      |                                               |
-| --------------------------------------------------- | --------------------------------------------- |
-| 1. Intro to Course, Bootstrap and JavaScript Review | 6. HTML5 canvas                               |
-| 2. Key ES6 Features                                 | 7. Starting the term project                  |
-| 3. ES6 classes, OOP and Git                         | 8. Asynchronous programming, calling web APIs |
-| 4. JS Dev Tools: Node.js, NPM, Vite, LocalStorage.  | 9. More on calling web APIs                   |
-| 5. Project Design<br />Midterm quiz                 | 10. <mark>Unit testing, Review</mark>         |
-| 11. Final quiz                                      | 11. Final Quiz                                |
+| Topics by Week                                      |                                                              |
+| --------------------------------------------------- | ------------------------------------------------------------ |
+| 1. Intro to Course, Bootstrap and JavaScript Review | 6. HTML5 canvas                                              |
+| 2. Key ES6 Features                                 | 7. Starting the term project                                 |
+| 3. ES6 classes, OOP and Git                         | 8. Asynchronous programming, calling web APIs                |
+| 4. JS Dev Tools: Node.js, NPM, Vite, LocalStorage.  | 9. More on calling web APIs                                  |
+| 5. Project Design<br />Midterm quiz                 | 10. <mark>Unit testing, Term project completion, Review</mark> |
+| 11. Final quiz                                      | 11. Final Quiz                                               |
 
 <h2>Contents</h2>
 
@@ -77,7 +77,7 @@ See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1
 
 ## Due Dates
 
-- Tuesday, 6/3:
+- Friday, 6/5:
   - Term project: Code Review
 - Sunday, 6/7:
   - Term project: Production Version
