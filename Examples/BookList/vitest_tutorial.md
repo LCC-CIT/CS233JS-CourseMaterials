@@ -56,11 +56,12 @@ Unit tests are supposed to test a single function *in isolation*. But in real ap
 
 If we let our tests talk directly to the real internet or real storage, our tests would fail when the school Wi-Fi is down, or we might accidentally corrupt real user data!
 
-**Mocking** is the solution. Think of a mock like a **stunt double** in a movie. Instead of having the actor jump off a building, you hire a double. 
+**Mocking** is the solution. In testing, we use fake objects to replace the real ones. People often use the terms "Mocks" and "Spies" interchangeably, but there is a slight difference:
 
-In testing, a mock is a fake object or function that *pretends* to be the real thing (like `localStorage` or `fetch`), but is completely under our control.
-* **Fakes / Spies:** We track if our code called the mock, how many times, and what parameters were passed.
-* **Stubs:** We pre-program the mock to return specific values (e.g., *"When my code calls fetch(), pretend the internet responded with success and return this specific book JSON"*).
+* **Spies (The Watchers):** A spy simply "watches" a function without necessarily changing what it does. It acts like a surveillance camera, recording if the function was called, how many times it was called, and what exact arguments were passed to it.
+* **Mocks / Stubs (The Impostors):** A mock takes it a step further. It acts like a **stunt double** in a movie, completely replacing the real function with a fake version. Instead of running the real code (like actually going to the internet or writing to the hard drive), you pre-program the mock to do something safe or return a specific value (e.g., *"When my code calls `fetch()`, don't go to the internet. Just pretend it worked and return this fake JSON data."*).
+
+*Note: In Vitest, we use the `vi.fn()` tool to do both! We can create a fake function that returns fake data (a mock) AND records how many times it was called (a spy).*
 
 ---
 
@@ -129,7 +130,14 @@ This is Vitest's utility for creating "spy" functions or mock objects. As explai
 Let's look at the real tests in this project to see how these tools work in action.
 
 ### Example A: Testing a Pure Function (`openLibraryService.test.js`)
-A pure function is the easiest thing to test because it doesn't change anything outside itself. Let's look at the test for `parseSearchResults` in [openLibraryService.test.js](file:///Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/Examples/BookList/tests/openLibraryService.test.js):
+A pure function is the easiest thing to test because it doesn't change anything outside itself. 
+
+In our BookList app, the pure function tests for `parseSearchResults` are:
+* `should return an empty array if data is missing or docs are empty`
+* `should correctly parse a valid OpenLibrary response doc`
+* `should handle missing optional fields gracefully`
+
+Let's look at one of these tests in [openLibraryService.test.js](file:///Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/Examples/BookList/tests/openLibraryService.test.js):
 
 ```javascript
 it('should correctly parse a valid OpenLibrary response doc', () => {
@@ -163,6 +171,14 @@ it('should correctly parse a valid OpenLibrary response doc', () => {
 
 ### Example B: Testing with Mocks and Spies (`model.test.js`)
 Sometimes our code has "side effects"—it does things like write to `localStorage` or call helper callback functions. How do we test that?
+
+In our BookList app, the tests that mock `localStorage` for the `BookModel` are:
+* `should initialize with an empty book list`
+* `should add a book with default status and rating`
+* `should update book status`
+* `should rate a finished book`
+* `should reset rating if status changes away from Finished`
+* `should delete a book`
 
 In [model.test.js](file:///Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/Examples/BookList/tests/model.test.js), look at the `beforeEach` block:
 ```javascript
@@ -203,7 +219,12 @@ it('should save to localStorage when a book is added', () => {
 ---
 
 ### Example C: Testing Asynchronous Network Requests
-In [openLibraryService.test.js](file:///Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/Examples/BookList/tests/openLibraryService.test.js), we test `searchBooksByTitle`. This function uses `fetch()`. We don't want our tests to fail just because the school Wi-Fi went down, so we mock `fetch`:
+In [openLibraryService.test.js](file:///Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/Examples/BookList/tests/openLibraryService.test.js), we test `searchBooksByTitle`. This function uses `fetch()`. We don't want our tests to fail just because the school Wi-Fi went down, so we mock `fetch`.
+
+In our BookList app, the tests that mock network requests are:
+* `should return empty array if title is empty or whitespace`
+* `should fetch and return parsed results on success`
+* `should return empty array and log error on fetch failure`
 
 ```javascript
 it('should fetch and return parsed results on success', async () => {
