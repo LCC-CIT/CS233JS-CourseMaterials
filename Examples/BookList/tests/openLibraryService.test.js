@@ -39,7 +39,7 @@ describe('openLibraryService', () => {
       });
 
       const results = await searchBooksByTitle('Mock Book');
-      
+
       expect(global.fetch).toHaveBeenCalledWith(
         'https://openlibrary.org/search.json?q=Mock%20Book&limit=10',
         expect.any(Object)
@@ -51,11 +51,11 @@ describe('openLibraryService', () => {
     });
 
     it('should return empty array and log error on fetch failure', async () => {
-      const consoleSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
+      const consoleSpy = vi.spyOn(console, 'error').mockImplementation(() => { });
       global.fetch.mockRejectedValueOnce(new Error('API Down'));
 
       const results = await searchBooksByTitle('Failed Book');
-      
+
       expect(results).toEqual([]);
       expect(consoleSpy).toHaveBeenCalled();
       consoleSpy.mockRestore();
