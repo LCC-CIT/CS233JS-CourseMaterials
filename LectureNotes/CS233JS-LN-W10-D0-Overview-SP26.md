@@ -81,6 +81,8 @@ See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1
 ## Due Dates
 
 - Friday, 6/5:
+  - Term project: Beta Version
+- Saturday, 6/6:
   - Term project: Code Review
 - Sunday, 6/7:
   - Term project: Production Version
