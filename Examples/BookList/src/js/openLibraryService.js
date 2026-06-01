@@ -1,3 +1,5 @@
+// Created by Brian Bird in spring 2026 using Gemini 3.1 Pro.
+
 /**
  * Service for fetching data from the OpenLibrary API.
  * This service handles HTTP requests and parsing to keep the Model clean.
@@ -22,7 +24,7 @@ const HEADERS = {
  */
 export async function searchBooksByTitle(title) {
   if (!title || title.trim() === '') return [];
-  
+
   const query = encodeURIComponent(title.trim());
   const url = `${BASE_URL}/search.json?q=${query}&limit=10`;
 
@@ -54,16 +56,16 @@ export function parseSearchResults(data) {
   return data.docs.map(doc => {
     // Extract the first author if available
     const author = doc.author_name && doc.author_name.length > 0 ? doc.author_name[0] : 'Unknown Author';
-    
+
     // Extract the first publish year
     const pubDate = doc.first_publish_year ? doc.first_publish_year.toString() : 'Unknown Date';
-    
+
     // Extract the first ISBN
     const isbn = doc.isbn && doc.isbn.length > 0 ? doc.isbn[0] : 'N/A';
 
     // Construct the cover photo URL using the cover_i field
-    const coverPhotoUrl = doc.cover_i 
-      ? `https://covers.openlibrary.org/b/id/${doc.cover_i}-M.jpg` 
+    const coverPhotoUrl = doc.cover_i
+      ? `https://covers.openlibrary.org/b/id/${doc.cover_i}-M.jpg`
       : null;
 
     return {

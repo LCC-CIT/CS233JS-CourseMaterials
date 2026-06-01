@@ -1,3 +1,5 @@
+// Created by Brian Bird in spring 2026 using Gemini 3.1 Pro.
+
 import { searchBooksByTitle } from './openLibraryService.js';
 
 /**
@@ -12,7 +14,7 @@ export class BookController {
   constructor(model, view) {
     this.model = model;
     this.view = view;
-    
+
     // Provide view with a reference to the controller so it can assign event handlers directly
     this.view.init(this);
 

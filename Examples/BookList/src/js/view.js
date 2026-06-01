@@ -1,3 +1,5 @@
+// Created by Brian Bird in spring 2026 using Gemini 3.1 Pro.
+
 /**
  * The View handles rendering the UI using Template Literals and standard DOM manipulation.
  * It directly assigns events to call the Controller.
@@ -5,19 +7,19 @@
 export class BookView {
   constructor() {
     this.app = document.getElementById('app');
-    
+
     // UI Elements
     this.searchTitleInput = document.getElementById('searchTitleInput');
     this.searchButton = document.getElementById('searchButton');
     this.searchResults = document.getElementById('searchResults');
-    
+
     this.toggleManualEntryBtn = document.getElementById('toggleManualEntryBtn');
     this.manualEntryForm = document.getElementById('manualEntryForm');
     this.manualTitle = document.getElementById('manualTitle');
     this.manualAuthor = document.getElementById('manualAuthor');
     this.manualIsbn = document.getElementById('manualIsbn');
     this.manualAddButton = document.getElementById('manualAddButton');
-    
+
     this.bookListContainer = document.getElementById('bookListContainer');
 
     // This property will hold search results temporarily so they can be referenced when clicked
@@ -71,13 +73,13 @@ export class BookView {
     // Event delegation for the main book list (deletes, status changes, ratings)
     this.bookListContainer.onclick = (e) => {
       const target = e.target;
-      
+
       // Delete button
       if (target.closest('.delete-btn')) {
         const id = target.closest('li').dataset.id;
         this.controller.handleDeleteBook(id);
       }
-      
+
       // Star rating click
       if (target.closest('.star-rating i')) {
         const id = target.closest('li').dataset.id;
@@ -115,7 +117,7 @@ export class BookView {
    */
   renderSearchResults(results) {
     this.currentSearchResults = results;
-    
+
     if (results.length === 0) {
       this.searchResults.innerHTML = `<div class="list-group-item text-muted">No results found.</div>`;
       return;
@@ -170,7 +172,7 @@ export class BookView {
 
     const html = books.map(book => {
       const isFinished = book.status === 'Finished';
-      
+
       // Build star rating HTML dynamically
       let starsHtml = '';
       if (isFinished) {

@@ -1,3 +1,5 @@
+// Created by Brian Bird in spring 2026 using Gemini 3.1 Pro.
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../css/styles.css';

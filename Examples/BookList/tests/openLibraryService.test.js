@@ -1,26 +1,49 @@
+// Created by Brian Bird in spring 2026 using Gemini 3.1 Pro.
+
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { parseSearchResults, searchBooksByTitle } from '../src/js/openLibraryService.js';
 
+/**
+ * @fileoverview Unit tests for the OpenLibrary API service.
+ * Tests network mocking, error handling, and data parsing.
+ */
 describe('openLibraryService', () => {
+
+  /**
+   * Test suite for the async fetch operations.
+   */
   describe('searchBooksByTitle', () => {
     let originalFetch;
 
+    /**
+     * Replaces the global fetch API with a mock function before each test.
+     */
     beforeEach(() => {
       originalFetch = global.fetch;
       global.fetch = vi.fn();
     });
 
+    /**
+     * Restores the original global fetch API and clears all mock data after each test.
+     */
     afterEach(() => {
       global.fetch = originalFetch;
       vi.restoreAllMocks();
     });
 
+    /**
+     * Verifies that searching with an empty or whitespace-only string
+     * resolves to an empty array without making a network request.
+     */
     it('should return empty array if title is empty or whitespace', async () => {
       expect(await searchBooksByTitle('')).toEqual([]);
       expect(await searchBooksByTitle('   ')).toEqual([]);
       expect(global.fetch).not.toHaveBeenCalled();
     });
 
+    /**
+     * Verifies that a successful API response is fetched and parsed correctly.
+     */
     it('should fetch and return parsed results on success', async () => {
       const mockResponse = {
         docs: [
@@ -50,6 +73,10 @@ describe('openLibraryService', () => {
       expect(results[0].pubDate).toBe('2026');
     });
 
+    /**
+     * Verifies that network failures are caught, an error is logged,
+     * and an empty array is safely returned.
+     */
     it('should return empty array and log error on fetch failure', async () => {
       const consoleSpy = vi.spyOn(console, 'error').mockImplementation(() => { });
       global.fetch.mockRejectedValueOnce(new Error('API Down'));
@@ -62,13 +89,24 @@ describe('openLibraryService', () => {
     });
   });
 
+  /**
+   * Test suite for the data transformation logic.
+   */
   describe('parseSearchResults', () => {
+
+    /**
+     * Verifies that null, empty, or invalid data objects safely return an empty array.
+     */
     it('should return an empty array if data is missing or docs are empty', () => {
       expect(parseSearchResults(null)).toEqual([]);
       expect(parseSearchResults({})).toEqual([]);
       expect(parseSearchResults({ docs: [] })).toEqual([]);
     });
 
+    /**
+     * Verifies that a well-formed OpenLibrary document is mapped correctly
+     * into the standard application Book object schema.
+     */
     it('should correctly parse a valid OpenLibrary response doc', () => {
       const mockData = {
         docs: [
@@ -92,6 +130,10 @@ describe('openLibraryService', () => {
       expect(result[0].coverPhotoUrl).toBe('https://covers.openlibrary.org/b/id/12345-M.jpg');
     });
 
+    /**
+     * Verifies that missing optional fields (like authors, dates, ISBNs, covers)
+     * fall back to reasonable default values instead of throwing errors.
+     */
     it('should handle missing optional fields gracefully', () => {
       const mockData = {
         docs: [

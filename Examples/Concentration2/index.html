@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Adapted by Brian Bird using Gemini 3.1 pro in spring 2026 from code provided by Mari Good in 2024. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Concentration Game</title>
+    <link rel="icon" type="image/svg+xml" href="images/spade.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Outer page container used for centering and spacing -->
+    <div class="game-shell">
+
+        <!-- Main game board container -->
+        <div class="game-board" id="board">
+            <!-- Live score text updated by JavaScript -->
+            <div class="game-status" id="status">Matches: 0 Tries: 0</div>
+
+            <!-- Row 1 of cards -->
+            <div class="card-row">
+                <div id="0" name="card" class="game-card"></div>
+                <div id="1" name="card" class="game-card"></div>
+                <div id="2" name="card" class="game-card"></div>
+                <div id="3" name="card" class="game-card"></div>
+                <div id="4" name="card" class="game-card"></div>
+            </div>
+
+            <!-- Row 2 of cards -->
+            <div class="card-row">
+                <div id="5" name="card" class="game-card"></div>
+                <div id="6" name="card" class="game-card"></div>
+                <div id="7" name="card" class="game-card"></div>
+                <div id="8" name="card" class="game-card"></div>
+                <div id="9" name="card" class="game-card"></div>
+            </div>
+
+            <!-- Row 3 of cards -->
+            <div class="card-row">
+                <div id="10" name="card" class="game-card"></div>
+                <div id="11" name="card" class="game-card"></div>
+                <div id="12" name="card" class="game-card"></div>
+                <div id="13" name="card" class="game-card"></div>
+                <div id="14" name="card" class="game-card"></div>
+            </div>
+
+            <!-- Row 4 of cards -->
+            <div class="card-row">
+                <div id="15" name="card" class="game-card"></div>
+                <div id="16" name="card" class="game-card"></div>
+                <div id="17" name="card" class="game-card"></div>
+                <div id="18" name="card" class="game-card"></div>
+                <div id="19" name="card" class="game-card"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game behavior logic -->
+    <script type="module" src="src/index.js"></script>
+</body>
+
+</html>

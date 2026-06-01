@@ -1,3 +1,5 @@
+// Created by Brian Bird in spring 2026 using Gemini 3.1 Pro.
+
 /**
  * The Model handles state management and data persistence.
  * It uses pure logic as much as possible to facilitate unit testing.
