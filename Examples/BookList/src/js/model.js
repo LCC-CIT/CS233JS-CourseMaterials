@@ -8,7 +8,6 @@ export class BookModel {
    */
   constructor() {
     this.books = this._loadBooks();
-    this.subscribers = [];
   }
 
   /**
@@ -28,27 +27,12 @@ export class BookModel {
   }
 
   /**
-   * Internal method to persist current state to localStorage and notify observers.
+   * Internal method to persist current state to localStorage.
    */
   _commit() {
     localStorage.setItem('booklist_books', JSON.stringify(this.books));
-    this.notifySubscribers();
   }
 
-  /**
-   * Subscribe to state changes.
-   * @param {Function} callback - Function to call when state changes.
-   */
-  subscribe(callback) {
-    this.subscribers.push(callback);
-  }
-
-  /**
-   * Notify all subscribers of state change.
-   */
-  notifySubscribers() {
-    this.subscribers.forEach(callback => callback(this.books));
-  }
 
   /**
    * Adds a new book to the collection.

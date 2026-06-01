@@ -182,24 +182,23 @@ beforeEach(() => {
 ```
 By replacing `global.localStorage` with a fake object built with `vi.fn()`, our code will run perfectly in Node (where `localStorage` doesn't exist by default), and we don't mess up our actual computer's storage.
 
-We can also test if the Model successfully notifies our controller when data changes:
+We can also test if the Model successfully saves to `localStorage` when data changes:
 ```javascript
-it('should notify subscribers on change', () => {
-  // 1. Create a fake subscriber function using vi.fn()
-  const subscriber = vi.fn();
+it('should save to localStorage when a book is added', () => {
+  // 1. Arrange: The spy on localStorage.setItem is already set up in beforeEach!
   
-  // 2. Subscribe it to the model
-  model.subscribe(subscriber);
-
-  // 3. Add a book (which should trigger the notification)
+  // 2. Act: Add a book
   model.addBook({ title: 'Test Book' });
 
-  // 4. Assert: Check if our fake function was actually called!
-  expect(subscriber).toHaveBeenCalledTimes(1);
-  expect(subscriber).toHaveBeenCalledWith(model.books);
+  // 3. Assert: Check if our fake localStorage.setItem function was called!
+  expect(global.localStorage.setItem).toHaveBeenCalledTimes(1);
+  expect(global.localStorage.setItem).toHaveBeenCalledWith(
+    'booklist_books', 
+    JSON.stringify(model.books)
+  );
 });
 ```
-* **Why this is awesome:** `vi.fn()` creates a "spy" function that records how many times it was called and what arguments it was given. It lets us verify that our code is talking to other files correctly!
+* **Why this is awesome:** `vi.fn()` creates a "spy" function that records how many times it was called and what arguments it was given. It lets us verify that our code is talking to outside APIs correctly without actually writing to the real browser storage!
 
 ---
 

@@ -37,14 +37,13 @@ This application uses a structure inspired by the **Model-View-Controller (MVC)*
 We have separated our code so that the data (`model.js`) is completely independent of the screen (`view.js`). The `controller.js` acts as the bridge between them. This separation makes the code easier to test and maintain.
 
 **How this *isn't* strict MVC:**
-In a strict, traditional MVC pattern, the View often uses an Observer pattern to listen directly to the Model for changes, and the Controller dynamically passes callback functions into the View. To keep things simple for beginners, our View is given a direct reference to the Controller and calls the Controller's methods directly (e.g., `this.controller.handleDeleteBook(id)`). This is a "loose" MVC approach that reduces complexity while still teaching the core concept of separating data from presentation.
+In a strict, traditional MVC pattern, the View often uses an Observer pattern to listen directly to the Model for changes. To keep things simple for beginners, we removed the Observer pattern entirely. Instead, the Controller explicitly tells the View to re-render whenever it changes the Model, and the View is given a direct reference to the Controller to call its methods (e.g., `this.controller.handleDeleteBook(id)`). This is a "loose" MVC approach that reduces complexity while still teaching the core concept of separating data from presentation.
 
 ### Module Breakdown
 
 - `src/js/model.js` (`BookModel`)
   - Owns the book state.
   - Handles reading from and writing to `localStorage`.
-  - Notifies subscribers when data changes.
   - Contains no DOM or HTML logic.
 
 - `src/js/view.js` (`BookView`)
@@ -54,7 +53,7 @@ In a strict, traditional MVC pattern, the View often uses an Observer pattern to
 
 - `src/js/controller.js` (`BookController`)
   - Wires the Model and View together.
-  - Subscribes to the Model and tells the View to re-render when data changes.
+  - Explicitly tells the View to re-render whenever it modifies the Model.
   - Handles async service calls (fetching book data).
 
 - `src/js/openLibraryService.js`

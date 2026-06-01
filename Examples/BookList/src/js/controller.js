@@ -16,11 +16,6 @@ export class BookController {
     // Provide view with a reference to the controller so it can assign event handlers directly
     this.view.init(this);
 
-    // When the model changes, re-render the list of books
-    this.model.subscribe((books) => {
-      this.view.renderBooks(books);
-    });
-
     // Initial render
     this.view.renderBooks(this.model.books);
   }
@@ -42,6 +37,7 @@ export class BookController {
   handleSelectSearchResult(bookData) {
     this.model.addBook(bookData);
     this.view.clearSearch();
+    this.view.renderBooks(this.model.books);
   }
 
   /**
@@ -52,6 +48,7 @@ export class BookController {
     if (!bookData.title) return; // Basic validation
     this.model.addBook(bookData);
     this.view.clearManualForm();
+    this.view.renderBooks(this.model.books);
   }
 
   /**
@@ -61,6 +58,7 @@ export class BookController {
    */
   handleStatusChange(id, newStatus) {
     this.model.updateStatus(id, newStatus);
+    this.view.renderBooks(this.model.books);
   }
 
   /**
@@ -70,6 +68,7 @@ export class BookController {
    */
   handleRatingChange(id, rating) {
     this.model.rateBook(id, rating);
+    this.view.renderBooks(this.model.books);
   }
 
   /**
@@ -78,5 +77,6 @@ export class BookController {
    */
   handleDeleteBook(id) {
     this.model.deleteBook(id);
+    this.view.renderBooks(this.model.books);
   }
 }

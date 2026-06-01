@@ -78,12 +78,5 @@ describe('BookModel', () => {
     expect(model.books[0].title).toBe('Book 2');
   });
 
-  it('should notify subscribers on change', () => {
-    const subscriber = vi.fn();
-    model.subscribe(subscriber);
 
-    model.addBook({ title: 'Test Book' });
-    expect(subscriber).toHaveBeenCalledTimes(1);
-    expect(subscriber).toHaveBeenCalledWith(model.books);
-  });
 });

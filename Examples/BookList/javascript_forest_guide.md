@@ -84,7 +84,7 @@ The View [view.js](file:///Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMa
 The Controller [controller.js](file:///Volumes/DataCard/Repos/CS233JS-Repos/CS233JS-CourseMaterials/Examples/BookList/src/js/controller.js) is the middleman. It doesn't hold data (Model does that) and it doesn't draw things (View does that). It just tells them what to do.
 * When the View gets a click, it tells the Controller: `controller.handleDeleteBook(id)`.
 * The Controller tells the Model: `model.deleteBook(id)`.
-* The Controller also sets up a "subscription". It tells the Model: *"Let me know whenever the book list changes."* When the Model changes, the Controller tells the View: `view.renderBooks(updatedBooks)`.
+* The Controller explicitly coordinates everything. After telling the Model to change the data, it immediately tells the View to update the screen: `this.view.renderBooks(this.model.books)`.
 
 ---
 
@@ -112,9 +112,8 @@ sequenceDiagram
     View->>Controller: controller.handleSelectSearchResult(bookData)
     Controller->>Model: model.addBook(bookData)
     Note over Model: Model adds book & saves to localStorage
-    Model->>Controller: Notifies subscribers (list changed!)
-    Controller->>View: view.renderBooks(updatedBooks)
     Controller->>View: view.clearSearch()
+    Controller->>View: view.renderBooks(this.model.books)
 ```
 
 1. **User interaction:** You type "The Hobbit" and click **Search**.
@@ -125,38 +124,12 @@ sequenceDiagram
 6. **User adds the book:** You see the search results and click **Add** next to "The Hobbit".
 7. **View tells Controller:** The View senses the click and calls `this.controller.handleSelectSearchResult(selectedBook)`.
 8. **Controller tells Model to add:** The Controller calls `this.model.addBook(selectedBook)`.
-9. **Model saves:** The Model generates a unique ID for the book, pushes it to its list, saves it to `localStorage` (`_commit()`), and triggers `notifySubscribers()`.
-10. **Controller hears the change:** Because the Controller subscribed to the Model, it hears the notification and immediately calls `this.view.renderBooks(this.model.books)` to draw the list. It also calls `this.view.clearSearch()` to hide the search results.
+9. **Model saves:** The Model generates a unique ID for the book, pushes it to its list, and saves it to `localStorage` (`_commit()`).
+10. **Controller updates the View:** The Controller manually calls `this.view.clearSearch()` to hide the search results, and then explicitly calls `this.view.renderBooks(this.model.books)` to draw the new list on the screen.
 
 ---
 
-## 🤔 What is this `subscribe` wizardry?
 
-One thing that broke my brain was the "observer pattern" stuff in `model.js` and `controller.js`. Let's explain it like a text message alert system.
-
-In `model.js`, we have:
-```javascript
-subscribe(callback) {
-  this.subscribers.push(callback);
-}
-notifySubscribers() {
-  this.subscribers.forEach(callback => callback(this.books));
-}
-```
-
-Think of the Model as a YouTube channel.
-* In `controller.js`, the Controller "subscribes" to the Model's channel:
-  ```javascript
-  this.model.subscribe((books) => {
-    this.view.renderBooks(books);
-  });
-  ```
-  It's saying: *"Hey Model, whenever you upload new data (commit changes), send it to me, and I will hand it to the View to draw."*
-* When the Model changes the data, it hits `_commit()`, which runs `notifySubscribers()`. This broadcasts the updated books list to everyone who subscribed (our Controller).
-* The Controller receives the update and instantly tells the View to refresh the screen. 
-* This is super cool because **the Model never needs to know anything about the View**. It just yells *"Hey, I updated my data!"* and whoever is listening handles the rest.
-
----
 
 ## 🚀 Running the App: Vite and local servers
 
