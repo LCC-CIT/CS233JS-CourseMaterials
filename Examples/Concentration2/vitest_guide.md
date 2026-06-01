@@ -1,14 +1,14 @@
-# A Veteran's Guide to Vitest
+# A Guide to Vitest Unit Tests
 
-If you are already familiar with unit testing frameworks like Jest, Mocha, or Jasmine, picking up **Vitest** will be incredibly easy. Vitest is a blazing-fast unit test framework powered by Vite. It shares an almost identical API to Jest, but because it is built on Vite, it inherently understands modern JavaScript (ES Modules) out of the box—no complex Babel configurations required.
+This guide is for anyone already familiar with another unit testing framework like Jest (another populare JS unit test framework). Vitest shares an almost identical API to Jest, but because it is built on Vite, it inherently understands ES Modules.
 
-This guide uses the `Concentration2` game project to demonstrate how a Vitest test suite is structured.
+This guide uses the `Concentration2` game project for it's examples.
 
 ---
 
 ## 1. The Anatomy of a Vitest Test Suite
 
-If you look at `tests/gameLogic.test.js`, you'll notice it looks remarkably similar to a standard Jest test suite. However, there is one key difference: **Explicit Imports**.
+If you look at `tests/gameLogic.test.js`, you'll notice it looks similar to a Jest test suite. However, there is one difference: **Explicit Imports**.
 
 In Jest, functions like `describe`, `it`, and `expect` are injected into the global scope. Vitest, by default, requires you to explicitly import them. This aligns with modern ES Module standards and improves IDE autocompletion.
 
@@ -42,7 +42,7 @@ describe('GameLogic', () => {
 
 ## 2. Anatomy of a Vitest Unit Test
 
-Inside the `describe` block, we define our individual tests using `it` or `test`. Because Vitest strives for Jest compatibility, the structure of assertions is identical. 
+Inside the `describe` block, we define our individual tests using `it` or `test`. 
 
 Let's look at one of the tests from the `Concentration2` game that verifies the player's card selections:
 
@@ -92,3 +92,7 @@ Vitest is executed via the command line. In our `package.json`, we mapped it to 
 
 * Running `npm run test` will execute the tests once (the `run` flag overrides Vitest's default watch mode).
 * Running `npx vitest` directly will start Vitest in **Watch Mode**. It will brilliantly monitor your files and instantaneously re-run only the specific tests affected by any code changes you make.
+
+
+
+*This document was drafted by Gemini 3.1 Pro and revised by Brian Bird in spring 2026.*
