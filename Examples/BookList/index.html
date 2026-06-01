@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookList</title>
+  </head>
+  <body>
+    <!-- The main application container -->
+    <div id="app" class="container mt-5">
+      <h1 class="text-center mb-4"><i class="bi-book"></i> BookList</h1>
+      
+      <!-- Search Area -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-8">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Add a Book</h5>
+              
+              <!-- Search by title -->
+              <div class="input-group mb-3">
+                <input type="text" id="searchTitleInput" class="form-control" placeholder="Search by title..." aria-label="Book title">
+                <button class="btn btn-primary" id="searchButton" type="button">
+                  <i class="bi-search"></i> Search
+                </button>
+              </div>
+
+              <!-- Manual entry toggle -->
+              <div class="text-center">
+                <button class="btn btn-link btn-sm" id="toggleManualEntryBtn">Or enter manually</button>
+              </div>
+
+              <!-- Manual Entry Form (Hidden by default) -->
+              <div id="manualEntryForm" class="mt-3 d-none">
+                <input type="text" id="manualTitle" class="form-control mb-2" placeholder="Title (Required)" required>
+                <input type="text" id="manualAuthor" class="form-control mb-2" placeholder="Author">
+                <input type="text" id="manualIsbn" class="form-control mb-2" placeholder="ISBN">
+                <button class="btn btn-success w-100" id="manualAddButton" type="button">Add Manually</button>
+              </div>
+
+              <!-- Search Results Area (Hidden by default) -->
+              <div id="searchResults" class="mt-3 list-group d-none">
+                <!-- Search results injected here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book List Area -->
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h5 class="mb-0">My Books</h5>
+            </div>
+            <ul id="bookListContainer" class="list-group list-group-flush">
+              <!-- Books injected here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="module" src="/src/js/index.js"></script>
+  </body>
+</html>

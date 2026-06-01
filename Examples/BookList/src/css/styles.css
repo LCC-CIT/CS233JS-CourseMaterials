@@ -1,0 +1,76 @@
+/* Base styles mimicking ToDoList2 but tailored for BookList */
+body {
+  background-color: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Book Cover image styles */
+.book-cover {
+  width: 50px;
+  height: 75px;
+  object-fit: cover;
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+
+/* Book text layout */
+.book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.book-meta {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+/* Rating styles */
+.star-rating {
+  color: #ffc107;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.star-rating .bi-star,
+.star-rating .bi-star-fill {
+  transition: transform 0.2s;
+}
+
+.star-rating .bi-star:hover,
+.star-rating .bi-star-fill:hover {
+  transform: scale(1.2);
+}
+
+/* Status dropdown styles */
+.status-select {
+  width: 130px;
+  font-size: 0.875rem;
+}
+
+/* Finished state */
+.book-finished .book-title {
+  color: #6c757d;
+}
+
+/* Search results */
+.search-result-item {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+  background-color: #e9ecef;
+}
+
+/* Loading spinner */
+.spinner-border {
+  width: 1.5rem;
+  height: 1.5rem;
+}
