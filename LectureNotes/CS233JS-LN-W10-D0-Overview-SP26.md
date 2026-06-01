@@ -70,6 +70,9 @@ See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1
 ### Objectives
 
 - To learn what unit testing is, why it matters, and when to use it.
+  - Note that unit testing is a requirement in the term project. You only need to add 1 unit test.
+
+
 - To complete your term project production version.
 - To review course topics in preparation for the final quiz.
 
