@@ -31,7 +31,7 @@ author: Brian Bird
 
 - **Final Quiz Next Week**
   - In the classroom: Monday 6/8 from 10:00 to 12:00.
-  - In the testing center: Monday 6/8 through Wednesday 6/10.  
+  - In the testing center: Friday 6/5 through Monday 6/8.  
     See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for the testing center location and hours.
   - Contact your instructor if you are not going to be able to come to the main campus for your final.
 - **Course Evaluation.** Please fill out the course evaluation. There is a link [here](https://eval.lanecc.edu) and at the bottom of this week's Moodle section.
