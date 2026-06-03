@@ -1,0 +1,715 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; height: auto; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+svg sub, svg sup { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignObject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<style type='text/css'  id="style-codemirror">.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: medium !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: medium; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: medium; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext' type='text/css' />
+<style type='text/css'  id="style-theme_css">:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', 'SF Pro', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+<style type='text/css'  id="style-mac-print"> @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}</style>
+
+<title>Final Quiz Review</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1>Final Quiz Review</h1><p><strong><span>CS233JS Intermediate Programming: JavaScript</span></strong></p><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n482"><a class="md-toc-inner" style="" href="#introduction">Introduction</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n495"><a class="md-toc-inner" style="" href="#tips-for-reviewing">Tips for Reviewing</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n504"><a class="md-toc-inner" style="" href="#topics-to-review">Topics to Review</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n507"><a class="md-toc-inner" style="" href="#html5-canvas">HTML5 Canvas</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n512"><a class="md-toc-inner" style="" href="#context-properties">Context Properties</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n534"><a class="md-toc-inner" style="" href="#context-methods">Context Methods</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n572"><a class="md-toc-inner" style="" href="#the-download-attribute">The <code>download</code> Attribute</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n576"><a class="md-toc-inner" style="" href="#ajax-and-the-fetch-api">AJAX and the Fetch API</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n577"><a class="md-toc-inner" style="" href="#synchronous-vs-asynchronous-requests">Synchronous vs. Asynchronous Requests</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n588"><a class="md-toc-inner" style="" href="#ajax">AJAX</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n590"><a class="md-toc-inner" style="" href="#the-fetch-api">The Fetch API</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n592"><a class="md-toc-inner" style="" href="#promises">Promises</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n607"><a class="md-toc-inner" style="" href="#async--await"><code>async</code> / <code>await</code></a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n621"><a class="md-toc-inner" style="" href="#then-chaining-fluent-syntax"><code>.then()</code> Chaining (Fluent Syntax)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n624"><a class="md-toc-inner" style="" href="#working-with-web-apis">Working with Web APIs</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n625"><a class="md-toc-inner" style="" href="#http-protocol">HTTP Protocol</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n643"><a class="md-toc-inner" style="" href="#three-ways-to-use-fetch">Three Ways to Use <code>fetch</code></a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n680"><a class="md-toc-inner" style="" href="#cors-env-files-and-deployment">CORS, <code>.env</code> Files, and Deployment</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n681"><a class="md-toc-inner" style="" href="#same-origin-policy-sop">Same-Origin Policy (SOP)</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n689"><a class="md-toc-inner" style="" href="#cors-cross-origin-resource-sharing">CORS (Cross-Origin Resource Sharing)</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n707"><a class="md-toc-inner" style="" href="#the-backend-proxy-pattern">The Backend Proxy Pattern</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n712"><a class="md-toc-inner" style="" href="#env-files-and-vite"><code>.env</code> Files and Vite</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n743"><a class="md-toc-inner" style="" href="#cloudflare-pages-deployment">Cloudflare Pages Deployment</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n769"><a class="md-toc-inner" style="" href="#unit-testing-with-vitest">Unit Testing with Vitest</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n770"><a class="md-toc-inner" style="" href="#what-is-unit-testing">What Is Unit Testing?</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n773"><a class="md-toc-inner" style="" href="#what-to-test-and-what-not-to-test">What to Test (and What Not to Test)</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n787"><a class="md-toc-inner" style="" href="#test-driven-development-tdd">Test-Driven Development (TDD)</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n796"><a class="md-toc-inner" style="" href="#setting-up-vitest">Setting Up Vitest</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n801"><a class="md-toc-inner" style="" href="#the-aaa-pattern">The AAA Pattern</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n816"><a class="md-toc-inner" style="" href="#vitest-core-functions">Vitest Core Functions</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n838"><a class="md-toc-inner" style="" href="#common-matchers">Common Matchers</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n870"><a class="md-toc-inner" style="" href="#complete-test-example">Complete Test Example</a></span></p></div><h2 id='introduction'><span>Introduction</span></h2><p><span>The topics listed in this review are the ones that will be covered by the final quiz. This review page doesn&#39;t cover every detail that might be on the final quiz, but is intended to be a starting place for your review. In addition to this page, study:</span></p><ul><li><p><span>The midterm review guide.</span></p></li><li><p><span>The lecture notes</span></p></li><li><p><span>Programming examples</span></p></li><li><p><span>Tutorials</span></p></li><li><p><span>Reading quizzes</span></p></li></ul><h3 id='tips-for-reviewing'><span>Tips for Reviewing</span></h3><ul><li><p><span>Focus on understanding concepts and being able to apply them rather than memorizing answers.</span></p></li><li><p><span>Ask yourself questions (or have a friend quiz you) rather than reading and re-reading course material.</span></p></li><li><p><span>Write code snippets and run them in the console to solidify your understanding.</span></p></li></ul><p>&nbsp;</p><h2 id='topics-to-review'><span>Topics to Review</span></h2><p><span>These are the major topics covered in weeks 6–10. This list is not intended to include every detail that was covered, but to list the main topics.</span></p><hr /><h3 id='html5-canvas'><span>HTML5 Canvas</span></h3><p><span>The </span><code>&lt;canvas&gt;</code><span> element lets JavaScript draw graphics (shapes, images, text) directly on a web page. You get a </span><strong><span>context object</span></strong><span> from the canvas and call methods on it to draw.</span></p><p><strong><span>Getting started:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">canvas</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'#myCanvas'</span>);</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">canvas</span>.<span class="cm-property">width</span> <span class="cm-operator">=</span> <span class="cm-number">800</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">canvas</span>.<span class="cm-property">height</span> <span class="cm-operator">=</span> <span class="cm-number">600</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">ctx</span> <span class="cm-operator">=</span> <span class="cm-variable">canvas</span>.<span class="cm-property">getContext</span>(<span class="cm-string">'2d'</span>);</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 91px;"></div><div class="CodeMirror-gutters" style="display: none; height: 91px;"></div></div></div></pre><p><strong><span>Computer graphics coordinate system:</span></strong><span> the origin (0, 0) is the </span><em><span>top-left</span></em><span> corner. The x-axis increases to the right; the y-axis increases </span><em><span>downward</span></em><span>.</span></p><h5 id='context-properties'><span>Context Properties</span></h5><figure class='table-figure'><table><thead><tr><th><span>Property</span></th><th><span>What it controls</span></th><th><span>Example</span></th></tr></thead><tbody><tr><td><code>fillStyle</code></td><td><span>Fill color for shapes and text</span></td><td><code>ctx.fillStyle = &#39;blue&#39;;</code></td></tr><tr><td><code>strokeStyle</code></td><td><span>Outline color for shapes and text</span></td><td><code>ctx.strokeStyle = &#39;black&#39;;</code></td></tr><tr><td><code>lineWidth</code></td><td><span>Width of strokes in pixels</span></td><td><code>ctx.lineWidth = 3;</code></td></tr><tr><td><code>textAlign</code></td><td><span>Horizontal text alignment relative to x-coordinate</span></td><td><code>ctx.textAlign = &#39;center&#39;;</code></td></tr></tbody></table></figure><h5 id='context-methods'><span>Context Methods</span></h5><figure class='table-figure'><table><thead><tr><th><span>Method</span></th><th><span>What it does</span></th><th><span>Example</span></th></tr></thead><tbody><tr><td><code>clearRect(x, y, w, h)</code></td><td><span>Erases a rectangular area of the canvas</span></td><td><code>ctx.clearRect(0, 0, canvas.width, canvas.height);</code></td></tr><tr><td><code>drawImage(img, x, y, w, h)</code></td><td><span>Draws an image onto the canvas, optionally scaled</span></td><td><code>ctx.drawImage(img, 0, 0, 400, 300);</code></td></tr><tr><td><code>fillText(text, x, y)</code></td><td><span>Draws filled text at the given coordinates</span></td><td><code>ctx.fillText(&#39;Hello!&#39;, 100, 50);</code></td></tr><tr><td><code>beginPath()</code></td><td><span>Starts a new drawing path</span></td><td><code>ctx.beginPath();</code></td></tr><tr><td><code>arc(x, y, r, start, end)</code></td><td><span>Adds a circle (or arc) to the current path</span></td><td><code>ctx.arc(100, 100, 50, 0, Math.PI * 2);</code></td></tr><tr><td><code>translate(x, y)</code></td><td><span>Moves the canvas coordinate origin</span></td><td><code>ctx.translate(offsetX, offsetY);</code></td></tr><tr><td><code>lineTo(x, y)</code></td><td><span>Adds a line segment to the current path</span></td><td><code>ctx.lineTo(event.offsetX, event.offsetY);</code></td></tr></tbody></table></figure><p><strong><span>Clipping example — circular crop:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">ctx</span>.<span class="cm-property">beginPath</span>();</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">ctx</span>.<span class="cm-property">arc</span>(<span class="cm-number">200</span>, <span class="cm-number">200</span>, <span class="cm-number">100</span>, <span class="cm-number">0</span>, <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>); <span class="cm-comment">// circle centered at (200,200), radius 100</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">ctx</span>.<span class="cm-property">clip</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">ctx</span>.<span class="cm-property">drawImage</span>(<span class="cm-variable">photo</span>, <span class="cm-number">100</span>, <span class="cm-number">100</span>, <span class="cm-number">200</span>, <span class="cm-number">200</span>); <span class="cm-comment">// only the circular region is visible</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 91px;"></div><div class="CodeMirror-gutters" style="display: none; height: 91px;"></div></div></div></pre><p><strong><span>Freestyle drawing (mouse events):</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">canvas</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">'mousedown'</span>, <span class="cm-def">e</span> <span class="cm-operator">=&gt;</span> {</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">ctx</span>.<span class="cm-property">beginPath</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">ctx</span>.<span class="cm-property">moveTo</span>(<span class="cm-variable-2">e</span>.<span class="cm-property">offsetX</span>, <span class="cm-variable-2">e</span>.<span class="cm-property">offsetY</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">});</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">canvas</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">'mousemove'</span>, <span class="cm-def">e</span> <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">if</span> (<span class="cm-variable">isDrawing</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">ctx</span>.<span class="cm-property">lineTo</span>(<span class="cm-variable-2">e</span>.<span class="cm-property">offsetX</span>, <span class="cm-variable-2">e</span>.<span class="cm-property">offsetY</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">ctx</span>.<span class="cm-property">stroke</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">});</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 250px;"></div><div class="CodeMirror-gutters" style="display: none; height: 250px;"></div></div></div></pre><h4 id='the-download-attribute'><span>The </span><code>download</code><span> Attribute</span></h4><p><span>Adding the </span><code>download</code><span> attribute to an </span><code>&lt;a&gt;</code><span> element tells the browser to download the linked file instead of opening it.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="html"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="html"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.982941px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"path/to/meme.png"</span> <span class="cm-attribute">download</span>=<span class="cm-string">"my-meme.png"</span><span class="cm-tag cm-bracket">&gt;</span>Download Meme<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><hr /><h3 id='ajax-and-the-fetch-api'><span>AJAX and the Fetch API</span></h3><h4 id='synchronous-vs-asynchronous-requests'><span>Synchronous vs. Asynchronous Requests</span></h4><figure class='table-figure'><table><thead><tr><th><span>Type</span></th><th><span>Description</span></th></tr></thead><tbody><tr><td><strong><span>Synchronous</span></strong></td><td><span>Code executes line-by-line. A network request blocks the browser tab until it completes — the page freezes.</span></td></tr><tr><td><strong><span>Asynchronous</span></strong></td><td><span>A request is started in the background; the browser continues executing code immediately. The response is handled later.</span></td></tr></tbody></table></figure><h4 id='ajax'><span>AJAX</span></h4><p><em><span>AJAX (Asynchronous JavaScript and XML)</span></em><span> is the technique of updating parts of a webpage without a full page reload. Despite the name, modern AJAX typically transfers JSON (not XML). It enables fast, dynamic UIs that communicate with a server in the background.</span></p><h4 id='the-fetch-api'><span>The Fetch API</span></h4><p><span>The </span><strong><span>Fetch API</span></strong><span> is the modern way to make asynchronous HTTP requests in JavaScript. It returns a </span><strong><span>Promise</span></strong><span> and replaces the older </span><code>XMLHttpRequest</code><span> (XHR) object.</span></p><h4 id='promises'><span>Promises</span></h4><p><span>A </span><em><span>promise</span></em><span> is a placeholder object representing the eventual result of an asynchronous operation. It is always in one of three states:</span></p><figure class='table-figure'><table><thead><tr><th><span>State</span></th><th><span>Meaning</span></th></tr></thead><tbody><tr><td><strong><span>Pending</span></strong></td><td><span>The operation has not yet completed.</span></td></tr><tr><td><strong><span>Fulfilled</span></strong></td><td><span>The operation completed successfully; a result value is available.</span></td></tr><tr><td><strong><span>Rejected</span></strong></td><td><span>The operation failed; an error reason is available.</span></td></tr></tbody></table></figure><h4 id='async--await'><code>async</code><span> / </span><code>await</code></h4><figure class='table-figure'><table><thead><tr><th><span>Keyword</span></th><th><span>Role</span></th></tr></thead><tbody><tr><td><code>async</code></td><td><span>Placed before a function declaration. Ensures the function always returns a Promise and allows </span><code>await</code><span> to be used inside it.</span></td></tr><tr><td><code>await</code></td><td><span>Pauses execution of the </span><code>async</code><span> function until the Promise settles, then &quot;unwraps&quot; it to the resolved value. The rest of the page stays responsive.</span></td></tr></tbody></table></figure><p><strong><span>Error handling:</span></strong><span> use </span><code>try...catch</code><span> around </span><code>await</code><span> calls to catch rejected promises (e.g., network errors, 404 responses).</span></p><p><strong><span>Example — fetching JSON with </span><code>async</code><span>/</span><code>await</code><span>:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">async</span> <span class="cm-keyword">function</span> <span class="cm-def">getWeather</span>(<span class="cm-def">city</span>) {</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">try</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">const</span> <span class="cm-def">response</span> <span class="cm-operator">=</span> <span class="cm-keyword">await</span> <span class="cm-variable">fetch</span>(<span class="cm-string-2">`https://api.example.com/weather?city=${</span><span class="cm-variable-2">city</span><span class="cm-string-2">}`</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span> (<span class="cm-operator">!</span><span class="cm-variable-2">response</span>.<span class="cm-property">ok</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">throw</span> <span class="cm-keyword">new</span> <span class="cm-variable">Error</span>(<span class="cm-string-2">`HTTP error: ${</span><span class="cm-variable-2">response</span>.<span class="cm-property">status</span><span class="cm-string-2">}`</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">const</span> <span class="cm-def">data</span> <span class="cm-operator">=</span> <span class="cm-keyword">await</span> <span class="cm-variable-2">response</span>.<span class="cm-property">json</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable-2">data</span>.<span class="cm-property">temperature</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  } <span class="cm-keyword">catch</span> (<span class="cm-def">err</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">console</span>.<span class="cm-property">error</span>(<span class="cm-string">'Fetch failed:'</span>, <span class="cm-variable-2">err</span>.<span class="cm-property">message</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 341px;"></div><div class="CodeMirror-gutters" style="display: none; height: 341px;"></div></div></div></pre><h4 id='then-chaining-fluent-syntax'><code>.then()</code><span> Chaining (Fluent Syntax)</span></h4><p><span>An older but still common alternative to </span><code>async</code><span>/</span><code>await</code><span> is chaining </span><code>.then()</code><span> and </span><code>.catch()</code><span> on the Promise returned by </span><code>fetch</code><span>:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">fetch</span>(<span class="cm-string">'https://api.example.com/data'</span>)</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  .<span class="cm-property">then</span>(<span class="cm-def">response</span> <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span> (<span class="cm-operator">!</span><span class="cm-variable-2">response</span>.<span class="cm-property">ok</span>) <span class="cm-keyword">throw</span> <span class="cm-keyword">new</span> <span class="cm-variable">Error</span>(<span class="cm-string">'HTTP error '</span> <span class="cm-operator">+</span> <span class="cm-variable-2">response</span>.<span class="cm-property">status</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">return</span> <span class="cm-variable-2">response</span>.<span class="cm-property">json</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  })</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  .<span class="cm-property">then</span>(<span class="cm-def">data</span> <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable-2">data</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  })</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  .<span class="cm-property">catch</span>(<span class="cm-def">error</span> <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">console</span>.<span class="cm-property">error</span>(<span class="cm-string">'Error:'</span>, <span class="cm-variable-2">error</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  });</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 250px;"></div><div class="CodeMirror-gutters" style="display: none; height: 250px;"></div></div></div></pre><h3 id='working-with-web-apis'><span>Working with Web APIs</span></h3><h4 id='http-protocol'><span>HTTP Protocol</span></h4><p><em><span>HTTP (HyperText Transfer Protocol)</span></em><span> is the request-response protocol used by browsers and servers. The browser sends an HTTP </span><strong><span>request</span></strong><span> (a URL with optional parameters), and the server sends back an HTTP </span><strong><span>response</span></strong><span> (data or a web page).</span></p><figure class='table-figure'><table><thead><tr><th><span>HTTP Method</span></th><th><span>Purpose</span></th></tr></thead><tbody><tr><td><strong><span>GET</span></strong></td><td><span>Retrieve data from the server (default for </span><code>fetch</code><span>).</span></td></tr><tr><td><strong><span>POST</span></strong></td><td><span>Send data to the server (e.g., submitting a form).</span></td></tr><tr><td><strong><span>PUT</span></strong></td><td><span>Update an existing resource on the server.</span></td></tr><tr><td><strong><span>DELETE</span></strong></td><td><span>Remove a resource from the server.</span></td></tr></tbody></table></figure><h4 id='three-ways-to-use-fetch'><span>Three Ways to Use </span><code>fetch</code></h4><figure class='table-figure'><table><thead><tr><th><span>Approach</span></th><th><span>Style</span></th><th><span>Notes</span></th></tr></thead><tbody><tr><td><strong><span>Procedural</span></strong></td><td><span>Assigns each Promise to a variable before calling </span><code>.then()</code></td><td><span>Makes Promises &quot;visible&quot; in the code; less common in practice.</span></td></tr><tr><td><strong><span>Fluent / chaining</span></strong></td><td><span>Chains </span><code>.then()</code><span> and </span><code>.catch()</code><span> directly on </span><code>fetch(...)</code></td><td><span>Common in older codebases and documentation.</span></td></tr><tr><td><strong><code>async</code><span>/</span><code>await</code></strong></td><td><span>Uses </span><code>await</code><span> inside an </span><code>async</code><span> function with </span><code>try...catch</code></td><td><span>Modern, most readable; preferred style in this course.</span></td></tr></tbody></table></figure><p><strong><span>Key </span><code>Response</code><span> object methods:</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Method</span></th><th><span>Returns</span></th><th><span>Use when the response body is…</span></th></tr></thead><tbody><tr><td><code>response.json()</code></td><td><span>Promise → parsed object</span></td><td><span>JSON data from an API</span></td></tr><tr><td><code>response.text()</code></td><td><span>Promise → string</span></td><td><span>Plain text or HTML</span></td></tr><tr><td><code>response.blob()</code></td><td><span>Promise → Blob</span></td><td><span>Binary data (images, files)</span></td></tr></tbody></table></figure><p><span>Always check </span><code>response.ok</code><span> (true for HTTP status 200–299) before processing the body.</span></p><h3 id='cors-env-files-and-deployment'><span>CORS, </span><code>.env</code><span> Files, and Deployment</span></h3><h4 id='same-origin-policy-sop'><span>Same-Origin Policy (SOP)</span></h4><p><span>The </span><em><span>Same-Origin Policy</span></em><span> is a browser security mechanism that prevents JavaScript on one website from reading data from a different website. An </span><strong><span>origin</span></strong><span> is the combination of protocol + domain + port. For example:</span></p><ul><li><p><code>http://localhost:5173</code><span> and </span><code>https://api.example.com</code><span> are </span><strong><span>different</span></strong><span> origins.</span></p></li><li><p><code>https://example.com</code><span> and </span><code>https://example.com/page2</code><span> are the </span><strong><span>same</span></strong><span> origin.</span></p></li></ul><p><span>Without SOP, a malicious tab could silently read your banking data or steal session cookies from another tab.</span></p><h4 id='cors-cross-origin-resource-sharing'><span>CORS (Cross-Origin Resource Sharing)</span></h4><p><em><span>CORS</span></em><span> is the mechanism browsers use to enforce the Same-Origin Policy for </span><code>fetch</code><span> requests. When JavaScript at one origin requests a resource from a </span><strong><span>different</span></strong><span> origin, the browser checks whether the response includes permission headers.</span></p><figure class='table-figure'><table><thead><tr><th><span>Concept</span></th><th><span>Details</span></th></tr></thead><tbody><tr><td><strong><span>Who enforces CORS</span></strong></td><td><span>The </span><strong><span>browser</span></strong><span> — not the server. Server-to-server requests are not affected.</span></td></tr><tr><td><strong><span>Key response header</span></strong></td><td><code>Access-Control-Allow-Origin: *</code><span> allows any origin; a specific domain restricts access.</span></td></tr><tr><td><strong><span>What happens without it</span></strong></td><td><span>The browser blocks the response, even if the server sent it. A CORS error appears in the console.</span></td></tr><tr><td><strong><span>Why APIs omit the header</span></strong></td><td><span>To force developers to call the API from a server proxy, keeping API keys secret.</span></td></tr></tbody></table></figure><h4 id='the-backend-proxy-pattern'><span>The Backend Proxy Pattern</span></h4><p><span>The standard solution when an API doesn&#39;t send CORS headers is to route requests through your own server:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Browser  →  Your Server (proxy)  →  External API</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; ← &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ←</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><span>The browser only ever talks to your server (same origin). Your server calls the external API (server-to-server, no CORS restrictions) and forwards the response. This also keeps API keys off the client.</span></p><p><span>A proxy can be implemented as a Node.js/Express route, a Vite dev-server proxy (local development only), or a serverless function (Cloudflare Pages, Netlify, Vercel).</span></p><h4 id='env-files-and-vite'><code>.env</code><span> Files and Vite</span></h4><p><span>A </span><code>.env</code><span> file stores configuration values — especially </span><strong><span>secrets</span></strong><span> like API keys — outside of source code. This prevents keys from being committed to Git.</span></p><figure class='table-figure'><table><thead><tr><th><span>File</span></th><th><span>When used</span></th><th><span>Committed to Git?</span></th></tr></thead><tbody><tr><td><code>.env</code></td><td><span>Always</span></td><td><span>Yes (non-secret defaults only)</span></td></tr><tr><td><code>.env.local</code></td><td><span>Always, overrides </span><code>.env</code></td><td><strong><span>No</span></strong><span> — add to </span><code>.gitignore</code></td></tr><tr><td><code>.env.production</code></td><td><code>vite build</code></td><td><span>Yes (non-secret values only)</span></td></tr></tbody></table></figure><p><strong><span>Rules for Vite:</span></strong></p><ul><li><p><span>Variables must be prefixed with </span><code>VITE_</code><span> to be accessible in browser code.</span></p></li><li><p><span>Variables </span><em><span>without</span></em><span> </span><code>VITE_</code><span> are never included in the browser bundle (keep these for server-side use).</span></p></li><li><p><span>Access variables in code via </span><code>import.meta.env.VITE_MY_VAR</code><span>.</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// In your JavaScript (browser code):</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">apiUrl</span> <span class="cm-operator">=</span> <span class="cm-keyword">import</span>.<span class="cm-property">meta</span>.<span class="cm-property">env</span>.<span class="cm-property">VITE_SERVER_URL</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">fetch</span>(<span class="cm-string-2">`${</span><span class="cm-variable">apiUrl</span><span class="cm-string-2">}/items`</span>).<span class="cm-property">then</span>(<span class="cm-def">res</span> <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">res</span>.<span class="cm-property">json</span>());</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// Check the current mode:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-keyword">import</span>.<span class="cm-property">meta</span>.<span class="cm-property">env</span>.<span class="cm-property">DEV</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-string">'Running locally'</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 182px;"></div><div class="CodeMirror-gutters" style="display: none; height: 182px;"></div></div></div></pre><p><strong><span>Example </span><code>.env.local</code><span>:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">VITE_SERVER_URL=http://localhost:3000</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">SECRET_API_KEY=abc123secret</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><code>VITE_SERVER_URL</code><span> is accessible in browser code. </span><code>SECRET_API_KEY</code><span> (no </span><code>VITE_</code><span> prefix) is only available server-side and is never bundled into the browser output.</span></p><h4 id='cloudflare-pages-deployment'><span>Cloudflare Pages Deployment</span></h4><p><span>Cloudflare Pages hosts front-end apps built from a GitHub repository. Key concepts:</span></p><figure class='table-figure'><table><thead><tr><th><span>Concept</span></th><th><span>Details</span></th></tr></thead><tbody><tr><td><strong><span>Build command</span></strong></td><td><code>npm run build</code><span> — Vite bundles your source into </span><code>dist/</code></td></tr><tr><td><strong><span>Build output directory</span></strong></td><td><code>dist</code></td></tr><tr><td><strong><span>Environment variables</span></strong></td><td><span>Set in </span><em><span>Settings → Environment Variables</span></em><span> in the Cloudflare dashboard; injected during </span><code>vite build</code></td></tr><tr><td><strong><span>Serverless functions</span></strong></td><td><span>JavaScript files in a </span><code>functions/</code><span> folder; Cloudflare runs them on its servers (no browser involved)</span></td></tr><tr><td><strong><code>[[path]].js</code></strong></td><td><span>A catch-all wildcard file that handles any sub-path under its folder</span></td></tr></tbody></table></figure><p><strong><span>Vite dev server proxy</span></strong><span> (local development only): configure in </span><code>vite.config.js</code><span> to intercept frontend requests and forward them to an external API, injecting the API key server-side:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// vite.config.js</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">import</span> { <span class="cm-def">defineConfig</span>, <span class="cm-def">loadEnv</span> } <span class="cm-keyword">from</span> <span class="cm-string">'vite'</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-variable">defineConfig</span>(({ <span class="cm-def">mode</span> }) <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">const</span> <span class="cm-def">env</span> <span class="cm-operator">=</span> <span class="cm-variable">loadEnv</span>(<span class="cm-variable-2">mode</span>, <span class="cm-variable">process</span>.<span class="cm-property">cwd</span>(), <span class="cm-string">''</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">return</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-property">server</span>: {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-property">proxy</span>: {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string cm-property">'/api/weather'</span>: {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-property">target</span>: <span class="cm-string">'https://api.openweathermap.org'</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-property">changeOrigin</span>: <span class="cm-atom">true</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-property">rewrite</span>: <span class="cm-def">path</span> <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">path</span>.<span class="cm-property">replace</span>(<span class="cm-string-2">/^\/api\/weather/</span>, <span class="cm-string">''</span>),</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-property">headers</span>: { <span class="cm-string cm-property">'X-Api-Key'</span>: <span class="cm-variable-2">env</span>.<span class="cm-property">SECRET_WEATHER_KEY</span> },</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  },</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  },</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  },</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  };</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">});</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 409px;"></div><div class="CodeMirror-gutters" style="display: none; height: 409px;"></div></div></div></pre><p><strong><span>Cloudflare serverless proxy function</span></strong><span> (production): a </span><code>functions/api/weather/[[path]].js</code><span> file that intercepts the same relative URL in production and calls the external API using a key stored in Cloudflare&#39;s dashboard:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// functions/api/weather/[[path]].js</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">export</span> <span class="cm-keyword">async</span> <span class="cm-keyword">function</span> <span class="cm-def">onRequest</span>(<span class="cm-def">context</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">const</span> { <span class="cm-def">request</span>, <span class="cm-def">env</span> } <span class="cm-operator">=</span> <span class="cm-variable-2">context</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">const</span> <span class="cm-def">url</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">URL</span>(<span class="cm-variable-2">request</span>.<span class="cm-property">url</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">const</span> <span class="cm-def">targetUrl</span> <span class="cm-operator">=</span> <span class="cm-string-2">`https://api.openweathermap.org${</span><span class="cm-variable-2">url</span>.<span class="cm-property">pathname</span>.<span class="cm-property">replace</span>(<span class="cm-string">'/api/weather'</span>, <span class="cm-string">''</span>)<span class="cm-string-2">}`</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">return</span> <span class="cm-keyword">await</span> <span class="cm-variable">fetch</span>(<span class="cm-variable-2">targetUrl</span>, {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-property">headers</span>: { <span class="cm-string cm-property">'X-Api-Key'</span>: <span class="cm-variable-2">env</span>.<span class="cm-property">SECRET_WEATHER_KEY</span> },</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  });</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 227px;"></div><div class="CodeMirror-gutters" style="display: none; height: 227px;"></div></div></div></pre><hr /><h3 id='unit-testing-with-vitest'><span>Unit Testing with Vitest</span></h3><h4 id='what-is-unit-testing'><span>What Is Unit Testing?</span></h4><p><span>A </span><em><span>unit test</span></em><span> is a small, automated script that checks whether a single function or method behaves correctly. Instead of manually clicking through a UI, you run </span><code>npm run test</code><span> and get an instant pass/fail report.</span></p><p><strong><span>Benefits:</span></strong><span> catches </span><em><span>regressions</span></em><span> (things that used to work but broke after a change), speeds up testing, documents what code is supposed to do, and encourages cleaner, more modular design.</span></p><h4 id='what-to-test-and-what-not-to-test'><span>What to Test (and What Not to Test)</span></h4><figure class='table-figure'><table><thead><tr><th><span>Test these</span></th><th><span>Don&#39;t test these</span></th></tr></thead><tbody><tr><td><span>Pure functions (input → output, no side effects)</span></td><td><span>DOM manipulation</span></td></tr><tr><td><span>Class methods with state and business logic</span></td><td><span>Visual appearance (colors, layout)</span></td></tr><tr><td><span>Conditional rules (&quot;if X, then Y&quot;)</span></td><td><span>Browser events (click, scroll)</span></td></tr></tbody></table></figure><h4 id='test-driven-development-tdd'><span>Test-Driven Development (TDD)</span></h4><p><span>TDD is a practice where you write the test </span><em><span>before</span></em><span> writing the code. The cycle is </span><strong><span>Red → Green → Refactor</span></strong><span>:</span></p><ol start='' ><li><p><strong><span>Red</span></strong><span> — Write a test for a function stub. It fails (red) because the body is empty. This confirms the test is actually exercising the function.</span></p></li><li><p><strong><span>Green</span></strong><span> — Write just enough code to make the test pass (green).</span></p></li><li><p><strong><span>Refactor</span></strong><span> — Clean up the code while the tests act as a safety net.</span></p></li></ol><h4 id='setting-up-vitest'><span>Setting Up Vitest</span></h4><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">npm</span> install <span class="cm-attribute">--save-dev</span> vitest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><span>Add a </span><code>test</code><span> script to </span><code>package.json</code><span>:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="json"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="json"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-string">"scripts"</span>: {</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"dev"</span>: <span class="cm-string">"vite"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"build"</span>: <span class="cm-string">"vite build"</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-string cm-property">"test"</span>: <span class="cm-string">"vitest run"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 114px;"></div><div class="CodeMirror-gutters" style="display: none; height: 114px;"></div></div></div></pre><p><span>Test files go in a </span><code>tests/</code><span> folder and must end in </span><code>.test.js</code><span>. Run with </span><code>npm run test</code><span>.</span></p><h4 id='the-aaa-pattern'><span>The AAA Pattern</span></h4><p><span>Every unit test follows three steps:</span></p><figure class='table-figure'><table><thead><tr><th><span>Step</span></th><th><span>What you do</span></th></tr></thead><tbody><tr><td><strong><span>Arrange</span></strong></td><td><span>Set up objects, variables, and any input data needed.</span></td></tr><tr><td><strong><span>Act</span></strong></td><td><span>Call the function or method being tested (usually one line).</span></td></tr><tr><td><strong><span>Assert</span></strong></td><td><span>Check that the result matches what you expected using </span><code>expect(...)</code><span>.</span></td></tr></tbody></table></figure><h4 id='vitest-core-functions'><span>Vitest Core Functions</span></h4><figure class='table-figure'><table><thead><tr><th><span>Function</span></th><th><span>Purpose</span></th></tr></thead><tbody><tr><td><code>describe(&#39;name&#39;, fn)</code></td><td><span>Groups related tests into a named suite.</span></td></tr><tr><td><code>it(&#39;should ...&#39;, fn)</code><span> / </span><code>test(...)</code></td><td><span>Defines a single test case. By convention, start the description with &quot;should&quot;.</span></td></tr><tr><td><code>expect(actual).matcher(expected)</code></td><td><span>Asserts that </span><code>actual</code><span> matches the expected value.</span></td></tr><tr><td><code>beforeEach(fn)</code></td><td><span>Runs setup code before </span><em><span>every</span></em><span> </span><code>it()</code><span> block — use to create a fresh object for each test.</span></td></tr><tr><td><code>vi.fn()</code></td><td><span>Creates a mock function that records calls and arguments.</span></td></tr></tbody></table></figure><p><span>All functions must be imported explicitly:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">import</span> { <span class="cm-def">describe</span>, <span class="cm-def">it</span>, <span class="cm-def">expect</span>, <span class="cm-def">beforeEach</span>, <span class="cm-def">vi</span> } <span class="cm-keyword">from</span> <span class="cm-string">'vitest'</span>;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><h4 id='common-matchers'><span>Common Matchers</span></h4><figure class='table-figure'><table><thead><tr><th><span>Matcher</span></th><th><span>What it checks</span></th></tr></thead><tbody><tr><td><code>.toBe(value)</code></td><td><span>Strict equality (</span><code>===</code><span>). Use for primitives (numbers, strings, booleans).</span></td></tr><tr><td><code>.toEqual(value)</code></td><td><span>Deep equality. Use for objects and arrays.</span></td></tr><tr><td><code>.toBeTruthy()</code></td><td><span>The value is truthy.</span></td></tr><tr><td><code>.toHaveLength(n)</code></td><td><span>An array or string has exactly </span><code>n</code><span> elements/characters.</span></td></tr><tr><td><code>.toContain(item)</code></td><td><span>An array includes </span><code>item</code><span>, or a string includes a substring.</span></td></tr><tr><td><code>.toHaveBeenCalled()</code></td><td><span>A mock function was called at least once.</span></td></tr></tbody></table></figure><h4 id='complete-test-example'><span>Complete Test Example</span></h4><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.363636px; left: 7.627838px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: medium;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: medium;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">import</span> { <span class="cm-def">describe</span>, <span class="cm-def">it</span>, <span class="cm-def">expect</span>, <span class="cm-def">beforeEach</span> } <span class="cm-keyword">from</span> <span class="cm-string">'vitest'</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">import</span> { <span class="cm-def">GameLogic</span> } <span class="cm-keyword">from</span> <span class="cm-string">'../src/gameLogic.js'</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">describe</span>(<span class="cm-string">'GameLogic'</span>, () <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">logic</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">beforeEach</span>(() <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable-2">logic</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">GameLogic</span>(); &nbsp; <span class="cm-comment">// Arrange: fresh instance before each test</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  });</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">it</span>(<span class="cm-string">'should initialize with default values'</span>, () <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Act: constructor already ran in beforeEach</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Assert:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">expect</span>(<span class="cm-variable-2">logic</span>.<span class="cm-property">firstPick</span>).<span class="cm-property">toBe</span>(<span class="cm-operator">-</span><span class="cm-number">1</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">expect</span>(<span class="cm-variable-2">logic</span>.<span class="cm-property">secondPick</span>).<span class="cm-property">toBe</span>(<span class="cm-operator">-</span><span class="cm-number">1</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">expect</span>(<span class="cm-variable-2">logic</span>.<span class="cm-property">matches</span>).<span class="cm-property">toBe</span>(<span class="cm-number">0</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">expect</span>(<span class="cm-variable-2">logic</span>.<span class="cm-property">cards</span>).<span class="cm-property">toEqual</span>([]);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  });</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">it</span>(<span class="cm-string">'should record the first pick'</span>, () <span class="cm-operator">=&gt;</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable-2">logic</span>.<span class="cm-property">pickCard</span>(<span class="cm-number">3</span>); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Act</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">expect</span>(<span class="cm-variable-2">logic</span>.<span class="cm-property">firstPick</span>).<span class="cm-property">toBe</span>(<span class="cm-number">3</span>); &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Assert</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">expect</span>(<span class="cm-variable-2">logic</span>.<span class="cm-property">secondPick</span>).<span class="cm-property">toBe</span>(<span class="cm-operator">-</span><span class="cm-number">1</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  });</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">});</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 568px;"></div><div class="CodeMirror-gutters" style="display: none; height: 568px;"></div></div></div></pre><p>&nbsp;</p><p><em><span>Note: This document were drafted Claude Cowork and Sonnet 4.6.</span></em></p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License"></a><span> Intermediate JavaScript Lecture Notes by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written in spring </span><time><span>2026</span></time><span>, are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>.</span></p><hr /></div></div>
+</body>
+</html>
