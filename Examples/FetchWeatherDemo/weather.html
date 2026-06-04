@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="lcc_favicon.png">
+    <title>Weather Fetch Demo</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 720px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        button {
+            font-size: 1.1rem;
+            padding: 0.5rem 1.25rem;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: #f9f9f9;
+            min-height: 2rem;
+        }
+        .current {
+            margin-bottom: 1rem;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 6px 10px;
+            text-align: center;
+        }
+        th {
+            background: #eee;
+        }
+        .error {
+            color: #c00;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Weather Forecast</h1>
+    <p>Click the button to fetch a 7-day forecast from open-meteo.</p>
+    <button id="fetchBtn">Get Weather</button>
+    <div id="output"></div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
