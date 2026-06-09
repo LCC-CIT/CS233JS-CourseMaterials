@@ -10,7 +10,7 @@ author: Brian Bird
 
 <h1>Week 11 Overview for Spring 2026</h1>
 
-<h2>June 1 through June 7</h2>
+<h2>June 8 through June 12</h2>
 
 
 
