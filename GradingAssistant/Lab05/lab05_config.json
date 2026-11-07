@@ -1,0 +1,253 @@
+{
+  "rubricName": "../../Labs/Lab05-HtmlCanvas/CS233JS_Lab05_Rubric.xlsm",
+  "titleCell": "A1",
+  "titleText": "Lab 5: HTML Canvas",
+  "summaryCell": "A2",
+  "graderCell": "E1",
+  "codeReview": {
+    "studentNameCell": "B1",
+    "groupCell": "C1"
+  },
+  "runtimeCheck": "both",
+  "repoHygiene": {
+    "excludedFromRepo": [
+      "node_modules",
+      "dist",
+      ".DS_Store"
+    ]
+  },
+  "lint": {
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  },
+  "analysis": {
+    "features": [
+      {
+        "id": "canvas_context",
+        "regex": "getContext\\(['\"]2d['\"]\\)",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "local_storage",
+        "regex": "localStorage",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "lena_js",
+        "regex": "from\\s+['\"]lena",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "canvas_filter",
+        "regex": "\\.filter\\s*=",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "module_imports",
+        "regex": "import\\s+.*from",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "canvas_filtering",
+        "regex": "(?:\\.filter\\s*=|from\\s+['\"]lena)",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "stroke_text",
+        "regex": "\\bstrokeText\\(",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "canvas_clip_shape",
+        "regex": "\\b(?:arc|ellipse|roundRect)\\(",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "canvas_advanced_feature",
+        "regex": "\\b(?:scale|lineTo|drawImage)\\(",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "canvas_styling",
+        "regex": "(?:\\.fillStyle|\\.strokeStyle|\\.font)\\s*=",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "c12_feature_ok",
+        "fileRegex": "\\.m?js$",
+        "match": {
+          "anyOf": [
+            {
+              "regex": "\\bscale\\("
+            },
+            {
+              "allOf": [
+                {
+                  "regex": "\\blineTo\\("
+                },
+                {
+                  "regex": "mousedown|mousemove"
+                }
+              ]
+            },
+            {
+              "allOf": [
+                {
+                  "regex": "sticker",
+                  "flags": "i"
+                },
+                {
+                  "regex": "mousedown|mousemove"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "c13_feature_ok",
+        "fileRegex": "\\.m?js$",
+        "match": {
+          "anyOf": [
+            {
+              "regex": "this\\.(?:bgColor|backgroundColor|canvasBg)\\s*="
+            },
+            {
+              "regex": "this\\.#?(?:textColor|fontColor|fillColor|textFill|fontFillColor|fontFill)\\s*="
+            },
+            {
+              "regex": "ctx\\.fillStyle\\s*=\\s*this\\.#?\\w"
+            },
+            {
+              "regex": "this\\.#?(?:fontSelect|fontFamily|fontStyle|font)\\s*="
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "mappings": [
+    {
+      "cell": "C7",
+      "commentCell": "E7",
+      "type": "feature",
+      "featureId": "local_storage",
+      "minCount": 1,
+      "maxScore": 5,
+      "successMsg": "Yes - localStorage usage found",
+      "failMsg": "No localStorage usage found"
+    },
+    {
+      "cell": "C8",
+      "commentCell": "E8",
+      "type": "feature",
+      "featureId": "canvas_filtering",
+      "minCount": 1,
+      "maxScore": 3,
+      "successMsg": "Yes - canvas filter or lena package used",
+      "failMsg": "No canvas filter or lena package found"
+    },
+    {
+      "cell": "C9",
+      "commentCell": "E9",
+      "type": "npm_package",
+      "exclude": [
+        "vite",
+        "bootstrap"
+      ],
+      "maxScore": 3
+    },
+    {
+      "cell": "C10",
+      "commentCell": "E10",
+      "type": "feature",
+      "featureId": "stroke_text",
+      "minCount": 1,
+      "maxScore": 3,
+      "successMsg": "Yes - strokeText() found",
+      "failMsg": "strokeText() not found"
+    },
+    {
+      "cell": "C11",
+      "commentCell": "E11",
+      "type": "feature",
+      "featureId": "canvas_clip_shape",
+      "minCount": 1,
+      "maxScore": 4,
+      "successMsg": "Yes - arc/ellipse/roundRect found",
+      "failMsg": "No arc/ellipse/roundRect found"
+    },
+    {
+      "cell": "C12",
+      "commentCell": "E12",
+      "type": "feature",
+      "featureId": "c12_feature_ok",
+      "minCount": 1,
+      "maxScore": 5,
+      "successMsg": "Yes - zoom/sticker/freestyle feature found",
+      "failMsg": "No zoom (scale), mouse-positioned sticker, or freestyle drawing (lineTo+mouse) found"
+    },
+    {
+      "cell": "C13",
+      "commentCell": "E13",
+      "type": "feature",
+      "featureId": "c13_feature_ok",
+      "minCount": 1,
+      "maxScore": 3,
+      "successMsg": "Yes - user-controlled background/font color/font style found",
+      "failMsg": "No user-controlled background color, font color, or font style found"
+    },
+    {
+      "cell": "C14",
+      "commentCell": "E14",
+      "type": "browser_check",
+      "maxScore": 2
+    },
+    {
+      "cell": "C15",
+      "commentCell": "E15",
+      "type": "manual",
+      "reviewRow": "app work correctly",
+      "maxScore": 2,
+      "msg": "NEEDS MANUAL CHECK (app's original features still work)"
+    },
+    {
+      "cell": "C16",
+      "commentCell": "E16",
+      "type": "developer_comments",
+      "requireAiDisclosure": false,
+      "maxScore": 1
+    },
+    {
+      "cell": "C17",
+      "commentCell": "E17",
+      "type": "lint",
+      "severity": "warnings",
+      "maxScore": 2
+    },
+    {
+      "cell": "C21",
+      "commentCell": "E21",
+      "linkCell": "F21",
+      "linkUrlType": "github",
+      "type": "github_repo",
+      "maxScore": 2
+    },
+    {
+      "cell": "C22",
+      "commentCell": "E22",
+      "linkCell": "F22",
+      "linkUrlType": "citstudent",
+      "type": "deploy_check",
+      "maxScore": 4
+    },
+    {
+      "cell": "C23",
+      "commentCell": "E23",
+      "type": "code_review",
+      "maxScore": 1
+    }
+  ]
+}

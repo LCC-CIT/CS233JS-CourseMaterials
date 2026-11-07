@@ -1,0 +1,177 @@
+{
+  "rubricName": "../../Labs/Lab07-Proxy/Lab07_RubricProxy.xlsm",
+  "titleText": "Lab07: API Call Via Proxy",
+  "titleCell": "A1",
+  "summaryCell": "A2",
+  "graderCell": "G1",
+  "runtimeCheck": "build",
+  "mappings": [
+    {
+      "cell": "D7",
+      "commentCell": "F7",
+      "type": "env_file_check",
+      "maxScore": 3,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "No (hardcoded in source)",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D8",
+      "commentCell": "F8",
+      "type": "path_exists",
+      "maxScore": 1,
+      "pathPattern": "example\\.env"
+    },
+    {
+      "cell": "D9",
+      "commentCell": "F9",
+      "type": "gitignore_check",
+      "maxScore": 2,
+      "requiredEntry": ".env",
+      "stockComments": {
+        "full": "Yes",
+        "partial": ".env committed to repo",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D11",
+      "commentCell": "F11",
+      "type": "manual",
+      "reviewRow": "Vite proxy configured correctly",
+      "maxScore": 5,
+      "msg": "Check that vite.config.js contains a server.proxy entry that rewrites the path and injects the API key server-side.",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Partial / incorrect",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D12",
+      "commentCell": "F12",
+      "type": "manual",
+      "reviewRow": "load and run without errors",
+      "maxScore": 3,
+      "msg": "Run app locally and verify no CORS errors in browser console when making API calls through the Vite proxy.",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Some errors",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D14",
+      "commentCell": "F14",
+      "type": "path_exists",
+      "maxScore": 5,
+      "pathPattern": "functions/",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Partial",
+        "zero": "No"
+      }
+    },
+    {
+      "type": "manual",
+      "reviewRow": "Cloudflare function read the API key",
+      "cell": "D15",
+      "maxScore": 4,
+      "msg": "Check that the Cloudflare function uses env.<KEY_NAME> and does not hardcode the API key.",
+      "commentCell": "F15",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Key hardcoded in function",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D17",
+      "commentCell": "F17",
+      "type": "manual",
+      "reviewRow": "run correctly on Cloudflare",
+      "maxScore": 4,
+      "msg": "Verify all features from previous lab still work correctly in the deployed app.",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Some broken",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D18",
+      "commentCell": "F18",
+      "type": "build_and_browser_check",
+      "maxScore": 2,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Some errors",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D19",
+      "commentCell": "F19",
+      "type": "lint",
+      "maxScore": 1,
+      "severity": "warnings",
+      "stockComments": {
+        "full": "Good",
+        "partial": "Issues",
+        "zero": "Needs improvement"
+      }
+    },
+    {
+      "cell": "D20",
+      "commentCell": "F20",
+      "type": "developer_comments",
+      "requireAiDisclosure": false,
+      "maxScore": 1,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Some",
+        "zero": "Missing"
+      }
+    },
+    {
+      "type": "github_repo",
+      "cell": "D22",
+      "linkUrlType": "github",
+      "maxScore": 3,
+      "commentCell": "F22",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Not private, bad URL",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D23",
+      "commentCell": "F23",
+      "type": "manual",
+      "reviewRow": "files and folders organized well",
+      "maxScore": 2,
+      "msg": "Check folder structure (functions/, src/js/, etc.) and file naming conventions.",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Needs Improvement",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D24",
+      "commentCell": "F24",
+      "type": "manual",
+      "reviewRow": "run correctly on Cloudflare",
+      "maxScore": 5,
+      "msg": "Deploy to Cloudflare and verify the app loads, API calls succeed, no CORS errors, and API key is not visible in browser network tab.",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Partial / errors",
+        "zero": "No"
+      }
+    }
+  ]
+}

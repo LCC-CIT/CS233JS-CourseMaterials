@@ -1,0 +1,164 @@
+{
+  "rubricName": "../../Labs/Lab03-Classes/CS233JS_Lab03_Rubric.xlsm",
+  "titleCell": "A1",
+  "titleText": "Lab 3: ES6 Classes",
+  "summaryCell": "A2",
+  "graderCell": "E1",
+  "codeReview": {
+    "studentNameCell": "B1",
+    "groupCell": "C1"
+  },
+  "runtimeCheck": "browser",
+  "lint": {
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  },
+  "analysis": {
+    "features": [
+      {
+        "id": "classes",
+        "regex": "class\\s+[A-Za-z0-9_]+",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "modules",
+        "regex": "import\\s+.*from",
+        "fileRegex": "\\.js$"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "part1",
+      "rubricTitleRow": 7,
+      "folderPattern": "(?:part|pt)\\s*[_-]?\\s*1",
+      "variations": {
+        "A": {
+          "appName": "Double Trouble Domino"
+        },
+        "B": {
+          "appName": "Domino Drop"
+        },
+        "C": {
+          "appName": "Boneyard Bluff Domino"
+        }
+      },
+      "featureCounts": [
+        {
+          "featureId": "classes",
+          "minCount": 1,
+          "cell": "C8",
+          "commentCell": "E8",
+          "maxScore": 5,
+          "successMsg": "Yes",
+          "failMsg": "Missing"
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "rubricTitleRow": 14,
+      "folderPattern": "(?:part|pt)\\s*[_-]?\\s*2",
+      "variations": {
+        "A": {
+          "appName": "Going to Boston"
+        },
+        "B": {
+          "appName": "Midnight"
+        },
+        "C": {
+          "appName": "Threes Away"
+        }
+      },
+      "featureCounts": [
+        {
+          "featureId": "classes",
+          "minCount": 3,
+          "cell": "C16",
+          "commentCell": "E16",
+          "maxScore": 3,
+          "successMsg": "Yes",
+          "failMsg": "Missing"
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "cell": "C9",
+      "commentCell": "E9",
+      "linkCell": "F9",
+      "linkUrlType": "citstudent",
+      "type": "manual",
+      "reviewRow": "game work correctly",
+      "maxScore": 3,
+      "msg": "NEEDS MANUAL CHECK (Game still works)"
+    },
+    {
+      "cell": "C10",
+      "commentCell": "E10",
+      "type": "build_check",
+      "maxScore": 1
+    },
+    {
+      "cell": "C11",
+      "commentCell": "E11",
+      "type": "lint",
+      "maxScore": 1
+    },
+    {
+      "cell": "C15",
+      "commentCell": "E15",
+      "linkCell": "F15",
+      "linkUrlType": "citstudent",
+      "type": "manual",
+      "reviewRow": "game work correctly",
+      "reviewRowOccurrence": 2,
+      "maxScore": 8,
+      "msg": "NEEDS MANUAL CHECK (Game works correctly)"
+    },
+    {
+      "cell": "C17",
+      "commentCell": "E17",
+      "type": "url_check",
+      "maxScore": 4,
+      "urlType": "citstudent"
+    },
+    {
+      "cell": "C18",
+      "commentCell": "E18",
+      "type": "build_check",
+      "maxScore": 1
+    },
+    {
+      "cell": "C19",
+      "commentCell": "E19",
+      "type": "lint",
+      "maxScore": 1
+    },
+    {
+      "cell": "C23",
+      "commentCell": "E23",
+      "type": "apps_in_repo",
+      "maxScore": 10
+    },
+    {
+      "cell": "C24",
+      "commentCell": "E24",
+      "type": "developer_comments",
+      "requireAiDisclosure": true,
+      "ignoreCommentsBy": [
+        "Brian Bird"
+      ],
+      "maxScore": 1
+    },
+    {
+      "cell": "C25",
+      "commentCell": "E25",
+      "type": "code_review",
+      "maxScore": 2
+    }
+  ]
+}

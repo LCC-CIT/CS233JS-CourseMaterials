@@ -1,0 +1,190 @@
+{
+  "rubricName": "../../Labs/Lab06-Async/Lab06_RubricListManagerCallingApi.xlsm",
+  "titleCell": "A1",
+  "titleText": "Lab 6: Async JS and Web APIs",
+  "summaryCell": "A2",
+  "graderCell": "G1",
+  "codeReview": {
+    "studentNameCell": "B1",
+    "groupCell": "C1"
+  },
+  "runtimeCheck": "both",
+  "repoHygiene": {
+    "excludedFromRepo": [
+      "node_modules",
+      "dist",
+      ".DS_Store"
+    ]
+  },
+  "lint": {
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  },
+  "analysis": {
+    "features": [
+      {
+        "id": "fetch_api",
+        "regex": "fetch\\(",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "async_await",
+        "regex": "\\basync\\b",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "json_parse",
+        "regex": "\\.json\\(",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "local_storage",
+        "regex": "localStorage",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "module_imports",
+        "regex": "import\\s+.*from",
+        "fileRegex": "\\.js$"
+      }
+    ]
+  },
+  "mappings": [
+    {
+      "cell": "D7",
+      "commentCell": "F7",
+      "type": "manual",
+      "reviewRow": "app work correctly",
+      "maxScore": 5,
+      "msg": "NEEDS MANUAL CHECK: Verify all previous features still work",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Some",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D8",
+      "commentCell": "F8",
+      "type": "manual",
+      "reviewRow": "dedicated to handling external network requests",
+      "maxScore": 4,
+      "msg": "Check for a dedicated module for making API requests",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Mixed",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D9",
+      "commentCell": "F9",
+      "type": "manual",
+      "reviewRow": "JSON response parsed",
+      "maxScore": 10,
+      "msg": "Verify correct data obtained from web API",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Partial",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D10",
+      "commentCell": "F10",
+      "type": "manual",
+      "reviewRow": "template render the fetched fields",
+      "maxScore": 5,
+      "msg": "Check API data displayed correctly on page",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Partial",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D11",
+      "commentCell": "F11",
+      "type": "build_and_browser_check",
+      "maxScore": 2,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Some",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D12",
+      "commentCell": "F12",
+      "type": "lint",
+      "maxScore": 2,
+      "severity": "errors",
+      "stockComments": {
+        "full": "Good",
+        "partial": "Issues",
+        "zero": "Needs improvement"
+      }
+    },
+    {
+      "cell": "D13",
+      "commentCell": "F13",
+      "type": "developer_comments",
+      "requireAiDisclosure": false,
+      "maxScore": 1,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Some",
+        "zero": "Missing"
+      }
+    },
+    {
+      "cell": "D16",
+      "commentCell": "F16",
+      "type": "github_repo",
+      "maxScore": 3,
+      "linkUrlType": "github",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Not private, bad URL",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D17",
+      "commentCell": "F17",
+      "type": "name_check",
+      "maxScore": 2,
+      "tolerance": 0,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Needs Improvement",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D18",
+      "commentCell": "F18",
+      "type": "deploy_check",
+      "maxScore": 4,
+      "urlType": "citstudent",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Bad URL",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D19",
+      "commentCell": "F19",
+      "type": "code_review",
+      "maxScore": 2,
+      "stockComments": {
+        "full": "Yes, yes",
+        "partial": "Yes, no",
+        "zero": "No"
+      }
+    }
+  ]
+}

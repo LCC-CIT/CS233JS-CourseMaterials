@@ -1,0 +1,194 @@
+{
+  "rubricName": "../../Labs/Lab04-Node/CS233JS_Lab04_Rubric.xlsm",
+  "titleCell": "A1",
+  "titleText": "Lab 4: Node and Vite",
+  "summaryCell": "A2",
+  "graderCell": "E1",
+  "codeReview": {
+    "studentNameCell": "B1",
+    "groupCell": "C1"
+  },
+  "runtimeCheck": "both",
+  "variations": {
+    "A": {
+      "appName": "Web Page Bookmarker"
+    },
+    "B": {
+      "appName": "Expense Tracker"
+    },
+    "C": {
+      "appName": "Grocery List"
+    }
+  },
+  "packageCheck": {
+    "dependencies": [
+      "lit-html",
+      "bootstrap"
+    ],
+    "devDependencies": [
+      "vite"
+    ]
+  },
+  "repoHygiene": {
+    "excludedFromRepo": [
+      "node_modules",
+      "dist",
+      ".DS_Store"
+    ]
+  },
+  "lint": {
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  },
+  "analysis": {
+    "features": [
+      {
+        "id": "lit_html",
+        "regex": "from\\s+['\"](?:lit-html|html-lit)['\"]",
+        "fileRegex": "\\.js$"
+      },
+      {
+        "id": "vite_sourcemap",
+        "regex": "sourcemap\\s*:\\s*true",
+        "fileRegex": "vite\\.config\\."
+      },
+      {
+        "id": "module_imports",
+        "regex": "import\\s+.*from",
+        "fileRegex": "\\.js$"
+      }
+    ]
+  },
+  "mappings": [
+    {
+      "cell": "C7",
+      "commentCell": "E7",
+      "type": "manual",
+      "maxScore": 6,
+      "msg": "NEEDS MANUAL CHECK (all TODOs completed)"
+    },
+    {
+      "cell": "C8",
+      "commentCell": "E8",
+      "type": "feature",
+      "featureId": "lit_html",
+      "minCount": 1,
+      "maxScore": 3,
+      "successMsg": "Yes",
+      "failMsg": "html-lit import not found"
+    },
+    {
+      "cell": "C9",
+      "commentCell": "E9",
+      "type": "manual",
+      "reviewRow": "app work correctly",
+      "maxScore": 8,
+      "msg": "NEEDS MANUAL CHECK (app functions correctly)"
+    },
+    {
+      "cell": "C10",
+      "commentCell": "E10",
+      "type": "package_check",
+      "maxScore": 3
+    },
+    {
+      "cell": "C11",
+      "commentCell": "E11",
+      "type": "feature",
+      "featureId": "vite_sourcemap",
+      "minCount": 1,
+      "maxScore": 2,
+      "successMsg": "Yes",
+      "failMsg": "sourcemap: true not found in vite.config"
+    },
+    {
+      "cell": "C12",
+      "commentCell": "E12",
+      "type": "lint",
+      "severity": "errors",
+      "maxScore": 1
+    },
+    {
+      "cell": "C13",
+      "commentCell": "E13",
+      "type": "build_check",
+      "maxScore": 1
+    },
+    {
+      "cell": "C14",
+      "commentCell": "E14",
+      "type": "browser_check",
+      "maxScore": 1
+    },
+    {
+      "cell": "C15",
+      "commentCell": "E15",
+      "type": "developer_comments",
+      "requireAiDisclosure": true,
+      "ignoreCommentsBy": [
+        "Brian Bird"
+      ],
+      "maxScore": 1
+    },
+    {
+      "cell": "C16",
+      "commentCell": "E16",
+      "type": "lint",
+      "severity": "warnings",
+      "maxScore": 2
+    },
+    {
+      "cell": "C20",
+      "commentCell": "E20",
+      "linkCell": "F20",
+      "linkUrlType": "github",
+      "type": "github_repo",
+      "maxScore": 2
+    },
+    {
+      "cell": "C21",
+      "commentCell": "E21",
+      "type": "manual",
+      "reviewRow": [
+        "repository private",
+        "collaborators"
+      ],
+      "maxScore": 2,
+      "msg": "NEEDS MANUAL CHECK (private repo, collaborators added)"
+    },
+    {
+      "cell": "C22",
+      "commentCell": "E22",
+      "type": "manual",
+      "reviewRow": [
+        "organized in a clear",
+        "files named appropriately"
+      ],
+      "maxScore": 2,
+      "msg": "NEEDS MANUAL CHECK (folder/file organization and naming)"
+    },
+    {
+      "cell": "C23",
+      "commentCell": "E23",
+      "type": "repo_hygiene",
+      "maxScore": 1
+    },
+    {
+      "cell": "C24",
+      "commentCell": "E24",
+      "linkCell": "F24",
+      "linkUrlType": "citstudent",
+      "type": "url_check",
+      "maxScore": 4,
+      "urlType": "citstudent"
+    },
+    {
+      "cell": "C25",
+      "commentCell": "E25",
+      "type": "code_review",
+      "maxScore": 1
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "rubricName": "../../Labs/Lab01-Review/CS233JS_Lab01_Rubric.xlsx",
+  "titleCell": "A1",
+  "titleText": "Lab 1: JavaScript Review",
+  "summaryCell": "A2",
+  "graderCell": "E1",
+  "codeReview": {
+    "studentNameCell": "B1",
+    "groupCell": "C1"
+  },
+  "runtimeCheck": "browser",
+  "variations": {
+    "A": {
+      "appName": "Double Trouble Domino"
+    },
+    "B": {
+      "appName": "Domino Drop"
+    },
+    "C": {
+      "appName": "Boneyard Bluff Domino"
+    }
+  },
+  "lint": {
+    "exclude": [
+      "part1",
+      "part_1",
+      "node_modules",
+      "dist"
+    ]
+  },
+  "mappings": [
+    {
+      "cell": "C8",
+      "commentCell": "E8",
+      "type": "part1_completed",
+      "maxScore": 10
+    },
+    {
+      "cell": "C12",
+      "commentCell": "E12",
+      "type": "developer_comments",
+      "requireAiDisclosure": true,
+      "ignoreCommentsBy": [
+        "Brian Bird"
+      ],
+      "maxScore": 1
+    },
+    {
+      "cell": "C13",
+      "commentCell": "E13",
+      "type": "code_review",
+      "maxScore": 1
+    },
+    {
+      "cell": "C14",
+      "commentCell": "E14",
+      "type": "build_check",
+      "maxScore": 2
+    },
+    {
+      "cell": "C15",
+      "commentCell": "E15",
+      "type": "manual",
+      "reviewRow": "game work correctly",
+      "maxScore": 20,
+      "msg": "NEEDS MANUAL CHECK"
+    },
+    {
+      "cell": "C16",
+      "commentCell": "E16",
+      "type": "url_check",
+      "maxScore": 4,
+      "urlType": "citstudent"
+    },
+    {
+      "cell": "C17",
+      "commentCell": "E17",
+      "type": "lint",
+      "maxScore": 2
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "rubricName": "../../../Labs/TermProject/CS233JS_TermProjectDevEnv_Rubric.xlsm",
+  "titleCell": "A1",
+  "titleText": "TermProject-DevEnvAndStaticSite",
+  "summaryCell": "A2",
+  "graderCell": "G1",
+  "runtimeCheck": "both",
+  "mappings": [
+    {
+      "cell": "D7",
+      "commentCell": "F7",
+      "type": "html_validate",
+      "maxScore": 4,
+      "tolerance": 0,
+      "stockComments": {
+        "full": "Good",
+        "partial": "Errors",
+        "zero": "Missing"
+      }
+    },
+    {
+      "cell": "D8",
+      "commentCell": "F8",
+      "type": "css_validate",
+      "maxScore": 2,
+      "tolerance": 0,
+      "stockComments": {
+        "full": "Good",
+        "partial": "Errors",
+        "zero": "Missing"
+      }
+    },
+    {
+      "cell": "D9",
+      "commentCell": "F9",
+      "type": "manual",
+      "maxScore": 3,
+      "msg": "Check if layout and styling look professional",
+      "stockComments": {
+        "full": "Good",
+        "partial": "Needs improvement",
+        "zero": "Needs improvement"
+      }
+    },
+    {
+      "cell": "D10",
+      "commentCell": "F10",
+      "type": "developer_comments",
+      "requireAiDisclosure": false,
+      "maxScore": 1,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Some",
+        "zero": "Missing"
+      }
+    },
+    {
+      "cell": "D11",
+      "commentCell": "F11",
+      "type": "lint",
+      "maxScore": 2,
+      "severity": "warnings",
+      "stockComments": {
+        "full": "Good",
+        "partial": "Needs improvement",
+        "zero": "Needs improvement"
+      }
+    },
+    {
+      "cell": "D13",
+      "commentCell": "F13",
+      "type": "scripts_check",
+      "maxScore": 4,
+      "scripts": [
+        "dev",
+        "build",
+        "preview"
+      ],
+      "stockComments": {
+        "full": "Good",
+        "partial": "Not working",
+        "zero": "Missing"
+      }
+    },
+    {
+      "cell": "D14",
+      "commentCell": "F14",
+      "type": "package_check",
+      "maxScore": 1,
+      "stockComments": {
+        "full": "Good",
+        "partial": "Not working",
+        "zero": "Missing"
+      }
+    },
+    {
+      "cell": "D16",
+      "commentCell": "F16",
+      "type": "github_repo",
+      "maxScore": 3,
+      "linkUrlType": "github",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Not private, bad URL",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D17",
+      "commentCell": "F17",
+      "type": "collaborator_check",
+      "maxScore": 2,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Instructor not added",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D18",
+      "commentCell": "F18",
+      "type": "gitignore_check",
+      "maxScore": 2,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Not for node.js",
+        "zero": "No"
+      }
+    },
+    {
+      "type": "name_check",
+      "cell": "D19",
+      "maxScore": 1,
+      "tolerance": 2,
+      "commentCell": "F19",
+      "stockComments": {
+        "full": "Good",
+        "partial": "Needs Improvement",
+        "zero": "Needs Improvement"
+      }
+    }
+  ]
+}

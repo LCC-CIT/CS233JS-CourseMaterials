@@ -1,0 +1,261 @@
+{
+  "rubricName": "../../../Labs/TermProject/CS233JS_TermProjectFinal_Rubric.xlsm",
+  "titleText": "Term Project: Production",
+  "titleCell": "A1",
+  "summaryCell": "A2",
+  "graderCell": "G1",
+  "runtimeCheck": "both",
+  "mappings": [
+    {
+      "cell": "D6",
+      "commentCell": "F6",
+      "type": "manual",
+      "reviewRow": "features of the web app function correctly",
+      "maxScore": 20,
+      "msg": "NEEDS MANUAL CHECK: All features are working correctly.",
+      "stockComments": {
+        "full": "Excellent",
+        "partial": "Mostly working",
+        "zero": "Not working"
+      }
+    },
+    {
+      "cell": "D8",
+      "commentCell": "F8",
+      "type": "manual",
+      "reviewRow": "web API called using the fetch API",
+      "maxScore": 5,
+      "msg": "NEEDS MANUAL CHECK: Fetch API used with .then or await.",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Attempted",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D9",
+      "commentCell": "F9",
+      "type": "manual",
+      "maxScore": 3,
+      "msg": "NEEDS MANUAL CHECK: Correct error handling with try-catch or .then.",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Attempted",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D10",
+      "commentCell": "F10",
+      "type": "env_file_check",
+      "maxScore": 5,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Attempted",
+        "zero": "No"
+      }
+    },
+    {
+      "type": "feature",
+      "cell": "D11",
+      "featureId": "class",
+      "minCount": 1,
+      "maxScore": 8,
+      "commentCell": "F11",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Attempted",
+        "zero": "No"
+      }
+    },
+    {
+      "type": "feature",
+      "cell": "D12",
+      "featureId": "New JS features",
+      "minCount": 1,
+      "maxScore": 5,
+      "commentCell": "F12",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Partially",
+        "zero": "None"
+      }
+    },
+    {
+      "cell": "D14",
+      "commentCell": "F14",
+      "type": "scripts_check",
+      "maxScore": 4,
+      "scripts": [
+        "dev",
+        "build"
+      ],
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Partially",
+        "zero": "No"
+      }
+    },
+    {
+      "type": "scripts_check",
+      "cell": "D15",
+      "maxScore": 8,
+      "scripts": "test",
+      "commentCell": "F15",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Attempted",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D17",
+      "commentCell": "F17",
+      "type": "gitignore_check",
+      "maxScore": 3,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Incorrect",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D18",
+      "commentCell": "F18",
+      "type": "deploy_check",
+      "maxScore": 8,
+      "urlType": "citstudent",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Not running",
+        "zero": "No"
+      }
+    },
+    {
+      "cell": "D20",
+      "commentCell": "F20",
+      "type": "manual",
+      "reviewRow": "layout and styling done in an appealing",
+      "maxScore": 3,
+      "msg": "NEEDS MANUAL CHECK: Web page has good visual design.",
+      "stockComments": {
+        "full": "Excellent",
+        "partial": "Good",
+        "zero": "Needs improvement"
+      }
+    },
+    {
+      "cell": "D21",
+      "commentCell": "F21",
+      "type": "manual",
+      "maxScore": 3,
+      "msg": "NEEDS MANUAL CHECK: Some kind of styling (CSS, Bootstrap, etc.) has been applied.",
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Attempted",
+        "zero": "Missing"
+      }
+    },
+    {
+      "cell": "D22",
+      "commentCell": "F22",
+      "type": "manual",
+      "maxScore": 3,
+      "msg": "NEEDS MANUAL CHECK: The UI is user friendly and logical.",
+      "stockComments": {
+        "full": "Excellent",
+        "partial": "Good",
+        "zero": "Needs improvement"
+      }
+    },
+    {
+      "cell": "D24",
+      "commentCell": "F24",
+      "type": "manual",
+      "reviewRow": "i/o code",
+      "maxScore": 6,
+      "msg": "NEEDS MANUAL CHECK: Good architectural design with separation of business logic from UI.",
+      "stockComments": {
+        "full": "Excellent",
+        "partial": "Fair",
+        "zero": "Poor"
+      }
+    },
+    {
+      "cell": "D25",
+      "commentCell": "F25",
+      "type": "lint",
+      "maxScore": 4,
+      "severity": "warnings",
+      "stockComments": {
+        "full": "Excellent",
+        "partial": "Fair",
+        "zero": "Poor"
+      }
+    },
+    {
+      "cell": "D26",
+      "commentCell": "F26",
+      "type": "developer_comments",
+      "requireAiDisclosure": false,
+      "maxScore": 4,
+      "stockComments": {
+        "full": "Yes",
+        "partial": "Some",
+        "zero": "Missing"
+      }
+    },
+    {
+      "cell": "D27",
+      "commentCell": "F27",
+      "type": "manual",
+      "maxScore": 4,
+      "msg": "NEEDS MANUAL CHECK: Standard folder structure and descriptive file names.",
+      "stockComments": {
+        "full": "Excellent",
+        "partial": "Fair",
+        "zero": "Needs improvement"
+      }
+    },
+    {
+      "cell": "D28",
+      "commentCell": "F28",
+      "type": "code_review",
+      "maxScore": 4,
+      "stockComments": {
+        "full": "Yes, yes",
+        "partial": "Yes, no",
+        "zero": "No, no"
+      }
+    }
+  ],
+  "analysis": {
+    "features": [
+      {
+        "id": "class",
+        "regex": "class",
+        "fileRegex": ".js"
+      },
+      {
+        "id": "New JS features",
+        "match": {
+          "anyOf": [
+            {
+              "regex": "=>"
+            },
+            {
+              "regex": "\\.\\.\\."
+            },
+            {
+              "regex": "localStorage"
+            },
+            {
+              "regex": "canvas"
+            }
+          ]
+        },
+        "fileRegex": "\\.m?js$"
+      }
+    ]
+  }
+}
