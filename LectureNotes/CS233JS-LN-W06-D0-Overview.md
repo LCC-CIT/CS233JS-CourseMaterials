@@ -72,9 +72,12 @@ See the [term-by-term sample planner](https://docs.google.com/document/d/1F8CJY1
 
 ### Objectives
 
-- Continue to develop your proficiency in using JavaScript development tools.
-- To introduce you to the canvas object and to the API for working with the canvas in JavaScript.
-- Continue to develop your proficiency in implementing, testing and debugging client-side web-based applications written in JavaScript.
+By the end of this week you should be able to:
+
+- Set up a new project with NPM and Vite on your own, including installing dependencies and adding scripts to `package.json`. (CLO 5)
+- Get a 2D context from an HTML5 canvas and use it to draw text, shapes, and images, with control over fonts, colors, and line styles. (CLO 6)
+- Update a canvas drawing in response to user input, and let the user download the result as an image. (CLO 6)
+- Install a third-party NPM package, such as an image-filter or confetti library, and use it in a canvas app. (CLO 5)
 
 ### Due dates
 

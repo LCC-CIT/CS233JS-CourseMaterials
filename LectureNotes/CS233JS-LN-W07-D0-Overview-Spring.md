@@ -55,10 +55,13 @@ author: Brian Bird
 
 ### Objectives
 
-- To introduce you to asynchronous communication and the usage of AJAX to combine client-side and server-side processing.
-- To introduce you to ES6 promises.
-- To introduce you to the fetch API.
-- To develop your proficiency in designing, implementing, testing and debugging client-side applications that make AJAX calls in JavaScript.
+By the end of this week you should be able to:
+
+- Explain the difference between synchronous and asynchronous code, and why AJAX requests must be asynchronous. (CLO 4)
+- Write code that uses promises, with `.then()`/`.catch()` and with `async`/`await`. (CLO 4)
+- Use `fetch` to request data from a web API, parse the JSON response, and display the results on a page. (CLO 4)
+- Handle failed requests and display a useful error message to the user. (CLO 4)
+- Use the browser developer tools' Network tab to inspect requests and responses when debugging. (CLO 7)
 
 ### Changes Since Mari's Videos Were Made
 

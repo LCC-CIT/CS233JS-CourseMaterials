@@ -47,11 +47,12 @@ author: Brian Bird
 
 ## Objectives
 
-- To introduce you to commonly used JavaScript development tools including **Node.js, NPM and Vite** (pronounced "veet").
+By the end of this week you should be able to:
 
-- To introduce you to using the web browser's **LocalStorage** for storing client-side data.
-
-- To continue improving your proficiency at **developing JS web apps**: designing, implementing, testing and debugging.
+- Create a project with **Node.js and NPM**: initialize a `package.json`, install packages, and import a package into your code. (CLO 5)
+- Use **Vite** (pronounced "veet") to run a web app on a development server and build a bundled production version. (CLO 5)
+- Save and load app data with the browser's **LocalStorage**, converting objects with `JSON.stringify()` and `JSON.parse()`. (CLO 3)
+- Use source maps and browser developer tools to locate and fix errors in a bundled app. (CLO 7)
 
 ## Due dates
 

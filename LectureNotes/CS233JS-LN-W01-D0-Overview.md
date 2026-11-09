@@ -49,8 +49,12 @@ About half of you are taking the class online and the other half are taking it i
 
 ### Objectives
 
-- To review your understanding of JavaScript from CS 133JS.
-- To practice building a web app using what you already know.
+By the end of this week you should be able to:
+
+- Write JavaScript that uses variables, functions, arrays, objects, and control structures to solve short programming exercises. (Review of CS 133JS)
+- Build a web app that manipulates the DOM and responds to user events. (CLO 6)
+- Lay out a responsive web page using Bootstrap's grid and components. (CLO 6)
+- Review a lab partner's code and give written feedback on its correctness, readability, and style. (CLO 8)
 
 ### What to Do
 

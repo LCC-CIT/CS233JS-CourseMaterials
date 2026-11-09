@@ -17,9 +17,17 @@
 
 This is the second in a sequence of 2 courses focused on developing client-side ( front-end) browser-based applications. The course introduces intermediate level programming concepts and skills as well as JavaScript syntax, tools and frameworks.
 
-## Learning Outcome
+## Learning Outcomes
 
-The intention of the course is to enable you to use current JavaScript technologies and tools to create more advanced front-end web applications.
+Upon successful completion of this course, students will be able to:
+1. Explain object-oriented programming concepts, such as classes, objects, encapsulation, inheritance, and polymorphism, and how JavaScript's prototype-based model and limited class features differ from those in tranditional object oriented languages, both orally and in writing.
+2. Design and implement a class or system of classes that model a solution to a problem. Before implementing, diagram the classes in a way that shows relationships, including inheritance, aggregation and composition, using UML or other diagramming method. 
+3. Use modern JavaScript (ES6+) features, including modules, destructuring, higher-order array methods, and persisting client-side data with LocalStorage and JSON.
+4. Write asynchronous code with  `async`/`await` to call web APIs, handle JSON responses and errors, resolve CORS issues, and protect API keys using environment variables and a server-side proxy.
+5. Use Node.js, NPM, and a build tool such as Vite to manage dependencies, develop, and bundle web applications, and deploy them to a web host.
+6. Build interactive user interfaces using DOM manipulation, event handling, HTML5 canvas graphics, and a responsive CSS framework such as Tailwind or Bootstrap.
+7. Test programs with unit tests and debug them using browser developer tools and systematic debugging techniques. 
+8. Use Git and GitHub to manage and collaborate on projects, including using branches, resolving merge conflicts, and reviewing their own and peers' code for correctness, readability, style, and design.
 
 ### Teaching Methods
 
@@ -30,33 +38,7 @@ This course is offered in both hybrid and online modalities:
 
 Students taking the course in either modality will work with lab partners to help each other with coding, do code reviews and provide helpful feedback for improving each other’s code quality.
 
-## Course Content
-
-| **Technologies**       |                            |               |
-| ---------------------- | -------------------------- | ------------- |
-| Node.js and NPM        | Modern ECMAScript features | HTML Canvas   |
-| Fetch with async/await | Git and GitHub             | JSON          |
-| Vite                   | Vitest                     | Local storage |
-
-| **Themes and Issues**        |                             |                               |
-| ---------------------------- | --------------------------- | ----------------------------- |
-| Dynamic and static web sites | Client and server-side code | Web application architecture  |
-| JavaScript technologies      | Syntax, semantics and style | Giving and receiving feedback |
-
-| **Concepts** |                        |                             |
-| ------------ | ---------------------- | --------------------------- |
-| Unit testing | Functional programming | Object oriented programming |
-| Code reviews | Asynchronous code      | Web services                |
-
-| **Skills**                                                   |
-| ------------------------------------------------------------ |
-| Explain the relationship between presentation layer, client-side programming and server side programming in modern web applications. Explain the usage of JavaScript in modern web applications. |
-| Effectively use intermediate and advanced syntactical elements of modern JavaScript (ES 6+) including: template literals, objects, de-structuring assignment, anonymous function, arrow functions, classes, modules. |
-| Effectively use JavaScript tools, modules, libraries and frameworks that are typical in modern JavaScript development including: node.js, npm, Vite and Vitest. |
-| Design and implement a variety of medium complexity JavaScript applications. |
-| Discuss concepts, themes and issues orally and in writing.   |
-| Evaluate your own web site implementation work. Evaluate the web site implementation work of other students and provide constructive feedback. |
-| Respond appropriately to and assimilate feedback provided by other students and your instructor. |
+## 
 
 ## Learning Resources
 
