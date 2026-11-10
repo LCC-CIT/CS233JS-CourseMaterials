@@ -15,12 +15,12 @@
 
 ## Course Description
 
-This is the second in a sequence of 2 courses focused on developing client-side ( front-end) browser-based applications. The course introduces intermediate level programming concepts and skills as well as JavaScript syntax, tools and frameworks.
+This is the second in a sequence of two courses on developing browser-based, front-end web applications. Building on introductory JavaScript, students learn object-oriented design, modern ES6+ features, asynchronous programming with web APIs, and DOM and canvas graphics. Students also use professional tools and practices, including Node.js, NPM, Vite, unit testing, debugging, and Git/GitHub with peer code review.
 
 ## Learning Outcomes
 
 Upon successful completion of this course, students will be able to:
-1. Explain object-oriented programming concepts, such as classes, objects, encapsulation, inheritance, and polymorphism, and how JavaScript's prototype-based model and limited class features differ from those in tranditional object oriented languages, both orally and in writing.
+1. Explain object-oriented programming concepts, such as classes, objects, encapsulation, inheritance, and polymorphism, and how JavaScript's prototype-based model and limited class features differ from those in traditional object oriented languages, both orally and in writing.
 2. Design and implement a class or system of classes that model a solution to a problem. Before implementing, diagram the classes in a way that shows relationships, including inheritance, aggregation and composition, using UML or other diagramming method. 
 3. Use modern JavaScript (ES6+) features, including modules, destructuring, higher-order array methods, and persisting client-side data with LocalStorage and JSON.
 4. Write asynchronous code with  `async`/`await` to call web APIs, handle JSON responses and errors, resolve CORS issues, and protect API keys using environment variables and a server-side proxy.
@@ -34,7 +34,7 @@ Upon successful completion of this course, students will be able to:
 This course is offered in both hybrid and online modalities:
 
 -  Hybrid: this combines online materials and on-campus class meetings which are a combination of lecture, discussion and lab (in-class coding). Students are expected to come in-person, but may participate via Zoom when circumstances prevent them from coming in person.
-- Online: This is the asychronous modality. Students will watch lecture resordings and interact with the instructor and other students online.
+- Online: This is the asynchronous modality. Students will watch lecture recordings and interact with the instructor and other students online.
 
 Students taking the course in either modality will work with lab partners to help each other with coding, do code reviews and provide helpful feedback for improving each other’s code quality.
 
